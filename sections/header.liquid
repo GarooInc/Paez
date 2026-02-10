@@ -1,56 +1,51 @@
-<header>
-  <h2 class="header__title">
-    {{ shop.name | link_to: routes.root_url }}
-  </h2>
+<div class="w-full bg-black" style="width: 100vw; margin-left: calc(50% - 50vw);">
+  <div class="h-10 flex items-center justify-center">
+    <p class="text-white">{{ section.settings.newsletter }}</p>
+  </div>
+</div>
 
-  <div class="header__menu">
+<header class="absolute left-0 top-10 w-full h-10 text-black py-8 px-5 bg-transparent grid grid-cols-3 items-center z-5">
+
+  <div class="header__menu flex justify-start hover:transparent/30">
+
     {% for link in section.settings.menu.links %}
-      {{ link.title | link_to: link.url }}
+      <div class="pr-4 flex text-lg font-normal">
+        {{ link.title | link_to: link.url }}
+      </div>
     {% endfor %}
   </div>
 
-  <div class="header__icons">
+  {% if section.settings.header_title != blank %}
+    <div class="text-center pr-12 text-3xl font-semibold uppercase tracking-widest">
+      {{ section.settings.header_title }}
+    </div>
+  {% else %}
+    <h2 class="header__title text-center pr-12">
+      {{ shop.name | link_to: routes.root_url }}
+    </h2>
+
+  {% endif %}
+
+  
+
+  <div class="header__icons flex justify-end gap-2">
+    <div class="w-8">
     {% if shop.customer_accounts_enabled %}
       {{ 'icon-account.svg' | inline_asset_content | link_to: routes.account_url }}
-    {% endif %}
+    {% endif %}</div>
 
-    <a href="{{ routes.cart_url }}">
+    <div class="w-8">
+    <a href="{{ routes.cart_url }}" >
       {% if cart.item_count > 0 %}
         <sup>{{ cart.item_count }}</sup>
       {% endif %}
 
       {{ 'icon-cart.svg' | inline_asset_content }}
-    </a>
+    </a></div>
   </div>
 </header>
 
-{% stylesheet %}
-  header {
-    height: 5rem;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-  }
-  header a {
-    position: relative;
-    text-decoration: none;
-    color: var(--color-foreground);
-  }
-  header a sup {
-    position: absolute;
-    left: 100%;
-    overflow: hidden;
-    max-width: var(--page-margin);
-  }
-  header svg {
-    width: 2rem;
-  }
-  header .header__menu,
-  header .header__icons {
-    display: flex;
-    gap: 1rem;
-  }
-{% endstylesheet %}
+
 
 {% schema %}
 {
@@ -60,6 +55,26 @@
       "type": "link_list",
       "id": "menu",
       "label": "t:labels.menu"
+    },
+    {
+      "type": "text",
+      "id": "newsletter",
+      "label": "newsletter title", 
+      "default": "Welcome to our store"
+    },
+    {
+      "type": "text",
+      "id": "header_title",
+      "label": "Header title",
+      "default": "Barner"
+
+    },
+
+  ],
+  "presets": [
+    {
+      "name": "t:general.header",
+      "category": "header"
     }
   ]
 }
