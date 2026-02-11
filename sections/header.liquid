@@ -4,7 +4,7 @@
   </div>
 </div>
 
-<header class="absolute left-0 top-10 w-full h-10 text-black py-8 px-5 bg-transparent grid grid-cols-3 items-center z-5">
+<header class="absolute left-0 top-10 w-full h-10 text-black py-8 px-2 bg-transparent grid grid-cols-3 items-center z-10">
 
   <div class="header__menu flex justify-start hover:transparent/30">
 
@@ -16,11 +16,11 @@
   </div>
 
   {% if section.settings.header_title != blank %}
-    <div class="text-center pr-12 text-3xl font-semibold uppercase tracking-widest">
+    <div class="text-center pr-12 text-3xl font-semibold uppercase tracking-widest hover:opacity-70 transition-opacity">
       {{ section.settings.header_title }}
     </div>
   {% else %}
-    <h2 class="header__title text-center pr-12">
+    <h2 class="header__title text-center pr-12 hover:opacity-70 transition-opacity">
       {{ shop.name | link_to: routes.root_url }}
     </h2>
 
@@ -28,7 +28,7 @@
 
   
 
-  <div class="header__icons flex justify-end gap-2">
+  <div class="header__icons flex justify-end gap-3 pr-8">
     <div class="w-8">
     {% if shop.customer_accounts_enabled %}
       {{ 'icon-account.svg' | inline_asset_content | link_to: routes.account_url }}

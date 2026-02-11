@@ -1,35 +1,46 @@
-<div class="relative w-screen md:h-screen h-[350px] bg-cover bg-center flex overflow-hidden full-bleed-header header-bg"
+<section class="relative w-full md:h-screen h-[800px] flex overflow-hidden full-bleed-header header-bg"
      style="--header-bg: url('{{ section.settings.background_image | image_url }}');">
+     
 
 
-    <div class="flex flex-col items-start justify-center pt-55">
+    <div class="flex flex-col w-full md:items-start items-center justify-center pt-55">
+
+        <div class="z-2 flex items-center gap-2 px-15">
+            <div class="flex gap-1">
+                {% for i in (1..5) %}
+                <div class="md:w-6 md:h-6 w-4 h-4 bg-[#24b880] flex items-center justify-center">
+                    <div class="md:w-4 md:h-4 h-3.5 w-3.5 ">
+                        {% render 'star' %}
+                    </div>
+                </div>
+                {% endfor %}
+            </div>
+
+            <p class="text-white md:text-lg text-sm font-medium">
+                Excellent 4.7
+            </p>
+        </div>
 
         <div class="z-2">
-            <h1 class="text-left text-2xl text-white px-20 md:text-5xl font-bold pt-15">
+            <h1 class="text-left text-white md:px-15 text-5xl font-bold pt-10">
             {{ section.settings.page_title | newline_to_br }}
             </h1>
         </div>
-        
-        <div class="z-2">
-            <h1 class="text-left text-2xl text-white px-20 md:text-5xl font-bold pt-15">
-            {{ section.settings.page_title | newline_to_br }}
-            </h1>
-        </div>
 
         <div class="z-2">
-            <p class="text-left text-sm px-20 md:text-lg md:pt-10 pt-5 text-white">
+            <p class="text-left  md:px-15 md:text-lg text-md md:pt-10 pt-5 text-white">
             {{ section.settings.page_descripction }}
             </p>
         </div>
 
 
-        <div class="flex z-2 pointer-events-none px-20 pt-5">
+        <div class="flex z-2 pointer-events-none px-15 md:pt-5 pt-8">
             <a
             href="/"
             class="pointer-events-auto bg-white flex items-center justify-center 
-                    rounded-xl md:px-8 md:py-2 py-2 px-20 hover:opacity-70 transition-opacity"
+                    rounded-xl md:px-8 md:py-2 py-3 px-10 hover:opacity-70 transition-opacity"
             >
-            <span class="text-black md:text-lg text-xs">
+            <span class="text-black text-lg font-semibold">
                 {{section.settings.button_text}}
             </span>
             </a>
@@ -37,7 +48,7 @@
 
     </div>
 
-</div>
+</section>
 
 <style>
 .full-bleed-header{
@@ -51,10 +62,20 @@
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  display: flex;
 
   overflow: hidden;
 }
+
+.header-bg {
+  background-image: var(--header-bg);
+}
+
+@media (max-width: 768px) {
+  .header-bg {
+    background-image: url('{{ section.settings.background_image_mobile | image_url }}');
+  }
+}
+
 
 
 </style>
