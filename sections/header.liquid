@@ -9,7 +9,7 @@
   <div class="header__menu flex justify-start hover:transparent/30">
 
     {% for link in section.settings.menu.links %}
-      <div class="pr-4 flex text-lg font-normal">
+      <div class="pr-4 flex text-lg font-normal hover:opacity-70 transition-opacity">
         {{ link.title | link_to: link.url }}
       </div>
     {% endfor %}
@@ -42,6 +42,7 @@
 
       {{ 'icon-cart.svg' | inline_asset_content }}
     </a></div>
+    
   </div>
 </header>
 

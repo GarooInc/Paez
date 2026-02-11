@@ -3,25 +3,33 @@
 
 
     <div class="flex flex-col items-start justify-center pt-55">
+
         <div class="z-2">
-            <h1 class="text-left text-2xl text-black px-10 md:text-5xl font-bold pt-15">
+            <h1 class="text-left text-2xl text-white px-20 md:text-5xl font-bold pt-15">
+            {{ section.settings.page_title | newline_to_br }}
+            </h1>
+        </div>
+        
+        <div class="z-2">
+            <h1 class="text-left text-2xl text-white px-20 md:text-5xl font-bold pt-15">
             {{ section.settings.page_title | newline_to_br }}
             </h1>
         </div>
 
         <div class="z-2">
-            <p class="text-left text-sm px-10 md:text-lg md:pt-10 pt-5 text-black">
+            <p class="text-left text-sm px-20 md:text-lg md:pt-10 pt-5 text-white">
             {{ section.settings.page_descripction }}
             </p>
         </div>
 
-        <div class="flex z-2 pointer-events-none px-10 pt-5">
+
+        <div class="flex z-2 pointer-events-none px-20 pt-5">
             <a
             href="/"
             class="pointer-events-auto bg-white flex items-center justify-center 
-                    rounded-xl md:px-8 md:py-3 py-2 px-20 hover:opacity-70 transition-opacity"
+                    rounded-xl md:px-8 md:py-2 py-2 px-20 hover:opacity-70 transition-opacity"
             >
-            <span class="text-black md:text-lg text-xs font-semibold">
+            <span class="text-black md:text-lg text-xs">
                 {{section.settings.button_text}}
             </span>
             </a>
@@ -61,7 +69,12 @@
     {
       "type": "image_picker",
       "id": "background_image",
-      "label": "Background Image"
+      "label": "Background Image desktop"
+    },
+    {
+      "type": "image_picker",
+      "id": "background_image_mobile",
+      "label": "Background Image mobile"
     },
     
     {
