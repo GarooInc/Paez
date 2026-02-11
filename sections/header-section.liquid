@@ -17,7 +17,7 @@
             </div>
 
             <p class="text-white md:text-lg text-sm font-medium">
-                Excellent 4.7
+                {{ section.settings.star_text }}
             </p>
         </div>
 
@@ -51,7 +51,7 @@
     </div>
     <div class="w-full flex absolute bottom-0 md:left-15 left-10 md:py-20 py-10 gap-20 overflow-hidden">
         {% for i in (1..20) %}
-            <p class="text-white text-xl">Logo</p>
+            <p class="text-white text-xl">{{section.settings.logo_text}}</p>
         {% endfor %}
     </div>
 </section>
@@ -103,7 +103,11 @@
       "id": "background_image_mobile",
       "label": "Background Image mobile"
     },
-    
+    {
+      "type": "richtext",
+      "id": "star_text",
+      "label": "Reviews Text",
+    },
     {
       "type": "textarea",
       "id": "page_title",
@@ -121,6 +125,12 @@
       "id": "button_text",
       "label": "Button text",
       "default": "Shop now"
+    },
+    {
+      "type": "text",
+      "id": "logo_text",
+      "label": "Logo text",
+      "default": "Logo"
     }
     
   ],
