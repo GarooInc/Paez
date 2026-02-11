@@ -13,7 +13,7 @@
       "type": "header-section",
       "name": "Header Main section",
       "settings": {
-        "background_image": "shopify://shop_images/image.jpg",
+        "background_image": "shopify://shop_images/banner_aboutus.png",
         "background_image_mobile": "shopify://shop_images/PAEZ_COSMOPOLITAN_ALTA-87_1.jpg",
         "page_title": "Slide heading",
         "page_descripction": "Tell a story, explain a product detail",
