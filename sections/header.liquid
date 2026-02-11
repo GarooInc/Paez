@@ -28,7 +28,7 @@
   <!-- DESKTOP MENU -->
   <div class="hidden md:flex header__menu justify-start gap-6">
     {% for link in section.settings.menu.links %}
-      <div class="text-lg font-normal hover:opacity-70 transition-opacity">
+      <div class="text-lg font-normal hover:opacity-30 transition-opacity">
         {{ link.title | link_to: link.url }}
       </div>
     {% endfor %}
@@ -45,18 +45,18 @@
 
   <!-- ICONS -->
   <div class="flex justify-end gap-4">
-    <div class="w-5 pt-0.5 md:flex hidden">
+    <div class="w-5 pt-0.5 md:flex hidden hover:opacity-30 transition-opacity">
       <a href="/">
         {%-  render 'search' %}
       </a>
     </div>
     {% if shop.customer_accounts_enabled %}
-      <div class="w-6">
+      <div class="w-6 hover:opacity-30 transition-opacity">
         {{ 'icon-account.svg' | inline_asset_content | link_to: routes.account_url }}
       </div>
     {% endif %}
 
-    <div class="w-6">
+    <div class="w-6 hover:opacity-30 transition-opacity">
       <a href="{{ routes.cart_url }}">
         {{ 'icon-cart.svg' | inline_asset_content }}
       </a>

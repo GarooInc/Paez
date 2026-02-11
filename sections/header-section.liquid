@@ -1,4 +1,4 @@
-<section class="relative w-full md:h-screen h-[800px] flex overflow-hidden full-bleed-header header-bg"
+<section class="relative w-full md:h-screen h-[1110px] flex overflow-hidden full-bleed-header header-bg"
      style="--header-bg: url('{{ section.settings.background_image | image_url }}');">
      
 
@@ -22,7 +22,7 @@
         </div>
 
         <div class="z-2">
-            <h1 class="text-left text-white md:px-15 text-5xl font-bold pt-10">
+            <h1 class="text-left text-white md:px-15 text-5xl font-bold pt-10 ">
             {{ section.settings.page_title | newline_to_br }}
             </h1>
         </div>
@@ -46,8 +46,14 @@
             </a>
         </div>
 
-    </div>
+        
 
+    </div>
+    <div class="w-full flex absolute bottom-0 md:left-15 left-10 md:py-20 py-10 gap-20 overflow-hidden">
+        {% for i in (1..20) %}
+            <p class="text-white text-xl">Logo</p>
+        {% endfor %}
+    </div>
 </section>
 
 <style>
