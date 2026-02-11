@@ -13,10 +13,14 @@
   "sections": {
     "header": {
       "type": "header",
-      "settings": {}
+      "settings": {
+        "menu": "main-menu-2",
+        "newsletter": "Welcome to our store",
+        "header_title": "Barner"
+      }
     }
   },
   "order": [
     "header"
-  ],
+  ]
 }
