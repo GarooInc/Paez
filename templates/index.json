@@ -9,12 +9,18 @@
  */
 {
   "sections": {
-    "main": {
-      "type": "hello-world",
-      "settings": {}
+    "header_section_FWPbxH": {
+      "type": "header-section",
+      "name": "Header Main section",
+      "settings": {
+        "background_image": "shopify://shop_images/image.jpg",
+        "page_title": "Slide heading",
+        "page_descripction": "Tell a story, explain a product detail",
+        "button_text": "Shop now"
+      }
     }
   },
   "order": [
-    "main"
+    "header_section_FWPbxH"
   ]
 }
