@@ -25,7 +25,12 @@
     "main_featured_d33iNh": {
       "type": "main-featured",
       "name": "Featured Collection",
-      "settings": {}
+      "settings": {
+        "title_page": "Featured collection",
+        "women_collection": "feature_women_collection",
+        "men_collection": "featured-men",
+        "best_collection": "featured-bestsellers"
+      }
     }
   },
   "order": [
