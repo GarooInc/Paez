@@ -1,4 +1,213 @@
+<div class="full-bleed flex flex-col h-[700px]">
+    <div class="w-full flex justify-center items-start py-5 pt-10">
+        <h1 class="text-center text-3xl font-bold">
+            {{ section.settings.title_page }}
+        </h1>
+        
+    </div>
+    <div class="w-full flex justify-center items-start gap-8">
+
+        <button class="tab-item relative text-2xl font-bold pb-2"
+                data-tab="1">
+            {{ section.settings.collection_title1 }}
+            <span class="tab-underline absolute left-0 bottom-0 w-full h-[3px] bg-black transition-colors duration-300"></span>
+        </button>
+
+        <button class="tab-item relative text-2xl font-bold pb-2"
+                data-tab="2">
+            {{ section.settings.collection_title2 }}
+            <span class="tab-underline absolute left-0 bottom-0 w-full h-[3px] bg-gray-300 transition-colors duration-300"></span>
+        </button>
+
+        <button class="tab-item relative text-2xl font-bold pb-2"
+                data-tab="3">
+            {{ section.settings.collection_title3 }}
+            <span class="tab-underline absolute left-0 bottom-0 w-full h-[3px] bg-gray-300 transition-colors duration-300"></span>
+        </button>
+
+    </div>
+    <div class="w-full mt-10">
+
+    <!-- WOMEN -->
+    <div class="collection-content hidden  relative overflow-hidden" data-content="1">
+
+        <div class="sliderTrack flex transition-transform duration-500 ease-out">
+
+            {% for product in section.settings.women_collection.products limit: 8 %}
+            <div class="shrink-0 w-1/4 px-4">
+                <a href="{{ product.url }}">
+                <img
+                    src="{{ product.featured_image | image_url: width: 600 }}"
+                    class="w-full"
+                    width="{{ product.featured_media.width }}"
+                    height="{{ product.featured_media.height }}">
+                <p class="mt-2 text-sm">{{ product.title }}</p>
+                </a>
+            </div>
+            {% endfor %}
+
+        </div>
+
+        <!-- Flechas -->
+        <div class="flex justify-between absolute inset-0 items-center px-4 pointer-events-none">
+            <button class="prevBtn pointer-events-auto">‹</button>
+            <button class="nextBtn pointer-events-auto">›</button>
+        </div>
+
+    </div>
+
+
+    <!-- MEN -->
+    <div class="collection-content relative overflow-hidden" data-content="2">
+
+        <div class="sliderTrack flex transition-transform duration-500 ease-out">
+
+            {% for product in section.settings.men_collection.products limit: 8 %}
+            <div class="shrink-0 w-1/4 px-4">
+                <a href="{{ product.url }}">
+                <img src="{{ product.featured_image | image_url: width: 600 }}"
+                    class="w-full"
+                    width="{{ product.featured_media.width }}"
+                    height="{{ product.featured_media.height }}">
+                <p class="mt-2 text-sm">{{ product.title }}</p>
+                </a>
+            </div>
+            {% endfor %}
+
+        </div>
+
+        <div class="flex justify-between absolute inset-0 items-center px-4 pointer-events-none">
+            <button class="prevBtn pointer-events-auto">‹</button>
+            <button class="nextBtn pointer-events-auto">›</button>
+        </div>
+
+    </div>
+
+
+    <!-- BEST SELLERS -->
+    <div class="collection-content hidden   relative overflow-hidden" data-content="3">
+
+        <div class="sliderTrack flex transition-transform duration-500 ease-out">
+
+            {% for product in section.settings.best_collection.products limit: 8 %}
+            <div class="shrink-0 w-1/4 px-4">
+                <a href="{{ product.url }}">
+                <img src="{{ product.featured_image | image_url: width: 600 }}" 
+                    class="w-full"
+                    width="{{ product.featured_media.width }}"
+                    height="{{ product.featured_media.height }}">
+                <p class="mt-2 text-sm">{{ product.title }}</p>
+                </a>
+            </div>
+            {% endfor %}
+
+        </div>
+
+        <div class="flex justify-between absolute inset-0 items-center px-4 pointer-events-none">
+            <button class="prevBtn pointer-events-auto">‹</button>
+            <button class="nextBtn pointer-events-auto">›</button>
+        </div>
+
+    </div>
+
+
+</div>
+
+
+</div>
+
+<style>
+.full-bleed{
+  width: 100vw;
+  margin-left: calc(50% - 50vw);
+  margin-right: calc(50% - 50vw);
+}
+
+</style>
+
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+
+  const tabs = document.querySelectorAll(".tab-item");
+  const contents = document.querySelectorAll(".collection-content");
+
+  tabs.forEach(tab => {
+    tab.addEventListener("click", function () {
+
+      const tabId = this.dataset.tab;
+
+      // Cambiar underline
+      tabs.forEach(t => {
+        t.querySelector(".tab-underline")
+         .classList.remove("bg-black");
+        t.querySelector(".tab-underline")
+         .classList.add("bg-gray-300");
+      });
+
+      this.querySelector(".tab-underline")
+          .classList.remove("bg-gray-300");
+      this.querySelector(".tab-underline")
+          .classList.add("bg-black");
+
+      // Cambiar colección visible
+      contents.forEach(content => {
+        content.classList.add("hidden");
+        if (content.dataset.content === tabId) {
+          content.classList.remove("hidden");
+        }
+      });
+
+    });
+  });
+
+});
+</script>
+
+
+
+
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+
+  const sliders = document.querySelectorAll(".collection-content");
+
+  sliders.forEach(slider => {
+
+    const track = slider.querySelector(".sliderTrack");
+    const prev = slider.querySelector(".prevBtn");
+    const next = slider.querySelector(".nextBtn");
+
+    if (!track) return;
+
+    let currentIndex = 0;
+
+    function getMaxIndex() {
+      return Math.max(track.children.length - 4, 0);
+    }
+
+    function updateSlider() {
+      track.style.transform = `translateX(-${currentIndex * 25}%)`;
+    }
+
+    next?.addEventListener("click", function () {
+      currentIndex = currentIndex >= getMaxIndex() ? 0 : currentIndex + 1;
+      updateSlider();
+    });
+
+    prev?.addEventListener("click", function () {
+      currentIndex = currentIndex <= 0 ? getMaxIndex() : currentIndex - 1;
+      updateSlider();
+    });
+
+  });
+
+});
+</script>
+
+
+
 {% schema %}
+
 {
   "name": "Featured Collection",
   "settings": [
@@ -6,6 +215,26 @@
       "type": "text",
       "id": "title_page",
       "label": "Title Page Collection"
+    },
+    {
+      "type": "text",
+      "id": "collection_title1",
+      "label": "Title Women Collection",
+      "default": "Women"
+    },
+    {
+      "type": "text",
+      "id": "collection_title2",
+      "label": "Title Men Collection",
+      "default": "Men"
+
+    },
+    {
+      "type": "text",
+      "id": "collection_title3",
+      "label": "Title Bestsellers Collection",
+      "default": "Best Sellers"
+
     },
     
     {
