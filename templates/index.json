@@ -96,19 +96,6 @@
       "name": "Slide Photos 1",
       "settings": {}
     },
-    "main_featured_xPELPW": {
-      "type": "main-featured",
-      "name": "Featured Collection",
-      "settings": {
-        "title_page": "Featured collection",
-        "collection_title1": "Women",
-        "collection_title2": "Men",
-        "collection_title3": "Best Sellers",
-        "women_collection": "feature_women_collection",
-        "men_collection": "featured-men",
-        "best_collection": "featured-bestsellers"
-      }
-    },
     "main_mini_banner_UAiE3n": {
       "type": "main-mini-banner",
       "blocks": {
@@ -141,6 +128,19 @@
       ],
       "name": "Mini Banner",
       "settings": {}
+    },
+    "main_featured_xPELPW": {
+      "type": "main-featured",
+      "name": "Featured Collection",
+      "settings": {
+        "title_page": "Featured collection",
+        "collection_title1": "Women",
+        "collection_title2": "Men",
+        "collection_title3": "Best Sellers",
+        "women_collection": "feature_women_collection",
+        "men_collection": "featured-men",
+        "best_collection": "featured-bestsellers"
+      }
     }
   },
   "order": [
@@ -148,7 +148,7 @@
     "main_featured_d33iNh",
     "main_banner_tbXbaU",
     "main_slide_photos_4n3Kde",
-    "main_featured_xPELPW",
-    "main_mini_banner_UAiE3n"
+    "main_mini_banner_UAiE3n",
+    "main_featured_xPELPW"
   ]
 }
