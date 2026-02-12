@@ -47,6 +47,39 @@
         "bn_2": "Boton secundario"
       }
     },
+    "main_mini_banner_UAiE3n": {
+      "type": "main-mini-banner",
+      "blocks": {
+        "producto_3LKDKc": {
+          "type": "producto",
+          "settings": {
+            "image_banner": "shopify://shop_images/speech-bubble.png",
+            "text": "24/7 customer support"
+          }
+        },
+        "producto_TwwXEd": {
+          "type": "producto",
+          "settings": {
+            "image_banner": "shopify://shop_images/speech-bubble.png",
+            "text": "24/7 customer support"
+          }
+        },
+        "producto_K7jn3G": {
+          "type": "producto",
+          "settings": {
+            "image_banner": "shopify://shop_images/speech-bubble.png",
+            "text": "24/7 customer support"
+          }
+        }
+      },
+      "block_order": [
+        "producto_3LKDKc",
+        "producto_TwwXEd",
+        "producto_K7jn3G"
+      ],
+      "name": "Mini Banner",
+      "settings": {}
+    },
     "main_slide_photos_4n3Kde": {
       "type": "main-slide-photos",
       "blocks": {
@@ -96,39 +129,6 @@
       "name": "Slide Photos 1",
       "settings": {}
     },
-    "main_mini_banner_UAiE3n": {
-      "type": "main-mini-banner",
-      "blocks": {
-        "producto_3LKDKc": {
-          "type": "producto",
-          "settings": {
-            "image_banner": "shopify://shop_images/speech-bubble.png",
-            "text": "24/7 customer support"
-          }
-        },
-        "producto_TwwXEd": {
-          "type": "producto",
-          "settings": {
-            "image_banner": "shopify://shop_images/speech-bubble.png",
-            "text": "24/7 customer support"
-          }
-        },
-        "producto_K7jn3G": {
-          "type": "producto",
-          "settings": {
-            "image_banner": "shopify://shop_images/speech-bubble.png",
-            "text": "24/7 customer support"
-          }
-        }
-      },
-      "block_order": [
-        "producto_3LKDKc",
-        "producto_TwwXEd",
-        "producto_K7jn3G"
-      ],
-      "name": "Mini Banner",
-      "settings": {}
-    },
     "main_featured_xPELPW": {
       "type": "main-featured",
       "name": "Featured Collection",
@@ -147,8 +147,8 @@
     "header_section_FWPbxH",
     "main_featured_d33iNh",
     "main_banner_tbXbaU",
-    "main_slide_photos_4n3Kde",
     "main_mini_banner_UAiE3n",
+    "main_slide_photos_4n3Kde",
     "main_featured_xPELPW"
   ]
 }
