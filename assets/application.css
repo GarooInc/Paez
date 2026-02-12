@@ -1102,6 +1102,16 @@
       }
     }
   }
+  .sm\:h-\[600px\] {
+    @media (width >= 40rem) {
+      height: 600px;
+    }
+  }
+  .sm\:h-\[650px\] {
+    @media (width >= 40rem) {
+      height: 650px;
+    }
+  }
   .sm\:w-1\/2 {
     @media (width >= 40rem) {
       width: calc(1/2 * 100%);
@@ -1447,6 +1457,11 @@
       height: 600px;
     }
   }
+  .lg\:h-\[650px\] {
+    @media (width >= 64rem) {
+      height: 650px;
+    }
+  }
   .lg\:w-1\/3 {
     @media (width >= 64rem) {
       width: calc(1/3 * 100%);
@@ -1475,6 +1490,21 @@
   .xl\:h-\[360px\] {
     @media (width >= 80rem) {
       height: 360px;
+    }
+  }
+  .xl\:h-\[600px\] {
+    @media (width >= 80rem) {
+      height: 600px;
+    }
+  }
+  .xl\:h-\[680px\] {
+    @media (width >= 80rem) {
+      height: 680px;
+    }
+  }
+  .xl\:h-\[700px\] {
+    @media (width >= 80rem) {
+      height: 700px;
     }
   }
   .xl\:w-1\/4 {
