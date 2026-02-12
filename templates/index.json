@@ -41,10 +41,10 @@
       "settings": {
         "primary_video_desktop": "https://cdn.shopify.com/videos/c/o/v/73da246fd4f3428eb8879e0f3e36e203.mp4",
         "primary_video_mobile": "https://cdn.shopify.com/videos/c/o/v/73da246fd4f3428eb8879e0f3e36e203.mp4",
-        "title_page": "",
-        "title_subtitle": "",
-        "bn_1": "",
-        "bn_2": ""
+        "title_page": "Titulo",
+        "title_subtitle": "Texto del subtitulo",
+        "bn_1": "Boton primario",
+        "bn_2": "Boton secundario"
       }
     },
     "main_featured_xPELPW": {
