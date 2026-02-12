@@ -47,6 +47,51 @@
         "bn_2": "Boton secundario"
       }
     },
+    "main_slide_photos_4n3Kde": {
+      "type": "main-slide-photos",
+      "blocks": {
+        "producto_rXUUmx": {
+          "type": "producto",
+          "settings": {
+            "image_banner": "shopify://shop_images/PAEZ_COSMOPOLITAN_ALTA-123_1.jpg",
+            "title": "Your perfect fit",
+            "btn_text": "Shop now"
+          }
+        },
+        "producto_bhFmHk": {
+          "type": "producto",
+          "settings": {
+            "image_banner": "shopify://shop_images/PAEZ_COSMOPOLITAN_ALTA-86_1.jpg",
+            "title": "Your perfect fit",
+            "btn_text": "Shop now"
+          }
+        },
+        "producto_p47Fmx": {
+          "type": "producto",
+          "settings": {
+            "image_banner": "shopify://shop_images/PAEZ_COSMOPOLITAN_ALTA-150.jpg",
+            "title": "Your perfect fit",
+            "btn_text": "Shop now"
+          }
+        },
+        "producto_YgHcKE": {
+          "type": "producto",
+          "settings": {
+            "image_banner": "shopify://shop_images/PAEZ_COSMOPOLITAN_ALTA-144_2.jpg",
+            "title": "Your perfect fit",
+            "btn_text": "Shop now"
+          }
+        }
+      },
+      "block_order": [
+        "producto_rXUUmx",
+        "producto_bhFmHk",
+        "producto_p47Fmx",
+        "producto_YgHcKE"
+      ],
+      "name": "Slide Photos 1",
+      "settings": {}
+    },
     "main_featured_xPELPW": {
       "type": "main-featured",
       "name": "Featured Collection",
@@ -65,6 +110,7 @@
     "header_section_FWPbxH",
     "main_featured_d33iNh",
     "main_banner_tbXbaU",
+    "main_slide_photos_4n3Kde",
     "main_featured_xPELPW"
   ]
 }
