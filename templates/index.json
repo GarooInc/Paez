@@ -54,21 +54,21 @@
           "type": "producto",
           "settings": {
             "image_banner": "shopify://shop_images/speech-bubble.png",
-            "text": "24/7 customer support"
+            "text": "Free Shipping on all orders over 100€"
           }
         },
         "producto_TwwXEd": {
           "type": "producto",
           "settings": {
             "image_banner": "shopify://shop_images/speech-bubble.png",
-            "text": "24/7 customer support"
+            "text": "Get 10% off on all purchases over 150€"
           }
         },
         "producto_K7jn3G": {
           "type": "producto",
           "settings": {
             "image_banner": "shopify://shop_images/speech-bubble.png",
-            "text": "24/7 customer support"
+            "text": "30-day return period."
           }
         }
       },
