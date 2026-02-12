@@ -55,7 +55,8 @@
           "settings": {
             "image_banner": "shopify://shop_images/PAEZ_COSMOPOLITAN_ALTA-123_1.jpg",
             "title": "Your perfect fit",
-            "btn_text": "Shop now"
+            "btn_text": "Shop now",
+            "url_slide": ""
           }
         },
         "producto_bhFmHk": {
@@ -63,7 +64,8 @@
           "settings": {
             "image_banner": "shopify://shop_images/PAEZ_COSMOPOLITAN_ALTA-86_1.jpg",
             "title": "Your perfect fit",
-            "btn_text": "Shop now"
+            "btn_text": "Shop now",
+            "url_slide": ""
           }
         },
         "producto_p47Fmx": {
@@ -71,7 +73,8 @@
           "settings": {
             "image_banner": "shopify://shop_images/PAEZ_COSMOPOLITAN_ALTA-150.jpg",
             "title": "Your perfect fit",
-            "btn_text": "Shop now"
+            "btn_text": "Shop now",
+            "url_slide": ""
           }
         },
         "producto_YgHcKE": {
@@ -79,7 +82,8 @@
           "settings": {
             "image_banner": "shopify://shop_images/PAEZ_COSMOPOLITAN_ALTA-144_2.jpg",
             "title": "Your perfect fit",
-            "btn_text": "Shop now"
+            "btn_text": "Shop now",
+            "url_slide": ""
           }
         }
       },
@@ -104,6 +108,37 @@
         "men_collection": "featured-men",
         "best_collection": "featured-bestsellers"
       }
+    },
+    "main_mini_banner_UAiE3n": {
+      "type": "main-mini-banner",
+      "blocks": {
+        "producto_3LKDKc": {
+          "type": "producto",
+          "settings": {
+            "image_banner": "shopify://shop_images/speech-bubble.png",
+            "text": "24/7 customer support"
+          }
+        },
+        "producto_9TqcHU": {
+          "type": "producto",
+          "settings": {
+            "text": "Text"
+          }
+        },
+        "producto_Cfdcj4": {
+          "type": "producto",
+          "settings": {
+            "text": "Text"
+          }
+        }
+      },
+      "block_order": [
+        "producto_3LKDKc",
+        "producto_9TqcHU",
+        "producto_Cfdcj4"
+      ],
+      "name": "Mini Banner",
+      "settings": {}
     }
   },
   "order": [
@@ -111,6 +146,7 @@
     "main_featured_d33iNh",
     "main_banner_tbXbaU",
     "main_slide_photos_4n3Kde",
-    "main_featured_xPELPW"
+    "main_featured_xPELPW",
+    "main_mini_banner_UAiE3n"
   ]
 }
