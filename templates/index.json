@@ -119,23 +119,25 @@
             "text": "24/7 customer support"
           }
         },
-        "producto_9TqcHU": {
+        "producto_TwwXEd": {
           "type": "producto",
           "settings": {
-            "text": "Text"
+            "image_banner": "shopify://shop_images/speech-bubble.png",
+            "text": "24/7 customer support"
           }
         },
-        "producto_Cfdcj4": {
+        "producto_K7jn3G": {
           "type": "producto",
           "settings": {
-            "text": "Text"
+            "image_banner": "shopify://shop_images/speech-bubble.png",
+            "text": "24/7 customer support"
           }
         }
       },
       "block_order": [
         "producto_3LKDKc",
-        "producto_9TqcHU",
-        "producto_Cfdcj4"
+        "producto_TwwXEd",
+        "producto_K7jn3G"
       ],
       "name": "Mini Banner",
       "settings": {}
