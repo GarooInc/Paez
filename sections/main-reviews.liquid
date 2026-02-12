@@ -135,7 +135,14 @@ document.addEventListener("DOMContentLoaded", function () {
 
 {
   "name": "Slide Photos 1",
-  "settings": [  ],
+  "settings": [ 
+    {
+        "type": "text",
+        "id": "title",
+        "label": "Title",
+        "default": "Loved by everyone, everywhere. Don't miss out"
+    }
+   ],
   "blocks": [
     {
       "type": "producto",
@@ -147,22 +154,26 @@ document.addEventListener("DOMContentLoaded", function () {
           "label": "Image"
         },
         {
-          "type": "text",
-          "id": "title",
-          "label": "Title",
-          "default":"Your perfect fit"
+          "type": "richtext",
+          "id": "comment",
+          "label": "Review",
         },
         {
           "type": "text",
-          "id": "btn_text",
-          "label": "Button text", 
+          "id": "user",
+          "label": "User name", 
           "default": "Shop now"
         },
         {
-          "type": "url",
-          "id": "url_slide",
-          "label": "URL", 
-        },
+            "type": "range",
+            "id": "stars",
+            "label": "Number of stars",
+            "min": 1,
+            "max": 5,
+            "step": 1,
+            "default": 5
+        }
+
         
       ]
     }
