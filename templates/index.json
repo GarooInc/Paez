@@ -139,6 +139,13 @@
       "name": "Slide Photos 1",
       "settings": {}
     },
+    "main_reviews_ybx7tL": {
+      "type": "main-reviews",
+      "name": "Reviews",
+      "settings": {
+        "title": "Loved by everyone, everywhere. Don't miss out"
+      }
+    },
     "main_featured_xPELPW": {
       "type": "main-featured",
       "name": "Featured Collection",
@@ -159,6 +166,7 @@
     "main_banner_tbXbaU",
     "main_mini_banner_UAiE3n",
     "main_slide_photos_4n3Kde",
+    "main_reviews_ybx7tL",
     "main_featured_xPELPW"
   ]
 }
