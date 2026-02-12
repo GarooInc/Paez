@@ -336,6 +336,9 @@
   .table {
     display: table;
   }
+  .aspect-\[3\/4\] {
+    aspect-ratio: 3/4;
+  }
   .size-6 {
     width: calc(var(--spacing) * 6);
     height: calc(var(--spacing) * 6);
@@ -620,6 +623,12 @@
   .-translate-y-1\/2 {
     --tw-translate-y: calc(calc(1/2 * 100%) * -1);
     translate: var(--tw-translate-x) var(--tw-translate-y);
+  }
+  .scale-110 {
+    --tw-scale-x: 110%;
+    --tw-scale-y: 110%;
+    --tw-scale-z: 110%;
+    scale: var(--tw-scale-x) var(--tw-scale-y);
   }
   .scale-125 {
     --tw-scale-x: 125%;
@@ -1615,6 +1624,13 @@
   .xl\:w-1\/4 {
     @media (width >= 80rem) {
       width: calc(1/4 * 100%);
+    }
+  }
+  .lg\:xl\:h-\[650px\] {
+    @media (width >= 64rem) {
+      @media (width >= 80rem) {
+        height: 650px;
+      }
     }
   }
 }

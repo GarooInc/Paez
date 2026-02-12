@@ -1,5 +1,5 @@
 
-<div class="full-bleed flex flex-col h-[400px] md:h-[500px] xl:h-[650px] py-2">
+<div class="full-bleed flex flex-col h-[400px] md:h-[500px] lg:h-[600px] xl:h-[700px] py-2">
     
         <div class="collection-content-photos relative overflow-hidden px-10" >
 
@@ -11,17 +11,20 @@
                     <a href="{{ block.settings.url_slide }}" class="block relative">
 
                         <!-- Imagen -->
-                        <div class="w-full h-[400px] md:h-[500px] xl:h-[650px]
-                                    overflow-hidden flex items-start justify-center">
-                                <img
-                                src="{{ block.settings.image_banner | image_url: width: 600 }}"
-                                class="w-full h-full object-cover"
+                        <div class="w-full h-[400px] md:h-[500px] lg:h-[600px] xl:h-[700px] 
+                                    overflow-hidden relative">
+
+                            <img
+                                src="{{ block.settings.image_banner | image_url: width: 1200 }}"
+                                class="absolute inset-0 min-w-full min-h-full object-cover scale-110"
                                 width="{{ block.settings.image_banner.width }}"
                                 height="{{ block.settings.image_banner.height }}">
+
                         </div>
 
+
                         <!-- Overlay -->
-                        <div class="absolute inset-0 flex flex-col h-[400px] md:h-[500px] xl:h-[620px] items-start justify-end py-10 pl-10 z-0 text-center">
+                        <div class="absolute inset-0 flex flex-col h-[400px] md:h-[500px] lg:h-[600px] xl:h-[700px] items-start justify-end py-10 pl-10 z-0 text-center">
 
                             <h1 class="text-white py-5 text-sm uppercase z-3">
                                 {{ block.settings.title }}
