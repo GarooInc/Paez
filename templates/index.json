@@ -86,7 +86,7 @@
         "producto_rXUUmx": {
           "type": "producto",
           "settings": {
-            "image_banner": "shopify://shop_images/PAEZ_COSMOPOLITAN_ALTA-123_1.jpg",
+            "image_banner": "shopify://shop_images/IMG_9046.jpg",
             "title": "Your perfect fit",
             "btn_text": "Shop now",
             "url_slide": ""
@@ -95,7 +95,7 @@
         "producto_bhFmHk": {
           "type": "producto",
           "settings": {
-            "image_banner": "shopify://shop_images/PAEZ_COSMOPOLITAN_ALTA-86_1.jpg",
+            "image_banner": "shopify://shop_images/image3_c586d119-625d-47be-9731-fc89923cb9e6.jpg",
             "title": "Your perfect fit",
             "btn_text": "Shop now",
             "url_slide": ""
@@ -104,7 +104,7 @@
         "producto_p47Fmx": {
           "type": "producto",
           "settings": {
-            "image_banner": "shopify://shop_images/PAEZ_COSMOPOLITAN_ALTA-150.jpg",
+            "image_banner": "shopify://shop_images/WhatsApp_Image_2026-01-05_at_10.29.12.jpg",
             "title": "Your perfect fit",
             "btn_text": "Shop now",
             "url_slide": ""
@@ -113,7 +113,16 @@
         "producto_YgHcKE": {
           "type": "producto",
           "settings": {
-            "image_banner": "shopify://shop_images/PAEZ_COSMOPOLITAN_ALTA-144_2.jpg",
+            "image_banner": "shopify://shop_images/WhatsApp_Image_2025-12-02_at_23.33.21.jpg",
+            "title": "Your perfect fit",
+            "btn_text": "Shop now",
+            "url_slide": ""
+          }
+        },
+        "producto_p8fpPa": {
+          "type": "producto",
+          "settings": {
+            "image_banner": "shopify://shop_images/WhatsApp_Image_2026-01-06_at_18.20.14.jpg",
             "title": "Your perfect fit",
             "btn_text": "Shop now",
             "url_slide": ""
@@ -124,7 +133,8 @@
         "producto_rXUUmx",
         "producto_bhFmHk",
         "producto_p47Fmx",
-        "producto_YgHcKE"
+        "producto_YgHcKE",
+        "producto_p8fpPa"
       ],
       "name": "Slide Photos 1",
       "settings": {}
