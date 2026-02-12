@@ -1,0 +1,163 @@
+
+<div class="full-bleed flex flex-col md:h-[700px] h-[600px]">
+    
+
+    <div class="w-full mt-10 ">
+
+        <!-- WOMEN -->
+    
+        <div class="collection-content relative overflow-hidden top-10 md:px-20 px-15" data-content="1">
+
+            <div class="sliderTrack flex transition-transform duration-500 ease-out">
+                {% comment %} <div class="shrink-0 md:block hidden sm:w-1/2 md:w-1/3 lg:w-1/4 w-[300px] bg-gray-200 rounded-2xl">
+                    
+                </div> {% endcomment %}
+                {% for product in section.settings.women_collection.products %}
+                <div class="shrink-0 sm:w-1/2 lg:w-1/3 xl:w-1/4 w-[300px] px-4 ">
+                    <a href="{{ product.url }}">
+                        <div class="w-full xl:h-[360px] lg:h-[300px] md:h-[290px] h-[260px] bg-white rounded-2xl
+                            overflow-hidden flex items-center justify-center">
+                        
+                            <img
+                                src="{{ product.featured_image | image_url: width: 600 }}"
+                                class="w-full h-auto object-cover "
+
+                                width="{{ product.featured_media.width }}"
+                                height="{{ product.featured_media.height }}">
+                        </div>
+                    </a>
+                <p class="pt-5 text-md font-bold">{{ product.title }}</p>
+                <p class="pt-2 text-sm font-bold">{{ product.price | money }}</p>
+                <a href="{{ product.url }}">
+                    <p class="pt-1 text-sm hover:opacity-30 transition-opacity">Learn more</p>
+                </a>
+
+                </div>
+                {% endfor %}
+
+            </div>
+
+            <!-- Flechas -->
+            <div class="flex justify-between absolute inset-0 items-center px-4 pointer-events-none z-20">
+                <button class="prevBtn pointer-events-auto">‹</button>
+                <button class="nextBtn pointer-events-auto">›</button>
+            </div>
+
+        </div>
+
+    </div>
+</div>
+
+
+<style>
+.full-bleed{
+  width: 100vw;
+  margin-left: calc(50% - 50vw);
+  margin-right: calc(50% - 50vw);
+}
+
+</style>
+
+
+
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+
+  const sliders = document.querySelectorAll(".collection-content");
+
+  sliders.forEach(slider => {
+
+    const track = slider.querySelector(".sliderTrack");
+    const prev = slider.querySelector(".prevBtn");
+    const next = slider.querySelector(".nextBtn");
+
+    if (!track) return;
+
+    let currentIndex = 0;
+
+    function getSlideWidth() {
+      const firstSlide = track.children[0];
+      if (!firstSlide) return 0;
+      return firstSlide.offsetWidth;
+    }
+
+    function getVisibleCount() {
+      const sliderWidth = slider.offsetWidth;
+      const slideWidth = getSlideWidth();
+      return Math.floor(sliderWidth / slideWidth);
+    }
+
+    function getMaxIndex() {
+      return Math.max(track.children.length - getVisibleCount(), 0);
+    }
+
+    function updateSlider() {
+      const slideWidth = getSlideWidth();
+      track.style.transform =
+        `translateX(-${currentIndex * slideWidth}px)`;
+    }
+
+    next?.addEventListener("click", function () {
+      currentIndex =
+        currentIndex >= getMaxIndex() ? 0 : currentIndex + 1;
+      updateSlider();
+    });
+
+    prev?.addEventListener("click", function () {
+      currentIndex =
+        currentIndex <= 0 ? getMaxIndex() : currentIndex - 1;
+      updateSlider();
+    });
+
+    window.addEventListener("resize", function () {
+      currentIndex = 0;
+      updateSlider();
+    });
+
+  });
+
+});
+</script>
+
+
+
+
+{% schema %}
+
+{
+  "name": "Slide Photos 1",
+  "settings": [  ],
+  "blocks": [
+    {
+      "type": "producto",
+      "name": "Producto",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "image_banner",
+          "label": "Image"
+        },
+        {
+          "type": "text",
+          "id": "title",
+          "label": "Title",
+          "default":"Your perfect fit"
+        },
+        {
+          "type": "text",
+          "id": "btn_text",
+          "label": "Button text", 
+          "default": "Shop now"
+        },
+        
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Featured Collection",
+      "category": "main"
+    }
+  ]
+}
+{% endschema %}

@@ -1,4 +1,5 @@
-<section class="relative w-full md:h-screen h-[1110px] flex overflow-hidden full-bleed-header header-bg"
+<section class="relative w-full md:h-screen h-[1110px] 
+    flex overflow-hidden full-bleed-header header-bg"
      style="--header-bg: url('{{ section.settings.background_image | image_url }}');">
      
 
@@ -16,9 +17,9 @@
                 {% endfor %}
             </div>
 
-            <p class="text-white md:text-lg text-sm font-medium">
+            <div class="text-white md:text-lg text-sm font-medium">
                 {{ section.settings.star_text }}
-            </p>
+            </div>
         </div>
 
         <div class="z-2">
@@ -57,6 +58,7 @@
 </section>
 
 <style>
+
 .full-bleed-header{
   width: 100vw;
   margin-left: calc(50% - 50vw);
