@@ -1,8 +1,61 @@
+<section class="md:h-[600px] h-[700px]">
+
+    <div class="absolute inset-0 w-full h-full overflow-hidden z-0">
+        {% assign mp4_url = section.settings.primary_video_mobile %}
+        {% assign youtube = false %}
+        {% assign mp4 = false %}
+
+        {% if mp4_url contains "youtube.com" or mp4_url contains "youtu.be" %}
+        {% assign youtube = true %}
+        {% elsif mp4_url contains ".mp4" %}
+        {% assign mp4 = true %}
+        {% endif %}
+
+        {% if mp4 %}
+            <video 
+            class="absolute top-1/2 left-1/2 min-w-full min-h-full w-auto h-auto object-cover 
+                    -translate-x-1/2 -translate-y-1/2 pointer-events-none"
+            autoplay 
+            loop 
+            muted 
+            playsinline
+            >
+            <source src="{{ mp4_url }}" type="video/mp4">
+            </video>
+        {% endif %}
+
+        {% if youtube %}
+            <iframe 
+            class="absolute top-1/2 left-1/2 w-[180%] h-[180%] -translate-x-1/2 -translate-y-1/2 pointer-events-none"
+            src="https://www.youtube.com/embed/{{ mp4_url | split: 'v=' | last }}?controls=0&mute=1&autoplay=1&loop=1&playlist={{ mp4_url | split: 'v=' | last }}"
+            frameborder="0"
+            allow="autoplay; encrypted-media"
+            ></iframe>
+        {% endif %}
+
+    </div>
+</section>
+
+
+
+
+
+
 {% schema %}
 
 {
   "name": "Main Banner",
   "settings": [
+    {
+      "type": "url",
+      "id": "primary_video_desktop",
+      "label": "Video URL Desktop"
+    },
+    {
+      "type": "url",
+      "id": "primary_video_mobile",
+      "label": "Video URL Mobile"
+    },
     {
       "type": "text",
       "id": "title_page",
@@ -23,6 +76,7 @@
       "id": "bn_2",
       "label": "Text button 2"
     },
+
     
     
   ],
