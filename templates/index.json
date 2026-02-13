@@ -251,6 +251,7 @@
           "type": "feature",
           "settings": {
             "feature_name": "INSANE COMFORTABLE",
+            "feature_image": "shopify://shop_images/speech-bubble.png",
             "title": "INSANE COMFORTABLE",
             "subtitle": "",
             "description": "<p>Our products easily adjust to your feet, and feel extra comfortable due to our padded memory-foam insole. You’ll feel like walking on clouds.</p>",
@@ -261,6 +262,7 @@
           "type": "feature",
           "settings": {
             "feature_name": "WE’RE CRUELTY-FREE",
+            "feature_image": "shopify://shop_images/speech-bubble.png",
             "title": "WE’RE CRUELTY-FREE",
             "subtitle": "",
             "description": "<p>Our products are made from recycled textiles and micro-fibers components, from suppliers that work with the development of responsible production of footwear</p>",
@@ -271,6 +273,7 @@
           "type": "feature",
           "settings": {
             "feature_name": "IT’S VERSATILE",
+            "feature_image": "shopify://shop_images/speech-bubble.png",
             "title": "IT’S VERSATILE",
             "subtitle": "",
             "description": "<p>Over these past years, we’re on a path of developing new product ranges that can take you anywhere. From work days, to lunch dates, to end of the day unexpected moments. Your PAEZ take you anywhere! </p>",
@@ -281,6 +284,7 @@
           "type": "feature",
           "settings": {
             "feature_name": "WE’RE ABOUT FUN!",
+            "feature_image": "shopify://shop_images/speech-bubble.png",
             "title": "WE’RE ABOUT FUN!",
             "subtitle": "Subtitle",
             "description": "<p>Summer is out motto for everything we do. And because of that, we’re adventurous, colourful, fun, and believe in the power of community. At PAEZ we’re the essential for any occasion.</p>",
