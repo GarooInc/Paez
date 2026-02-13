@@ -24,24 +24,44 @@
     },
     "main_featured_d33iNh": {
       "type": "main-featured",
+      "blocks": {
+        "collection_tab_e4HBGL": {
+          "type": "collection_tab",
+          "settings": {
+            "collection_title": "Women",
+            "collection": "feature_women_collection",
+            "image": "shopify://shop_images/image3_1_d6e130d1-7dba-472b-bef6-d53e229296ed.jpg",
+            "history": "Tell a story...",
+            "btn_text": "View all"
+          }
+        },
+        "collection_tab_GEJ3Cd": {
+          "type": "collection_tab",
+          "settings": {
+            "collection_title": "Collection",
+            "collection": "",
+            "history": "",
+            "btn_text": ""
+          }
+        },
+        "collection_tab_TbydwJ": {
+          "type": "collection_tab",
+          "settings": {
+            "collection_title": "Collection",
+            "collection": "",
+            "history": "",
+            "btn_text": ""
+          }
+        }
+      },
+      "block_order": [
+        "collection_tab_e4HBGL",
+        "collection_tab_GEJ3Cd",
+        "collection_tab_TbydwJ"
+      ],
       "name": "Featured Collection",
       "settings": {
-        "title_page": "Featured collection",
-        "collection_title1": "Women",
-        "women_collection": "feature_women_collection",
-        "image_1": "shopify://shop_images/image3_1_d6e130d1-7dba-472b-bef6-d53e229296ed.jpg",
-        "history_1": "Tell a story...",
-        "btn1": "View all",
-        "collection_title2": "Men",
-        "men_collection": "featured-men",
-        "image_2": "shopify://shop_images/3_5116e13f-b09a-4f7d-9988-186bf56eff32.png",
-        "history_2": "Tell a story...",
-        "btn2": "View all",
-        "collection_title3": "Best Sellers",
-        "best_collection": "featured-bestsellers",
-        "image_3": "shopify://shop_images/PAEZ_COSMOPOLITAN_ALTA-86_1.jpg",
-        "history_3": "Tell a story",
-        "btn3": "View all"
+        "title_page": "Featured collection"
       }
     },
     "main_banner_tbXbaU": {
@@ -218,19 +238,7 @@
       "type": "main-featured",
       "name": "Featured Collection",
       "settings": {
-        "title_page": "Featured collection",
-        "collection_title1": "Women",
-        "women_collection": "feature_women_collection",
-        "history_1": "",
-        "btn1": "",
-        "collection_title2": "Men",
-        "men_collection": "featured-men",
-        "history_2": "",
-        "btn2": "",
-        "collection_title3": "Best Sellers",
-        "best_collection": "featured-bestsellers",
-        "history_3": "",
-        "btn3": ""
+        "title_page": "Featured collection"
       }
     },
     "main_features_slide_gjNCkD": {
