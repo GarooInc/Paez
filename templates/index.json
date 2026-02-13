@@ -212,6 +212,13 @@
         "men_collection": "featured-men",
         "best_collection": "featured-bestsellers"
       }
+    },
+    "main_features_slide_gjNCkD": {
+      "type": "main-features-slide",
+      "name": "Feautures",
+      "settings": {
+        "title": "Loved by everyone, everywhere. Don't miss out"
+      }
     }
   },
   "order": [
@@ -221,6 +228,7 @@
     "main_mini_banner_UAiE3n",
     "main_slide_photos_4n3Kde",
     "main_reviews_ybx7tL",
-    "main_featured_xPELPW"
+    "main_featured_xPELPW",
+    "main_features_slide_gjNCkD"
   ]
 }
