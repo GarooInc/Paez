@@ -306,28 +306,40 @@
           "type": "Photo",
           "settings": {
             "title": "",
-            "image_banner": "shopify://shop_images/3_tulipas.jpg"
+            "image_banner": "shopify://shop_images/3_tulipas.jpg",
+            "url_slide": ""
           }
         },
         "photo_LJBb9H": {
           "type": "Photo",
           "settings": {
             "title": "",
-            "image_banner": "shopify://shop_images/WhatsApp_Image_2025-11-25_at_13.18.36_2.jpg"
+            "image_banner": "shopify://shop_images/WhatsApp_Image_2025-11-25_at_13.18.36_2.jpg",
+            "url_slide": ""
           }
         },
         "photo_aFyFcJ": {
           "type": "Photo",
           "settings": {
             "title": "",
-            "image_banner": "shopify://shop_images/image3_1_d6e130d1-7dba-472b-bef6-d53e229296ed.jpg"
+            "image_banner": "shopify://shop_images/image3_1_d6e130d1-7dba-472b-bef6-d53e229296ed.jpg",
+            "url_slide": ""
           }
         },
         "photo_Pz8iXC": {
           "type": "Photo",
           "settings": {
             "title": "",
-            "image_banner": "shopify://shop_images/WhatsApp_Image_2025-12-03_at_07.47.43.jpg"
+            "image_banner": "shopify://shop_images/WhatsApp_Image_2025-12-03_at_07.47.43.jpg",
+            "url_slide": ""
+          }
+        },
+        "photo_dFrfpG": {
+          "type": "Photo",
+          "settings": {
+            "title": "",
+            "image_banner": "shopify://shop_images/3_tulipas.jpg",
+            "url_slide": ""
           }
         }
       },
@@ -335,7 +347,8 @@
         "photo_FY63ee",
         "photo_LJBb9H",
         "photo_aFyFcJ",
-        "photo_Pz8iXC"
+        "photo_Pz8iXC",
+        "photo_dFrfpG"
       ],
       "name": "Slide photos 2",
       "settings": {
