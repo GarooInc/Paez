@@ -1,57 +1,217 @@
-<footer>
-  <div class="footer__copyright">
-    &copy;
-    {{ 'now' | date: '%Y' }}
-    {{ shop.name | link_to: routes.root_url }}, {{ powered_by_link }}
-  </div>
+<div class="footer">
+  <div class="container">
+    <div class="footer-content">
+      <div class="newsletter">
+        <div class="newsletter-content">
+          <h3>{{ section.settings.newsletter_title }}</h3>
+          <div class="klaviyo-form-SpjxWi"></div>
+        </div>
+        <div class="list-icon">
+          <ul class="list-inline list-unstyled mb-0">
+            {% if settings.icon_sc_fv1_1 != blank %}
+              <li class="list-inline-item">
+                <a href="{{settings.url_sc_fv1_1}}" title="" target="_blank" class="social-item"
+                  ><i class="{{settings.icon_sc_fv1_1}}"></i
+                ></a>
+              </li>
+            {% endif %}
+            {% if settings.icon_sc_fv1_2 != blank %}
+              <li class="list-inline-item">
+                <a href="{{settings.url_sc_fv1_2}}" title="" target="_blank" class="social-item"
+                  ><i class="{{settings.icon_sc_fv1_2}}"></i
+                ></a>
+              </li>
+            {% endif %}
+            {% if settings.icon_sc_fv1_3 != blank %}
+              <li class="list-inline-item">
+                <a href="{{settings.url_sc_fv1_3}}" title="" target="_blank" class="social-item"
+                  ><i class="{{settings.icon_sc_fv1_3}}"></i
+                ></a>
+              </li>
+            {% endif %}
+            {% if settings.icon_sc_fv1_4 != blank %}
+              <li class="list-inline-item">
+                <a href="{{settings.url_sc_fv1_4}}" title="" target="_blank" class="social-item"
+                  ><i class="{{settings.icon_sc_fv1_4}}"></i
+                ></a>
+              </li>
+            {% endif %}
+            {% if settings.tiktok_icon != blank %}
+              <li class="list-inline-item">
+                <a href="{{settings.tiktok_url}}" title="" target="_blank" class="social-item">
+                  {{- settings.tiktok_icon -}}
+                </a>
+              </li>
+            {% endif %}
+          </ul>
+        </div>
 
-  <div class="footer__links">
-    {% for link in section.settings.menu.links %}
-      {{ link.title | link_to: link.url }}
-    {% endfor %}
-  </div>
+      </div>
+      <div class="link-wrapper">
+        <div class="info_footer">
+          <div class="title_footer" onclick="toggleDropdown('dropdown_1')">
+            <h4 class="mb-0 title_border">
+              {{ section.settings.titlecolum_1 }}
+            </h4>
+          </div>
+          <ul class="list-unstyled mb-0 dropdown_menu" id="dropdown_1" >
+            {% for link in linklists[section.settings.menu_1].links %}
+              <li>
+                <a href="{{link.url}}" title="{{link.title}}">{{ link.title }}</a>
+              </li>
+            {% endfor %}
+          </ul>
+        </div>
 
-  <div class="footer__payment">
-    {% if section.settings.show_payment_icons %}
-      {% for type in shop.enabled_payment_types %}
-        {{ type | payment_type_svg_tag }}
-      {% endfor %}
+         <div class="info_footer">
+          <div class="title_footer" onclick="toggleDropdown('dropdown_2')">
+            <h4 class="mb-0 title_border">
+              {{ section.settings.titlecolum_2 }}
+            </h4>
+          </div>
+          <ul class="list-unstyled mb-0 dropdown_menu" id="dropdown_2" >
+            {% for link in linklists[section.settings.menu_2].links %}
+              <li>
+                <a href="{{link.url}}" title="{{link.title}}">{{ link.title }}</a>
+              </li>
+            {% endfor %}
+          </ul>
+        </div>
+
+       <div class="info_footer">
+          <div class="title_footer" onclick="toggleDropdown('dropdown_3')">
+            <h4 class="mb-0 title_border">
+              {{ section.settings.titlecolum_3 }}
+            </h4>
+          </div>
+          <ul class="list-unstyled mb-0 dropdown_menu" id="dropdown_3" >
+            {% for link in linklists[section.settings.menu_3].links %}
+              <li>
+                <a href="{{link.url}}" title="{{link.title}}">{{ link.title }}</a>
+              </li>
+            {% endfor %}
+          </ul>
+        </div>
+      </div>
+</div>
+<div class="loca-form">
+{% if localization.available_countries.size > 1 or localization.available_languages.size > 1 %}
+  {% form 'localization' %}
+    {% if localization.available_countries.size > 1 %}
+      <label class="locale-selectors__label" for="country_code">
+        <span>Country/region</span>
+
+        <select id="country_code" class="locale-selectors__selector" name="country_code">
+          {% for country in localization.available_countries %}
+            <option value="{{ country.iso_code }}" {% if country.iso_code == localization.country.iso_code %}selected{% endif %}>
+              {{ country.name }} &bull; ({{ country.currency.iso_code }} &bull; {{ country.currency.symbol }})
+            </option>
+          {% endfor %}
+        </select>
+      </label>
     {% endif %}
-  </div>
-</footer>
 
-{% stylesheet %}
-  footer {
-    display: flex;
-    justify-content: space-between;
-    margin-top: 2rem;
-  }
-  footer a {
-    text-decoration: none;
-    color: var(--color-foreground);
-  }
-  footer .footer__links,
-  footer .footer__payment {
-    display: flex;
-    gap: 1rem;
-  }
-{% endstylesheet %}
+    {% if localization.available_languages.size > 1 %}
+      <label class="locale-selectors__label" for="locale_code">
+        <span>Language</span>
 
+        <select id="locale_code" class="locale-selectors__selector" name="locale_code">
+          {% for language in localization.available_languages %}
+            <option value="{{ language.iso_code }}" {% if language.iso_code == localization.language.iso_code %}selected{% endif %}>
+              {{ language.endonym_name | capitalize }}
+            </option>
+          {% endfor %}
+        </select>
+      </label>
+    {% endif %}
+  {% endform %}
+{% endif %}
+</div>
+<div class="copyright">{{ section.settings.copyright }}</div>
+<script>
+  const localizationForm = document.querySelector('#localization_form')
+  const selects = localizationForm.querySelectorAll('select')
+
+  selects.forEach(select => {
+    select.addEventListener('change', e => {
+      localizationForm.submit()
+    })
+  })
+</script>
 {% schema %}
 {
-  "name": "t:general.footer",
+  "name": "Footer",
+  "class": "index-section",
   "settings": [
     {
-      "type": "link_list",
-      "id": "menu",
-      "label": "t:labels.menu"
-    },
+        "type": "text",
+        "id": "newsletter_title",
+        "label": "Newsletter Heading"
+      },
     {
-      "type": "checkbox",
-      "id": "show_payment_icons",
-      "label": "t:labels.show_payment_icons",
-      "default": true
-    }
+        "type": "richtext",
+        "id": "newsletter_secription",
+        "label": "Newsletter Subheading"
+      },
+     {
+        "type": "richtext",
+        "id": "check_text",
+        "label": "Privacy Policy"
+      },
+    {
+        "type": "text",
+        "id": "contact_heading",
+        "label": "Heading"
+      },
+    {
+        "type": "text",
+        "id": "titlecolum_1",
+        "label": "Heading Colum 1",
+        "default": "HELP & INFORMATION"
+      },
+    {
+        "type": "link_list",
+        "id": "menu_1",
+        "label": "Select Menu colum 1"
+      },
+      {
+        "type": "text",
+        "id": "titlecolum_2",
+        "label": "Heading Colum 2",
+        "default": "About us"
+      },
+      {
+        "type": "link_list",
+        "id": "menu_2",
+        "label": "Select Menu colum 2"
+      },
+      {
+        "type": "text",
+        "id": "titlecolum_3",
+        "label": "Heading Colum 3",
+        "default": "Categories"
+      },
+      {
+        "type": "link_list",
+        "id": "menu_3",
+        "label": "Select Menu colum 3"
+      },
+      {
+        "type": "text",
+        "id": "titlecolum_4",
+        "label": "Heading Colum 4",
+        "default": "The good stuff in your inbox"
+      },
+      {
+        "type": "link_list",
+        "id": "menu_4",
+        "label": "Select Menu colum 4"
+      },
+      {
+        "type": "richtext",
+        "id": "copyright",
+        "label": "Copyright text"
+      }
   ]
 }
 {% endschema %}

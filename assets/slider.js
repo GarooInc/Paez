@@ -34,14 +34,13 @@ function initSlider(sliderSelector, options = {}) {
 
     if (!track) return;
 
-    // Solo buscar slides si spotlight está activado
     const slides = config.enableSpotlight 
       ? slider.querySelectorAll(config.slideSelector) 
       : null;
 
     let currentIndex = 0;
-    
-    // Variables para touch/swipe
+
+    // Variables para swipe
     let touchStartX = 0;
     let touchEndX = 0;
     let isDragging = false;
@@ -78,22 +77,9 @@ function initSlider(sliderSelector, options = {}) {
       });
     }
 
-    function updateSlider(smooth = true) {
+    function updateSlider() {
       const slideWidth = getSlideWidth();
-      
-      // Temporalmente deshabilitar la transición si no queremos animación
-      if (!smooth) {
-        track.style.transition = 'none';
-      }
-      
       track.style.transform = `translateX(-${currentIndex * slideWidth}px)`;
-      
-      // Restaurar la transición
-      if (!smooth) {
-        setTimeout(() => {
-          track.style.transition = '';
-        }, 0);
-      }
       
       if (config.enableSpotlight) {
         updateSpotlight();
@@ -110,11 +96,14 @@ function initSlider(sliderSelector, options = {}) {
       updateSlider();
     }
 
-    // Event listeners para botones
     next?.addEventListener("click", goToNext);
     prev?.addEventListener("click", goToPrev);
 
-    // Touch/Swipe functionality
+    window.addEventListener("resize", function () {
+      currentIndex = 0;
+      updateSlider();
+    });
+
     if (config.enableSwipe) {
       
       function handleTouchStart(e) {
@@ -133,76 +122,26 @@ function initSlider(sliderSelector, options = {}) {
         
         const swipeDistance = touchStartX - touchEndX;
         
-        // Swipe left (siguiente)
         if (swipeDistance > config.swipeThreshold) {
           goToNext();
         }
-        // Swipe right (anterior)
         else if (swipeDistance < -config.swipeThreshold) {
           goToPrev();
         }
         
-        // Reset
         touchStartX = 0;
         touchEndX = 0;
       }
 
-      // Agregar event listeners para touch
       slider.addEventListener('touchstart', handleTouchStart, { passive: true });
       slider.addEventListener('touchmove', handleTouchMove, { passive: true });
       slider.addEventListener('touchend', handleTouchEnd);
-      
-      // También soportar mouse drag en desktop (opcional)
-      let mouseStartX = 0;
-      let isMouseDragging = false;
-
-      slider.addEventListener('mousedown', (e) => {
-        mouseStartX = e.clientX;
-        isMouseDragging = true;
-        slider.style.cursor = 'grabbing';
-      });
-
-      slider.addEventListener('mousemove', (e) => {
-        if (!isMouseDragging) return;
-        e.preventDefault();
-      });
-
-      slider.addEventListener('mouseup', (e) => {
-        if (!isMouseDragging) return;
-        isMouseDragging = false;
-        slider.style.cursor = 'grab';
-        
-        const swipeDistance = mouseStartX - e.clientX;
-        
-        if (swipeDistance > config.swipeThreshold) {
-          goToNext();
-        } else if (swipeDistance < -config.swipeThreshold) {
-          goToPrev();
-        }
-      });
-
-      slider.addEventListener('mouseleave', () => {
-        if (isMouseDragging) {
-          isMouseDragging = false;
-          slider.style.cursor = 'grab';
-        }
-      });
-
-      // Cursor style
-      slider.style.cursor = 'grab';
     }
 
-    window.addEventListener("resize", function () {
-      currentIndex = 0;
-      updateSlider();
-    });
-
-    // Inicializar spotlight solo si está activado
     if (config.enableSpotlight) {
       updateSpotlight();
     }
   });
 }
 
-// Exponer la función globalmente
 window.initSlider = initSlider;
