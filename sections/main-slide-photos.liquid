@@ -29,13 +29,20 @@
                             <h1 class="text-white py-5 text-sm uppercase z-3">
                                 {{ block.settings.title }}
                             </h1>
+                            {% if block.settings.product_slide %}
+                            {%  assign url = product.url %}
+                            {% else %}
+                            {%  assign url = block.settings.url_slide %}
+                            {% endif %}
 
-                            <button class="mt-4 bg-white text-black px-5 py-3 rounded-md hover:opacity-70 transition-opacity z-3">
-                                <p class="uppercase text-md">
-                                    {{ block.settings.btn_text }}
-                                </p>
-                            </button>
-                            
+                            <a href="{{ url }}">
+                               <div class="mt-4 bg-white text-black px-5 py-3 rounded-md hover:opacity-70 transition-opacity z-3">
+                                    <p class="uppercase text-md">
+                                        {{ block.settings.btn_text }}
+                                    </p>
+                                </div> 
+                            </a>
+                                           
 
                         </div>
 
@@ -162,6 +169,11 @@ document.addEventListener("DOMContentLoaded", function () {
           "type": "url",
           "id": "url_slide",
           "label": "URL", 
+        },
+         {
+          "type": "product",
+          "id": "product_slide",
+          "label": "Product", 
         },
         
       ]

@@ -41,7 +41,7 @@
             class="pointer-events-auto bg-white flex items-center justify-center 
                     rounded-xl md:px-8 md:py-2 py-3 px-10 hover:opacity-70 transition-opacity"
             >
-            <span class="text-black text-lg font-semibold">
+            <span class="text-black text-lg uppercase">
                 {{section.settings.button_text}}
             </span>
             </a>
@@ -50,7 +50,7 @@
         
 
     </div>
-    <div class="w-full flex absolute bottom-0 md:left-15 left-10 md:py-20 py-10 gap-20 overflow-hidden">
+    <div class="w-full flex absolute bottom-0 md:left-15 left-10 md:py-15 py-10 gap-20 overflow-hidden">
         {% for i in (1..20) %}
             <p class="text-white text-xl">{{section.settings.logo_text}}</p>
         {% endfor %}

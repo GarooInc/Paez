@@ -4,8 +4,8 @@
   </div>
 </div>
 
-<header class="absolute left-0 top-10 w-full h-16 text-black px-2 bg-transparent 
-  grid grid-cols-3 items-center z-50 -translate-x-3">
+<header class="full-bleed-header absolute left-0 top-10 w-full h-20 text-black px-10 bg-transparent 
+  grid grid-cols-3 items-center z-50 -translate-x-3 hover:bg-white transition-colors duration-300">
 
   <!-- MOBILE HAMBURGER -->
   <div class="flex items-center md:hidden gap-3">
@@ -36,12 +36,15 @@
 
   <!-- LOGO / TEXTO DEL CENTRO -->
   <div class="text-center text-2xl md:text-3xl font-semibold uppercase tracking-widest ">
-    {% if section.settings.header_title != blank %}
-      {{ section.settings.header_title }}
-    {% else %}
-      {{ shop.name | link_to: routes.root_url }}
-    {% endif %}
+    <a href="/">
+      {% if section.settings.header_title != blank %}
+        {{ section.settings.header_title }}
+      {% else %}
+        {{ shop.name | link_to: routes.root_url }}
+      {% endif %}
+    </a>
   </div>
+  
 
   <!-- ICONS -->
   <div class="flex justify-end gap-4">
@@ -96,6 +99,14 @@
     menu.classList.toggle('hidden');
   }
 </script>
+
+<style>
+.full-bleed-header{
+  width: 100vw;
+  margin-left: calc(50% - 50vw);
+  margin-right: calc(50% - 50vw);
+}
+</style>
 
 
 
