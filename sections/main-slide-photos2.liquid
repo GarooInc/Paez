@@ -1,49 +1,42 @@
-
-
 <div class="full-bleed flex flex-col h-[400px] md:h-[500px] lg:h-[600px] xl:h-[700px] py-2">
     
-        <div class="collection-content-photos relative overflow-hidden px-10" >
+    <div class="collection-content-photos relative overflow-hidden px-10">
 
-            <div class="sliderTrack flex transition-transform duration-500 ease-out">
-                
-                {% for block in section.blocks %}
-                <div class="shrink-0 md:w-1/2 xl:w-1/3 w-[300px] px-1 relative">
+        <div class="sliderTrack flex transition-transform duration-500 ease-out">
+            
+            {% for block in section.blocks %}
+            <div class="shrink-0 md:w-1/2 xl:w-1/3 w-[300px] px-1 relative slide-item" data-index="{{ forloop.index0 }}">
 
-                    <a href="{{ block.settings.url_slide }}" class="block relative">
+                <!-- Imagen -->
+                <div class="w-full h-[400px] md:h-[500px] lg:h-[600px] xl:h-[700px] 
+                            overflow-hidden relative">
 
-                        <!-- Imagen -->
-                        <div class="w-full h-[400px] md:h-[500px] lg:h-[600px] xl:h-[700px] 
-                                    overflow-hidden relative">
+                    <img
+                        src="{{ block.settings.image_banner | image_url: width: 1200 }}"
+                        class="absolute inset-0 min-w-full min-h-full object-cover scale-110"
+                        width="{{ block.settings.image_banner.width }}"
+                        height="{{ block.settings.image_banner.height }}">
 
-                            <img
-                                src="{{ block.settings.image_banner | image_url: width: 1200 }}"
-                                class="absolute inset-0 min-w-full min-h-full object-cover scale-110"
-                                width="{{ block.settings.image_banner.width }}"
-                                height="{{ block.settings.image_banner.height }}">
-
-                        </div>
-
-
-                       
-
-                    </a>
+                    <!-- Overlay oscuro  -->
+                    <div class="slide-overlay absolute inset-0 bg-black/60 transition-opacity duration-500"></div>
 
                 </div>
 
-                {% endfor %}
 
             </div>
-
-            <!-- Flechas -->
-            <div class="flex justify-between absolute inset-0 items-center px-4 pointer-events-none z-20">
-                <button class="prevBtn pointer-events-auto">‹</button>
-                <button class="nextBtn pointer-events-auto">›</button>
-            </div>
+            {% endfor %}
 
         </div>
 
-</div>
+        <!-- Flechas -->
+        <div class="flex justify-between absolute inset-0 items-center px-4 pointer-events-none z-20">
+            <button class="prevBtn pointer-events-auto text-4xl text-white hover:text-gray-300 transition-colors">‹</button>
+            <button class="nextBtn pointer-events-auto text-4xl text-white hover:text-gray-300 transition-colors">›</button>
+        </div>
 
+    </div>
+
+</div>
 
 <style>
 .full-bleed{
@@ -51,10 +44,7 @@
   margin-left: calc(50% - 50vw);
   margin-right: calc(50% - 50vw);
 }
-
 </style>
-
-
 
 <script>
 document.addEventListener("DOMContentLoaded", function () {
@@ -66,6 +56,7 @@ document.addEventListener("DOMContentLoaded", function () {
     const track = slider.querySelector(".sliderTrack");
     const prev = slider.querySelector(".prevBtn");
     const next = slider.querySelector(".nextBtn");
+    const slides = slider.querySelectorAll(".slide-item");
 
     if (!track) return;
 
@@ -84,24 +75,40 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 
     function getMaxIndex() {
-      return Math.max(track.children.length - getVisibleCount(), 0);
+      return Math.max(track.children.length - getVisibleCount() + 1, 0);
+    }
+
+    function updateSpotlight() {
+      const visibleCount = getVisibleCount();
+      const centerIndex = currentIndex + Math.floor(visibleCount / 2);
+
+      slides.forEach((slide, index) => {
+        const overlay = slide.querySelector(".slide-overlay");
+        if (overlay) {
+          if (index === centerIndex) {
+            //  sin overlay
+            overlay.style.opacity = "0";
+          } else {
+            //  overlay oscuro
+            overlay.style.opacity = "1";
+          }
+        }
+      });
     }
 
     function updateSlider() {
       const slideWidth = getSlideWidth();
-      track.style.transform =
-        `translateX(-${currentIndex * slideWidth}px)`;
+      track.style.transform = `translateX(-${currentIndex * slideWidth}px)`;
+      updateSpotlight();
     }
 
     next?.addEventListener("click", function () {
-      currentIndex =
-        currentIndex >= getMaxIndex() ? 0 : currentIndex + 1;
+      currentIndex = currentIndex >= getMaxIndex() ? 0 : currentIndex + 1;
       updateSlider();
     });
 
     prev?.addEventListener("click", function () {
-      currentIndex =
-        currentIndex <= 0 ? getMaxIndex() : currentIndex - 1;
+      currentIndex = currentIndex <= 0 ? getMaxIndex() : currentIndex - 1;
       updateSlider();
     });
 
@@ -110,45 +117,45 @@ document.addEventListener("DOMContentLoaded", function () {
       updateSlider();
     });
 
+    // Inicializar spotlight al cargar
+    updateSpotlight();
+
   });
 
 });
 </script>
 
-
-
 {% schema %}
-
 {
   "name": "Slide photos 2",
   "settings": [ 
     {
-        "type": "text",
-        "id": "title",
-        "label": "Title",
+      "type": "text",
+      "id": "title",
+      "label": "Title"
     }
-   ],
+  ],
   "blocks": [
     {
       "type": "Photo",
       "name": "Photo",
       "settings": [
-        
         {
           "type": "text",
           "id": "title",
           "label": "Title", 
-          "default": "WHat makes it special?"
+          "default": "What makes it special?"
         },
-        
         {
           "type": "image_picker",
           "id": "image_banner",
           "label": "Image"
         },
-       
-    
-        
+        {
+          "type": "url",
+          "id": "url_slide",
+          "label": "Link URL"
+        }
       ]
     }
   ],
