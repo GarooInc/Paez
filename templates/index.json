@@ -28,11 +28,20 @@
       "settings": {
         "title_page": "Featured collection",
         "collection_title1": "Women",
-        "collection_title2": "Men",
-        "collection_title3": "Best Sellers",
         "women_collection": "feature_women_collection",
+        "image_1": "shopify://shop_images/image3_1_d6e130d1-7dba-472b-bef6-d53e229296ed.jpg",
+        "history_1": "Tell a story...",
+        "btn1": "View all",
+        "collection_title2": "Men",
         "men_collection": "featured-men",
-        "best_collection": "featured-bestsellers"
+        "image_2": "shopify://shop_images/3_5116e13f-b09a-4f7d-9988-186bf56eff32.png",
+        "history_2": "Tell a story...",
+        "btn2": "View all",
+        "collection_title3": "Best Sellers",
+        "best_collection": "featured-bestsellers",
+        "image_3": "shopify://shop_images/PAEZ_COSMOPOLITAN_ALTA-86_1.jpg",
+        "history_3": "Tell a story",
+        "btn3": "View all"
       }
     },
     "main_banner_tbXbaU": {
@@ -89,7 +98,8 @@
             "image_banner": "shopify://shop_images/IMG_9046.jpg",
             "title": "Your perfect fit",
             "btn_text": "Shop now",
-            "url_slide": ""
+            "url_slide": "",
+            "product_slide": ""
           }
         },
         "producto_bhFmHk": {
@@ -98,7 +108,8 @@
             "image_banner": "shopify://shop_images/image3_c586d119-625d-47be-9731-fc89923cb9e6.jpg",
             "title": "Your perfect fit",
             "btn_text": "Shop now",
-            "url_slide": ""
+            "url_slide": "",
+            "product_slide": ""
           }
         },
         "producto_p47Fmx": {
@@ -107,7 +118,8 @@
             "image_banner": "shopify://shop_images/WhatsApp_Image_2026-01-05_at_10.29.12.jpg",
             "title": "Your perfect fit",
             "btn_text": "Shop now",
-            "url_slide": ""
+            "url_slide": "",
+            "product_slide": ""
           }
         },
         "producto_YgHcKE": {
@@ -116,7 +128,8 @@
             "image_banner": "shopify://shop_images/WhatsApp_Image_2025-12-02_at_23.33.21.jpg",
             "title": "Your perfect fit",
             "btn_text": "Shop now",
-            "url_slide": ""
+            "url_slide": "",
+            "product_slide": ""
           }
         },
         "producto_p8fpPa": {
@@ -125,7 +138,8 @@
             "image_banner": "shopify://shop_images/WhatsApp_Image_2026-01-06_at_18.20.14.jpg",
             "title": "Your perfect fit",
             "btn_text": "Shop now",
-            "url_slide": ""
+            "url_slide": "",
+            "product_slide": ""
           }
         }
       },
@@ -206,11 +220,17 @@
       "settings": {
         "title_page": "Featured collection",
         "collection_title1": "Women",
-        "collection_title2": "Men",
-        "collection_title3": "Best Sellers",
         "women_collection": "feature_women_collection",
+        "history_1": "",
+        "btn1": "",
+        "collection_title2": "Men",
         "men_collection": "featured-men",
-        "best_collection": "featured-bestsellers"
+        "history_2": "",
+        "btn2": "",
+        "collection_title3": "Best Sellers",
+        "best_collection": "featured-bestsellers",
+        "history_3": "",
+        "btn3": ""
       }
     },
     "main_features_slide_gjNCkD": {
