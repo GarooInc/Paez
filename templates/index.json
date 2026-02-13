@@ -219,7 +219,7 @@
         "feature_njQL4X": {
           "type": "feature",
           "settings": {
-            "feature_name": "Feature 1",
+            "feature_name": "INSANE COMFORTABLE",
             "title": "INSANE COMFORTABLE",
             "subtitle": "",
             "description": "<p>Our products easily adjust to your feet, and feel extra comfortable due to our padded memory-foam insole. You’ll feel like walking on clouds.</p>",
@@ -229,10 +229,11 @@
         "feature_zwJMQD": {
           "type": "feature",
           "settings": {
-            "feature_name": "Feature 1",
-            "title": "WHat makes it special?",
-            "subtitle": "Subtitle",
-            "description": "<p>Description</p>"
+            "feature_name": "WE’RE CRUELTY-FREE",
+            "title": "WE’RE CRUELTY-FREE",
+            "subtitle": "",
+            "description": "<p>Our products are made from recycled textiles and micro-fibers components, from suppliers that work with the development of responsible production of footwear</p>",
+            "image_banner": "shopify://shop_images/paez_3.jpg"
           }
         },
         "feature_M6tVQ8": {
@@ -241,7 +242,8 @@
             "feature_name": "Feature 1",
             "title": "WHat makes it special?",
             "subtitle": "Subtitle",
-            "description": "<p>Description</p>"
+            "description": "<p>Description</p>",
+            "image_banner": "shopify://shop_images/PAEZ_COSMOPOLITAN_ALTA-151.jpg"
           }
         },
         "feature_YBd96E": {
@@ -250,7 +252,8 @@
             "feature_name": "Feature 1",
             "title": "WHat makes it special?",
             "subtitle": "Subtitle",
-            "description": "<p>Description</p>"
+            "description": "<p>Description</p>",
+            "image_banner": "shopify://shop_images/PAEZ_COSMOPOLITAN_ALTA-95.jpg"
           }
         }
       },
