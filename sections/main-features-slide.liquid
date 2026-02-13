@@ -1,0 +1,65 @@
+
+
+
+
+{% schema %}
+
+{
+  "name": "Feautures",
+  "settings": [ 
+    {
+        "type": "text",
+        "id": "title",
+        "label": "Title",
+        "default": "Loved by everyone, everywhere. Don't miss out"
+    }
+   ],
+  "blocks": [
+    {
+      "type": "feature",
+      "name": "feature",
+      "settings": [
+        {
+          "type": "text",
+          "id": "feature_name",
+          "label": "Feature name", 
+          "default": "Feature 1"
+        },
+        {
+          "type": "text",
+          "id": "title",
+          "label": "Title", 
+          "default": "WHat makes it special?"
+        },
+        {
+          "type": "text",
+          "id": "subtitle",
+          "label": "Subtitle", 
+          "default": "Subtitle"
+        },
+        {
+          "type": "richtext",
+          "id": "description",
+          "label": "Description", 
+          "default": "<p>Description</p>"
+        },
+        {
+          "type": "image_picker",
+          "id": "image_banner",
+          "label": "Image"
+        },
+       
+        
+
+        
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Feautures",
+      "category": "main"
+    }
+  ]
+}
+{% endschema %}
