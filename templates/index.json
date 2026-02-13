@@ -141,6 +141,50 @@
     },
     "main_reviews_ybx7tL": {
       "type": "main-reviews",
+      "blocks": {
+        "producto_6HCeDh": {
+          "type": "producto",
+          "settings": {
+            "product_choose": "tulipa-microfiber-napa-black",
+            "comment": "<p>Beautiful Tulipas. They are perfect</p>",
+            "user": "@Nyembetti Fernandes via Judge.Me",
+            "stars": 5
+          }
+        },
+        "producto_CRnPpn": {
+          "type": "producto",
+          "settings": {
+            "product_choose": "",
+            "comment": "",
+            "user": "Shop now",
+            "stars": 5
+          }
+        },
+        "producto_z4yjrw": {
+          "type": "producto",
+          "settings": {
+            "product_choose": "",
+            "comment": "",
+            "user": "Shop now",
+            "stars": 5
+          }
+        },
+        "producto_3zWAqN": {
+          "type": "producto",
+          "settings": {
+            "product_choose": "",
+            "comment": "",
+            "user": "Shop now",
+            "stars": 5
+          }
+        }
+      },
+      "block_order": [
+        "producto_6HCeDh",
+        "producto_CRnPpn",
+        "producto_z4yjrw",
+        "producto_3zWAqN"
+      ],
       "name": "Reviews",
       "settings": {
         "title": "Loved by everyone, everywhere. Don't miss out"
