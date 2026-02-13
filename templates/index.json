@@ -38,19 +38,21 @@
         "collection_tab_GEJ3Cd": {
           "type": "collection_tab",
           "settings": {
-            "collection_title": "Collection",
-            "collection": "",
-            "history": "",
-            "btn_text": ""
+            "collection_title": "Men",
+            "collection": "featured-men",
+            "image": "shopify://shop_images/3_5116e13f-b09a-4f7d-9988-186bf56eff32.png",
+            "history": "Tell a story",
+            "btn_text": "View all"
           }
         },
         "collection_tab_TbydwJ": {
           "type": "collection_tab",
           "settings": {
-            "collection_title": "Collection",
-            "collection": "",
-            "history": "",
-            "btn_text": ""
+            "collection_title": "Best Sellers",
+            "collection": "featured-bestsellers",
+            "image": "shopify://shop_images/paez_18.jpg",
+            "history": "Tell a story...",
+            "btn_text": "View all"
           }
         }
       },
