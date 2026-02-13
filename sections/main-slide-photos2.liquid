@@ -1,0 +1,47 @@
+
+
+
+
+{% schema %}
+
+{
+  "name": "Slide photos 2",
+  "settings": [ 
+    {
+        "type": "text",
+        "id": "title",
+        "label": "Title",
+    }
+   ],
+  "blocks": [
+    {
+      "type": "Photo",
+      "name": "Photo",
+      "settings": [
+        
+        {
+          "type": "text",
+          "id": "title",
+          "label": "Title", 
+          "default": "WHat makes it special?"
+        },
+        
+        {
+          "type": "image_picker",
+          "id": "image_banner",
+          "label": "Image"
+        },
+       
+    
+        
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Slide photos 2",
+      "category": "main"
+    }
+  ]
+}
+{% endschema %}
