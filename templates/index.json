@@ -215,9 +215,93 @@
     },
     "main_features_slide_gjNCkD": {
       "type": "main-features-slide",
+      "blocks": {
+        "feature_njQL4X": {
+          "type": "feature",
+          "settings": {
+            "feature_name": "Feature 1",
+            "title": "INSANE COMFORTABLE",
+            "subtitle": "",
+            "description": "<p>Our products easily adjust to your feet, and feel extra comfortable due to our padded memory-foam insole. You’ll feel like walking on clouds.</p>",
+            "image_banner": "shopify://shop_images/paez_1_ffcb51a7-dcfd-471f-a50c-9cc0f7fcea55.jpg"
+          }
+        },
+        "feature_zwJMQD": {
+          "type": "feature",
+          "settings": {
+            "feature_name": "Feature 1",
+            "title": "WHat makes it special?",
+            "subtitle": "Subtitle",
+            "description": "<p>Description</p>"
+          }
+        },
+        "feature_M6tVQ8": {
+          "type": "feature",
+          "settings": {
+            "feature_name": "Feature 1",
+            "title": "WHat makes it special?",
+            "subtitle": "Subtitle",
+            "description": "<p>Description</p>"
+          }
+        },
+        "feature_YBd96E": {
+          "type": "feature",
+          "settings": {
+            "feature_name": "Feature 1",
+            "title": "WHat makes it special?",
+            "subtitle": "Subtitle",
+            "description": "<p>Description</p>"
+          }
+        }
+      },
+      "block_order": [
+        "feature_njQL4X",
+        "feature_zwJMQD",
+        "feature_M6tVQ8",
+        "feature_YBd96E"
+      ],
       "name": "Feautures",
       "settings": {
-        "title": "Loved by everyone, everywhere. Don't miss out"
+        "title": "What makes paez special?"
+      }
+    },
+    "main_slide_photos2_AHqCaU": {
+      "type": "main-slide-photos2",
+      "blocks": {
+        "photo_FY63ee": {
+          "type": "Photo",
+          "settings": {
+            "title": "WHat makes it special?"
+          }
+        },
+        "photo_LJBb9H": {
+          "type": "Photo",
+          "settings": {
+            "title": "WHat makes it special?"
+          }
+        },
+        "photo_aFyFcJ": {
+          "type": "Photo",
+          "settings": {
+            "title": "WHat makes it special?"
+          }
+        },
+        "photo_Pz8iXC": {
+          "type": "Photo",
+          "settings": {
+            "title": "WHat makes it special?"
+          }
+        }
+      },
+      "block_order": [
+        "photo_FY63ee",
+        "photo_LJBb9H",
+        "photo_aFyFcJ",
+        "photo_Pz8iXC"
+      ],
+      "name": "Slide photos 2",
+      "settings": {
+        "title": ""
       }
     }
   },
@@ -229,6 +313,7 @@
     "main_slide_photos_4n3Kde",
     "main_reviews_ybx7tL",
     "main_featured_xPELPW",
-    "main_features_slide_gjNCkD"
+    "main_features_slide_gjNCkD",
+    "main_slide_photos2_AHqCaU"
   ]
 }
