@@ -1,35 +1,189 @@
+<div class="full-bleed min-h-[700px] flex flex-col py-5 px-5 lg:px-20 pb-20">
+    
+    <div class="w-full text-center mb-8 pb-10">
+        <h2 class="text-2xl md:text-4xl font-bold text-gray-900">
+            {{ section.settings.title }}
+        </h2>
+    </div>
 
+    <!-- Botones de features -->
+    <div class="w-full flex flex-wrap justify-center mb-12 pb-10">
+        {% for block in section.blocks %}
+            <button class="feature-btn px-6 py-2 transition-all duration-300 xl:text-lg 
+                           {% if forloop.first %}bg-gray-200 text-black{% else %}bg-white 
+                            text-gray-700{% endif %}"
+                    data-feature="{{ block.id }}"
+                    data-index="{{ forloop.index0 }}"
+                    {{ block.shopify_attributes }}>
+                {{ block.settings.feature_name }}
+            </button>
+        {% endfor %}
+    </div>
 
+    <div class="w-full flex flex-col lg:flex-row gap-10 lg:gap-20 relative px-25">
+        
+        <!-- Lado izquierdo: Contenido de texto -->
+        <div class="w-full lg:w-1/2 flex flex-col justify-center">
+            {% for block in section.blocks %}
+                <div class="feature-content max-w-200 pl-10 {% unless forloop.first %}hidden{% endunless %}" 
+                     data-content="{{ block.id }}">
+                    
+                    <h3 class="text-xl md:text-4xl font-bold mb-3 text-gray-900 py-4">
+                        {{ block.settings.title }}
+                    </h3>
+                    
+                    <p class="text-lg md:text-xl text-gray-600 mb-4">
+                        {{ block.settings.subtitle }}
+                    </p>
+                    
+                    <div class="text-base text-gray-700 leading-relaxed">
+                        {{ block.settings.description }}
+                    </div>
+                </div>
+            {% endfor %}
+        </div>
 
+        <!-- Lado derecho: Imágenes -->
+        <div class="w-full lg:w-1/2 flex items-center justify-center">
+            {% for block in section.blocks %}
+                <div class="feature-image w-full h-[400px] lg:h-[600px] rounded-2xl overflow-hidden {% unless forloop.first %}hidden{% endunless %}"
+                     data-image="{{ block.id }}">
+                    {% if block.settings.image_banner %}
+                        <img src="{{ block.settings.image_banner | image_url: width: 1200 }}"
+                             class="w-full h-full object-cover"
+                             width="{{ block.settings.image_banner.width }}"
+                             height="{{ block.settings.image_banner.height }}"
+                             alt="{{ block.settings.title }}">
+                    {% else %}
+                        <div class="w-full h-full bg-gray-200 flex items-center justify-center">
+                            <span class="text-gray-400">No image</span>
+                        </div>
+                    {% endif %}
+                </div>
+            {% endfor %}
+        </div>
+
+        <!-- Flechas de navegación -->
+        <div class="absolute inset-0 flex justify-between items-center pointer-events-none px-4 ">
+            <button class="feature-prev-btn pointer-events-auto  
+                rounded-full transition-all duration-300 text-2xl lg:text-4xl text-gray-800 ">
+                ‹
+            </button>
+            <button class="feature-next-btn pointer-events-auto 
+                rounded-full transition-all duration-300 text-2xl lg:text-4xl text-gray-800 ">
+                ›
+            </button>
+        </div>
+
+    </div>
+
+</div>
+
+<style>
+.full-bleed{
+  width: 100vw;
+  margin-left: calc(50% - 50vw);
+  margin-right: calc(50% - 50vw);
+}
+</style>
+
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+    const featureBtns = document.querySelectorAll(".feature-btn");
+    const featureContents = document.querySelectorAll(".feature-content");
+    const featureImages = document.querySelectorAll(".feature-image");
+    const prevBtn = document.querySelector(".feature-prev-btn");
+    const nextBtn = document.querySelector(".feature-next-btn");
+    
+    let currentIndex = 0;
+    const totalFeatures = featureBtns.length;
+
+    function showFeature(index) {
+        const targetBtn = featureBtns[index];
+        const featureId = targetBtn.dataset.feature;
+
+        // Cambiar estilos de botones
+        featureBtns.forEach(b => {
+            b.classList.remove("bg-gray-200", "text-black");
+            b.classList.add("bg-white", "text-gray-700");
+        });
+
+        targetBtn.classList.remove("bg-white", "text-gray-700");
+        targetBtn.classList.add("bg-gray-200", "text-black");
+
+        // Mostrar contenido correspondiente
+        featureContents.forEach(content => {
+            if (content.dataset.content === featureId) {
+                content.classList.remove("hidden");
+            } else {
+                content.classList.add("hidden");
+            }
+        });
+
+        // Mostrar imagen correspondiente
+        featureImages.forEach(image => {
+            if (image.dataset.image === featureId) {
+                image.classList.remove("hidden");
+            } else {
+                image.classList.add("hidden");
+            }
+        });
+
+        currentIndex = index;
+    }
+
+    // Click en botones de features
+    featureBtns.forEach((btn, index) => {
+        btn.addEventListener("click", function () {
+            showFeature(index);
+        });
+    });
+
+    // Navegación con flechas
+    nextBtn?.addEventListener("click", function () {
+        const newIndex = (currentIndex + 1) % totalFeatures;
+        showFeature(newIndex);
+    });
+
+    prevBtn?.addEventListener("click", function () {
+        const newIndex = (currentIndex - 1 + totalFeatures) % totalFeatures;
+        showFeature(newIndex);
+    });
+});
+</script>
 
 {% schema %}
-
 {
-  "name": "Feautures",
+  "name": "Features",
   "settings": [ 
     {
-        "type": "text",
-        "id": "title",
-        "label": "Title",
-        "default": "Loved by everyone, everywhere. Don't miss out"
+      "type": "text",
+      "id": "title",
+      "label": "Title",
+      "default": "Loved by everyone, everywhere. Don't miss out"
     }
-   ],
+  ],
   "blocks": [
     {
       "type": "feature",
-      "name": "feature",
+      "name": "Feature",
       "settings": [
         {
           "type": "text",
           "id": "feature_name",
-          "label": "Feature name", 
+          "label": "Feature name (Button text)", 
           "default": "Feature 1"
+        },
+        {
+          "type": "image_picker",
+          "id": "feature_image",
+          "label": "Feature image", 
         },
         {
           "type": "text",
           "id": "title",
           "label": "Title", 
-          "default": "WHat makes it special?"
+          "default": "What makes it special?"
         },
         {
           "type": "text",
@@ -47,17 +201,13 @@
           "type": "image_picker",
           "id": "image_banner",
           "label": "Image"
-        },
-       
-        
-
-        
+        }
       ]
     }
   ],
   "presets": [
     {
-      "name": "Feautures",
+      "name": "Features",
       "category": "main"
     }
   ]

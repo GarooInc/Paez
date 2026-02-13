@@ -1,35 +1,41 @@
-
-<div class="full-bleed flex flex-col h-[680px] xl:h-[730px] py-10">
-    <div class="bg-gray-100 h-full w-full flex flex-col py-10">
-        <div class="text-center pb-10 py-2 px-5">
+<div class="full-bleed flex flex-col h-[680px] xl:h-[730px] py-10 ">
+    <div class="bg-gray-100 h-full w-full flex flex-col md:py-10 py-7">
+        <div class="text-center md:pb-10 py-2 px-5">
             <h2 class="text-xl md:text-3xl font-semibold text-[#6f6a5e]">
                 {{ section.settings.title }}
             </h2>
         </div>
 
     
-        <div class="collection-content-reviews  overflow-hidden px-10 h-full" >
+        <div class="collection-content-reviews overflow-hidden px-10 h-full">
 
-            <div class="sliderTrack flex transition-transform duration-500 ease-out  ">
+            <div class="sliderTrack flex transition-transform duration-500 ease-out">
                 
                 {% for block in section.blocks %}
-                <div class="shrink-0 md:w-1/2 lg:w-1/4 w-[300px] lg:px-6 px-3 py-5 h-[450px]">
+                <div class="shrink-0 md:w-1/3 lg:w-1/4 xl:w-1/5 w-[300px] lg:px-2 px-3 py-5 h-[450px]">
 
-                    <div class="bg-white rounded-3xl p-6 shadow-sm border border-gray-200 h-full flex flex-col items-center text-center">
+                    <div class="bg-white rounded-3xl lg:p-5 p-3 shadow-sm border border-gray-200 h-full flex flex-col items-center text-center">
 
                         <!-- Imagen -->
                         {% assign product = all_products[block.settings.product_choose] %}
 
-                        <div class="w-full h-[220px] bg-gray-200 rounded-2xl overflow-hidden flex items-center justify-center mb-6">
+                        <div class="w-full h-[220px] bg-gray-200 rounded-2xl overflow-hidden flex items-center justify-center mb-6 relative group">
                             {% if product.featured_image %}
-                                <a href="{{ product.url }}">
+                                <a href="{{ product.url }}" class="relative w-full h-full block">
                                     <img
-                                    src="{{ product.featured_image| image_url: width: 600 }}"
-                                    class="w-full h-full object-cover"
-                                    width="{{ product.width }}"
-                                    height="{{ product.height }}">
+                                        src="{{ product.featured_image | image_url: width: 600 }}"
+                                        class="absolute top-1/2 left-1/2 min-w-full min-h-full -translate-x-1/2 -translate-y-1/2 object-cover"
+                                        width="{{ product.width }}"
+                                        height="{{ product.height }}">
+                                    
+                                    <!-- Overlay  -->
+                                    <div class="absolute inset-0 bg-black/20 opacity-0 group-hover:opacity-100 
+                                        transition-opacity duration-300 flex items-center justify-center">
+                                        <span class="text-white text-lg md:text-xl font-semibold tracking-wider">
+                                            SHOP NOW
+                                        </span>
+                                    </div>
                                 </a>
-                            
                             {% endif %}
                         </div>
 
@@ -43,7 +49,7 @@
                         </div>
 
                         <!-- Review -->
-                        <div class="text-sm text-gray-600 mb-4 leading-relaxed px-5">
+                        <div class="text-xs text-gray-600 mb-4 leading-relaxed lg:px-1 min-h-17 ">
                             {{ block.settings.comment }}
                         </div>
 
@@ -57,7 +63,6 @@
                 </div>
                 {% endfor %}
 
-
             </div>
 
             <!-- Flechas -->
@@ -70,15 +75,14 @@
     </div>
 </div>
 
-
 <style>
 .full-bleed{
   width: 100vw;
   margin-left: calc(50% - 50vw);
   margin-right: calc(50% - 50vw);
 }
-
 </style>
+
 
 
 
