@@ -177,13 +177,23 @@
             "user": "@Maria Serra via Judge.Me",
             "stars": 5
           }
+        },
+        "producto_iXxjg9": {
+          "type": "producto",
+          "settings": {
+            "product_choose": "tulipa-microfiber-napa-camel",
+            "comment": "<p>The PERFECT pair</p><p>Love my Tulipa, they are super cool and comfortable.</p>",
+            "user": "@Marta Kadosh via Judge.Me",
+            "stars": 5
+          }
         }
       },
       "block_order": [
         "producto_6HCeDh",
         "producto_CRnPpn",
         "producto_z4yjrw",
-        "producto_3zWAqN"
+        "producto_3zWAqN",
+        "producto_iXxjg9"
       ],
       "name": "Reviews",
       "settings": {
