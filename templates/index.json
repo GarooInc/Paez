@@ -163,9 +163,9 @@
         "producto_z4yjrw": {
           "type": "producto",
           "settings": {
-            "product_choose": "",
-            "comment": "",
-            "user": "Shop now",
+            "product_choose": "mary-jane-charcoal",
+            "comment": "<p>Great purchase!</p><p>Super comfortable, I work all day in them. Great purchase.</p>",
+            "user": "@Sofia via Judge.Me",
             "stars": 5
           }
         },
