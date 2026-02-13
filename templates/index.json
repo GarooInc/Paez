@@ -358,6 +358,69 @@
       "settings": {
         "title": ""
       }
+    },
+    "faq_k8T6GM": {
+      "type": "faq",
+      "blocks": {
+        "faq_category_DBzpXB": {
+          "type": "faq_category",
+          "settings": {
+            "category_name": "Returns & Refunds",
+            "question_1": "",
+            "answer_1": "",
+            "question_2": "",
+            "answer_2": "",
+            "question_3": "",
+            "answer_3": "",
+            "question_4": "",
+            "answer_4": "",
+            "question_5": "",
+            "answer_5": ""
+          }
+        },
+        "faq_category_fwKkNy": {
+          "type": "faq_category",
+          "settings": {
+            "category_name": "Delivery",
+            "question_1": "",
+            "answer_1": "",
+            "question_2": "",
+            "answer_2": "",
+            "question_3": "",
+            "answer_3": "",
+            "question_4": "",
+            "answer_4": "",
+            "question_5": "",
+            "answer_5": ""
+          }
+        },
+        "faq_category_m3yXNr": {
+          "type": "faq_category",
+          "settings": {
+            "category_name": "Order",
+            "question_1": "",
+            "answer_1": "",
+            "question_2": "",
+            "answer_2": "",
+            "question_3": "",
+            "answer_3": "",
+            "question_4": "",
+            "answer_4": "",
+            "question_5": "",
+            "answer_5": ""
+          }
+        }
+      },
+      "block_order": [
+        "faq_category_DBzpXB",
+        "faq_category_fwKkNy",
+        "faq_category_m3yXNr"
+      ],
+      "name": "FAQ Section",
+      "settings": {
+        "title": "FAQ",
+        "background_image": "shopify://shop_images/womens_Flats.jpg"
+      }
     }
   },
   "order": [
@@ -369,6 +432,7 @@
     "main_reviews_ybx7tL",
     "main_featured_xPELPW",
     "main_features_slide_gjNCkD",
-    "main_slide_photos2_AHqCaU"
+    "main_slide_photos2_AHqCaU",
+    "faq_k8T6GM"
   ]
 }
