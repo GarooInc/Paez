@@ -1,4 +1,4 @@
-<div class="full-bleed min-h-[700px] flex flex-col py-5 px-5 lg:px-20 pb-20">
+<div class="full-bleed min-h-[900px] flex flex-col py-5 px-5 sm:px-20 lg:px-5 xl:px-20 md:pb-20">
     
     <div class="w-full text-center mb-8 pb-10">
         <h2 class="text-2xl md:text-4xl font-bold text-gray-900">
@@ -7,20 +7,32 @@
     </div>
 
     <!-- Botones de features -->
-    <div class="w-full flex flex-wrap justify-center mb-12 pb-10">
+    <div class="w-full flex flex-wrap justify-center mb-12 md:pb-10 pb-5">
         {% for block in section.blocks %}
-            <button class="feature-btn px-6 py-2 transition-all duration-300 xl:text-lg 
+            <button class="feature-btn px-7 sm:px-10 md:px-15 lg:px-6 py-2 transition-all duration-300 xl:text-lg flex items-center gap-2
                            {% if forloop.first %}bg-gray-200 text-black{% else %}bg-white 
                             text-gray-700{% endif %}"
                     data-feature="{{ block.id }}"
                     data-index="{{ forloop.index0 }}"
                     {{ block.shopify_attributes }}>
-                {{ block.settings.feature_name }}
+                
+                <!-- Logo -->
+                {% if block.settings.feature_image %}
+                    <img src="{{ block.settings.feature_image | image_url: width: 100 }}"
+                         class="w-6 h-6 object-contain"
+                         width="{{ block.settings.feature_image.width }}"
+                         height="{{ block.settings.feature_image.height }}"
+                         alt="{{ block.settings.feature_name }}">
+                {% endif %}
+                
+                <!-- Texto - oculto en mobile -->
+                <span class="hidden lg:inline">{{ block.settings.feature_name }}</span>
             </button>
         {% endfor %}
     </div>
 
-    <div class="w-full flex flex-col lg:flex-row gap-10 lg:gap-20 relative px-25">
+    <!-- Desktop Layout -->
+    <div class="hidden lg:flex w-full flex-row gap-10 lg:gap-20 relative px-25">
         
         <!-- Lado izquierdo: Contenido de texto -->
         <div class="w-full lg:w-1/2 flex flex-col justify-center">
@@ -50,7 +62,7 @@
                      data-image="{{ block.id }}">
                     {% if block.settings.image_banner %}
                         <img src="{{ block.settings.image_banner | image_url: width: 1200 }}"
-                             class="w-full h-full object-cover"
+                             class="min-w-full min-h-full object-cover"
                              width="{{ block.settings.image_banner.width }}"
                              height="{{ block.settings.image_banner.height }}"
                              alt="{{ block.settings.title }}">
@@ -63,17 +75,61 @@
             {% endfor %}
         </div>
 
-        <!-- Flechas de navegación -->
-        <div class="absolute inset-0 flex justify-between items-center pointer-events-none px-4 ">
-            <button class="feature-prev-btn pointer-events-auto  
-                rounded-full transition-all duration-300 text-2xl lg:text-4xl text-gray-800 ">
+        <!-- Flechas de navegación - Desktop -->
+        <div class="absolute inset-0 flex justify-between items-center pointer-events-none px-4">
+            <button class="feature-prev-btn pointer-events-auto 
+                rounded-full transition-all duration-300 text-2xl lg:text-4xl text-gray-800">
                 ‹
             </button>
             <button class="feature-next-btn pointer-events-auto 
-                rounded-full transition-all duration-300 text-2xl lg:text-4xl text-gray-800 ">
+                rounded-full transition-all duration-300 text-2xl lg:text-4xl text-gray-800">
                 ›
             </button>
         </div>
+
+    </div>
+
+    <!-- Mobile Layout -->
+    <div class="lg:hidden w-full flex flex-col relative px-5">
+        
+        {% for block in section.blocks %}
+            <div class="feature-mobile-content {% unless forloop.first %}hidden{% endunless %}" 
+                 data-mobile-content="{{ block.id }}">
+                
+                <!-- Título -->
+                <h3 class="text-lg font-bold mb-6 text-gray-900 text-center px-4 py-3">
+                    {{ block.settings.title }}
+                </h3>
+                
+                <!-- Imagen -->
+                <div class="w-full sm:h-[500px] h-[400px] rounded-2xl overflow-hidden mb-6">
+                    {% if block.settings.image_banner %}
+                        <img src="{{ block.settings.image_banner | image_url: width: 800 }}"
+                             class="w-full h-full object-cover"
+                             width="{{ block.settings.image_banner.width }}"
+                             height="{{ block.settings.image_banner.height }}"
+                             alt="{{ block.settings.title }}">
+                    {% else %}
+                        <div class="w-full h-full bg-gray-200 flex items-center justify-center">
+                            <span class="text-gray-400">No image</span>
+                        </div>
+                    {% endif %}
+                </div>
+
+                <!-- Descripción -->
+                <div class="px-4 py-5">
+                    <p class="text-lg text-gray-600 mb-4">
+                        {{ block.settings.subtitle }}
+                    </p>
+                    
+                    <div class="text-base text-gray-700 leading-relaxed">
+                        {{ block.settings.description }}
+                    </div>
+                </div>
+            </div>
+        {% endfor %}
+
+        
 
     </div>
 
@@ -92,8 +148,12 @@ document.addEventListener("DOMContentLoaded", function () {
     const featureBtns = document.querySelectorAll(".feature-btn");
     const featureContents = document.querySelectorAll(".feature-content");
     const featureImages = document.querySelectorAll(".feature-image");
+    const featureMobileContents = document.querySelectorAll(".feature-mobile-content");
+    
     const prevBtn = document.querySelector(".feature-prev-btn");
     const nextBtn = document.querySelector(".feature-next-btn");
+    const prevBtnMobile = document.querySelector(".feature-prev-btn-mobile");
+    const nextBtnMobile = document.querySelector(".feature-next-btn-mobile");
     
     let currentIndex = 0;
     const totalFeatures = featureBtns.length;
@@ -111,7 +171,7 @@ document.addEventListener("DOMContentLoaded", function () {
         targetBtn.classList.remove("bg-white", "text-gray-700");
         targetBtn.classList.add("bg-gray-200", "text-black");
 
-        // Mostrar contenido correspondiente
+        // Mostrar contenido correspondiente - Desktop
         featureContents.forEach(content => {
             if (content.dataset.content === featureId) {
                 content.classList.remove("hidden");
@@ -120,12 +180,21 @@ document.addEventListener("DOMContentLoaded", function () {
             }
         });
 
-        // Mostrar imagen correspondiente
+        // Mostrar imagen correspondiente - Desktop
         featureImages.forEach(image => {
             if (image.dataset.image === featureId) {
                 image.classList.remove("hidden");
             } else {
                 image.classList.add("hidden");
+            }
+        });
+
+        // Mostrar contenido correspondiente - Mobile
+        featureMobileContents.forEach(content => {
+            if (content.dataset.mobileContent === featureId) {
+                content.classList.remove("hidden");
+            } else {
+                content.classList.add("hidden");
             }
         });
 
@@ -139,13 +208,24 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     });
 
-    // Navegación con flechas
+    // Navegación con flechas - Desktop
     nextBtn?.addEventListener("click", function () {
         const newIndex = (currentIndex + 1) % totalFeatures;
         showFeature(newIndex);
     });
 
     prevBtn?.addEventListener("click", function () {
+        const newIndex = (currentIndex - 1 + totalFeatures) % totalFeatures;
+        showFeature(newIndex);
+    });
+
+    // Navegación con flechas - Mobile
+    nextBtnMobile?.addEventListener("click", function () {
+        const newIndex = (currentIndex + 1) % totalFeatures;
+        showFeature(newIndex);
+    });
+
+    prevBtnMobile?.addEventListener("click", function () {
         const newIndex = (currentIndex - 1 + totalFeatures) % totalFeatures;
         showFeature(newIndex);
     });
@@ -177,7 +257,7 @@ document.addEventListener("DOMContentLoaded", function () {
         {
           "type": "image_picker",
           "id": "feature_image",
-          "label": "Feature image", 
+          "label": "Feature icon/logo"
         },
         {
           "type": "text",
