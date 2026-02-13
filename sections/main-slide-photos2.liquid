@@ -1,6 +1,6 @@
 <div class="full-bleed flex flex-col h-[400px] md:h-[500px] lg:h-[600px] xl:h-[700px] py-2">
     
-    <div class="collection-content-photos relative overflow-hidden px-10">
+    <div class="collection-content-photos2 relative overflow-hidden px-10">
 
         <div class="sliderTrack flex transition-transform duration-500 ease-out">
             
@@ -46,84 +46,19 @@
 }
 </style>
 
+
+<script src="{{ 'slider.js' | asset_url }}" defer></script>
 <script>
 document.addEventListener("DOMContentLoaded", function () {
-
-  const sliders = document.querySelectorAll(".collection-content-photos");
-
-  sliders.forEach(slider => {
-
-    const track = slider.querySelector(".sliderTrack");
-    const prev = slider.querySelector(".prevBtn");
-    const next = slider.querySelector(".nextBtn");
-    const slides = slider.querySelectorAll(".slide-item");
-
-    if (!track) return;
-
-    let currentIndex = 0;
-
-    function getSlideWidth() {
-      const firstSlide = track.children[0];
-      if (!firstSlide) return 0;
-      return firstSlide.offsetWidth;
-    }
-
-    function getVisibleCount() {
-      const sliderWidth = slider.offsetWidth;
-      const slideWidth = getSlideWidth();
-      return Math.floor(sliderWidth / slideWidth);
-    }
-
-    function getMaxIndex() {
-      return Math.max(track.children.length - getVisibleCount() + 1, 0);
-    }
-
-    function updateSpotlight() {
-      const visibleCount = getVisibleCount();
-      const centerIndex = currentIndex + Math.floor(visibleCount / 2);
-
-      slides.forEach((slide, index) => {
-        const overlay = slide.querySelector(".slide-overlay");
-        if (overlay) {
-          if (index === centerIndex) {
-            //  sin overlay
-            overlay.style.opacity = "0";
-          } else {
-            //  overlay oscuro
-            overlay.style.opacity = "1";
-          }
-        }
-      });
-    }
-
-    function updateSlider() {
-      const slideWidth = getSlideWidth();
-      track.style.transform = `translateX(-${currentIndex * slideWidth}px)`;
-      updateSpotlight();
-    }
-
-    next?.addEventListener("click", function () {
-      currentIndex = currentIndex >= getMaxIndex() ? 0 : currentIndex + 1;
-      updateSlider();
-    });
-
-    prev?.addEventListener("click", function () {
-      currentIndex = currentIndex <= 0 ? getMaxIndex() : currentIndex - 1;
-      updateSlider();
-    });
-
-    window.addEventListener("resize", function () {
-      currentIndex = 0;
-      updateSlider();
-    });
-
-    // Inicializar spotlight al cargar
-    updateSpotlight();
-
+  initSlider('.collection-content-photos2', {
+    enableSpotlight: true,
+    slideSelector: '.slide-item',
+    overlaySelector: '.slide-overlay',
+    extraSteps: 1
   });
-
 });
 </script>
+
 
 {% schema %}
 {

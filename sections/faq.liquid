@@ -1,0 +1,63 @@
+
+
+
+{% schema %}
+
+{
+  "name": "Reviews",
+  "settings": [ 
+    {
+        "type": "text",
+        "id": "title",
+        "label": "Title",
+        "default": "Loved by everyone, everywhere. Don't miss out"
+    }
+   ],
+  "blocks": [
+    {
+      "type": "producto",
+      "name": "Producto",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "image_banner",
+          "label": "Image"
+        },
+        {
+          "type": "product",
+          "id": "product_choose",
+          "label": "Product",
+        },
+        {
+          "type": "richtext",
+          "id": "comment",
+          "label": "Review",
+        },
+        {
+          "type": "text",
+          "id": "user",
+          "label": "User name", 
+          "default": "Shop now"
+        },
+        {
+            "type": "range",
+            "id": "stars",
+            "label": "Number of stars",
+            "min": 1,
+            "max": 5,
+            "step": 1,
+            "default": 5
+        }
+
+        
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Reviews",
+      "category": "main"
+    }
+  ]
+}
+{% endschema %}

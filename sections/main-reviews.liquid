@@ -86,62 +86,10 @@
 
 
 
+<script src="{{ 'slider.js' | asset_url }}" defer></script>
 <script>
 document.addEventListener("DOMContentLoaded", function () {
-
-  const sliders = document.querySelectorAll(".collection-content-reviews");
-
-  sliders.forEach(slider => {
-
-    const track = slider.querySelector(".sliderTrack");
-    const prev = slider.querySelector(".prevBtn");
-    const next = slider.querySelector(".nextBtn");
-
-    if (!track) return;
-
-    let currentIndex = 0;
-
-    function getSlideWidth() {
-      const firstSlide = track.children[0];
-      if (!firstSlide) return 0;
-      return firstSlide.offsetWidth;
-    }
-
-    function getVisibleCount() {
-      const sliderWidth = slider.offsetWidth;
-      const slideWidth = getSlideWidth();
-      return Math.floor(sliderWidth / slideWidth);
-    }
-
-    function getMaxIndex() {
-      return Math.max(track.children.length - getVisibleCount(), 0);
-    }
-
-    function updateSlider() {
-      const slideWidth = getSlideWidth();
-      track.style.transform =
-        `translateX(-${currentIndex * slideWidth}px)`;
-    }
-
-    next?.addEventListener("click", function () {
-      currentIndex =
-        currentIndex >= getMaxIndex() ? 0 : currentIndex + 1;
-      updateSlider();
-    });
-
-    prev?.addEventListener("click", function () {
-      currentIndex =
-        currentIndex <= 0 ? getMaxIndex() : currentIndex - 1;
-      updateSlider();
-    });
-
-    window.addEventListener("resize", function () {
-      currentIndex = 0;
-      updateSlider();
-    });
-
-  });
-
+  initSlider('.collection-content-reviews');
 });
 </script>
 
