@@ -238,6 +238,7 @@
     },
     "main_featured_xPELPW": {
       "type": "main-featured",
+      "disabled": true,
       "name": "Featured Collection",
       "settings": {
         "title_page": "Featured collection"
