@@ -1,14 +1,6 @@
 /**
  * @param {string} sliderSelector - Selector CSS para los contenedores del slider
  * @param {object} options - Opciones de configuración
- * @param {string} options.trackSelector - Selector para el track (default: '.sliderTrack')
- * @param {string} options.prevBtnSelector - Selector para botón anterior (default: '.prevBtn')
- * @param {string} options.nextBtnSelector - Selector para botón siguiente (default: '.nextBtn')
- * @param {string} options.slideSelector - Selector para los slides (opcional, solo si usas spotlight)
- * @param {string} options.overlaySelector - Selector para el overlay (opcional, solo si usas spotlight)
- * @param {boolean} options.enableSpotlight - Activar efecto spotlight (default: false)
- * @param {boolean} options.enableSwipe - Activar deslizamiento táctil (default: true)
- * @param {number} options.swipeThreshold - Distancia mínima para detectar swipe en px (default: 50)
  */
 function initSlider(sliderSelector, options = {}) {
   const defaults = {
@@ -44,6 +36,7 @@ function initSlider(sliderSelector, options = {}) {
     let touchStartX = 0;
     let touchEndX = 0;
     let isDragging = false;
+    let hasMoved = false; // Nueva variable para detectar si hubo movimiento real
 
     function getSlideWidth() {
       const firstSlide = track.children[0];
@@ -58,9 +51,15 @@ function initSlider(sliderSelector, options = {}) {
     }
 
     function getMaxIndex() {
-      const isMobile = window.innerWidth < 768;
-      const steps = isMobile ? 0 : config.extraSteps;
-      return Math.max(track.children.length - getVisibleCount() + steps, 0);
+      const visibleCount = getVisibleCount();
+      const totalSlides = track.children.length;
+      
+      // Cálculo corregido: el máximo índice es el total menos los visibles
+      const maxIndex = Math.max(totalSlides - visibleCount, 0);
+      
+      // Solo aplicar extraSteps en desktop
+      const isMobile = window.innerWidth < 1280;
+      return isMobile ? maxIndex : maxIndex + config.extraSteps;
     }
 
     function updateSpotlight() {
@@ -87,12 +86,14 @@ function initSlider(sliderSelector, options = {}) {
     }
 
     function goToNext() {
-      currentIndex = currentIndex >= getMaxIndex() ? 0 : currentIndex + 1;
+      const maxIndex = getMaxIndex();
+      currentIndex = currentIndex >= maxIndex ? 0 : currentIndex + 1;
       updateSlider();
     }
 
     function goToPrev() {
-      currentIndex = currentIndex <= 0 ? getMaxIndex() : currentIndex - 1;
+      const maxIndex = getMaxIndex();
+      currentIndex = currentIndex <= 0 ? maxIndex : currentIndex - 1;
       updateSlider();
     }
 
@@ -108,34 +109,56 @@ function initSlider(sliderSelector, options = {}) {
       
       function handleTouchStart(e) {
         touchStartX = e.touches[0].clientX;
+        touchEndX = e.touches[0].clientX; // Inicializar también touchEndX
         isDragging = true;
+        hasMoved = false; // Reset del flag de movimiento
       }
 
       function handleTouchMove(e) {
         if (!isDragging) return;
         touchEndX = e.touches[0].clientX;
+        
+        // Detectar si hubo movimiento significativo
+        const diff = Math.abs(touchStartX - touchEndX);
+        if (diff > 10) { // Más de 10px se considera movimiento
+          hasMoved = true;
+        }
       }
 
-      function handleTouchEnd() {
+      function handleTouchEnd(e) {
         if (!isDragging) return;
         isDragging = false;
         
+        // Solo procesar el swipe si hubo movimiento real
+        if (!hasMoved) {
+          touchStartX = 0;
+          touchEndX = 0;
+          return; // Salir si fue solo un tap/click
+        }
+        
         const swipeDistance = touchStartX - touchEndX;
         
-        if (swipeDistance > config.swipeThreshold) {
-          goToNext();
-        }
-        else if (swipeDistance < -config.swipeThreshold) {
-          goToPrev();
+        // Validar que la distancia supere el threshold
+        if (Math.abs(swipeDistance) > config.swipeThreshold) {
+          if (swipeDistance > 0) {
+            // Swipe hacia la izquierda (siguiente)
+            goToNext();
+          } else {
+            // Swipe hacia la derecha (anterior)
+            goToPrev();
+          }
         }
         
+        // Reset de variables
         touchStartX = 0;
         touchEndX = 0;
+        hasMoved = false;
       }
 
+      // Remover passive para poder prevenir comportamiento por defecto si es necesario
       slider.addEventListener('touchstart', handleTouchStart, { passive: true });
       slider.addEventListener('touchmove', handleTouchMove, { passive: true });
-      slider.addEventListener('touchend', handleTouchEnd);
+      slider.addEventListener('touchend', handleTouchEnd, { passive: true });
     }
 
     if (config.enableSpotlight) {

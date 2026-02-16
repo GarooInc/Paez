@@ -29,9 +29,17 @@
         </div>
 
         <!-- Flechas -->
-        <div class="md:flex hidden justify-between absolute inset-0 items-center px-4 pointer-events-none z-20">
-            <button class="prevBtn pointer-events-auto text-4xl text-white hover:text-gray-300 transition-colors">‹</button>
-            <button class="nextBtn pointer-events-auto text-4xl text-white hover:text-gray-300 transition-colors">›</button>
+        <div class="flex justify-between xl:px-95 2xl:px-120 px-5 absolute inset-0 items-center pointer-events-none z-20">
+            <button class="prevBtn pointer-events-auto text-4xl bg-white text-black rounded-full md:scale-50 scale-70 hover:text-gray-300 transition-colors">
+              <div class="scale-50">
+                {% render 'arrow-left' %}
+              </div>
+            </button>
+            <button class="nextBtn pointer-events-auto text-4xl bg-white text-black rounded-full md:scale-50 scale-70 hover:text-gray-300 transition-colors">
+              <div class="scale-50">
+                {% render 'arrow-right' %}
+              </div>
+            </button>
         </div>
 
     </div>
