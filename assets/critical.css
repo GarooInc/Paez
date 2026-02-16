@@ -106,6 +106,8 @@ body {
   width: 100%;
 }
 
+
+
 /* Child elements, by default, are constrained to the central column of the grid. */
 .shopify-section > * {
   grid-column: 2;

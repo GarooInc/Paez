@@ -50,10 +50,39 @@
         
 
     </div>
-    <div class="w-full flex absolute bottom-0 md:left-15 left-10 md:py-15 py-10 gap-20 overflow-hidden">
-        {% for i in (1..20) %}
-            <p class="text-white text-xl">{{section.settings.logo_text}}</p>
+    
+    <div class="ticker-wrapper w-full absolute bottom-0  py-10 overflow-hidden">
+      <div class="ticker-content">
+        {% for i in (1..10) %}
+          {% if section.settings.ticker_image != blank %}
+            <img 
+              src="{{ section.settings.ticker_image | img_url: '200x' }}" 
+              alt="{{ section.settings.logo_text }}"
+              height="{{ section.settings.ticker_image.height }}"
+              width="{{ section.settings.ticker_image.width }}"
+              class="ticker-item h-9 w-20 object-contain"
+              loading="lazy"
+            >
+          {% else %}
+            <p class="ticker-item text-white text-xl">{{ section.settings.logo_text }}</p>
+          {% endif %}
         {% endfor %}
+        <!-- Duplicar -->
+        {% for i in (1..10) %}
+          {% if section.settings.ticker_image != blank %}
+            <img 
+              src="{{ section.settings.ticker_image | img_url: '200x' }}" 
+              alt="{{ section.settings.logo_text }}"
+               height="{{ section.settings.ticker_image.height }}"
+              width="{{ section.settings.ticker_image.width }}"
+              class="ticker-item h-9 w-20 object-contain"
+              loading="lazy"
+            >
+          {% else %}
+            <p class="ticker-item text-white text-xl">{{ section.settings.logo_text }}</p>
+          {% endif %}
+        {% endfor %}
+      </div>
     </div>
 </section>
 
@@ -86,6 +115,52 @@
 
 
 
+</style>
+
+
+<style>
+  .ticker-wrapper {
+    position: absolute;
+    width: 100%;
+    overflow: hidden;
+  }
+
+  .ticker-content {
+    display: flex;
+    gap: 5rem;
+    animation: scroll-left 30s linear infinite;
+    width: max-content;
+    align-items: center;
+  }
+
+  .ticker-item {
+    white-space: nowrap;
+    flex-shrink: 0;
+  }
+
+  @keyframes scroll-left {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-50%);
+    }
+  }
+
+  .ticker-wrapper:hover .ticker-content {
+    animation-play-state: paused;
+  }
+
+  @media (max-width: 768px) {
+    .ticker-content {
+      gap: 3rem;
+      animation-duration: 20s;
+    }
+    
+    .ticker-item {
+      height: 2rem; /* h-8 en mobile */
+    }
+  }
 </style>
 
 
@@ -129,10 +204,25 @@
       "default": "Shop now"
     },
     {
+      "type": "image_picker",
+      "id": "ticker_image",
+      "label": "Ticker Image (optional)"
+    },
+    {
       "type": "text",
       "id": "logo_text",
-      "label": "Logo text",
-      "default": "Logo"
+      "label": "Ticker Text",
+      "default": "Your Brand"
+    },
+    {
+      "type": "range",
+      "id": "ticker_speed",
+      "min": 10,
+      "max": 60,
+      "step": 5,
+      "unit": "s",
+      "label": "Animation Speed",
+      "default": 30
     }
     
   ],

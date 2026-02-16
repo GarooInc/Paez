@@ -4,8 +4,8 @@
   </div>
 </div>
 
-<header class="full-bleed-header absolute left-0 top-10 w-full h-20 md:text-black  px-10 bg-transparent 
-  grid grid-cols-3 items-center z-50 -translate-x-3 hover:bg-white transition-colors duration-300">
+<header class="full-bleed-header absolute left-0 top-10 w-full h-20 md:text-black text-white px-10 bg-transparent 
+  grid grid-cols-3 items-center z-50 -translate-x-3 2xl:-translate-x-15 hover:bg-white transition-colors duration-300">
 
   <!-- MOBILE HAMBURGER -->
   <div class="flex items-center md:hidden gap-3">
@@ -35,9 +35,25 @@
   </div>
 
   <!-- LOGO / TEXTO DEL CENTRO -->
-  <div class="text-center text-2xl md:text-3xl font-semibold uppercase tracking-widest ">
+  <div class=" text-center text-2xl md:text-3xl font-semibold uppercase tracking-widest ">
     <a href="/">
-      {% if section.settings.header_title != blank %}
+      {% if section.settings.logo_header and section.settings.logo_header_mobile %}
+        <div class="md:flex hidden justify-center items-center ">
+          <img src="{{section.settings.logo_header|img_url:'master'}}"
+             width="{{section.settings.logo_header.width}}" 
+             height="{{section.settings.logo_header.height}}"
+             alt="{{shop.name}}"
+            class="w-30 h-auto object-contain">
+        </div>
+        <div class="flex md:hidden justify-center items-center ">
+          <img src="{{section.settings.logo_header_mobile|img_url:'master'}}"
+             width="{{section.settings.logo_header_mobile.width}}" 
+             height="{{section.settings.logo_header_mobile.height}}"
+             alt="{{shop.name}}"
+            class="w-30 h-auto object-contain">
+        </div>
+          
+      {% elsif section.settings.header_title != blank %}
         {{ section.settings.header_title }}
       {% else %}
         {{ shop.name | link_to: routes.root_url }}
@@ -129,8 +145,18 @@
       "type": "text",
       "id": "header_title",
       "label": "Header title",
-      "default": "Barner"
+      "default": "Paez"
 
+    },
+     {
+      "type": "image_picker",
+      "id": "logo_header",
+      "label": "Header logo",
+    },
+    {
+      "type": "image_picker",
+      "id": "logo_header_mobile",
+      "label": "Header logo Mobile",
     },
 
   ],

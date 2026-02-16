@@ -223,6 +223,9 @@
   .pointer-events-none {
     pointer-events: none;
   }
+  .collapse {
+    visibility: collapse;
+  }
   .invisible {
     visibility: hidden;
   }
@@ -298,6 +301,9 @@
   .z-50 {
     z-index: 50;
   }
+  .col-12 {
+    grid-column: 12;
+  }
   .container {
     width: 100%;
     @media (width >= 40rem) {
@@ -316,8 +322,14 @@
       max-width: 96rem;
     }
   }
+  .m-auto {
+    margin: auto;
+  }
   .mx-auto {
     margin-inline: auto;
+  }
+  .mt-1 {
+    margin-top: calc(var(--spacing) * 1);
   }
   .mt-4 {
     margin-top: calc(var(--spacing) * 4);
@@ -328,8 +340,14 @@
   .mt-auto {
     margin-top: auto;
   }
+  .mr-0 {
+    margin-right: calc(var(--spacing) * 0);
+  }
   .mb-0 {
     margin-bottom: calc(var(--spacing) * 0);
+  }
+  .mb-2 {
+    margin-bottom: calc(var(--spacing) * 2);
   }
   .mb-3 {
     margin-bottom: calc(var(--spacing) * 3);
@@ -393,8 +411,17 @@
   .h-6 {
     height: calc(var(--spacing) * 6);
   }
+  .h-8 {
+    height: calc(var(--spacing) * 8);
+  }
+  .h-9 {
+    height: calc(var(--spacing) * 9);
+  }
   .h-10 {
     height: calc(var(--spacing) * 10);
+  }
+  .h-12 {
+    height: calc(var(--spacing) * 12);
   }
   .h-20 {
     height: calc(var(--spacing) * 20);
@@ -419,6 +446,9 @@
   }
   .h-\[450px\] {
     height: 450px;
+  }
+  .h-\[500px\] {
+    height: 500px;
   }
   .h-\[600px\] {
     height: 600px;
@@ -479,6 +509,9 @@
   }
   .w-30 {
     width: calc(var(--spacing) * 30);
+  }
+  .w-40 {
+    width: calc(var(--spacing) * 40);
   }
   .w-\[180\%\] {
     width: 180%;
@@ -725,14 +758,23 @@
   .object-cover {
     object-fit: cover;
   }
+  .p-0 {
+    padding: calc(var(--spacing) * 0);
+  }
   .p-3 {
     padding: calc(var(--spacing) * 3);
   }
   .p-6 {
     padding: calc(var(--spacing) * 6);
   }
+  .px-0 {
+    padding-inline: calc(var(--spacing) * 0);
+  }
   .px-1 {
     padding-inline: calc(var(--spacing) * 1);
+  }
+  .px-2 {
+    padding-inline: calc(var(--spacing) * 2);
   }
   .px-3 {
     padding-inline: calc(var(--spacing) * 3);
@@ -766,6 +808,9 @@
   }
   .px-50 {
     padding-inline: calc(var(--spacing) * 50);
+  }
+  .py-1 {
+    padding-block: calc(var(--spacing) * 1);
   }
   .py-2 {
     padding-block: calc(var(--spacing) * 2);
@@ -1484,6 +1529,30 @@
       width: calc(1/5 * 100%);
     }
   }
+  .xl\:-translate-x-3 {
+    @media (width >= 80rem) {
+      --tw-translate-x: calc(var(--spacing) * -3);
+      translate: var(--tw-translate-x) var(--tw-translate-y);
+    }
+  }
+  .xl\:-translate-x-10 {
+    @media (width >= 80rem) {
+      --tw-translate-x: calc(var(--spacing) * -10);
+      translate: var(--tw-translate-x) var(--tw-translate-y);
+    }
+  }
+  .xl\:-translate-x-15 {
+    @media (width >= 80rem) {
+      --tw-translate-x: calc(var(--spacing) * -15);
+      translate: var(--tw-translate-x) var(--tw-translate-y);
+    }
+  }
+  .xl\:-translate-x-20 {
+    @media (width >= 80rem) {
+      --tw-translate-x: calc(var(--spacing) * -20);
+      translate: var(--tw-translate-x) var(--tw-translate-y);
+    }
+  }
   .xl\:px-20 {
     @media (width >= 80rem) {
       padding-inline: calc(var(--spacing) * 20);
@@ -1513,6 +1582,42 @@
     @media (width >= 80rem) {
       font-size: var(--text-lg);
       line-height: var(--tw-leading, var(--text-lg--line-height));
+    }
+  }
+  .\32 xl\:-translate-x-3 {
+    @media (width >= 96rem) {
+      --tw-translate-x: calc(var(--spacing) * -3);
+      translate: var(--tw-translate-x) var(--tw-translate-y);
+    }
+  }
+  .\32 xl\:-translate-x-5 {
+    @media (width >= 96rem) {
+      --tw-translate-x: calc(var(--spacing) * -5);
+      translate: var(--tw-translate-x) var(--tw-translate-y);
+    }
+  }
+  .\32 xl\:-translate-x-10 {
+    @media (width >= 96rem) {
+      --tw-translate-x: calc(var(--spacing) * -10);
+      translate: var(--tw-translate-x) var(--tw-translate-y);
+    }
+  }
+  .\32 xl\:-translate-x-15 {
+    @media (width >= 96rem) {
+      --tw-translate-x: calc(var(--spacing) * -15);
+      translate: var(--tw-translate-x) var(--tw-translate-y);
+    }
+  }
+  .\32 xl\:-translate-x-20 {
+    @media (width >= 96rem) {
+      --tw-translate-x: calc(var(--spacing) * -20);
+      translate: var(--tw-translate-x) var(--tw-translate-y);
+    }
+  }
+  .\32 xl\:-translate-x-30 {
+    @media (width >= 96rem) {
+      --tw-translate-x: calc(var(--spacing) * -30);
+      translate: var(--tw-translate-x) var(--tw-translate-y);
     }
   }
   .\32 xl\:px-1 {

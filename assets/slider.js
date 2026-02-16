@@ -13,8 +13,8 @@ function initSlider(sliderSelector, options = {}) {
     enableSwipe: true,
     swipeThreshold: 50,
     extraSteps: 0,
-    infinite: true, // Comportamiento tipo Slick
-    edgeFriction: 0.15 // Resistencia en los bordes (como Slick)
+    infinite: true, 
+    edgeFriction: 0.15 
   };
 
   const config = { ...defaults, ...options };
@@ -146,7 +146,6 @@ function initSlider(sliderSelector, options = {}) {
         const deltaX = touch.clientX - touchStartX;
         const deltaY = touch.clientY - touchStartY;
         
-        // Determinar si es scroll vertical u horizontal
         if (isScrolling === null) {
           isScrolling = Math.abs(deltaY) > Math.abs(deltaX);
         }
@@ -166,7 +165,6 @@ function initSlider(sliderSelector, options = {}) {
         const slideWidth = getSlideWidth();
         let dragDistance = deltaX;
         
-        // Aplicar resistencia en los bordes (efecto Slick)
         if (!config.infinite) {
           if (currentIndex === 0 && deltaX > 0) {
             // Resistencia al arrastrar hacia la derecha en el primer slide
@@ -194,16 +192,13 @@ function initSlider(sliderSelector, options = {}) {
         const slideWidth = getSlideWidth();
         const maxIndex = getMaxIndex();
         
-        // Calcular si el swipe fue suficiente
         const swipeThreshold = config.swipeThreshold;
         const velocity = Math.abs(deltaX);
         
-        // Restaurar transición
         track.style.transition = 'transform 0.3s ease-out';
         
         if (Math.abs(deltaX) > swipeThreshold) {
           if (deltaX > 0) {
-            // Swipe derecha (anterior)
             if (!config.infinite && currentIndex === 0) {
               // Ya estamos en el inicio, volver a la posición
               updateSlider();
@@ -211,7 +206,6 @@ function initSlider(sliderSelector, options = {}) {
               goToPrev();
             }
           } else {
-            // Swipe izquierda (siguiente)
             if (!config.infinite && currentIndex === maxIndex) {
               // Ya estamos en el final, volver a la posición
               updateSlider();
