@@ -12,7 +12,9 @@ function initSlider(sliderSelector, options = {}) {
     enableSpotlight: false,
     enableSwipe: true,
     swipeThreshold: 50,
-    extraSteps: 0
+    extraSteps: 0,
+    infinite: true, // Comportamiento tipo Slick
+    edgeFriction: 0.15 // Resistencia en los bordes (como Slick)
   };
 
   const config = { ...defaults, ...options };
@@ -34,9 +36,11 @@ function initSlider(sliderSelector, options = {}) {
 
     // Variables para swipe
     let touchStartX = 0;
-    let touchEndX = 0;
+    let touchStartY = 0;
+    let touchCurrentX = 0;
     let isDragging = false;
-    let hasMoved = false; // Nueva variable para detectar si hubo movimiento real
+    let startTransform = 0;
+    let isScrolling = null;
 
     function getSlideWidth() {
       const firstSlide = track.children[0];
@@ -53,11 +57,7 @@ function initSlider(sliderSelector, options = {}) {
     function getMaxIndex() {
       const visibleCount = getVisibleCount();
       const totalSlides = track.children.length;
-      
-      // Cálculo corregido: el máximo índice es el total menos los visibles
       const maxIndex = Math.max(totalSlides - visibleCount, 0);
-      
-      // Solo aplicar extraSteps en desktop
       const isMobile = window.innerWidth < 1280;
       return isMobile ? maxIndex : maxIndex + config.extraSteps;
     }
@@ -76,8 +76,15 @@ function initSlider(sliderSelector, options = {}) {
       });
     }
 
-    function updateSlider() {
+    function updateSlider(animate = true) {
       const slideWidth = getSlideWidth();
+      
+      if (animate) {
+        track.style.transition = 'transform 0.3s ease-out';
+      } else {
+        track.style.transition = 'none';
+      }
+      
       track.style.transform = `translateX(-${currentIndex * slideWidth}px)`;
       
       if (config.enableSpotlight) {
@@ -87,13 +94,25 @@ function initSlider(sliderSelector, options = {}) {
 
     function goToNext() {
       const maxIndex = getMaxIndex();
-      currentIndex = currentIndex >= maxIndex ? 0 : currentIndex + 1;
+      if (config.infinite) {
+        currentIndex = currentIndex >= maxIndex ? 0 : currentIndex + 1;
+      } else {
+        if (currentIndex < maxIndex) {
+          currentIndex++;
+        }
+      }
       updateSlider();
     }
 
     function goToPrev() {
       const maxIndex = getMaxIndex();
-      currentIndex = currentIndex <= 0 ? maxIndex : currentIndex - 1;
+      if (config.infinite) {
+        currentIndex = currentIndex <= 0 ? maxIndex : currentIndex - 1;
+      } else {
+        if (currentIndex > 0) {
+          currentIndex--;
+        }
+      }
       updateSlider();
     }
 
@@ -102,63 +121,126 @@ function initSlider(sliderSelector, options = {}) {
 
     window.addEventListener("resize", function () {
       currentIndex = 0;
-      updateSlider();
+      updateSlider(false);
     });
 
     if (config.enableSwipe) {
       
       function handleTouchStart(e) {
-        touchStartX = e.touches[0].clientX;
-        touchEndX = e.touches[0].clientX; // Inicializar también touchEndX
-        isDragging = true;
-        hasMoved = false; // Reset del flag de movimiento
+        const touch = e.touches[0];
+        touchStartX = touch.clientX;
+        touchStartY = touch.clientY;
+        touchCurrentX = touch.clientX;
+        isDragging = false;
+        isScrolling = null;
+        
+        const slideWidth = getSlideWidth();
+        startTransform = currentIndex * slideWidth;
+        
+        // Remover transición para drag fluido
+        track.style.transition = 'none';
       }
 
       function handleTouchMove(e) {
-        if (!isDragging) return;
-        touchEndX = e.touches[0].clientX;
+        const touch = e.touches[0];
+        const deltaX = touch.clientX - touchStartX;
+        const deltaY = touch.clientY - touchStartY;
         
-        // Detectar si hubo movimiento significativo
-        const diff = Math.abs(touchStartX - touchEndX);
-        if (diff > 10) { // Más de 10px se considera movimiento
-          hasMoved = true;
-        }
-      }
-
-      function handleTouchEnd(e) {
-        if (!isDragging) return;
-        isDragging = false;
-        
-        // Solo procesar el swipe si hubo movimiento real
-        if (!hasMoved) {
-          touchStartX = 0;
-          touchEndX = 0;
-          return; // Salir si fue solo un tap/click
+        // Determinar si es scroll vertical u horizontal
+        if (isScrolling === null) {
+          isScrolling = Math.abs(deltaY) > Math.abs(deltaX);
         }
         
-        const swipeDistance = touchStartX - touchEndX;
+        // Si es scroll vertical, no interferir
+        if (isScrolling) {
+          return;
+        }
         
-        // Validar que la distancia supere el threshold
-        if (Math.abs(swipeDistance) > config.swipeThreshold) {
-          if (swipeDistance > 0) {
-            // Swipe hacia la izquierda (siguiente)
-            goToNext();
-          } else {
-            // Swipe hacia la derecha (anterior)
-            goToPrev();
+        // Prevenir scroll vertical si estamos haciendo swipe horizontal
+        e.preventDefault();
+        
+        isDragging = true;
+        touchCurrentX = touch.clientX;
+        
+        const maxIndex = getMaxIndex();
+        const slideWidth = getSlideWidth();
+        let dragDistance = deltaX;
+        
+        // Aplicar resistencia en los bordes (efecto Slick)
+        if (!config.infinite) {
+          if (currentIndex === 0 && deltaX > 0) {
+            // Resistencia al arrastrar hacia la derecha en el primer slide
+            dragDistance = deltaX * config.edgeFriction;
+          } else if (currentIndex === maxIndex && deltaX < 0) {
+            // Resistencia al arrastrar hacia la izquierda en el último slide
+            dragDistance = deltaX * config.edgeFriction;
           }
         }
         
-        // Reset de variables
-        touchStartX = 0;
-        touchEndX = 0;
-        hasMoved = false;
+        const newTransform = -startTransform + dragDistance;
+        track.style.transform = `translateX(${newTransform}px)`;
       }
 
-      // Remover passive para poder prevenir comportamiento por defecto si es necesario
+      function handleTouchEnd(e) {
+        if (isScrolling) {
+          return;
+        }
+        
+        if (!isDragging) {
+          return;
+        }
+        
+        const deltaX = touchCurrentX - touchStartX;
+        const slideWidth = getSlideWidth();
+        const maxIndex = getMaxIndex();
+        
+        // Calcular si el swipe fue suficiente
+        const swipeThreshold = config.swipeThreshold;
+        const velocity = Math.abs(deltaX);
+        
+        // Restaurar transición
+        track.style.transition = 'transform 0.3s ease-out';
+        
+        if (Math.abs(deltaX) > swipeThreshold) {
+          if (deltaX > 0) {
+            // Swipe derecha (anterior)
+            if (!config.infinite && currentIndex === 0) {
+              // Ya estamos en el inicio, volver a la posición
+              updateSlider();
+            } else {
+              goToPrev();
+            }
+          } else {
+            // Swipe izquierda (siguiente)
+            if (!config.infinite && currentIndex === maxIndex) {
+              // Ya estamos en el final, volver a la posición
+              updateSlider();
+            } else {
+              goToNext();
+            }
+          }
+        } else {
+          // Swipe muy corto, volver a la posición actual
+          updateSlider();
+        }
+        
+        // Reset
+        isDragging = false;
+        isScrolling = null;
+      }
+
+      // Eventos touch
       slider.addEventListener('touchstart', handleTouchStart, { passive: true });
-      slider.addEventListener('touchmove', handleTouchMove, { passive: true });
+      slider.addEventListener('touchmove', handleTouchMove, { passive: false }); // passive: false para poder usar preventDefault
       slider.addEventListener('touchend', handleTouchEnd, { passive: true });
+      
+      // Prevenir click accidental después de drag
+      slider.addEventListener('click', function(e) {
+        if (isDragging) {
+          e.preventDefault();
+          e.stopPropagation();
+        }
+      }, true);
     }
 
     if (config.enableSpotlight) {
