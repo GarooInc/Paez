@@ -1,4 +1,4 @@
-<div class="full-bleed flex flex-col h-[680px] xl:h-[730px] py-10 ">
+<div class="full-bleed flex flex-col h-[720px] xl:h-[730px] py-10 ">
     <div class="bg-gray-100 h-full w-full flex flex-col md:py-10 py-7">
         <div class="text-center md:pb-10 py-2 px-5">
             <h2 class="text-xl md:text-3xl font-semibold text-[#6f6a5e]">
@@ -66,9 +66,13 @@
             </div>
 
             <!-- Flechas -->
-            <div class="md:flex hidden justify-between absolute inset-0 items-center px-4 pointer-events-none z-20">
-                <button class="prevBtn pointer-events-auto">‹</button>
-                <button class="nextBtn pointer-events-auto">›</button>
+            <div class="md:flex hidden justify-center absolute top-10/13 inset-0 pointer-events-none z-20">
+                <button class="prevBtn pointer-events-auto">
+                    {% render 'arrow-left-reviews' %}
+                </button>
+                <button class="nextBtn pointer-events-auto">
+                    {% render 'arrow-right-reviews' %}
+                </button>
             </div>
 
         </div>

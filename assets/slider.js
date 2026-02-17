@@ -155,7 +155,6 @@ function initSlider(sliderSelector, options = {}) {
           return;
         }
         
-        // Prevenir scroll vertical si estamos haciendo swipe horizontal
         e.preventDefault();
         
         isDragging = true;
@@ -200,21 +199,18 @@ function initSlider(sliderSelector, options = {}) {
         if (Math.abs(deltaX) > swipeThreshold) {
           if (deltaX > 0) {
             if (!config.infinite && currentIndex === 0) {
-              // Ya estamos en el inicio, volver a la posición
               updateSlider();
             } else {
               goToPrev();
             }
           } else {
             if (!config.infinite && currentIndex === maxIndex) {
-              // Ya estamos en el final, volver a la posición
               updateSlider();
             } else {
               goToNext();
             }
           }
         } else {
-          // Swipe muy corto, volver a la posición actual
           updateSlider();
         }
         
@@ -225,7 +221,7 @@ function initSlider(sliderSelector, options = {}) {
 
       // Eventos touch
       slider.addEventListener('touchstart', handleTouchStart, { passive: true });
-      slider.addEventListener('touchmove', handleTouchMove, { passive: false }); // passive: false para poder usar preventDefault
+      slider.addEventListener('touchmove', handleTouchMove, { passive: false }); 
       slider.addEventListener('touchend', handleTouchEnd, { passive: true });
       
       // Prevenir click accidental después de drag

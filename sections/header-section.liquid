@@ -1,5 +1,5 @@
 <section class="relative w-full h-screen min-h-[800px] 
-    flex overflow-hidden full-bleed-header header-bg"
+    flex overflow-hidden full-bleed-header-section header-bg"
      style="--header-bg: url('{{ section.settings.background_image | image_url }}');">
      
 
@@ -17,19 +17,19 @@
                 {% endfor %}
             </div>
 
-            <div class="md:text-white text-black md:text-lg text-sm font-medium">
+            <div class="text-black md:text-lg text-sm font-medium">
                 {{ section.settings.star_text }}
             </div>
         </div>
 
         <div class="z-2">
-            <h1 class="text-left md:text-white text-black md:px-15 text-5xl font-bold pt-10 ">
+            <h1 class="text-left text-black md:px-15 text-5xl font-bold pt-10 ">
             {{ section.settings.page_title | newline_to_br }}
             </h1>
         </div>
 
         <div class="z-2">
-            <p class="text-left  md:px-15 md:text-lg text-md md:pt-10 pt-5 md:text-white text-black">
+            <p class="text-left  md:px-15 md:text-lg text-md md:pt-10 pt-5 text-black">
             {{ section.settings.page_descripction }}
             </p>
         </div>
@@ -88,7 +88,7 @@
 
 <style>
 
-.full-bleed-header{
+.full-bleed-header-section{
   width: 100vw;
   margin-left: calc(50% - 50vw);
   margin-right: calc(50% - 50vw);

@@ -4,17 +4,17 @@
   </div>
 </div>
 
-<header class="full-bleed-header absolute left-0 top-10 w-full h-20 md:text-black text-white px-10 bg-transparent 
-  grid grid-cols-3 items-center z-50 -translate-x-3 2xl:-translate-x-15 hover:bg-white transition-colors duration-300">
+<header class="full-bleed-header absolute left-0 top-10 h-20 md:text-black text-white px-10 bg-transparent 
+  grid grid-cols-3 items-center z-50 hover:bg-white transition-colors duration-300">
 
   <!-- MOBILE HAMBURGER -->
   <div class="flex items-center md:hidden gap-3">
     <button 
         type="button" 
-        class="mobile-menu-toggle w-7  flex flex-col justify-center items-center "
+        class="mobile-menu-toggle w-7 flex flex-col justify-center items-center"
         aria-label="Toggle menu"
         onclick="toggleMobileMenu()">
-        {%-  render 'icon-hamburger' %}
+        {%- render 'icon-hamburger' %}
       </button>
 
     <div class="w-5">
@@ -35,21 +35,21 @@
   </div>
 
   <!-- LOGO / TEXTO DEL CENTRO -->
-  <div class=" text-center text-2xl md:text-3xl font-semibold uppercase tracking-widest ">
+  <div class="text-center text-2xl md:text-3xl font-semibold uppercase tracking-widest">
     <a href="/">
       {% if section.settings.logo_header and section.settings.logo_header_mobile %}
-        <div class="md:flex hidden justify-center items-center ">
-          <img src="{{section.settings.logo_header|img_url:'master'}}"
-             width="{{section.settings.logo_header.width}}" 
-             height="{{section.settings.logo_header.height}}"
-             alt="{{shop.name}}"
+        <div class="md:flex hidden justify-center items-center">
+          <img src="{{ section.settings.logo_header | img_url: 'master' }}"
+             width="{{ section.settings.logo_header.width }}" 
+             height="{{ section.settings.logo_header.height }}"
+             alt="{{ shop.name }}"
             class="w-30 h-auto object-contain">
         </div>
-        <div class="flex md:hidden justify-center items-center ">
-          <img src="{{section.settings.logo_header_mobile|img_url:'master'}}"
-             width="{{section.settings.logo_header_mobile.width}}" 
-             height="{{section.settings.logo_header_mobile.height}}"
-             alt="{{shop.name}}"
+        <div class="flex md:hidden justify-center items-center">
+          <img src="{{ section.settings.logo_header_mobile | img_url: 'master' }}"
+             width="{{ section.settings.logo_header_mobile.width }}" 
+             height="{{ section.settings.logo_header_mobile.height }}"
+             alt="{{ shop.name }}"
             class="w-30 h-auto object-contain">
         </div>
           
@@ -82,7 +82,7 @@
     </div>
   </div>
 
-{% comment %} menu que se muestra en mobile {% endcomment %}
+  {% comment %} menu que se muestra en mobile {% endcomment %}
   <div id="mobile-menu" class="md:hidden hidden fixed top-0 left-0 w-full h-screen bg-black z-50 px-8 overflow-y-hidden">
 
     <button
@@ -96,8 +96,8 @@
 
     <nav class="flex flex-col space-y-4 justify-center items-center h-full pt-24">
       {% for link in section.settings.menu.links %}
-        <a
-          href="{{ link.url }}"
+        
+        <a href="{{ link.url }}"
           class="text-2xl tracking-wider text-white hover:text-gray-300 transition-colors duration-200 uppercase text-center py-2"
           onclick="toggleMobileMenu()"
         >
@@ -117,14 +117,31 @@
 </script>
 
 <style>
-.full-bleed-header{
-  width: 100vw;
-  margin-left: calc(50% - 50vw);
-  margin-right: calc(50% - 50vw);
-}
+  html, body {
+    overflow-x: hidden;
+    max-width: 100%;
+  }
+
+  .full-bleed-header {
+    position: absolute;
+    left: 0;
+    right: 0;
+    width: 100%;
+    max-width: none;
+  }
+
+  .shopify-section > .full-bleed-header {
+    grid-column: 1 / -1;
+    position: absolute;
+    left: 0;
+    right: 0;
+    width: 100vw;
+    margin-left: calc(50% - 50vw);
+    margin-right: calc(50% - 50vw);
+  }
+
+  
 </style>
-
-
 
 {% schema %}
 {
@@ -146,19 +163,17 @@
       "id": "header_title",
       "label": "Header title",
       "default": "Paez"
-
     },
-     {
+    {
       "type": "image_picker",
       "id": "logo_header",
-      "label": "Header logo",
+      "label": "Header logo"
     },
     {
       "type": "image_picker",
       "id": "logo_header_mobile",
-      "label": "Header logo Mobile",
-    },
-
+      "label": "Header logo Mobile"
+    }
   ],
   "presets": [
     {

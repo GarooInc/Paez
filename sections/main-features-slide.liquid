@@ -1,4 +1,4 @@
-<div class="full-bleed min-h-[800px] flex flex-col py-5 px-5 sm:px-20 lg:px-5 xl:px-20 md:pb-20">
+<div class="full-bleed min-h-[800px] flex flex-col py-5 px-5 sm:px-20 lg:px-5 xl:px-20 md:pb-5">
     
     <div class="w-full text-center mb-8 pb-10">
         <h2 class="text-2xl md:text-4xl font-bold text-gray-900">
@@ -77,15 +77,16 @@
 
         <!-- Flechas de navegación - Desktop -->
         <div class="absolute inset-0 flex justify-between items-center pointer-events-none px-4">
-            <button class="feature-prev-btn pointer-events-auto 
-                rounded-full transition-all duration-300 text-2xl lg:text-4xl text-gray-800">
-                ‹
+            <button class="feature-prev-btn pointer-events-auto rounded-full scale-50 
+                transition-all duration-300 text-2xl lg:text-4xl text-gray-800 hover:text-gray-500">
+                 {% render 'arrow-left' %}
             </button>
-            <button class="feature-next-btn pointer-events-auto 
-                rounded-full transition-all duration-300 text-2xl lg:text-4xl text-gray-800">
-                ›
+            <button class="feature-next-btn pointer-events-auto rounded-full scale-50 transition-all duration-300 text-2xl lg:text-4xl text-gray-800">
+                {% render 'arrow-right' %}
             </button>
         </div>
+
+        
 
     </div>
 
