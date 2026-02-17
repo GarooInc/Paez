@@ -14,8 +14,13 @@
     "footer": {
       "type": "footer",
       "settings": {
-        "menu": "",
-        "show_payment_icons": true
+        "logo": "shopify://shop_images/Logo-Paez.png",
+        "title1": "Legal",
+        "title2": "Assistance",
+        "title3": "Socials",
+        "subscribe_text": "Subscribe to our newsletter",
+        "placeholder_text": "Enter your email address",
+        "button_text": "Subscribe"
       }
     }
   },
