@@ -50,6 +50,7 @@
         },
         "collection_tab_TbydwJ": {
           "type": "collection_tab",
+          "disabled": true,
           "settings": {
             "collection_title": "Best Sellers",
             "collection": "featured-bestsellers",
