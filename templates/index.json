@@ -15,13 +15,14 @@
       "settings": {
         "background_image": "shopify://shop_images/fondo_paez.png",
         "background_image_mobile": "shopify://shop_images/paez_1_ffcb51a7-dcfd-471f-a50c-9cc0f7fcea55.jpg",
+        "text_color": "Black",
         "star_text": "<p>Excellent <strong>4.7</strong></p>",
         "page_title": "Slide heading",
         "page_descripction": "Tell a story, explain a product detail",
         "button_text": "Shop now",
         "ticker_image": "shopify://shop_images/LOGO-PAEZ-OK.png",
         "logo_text": "Paez",
-        "ticker_speed": 45
+        "ticker_speed": 50
       }
     },
     "main_featured_d33iNh": {
