@@ -19,7 +19,8 @@
         "page_title": "Slide heading",
         "page_descripction": "Tell a story, explain a product detail",
         "button_text": "Shop now",
-        "logo_text": "Paez"
+        "logo_text": "Paez",
+        "ticker_speed": 30
       }
     },
     "main_featured_d33iNh": {
@@ -72,10 +73,10 @@
       "settings": {
         "primary_video_desktop": "https://cdn.shopify.com/videos/c/o/v/73da246fd4f3428eb8879e0f3e36e203.mp4",
         "primary_video_mobile": "https://cdn.shopify.com/videos/c/o/v/73da246fd4f3428eb8879e0f3e36e203.mp4",
-        "title_page": "Titulo",
-        "title_subtitle": "Texto del subtitulo",
-        "bn_1": "Boton primario",
-        "bn_2": "Boton secundario"
+        "title_page": "",
+        "title_subtitle": "",
+        "bn_1": "",
+        "bn_2": ""
       }
     },
     "main_mini_banner_UAiE3n": {
