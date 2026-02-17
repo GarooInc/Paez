@@ -15,6 +15,7 @@
       "settings": {
         "background_image": "shopify://shop_images/fondo_paez.png",
         "background_image_mobile": "shopify://shop_images/paez_1_ffcb51a7-dcfd-471f-a50c-9cc0f7fcea55.jpg",
+        "text_color": "Black",
         "star_text": "<p>Excellent <strong>4.7</strong></p>",
         "page_title": "Slide heading",
         "page_descripction": "Tell a story, explain a product detail",
@@ -263,7 +264,7 @@
           "type": "feature",
           "settings": {
             "feature_name": "INSANE COMFORTABLE",
-            "feature_image": "shopify://shop_images/speech-bubble.png",
+            "feature_image": "shopify://shop_images/light.png",
             "title": "INSANE COMFORTABLE",
             "subtitle": "",
             "description": "<p>Our products easily adjust to your feet, and feel extra comfortable due to our padded memory-foam insole. You’ll feel like walking on clouds.</p>",
@@ -274,7 +275,7 @@
           "type": "feature",
           "settings": {
             "feature_name": "WE’RE CRUELTY-FREE",
-            "feature_image": "shopify://shop_images/speech-bubble.png",
+            "feature_image": "shopify://shop_images/cruelty-free.png",
             "title": "WE’RE CRUELTY-FREE",
             "subtitle": "",
             "description": "<p>Our products are made from recycled textiles and micro-fibers components, from suppliers that work with the development of responsible production of footwear</p>",
