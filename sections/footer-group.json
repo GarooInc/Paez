@@ -14,10 +14,13 @@
     "footer": {
       "type": "footer",
       "settings": {
-        "logo": "shopify://shop_images/Logo-Paez.png",
+        "logo": "shopify://shop_images/LOGO-PAEZ-OK_e2334c06-8c55-450a-8cf7-77b5114aff6d.png",
         "title1": "Legal",
+        "link_list1": "",
         "title2": "Assistance",
+        "link_list2": "",
         "title3": "Socials",
+        "link_list3": "",
         "subscribe_text": "Subscribe to our newsletter",
         "placeholder_text": "Enter your email address",
         "button_text": "Subscribe"
