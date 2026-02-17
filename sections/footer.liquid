@@ -1,4 +1,4 @@
-<footer class="min-h-50 grid grid-cols-[2fr_3fr] gap-10 px-5 md:px-20 full-bleed-footer bg-gray-200">
+<footer class="min-h-50 grid lg:grid-cols-[2fr_3fr] md:gap-10 px-5 md:px-20 full-bleed-footer bg-gray-200">
   <div class="items-center justify-center flex flex-col gap-10">
     <img src="{{ section.settings.logo | image_url: width: 200 }}" 
       alt="Logo" 
@@ -7,29 +7,29 @@
       height="{{ section.settings.logo.height }}"
     >
   </div>
-  <div class="grid grid-rows-2 ">
-    <div class="grid grid-cols-3 pt-15 gap-20 ">
+  <div class="grid md:grid-rows-2 md:pl-0 pl-5 md:pb-0 pb-20">
+    <div class="grid grid-cols-3 md:pt-15 md:gap-20 gap-3 ">
       <div class="flex flex-col gap-1">
         <h3 class="text-lg font-semibold">{{ section.settings.title1 }}</h3>
         {% for link in section.settings.link_list1.links %}
-          <a href="{{ link.url }}" class="hover:underline">{{ link.title }}</a>
+          <a href="{{ link.url }}" class="hover:underline md:text-lg text-sm">{{ link.title }}</a>
         {% endfor %}
       </div>
       <div class="flex flex-col gap-1">
         <h3 class="text-lg font-semibold">{{ section.settings.title2 }}</h3>
         {% for link in section.settings.link_list2.links %}
-          <a href="{{ link.url }}" class="hover:underline">{{ link.title }}</a>
+          <a href="{{ link.url }}" class="hover:underline md:text-lg text-sm">{{ link.title }}</a>
         {% endfor %}
       </div>
       <div class="flex flex-col gap-1">
         <h3 class="text-lg font-semibold">{{ section.settings.title3 }}</h3>
-        <a href="#" class="hover:underline">Facebook</a>
-        <a href="#" class="hover:underline">Instagram</a>
-        <a href="#" class="hover:underline">Twitter</a>
+        <a href="{{ section.settings.facebook_url }}" class="hover:underline md:text-lg text-sm">Facebook</a>
+        <a href="{{ section.settings.instagram_url }}" class="hover:underline md:text-lg text-sm">Instagram</a>
+        <a href="{{ section.settings.twitter_url }}" class="hover:underline md:text-lg text-sm">Twitter</a>
       </div>
     </div>
-    <div class="pt-20 border-t border-gray-200 flex flex-col items-start">
-      <p class="text-center mb-5">{{ section.settings.subscribe_text }}</p>
+    <div class="md:pt-20 pt-10 border-t border-gray-200 flex flex-col md:items-start">
+      <p class="text-center pb-5">{{ section.settings.subscribe_text }}</p>
       <form 
          class="flex justify-center gap-2">
 
