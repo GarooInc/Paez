@@ -223,6 +223,15 @@
             "user": "@Marta Kadosh via Judge.Me",
             "stars": 5
           }
+        },
+        "producto_eUN34X": {
+          "type": "producto",
+          "settings": {
+            "product_choose": "tulipa-microfiber-napa-black",
+            "comment": "<p>Beautiful Tulipas. They are perfect</p>",
+            "user": "@Nyembetti Fernandes via Judge.Me",
+            "stars": 5
+          }
         }
       },
       "block_order": [
@@ -230,7 +239,8 @@
         "producto_CRnPpn",
         "producto_z4yjrw",
         "producto_3zWAqN",
-        "producto_iXxjg9"
+        "producto_iXxjg9",
+        "producto_eUN34X"
       ],
       "name": "Reviews",
       "settings": {
