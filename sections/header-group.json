@@ -16,7 +16,9 @@
       "settings": {
         "menu": "main-menu-2",
         "newsletter": "Welcome to our store",
-        "header_title": "PAEZ"
+        "header_title": "PAEZ",
+        "logo_header": "shopify://shop_images/LOGO-PAEZ-OK.png",
+        "logo_header_mobile": "shopify://shop_images/Paez-LOGO-01-white.png"
       }
     }
   },
