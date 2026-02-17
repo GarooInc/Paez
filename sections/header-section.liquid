@@ -15,19 +15,19 @@
                 {% endfor %}
             </div>
 
-            <div class="header-text md:text-lg text-sm font-medium  text-{{ section.settings.text_color }}">
+            <div class="header-text md:text-lg text-sm font-medium text-black md:text-{{ section.settings.text_color }}">
                 {{ section.settings.star_text }}
             </div>
         </div>
 
         <div class="z-2">
-            <h1 class="header-text text-left md:px-15 text-5xl font-bold pt-10 text-{{ section.settings.text_color }}">
+            <h1 class="header-text text-left md:px-15 text-5xl font-bold pt-10 text-black md:text-{{ section.settings.text_color }}">
                 {{ section.settings.page_title | newline_to_br }}
             </h1>
         </div>
 
         <div class="z-2">
-            <p class="header-text text-left md:px-15 md:text-lg text-md md:pt-10 pt-5  text-{{ section.settings.text_color }}">
+            <p class="header-text text-left md:px-15 md:text-lg text-md md:pt-10 pt-5  text-black md:text-{{ section.settings.text_color }}">
                 {{ section.settings.page_descripction }}
             </p>
         </div>
