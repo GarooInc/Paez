@@ -13,8 +13,9 @@
       "type": "header-section",
       "name": "Header Main section",
       "settings": {
-        "background_image": "shopify://shop_images/fondo_paez.png",
+        "background_image": "shopify://shop_images/Diseno_sin_titulo_21.png",
         "background_image_mobile": "shopify://shop_images/paez_1_ffcb51a7-dcfd-471f-a50c-9cc0f7fcea55.jpg",
+        "text_color": "White",
         "star_text": "<p>Excellent <strong>4.7</strong></p>",
         "page_title": "Slide heading",
         "page_descripction": "Tell a story, explain a product detail",
@@ -86,21 +87,21 @@
         "producto_3LKDKc": {
           "type": "producto",
           "settings": {
-            "image_banner": "shopify://shop_images/speech-bubble.png",
+            "image_banner": "shopify://shop_images/fast.png",
             "text": "Free Shipping on all orders over 100€"
           }
         },
         "producto_TwwXEd": {
           "type": "producto",
           "settings": {
-            "image_banner": "shopify://shop_images/speech-bubble.png",
+            "image_banner": "shopify://shop_images/tag.png",
             "text": "Get 10% off on all purchases over 150€"
           }
         },
         "producto_K7jn3G": {
           "type": "producto",
           "settings": {
-            "image_banner": "shopify://shop_images/speech-bubble.png",
+            "image_banner": "shopify://shop_images/return-box.png",
             "text": "30-day return period."
           }
         }
@@ -263,7 +264,7 @@
           "type": "feature",
           "settings": {
             "feature_name": "INSANE COMFORTABLE",
-            "feature_image": "shopify://shop_images/speech-bubble.png",
+            "feature_image": "shopify://shop_images/light.png",
             "title": "INSANE COMFORTABLE",
             "subtitle": "",
             "description": "<p>Our products easily adjust to your feet, and feel extra comfortable due to our padded memory-foam insole. You’ll feel like walking on clouds.</p>",
@@ -274,7 +275,7 @@
           "type": "feature",
           "settings": {
             "feature_name": "WE’RE CRUELTY-FREE",
-            "feature_image": "shopify://shop_images/speech-bubble.png",
+            "feature_image": "shopify://shop_images/cruelty-free.png",
             "title": "WE’RE CRUELTY-FREE",
             "subtitle": "",
             "description": "<p>Our products are made from recycled textiles and micro-fibers components, from suppliers that work with the development of responsible production of footwear</p>",
@@ -285,7 +286,7 @@
           "type": "feature",
           "settings": {
             "feature_name": "IT’S VERSATILE",
-            "feature_image": "shopify://shop_images/speech-bubble.png",
+            "feature_image": "shopify://shop_images/resourceful.png",
             "title": "IT’S VERSATILE",
             "subtitle": "",
             "description": "<p>Over these past years, we’re on a path of developing new product ranges that can take you anywhere. From work days, to lunch dates, to end of the day unexpected moments. Your PAEZ take you anywhere! </p>",
@@ -296,7 +297,7 @@
           "type": "feature",
           "settings": {
             "feature_name": "WE’RE ABOUT FUN!",
-            "feature_image": "shopify://shop_images/speech-bubble.png",
+            "feature_image": "shopify://shop_images/laugh.png",
             "title": "WE’RE ABOUT FUN!",
             "subtitle": "Subtitle",
             "description": "<p>Summer is out motto for everything we do. And because of that, we’re adventurous, colourful, fun, and believe in the power of community. At PAEZ we’re the essential for any occasion.</p>",
