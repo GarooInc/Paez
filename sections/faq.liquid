@@ -23,7 +23,7 @@
             </h2>
         </div>
 
-        <div class="flex flex-col lg:flex-row gap-8 lg:gap-12">
+        <div class="flex flex-col lg:flex-row gap-8 lg:gap-12 w-full">
             
             <!-- Lado izquierdo: Categorías -->
             <div class="w-full lg:w-1/3 flex flex-col gap-4">
@@ -38,89 +38,89 @@
             </div>
 
             <!-- Lado derecho: Preguntas y respuestas -->
-            <div class="w-full lg:w-2/3">
+            <div class="w-full lg:w-2/3 faq-panel-wrapper">
                 {% for block in section.blocks %}
-                    <div class="faq-content bg-white rounded-2xl p-6 md:p-8 {% unless forloop.first %}hidden{% endunless %}"
+                    <div class="faq-content bg-white rounded-2xl p-6 md:p-8 {% unless forloop.first %}faq-hidden{% endunless %}"
                          data-content="{{ block.id }}">
                         
                         {% if block.settings.question_1 != blank %}
-                            <details class="faq-item group mb-4">
-                                <summary class="flex justify-between items-center cursor-pointer list-none py-4 border-b border-gray-200">
-                                    <span class="text-lg font-semibold text-gray-900 pr-4">
+                            <div class="faq-item mb-2">
+                                <button class="faq-question w-full flex justify-between items-center cursor-pointer py-4 border-b border-gray-200">
+                                    <span class="text-lg font-semibold text-gray-900 pr-4 text-left">
                                         {{ block.settings.question_1 }}
                                     </span>
-                                    <span class="text-2xl transform transition-transform duration-300 group-open:rotate-180">
-                                        ›
-                                    </span>
-                                </summary>
-                                <div class="pt-4 pb-2 text-gray-600 leading-relaxed">
-                                    {{ block.settings.answer_1 }}
+                                    <span class="faq-arrow text-2xl flex-shrink-0 transition-transform duration-300">›</span>
+                                </button>
+                                <div class="faq-answer overflow-hidden">
+                                    <div class="faq-answer-inner pt-4 pb-2 text-gray-600 leading-relaxed">
+                                        {{ block.settings.answer_1 }}
+                                    </div>
                                 </div>
-                            </details>
+                            </div>
                         {% endif %}
 
                         {% if block.settings.question_2 != blank %}
-                            <details class="faq-item group mb-4">
-                                <summary class="flex justify-between items-center cursor-pointer list-none py-4 border-b border-gray-200">
-                                    <span class="text-lg font-semibold text-gray-900 pr-4">
+                            <div class="faq-item mb-2">
+                                <button class="faq-question w-full flex justify-between items-center cursor-pointer py-4 border-b border-gray-200">
+                                    <span class="text-lg font-semibold text-gray-900 pr-4 text-left">
                                         {{ block.settings.question_2 }}
                                     </span>
-                                    <span class="text-2xl transform transition-transform duration-300 group-open:rotate-180">
-                                        ›
-                                    </span>
-                                </summary>
-                                <div class="pt-4 pb-2 text-gray-600 leading-relaxed">
-                                    {{ block.settings.answer_2 }}
+                                    <span class="faq-arrow text-2xl flex-shrink-0 transition-transform duration-300">›</span>
+                                </button>
+                                <div class="faq-answer overflow-hidden">
+                                    <div class="faq-answer-inner pt-4 pb-2 text-gray-600 leading-relaxed">
+                                        {{ block.settings.answer_2 }}
+                                    </div>
                                 </div>
-                            </details>
+                            </div>
                         {% endif %}
 
                         {% if block.settings.question_3 != blank %}
-                            <details class="faq-item group mb-4">
-                                <summary class="flex justify-between items-center cursor-pointer list-none py-4 border-b border-gray-200">
-                                    <span class="text-lg font-semibold text-gray-900 pr-4">
+                            <div class="faq-item mb-2">
+                                <button class="faq-question w-full flex justify-between items-center cursor-pointer py-4 border-b border-gray-200">
+                                    <span class="text-lg font-semibold text-gray-900 pr-4 text-left">
                                         {{ block.settings.question_3 }}
                                     </span>
-                                    <span class="text-2xl transform transition-transform duration-300 group-open:rotate-180">
-                                        ›
-                                    </span>
-                                </summary>
-                                <div class="pt-4 pb-2 text-gray-600 leading-relaxed">
-                                    {{ block.settings.answer_3 }}
+                                    <span class="faq-arrow text-2xl flex-shrink-0 transition-transform duration-300">›</span>
+                                </button>
+                                <div class="faq-answer overflow-hidden">
+                                    <div class="faq-answer-inner pt-4 pb-2 text-gray-600 leading-relaxed">
+                                        {{ block.settings.answer_3 }}
+                                    </div>
                                 </div>
-                            </details>
+                            </div>
                         {% endif %}
 
                         {% if block.settings.question_4 != blank %}
-                            <details class="faq-item group mb-4">
-                                <summary class="flex justify-between items-center cursor-pointer list-none py-4 border-b border-gray-200">
-                                    <span class="text-lg font-semibold text-gray-900 pr-4">
+                            <div class="faq-item mb-2">
+                                <button class="faq-question w-full flex justify-between items-center cursor-pointer py-4 border-b border-gray-200">
+                                    <span class="text-lg font-semibold text-gray-900 pr-4 text-left">
                                         {{ block.settings.question_4 }}
                                     </span>
-                                    <span class="text-2xl transform transition-transform duration-300 group-open:rotate-180">
-                                        ›
-                                    </span>
-                                </summary>
-                                <div class="pt-4 pb-2 text-gray-600 leading-relaxed">
-                                    {{ block.settings.answer_4 }}
+                                    <span class="faq-arrow text-2xl flex-shrink-0 transition-transform duration-300">›</span>
+                                </button>
+                                <div class="faq-answer overflow-hidden">
+                                    <div class="faq-answer-inner pt-4 pb-2 text-gray-600 leading-relaxed">
+                                        {{ block.settings.answer_4 }}
+                                    </div>
                                 </div>
-                            </details>
+                            </div>
                         {% endif %}
 
                         {% if block.settings.question_5 != blank %}
-                            <details class="faq-item group mb-4">
-                                <summary class="flex justify-between items-center cursor-pointer list-none py-4 border-b border-gray-200">
-                                    <span class="text-lg font-semibold text-gray-900 pr-4">
+                            <div class="faq-item mb-2">
+                                <button class="faq-question w-full flex justify-between items-center cursor-pointer py-4 border-b border-gray-200">
+                                    <span class="text-lg font-semibold text-gray-900 pr-4 text-left">
                                         {{ block.settings.question_5 }}
                                     </span>
-                                    <span class="text-2xl transform transition-transform duration-300 group-open:rotate-180">
-                                        ›
-                                    </span>
-                                </summary>
-                                <div class="pt-4 pb-2 text-gray-600 leading-relaxed">
-                                    {{ block.settings.answer_5 }}
+                                    <span class="faq-arrow text-2xl flex-shrink-0 transition-transform duration-300">›</span>
+                                </button>
+                                <div class="faq-answer overflow-hidden">
+                                    <div class="faq-answer-inner pt-4 pb-2 text-gray-600 leading-relaxed">
+                                        {{ block.settings.answer_5 }}
+                                    </div>
                                 </div>
-                            </details>
+                            </div>
                         {% endif %}
 
                     </div>
@@ -128,9 +128,7 @@
             </div>
 
         </div>
-
     </div>
-
 </div>
 
 <style>
@@ -140,43 +138,144 @@
   margin-right: calc(50% - 50vw);
 }
 
-.faq-item[open] summary span:last-child {
+.faq-panel-wrapper {
+  position: relative;
+}
+
+.faq-content {
+  opacity: 1;
+  transform: translateY(0);
+  transition: opacity 0.35s ease, transform 0.35s ease;
+}
+
+.faq-content.faq-hidden {
+  display: none;
+  opacity: 0;
+  transform: translateY(12px);
+}
+
+.faq-content.faq-fade-out {
+  opacity: 0;
+  transform: translateY(-12px);
+  pointer-events: none;
+}
+
+.faq-content.faq-fade-in {
+  opacity: 0;
+  transform: translateY(12px);
+}
+
+.faq-answer {
+  max-height: 0;
+  transition: max-height 0.4s cubic-bezier(0.4, 0, 0.2, 1),
+              opacity 0.3s ease;
+  opacity: 0;
+}
+
+.faq-answer.is-open {
+  opacity: 1;
+}
+
+.faq-arrow {
+  display: inline-block;
+  transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.faq-item.is-open .faq-arrow {
   transform: rotate(90deg);
 }
 
-.faq-item summary::-webkit-details-marker {
-  display: none;
+.faq-question:hover span:first-child {
+  opacity: 0.7;
 }
 </style>
 
 <script>
 document.addEventListener("DOMContentLoaded", function () {
-    const categoryBtns = document.querySelectorAll(".faq-category-btn");
-    const faqContents = document.querySelectorAll(".faq-content");
+  const categoryBtns = document.querySelectorAll(".faq-category-btn");
+  const faqContents  = document.querySelectorAll(".faq-content");
 
-    categoryBtns.forEach(btn => {
-        btn.addEventListener("click", function () {
-            const categoryId = this.dataset.category;
+  categoryBtns.forEach(btn => {
+    btn.addEventListener("click", function () {
+      const categoryId = this.dataset.category;
+      const currentVisible = [...faqContents].find(c => !c.classList.contains("faq-hidden"));
+      const nextPanel = [...faqContents].find(c => c.dataset.content === categoryId);
 
-            // Cambiar estilos de botones
-            categoryBtns.forEach(b => {
-                b.classList.remove("bg-white", "text-black");
-                b.classList.add("bg-white/30", "text-white");
+      if (!nextPanel || nextPanel === currentVisible) return;
+
+      categoryBtns.forEach(b => {
+        b.classList.remove("bg-white", "text-black");
+        b.classList.add("bg-white/30", "text-white");
+      });
+      this.classList.remove("bg-white/30", "text-white");
+      this.classList.add("bg-white", "text-black");
+
+      // Fade out del panel actual
+      if (currentVisible) {
+        currentVisible.classList.add("faq-fade-out");
+
+        setTimeout(() => {
+          currentVisible.classList.add("faq-hidden");
+          currentVisible.classList.remove("faq-fade-out");
+
+          currentVisible.querySelectorAll(".faq-item.is-open").forEach(item => {
+            closeAccordion(item);
+          });
+
+          // Fade in del nuevo panel
+          nextPanel.classList.remove("faq-hidden");
+          nextPanel.classList.add("faq-fade-in");
+
+          requestAnimationFrame(() => {
+            requestAnimationFrame(() => {
+              nextPanel.classList.remove("faq-fade-in");
             });
+          });
+        }, 300);
 
-            this.classList.remove("bg-white/30", "text-white");
-            this.classList.add("bg-white", "text-black");
-
-            // Cambiar contenido visible con fade
-            faqContents.forEach(content => {
-                if (content.dataset.content === categoryId) {
-                    content.classList.remove("hidden");
-                } else {
-                    content.classList.add("hidden");
-                }
-            });
-        });
+      } else {
+        nextPanel.classList.remove("faq-hidden");
+      }
     });
+  });
+
+  document.querySelectorAll(".faq-question").forEach(btn => {
+    btn.addEventListener("click", function () {
+      const item   = this.closest(".faq-item");
+      const answer = item.querySelector(".faq-answer");
+      const isOpen = item.classList.contains("is-open");
+
+      // Cerrar todos los abiertos en el mismo panel
+      const panel = item.closest(".faq-content");
+      panel.querySelectorAll(".faq-item.is-open").forEach(openItem => {
+        if (openItem !== item) closeAccordion(openItem);
+      });
+
+      // Toggle del actual
+      if (isOpen) {
+        closeAccordion(item);
+      } else {
+        openAccordion(item);
+      }
+    });
+  });
+
+  function openAccordion(item) {
+    const answer      = item.querySelector(".faq-answer");
+    const answerInner = item.querySelector(".faq-answer-inner");
+
+    item.classList.add("is-open");
+    answer.style.maxHeight = answerInner.scrollHeight + "px";
+    answer.classList.add("is-open");
+  }
+
+  function closeAccordion(item) {
+    const answer = item.querySelector(".faq-answer");
+
+    item.classList.remove("is-open");
+    answer.style.maxHeight = "0";
+    answer.classList.remove("is-open");
+  }
 });
 </script>
 
@@ -268,21 +367,15 @@ document.addEventListener("DOMContentLoaded", function () {
       "blocks": [
         {
           "type": "faq_category",
-          "settings": {
-            "category_name": "Returns & Refunds"
-          }
+          "settings": { "category_name": "Returns & Refunds" }
         },
         {
           "type": "faq_category",
-          "settings": {
-            "category_name": "Delivery"
-          }
+          "settings": { "category_name": "Delivery" }
         },
         {
           "type": "faq_category",
-          "settings": {
-            "category_name": "Order"
-          }
+          "settings": { "category_name": "Order" }
         }
       ]
     }
