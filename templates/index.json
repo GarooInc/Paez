@@ -359,6 +359,14 @@
             "image_banner": "shopify://shop_images/3_tulipas.jpg",
             "url_slide": ""
           }
+        },
+        "photo_8XUw9d": {
+          "type": "Photo",
+          "settings": {
+            "title": "",
+            "image_banner": "shopify://shop_images/652x1110px_Prancheta_1-01.png",
+            "url_slide": ""
+          }
         }
       },
       "block_order": [
@@ -366,7 +374,8 @@
         "photo_LJBb9H",
         "photo_aFyFcJ",
         "photo_Pz8iXC",
-        "photo_dFrfpG"
+        "photo_dFrfpG",
+        "photo_8XUw9d"
       ],
       "name": "Slide photos 2",
       "settings": {
