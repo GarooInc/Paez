@@ -430,6 +430,7 @@
         "faq_category_fwKkNy",
         "faq_category_m3yXNr"
       ],
+      "disabled": true,
       "name": "FAQ Section",
       "settings": {
         "title": "FAQ",
