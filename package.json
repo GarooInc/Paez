@@ -17,8 +17,8 @@
     "url": "https://github.com/GarooInc/Paez/issues"
   },
   "homepage": "https://github.com/GarooInc/Paez#readme",
-  "dependencies": {
-    "@tailwindcss/cli": "^4.1.18",
-    "tailwindcss": "^4.1.18"
+  "devDependencies": {
+    "@tailwindcss/cli": "^4.2.1",
+    "tailwindcss": "^4.2.1"
   }
 }
