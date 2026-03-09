@@ -40,17 +40,17 @@
       {% if section.settings.logo_header and section.settings.logo_header_mobile %}
         <div class="md:flex hidden justify-center items-center">
           <img src="{{ section.settings.logo_header | img_url: 'master' }}"
-             width="{{ section.settings.logo_header.width }}" 
+             width="{{ section.settings.logo_header.width }}"
              height="{{ section.settings.logo_header.height }}"
              alt="{{ shop.name }}"
-            class="w-30 h-auto object-contain">
+            class="w-25 h-auto object-contain">
         </div>
         <div class="flex md:hidden justify-center items-center">
           <img src="{{ section.settings.logo_header_mobile | img_url: 'master' }}"
-             width="{{ section.settings.logo_header_mobile.width }}" 
+             width="{{ section.settings.logo_header_mobile.width }}"
              height="{{ section.settings.logo_header_mobile.height }}"
              alt="{{ shop.name }}"
-            class="w-30 h-auto object-contain">
+            class="w-16 h-auto object-contain">
         </div>
           
       {% elsif section.settings.header_title != blank %}
