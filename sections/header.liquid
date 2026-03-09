@@ -45,12 +45,13 @@
              alt="{{ shop.name }}"
             class="w-25 h-auto object-contain">
         </div>
-        <div class="flex md:hidden justify-center items-center">
+        <div class="flex md:hidden flex-col justify-center items-center">
           <img src="{{ section.settings.logo_header_mobile | img_url: 'master' }}"
              width="{{ section.settings.logo_header_mobile.width }}"
              height="{{ section.settings.logo_header_mobile.height }}"
              alt="{{ shop.name }}"
             class="w-16 h-auto object-contain">
+          <span class="text-xs tracking-widest uppercase mt-1">Designed in Lisbon</span>
         </div>
           
       {% elsif section.settings.header_title != blank %}
