@@ -11,7 +11,8 @@
   "sections": {
     "main": {
       "type": "main-usf-search",
-      "settings": {}
+      "settings": {
+      }
     }
   },
   "order": [
