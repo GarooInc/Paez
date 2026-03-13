@@ -1,0 +1,144 @@
+<div class="custom-home-video custom-home-section-{{ section.id }}">
+  <div class="container">
+    {% if section.settings.bg-video != blank %}
+      <video class="desktop-video" loop autoplay muted playsinline>
+        <source src="{{ section.settings.bg-video }}" type="video/mp4">
+        Tu navegador no soporta videos HTML5.
+      </video>
+    {% endif %}
+
+    {% if section.settings.mobile-bg-video != blank %}
+      <video class="mobile-video" loop autoplay muted playsinline>
+        <source src="{{ section.settings.mobile-bg-video }}" type="video/mp4">
+        Tu navegador no soporta videos HTML5.
+      </video>
+    {% endif %}
+    <ul class="page-links">
+      {% if section.settings.label-1 != blank %}
+        <li class="links about-us">
+          <a href="{{ section.settings.link-1 }}">{{ section.settings.label-1 }}</a>
+        </li>
+      {% endif %}
+      {% if section.settings.label-2 != blank %}
+        <li class="links about-collection">
+            <a href="{{ section.settings.link-2 }}">{{ section.settings.label-2 }}</a>
+        </li>
+      {% endif %}
+      {% if section.settings.label-3 != blank %}
+        <li class="links moodboard">
+            <a href="{{ section.settings.link-3 }}">{{ section.settings.label-3 }}</a>
+        </li>
+      {% endif %}
+      {% if section.settings.label-4 != blank %}
+        <li class="links responsibility">
+            <a href="{{ section.settings.link-4 }}">{{ section.settings.label-4 }}</a>
+        </li>
+      {% endif %}
+    </div>
+  </div>
+</div>
+
+<style>
+  .custom-home-video video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Esto asegura que el video cubra completamente el área */
+}
+
+.desktop-video {
+  display: block;
+}
+
+.mobile-video {
+  display: none;
+}
+
+@media (max-width: 767px) {
+  .desktop-video {
+    display: none;
+  }
+
+  .mobile-video {
+    display: block;
+  }
+
+  .mobile-video::-webkit-media-controls {
+    display: none;
+}
+
+.mobile-video::-webkit-media-controls-start-playback-button {
+    display: none;
+}
+
+}
+
+</style>
+
+{% schema %}
+  {
+    "name": "Custom Home Video",
+    "settings": [
+            {
+        "type": "url",
+        "id": "bg-video",
+        "label": "Background Video URL"
+      },
+         {
+    "type": "url",
+    "id": "mobile-bg-video",
+    "label": "Background Video URL"
+  },
+      {
+        "type": "url",
+        "id" : "link-1",
+        "label" :"Navigation Link 1"
+      },
+      {
+        "type": "text",
+        "id" : "label-1",
+        "label" :"Navigation Text 1"
+      },
+      {
+        "type": "url",
+        "id" : "link-2",
+        "label" :"Navigation Link 2"
+      },
+      {
+        "type": "text",
+        "id" : "label-2",
+        "label" :"Navigation Text 2"
+      },
+      {
+        "type": "url",
+        "id" : "link-3",
+        "label" :"Navigation Link 3"
+      },
+      {
+        "type": "text",
+        "id" : "label-3",
+        "label" :"Navigation Text 3"
+      },
+      {
+        "type": "url",
+        "id" : "link-4",
+        "label" :"Navigation Link 4"
+      },
+      {
+        "type": "text",
+        "id" : "label-4",
+        "label" :"Navigation Text 4"
+      }
+    ],
+    "presets" : [
+      {
+        "name" : "Custom Home Video"
+      }
+    ]
+  }
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

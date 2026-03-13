@@ -1,0 +1,73 @@
+<div class="custom-icon-text {{ section.settings.custom_class }}">
+  <div class="container">
+    <div class="row">
+      <div class="block-content">
+        <ul class="box-info">
+          {%- for block in section.blocks -%}
+            <li class="info-block">
+              <div class="box-container">
+                <div class="icon">
+                  {% if block.settings.icon != blank %}
+                    <img src="{{ block.settings.icon | img_url:'' }}">
+                  {% endif %}
+                </div>
+                <div class="text-info">
+                  {% if block.settings.text != blank %}
+                    <p>{{ block.settings.text }}</p>
+                  {% endif %}
+                </div>
+              </div>
+            </li>
+          {% endfor %}
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "Custom Icon Text",
+  "settings": [
+    {
+      "type" : "text",
+      "id" : "custom_class",
+      "label" : "Custom Class"
+    }
+  ],
+  "blocks" :[
+    {
+      "type" : "column",
+      "name" : "blocks",
+      "settings" :[
+        {
+          "type" : "image_picker",
+          "id" : "icon",
+          "label" : "icon"
+        },
+        {
+          "type" : "text",
+          "id" : "text",
+          "label" : "Text"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name" : "Custom Icon Text",
+      "blocks" : [
+        {
+          "type": "column"
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

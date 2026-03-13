@@ -1,0 +1,57 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "babbc96c-959b-4a67-8598-fd7a38c4b6f9": {
+      "type": "rich-text-4",
+      "settings": {
+        "custom_class": "wholesale-banner-title page-banner-title",
+        "prefix": "",
+        "section_title": "Wholesale",
+        "section_sub": "",
+        "description": "<p>If you're interested in having PAEZ in your store, please fill out the following form and we will get in touch with you as soon as possible.</p>",
+        "section_url": ""
+      }
+    },
+    "cde8f309-37eb-49d9-b240-6b92c5f73114": {
+      "type": "wholesale",
+      "settings": {
+        "enable_s_wholesaleform": true,
+        "wholesaleform_name": "Your name",
+        "wholesaleform_lastname": "Name of business",
+        "wholesaleform_business_name": "Email",
+        "wholesaleform_business_tips": "Type of business",
+        "wholesaleform_vat_number": "VAT number (optional)",
+        "wholesaleform_address": "Address",
+        "wholesaleform_website": "Phone number",
+        "wholesaleform_socials": "Website & Socials",
+        "wholesaleform_find": "How did you find us?",
+        "wholesaleform_btn": "Submit"
+      }
+    },
+    "61eacd5c-480e-45d9-82e7-9ebb1bff14a6": {
+      "type": "section-banner-v12",
+      "settings": {
+        "custom_class": "wholesale-banner",
+        "img_banner": "shopify://shop_images/wholesale-banner-desktop.png",
+        "mob_img_banner": "shopify://shop_images/wholesale-banner-mobile.png",
+        "title": "",
+        "url_banner": "",
+        "color_title": "#000000",
+        "color_hover_title": "#ffffff"
+      }
+    }
+  },
+  "order": [
+    "babbc96c-959b-4a67-8598-fd7a38c4b6f9",
+    "cde8f309-37eb-49d9-b240-6b92c5f73114",
+    "61eacd5c-480e-45d9-82e7-9ebb1bff14a6"
+  ]
+}

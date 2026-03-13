@@ -1,0 +1,84 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {}
+    },
+    "68458900-fab1-4f8d-b3e8-77289dabfd48": {
+      "type": "rich-text-4",
+      "settings": {
+        "custom_class": "store-banner-title page-banner-title",
+        "prefix": "",
+        "section_title": "Returns",
+        "section_sub": "",
+        "description": "",
+        "section_url": ""
+      }
+    },
+    "48a7047a-a0ae-476d-bb6a-075c6d6560a9": {
+      "type": "section-banner-v12",
+      "disabled": true,
+      "settings": {
+        "custom_class": "store-banner",
+        "img_banner": "shopify://shop_images/Banner_Principal_4.png",
+        "mob_img_banner": "shopify://shop_images/Banner_Principaldasdasdsa.png",
+        "title": "",
+        "url_banner": "shopify://collections/all",
+        "color_title": "#000000",
+        "color_hover_title": "#ffffff"
+      }
+    },
+    "a2915c68-3dd4-40b9-bdc5-7b6d3f7ddffb": {
+      "type": "rich-text-4",
+      "settings": {
+        "custom_class": "store-wrapper-info",
+        "prefix": "",
+        "section_title": "",
+        "section_sub": "",
+        "description": "<p>At Paez, we want you to be completely satisfied with your purchase. If for any reason you're not, you have 30 days from the date of delivery to make a return.</p><p>For EU customers, simply contact us at onlineshop@paez.com with your order number, and we'll assist you with the return process. Please note that the product must be returned in its original packaging and in perfect condition for us to process a refund.</p><p></p><p>For customers outside the EU (including United Kingdom, Switzerland) or in regions subject to a customs clearance process (including Andorra, Canary Islands, Norway, Serbia, and Turkey) the return process is the same, but there may be additional duties, taxes, or fees imposed by your country that are not covered by Paez. Don't forget to include the commercial invoice. We recommend checking with your local customs office for more information. All shipping costs will be covered by the customer.</p><p>Once we receive the returned product, our storage warehouse will conduct a verification process to ensure everything is in order. This process may take up to 14 working days, but we're constantly working to have it completed as soon as possible.</p><p>We appreciate your patience and understanding as we work hard to ensure your satisfaction with our products and services.</p><p>Contact onlineshop@paez.com for support in the process.</p>",
+        "section_url": ""
+      }
+    },
+    "7f113b29-f3f9-49e0-8bd0-3db0c60ad219": {
+      "type": "rich-text-4",
+      "settings": {
+        "custom_class": "store-wrapper store-wrapper-section-two",
+        "prefix": "",
+        "section_title": "",
+        "section_sub": "",
+        "description": "",
+        "section_url": ""
+      }
+    },
+    "81f2a384-350f-4a39-bd2a-f332cb90810c": {
+      "type": "rich-text-4",
+      "disabled": true,
+      "settings": {
+        "custom_class": "store-wrapper store-wrapper-section-two",
+        "prefix": "",
+        "section_title": "Soon you'll be able to visit our stores in Barcelona, Lisbon and other selling points.  Stay tuned because our spring/summer collection is dropping real soon. Subcribe our newsletter for more.",
+        "section_sub": "",
+        "description": "",
+        "section_url": ""
+      }
+    }
+  },
+  "order": [
+    "main",
+    "68458900-fab1-4f8d-b3e8-77289dabfd48",
+    "48a7047a-a0ae-476d-bb6a-075c6d6560a9",
+    "a2915c68-3dd4-40b9-bdc5-7b6d3f7ddffb",
+    "7f113b29-f3f9-49e0-8bd0-3db0c60ad219",
+    "81f2a384-350f-4a39-bd2a-f332cb90810c"
+  ]
+}

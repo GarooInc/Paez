@@ -1,0 +1,263 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "article_template": {
+      "type": "article-template",
+      "disabled": true,
+      "settings": {
+        "blog_layout": "blog_layo_left",
+        "show_author": true,
+        "show_comment": true,
+        "show_cate": true,
+        "show_tag": true,
+        "show_related_post": true,
+        "related_post_title": "Related post",
+        "related_post_select_blog": "news",
+        "related_post_blogs_limit": 5,
+        "enable_widget_search": true,
+        "widget_search_title": "Search",
+        "shop_by_search_placeholder": "Search...",
+        "enable_widget_cate": true,
+        "widget_cate_title": "Categories",
+        "widget_cate_menu": "main-menu",
+        "enable_widget_related": true,
+        "widget_related_title": "RECENT POSTS",
+        "select_blog": "news",
+        "blogs_limit": 4,
+        "enable_widget_tag": true,
+        "shop_by_tag_title": "Tags",
+        "banner_article_url": "https://www.shopify.com/free-trial?ref=shopifycenter",
+        "enable_social_share": true
+      }
+    },
+    "rich_text_4_NYmhpA": {
+      "type": "rich-text-4",
+      "settings": {
+        "custom_class": "about-collection-banner-title page-banner-title",
+        "prefix": "",
+        "section_title": "Favorite People x Paez",
+        "section_sub": "",
+        "description": "",
+        "section_url": ""
+      }
+    },
+    "section_banner_v12_eBxzjb": {
+      "type": "section-banner-v12",
+      "settings": {
+        "custom_class": "about-banner",
+        "img_banner": "shopify://shop_images/Deskopt_BLOG_-_1920_x_918_1.png",
+        "mob_img_banner": "shopify://shop_images/FAVORITE_PEOPLE_SS24_BORODOGO-PAEZ-16.jpg",
+        "title": "",
+        "url_banner": "",
+        "color_title": "#000000",
+        "color_hover_title": "#ffffff"
+      }
+    },
+    "rich_text_4_rXbcyU": {
+      "type": "rich-text-4",
+      "custom_css": [
+        ".store-wrapper-beige {background-color: transparent;}",
+        "@media (max-width: 600px) {.container-v1 {margin-top: 0px; }}",
+        "@media (max-width: 600px) {.store-wrapper-beige p {font-size: 12px; line-height: 20px !important; padding: 10px 20px; }}"
+      ],
+      "settings": {
+        "custom_class": "store-wrapper-beige",
+        "prefix": "",
+        "section_title": "",
+        "section_sub": "",
+        "description": "<p>Paez and Favorite People teamed up to create some super cool and comfy summer shoes inspired by three awesome prints. We think there's a lot we can learn from kids, and we know that when they’re feeling relaxed and fresh, nothing can stop them!</p>",
+        "section_url": ""
+      }
+    },
+    "section_product_v2_p6nKLR": {
+      "type": "section-product-v2",
+      "blocks": {
+        "tab_XaU8mn": {
+          "type": "tab",
+          "settings": {
+            "tab_title": "KIDS",
+            "tab_collection": "favorite-people-x-paez-kids",
+            "tab_limit": 8
+          }
+        },
+        "tab_w4ie4b": {
+          "type": "tab",
+          "settings": {
+            "tab_title": "BABY",
+            "tab_collection": "favorite-people-x-paez-baby",
+            "tab_limit": 8
+          }
+        }
+      },
+      "block_order": [
+        "tab_XaU8mn",
+        "tab_w4ie4b"
+      ],
+      "custom_css": [
+        ".slick-slider {display: flex; justify-content: center; margin: 0px;}",
+        ".slick-list {padding-right: 0px;}",
+        "@media (min-width: 960px) {.slick-track {width: 1000px !important; display: flex; justify-content: center; }}",
+        ".nav-tabs {padding-top: 0px !important;}"
+      ],
+      "settings": {
+        "custom_class": "",
+        "margin_top": "",
+        "margin_bottom": "",
+        "title_heading": "Favorite people x PAEZ",
+        "color_title": "#222222",
+        "enable_slider": false
+      }
+    },
+    "custom_image_with_text_PEXVeW": {
+      "type": "custom-image-with-text",
+      "blocks": {
+        "text_Hx3fEe": {
+          "type": "text",
+          "settings": {
+            "text": "<p>We got inspired by our own childhood memories of summers spent outside, playing around and eating ice cream every day, where something exciting existed in every corner.</p>",
+            "text_style": "body"
+          }
+        }
+      },
+      "block_order": [
+        "text_Hx3fEe"
+      ],
+      "custom_css": [
+        "@media (max-width: 425px) {.grid {display: flex; flex-direction: column; }}",
+        ".image-with-text .grid__item {position: relative; align-self: center;}"
+      ],
+      "settings": {
+        "custom_class": "about-us-content responsibility-section-four",
+        "desktop-image": "shopify://shop_images/FAVORITE_PEOPLE_SS24_BORODOGO-PAEZ-19.jpg",
+        "mob-image": "shopify://shop_images/FAVORITE_PEOPLE_SS24_BORODOGO-PAEZ-19.jpg",
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "text_first",
+        "desktop_content_position": "top",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "color_scheme": "background-1",
+        "mobile_content_alignment": "left",
+        "padding_top": 36,
+        "padding_bottom": 0
+      }
+    },
+    "custom_image_with_text_R48UKx": {
+      "type": "custom-image-with-text",
+      "blocks": {
+        "text_tRjEyC": {
+          "type": "text",
+          "settings": {
+            "text": "<p>This collab is all about celebrating that adventurous spirit of kids, where life is all about having fun and making unforgettable memories. </p>",
+            "text_style": "body"
+          }
+        }
+      },
+      "block_order": [
+        "text_tRjEyC"
+      ],
+      "settings": {
+        "custom_class": "about-us-content responsibility-section-four",
+        "desktop-image": "shopify://shop_images/FAVORITE_PEOPLE_SS24_BORODOGO-PAEZ-85.jpg",
+        "mob-image": "shopify://shop_images/FAVORITE_PEOPLE_SS24_BORODOGO-PAEZ-85.jpg",
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "image_first",
+        "desktop_content_position": "middle",
+        "desktop_content_alignment": "right",
+        "content_layout": "no-overlap",
+        "color_scheme": "background-1",
+        "mobile_content_alignment": "left",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "custom_image_with_text_KhzRzD": {
+      "type": "custom-image-with-text",
+      "blocks": {
+        "text_MXhMmD": {
+          "type": "text",
+          "settings": {
+            "text": "<p>We're super excited to introduce your little ones to the Forrobodo, the Caju, and the Rio to this limited-edition line. We can't wait to see everyone rocking these stylish and comfy styles! </p>",
+            "text_style": "body"
+          }
+        }
+      },
+      "block_order": [
+        "text_MXhMmD"
+      ],
+      "settings": {
+        "custom_class": "about-us-content responsibility-section-four",
+        "desktop-image": "shopify://shop_images/FAVORITE_PEOPLE_SS24_BORODOGO-PAEZ-59.jpg",
+        "mob-image": "shopify://shop_images/FAVORITE_PEOPLE_SS24_BORODOGO-PAEZ-59.jpg",
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "text_first",
+        "desktop_content_position": "middle",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "color_scheme": "background-1",
+        "mobile_content_alignment": "left",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "custom_image_with_text_4NembP": {
+      "type": "custom-image-with-text",
+      "blocks": {
+        "text_ixTCDM": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "text": "<p>This collab is all about celebrating that adventurous spirit of kids, where life is all about having fun and making unforgettable memories. </p>",
+            "text_style": "body"
+          }
+        },
+        "image_YMjrdN": {
+          "type": "image",
+          "settings": {
+            "block-img": "shopify://shop_images/logos_fav_ppl_paez.png"
+          }
+        }
+      },
+      "block_order": [
+        "text_ixTCDM",
+        "image_YMjrdN"
+      ],
+      "settings": {
+        "custom_class": "about-us-content responsibility-section-four",
+        "desktop-image": "shopify://shop_images/FAVORITE_PEOPLE_SS24_BORODOGO-PAEZ-74.jpg",
+        "mob-image": "shopify://shop_images/FAVORITE_PEOPLE_SS24_BORODOGO-PAEZ-74.jpg",
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "image_first",
+        "desktop_content_position": "middle",
+        "desktop_content_alignment": "right",
+        "content_layout": "no-overlap",
+        "color_scheme": "background-1",
+        "mobile_content_alignment": "left",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    }
+  },
+  "order": [
+    "article_template",
+    "rich_text_4_NYmhpA",
+    "section_banner_v12_eBxzjb",
+    "rich_text_4_rXbcyU",
+    "section_product_v2_p6nKLR",
+    "custom_image_with_text_PEXVeW",
+    "custom_image_with_text_R48UKx",
+    "custom_image_with_text_KhzRzD",
+    "custom_image_with_text_4NembP"
+  ]
+}

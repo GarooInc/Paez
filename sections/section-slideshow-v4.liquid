@@ -1,0 +1,168 @@
+<div data-section-id="{{ section.id }}" data-section-type="section-slideshow-v4" style="{% if section.settings.margin_top != blank %}margin-top: {{section.settings.margin_top}}px;{%endif%} {% if section.settings.margin_bottom != blank %}margin-bottom: {{section.settings.margin_bottom}}px;{% endif %} {% if section.settings.sections_layout == "dark" %}background: {{section.settings.sections_bg_color}};{% endif %}">
+  <div class="section-slideshow-v4">
+    <div class="">
+      <div class="slick-side-h4 row">       
+        {% if section.blocks.size > 0 %}
+        {% for block in section.blocks %}
+        {% if block.type == "slideshow" %}
+        <div class="item-slide col-12">
+          <a href="{{block.settings.url_link_collection}}" class="d-block">
+            <img data-src="{% if block.settings.img_slider != blank %} {{block.settings.img_slider | img_url: 'master'}}{% else %}//via.placeholder.com/800x800{% endif %}" class="lazyload img-fluid w-100" alt="slideshow">
+          </a>
+          <div class="box-content">
+            <div class="content">
+              {% if block.settings.title_slide != blank %}
+              <h3 style="color: {{block.settings.color_title}}">
+                {{block.settings.title_slide}}
+              </h3>
+              {% endif %}
+              {% if block.settings.btn_block != blank %}
+              <a href="{{block.settings.url_link_collection}}" class="btn-{{ block.id }}">{{block.settings.btn_block}}</a>
+              {% endif %}
+            </div>
+          </div>
+        </div>
+        {% endif %}
+        {% endfor %}
+        {% endif %}
+      </div>
+    </div>
+  </div>
+</div>
+<style>
+  {% for block in section.blocks %}
+  {% if block.type == 'slideshow' %}
+  .section-slideshow-v4 .slick-side-h4 .item-slide .box-content .content .btn-{{ block.id }} {
+    color: {{block.settings.color_btn}};
+    transition: all .3s;
+  }
+  .section-slideshow-v4 .slick-side-h4 .item-slide .box-content .content .btn-{{ block.id }}:hover {
+    color: {{block.settings.color_btn_hover}};
+  }
+  {% endif %}
+  {% endfor %}
+  .section-slideshow-v4 .row {
+    margin: 0 -5px;
+  }
+  .section-slideshow-v4 .row .col-12 {
+  	padding: 0 5px;
+  }
+</style>
+
+{% schema %}
+{
+  "name": "SLIDESHOW V4",
+  "class": "index-section",
+  "settings": [
+    {
+      "type": "header",
+      "content": "Section Space"
+    },
+    {
+      "type": "text",
+      "id": "margin_top",
+      "label": "Margin Top",
+      "info": "Defined in pixels. Do not add the 'px' unit."
+    },
+    {
+      "type": "text",
+      "id": "margin_bottom",
+      "label": "Margin Bottom",
+      "info": "Defined in pixels. Do not add the 'px' unit."
+    }
+  ],
+  "blocks": [
+    {
+      "type": "slideshow",
+      "name": "slideshow",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "img_slider",
+          "label": "Image slideshow",
+          "info": "800 x 800px recommended"
+        },
+        {
+          "type": "text",
+          "id": "title_slide",
+          "label": "Title ",
+          "default": "Christmas Card - Angel"
+        },
+        {
+          "type": "color",
+          "id": "color_title",
+          "label": "Color Title",
+          "default": "#fff"
+        },
+        {
+          "type": "text",
+          "id": "btn_block",
+          "label": "Button Buy Now",
+          "default": "BUY NOW"
+        },
+        {
+          "type": "color",
+          "id": "color_btn",
+          "label": "Color Link",
+          "default": "#fff"
+        },
+        {
+          "type": "color",
+          "id": "color_btn_hover",
+          "label": "Color Link Hover",
+          "default": "#222222"
+        },
+        {
+          "type": "url",
+          "id": "url_link_collection",
+          "label": "URL Collection",
+          "default": "/collections/all"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "SLIDESHOW V4",
+      "category": "HOME",
+      "blocks": [
+        {
+          "type": "slideshow",
+          "settings": {
+            "title_slide": "Christmas Card - Angel",
+			"btn_block": "BUY NOW"
+          }
+        },
+        {
+          "type": "slideshow",
+          "settings": {
+            "title_slide": "Christmas Card - Angel",
+			"btn_block": "BUY NOW"
+          }
+        },
+        {
+          "type": "slideshow",
+          "settings": {
+            "title_slide": "Christmas Card - Angel",
+			"btn_block": "BUY NOW"
+          }
+        },
+        {
+          "type": "slideshow",
+          "settings": {
+            "title_slide": "Christmas Card - Angel",
+			"btn_block": "BUY NOW"
+          }
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}
+
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

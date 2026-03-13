@@ -1,0 +1,31 @@
+<div class="{{ section.settings.css_class }}">  
+  {{ section.settings.custom_content }}
+</div>
+{% schema %}
+  {
+    "name": "Custom content",
+    "settings": [
+      {
+        "type": "text",
+        "id": "css_class",
+        "label": "CSS Class"
+      },
+      {
+        "type": "textarea",
+        "id": "custom_content",
+        "label": "Content"
+      }
+    ],
+  "presets": [
+    {
+      "name": "Custom content"
+    }
+  ]
+  }
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

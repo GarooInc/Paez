@@ -1,0 +1,256 @@
+<section id="content">
+  <div class="content-page wholesale-page">
+
+    <div class="container container-v4">
+      <div class="wholesale-form">
+        {% if section.settings.enable_s_wholesaleform %}
+          <div class="wholesale_bottom">
+            <div class="wholesale-form-page">
+
+              {% form 'contact' %}
+
+              {% if form.posted_successfully? %}
+              <div class="alert alert-success alert-dismissible" role="alert">
+                <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <p style="margin-bottom: 5px;">
+                  {{ 'contact.form.post_success' | t }}
+                </p>
+              </div>
+              {% endif %}
+
+              {% if form.errors %}
+              <div class="alert alert-success alert-dismissible" role="alert">
+                <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <!-- {{ form.errors.size }} or {{ form.errors | size }} -->
+                <p style="margin-bottom: 5px;">Your contact form has {{ form.errors | size | pluralize: "an error", "a few errors" }}. To submit your form, make the following changes and try again:</p>
+                {% for field in form.errors %}
+                <p style="margin-bottom: 5px;">The {{ field | capitalize | replace: 'Body', 'Message' }} field {{ form.errors.messages[field] }}.</p>
+                {% endfor %}
+              </div>
+              {% endif %}
+              <div class="wholesale-form">
+                <div class="row">
+                  <div class="col-sm-12 col-md-6">
+                  	<p class="wholesale-name">
+                      <input class="" placeholder="{{section.settings.wholesaleform_name}}" type="text" id="wholesaleFormName" name="contact[name]" required>
+                    </p>
+                  </div>
+                  <div class="col-sm-12 col-md-6">
+                  	<p class="wholesale-last-name">
+                      <input class="" placeholder="{{section.settings.wholesaleform_lastname}}" type="text" id="wholesaleFormLastName" name="contact[lastname]" required>
+                    </p>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-sm-12 col-md-6">
+                    <p class="wholesale-business-name">
+                      <input class="" placeholder="{{section.settings.wholesaleform_business_name}}" type="email" id="wholesaleFormBusinessName" name="contact[email]" required>
+                    </p>
+                  </div>
+                  <div class="col-sm-12 col-md-6">
+                    <div class="wholesale-dropdown-wrapper dropdown-1">
+                      <div class="wholesale-dropdown-title dropdown-1">
+                        {{ section.settings.wholesaleform_business_tips }}
+                        <svg aria-hidden="true" focusable="false" role="presentation" viewBox="0 0 20 20" class="icon icon-plus"><path fill="#444" d="M17.409 8.929h-6.695V2.258c0-.566-.506-1.029-1.071-1.029s-1.071.463-1.071 1.029v6.671H1.967C1.401 8.929.938 9.435.938 10s.463 1.071 1.029 1.071h6.605V17.7c0 .566.506 1.029 1.071 1.029s1.071-.463 1.071-1.029v-6.629h6.695c.566 0 1.029-.506 1.029-1.071s-.463-1.071-1.029-1.071z"></path></svg>
+                        <svg aria-hidden="true" focusable="false" role="presentation" viewBox="0 0 20 20" class="icon icon-minus"><path fill="#444" d="M17.543 11.029H2.1A1.032 1.032 0 0 1 1.071 10c0-.566.463-1.029 1.029-1.029h15.443c.566 0 1.029.463 1.029 1.029 0 .566-.463 1.029-1.029 1.029z"></path></svg>
+                      </div>
+                        <div class="dropdown-items">
+                          <ul>
+                            <li class="tips-of-business active" data-value="Retail Stores">
+                              <span>Retail Stores</span>
+                            </li>
+                            <li class="tips-of-business" data-value="Franchise">
+                              <span>Franchise</span>
+                            </li>
+                            <li class="tips-of-business" data-value="Distribuition">
+                              <span>Distribution</span>
+                            </li>
+                            <li class="tips-of-business" data-value="Online">
+                              <span>Online</span>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    <input id="tips-of-business" type="hidden" name="contact[Tips of business]" value="Retail Stores">
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-sm-12 col-md-6">
+                      <p class="wholesale-vatnumber">
+                        <input class="" placeholder="{{section.settings.wholesaleform_vat_number}}" type="text" id="wholesaleFormVatNumber" name="contact[vatnumber]" >
+                      </p>
+                    </div>
+                    <div class="col-sm-12 col-md-6">
+                      <p class="wholesale-address">
+                        <input class="" placeholder="{{section.settings.wholesaleform_address}}" type="text" id="wholesaleFormAddress" name="contact[address]" >
+                      </p>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-sm-12 col-md-6">
+                      <p class="wholesale-website">
+                        <input class="" placeholder="{{section.settings.wholesaleform_website}}" type="text" id="wholesaleFormWebsite" name="contact[website]" >
+                      </p>
+                    </div>
+                    <div class="col-sm-12 col-md-6">
+                      <p class="wholesale-socials">
+                        <input class="" placeholder="{{section.settings.wholesaleform_socials}}" type="text" id="wholesaleFormSocial" name="contact[Social]" >
+                      </p>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-sm-12">
+                      <div class="wholesale-dropdown-wrapper dropdown-2">
+                        <div class="wholesale-dropdown-title dropdown-2">
+                          {{ section.settings.wholesaleform_find }}
+                          <svg aria-hidden="true" focusable="false" role="presentation" viewBox="0 0 20 20" class="icon icon-plus"><path fill="#444" d="M17.409 8.929h-6.695V2.258c0-.566-.506-1.029-1.071-1.029s-1.071.463-1.071 1.029v6.671H1.967C1.401 8.929.938 9.435.938 10s.463 1.071 1.029 1.071h6.605V17.7c0 .566.506 1.029 1.071 1.029s1.071-.463 1.071-1.029v-6.629h6.695c.566 0 1.029-.506 1.029-1.071s-.463-1.071-1.029-1.071z"></path></svg>
+                          <svg aria-hidden="true" focusable="false" role="presentation" viewBox="0 0 20 20" class="icon icon-minus"><path fill="#444" d="M17.543 11.029H2.1A1.032 1.032 0 0 1 1.071 10c0-.566.463-1.029 1.029-1.029h15.443c.566 0 1.029.463 1.029 1.029 0 .566-.463 1.029-1.029 1.029z"></path></svg>
+                        </div>
+                        <div class="dropdown-items">
+                          <ul>
+                            <li class="how-did-you-find-us active" data-value="Referral">
+                              <span>Referral</span>
+                            </li>
+                            <li class="how-did-you-find-us" data-value="Found you in other retailers">
+                              <span>Found you in other retailers</span>
+                            </li>
+                            <li class="how-did-you-find-us" data-value="Media">
+                              <span>Media</span>
+                            </li>
+                            <li class="how-did-you-find-us" data-value="Social Media">
+                              <span>Social Media</span>
+                            </li>
+                            <li class="how-did-you-find-us" data-value="Paez.com">
+                              <span>Paez.com</span>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                      <input id="how-did-you-find-us" type="hidden" name="contact[Tips of business]" value="Referral">
+                    </div>
+                  </div>
+                  <p class="wholesale-submit">
+                    <input  class="shop-button" type="submit" value="{{section.settings.wholesaleform_btn}}">
+                  </p>
+              </div>
+              {% endform %}
+            </div>
+          </div>
+          {% endif %}
+      </div>
+    </div>
+  </div>
+</section>
+<script>
+  $(document).on("click",".wholesale-dropdown-title.dropdown-1",function() {
+    $('.wholesale-dropdown-wrapper.dropdown-1').addClass('active');
+  });
+
+  $(document).on("click",".tips-of-business",function() {
+    var sel_value = $(this).data('value');
+    $('.tips-of-business').removeClass('active');
+    $(this).addClass('active');
+    $('#tips-of-business').val(sel_value);
+    //$(".wholesale-dropdown-wrapper.dropdown-1").removeClass('active');
+  });
+
+  $(document).on("click",".wholesale-dropdown-title.dropdown-2",function() {
+    $('.wholesale-dropdown-wrapper.dropdown-2').addClass('active');
+  });
+
+  $(document).on("click",".how-did-you-find-us",function() {
+    var sel_value = $(this).data('value');
+    $('.how-did-you-find-us').removeClass('active');
+    $(this).addClass('active');
+    $('#how-did-you-find-us').val(sel_value);
+    //$(".wholesale-dropdown-wrapper.dropdown-2").removeClass('active');
+  });
+</script>
+{% schema %}
+{
+  "name": "Wholesale",
+  "settings": [
+    {
+      "type": "header",
+      "content": "Section wholesale"
+    },
+    {
+      "type": "checkbox",
+      "id": "enable_s_wholesaleform",
+      "label": "Enable",
+      "default": true
+    },
+    {
+      "type": "text",
+      "id": "wholesaleform_name",
+      "label": "Title name",
+      "default": "Your name"
+    },
+    {
+      "type": "text",
+      "id": "wholesaleform_lastname",
+      "label": "Last name",
+      "default": "Your last name"
+    },
+    {
+      "type": "text",
+      "id": "wholesaleform_business_name",
+      "label": "Name of business",
+      "default": "Name of business"
+    },
+    {
+      "type": "text",
+      "id": "wholesaleform_business_tips",
+      "label": "Tips of business",
+      "default": "Tips of business"
+    },
+    {
+      "type": "text",
+      "id": "wholesaleform_vat_number",
+      "label": "Vat number",
+      "default": "Vat number"
+    },
+    {
+      "type": "text",
+      "id": "wholesaleform_address",
+      "label": "Address",
+      "default": "Address"
+    },
+    {
+      "type": "text",
+      "id": "wholesaleform_website",
+      "label": "Website",
+      "default": "Website"
+    },
+    {
+      "type": "text",
+      "id": "wholesaleform_socials",
+      "label": "Socials",
+      "default": "Socials"
+    },
+    {
+      "type": "text",
+      "id": "wholesaleform_find",
+      "label": "How did you find us?",
+      "default": "How did you find us?"
+    },
+    {
+      "type": "text",
+      "id": "wholesaleform_btn",
+      "label": "Button name",
+      "default": "Send submit"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Wholesale"
+    }
+  ]
+}
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

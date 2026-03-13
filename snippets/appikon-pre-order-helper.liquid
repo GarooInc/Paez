@@ -1,0 +1,40 @@
+<script id="pre-order-helper">
+/*==============================================================================
+# WARNING: This file is auto-generated and any changes that are made may be lost.
+==============================================================================*/
+
+    var _POConfig = _POConfig || {};
+    _POConfig = {{ shop.metafields.appikon_po._POConfig | json }};
+
+    _POConfig.shop = '{{shop.permanent_domain}}';
+
+
+    {% if product %}
+    _POConfig.productSettings = {{ product.metafields.appikon_po.settings.productSettings }};
+    _POConfig.variantSettings = {{ product.metafields.appikon_po.settings.variantSettings }};
+    _POConfig.product = {{ product | json }};
+    _POConfig.product.collections = {{ product.collections | json }};
+
+    {% for variant in product.variants %}
+    _POConfig.product.variants[{{forloop.index | minus: 1 }}]['inventory_quantity'] = {{ variant.inventory_quantity }};
+    {% endfor %}
+
+     _POConfig.product.selected_or_first_available_variant = {{ product.selected_or_first_available_variant | json }};
+    _POConfig.product.selected_or_first_available_variant['inventory_quantity'] = {{ product.selected_or_first_available_variant.inventory_quantity }};
+    {% endif %}
+
+    {% if cart %}
+      _POConfig.cart={{ cart | json }}
+      {% for item in cart.items %}
+      	{% if item.product.metafields.appikon_po.settings.productSettings  %}
+        	var cartProductSettings = {{ item.product.metafields.appikon_po.settings.productSettings }}
+            _POConfig.productSettings = Object.assign({}, _POConfig.productSettings, cartProductSettings)
+        {% endif %}
+        {% if item.product.metafields.appikon_po.settings.variantSettings  %}
+        	var cartVariantSettings = {{ item.product.metafields.appikon_po.settings.variantSettings }}
+            _POConfig.variantSettings = Object.assign({}, _POConfig.variantSettings, cartVariantSettings)
+        {% endif %}
+      {% endfor %}
+    {% endif %}
+
+</script>

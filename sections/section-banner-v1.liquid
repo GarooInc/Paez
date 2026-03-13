@@ -1,0 +1,372 @@
+<div
+  data-section-id="{{ section.id }}"
+  data-section-type="section-banner-v1"
+  style="{% if section.settings.margin_top != blank %}margin-top: {{section.settings.margin_top}}px;{%endif%} {% if section.settings.margin_bottom != blank %}margin-bottom: {{section.settings.margin_bottom}}px;{% endif %}"
+>
+  <div class="section-banner-v1 {{ section.settings.custom_class }}">
+    <div class="container container-full">
+      <div class="row">
+        <div class="col-lg-4 col-md-4 col-sm-12 ">
+          <div class="box-banner ">
+            <div class="box-img">
+              <a href="{{section.settings.url_banner1}}">
+                <img
+                  data-src=" {% if section.settings.img_banner1 != blank %}{{section.settings.img_banner1 | img_url:'master'}} {% else %}//via.placeholder.com/553x465{% endif %}"
+                  class="lazyload w-100 img-fluid"
+                  alt="_img"
+                >
+              </a>
+            </div>
+            <div class="info-banner">
+              <div class="info-banner-top">
+                {% if section.settings.title_1 != blank %}
+                  <h3 class="title title-{{ section.id }}">{{ section.settings.title_1 }}</h3>
+                {% endif %}
+              </div>
+              {% if section.settings.button_11 != blank %}
+                <div class="info-bottom-group">
+                  <div class="info-bottom ">
+                    {% if section.settings.button_1 != blank %}
+                      <a href="{{section.settings.url_button1}}" class="button-shop button-shop-{{ section.id }}">
+                        {{- section.settings.button_1 -}}
+                        <i class="fa fa-long-arrow-right" aria-hidden="true"></i
+                      ></a>
+                    {% endif %}
+                  </div>
+                  <div class="info-bottom ">
+                    <a
+                      href="{{section.settings.url_button11}}"
+                      class="button-shop button-shop-{{ section.id }} button-shop-1"
+                    >
+                      {{- section.settings.button_11 -}}
+                      <i class="fa fa-long-arrow-right" aria-hidden="true"></i
+                    ></a>
+                  </div>
+                </div>
+              {% else %}
+                {% if section.settings.button_1 != blank %}
+                  <div class="info-bottom ">
+                    <a href="{{section.settings.url_button1}}" class="button-shop button-shop-{{ section.id }}">
+                      {{- section.settings.button_1 -}}
+                      <i class="fa fa-long-arrow-right" aria-hidden="true"></i
+                    ></a>
+                  </div>
+                {% endif %}
+              {% endif %}
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-4 col-sm-12 ">
+          <div class="box-banner ">
+            <div class="box-img">
+              <a href="{{section.settings.url_banner2}}">
+                <img
+                  data-src="{% if section.settings.img_banner2 != blank %} {{section.settings.img_banner2 | img_url:'master'}} {% else %} //via.placeholder.com/553x465{% endif %}"
+                  class="lazyload img-fluid w-100"
+                  alt="_img"
+                >
+              </a>
+            </div>
+            <div class="info-banner">
+              <div class="info-banner-top ">
+                {% if section.settings.title_2 != blank %}
+                  <h3 class="title title-{{ section.id }}">{{ section.settings.title_2 }}</h3>
+                {% endif %}
+              </div>
+              {% if section.settings.button_22 != blank %}
+                <div class="info-bottom-group">
+                  <div class="info-bottom ">
+                    {% if section.settings.button_2 != blank %}
+                      <a href="{{section.settings.url_button2}}" class="button-shop button-shop-{{ section.id }}">
+                        {{- section.settings.button_2 -}}
+                        <i class="fa fa-long-arrow-right" aria-hidden="true"></i
+                      ></a>
+                    {% endif %}
+                  </div>
+                  <div class="info-bottom ">
+                    <a
+                      href="{{section.settings.url_button22}}"
+                      class="button-shop button-shop-{{ section.id }} button-shop-2"
+                    >
+                      {{- section.settings.button_22 -}}
+                      <i class="fa fa-long-arrow-right" aria-hidden="true"></i
+                    ></a>
+                  </div>
+                </div>
+              {% else %}
+                {% if section.settings.button_2 != blank %}
+                  <div class="info-bottom ">
+                    <a href="{{section.settings.url_button2}}" class="button-shop button-shop-{{ section.id }}">
+                      {{- section.settings.button_2 -}}
+                      <i class="fa fa-long-arrow-right" aria-hidden="true"></i
+                    ></a>
+                  </div>
+                {% endif %}
+              {% endif %}
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-4 col-sm-12 ">
+          <div class="box-banner ">
+            <div class="box-img">
+              <a href="{{section.settings.url_banner3}}">
+                <img
+                  data-src="{% if section.settings.img_banner3 != blank %} {{section.settings.img_banner3 | img_url:'master'}} {% else %} //via.placeholder.com/553x465{% endif %}"
+                  class="lazyload img-fluid w-100"
+                  alt="_img"
+                >
+              </a>
+            </div>
+            <div class="info-banner">
+              <div class="info-banner-top ">
+                {% if section.settings.title_3 != blank %}
+                  <h3 class="title title-{{ section.id }}">{{ section.settings.title_3 }}</h3>
+                {% endif %}
+              </div>
+              {% if section.settings.button_33 != blank %}
+                <div class="info-bottom-group">
+                  <div class="info-bottom ">
+                    {% if section.settings.button_3 != blank %}
+                      <a href="{{section.settings.url_button3}}" class="button-shop button-shop-{{ section.id }}">
+                        {{- section.settings.button_3 -}}
+                        <i class="fa fa-long-arrow-right" aria-hidden="true"></i
+                      ></a>
+                    {% endif %}
+                  </div>
+                  <div class="info-bottom ">
+                    <a
+                      href="{{section.settings.url_button33}}"
+                      class="button-shop button-shop-{{ section.id }} button-shop-3"
+                    >
+                      {{- section.settings.button_33 -}}
+                      <i class="fa fa-long-arrow-right" aria-hidden="true"></i
+                    ></a>
+                  </div>
+                </div>
+              {% else %}
+                {% if section.settings.button_3 != blank %}
+                  <div class="info-bottom ">
+                    <a href="{{section.settings.url_button3}}" class="button-shop button-shop-{{ section.id }}">
+                      {{- section.settings.button_3 -}}
+                      <i class="fa fa-long-arrow-right" aria-hidden="true"></i
+                    ></a>
+                  </div>
+                {% endif %}
+              {% endif %}
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<style>
+  .section-banner-v1 .box-banner .info-banner .info-banner-top .title-{{ section.id }} {
+    color: {{section.settings.color_title}};
+  }
+  .section-banner-v1 .box-banner .info-banner .info-bottom  .button-shop-{{ section.id }} {
+    color: {{section.settings.color_btn}};
+  }
+  .section-banner-v1 .box-banner .info-banner .info-bottom  .button-shop-{{ section.id }}:hover {
+    color: {{section.settings.color_btn_hover}};
+  }
+</style>
+
+{% schema %}
+{
+  "name": "BANNER V1",
+  "settings": [
+    {
+      "type": "header",
+      "content": "Setting banner 1"
+    },
+    {
+      "type": "text",
+      "id": "custom_class",
+      "label": "Custom Class"
+    },
+    {
+      "type": "image_picker",
+      "id": "img_banner1",
+      "label": "Image",
+      "info": "690 x 475px recommended"
+    },
+    {
+      "type": "url",
+      "id": "url_banner1",
+      "label": "URL images banner 1",
+      "default": "/collections/all"
+    },
+    {
+      "type": "richtext",
+      "id": "title_1",
+      "label": "Title banner 1",
+    },
+    {
+      "type": "text",
+      "id": "button_1",
+      "label": "Button 1",
+      "default": "EXPLORE"
+    },
+    {
+      "type": "url",
+      "id": "url_button1",
+      "label": "URL button 1",
+      "default": "/collections/all"
+    },
+    {
+      "type": "text",
+      "id": "button_11",
+      "label": "Button 1",
+      "default": "EXPLORE"
+    },
+    {
+      "type": "url",
+      "id": "url_button11",
+      "label": "URL button 1",
+      "default": "/collections/all"
+    },
+    {
+      "type": "header",
+      "content": "Setting banner 2"
+    },
+    {
+      "type": "image_picker",
+      "id": "img_banner2",
+      "label": "Image",
+      "info": "690 x 475px recommended"
+    },
+    {
+      "type": "url",
+      "id": "url_banner2",
+      "label": "URL images banner 2",
+      "default": "/collections/all"
+    },
+    {
+      "type": "richtext",
+      "id": "title_2",
+      "label": "Title banner 2",
+    },
+    {
+      "type": "text",
+      "id": "button_2",
+      "label": "Button 2",
+      "default": "EXPLORE"
+    },
+    {
+      "type": "url",
+      "id": "url_button2",
+      "label": "URL button 2",
+      "default": "/collections/all"
+    },
+    {
+      "type": "text",
+      "id": "button_22",
+      "label": "Button 2",
+      "default": "EXPLORE"
+    },
+    {
+      "type": "url",
+      "id": "url_button22",
+      "label": "URL button 2",
+      "default": "/collections/all"
+    },
+    {
+      "type": "header",
+      "content": "Setting banner 3"
+    },
+    {
+      "type": "image_picker",
+      "id": "img_banner3",
+      "label": "Image",
+      "info": "690 x 475px recommended"
+    },
+    {
+      "type": "url",
+      "id": "url_banner3",
+      "label": "URL images banner 3",
+      "default": "/collections/all"
+    },
+    {
+      "type": "richtext",
+      "id": "title_3",
+      "label": "Title banner 3",
+    },
+    {
+      "type": "text",
+      "id": "button_3",
+      "label": "Button 3",
+      "default": "EXPLORE"
+    },
+    {
+      "type": "url",
+      "id": "url_button3",
+      "label": "URL button 3",
+      "default": "/collections/all"
+    },
+    {
+      "type": "text",
+      "id": "button_33",
+      "label": "Button 3",
+      "default": "EXPLORE"
+    },
+    {
+      "type": "url",
+      "id": "url_button33",
+      "label": "URL button 3",
+      "default": "/collections/all"
+    },
+    {
+      "type": "header",
+      "content": "Settings Color Banner"
+    },
+    {
+      "type": "color",
+      "id": "color_title",
+      "label": "Color Title",
+      "default": "#fff"
+    },
+    {
+      "type": "color",
+      "id": "color_btn",
+      "label": "Color Button",
+      "default": "#fff"
+    },
+    {
+      "type": "color",
+      "id": "color_btn_hover",
+      "label": "Color Button Hover",
+      "default": "#fff"
+    },
+    {
+      "type": "header",
+      "content": "Section Space"
+    },
+    {
+      "type": "text",
+      "id": "margin_top",
+      "label": "Margin Top",
+      "info": "Defined in pixels. Do not add the 'px' unit."
+    },
+    {
+      "type": "text",
+      "id": "margin_bottom",
+      "label": "Margin Bottom",
+      "info": "Defined in pixels. Do not add the 'px' unit."
+    }
+  ],
+  "presets": [
+    {
+      "name": "BANNER V1",
+      "category": "HOME"
+    }
+  ]
+}
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

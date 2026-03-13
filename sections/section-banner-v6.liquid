@@ -1,0 +1,157 @@
+<div data-section-id="{{ section.id }}" data-section-type="section-banner-v6" style="{% if section.settings.margin_top != blank %}margin-top: {{section.settings.margin_top}}px;{%endif%} {% if section.settings.margin_bottom != blank %}margin-bottom: {{section.settings.margin_bottom}}px;{% endif %}">
+  <div class="section-banner-v6 mt-all" style="background-image: url({% if section.settings.img_bg != blank %}{{section.settings.img_bg|img_url:'master'}}{% else %}//via.placeholder.com/1920x550{% endif %});">
+    <div class="container container-v2">
+      <div class="row" style="margin: 0 auto;">
+        <div class="col-12 col-md-12 col-lg-6">
+          <div class="banner">
+            <img data-src=" {% if section.settings.img_banner != blank %}{{section.settings.img_banner | img_url:'master'}} {% else %}//via.placeholder.com/600x340{% endif %}" class="lazyload img-fluid" alt="_img">
+          </div> 
+        </div>
+        <div class="col-12 col-md-12 col-lg-6">
+          <div class="banner">
+            <div class="content-banner">
+              {% if section.settings.sub_title_heading != blank %}
+              <p class="sub-heading" style="color: {{section.settings.color_sub_title_heading}}">
+                {{section.settings.sub_title_heading}}
+              </p>
+              {% endif %}
+              {% if section.settings.title != blank %}
+              <h3 class="title" style="color: {{section.settings.color_title}}">{{section.settings.title}}</h3>
+              {% endif %}
+              {% if section.settings.sub_title_banner != blank %}
+              <p class="sub-title" style="color: {{section.settings.color_sub_title}}">{{section.settings.sub_title_banner}}</p>
+              {% endif %}
+              <div class="button"> 
+                {% if section.settings.button != blank %}
+                <a href="{{section.settings.url_banner}}" class="button-shop button-shop-{{ section.id }}">{{section.settings.button}}</a>
+                {% endif %}
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>   
+</div>
+<style>
+  .section-banner-v6 .banner .content-banner .button .button-shop-{{ section.id }} {
+   color: {{section.settings.color_btn}};
+    background: {{section.settings.bg_btn}};
+  }
+ .section-banner-v6 .banner .content-banner .button .button-shop-{{ section.id }}:hover {
+     color: {{section.settings.color_btn_hover}};
+    background: {{section.settings.bg_btn_hover}};
+  }
+</style>
+{% schema %}
+{
+  "name": "BANNER V6",
+  "settings": [
+    {
+      "type": "header",
+      "content": "Section Space"
+    },
+	{
+      "type": "image_picker",
+      "id": "img_bg",
+      "info": "1920 x 550px recommended",
+      "label": "Background image"
+    },
+    {
+      "type": "image_picker",
+      "id": "img_banner",
+      "label": "Image ",
+      "info": "600x340px recommended"
+    },
+    {
+      "type": "text",
+      "id": "sub_title_heading",
+      "label": "Sub Title Banner Heading",
+      "default": "Saving 50% "
+    },
+    {
+      "type": "color",
+      "id": "color_sub_title_heading",
+      "label": "Color Sub Title banner Heading",
+      "default": "#000"
+    },
+    {
+      "type": "text",
+      "id": "title",
+      "label": " Title",
+      "default": "About Services"
+    },
+    {
+      "type": "color",
+      "id": "color_title",
+      "label": "Color Title",
+      "default": "#000"
+    },
+    {
+      "type": "text",
+      "id": "sub_title_banner",
+      "label": "Sub Title Banner",
+      "default": "The exquisite softness of our wool "
+    },
+    {
+      "type": "color",
+      "id": "color_sub_title",
+      "label": "Color Sub Title banner",
+      "default": "#000"
+    },
+    {
+      "type": "text",
+      "id": "button",
+      "label": "Button ",
+      "default": "SHOP NOW"
+    },
+    {
+      "type": "url",
+      "id": "url_banner",
+      "label": "URL banner",
+      "default": "/collections/all"
+    },
+    {
+      "type": "header",
+      "content": "color button"
+    },
+    {
+      "type": "color",
+      "id": "color_btn",
+      "label": "Color button",
+      "default": "#fff"
+    },
+    {
+      "type": "color",
+      "id": "bg_btn",
+      "label": "background button",
+      "default": "#000"
+    },
+    {
+      "type": "color",
+      "id": "color_btn_hover",
+      "label": "Color button Hover",
+      "default": "#fff"
+    },
+    {
+      "type": "color",
+      "id": "bg_btn_hover",
+      "label": "background button Hover",
+      "default": "#000"
+    }
+   
+  ],
+  "presets": [
+    {
+      "name": "BANNER V6",
+      "category": "HOME"
+    }
+  ]
+}
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

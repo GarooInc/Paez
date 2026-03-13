@@ -1,0 +1,263 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {}
+    },
+    "a0555b9d-28a1-437f-8f7d-545f2c79bd12": {
+      "type": "section-banner-v12",
+      "settings": {
+        "custom_class": "about-banner",
+        "img_banner": "shopify://shop_images/1-Pagina-Just_aChange-Desktop_1920x918px.jpg",
+        "mob_img_banner": "shopify://shop_images/1-Pagina-Just_aChange-Mobile-_749x937px.jpg",
+        "title": "",
+        "url_banner": "shopify://collections/all",
+        "color_title": "#000000",
+        "color_hover_title": "#ffffff"
+      }
+    },
+    "4cd285cd-a46e-45f6-a646-b98f002e9a1b": {
+      "type": "rich-text-4",
+      "settings": {
+        "custom_class": "about-collection-banner-title page-banner-title",
+        "prefix": "",
+        "section_title": "Just a Change",
+        "section_sub": "",
+        "description": "",
+        "section_url": ""
+      }
+    },
+    "248fabed-6a2d-4830-843e-7fcf037386b1": {
+      "type": "rich-text-4",
+      "custom_css": [
+        ".store-wrapper-beige {background-color: transparent; padding: 10px;}",
+        "@media (max-width: 600px) {.container-v1 {margin-top: 0px; }}",
+        "@media (max-width: 600px) {.store-wrapper-beige p {font-size: 14px; line-height: 20px !important; padding: 10px 20px 0px; }}"
+      ],
+      "settings": {
+        "custom_class": "store-wrapper-beige",
+        "prefix": "",
+        "section_title": "",
+        "section_sub": "",
+        "description": "<p>We are very proud to have the opportunity to contribute to this great cause. Paez teams up for another year with Just a Change, a non-profit association in Portugal dedicated to rehabilitating houses for people living in poverty.</p>",
+        "section_url": ""
+      }
+    },
+    "ca8accc2-73bb-45d9-855c-72fc33e95758": {
+      "type": "rich-text-4",
+      "custom_css": [
+        ".store-wrapper-beige {background-color: transparent; padding: 10px 10px 40px;}",
+        ".store-wrapper-beige a {color: #000; text-decoration: underline;}",
+        "@media (max-width: 600px) {.container-v1 {margin-top: 0px; }}",
+        "@media (max-width: 600px) {.store-wrapper-beige p {font-size: 14px; line-height: 20px !important; padding: 0px 20px 10px; }}"
+      ],
+      "settings": {
+        "custom_class": "store-wrapper-beige",
+        "prefix": "",
+        "section_title": "",
+        "section_sub": "",
+        "description": "<p>For every pair of Essential Khaki sold in Paez flagship stores and on <a href=\"https://paez.com\" title=\"https://paez.com\"><strong>paez.com</strong></a>, Paez gives €3 to Just a Change and helps (both financially and through communication) by involving their community.</p>",
+        "section_url": ""
+      }
+    },
+    "a9beb791-163d-458b-8abd-b9e68c22b4cf": {
+      "type": "section-product-v8",
+      "blocks": {
+        "template--19049517351256__a9beb791-163d-458b-8abd-b9e68c22b4cf-1685639389092c80f0-0": {
+          "type": "tab",
+          "settings": {
+            "tab_title": "for him",
+            "tab_collection": "just-a-change-for-him",
+            "tab_limit": 2
+          }
+        },
+        "template--19049517351256__a9beb791-163d-458b-8abd-b9e68c22b4cf-1685639389092c80f0-1": {
+          "type": "tab",
+          "settings": {
+            "tab_title": "for her",
+            "tab_collection": "just-a-change-for-her",
+            "tab_limit": 2
+          }
+        }
+      },
+      "block_order": [
+        "template--19049517351256__a9beb791-163d-458b-8abd-b9e68c22b4cf-1685639389092c80f0-0",
+        "template--19049517351256__a9beb791-163d-458b-8abd-b9e68c22b4cf-1685639389092c80f0-1"
+      ],
+      "custom_css": [
+        "li a {font-size: 20px !important; text-transform: uppercase !important; color: #000000 !important; font-family: \"Helvetica\" !important;}",
+        "a.active {border-bottom: 1px solid #000000 !important;}",
+        "@media (max-width: 760px) {.slick-track {width: 100% !important; display: flex; justify-content: center; margin-left: 20px; }}",
+        "@media (min-width: 960px) {.slick-track {width: 1000px !important; display: flex; justify-content: center; } .slick-slider {display: flex; justify-content: center; margin: 0px; } .slick-list {padding-right: 0px; }}"
+      ],
+      "settings": {
+        "custom_class": "custom_productv2",
+        "margin_top": "",
+        "margin_bottom": "",
+        "title_heading": "",
+        "color_title": "#222222",
+        "enable_slider": true
+      }
+    },
+    "24ea9ad0-b651-4d4f-8e85-b21bbff581ca": {
+      "type": "section-banner-v12",
+      "settings": {
+        "custom_class": "about-banner",
+        "img_banner": "shopify://shop_images/5-Ilustracion-Pagina-Just_aChange-_1920x410px_39dd5382-c4db-4e75-a6af-ce9c86fb6d8a.jpg",
+        "mob_img_banner": "shopify://shop_images/5-Ilustracion-Pagina-Just_aChange-_749x685px_9553a37d-8976-4b87-aabf-3f130aa5f328.jpg",
+        "title": "",
+        "url_banner": "shopify://collections/all",
+        "color_title": "#000000",
+        "color_hover_title": "#ffffff"
+      }
+    },
+    "97469c62-bc8e-442d-8b06-cbae595e44b7": {
+      "type": "custom-image-with-text",
+      "blocks": {
+        "f00f4d94-3a71-4acc-a168-34bd9bb02df8": {
+          "type": "text",
+          "settings": {
+            "text": "<p>The project has a young, motivated team that has proven that there are no limits when you want to help.</p><p><br/>Since 2010, Just a Change has managed to rehabilitate over 300 homes and 95 institutions, impacting the lives of over 5000 beneficiaries and mobilising over 5000 national and international volunteers.</p>",
+            "text_style": "body"
+          }
+        }
+      },
+      "block_order": [
+        "f00f4d94-3a71-4acc-a168-34bd9bb02df8"
+      ],
+      "custom_css": [
+        "@media (max-width: 769px) {.grid {display: flex; flex-direction: column-reverse; }}",
+        ".image-with-text .grid__item {position: relative; align-self: center;}"
+      ],
+      "settings": {
+        "custom_class": "about-us-content responsibility-section-four",
+        "desktop-image": "shopify://shop_images/2-Imagen-Pagina-Just_aChange-_960x960px.jpg",
+        "mob-image": "shopify://shop_images/2-Imagen-Pagina-Just_aChange-_960x960px.jpg",
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "text_first",
+        "desktop_content_position": "top",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "color_scheme": "background-1",
+        "mobile_content_alignment": "left",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "6c90e00b-f8c8-4ce3-ac13-5d78f3dc0bfc": {
+      "type": "custom-image-with-text",
+      "blocks": {
+        "4e91cb9d-17bb-4471-a654-6577f49bc9ab": {
+          "type": "text",
+          "settings": {
+            "text": "<p>In 2022 alone 65 houses were rebuilt with the help of Just a Change. The association is present in 14 locations across Portugal, and has more than 550 volunteers.</p><p><br/>Just a Change works to restore housing dignity to families and individuals most in need - impacting on community, health, safety and hope</p>",
+            "text_style": "body"
+          }
+        }
+      },
+      "block_order": [
+        "4e91cb9d-17bb-4471-a654-6577f49bc9ab"
+      ],
+      "custom_css": [
+        "@media (max-width: 769px) {.grid {display: flex; flex-direction: column-reverse; }}",
+        ".image-with-text .grid__item {position: relative; align-self: center;}"
+      ],
+      "settings": {
+        "custom_class": "about-us-content responsibility-section-four",
+        "desktop-image": "shopify://shop_images/3-Imagen-Pagina-Just_aChange-_960x960px.jpg",
+        "mob-image": "shopify://shop_images/3-Imagen-Pagina-Just_aChange-_960x960px.jpg",
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "image_first",
+        "desktop_content_position": "top",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "color_scheme": "background-1",
+        "mobile_content_alignment": "left",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "9f67a9b0-a34d-4249-9a48-d723ccd7bc07": {
+      "type": "custom-image-with-text",
+      "blocks": {
+        "6f55dc99-737d-4dfe-83a2-62713b515319": {
+          "type": "text",
+          "settings": {
+            "text": "<p>To find more about other ways you can help the project, click <a href=\"https://justachange.pt/en/ \" target=\"_blank\" title=\"https://justachange.pt/en/ \">here</a> and explore more about Just a Change.</p>",
+            "text_style": "body"
+          }
+        },
+        "b5abed77-8fb5-478c-b415-6d6e86d4e405": {
+          "type": "image",
+          "settings": {
+            "block-img": "shopify://shop_images/6-Logos-Pagina-Just_aChange-_960x960px.png"
+          }
+        }
+      },
+      "block_order": [
+        "6f55dc99-737d-4dfe-83a2-62713b515319",
+        "b5abed77-8fb5-478c-b415-6d6e86d4e405"
+      ],
+      "custom_css": [
+        "@media (max-width: 769px) {.grid {display: flex; flex-direction: column-reverse; } .img-wrapper {display: none; }}",
+        ".image-with-text .grid__item {position: relative; align-self: center;}",
+        "a {color: #000;}"
+      ],
+      "settings": {
+        "custom_class": "about-us-content responsibility-section-four",
+        "desktop-image": "shopify://shop_images/4-Imagen-Pagina-Just_aChange-_960x960px.jpg",
+        "mob-image": "shopify://shop_images/4-Imagen-Pagina-Just_aChange-_960x960px.jpg",
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "text_first",
+        "desktop_content_position": "top",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "color_scheme": "background-1",
+        "mobile_content_alignment": "left",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "b193513f-e2b2-4c6c-be87-af7bc35aee5b": {
+      "type": "section-banner-v12",
+      "custom_css": [
+        "@media (min-width: 769px) {.about-banner {display: none; }}",
+        "@media (max-width: 769px) {.mobile-banner {max-width: 50%; } .banner a {display: flex; justify-content: center; align-items: center; padding: 20px; }}"
+      ],
+      "settings": {
+        "custom_class": "about-banner",
+        "mob_img_banner": "shopify://shop_images/6-Logos-Pagina-Just_aChange-_960x960px.png",
+        "title": "",
+        "url_banner": "shopify://collections/all",
+        "color_title": "#000000",
+        "color_hover_title": "#ffffff"
+      }
+    }
+  },
+  "order": [
+    "main",
+    "a0555b9d-28a1-437f-8f7d-545f2c79bd12",
+    "4cd285cd-a46e-45f6-a646-b98f002e9a1b",
+    "248fabed-6a2d-4830-843e-7fcf037386b1",
+    "ca8accc2-73bb-45d9-855c-72fc33e95758",
+    "a9beb791-163d-458b-8abd-b9e68c22b4cf",
+    "24ea9ad0-b651-4d4f-8e85-b21bbff581ca",
+    "97469c62-bc8e-442d-8b06-cbae595e44b7",
+    "6c90e00b-f8c8-4ce3-ac13-5d78f3dc0bfc",
+    "9f67a9b0-a34d-4249-9a48-d723ccd7bc07",
+    "b193513f-e2b2-4c6c-be87-af7bc35aee5b"
+  ]
+}

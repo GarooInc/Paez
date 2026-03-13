@@ -1,0 +1,257 @@
+<div
+  data-section-id="{{ section.id }}"
+  data-section-type="about-banner"
+  style="{% if section.settings.margin_top != blank %}margin-top: {{section.settings.margin_top}}px;{%endif%} {% if section.settings.margin_bottom != blank %}margin-bottom: {{section.settings.margin_bottom}}px;{% endif %}"
+>
+  <div class="custom-pair-banner {{ section.settings.custom_class }} section-banner-v1 {{ section.id }}">
+    <div class="container container-full">
+      <div class="row">
+        <div class="col-lg-6 col-md-6 col-sm-12 about-img">
+          <div class="box-banner ">
+            <div class="box-img">
+                <a href="{{section.settings.url_banner1}}">
+                  <img
+                    data-src=" {% if section.settings.img_banner1 != blank %}{{section.settings.img_banner1 | img_url:'master'}} {% else %}//via.placeholder.com/553x465{% endif %}"
+                    class="lazyload w-100 img-fluid"
+                    alt="_img"
+                  >
+                </a>
+            </div>
+            <div class="info-banner">
+              <div class="info-banner-top">
+                {% if section.settings.title_1 != blank %}
+                  <h3 class="title title-{{ section.id }}">{{ section.settings.title_1 }}</h3>
+                {% endif %}
+              </div>
+              {% if section.settings.button_11 != blank %}
+                <div class="info-bottom-group">
+                  <div class="info-bottom ">
+                    {% if section.settings.button_1 != blank %}
+                      <a href="{{section.settings.url_button1}}" class="button-shop button-shop-{{ section.id }}">
+                        {{- section.settings.button_1 -}}
+                        <i class="fa fa-long-arrow-right" aria-hidden="true"></i
+                      ></a>
+                    {% endif %}
+                  </div>
+                  <div class="info-bottom ">
+                    <a
+                      href="{{section.settings.url_button11}}"
+                      class="button-shop button-shop-{{ section.id }} button-shop-1"
+                    >
+                      {{- section.settings.button_11 -}}
+                      <i class="fa fa-long-arrow-right" aria-hidden="true"></i
+                    ></a>
+                  </div>
+                </div>
+              {% else %}
+                {% if section.settings.button_1 != blank %}
+                  <div class="info-bottom ">
+                    <a href="{{section.settings.url_button1}}" class="button-shop button-shop-{{ section.id }}">
+                      {{- section.settings.button_1 -}}
+                      <i class="fa fa-long-arrow-right" aria-hidden="true"></i
+                    ></a>
+                  </div>
+                {% endif %}
+              {% endif %}
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6 col-md-6 col-sm-12 about-img">
+          <div class="box-banner ">
+            <div class="box-img">
+              <a href="{{section.settings.url_banner2}}">
+                <img
+                  data-src=" {% if section.settings.img_banner2 != blank %}{{section.settings.img_banner2 | img_url:'master'}} {% else %}//via.placeholder.com/553x465{% endif %}"
+                  class="lazyload w-100 img-fluid"
+                  alt="_img"
+                >
+              </a>
+            </div>
+            <div class="info-banner">
+              <div class="info-banner-top">
+                {% if section.settings.title_2 != blank %}
+                  <h3 class="title title-{{ section.id }}">{{ section.settings.title_2 }}</h3>
+                {% endif %}
+              </div>
+              {% if section.settings.button_22 != blank %}
+                <div class="info-bottom-group">
+                  <div class="info-bottom ">
+                    {% if section.settings.button_2 != blank %}
+                      <a href="{{section.settings.url_button2}}" class="button-shop button-shop-{{ section.id }}">
+                        {{- section.settings.button_2 -}}
+                        <i class="fa fa-long-arrow-right" aria-hidden="true"></i
+                      ></a>
+                    {% endif %}
+                  </div>
+                  <div class="info-bottom ">
+                    <a
+                      href="{{section.settings.url_button22}}"
+                      class="button-shop button-shop-{{ section.id }} button-shop-1"
+                    >
+                      {{- section.settings.button_22 -}}
+                      <i class="fa fa-long-arrow-right" aria-hidden="true"></i
+                    ></a>
+                  </div>
+                </div>
+              {% else %}
+                {% if section.settings.button_2 != blank %}
+                  <div class="info-bottom ">
+                    <a href="{{section.settings.url_button2}}" class="button-shop button-shop-{{ section.id }}">
+                      {{- section.settings.button_2 -}}
+                      <i class="fa fa-long-arrow-right" aria-hidden="true"></i
+                    ></a>
+                  </div>
+                {% endif %}
+              {% endif %}
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<style>
+  .about-banner .box-banner .info-banner .info-banner-top .title-{{ section.id }} {
+    color: {{section.settings.color_title}};
+  }
+  .about-banner .box-banner .info-banner .info-bottom  .button-shop-{{ section.id }} {
+    color: {{section.settings.color_btn}};
+  }
+  .about-banner .box-banner .info-banner .info-bottom  .button-shop-{{ section.id }}:hover {
+    color: {{section.settings.color_btn_hover}};
+  }
+</style>
+
+{% schema %}
+{
+  "name": "Custom Pair banners",
+  "settings": [
+    {
+      "type": "header",
+      "content": "Setting banner 1"
+    },
+    {
+      "type": "text",
+      "id": "custom_class",
+      "label": "Custom Class"
+    },
+    {
+      "type": "image_picker",
+      "id": "img_banner1",
+      "label": "Image",
+      "info": "690 x 475px recommended"
+    },
+    {
+      "type": "url",
+      "id": "url_banner1",
+      "label": "URL images banner 1",
+      "default": "/collections/all"
+    },
+    {
+      "type": "text",
+      "id": "title_1",
+      "label": "Title banner 1",
+      "default": "Backpacks"
+    },
+    {
+      "type": "text",
+      "id": "button_1",
+      "label": "Button 1",
+      "default": "EXPLORE"
+    },
+    {
+      "type": "url",
+      "id": "url_button1",
+      "label": "URL button 1",
+      "default": "/collections/all"
+    },
+    {
+      "type": "text",
+      "id": "button_11",
+      "label": "Button 11",
+      "default": "EXPLORE"
+    },
+    {
+      "type": "url",
+      "id": "url_button11",
+      "label": "URL button 11",
+      "default": "/collections/all"
+    },
+    {
+      "type": "header",
+      "content": "Setting banner 2"
+    },
+    {
+      "type": "image_picker",
+      "id": "img_banner2",
+      "label": "Image",
+      "info": "690 x 475px recommended"
+    },
+    {
+      "type": "url",
+      "id": "url_banner2",
+      "label": "URL images banner 2",
+      "default": "/collections/all"
+    },
+    {
+      "type": "text",
+      "id": "title_2",
+      "label": "Title banner 2",
+      "default": "Sneakers"
+    },
+    {
+      "type": "text",
+      "id": "button_2",
+      "label": "Button 2",
+      "default": "EXPLORE"
+    },
+    {
+      "type": "url",
+      "id": "url_button2",
+      "label": "URL button 2",
+      "default": "/collections/all"
+    },
+    {
+      "type": "text",
+      "id": "button_22",
+      "label": "Button 2",
+      "default": "EXPLORE"
+    },
+    {
+      "type": "url",
+      "id": "url_button22",
+      "label": "URL button 2",
+      "default": "/collections/all"
+    },
+    {
+      "type": "header",
+      "content": "Setting banner 3"
+    },
+    {
+      "type": "text",
+      "id": "margin_top",
+      "label": "Margin Top",
+      "info": "Defined in pixels. Do not add the 'px' unit."
+    },
+    {
+      "type": "text",
+      "id": "margin_bottom",
+      "label": "Margin Bottom",
+      "info": "Defined in pixels. Do not add the 'px' unit."
+    }
+  ],
+  "presets": [
+    {
+      "name": "Custom Pair banners",
+      "category": "HOME"
+    }
+  ]
+}
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

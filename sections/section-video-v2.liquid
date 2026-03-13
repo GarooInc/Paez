@@ -1,0 +1,59 @@
+<div data-section-id="{{ section.id }}" data-section-type="section-video-v2" style="{% if section.settings.margin_top != blank %}margin-top: {{section.settings.margin_top}}px;{%endif%} {% if section.settings.margin_bottom != blank %}margin-bottom: {{section.settings.margin_bottom}}px;{% endif %} {% if section.settings.sections_layout == "dark" %}background: {{section.settings.sections_bg_color}};{% endif %}">
+  <div class="section-video-v2 mt-all">
+    <div class="box-video">
+
+      <a data-fancybox href="{{ section.settings.section_video_url }}">
+        <img data-src="{% if section.settings.img_banner != blank %} {{section.settings.img_banner | img_url : 'master'}} {% else %} //via.placeholder.com/1920x700 {% endif %}" class="lazyload img-fluid w-100" alt="_img_banner">
+        <span class="box-btn">
+          <span class="btn-banner">
+            <i class="fa fa-play"></i>
+            <span class="line-video line-1"></span>
+            <span class="line-video line-2"></span>
+            <span class="line-video line-3"></span>
+          </span>
+        </span>
+      </a>
+    </div>
+  </div>
+</div>
+{% schema %}
+{
+"name": "Video v2",
+"class": "index-section",
+"settings": [
+      {
+      "type": "header",
+       "content": "Background Video"
+    },
+    {
+      "type": "image_picker",
+      "id": "img_banner",
+      "label": "Image",
+      "info": "685 x 455px recommended"
+    },
+    {
+      "type": "header",
+      "content": "Video"
+    },
+    {
+      "type": "url",
+      "id": "section_video_url",
+      "label": "URL Video",
+      "info": "[Upload video .mp4 in here](/admin/settings/files)"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Video v2",
+      "category": "Video"
+    }
+  ]
+}
+{% endschema %}
+
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

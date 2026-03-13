@@ -1,0 +1,307 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "article_template": {
+      "type": "article-template",
+      "disabled": true,
+      "settings": {
+        "blog_layout": "blog_layo_left",
+        "show_author": true,
+        "show_comment": true,
+        "show_cate": true,
+        "show_tag": true,
+        "show_related_post": true,
+        "related_post_title": "Related post",
+        "related_post_select_blog": "news",
+        "related_post_blogs_limit": 5,
+        "enable_widget_search": true,
+        "widget_search_title": "Search",
+        "shop_by_search_placeholder": "Search...",
+        "enable_widget_cate": true,
+        "widget_cate_title": "Categories",
+        "widget_cate_menu": "main-menu",
+        "enable_widget_related": true,
+        "widget_related_title": "RECENT POSTS",
+        "select_blog": "news",
+        "blogs_limit": 4,
+        "enable_widget_tag": true,
+        "shop_by_tag_title": "Tags",
+        "banner_article_url": "https://www.shopify.com/free-trial?ref=shopifycenter",
+        "enable_social_share": true
+      }
+    },
+    "32188728-51b3-4f19-a420-84f078cb8228": {
+      "type": "rich-text-4",
+      "settings": {
+        "custom_class": "store-banner-title page-banner-title",
+        "prefix": "",
+        "section_title": "ANTÚNIO MELLO",
+        "section_sub": "",
+        "description": "",
+        "section_url": ""
+      }
+    },
+    "188a94a3-5f74-4b1c-9305-3521ca3db0d2": {
+      "type": "section-banner-v12",
+      "settings": {
+        "custom_class": "about-banner",
+        "img_banner": "shopify://shop_images/Banner-Principal-Antunio-Mello_1920x918px.jpg",
+        "mob_img_banner": "shopify://shop_images/5-About-the-collection.jpg",
+        "title": "",
+        "url_banner": "shopify://collections/all",
+        "color_title": "#000000",
+        "color_hover_title": "#ffffff"
+      }
+    },
+    "f5d382fa-b6ed-467f-a533-702eeefe33f9": {
+      "type": "rich-text-4",
+      "custom_css": [
+        "p {font-family: \"Helvetica\" !important; text-align: justify;}",
+        ".store-wrapper p {line-height: 24px !important;}"
+      ],
+      "settings": {
+        "custom_class": "store-wrapper",
+        "prefix": "",
+        "section_title": "",
+        "section_sub": "",
+        "description": "<p>António Mello is a 25-year-old surfboard shaper from Lisbon who owns his own business and space where he creates amazing surfboards. In this interview, he shares his experience as a Paez face and how he integrates creativity into his daily life. He talks about the intersection of surf culture and Paez, his approach to surfboard design, and the balance between his professional and personal life.António also shares his memorable surfing experiences and what distinguishes his surfboards from others on the market.</p>",
+        "section_url": ""
+      }
+    },
+    "cdaee2a8-d358-4577-8fe9-9de9843a1e92": {
+      "type": "custom-image-with-text",
+      "blocks": {
+        "template--18600182677848__cdaee2a8-d358-4577-8fe9-9de9843a1e92-1682015242266f3219-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p><em><strong>Q: What convinced you to become the face of Paez in 2023, and what do you love most about the brand?</strong></em></p><p><br/><strong>A: </strong>When you guys approached me, I immediately said yes. I'm not one to runaway from these types of invitations. But basically I identify with the brand, I've been a customer for years now.</p><p><em><strong><br/>Q: We know you're a big fan of Paez, but can you share a specific memory or experience that solidified your love for the brand?</strong></em></p><p><br/><strong>A:</strong> Absolutely! One year, I bought a pair of nautical-style cloth shoes from Paez and wore them non-stop throughout the entire year. I even wore them for skateboarding! They were so comfortable and durable that I couldn't bear to part with them.<br/>That experience cemented my love for the brand, and I've been a loyal fan ever since.</p>",
+            "text_style": "body"
+          }
+        }
+      },
+      "block_order": [
+        "template--18600182677848__cdaee2a8-d358-4577-8fe9-9de9843a1e92-1682015242266f3219-1"
+      ],
+      "custom_css": [
+        ".responsibility-section-four .image-with-text__content {padding: 30px 50px 40px 50px;}"
+      ],
+      "settings": {
+        "custom_class": "about-us-content responsibility-section-four",
+        "desktop-image": "shopify://shop_images/1-Antunio-Mello-_960x960px.jpg",
+        "mob-image": "shopify://shop_images/1-Antunio-Mello-_1080x1080px.jpg",
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "image_first",
+        "desktop_content_position": "top",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "color_scheme": "background-1",
+        "mobile_content_alignment": "left",
+        "padding_top": 36,
+        "padding_bottom": 0
+      }
+    },
+    "ac86e1fa-1121-43b3-90c7-bf1ca4009b0a": {
+      "type": "custom-image-with-text",
+      "blocks": {
+        "139e407d-9b47-4873-bcde-613e5f702443": {
+          "type": "text",
+          "settings": {
+            "text": "<p><em><strong>Q: Paez's motto is all about \"walking the talk.\" How do you embody this in your everyday life, and do you have any personal mottos or guiding principles.</strong></em></p><p><br/><strong>A: </strong>For me, walking the talk means being authentic and true to yourself. I try to embody this by staying true to my values and beliefs, even in the face of challenges or opposition. One personal motto that guides me is \"no regrets.\" I always strive to live in the moment and pursue my passions without fear or hesitation</p><p><em><strong><br/>Q: How do you think Paez captures the essence of surf culture, and what makes it so appealing to surfers and beach goers?</strong></em></p><p><br/><strong>A:</strong> Paez and surf culture intersect in many ways- the product is perfect for a day at the beach, it's easy to wear (you pull them on and off), and then I think a lot it's in the vibe of Paez- it's cool and laid-back, which every surfer can connect and embodies fun times at the beach.</p>",
+            "text_style": "body"
+          }
+        }
+      },
+      "block_order": [
+        "139e407d-9b47-4873-bcde-613e5f702443"
+      ],
+      "custom_css": [
+        ".responsibility-section-four .image-with-text__content {padding: 30px 50px 40px 50px;}"
+      ],
+      "settings": {
+        "custom_class": "about-us-content responsibility-section-four",
+        "desktop-image": "shopify://shop_images/2-Antunio-Mello-_960x960px.jpg",
+        "mob-image": "shopify://shop_images/2-Antunio-Mello-_960x960px_76e2c183-5650-44b5-bd68-d451ea164697.jpg",
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "text_first",
+        "desktop_content_position": "top",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "color_scheme": "background-1",
+        "mobile_content_alignment": "left",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "c6fa4aab-6f2c-42e7-b1fa-d6690656899d": {
+      "type": "custom-image-with-text",
+      "blocks": {
+        "fcd747ed-5c26-4c5c-ba37-91c9a6b18ed4": {
+          "type": "text",
+          "settings": {
+            "text": "<p><em><strong>Q: Can you tell us a bit about your journey into surfboard shaping and how it has impacted your life?</strong></em></p><p><br/><strong>A: </strong>I've always been drawn to building and creating things with my own hands, and when I started surfing, I became fascinated by the art and skill of surfboard shaping. It's a challenging and rewarding process that requires both a technical approach and a creative vision. Surfboard shaping has not only allowed me to pursue my passion for surfing but has also given me a sense of purpose and fulfillment in my work.</p><p><em><strong><br/>Q: </strong></em><strong>Can you share a particularly memorable surfing experience and how it has impacted you?</strong></p><p><br/><strong>A:</strong> One of my most memorable surfing experiences was when I tried a new board design and was blown away by how it felt in the water. It was a moment of pure joy and excitement, and it made me realize the power of innovation and experimentation in shaping, That experience has inspired me to continue pushing the boundaries of surfboard design and to always be open to new ideas and possibilities.</p>",
+            "text_style": "body"
+          }
+        }
+      },
+      "block_order": [
+        "fcd747ed-5c26-4c5c-ba37-91c9a6b18ed4"
+      ],
+      "custom_css": [
+        ".responsibility-section-four .image-with-text__content {padding: 30px 50px 30px 50px;}"
+      ],
+      "settings": {
+        "custom_class": "about-us-content responsibility-section-four",
+        "desktop-image": "shopify://shop_images/3-Antunio-Mello-_960x960px.jpg",
+        "mob-image": "shopify://shop_images/3-Antunio-Mello-_1080x1080px.jpg",
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "image_first",
+        "desktop_content_position": "top",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "color_scheme": "background-1",
+        "mobile_content_alignment": "left",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "8a70fb08-d36d-44b3-b5b6-1d37543eb0bb": {
+      "type": "custom-image-with-text",
+      "blocks": {
+        "e9425c6e-d97b-4574-bf7e-8e98e684f57a": {
+          "type": "text",
+          "settings": {
+            "text": "<p><em><strong>Q: Paez is known for its casual and versatile shoes that are perfect for the beach. Can you describe your go-to outfit for a day of surfing and working?</strong></em></p><p><br/><strong>A: </strong>I love the slip-on style of Paez shoes, the Mocs which makes them perfect for a day of surfing and working. On a typical day, I'll pair my Paez shoes with board shorts and a t-shirt for surfing, and then swap the board shorts for jeans or shorts for work. I like to keep it simple and practical, so I can focus on the task at hand.</p><p><em><strong><br/>Q: What do you think distinguishes your surfboards from others on the market, and how do you approach design?</strong></em></p><p><br/><strong>A:</strong> When it comes to my surfboards, I'm all about the perfect blend of performance and aesthetics. I meticulously consider the needs of the surfer and the surf conditions, and I take great pride in every step of the construction process to deliver a top-notch product that stands out from the rest of the market.</p>",
+            "text_style": "body"
+          }
+        }
+      },
+      "block_order": [
+        "e9425c6e-d97b-4574-bf7e-8e98e684f57a"
+      ],
+      "custom_css": [
+        ".responsibility-section-four .image-with-text__content {padding: 30px 50px 40px 50px;}"
+      ],
+      "settings": {
+        "custom_class": "about-us-content responsibility-section-four",
+        "desktop-image": "shopify://shop_images/4-Antunio-Mello-_960x960px_0969d89d-7e8b-4579-95e8-6b23bfaaa2ff.jpg",
+        "mob-image": "shopify://shop_images/4-Antunio-Mello-_1080x1080px_d872960b-cc6e-40e7-8a4a-d2d9b93fc9e0.jpg",
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "text_first",
+        "desktop_content_position": "top",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "color_scheme": "background-1",
+        "mobile_content_alignment": "left",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "1d00efee-2f32-4ede-825d-e9560467cdce": {
+      "type": "custom-image-with-text",
+      "blocks": {
+        "6d10740f-f585-407b-ac7d-cec6189d36bb": {
+          "type": "text",
+          "settings": {
+            "text": "<p><em><strong>Q: Describe a day's work for us. What is the most fun?</strong></em></p><p><br/><strong>A: </strong>Every day is a new adventure for me. Some days I'm out delivering boards, while others I'm hanging out with friends at the factory. But the most fun is when I can start my day off surfing with my colleagues and then head to the factory to continue shaping boards. I absolutely love what I do, so it doesn't feel like work at all.</p><p><em><strong><br/>Q: What's the coolest project you've ever been involved in?</strong></em></p><p><br/><strong>A:</strong> I recently had the pleasure of opening a new factory with two of my friends, where we produce not only our own brands but also other brands from around the world. It's been an incredibly cute project, and we're having a blast working together.</p>",
+            "text_style": "body"
+          }
+        }
+      },
+      "block_order": [
+        "6d10740f-f585-407b-ac7d-cec6189d36bb"
+      ],
+      "custom_css": [
+        ".responsibility-section-four .image-with-text__content {padding: 30px 50px 40px 50px;}"
+      ],
+      "settings": {
+        "custom_class": "about-us-content responsibility-section-four",
+        "desktop-image": "shopify://shop_images/5-Antunio-Mello-_960x960px.jpg",
+        "mob-image": "shopify://shop_images/5-Antunio-Mello-_1080x1080px.jpg",
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "image_first",
+        "desktop_content_position": "top",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "color_scheme": "background-1",
+        "mobile_content_alignment": "left",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "776958e6-2b6f-43ce-939f-459bce151a1c": {
+      "type": "custom-image-with-text",
+      "blocks": {
+        "1736fe90-b838-4ad5-9057-3f07ddd651f3": {
+          "type": "text",
+          "settings": {
+            "text": "<p><em><strong>Q: How do you manage to integrate creativity into your daily life?</strong></em></p><p><br/><strong>A:</strong> Creativity is always at the forefront of my mind. Each board is unique and requires individual thought and consideration. From the colors and patterns to the materials and construction, I love imagining a product and then seeing it come to life.</p><p><em><strong><br/>Q: How do you maintain a balance between professional and personal life while following a clear passion for surfing and surfboard shaping, and what advice would you give to others looking to do the same?</strong></em></p><p><br/><strong>A:</strong> Balancing my personal life with my passion for surfing and shaping can be challenging, but luckily my flexible schedule allows me to make it work. My advice for others is to seek out a community of like-minded individuals who can share knowledge and help you improve. I've learned so much from others and it</p>",
+            "text_style": "body"
+          }
+        }
+      },
+      "block_order": [
+        "1736fe90-b838-4ad5-9057-3f07ddd651f3"
+      ],
+      "custom_css": [
+        ".responsibility-section-four .image-with-text__content {padding: 30px 50px 40px 50px;}"
+      ],
+      "settings": {
+        "custom_class": "about-us-content responsibility-section-four",
+        "desktop-image": "shopify://shop_images/6-Antunio-Mello-_960x960px.jpg",
+        "mob-image": "shopify://shop_images/6-Antunio-Mello-_1080x1080px.jpg",
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "text_first",
+        "desktop_content_position": "top",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "color_scheme": "background-1",
+        "mobile_content_alignment": "left",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "4c0a3059-b4d6-4cde-b451-54d3ba8f6bc3": {
+      "type": "rich-text-4",
+      "custom_css": [
+        ".store-wrapper p {justify-content: center; text-align: center; line-height: 24px !important;}",
+        ".store-wrapper {margin-bottom: 40px;}",
+        ".store-wrapper a {font-weight: bold !important;}"
+      ],
+      "settings": {
+        "custom_class": "store-wrapper",
+        "prefix": "",
+        "section_title": "",
+        "section_sub": "",
+        "description": "<p>Find out more about António's business, by following his Instagram account <strong>(</strong><a href=\"https://www.instagram.com/hamandashapes/\" title=\"https://www.instagram.com/hamandashapes/\"><strong>@hamandashapes</strong></a><strong>) </strong></p>",
+        "section_url": ""
+      }
+    }
+  },
+  "order": [
+    "article_template",
+    "32188728-51b3-4f19-a420-84f078cb8228",
+    "188a94a3-5f74-4b1c-9305-3521ca3db0d2",
+    "f5d382fa-b6ed-467f-a533-702eeefe33f9",
+    "cdaee2a8-d358-4577-8fe9-9de9843a1e92",
+    "ac86e1fa-1121-43b3-90c7-bf1ca4009b0a",
+    "c6fa4aab-6f2c-42e7-b1fa-d6690656899d",
+    "8a70fb08-d36d-44b3-b5b6-1d37543eb0bb",
+    "1d00efee-2f32-4ede-825d-e9560467cdce",
+    "776958e6-2b6f-43ce-939f-459bce151a1c",
+    "4c0a3059-b4d6-4cde-b451-54d3ba8f6bc3"
+  ]
+}

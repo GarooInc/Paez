@@ -1,0 +1,248 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "article_template": {
+      "type": "article-template",
+      "disabled": true,
+      "settings": {
+        "blog_layout": "blog_layo_left",
+        "show_author": true,
+        "show_comment": true,
+        "show_cate": true,
+        "show_tag": true,
+        "show_related_post": true,
+        "related_post_title": "Related post",
+        "related_post_select_blog": "news",
+        "related_post_blogs_limit": 5,
+        "enable_widget_search": true,
+        "widget_search_title": "Search",
+        "shop_by_search_placeholder": "Search...",
+        "enable_widget_cate": true,
+        "widget_cate_title": "Categories",
+        "widget_cate_menu": "main-menu",
+        "enable_widget_related": true,
+        "widget_related_title": "RECENT POSTS",
+        "select_blog": "news",
+        "blogs_limit": 4,
+        "enable_widget_tag": true,
+        "shop_by_tag_title": "Tags",
+        "banner_article_url": "https://www.shopify.com/free-trial?ref=shopifycenter",
+        "enable_social_share": true
+      }
+    },
+    "7283c9aa-7ac1-4d3d-8960-987645642860": {
+      "type": "rich-text-4",
+      "settings": {
+        "custom_class": "blog-post-wrapper",
+        "prefix": "",
+        "section_title": "A behind-the-scenes",
+        "section_sub": "look at the Paez production process - Part 2",
+        "description": "",
+        "section_url": ""
+      }
+    },
+    "75326714-3963-48fe-be30-bfa155497be9": {
+      "type": "custom-home-section",
+      "settings": {
+        "bg-img": "shopify://shop_images/bp-2-1m.png",
+        "mobile-bg-img": "shopify://shop_images/bpm-2-1.png",
+        "link-1": "",
+        "label-1": "",
+        "link-2": "",
+        "label-2": "",
+        "link-3": "",
+        "label-3": "",
+        "link-4": "",
+        "label-4": ""
+      }
+    },
+    "49432daf-03c9-4ec0-bf1f-5f7efd98d998": {
+      "type": "custom-image-with-text",
+      "blocks": {
+        "6017baf5-e5b7-46f0-b566-33e54defd032": {
+          "type": "heading",
+          "settings": {
+            "heading": "Step 4",
+            "heading_size": "h1"
+          }
+        },
+        "2c6ac576-7be6-460f-a73f-0f59d2da8388": {
+          "type": "caption",
+          "settings": {
+            "caption": "Stock Orders and Retail Sales",
+            "text_style": "caption-with-letter-spacing",
+            "text_size": "medium"
+          }
+        },
+        "template--16695234265333__49432daf-03c9-4ec0-bf1f-5f7efd98d998-16765285584273ffb9-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>After certain details are tweaked between both sides, our Portugal team then sells to retailers and manages stock orders, sending those orders back to LXL for full-scale production.</p>",
+            "text_style": "body"
+          }
+        }
+      },
+      "block_order": [
+        "6017baf5-e5b7-46f0-b566-33e54defd032",
+        "2c6ac576-7be6-460f-a73f-0f59d2da8388",
+        "template--16695234265333__49432daf-03c9-4ec0-bf1f-5f7efd98d998-16765285584273ffb9-1"
+      ],
+      "settings": {
+        "custom_class": "blog-post-info",
+        "desktop-image": "shopify://shop_images/bp-2-2.png",
+        "mob-image": "shopify://shop_images/blog-post-2-1_ab7c900c-ce47-47b2-b236-e33c1d7ba13c.png",
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "image_first",
+        "desktop_content_position": "middle",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "color_scheme": "background-1",
+        "mobile_content_alignment": "left",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "b8f53eea-a7ea-4402-811d-059edd74ccdd": {
+      "type": "custom-image-with-text",
+      "blocks": {
+        "33519669-1006-4a47-9157-ade1e12fb1c9": {
+          "type": "heading",
+          "settings": {
+            "heading": "Step 5",
+            "heading_size": "h1"
+          }
+        },
+        "5758f413-f3d8-4fd0-8813-e24a06cbd20d": {
+          "type": "caption",
+          "settings": {
+            "caption": "Raw Materials and Manufacturing",
+            "text_style": "caption-with-letter-spacing",
+            "text_size": "medium"
+          }
+        },
+        "template--16695234265333__b8f53eea-a7ea-4402-811d-059edd74ccdd-1676530697efb7d9e6-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>The final production process involves LXL receiving the raw materials from its certified suppliers, manufacturing the shoes, and carrying out rigorous environmental and mechanical testing to ensure that each pair meets our high standards.</p>",
+            "text_style": "body"
+          }
+        }
+      },
+      "block_order": [
+        "33519669-1006-4a47-9157-ade1e12fb1c9",
+        "5758f413-f3d8-4fd0-8813-e24a06cbd20d",
+        "template--16695234265333__b8f53eea-a7ea-4402-811d-059edd74ccdd-1676530697efb7d9e6-1"
+      ],
+      "settings": {
+        "custom_class": "blog-post-info",
+        "desktop-image": "shopify://shop_images/bp-2-3.png",
+        "mob-image": "shopify://shop_images/blog-post-2-2.png",
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "text_first",
+        "desktop_content_position": "middle",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "color_scheme": "background-1",
+        "mobile_content_alignment": "left",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "372ff46a-644e-4106-8f11-070ed4cde7d3": {
+      "type": "custom-image-with-text",
+      "blocks": {
+        "template--16695234265333__372ff46a-644e-4106-8f11-070ed4cde7d3-1676530697efb7d9e6-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "Step 6",
+            "heading_size": "h1"
+          }
+        },
+        "a6240136-1741-4f5e-bbcc-35df45553c54": {
+          "type": "caption",
+          "settings": {
+            "caption": "Quality Control and Shipping",
+            "text_style": "caption-with-letter-spacing",
+            "text_size": "medium"
+          }
+        },
+        "eac52a9e-b2d0-48b4-b30d-f5dbe89771fe": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Paez takes the quality of its shoes seriously, and that's why only after passing a thorough quality control check, does LXL ship the finished product to Paez customers all over the world.</p>",
+            "text_style": "body"
+          }
+        }
+      },
+      "block_order": [
+        "template--16695234265333__372ff46a-644e-4106-8f11-070ed4cde7d3-1676530697efb7d9e6-0",
+        "a6240136-1741-4f5e-bbcc-35df45553c54",
+        "eac52a9e-b2d0-48b4-b30d-f5dbe89771fe"
+      ],
+      "settings": {
+        "custom_class": "blog-post-info",
+        "desktop-image": "shopify://shop_images/bp-2-4.png",
+        "mob-image": "shopify://shop_images/blog-post-2-3.png",
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "image_first",
+        "desktop_content_position": "middle",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "color_scheme": "background-1",
+        "mobile_content_alignment": "left",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "0ca6b543-1cd2-42ba-b043-3c9ad92263ff": {
+      "type": "custom-image-with-text",
+      "blocks": {
+        "template--16695234265333__0ca6b543-1cd2-42ba-b043-3c9ad92263ff-167653249553121b7f-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>We’re committed to being better every day and thus being transparent with every decision we make. We are aware of the long road ahead, and we hope that 2023 continues to push us for more initiatives that can make Paez have an impact on our environment.<br/><br/>We hope you've enjoyed this behind-the-scenes look at the production of Paez shoes. From design to delivery, we're dedicated to bringing you the best in stylish, comfortable, and responsible footwear.<br/><br/>Find out more about our responsibility statement <a href=\"https://paez.com/pages/responsibility\" title=\"https://paez.com/pages/responsibility\">here</a> or find more information by reaching out to us at onlineshop@paez.com</p>",
+            "text_style": "body"
+          }
+        }
+      },
+      "block_order": [
+        "template--16695234265333__0ca6b543-1cd2-42ba-b043-3c9ad92263ff-167653249553121b7f-1"
+      ],
+      "settings": {
+        "custom_class": "blog-post-info",
+        "desktop-image": "shopify://shop_images/bp-2-5.png",
+        "mob-image": "shopify://shop_images/blog-post-2-4.png",
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "text_first",
+        "desktop_content_position": "middle",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "color_scheme": "background-1",
+        "mobile_content_alignment": "left",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    }
+  },
+  "order": [
+    "article_template",
+    "7283c9aa-7ac1-4d3d-8960-987645642860",
+    "75326714-3963-48fe-be30-bfa155497be9",
+    "49432daf-03c9-4ec0-bf1f-5f7efd98d998",
+    "b8f53eea-a7ea-4402-811d-059edd74ccdd",
+    "372ff46a-644e-4106-8f11-070ed4cde7d3",
+    "0ca6b543-1cd2-42ba-b043-3c9ad92263ff"
+  ]
+}

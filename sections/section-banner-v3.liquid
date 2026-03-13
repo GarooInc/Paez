@@ -1,0 +1,308 @@
+<div data-section-id="{{ section.id }}" data-section-type="section-banner-v3" style="{% if section.settings.margin_top != blank %}margin-top: {{section.settings.margin_top}}px;{%endif%} {% if section.settings.margin_bottom != blank %}margin-bottom: {{section.settings.margin_bottom}}px;{% endif %}">
+  <div class="section-banner-v3">
+    <div class="container container-full">
+      <div class="row">
+        <div class="col-12 col-md-4 col-lg-4 p-0">
+          <div class="banner">
+            <div class="img-banner">
+              <a href="{{section.settings.url_banner}}">
+                {% if section.settings.img_banner != blank %}
+                <img data-src="{{section.settings.img_banner | img_url : 'master'}}" class="lazyload img-fluid w-100" alt >
+                {% else %}
+                <img data-src="//via.placeholder.com/533x457" class="lazyload img-fluid w-100" alt>
+                {% endif %}
+              </a>
+            </div>
+            <div class="content-banner text-center">
+              {% if section.settings.sub_title_banner != blank %}
+              <p class="sub-title" style="color: {{section.settings.color_sub_title}}">{{section.settings.sub_title_banner}}</p>
+              {% endif %}
+              {% if section.settings.title_banner != blank %}
+              <h1 class="title-banner" style="color: {{section.settings.color_title}}">{{section.settings.title_banner}}</h1>
+              {% endif %}
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-md-8 col-lg-8 p-0">
+          <div class="banner">
+            <div class="img-banner">
+              <a href="{{section.settings.url_banner}}">
+                {% if section.settings.img_banner2 != blank %}
+                <img data-src="{{section.settings.img_banner2 | img_url : 'master'}}" class="lazyload img img-fluid w-100" alt >
+                {% else %}
+                <img data-src="//via.placeholder.com/1347x578" class="lazyload img img-fluid w-100" alt>
+                {% endif %}
+              </a>
+            </div>
+            <div class="content">
+              {% if section.settings.title_banner2 != blank %}
+              <h1 class="title-banner" style="color: {{section.settings.color_title2}}">{{section.settings.title_banner2}}</h1>
+              {% endif %}
+              {% if section.settings.sub_title_banner2 != blank %}
+              <p class="sub-title" style="color: {{section.settings.color_sub_title2}}">{{section.settings.sub_title_banner2}}</p>
+              {% endif %}
+              <div class="button ">
+                {% if section.settings.button_banner2 != blank %}
+                <a href="{{section.settings.url_banner}}" class="button-shop button-shop-{{ section.id }}" title="">{{section.settings.button_banner2}}</a>
+                {% endif %}
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12 col-md-8 col-lg-8 p-0">
+          <div class="banner">
+            <div class="img-banner">
+              <a href="{{section.settings.url_banner}}">
+                {% if section.settings.img_banner3 != blank %}
+                <img data-src="{{section.settings.img_banner3 | img_url : 'master'}}" class="lazyload img img-fluid w-100" alt >
+                {% else %}
+                <img data-src="//via.placeholder.com/1347x578" class="lazyload img img-fluid w-100" alt>
+                {% endif %}
+              </a>
+            </div>
+            <div class="content2">
+              {% if section.settings.title_banner3 != blank %}
+              <h1 class="title-banner" style="color: {{section.settings.color_title3}}">{{section.settings.title_banner3}}</h1>
+              {% endif %}
+              {% if section.settings.sub_title_banner3 != blank %}
+              <p class="sub-title" style="color: {{section.settings.color_sub_title3}}">{{section.settings.sub_title_banner3}}</p>
+              {% endif %}
+              <div class="button ">
+                {% if section.settings.button_banner3 != blank %}
+                <a href="{{section.settings.url_banner}}" class="button-shop button-shop-{{ section.id }}" title="">{{section.settings.button_banner3}}</a>
+                {% endif %}
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-md-4 col-lg-4 p-0">
+          <div class="banner">
+            <div class="img-banner">
+              <a href="{{section.settings.url_banner}}">
+                {% if section.settings.img_banner4 != blank %}
+                <img data-src="{{section.settings.img_banner4 | img_url : 'master'}}" class="lazyload img-fluid w-100" alt >
+                {% else %}
+                <img data-src="//via.placeholder.com/533x457" class="lazyload img-fluid w-100" alt>
+                {% endif %}
+              </a>
+            </div>
+            <div class="content-banner text-center">
+              {% if section.settings.sub_title_banner4 != blank %}
+              <p class="sub-title" style="color: {{section.settings.color_sub_title4}}">{{section.settings.sub_title_banner4}}</p>
+              {% endif %}
+              {% if section.settings.title_banner4 != blank %}
+              <h1 class="title-banner" style="color: {{section.settings.color_title4}}">{{section.settings.title_banner4}}</h1>
+              {% endif %}
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>   
+</div>
+<style>
+  .section-banner-v3 .banner .button .button-shop-{{ section.id }} {
+    color: {{section.settings.color_btn}};
+    background: {{section.settings.bg_btn}};
+  }
+  .section-banner-v3 .banner .button .button-shop-{{ section.id }}:hover {
+    color: {{section.settings.color_btn_hover}};
+    background: {{section.settings.bg_btn_hover}};
+  }
+</style>
+
+{% schema %}
+{
+  "name": "BANNER V3",
+  "settings": [
+    {
+      "type": "header",
+      "content": " Banner 1"
+    },
+    {
+      "type": "url",
+      "id": "url_banner",
+      "label": "URL Button ",
+      "default": "/collections/all"
+    },
+    {
+      "type": "image_picker",
+      "id": "img_banner",
+      "label": "Image Banner",
+      "info": "539x584px recommended"
+    },
+    {
+      "type": "text",
+      "id": "title_banner",
+      "label": "Title Banner",
+      "default": "Bags Collection"
+    },
+    {
+      "type": "color",
+      "id": "color_title",
+      "label": "Color Title banner",
+      "default": "#000"
+    },
+    {
+      "type": "text",
+      "id": "sub_title_banner",
+      "label": "Sub Title Banner",
+      "default": "Season Off 30 - 10% "
+    },
+    {
+      "type": "color",
+      "id": "color_sub_title",
+      "label": "Color Sub Title banner",
+      "default": "#000"
+    },
+    {
+      "type": "image_picker",
+      "id": "img_banner2",
+      "label": "Image Banner",
+      "info": "1363x584px recommended"
+    },
+    {
+      "type": "text",
+      "id": "title_banner2",
+      "label": "Title Banner 2",
+      "default": "Printed Men’s Shirts"
+    },
+    {
+      "type": "color",
+      "id": "color_title2",
+      "label": "Color Title banner 2",
+      "default": "#000"
+    },
+    {
+      "type": "text",
+      "id": "sub_title_banner2",
+      "label": "Sub Title Banner 2",
+      "default": "Season Off 30 - 10% "
+    },
+    {
+      "type": "color",
+      "id": "color_sub_title2",
+      "label": "Color Sub Title banner ",
+      "default": "#000"
+    },
+    {
+      "type": "text",
+      "id": "button_banner2",
+      "label": "Button Banner ",
+      "default": "Shop now"
+    },
+    {
+      "type": "header",
+      "content": " Banner 2"
+    },
+    {
+      "type": "image_picker",
+      "id": "img_banner3",
+      "label": "Image Banner 3",
+      "info": "1363x584px recommended"
+    },
+    {
+      "type": "text",
+      "id": "title_banner3",
+      "label": "Title Banner 3",
+      "default": "Bags Collection"
+    },
+    {
+      "type": "color",
+      "id": "color_title3",
+      "label": "Color Title banner 3",
+      "default": "#000"
+    },
+    {
+      "type": "text",
+      "id": "sub_title_banner3",
+      "label": "Sub Title Banner 3",
+      "default": "Season Off 30 - 10%"
+    },
+    {
+      "type": "color",
+      "id": "color_sub_title3",
+      "label": "Color Sub Title banner",
+      "default": "#000"
+    },
+    {
+      "type": "text",
+      "id": "button_banner3",
+      "label": "Button Banner ",
+      "default": "Shop now"
+    },
+    {
+      "type": "image_picker",
+      "id": "img_banner4",
+      "label": "Image Banner 4",
+      "info": "539x584px recommended"
+    },
+    {
+      "type": "text",
+      "id": "title_banner4",
+      "label": "Title Banner 4",
+      "default": "Printed Men’s Shirts"
+    },
+    {
+      "type": "color",
+      "id": "color_title4",
+      "label": "Color Title banner 4",
+      "default": "#000"
+    },
+    {
+      "type": "text",
+      "id": "sub_title_banner4",
+      "label": "Sub Title Banner 4",
+      "default": "Season Off 30 - 10%"
+    },
+    {
+      "type": "color",
+      "id": "color_sub_title4",
+      "label": "Color Sub Title banner",
+      "default": "#000"
+    },
+    {
+      "type": "header",
+      "content": "color button"
+    },
+    {
+      "type": "color",
+      "id": "color_btn",
+      "label": "Color button",
+      "default": "#fff"
+    },
+    {
+      "type": "color",
+      "id": "bg_btn",
+      "label": "background button",
+      "default": "#000"
+    },
+    {
+      "type": "color",
+      "id": "color_btn_hover",
+      "label": "Color button Hover",
+      "default": "#fff"
+    },
+    {
+      "type": "color",
+      "id": "bg_btn_hover",
+      "label": "background button Hover",
+      "default": "#000"
+    }
+  ],
+  "presets": [
+    {
+      "name": "BANNER V3",
+      "category": "HOME"
+    }
+  ]
+}
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

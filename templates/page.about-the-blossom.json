@@ -1,0 +1,195 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {}
+    },
+    "fa6e799b-ad03-4b82-8956-26fb70f22827": {
+      "type": "rich-text-4",
+      "settings": {
+        "custom_class": "about-collection-banner-title page-banner-title",
+        "prefix": "",
+        "section_title": "ABOUT",
+        "section_sub": "BLOSSOM",
+        "description": "",
+        "section_url": ""
+      }
+    },
+    "c4114312-cb5b-4dee-9ae2-bb35613c7097": {
+      "type": "section-banner-v12",
+      "settings": {
+        "custom_class": "about-banner",
+        "img_banner": "shopify://shop_images/Banner_Principal.png",
+        "mob_img_banner": "shopify://shop_images/Banner_Principal55.png",
+        "title": "",
+        "url_banner": "shopify://collections/all",
+        "color_title": "#000000",
+        "color_hover_title": "#ffffff"
+      }
+    },
+    "7e171be5-2257-4021-b88c-2376a9a6b10c": {
+      "type": "custom-image-with-text",
+      "blocks": {
+        "template--16679014564085__7e171be5-2257-4021-b88c-2376a9a6b10c-1674625921a01df0e4-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "",
+            "heading_size": "h1"
+          }
+        },
+        "template--16679014564085__7e171be5-2257-4021-b88c-2376a9a6b10c-1674625921a01df0e4-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>When we blossom, we become strong and more pleasing. Here at Paez, we love the fresh start that a spring/summer season provides because we’re all about new beginnings.</p>",
+            "text_style": "body"
+          }
+        }
+      },
+      "block_order": [
+        "template--16679014564085__7e171be5-2257-4021-b88c-2376a9a6b10c-1674625921a01df0e4-0",
+        "template--16679014564085__7e171be5-2257-4021-b88c-2376a9a6b10c-1674625921a01df0e4-1"
+      ],
+      "settings": {
+        "custom_class": "about-us-content about-collection-section-one",
+        "desktop-image": "shopify://shop_images/Imagen-1.png",
+        "mob-image": "shopify://shop_images/about-collection-section-1.png",
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "image_first",
+        "desktop_content_position": "middle",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "color_scheme": "background-1",
+        "mobile_content_alignment": "left",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "d9d10f36-b52d-4358-b456-b1357f1e8851": {
+      "type": "custom-image-with-text",
+      "blocks": {
+        "template--16679014564085__d9d10f36-b52d-4358-b456-b1357f1e8851-16746290803a6c774d-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>At Paez, simplicity is key and what takes us far. We were able to transform the iconic espadrille into a fashion trend. With comfort and creativity, we connected the world with our purpose. Now, we’re aiming for new heights. New product categories, new prints, and new shades to become your wardrobe essential for every occasion.</p>",
+            "text_style": "body"
+          }
+        }
+      },
+      "block_order": [
+        "template--16679014564085__d9d10f36-b52d-4358-b456-b1357f1e8851-16746290803a6c774d-1"
+      ],
+      "settings": {
+        "custom_class": "about-us-content about-collection-section-two",
+        "desktop-image": "shopify://shop_images/Imagen-2.png",
+        "mob-image": "shopify://shop_images/about-collection-section-2.png",
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "text_first",
+        "desktop_content_position": "middle",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "color_scheme": "background-1",
+        "mobile_content_alignment": "left",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "e66dc0a5-14d5-4aa6-9ab0-8b772b1d4170": {
+      "type": "custom-image-with-text",
+      "blocks": {
+        "template--16679014564085__e66dc0a5-14d5-4aa6-9ab0-8b772b1d4170-1674629675bc7efd5c-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Thinking of the SS23 collection, we wanted to make a statement. It’s possible to align relaxation and quality without compromising on style. We work every day to provide unique experiences and a laid-back mindset to everyone who walks around in their favourite Paez design. It’s time to be free, to take new chances, to challenge ourselves to become our best and most inspiring versions.<br/><br/>We’re blossoming not only in new designs, like the Mary Janes, but also in returning ones, like the Sandals, Mules, and Mocs while delivering the best version of our espadrille collections.</p>",
+            "text_style": "body"
+          }
+        }
+      },
+      "block_order": [
+        "template--16679014564085__e66dc0a5-14d5-4aa6-9ab0-8b772b1d4170-1674629675bc7efd5c-1"
+      ],
+      "settings": {
+        "custom_class": "about-us-content about-collection-section-three",
+        "desktop-image": "shopify://shop_images/Imagen-3.png",
+        "mob-image": "shopify://shop_images/about-collection-section.png",
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "image_first",
+        "desktop_content_position": "middle",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "color_scheme": "background-1",
+        "mobile_content_alignment": "left",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "baa876b4-375f-4ae8-bb5e-8f2b7fc9334f": {
+      "type": "custom-image-with-text",
+      "blocks": {
+        "template--16679014564085__baa876b4-375f-4ae8-bb5e-8f2b7fc9334f-1674629675bc7efd5c-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Responsibility is a pillar for Paez. We've increased the number of references made from recycled textiles, certified by The Global Recycling Standard, to the entirety of the collection while continuing our commitment to using cruelty-free materials, as certified by PETA.<br/><br/>We hope that you enjoy this collection and come blossom with us.<br/></p>",
+            "text_style": "body"
+          }
+        },
+        "template--16679014564085__baa876b4-375f-4ae8-bb5e-8f2b7fc9334f-1674629675bc7efd5c-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "",
+            "heading_size": "h1"
+          }
+        },
+        "c19fabb6-1eac-4698-a259-233f82023b1e": {
+          "type": "caption",
+          "settings": {
+            "caption": "PAEZ, WALK THE TALK",
+            "text_style": "caption-with-letter-spacing",
+            "text_size": "medium"
+          }
+        }
+      },
+      "block_order": [
+        "template--16679014564085__baa876b4-375f-4ae8-bb5e-8f2b7fc9334f-1674629675bc7efd5c-1",
+        "template--16679014564085__baa876b4-375f-4ae8-bb5e-8f2b7fc9334f-1674629675bc7efd5c-0",
+        "c19fabb6-1eac-4698-a259-233f82023b1e"
+      ],
+      "settings": {
+        "custom_class": "about-us-content about-collection-section-four",
+        "desktop-image": "shopify://shop_images/Imagen-4.png",
+        "mob-image": "shopify://shop_images/about-collection-section-4.png",
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "text_first",
+        "desktop_content_position": "middle",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "color_scheme": "background-1",
+        "mobile_content_alignment": "left",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    }
+  },
+  "order": [
+    "main",
+    "fa6e799b-ad03-4b82-8956-26fb70f22827",
+    "c4114312-cb5b-4dee-9ae2-bb35613c7097",
+    "7e171be5-2257-4021-b88c-2376a9a6b10c",
+    "d9d10f36-b52d-4358-b456-b1357f1e8851",
+    "e66dc0a5-14d5-4aa6-9ab0-8b772b1d4170",
+    "baa876b4-375f-4ae8-bb5e-8f2b7fc9334f"
+  ]
+}

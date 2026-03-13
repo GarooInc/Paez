@@ -1,0 +1,202 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {}
+    },
+    "4cd285cd-a46e-45f6-a646-b98f002e9a1b": {
+      "type": "rich-text-4",
+      "settings": {
+        "custom_class": "about-collection-banner-title page-banner-title",
+        "prefix": "",
+        "section_title": "Manolo Bakes x PAEZ",
+        "section_sub": "",
+        "description": "",
+        "section_url": ""
+      }
+    },
+    "5614254c-5d27-43bf-85b2-556014273ef7": {
+      "type": "section-banner-v12",
+      "settings": {
+        "custom_class": "about-banner",
+        "img_banner": "shopify://shop_images/manolo.png",
+        "mob_img_banner": "shopify://shop_images/MANOLO-BAKES_PAEZ-4309.jpg",
+        "title": "",
+        "url_banner": "shopify://collections/all",
+        "color_title": "#000000",
+        "color_hover_title": "#ffffff"
+      }
+    },
+    "248fabed-6a2d-4830-843e-7fcf037386b1": {
+      "type": "rich-text-4",
+      "custom_css": [
+        ".store-wrapper-beige {background-color: transparent;}",
+        "@media (max-width: 600px) {.container-v1 {margin-top: 0px; }}",
+        "@media (max-width: 600px) {.store-wrapper-beige p {font-size: 12px; line-height: 20px !important; padding: 10px 20px; }}"
+      ],
+      "settings": {
+        "custom_class": "store-wrapper-beige",
+        "prefix": "",
+        "section_title": "",
+        "section_sub": "",
+        "description": "<p>We were challenged by Manolo Bakes to collaborate for an exclusive end-of-summer project. This invitation shook us with excitement, but it felt so natural that in just under two weeks, our creative vision, design elements, and final product came together seamlessly. </p>",
+        "section_url": ""
+      }
+    },
+    "cd9b7267-1b77-4b46-8560-d52618cf545b": {
+      "type": "section-product-v2",
+      "blocks": {
+        "template--18940872589656__cd9b7267-1b77-4b46-8560-d52618cf545b-168381682342b4f69a-0": {
+          "type": "tab",
+          "settings": {
+            "tab_title": "Manolo bakes x paez",
+            "tab_collection": "manolo-bakes-x-paez",
+            "tab_limit": 3
+          }
+        }
+      },
+      "block_order": [
+        "template--18940872589656__cd9b7267-1b77-4b46-8560-d52618cf545b-168381682342b4f69a-0"
+      ],
+      "custom_css": [
+        ".slick-slider {display: flex; justify-content: center; margin: 0px;}",
+        ".slick-list {padding-right: 0px;}",
+        "@media (min-width: 960px) {.slick-track {width: 1000px !important; display: flex; justify-content: center; }}",
+        ".nav-tabs {padding-top: 0px !important;}"
+      ],
+      "settings": {
+        "custom_class": "",
+        "margin_top": "2",
+        "margin_bottom": "",
+        "title_heading": "",
+        "color_title": "#222222",
+        "enable_slider": false
+      }
+    },
+    "6eadc789-4d15-4f6f-b5ae-23dfe933857c": {
+      "type": "custom-image-with-text",
+      "blocks": {
+        "template--18940872589656__6eadc789-4d15-4f6f-b5ae-23dfe933857c-1683817316951370c5-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>As PAEZ looks to step into the apparel market, this collaboration represents our commitment to explore fresh ideas and push beyond our comfort zones. </p>",
+            "text_style": "body"
+          }
+        }
+      },
+      "block_order": [
+        "template--18940872589656__6eadc789-4d15-4f6f-b5ae-23dfe933857c-1683817316951370c5-1"
+      ],
+      "custom_css": [
+        "@media (max-width: 425px) {.grid {display: flex; flex-direction: column; }}",
+        ".image-with-text .grid__item {position: relative; align-self: center;}"
+      ],
+      "settings": {
+        "custom_class": "about-us-content responsibility-section-four",
+        "desktop-image": "shopify://shop_images/1_533061d7-77dd-46db-9217-aff23954e514.png",
+        "mob-image": "shopify://shop_images/1_533061d7-77dd-46db-9217-aff23954e514.png",
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "text_first",
+        "desktop_content_position": "top",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "color_scheme": "background-1",
+        "mobile_content_alignment": "left",
+        "padding_top": 36,
+        "padding_bottom": 0
+      }
+    },
+    "7abbacd2-0a23-4678-b6c5-7e466e2c9483": {
+      "type": "custom-image-with-text",
+      "blocks": {
+        "template--18940872589656__7abbacd2-0a23-4678-b6c5-7e466e2c9483-1683817316951370c5-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>A special thank you to the team at Boca a Boca for being the middle-man in all of this, and ensuring everything went smoothly, and Ana Mendes for the shots!</p>",
+            "text_style": "body"
+          }
+        }
+      },
+      "block_order": [
+        "template--18940872589656__7abbacd2-0a23-4678-b6c5-7e466e2c9483-1683817316951370c5-1"
+      ],
+      "custom_css": [
+        "@media (max-width: 425px) {.grid {display: flex; flex-direction: column; }}",
+        ".image-with-text .grid__item {position: relative; align-self: center;}"
+      ],
+      "settings": {
+        "custom_class": "about-us-content responsibility-section-four",
+        "desktop-image": "shopify://shop_images/2_e9699660-f05a-4f6f-8347-b34dfd7bc9ac.png",
+        "mob-image": "shopify://shop_images/2_e9699660-f05a-4f6f-8347-b34dfd7bc9ac.png",
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "image_first",
+        "desktop_content_position": "top",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "color_scheme": "background-1",
+        "mobile_content_alignment": "left",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "custom_image_with_text_7hKtaL": {
+      "type": "custom-image-with-text",
+      "blocks": {
+        "text_8yKDCX": {
+          "type": "text",
+          "settings": {
+            "text": "<p>The limited edition Tote Bag and T-Shirt by Manolo Bakes x PAEZ is exclusively available at our Alvalade flagship store, the Manolo Bakes stores and www.paez.com</p>",
+            "text_style": "body"
+          }
+        },
+        "image_PdXknq": {
+          "type": "image",
+          "settings": {
+            "block-img": "shopify://shop_images/logos_manolobakesxpaez.png"
+          }
+        }
+      },
+      "block_order": [
+        "text_8yKDCX",
+        "image_PdXknq"
+      ],
+      "settings": {
+        "custom_class": "about-us-content responsibility-section-four",
+        "desktop-image": "shopify://shop_images/3_97bea6fc-34db-4172-864c-7b9031944aee.png",
+        "mob-image": "shopify://shop_images/3_97bea6fc-34db-4172-864c-7b9031944aee.png",
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "text_first",
+        "desktop_content_position": "top",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "color_scheme": "background-1",
+        "mobile_content_alignment": "left",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    }
+  },
+  "order": [
+    "main",
+    "4cd285cd-a46e-45f6-a646-b98f002e9a1b",
+    "5614254c-5d27-43bf-85b2-556014273ef7",
+    "248fabed-6a2d-4830-843e-7fcf037386b1",
+    "cd9b7267-1b77-4b46-8560-d52618cf545b",
+    "6eadc789-4d15-4f6f-b5ae-23dfe933857c",
+    "7abbacd2-0a23-4678-b6c5-7e466e2c9483",
+    "custom_image_with_text_7hKtaL"
+  ]
+}

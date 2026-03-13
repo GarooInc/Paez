@@ -1,0 +1,108 @@
+.usf-has-filter-drawer .usf-facets,
+.usf-has-filter-drawer .usf-sr-container {
+    width: unset;
+    float: none;
+    margin: 0; 
+    padding: 0;
+} 
+.usf-mobile.usf-has-container .collection-page-fullwidth .content-page .filter_sortby.d-xl-none {
+    display: none!important;
+} 
+.usf-sr-config__mobile-filters-wrapper {
+    margin-bottom: 15px;
+}
+.usf-sr-config__mobile-filters-wrapper .usf-filters{
+    width: 100%;
+    border: 1px solid var(--usf-border-color);
+}
+
+.usf-sr-more .usf-progress div{
+    background: #000;
+}
+
+.usf-preview__vendor {
+    display: none;
+}
+
+.usf-c-num-input{
+    border-radius: 0 !important;
+}
+
+.usf-preview button[name=add] {
+    min-width: 160px;
+    max-width: 100%;
+    background: #000 !important;
+    border:none !important;
+    color: #fff;
+    box-shadow: none;
+    border-radius: 0 !important;
+    margin: 0;
+    text-transform: uppercase;
+    transition: all .3s ease-in-out;
+    padding: 5px 25px;
+    font-size: 14px;
+    line-height: 1.2;
+    height: unset;
+    font-weight: 600;
+    width: 100%;
+}
+
+.usf-preview button[name=add]:hover {
+    background: #e96d00 !important;
+    color: white !important;
+    font-weight: bold !important;
+    font-family: "Helvetica" !important;
+}
+
+.usf-c-num-input__p:hover:before, .usf-c-num-input__p:hover:after {
+    background-color: #e96d00 !important;
+}
+
+.usf-preview__image-slider__btn:hover {
+    opacity: 1;
+    border-color: #000 !important;
+    background-color: #000 !important;
+}
+
+.usf-preview__field {
+    display: none !important;
+}
+
+.usf-preview__badge-sale {
+    position: absolute;
+    z-index: 20;
+    top: 15px;
+    right: 30px;
+    height: 40px!important;
+    width: 80px!important;
+    font-size: 14px;
+    border-radius: 0!important;
+    background-color: rgb(184, 170, 131) !important;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.usf-preview__price-wrapper .usf-discount {
+    color: #000!important;
+    font-weight: bold!important;
+}
+.usf-soldout-badge,.usf-preoder-badge{
+    position: absolute;
+    right: 20px;
+    background: transparent;
+    font-size: 16px;
+    font-weight: 500;
+    color: #000;
+    padding: 2px 5px;
+    top: 20px;
+    z-index: 1;
+}
+
+.usf-vendor {
+    display: none!important;
+}
+.usf-mobile .usf-sr-product__image-container .usf-sr-preview{
+    bottom: 10px!important;
+}

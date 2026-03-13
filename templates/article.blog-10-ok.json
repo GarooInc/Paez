@@ -1,0 +1,618 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "article_template": {
+      "type": "article-template",
+      "disabled": true,
+      "settings": {
+        "blog_layout": "blog_layo_left",
+        "show_author": true,
+        "show_comment": true,
+        "show_cate": true,
+        "show_tag": true,
+        "show_related_post": true,
+        "related_post_title": "Related post",
+        "related_post_select_blog": "news",
+        "related_post_blogs_limit": 5,
+        "enable_widget_search": true,
+        "widget_search_title": "Search",
+        "shop_by_search_placeholder": "Search...",
+        "enable_widget_cate": true,
+        "widget_cate_title": "Categories",
+        "widget_cate_menu": "main-menu",
+        "enable_widget_related": true,
+        "widget_related_title": "RECENT POSTS",
+        "select_blog": "news",
+        "blogs_limit": 4,
+        "enable_widget_tag": true,
+        "shop_by_tag_title": "Tags",
+        "banner_article_url": "https://www.shopify.com/free-trial?ref=shopifycenter",
+        "enable_social_share": true
+      }
+    },
+    "32188728-51b3-4f19-a420-84f078cb8228": {
+      "type": "rich-text-4",
+      "custom_css": [
+        ".about-collection-banner-title h2 {text-transform: none;}",
+        ".subtitle {padding: 40px 0 0 0px; background-color: transparent;}",
+        ".rich-text-4 {margin-bottom: 0px;}"
+      ],
+      "settings": {
+        "custom_class": "about-collection-banner-title page-banner-title",
+        "prefix": "",
+        "section_title": "LOOKING FOR A PERFECT LISBON WEEKEND?",
+        "section_sub": "",
+        "description": "<p><br/>Part 2</p>",
+        "section_url": ""
+      }
+    },
+    "custom_home_video_yMJjr8": {
+      "type": "custom-home-video",
+      "settings": {
+        "bg-video": "https://cdn.shopify.com/videos/c/o/v/c2b5b6edb3234f01bae4ddb157815d23.mp4",
+        "mobile-bg-video": "https://cdn.shopify.com/videos/c/o/v/40f935a077ec449cb1eaae7623ae1f57.mp4",
+        "link-1": "",
+        "label-1": "",
+        "link-2": "",
+        "label-2": "",
+        "link-3": "",
+        "label-3": "",
+        "link-4": "",
+        "label-4": ""
+      }
+    },
+    "rich_text_4_RzNH8U": {
+      "type": "rich-text-4",
+      "disabled": true,
+      "settings": {
+        "custom_class": "about-collection-banner-title page-banner-title",
+        "prefix": "",
+        "section_title": "",
+        "section_sub": "",
+        "description": "",
+        "section_url": ""
+      }
+    },
+    "rich_text_4_gnXbFz": {
+      "type": "rich-text-4",
+      "settings": {
+        "custom_class": "about-collection-banner-title page-banner-title",
+        "prefix": "",
+        "section_title": "",
+        "section_sub": "",
+        "description": "<h6><br/><br/><br/><br/><br/>Lisbon is not merely a city; it's a living, breathing entity that pulsates with life, humor, and an unmistakable charm. <br/><br/>Each of these carefully curated suggestions is a brushstroke on the canvas of Lisbon's allure.<br/><br/>It's part 2 of our blog to help you visit the best that Lisbon has to offer!<br/><br/>Make sure you pick up your Paez and walk alongside our hometown.</h6>",
+        "section_url": ""
+      }
+    },
+    "rich_text_4_Ebt38f": {
+      "type": "rich-text-4",
+      "settings": {
+        "custom_class": "about-collection-banner-title page-banner-title",
+        "prefix": "",
+        "section_title": "Ready for an afternoon delight? Come explore these places",
+        "section_sub": "",
+        "description": "",
+        "section_url": ""
+      }
+    },
+    "cdaee2a8-d358-4577-8fe9-9de9843a1e92": {
+      "type": "custom-image-with-text",
+      "blocks": {
+        "text_Nwca7C": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Where should you be heading in the afternoon? Well Alfama, Lisbon's oldest and most charismatic neighbourhood of course. A treasure trove of delightful plazas, trendy cafés, and independent shops. Take a nostalgic ride on Tram 28 as it weaves through Alfama's hills and narrow streets. Explore the São Jorge Castle for an intensely beautiful panoramic view over Lisbon. Wander down to the Se Cathedral, and if you're up for it (we promise we're not disrupting the structure of this blog), spend the night at our favorite spot, Mesa de Frades, to indulge in a night of soul-stirring Fado music.<br/><br/></p>",
+            "text_style": "subtitle"
+          }
+        },
+        "caption_wf6Gfk": {
+          "type": "caption",
+          "settings": {
+            "caption": "-",
+            "text_style": "caption-with-letter-spacing",
+            "text_size": "medium"
+          }
+        }
+      },
+      "block_order": [
+        "text_Nwca7C",
+        "caption_wf6Gfk"
+      ],
+      "custom_css": [
+        "@media (max-width: 425px) {.grid {display: flex; flex-direction: column; }}",
+        ".image-with-text .grid__item {position: relative; align-self: center;}"
+      ],
+      "settings": {
+        "custom_class": "about-us-content responsibility-section-four",
+        "desktop-image": "shopify://shop_images/Alfama.jpg",
+        "mob-image": "shopify://shop_images/Alfama.jpg",
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "image_first",
+        "desktop_content_position": "top",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "color_scheme": "background-1",
+        "mobile_content_alignment": "left",
+        "padding_top": 12,
+        "padding_bottom": 0
+      }
+    },
+    "ac86e1fa-1121-43b3-90c7-bf1ca4009b0a": {
+      "type": "custom-image-with-text",
+      "blocks": {
+        "139e407d-9b47-4873-bcde-613e5f702443": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Not far from Alfama, you can also discover Jardim do Torel, a secret heavenly garden perched on a hill. You can gaze upon Baixa (downtown Lisbon) and Avenida da Liberdade as the sun dips, casting a golden glow over Lisbon's rooftops. Reach this spot by riding the Lavra funicular, a charming antique tram that turns the journey itself into a delightful adventure.</p>",
+            "text_style": "body"
+          }
+        }
+      },
+      "block_order": [
+        "139e407d-9b47-4873-bcde-613e5f702443"
+      ],
+      "custom_css": [
+        "@media (max-width: 425px) {.grid {display: flex; flex-direction: column; }}",
+        ".image-with-text .grid__item {position: relative; align-self: center;}"
+      ],
+      "settings": {
+        "custom_class": "about-us-content responsibility-section-four",
+        "desktop-image": "shopify://shop_images/Jardim_do_Torel.jpg",
+        "mob-image": "shopify://shop_images/Jardim_do_Torel.jpg",
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "text_first",
+        "desktop_content_position": "top",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "color_scheme": "background-1",
+        "mobile_content_alignment": "left",
+        "padding_top": 0,
+        "padding_bottom": 16
+      }
+    },
+    "custom_image_with_text_Bz8eTk": {
+      "type": "custom-image-with-text",
+      "blocks": {
+        "text_A3JPnH": {
+          "type": "text",
+          "settings": {
+            "text": "<p>For nature enthusiasts craving seaside views, we definitely suggest Arrábida, a short drive from Lisbon, where rugged cliffs, turquoise waters, and its untouched status as a national park, shine through the beautiful natural landscape. <br/><br/>Explore the secluded beaches of Praia dos Coelhos or Praia do Piloto, offering privacy and fun hiking trails. <br/><br/>If you want to grab a quick bite (or a longer one) we suggest you visit O Farol, one of our absolute favourite places to eat seafood (shoutout to the scallops, the garlic prawns, the razor clams, and the crab stuffed pikelets). <br/><br/>End the afternoon, at the clifftop Cabo Espichel Sanctuary, where Our Lady of the Cape watches over the sea and you have a panoramic view over Arrábida.</p>",
+            "text_style": "subtitle"
+          }
+        }
+      },
+      "block_order": [
+        "text_A3JPnH"
+      ],
+      "settings": {
+        "custom_class": "about-us-content responsibility-section-four",
+        "desktop-image": "shopify://shop_images/Arrabida.jpg",
+        "mob-image": "shopify://shop_images/Arrabida.jpg",
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "image_first",
+        "desktop_content_position": "top",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "color_scheme": "background-1",
+        "mobile_content_alignment": "left",
+        "padding_top": 12,
+        "padding_bottom": 0
+      }
+    },
+    "4fd3a6a8-8ece-4aea-9857-8c69338c72cc": {
+      "type": "rich-text-4",
+      "custom_css": [
+        ".about-collection-banner-title h2 {text-transform: none;}",
+        ".subtitle {padding: 40px 0 0 0px; background-color: transparent;}",
+        ".rich-text-4 {margin-bottom: 0px;}"
+      ],
+      "settings": {
+        "custom_class": "about-collection-banner-title subtitle",
+        "prefix": "",
+        "section_title": "Craving something sweet? We got you covered!",
+        "section_sub": "",
+        "description": "<p><br/><br/><br/></p>",
+        "section_url": ""
+      }
+    },
+    "custom_image_with_text_YUmJTN": {
+      "type": "custom-image-with-text",
+      "blocks": {
+        "text_iJ7QHp": {
+          "type": "text",
+          "settings": {
+            "text": "<p>If you need a sugary pick-me-up (and because we know most of us have a sweet tooth) then might we suggest visiting Julieta Penteado's pastry shop at Santos, bringing her Brazilian creativity to Lisbon, and infusing essential oils into her pastries for unique flavors. </p><p><br/>With a dynamic menu that surprises visitors every week, Julieta's pastries, from fruit-filled tarts to delicate biscuits and truffles, showcase seasonal ingredients, providing a fresh and delightful experience with each visit (and hey! Just by coincidence, she was one of Paez's faces in Spring/Summer 2023).</p><p><br/>And you truly cannot go wrong with a classic. Not just a classic, but an icon. If you're looking for a Portuguese traditional Pastel de Nata (custard tart) then visiting the ever-so traditional Pastéis de Belém is a must, or you can head down to Manteigaria, for an afternoon snack, indulge in a warm pastel de nata infused with aromatic oils, and pair it with coffee or tea for a pick-me-up.<br/><br/></p>",
+            "text_style": "subtitle"
+          }
+        }
+      },
+      "block_order": [
+        "text_iJ7QHp"
+      ],
+      "settings": {
+        "custom_class": "about-us-content responsibility-section-four",
+        "desktop-image": "shopify://shop_images/Juliana_Penteado.jpg",
+        "mob-image": "shopify://shop_images/Juliana_Penteado.jpg",
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "image_first",
+        "desktop_content_position": "top",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "color_scheme": "background-1",
+        "mobile_content_alignment": "left",
+        "padding_top": 12,
+        "padding_bottom": 0
+      }
+    },
+    "rich_text_4_kCD4Jr": {
+      "type": "rich-text-4",
+      "settings": {
+        "custom_class": "about-collection-banner-title page-banner-title",
+        "prefix": "",
+        "section_title": "Pre-dinner cocktails for a laid-back vibe",
+        "section_sub": "",
+        "description": "",
+        "section_url": ""
+      }
+    },
+    "custom_image_with_text_zdqPkW": {
+      "type": "custom-image-with-text",
+      "blocks": {
+        "text_KNaEP9": {
+          "type": "text",
+          "settings": {
+            "text": "<p>As the sun begins to dip, and all you want is a nice drink before dinner (please take note that you have to be over 18 years old and drink responsibly), then make your way to Boavista Social Club, a trendy spot that opened its doors in November 2021 in Cais do Sodré. </p><p><br/>Reflecting the ever-evolving tastes of Lisbon, Chef Marc Le Rohellec crafts unexpected dishes with local and seasonal ingredients. The soul of Boavista lies in its music, where jazz, disco, soul, and hip-hop sets create a lively ambiance. <br/><br/>Don't forget to browse through their collection of vinyl records for a nostalgic touch.</p>",
+            "text_style": "body"
+          }
+        }
+      },
+      "block_order": [
+        "text_KNaEP9"
+      ],
+      "settings": {
+        "custom_class": "about-us-content responsibility-section-four",
+        "desktop-image": "shopify://shop_images/Boavista_Social_Club.jpg",
+        "mob-image": "shopify://shop_images/Boavista_Social_Club.jpg",
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "text_first",
+        "desktop_content_position": "top",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "color_scheme": "background-1",
+        "mobile_content_alignment": "left",
+        "padding_top": 0,
+        "padding_bottom": 16
+      }
+    },
+    "custom_image_with_text_UVb3hC": {
+      "type": "custom-image-with-text",
+      "blocks": {
+        "text_RhKCE4": {
+          "type": "text",
+          "settings": {
+            "text": "<p>You can also discover Miradouro de Santa Catarina (Adamastor).<br/><br/>A lesser-known viewpoint offering stunning panoramic views of Lisbon, the Tagus River estuary, the 25 de Abril Bridge, and São Paulo's rooftops. </p><p><br/>Join locals during spring, summer, and autumn evenings for the most beautiful sunset, with a lot of great vibes. Enjoy live music, conversations, and cold beers as you take in the breathtaking view.</p>",
+            "text_style": "subtitle"
+          }
+        }
+      },
+      "block_order": [
+        "text_RhKCE4"
+      ],
+      "settings": {
+        "custom_class": "about-us-content responsibility-section-four",
+        "desktop-image": "shopify://shop_images/Miradouro.jpg",
+        "mob-image": "shopify://shop_images/Miradouro.jpg",
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "image_first",
+        "desktop_content_position": "top",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "color_scheme": "background-1",
+        "mobile_content_alignment": "left",
+        "padding_top": 12,
+        "padding_bottom": 0
+      }
+    },
+    "custom_image_with_text_JCReKw": {
+      "type": "custom-image-with-text",
+      "blocks": {
+        "text_NnHneN": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Or find your way to Imprensa, near Principe Real. But quite frankly it's not just a bar—it's an experience tucked away from the crowded streets. </p><p><br/>The decor makes you appreciate vintage typewriters and literary artifacts, where creativity and storytelling come alive. <br/><br/>And the cocktails are to die for (shout out to Tequila-infused Myriad or the Mezcal-infused Georgia, with a Craft cocktail and an exceptional oyster selection that adds to the allure (please grab tabasco and a shot of lemon with it). <br/><br/>Watch the skilled bartenders in action for an added touch of magic.    </p>",
+            "text_style": "body"
+          }
+        }
+      },
+      "block_order": [
+        "text_NnHneN"
+      ],
+      "settings": {
+        "custom_class": "about-us-content responsibility-section-four",
+        "desktop-image": "shopify://shop_images/Imprensa.jpg",
+        "mob-image": "shopify://shop_images/Imprensa.jpg",
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "text_first",
+        "desktop_content_position": "top",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "color_scheme": "background-1",
+        "mobile_content_alignment": "left",
+        "padding_top": 0,
+        "padding_bottom": 16
+      }
+    },
+    "rich_text_4_JEKyJN": {
+      "type": "rich-text-4",
+      "settings": {
+        "custom_class": "about-collection-banner-title page-banner-title",
+        "prefix": "",
+        "section_title": "DINNER?",
+        "section_sub": "",
+        "description": "",
+        "section_url": ""
+      }
+    },
+    "custom_image_with_text_q6aCJe": {
+      "type": "custom-image-with-text",
+      "blocks": {
+        "text_3GaH8F": {
+          "type": "text",
+          "settings": {
+            "text": "<p>If you're all in for Portuguese cuisine, then how about Tasquinha do Lagarto in Campolide? A local essential spot (especially for Sporting Clube Portugal's fans). </p><p><br/>This restaurant features so much memorabilia that feels like the club's private collection museum, but in no way should refrain the most skeptical ones from visiting. Make no mistakes, the food and welcoming atmosphere from the team are what make this spot so special. <br/><br/>You must try the octopus \"à lagareiro\" (roast octopus), or the croup rice (which if we're not mistaken's served exclusively on Friday), or the classic Portuguese delicacy, Alheira de caça, paired with a divine wine selection.</p>",
+            "text_style": "body"
+          }
+        }
+      },
+      "block_order": [
+        "text_3GaH8F"
+      ],
+      "settings": {
+        "custom_class": "about-us-content responsibility-section-four",
+        "desktop-image": "shopify://shop_images/imagens_redimensionadas_blog_lisboa_13.jpg",
+        "mob-image": "shopify://shop_images/imagens_redimensionadas_blog_lisboa_13.jpg",
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "text_first",
+        "desktop_content_position": "top",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "color_scheme": "background-1",
+        "mobile_content_alignment": "left",
+        "padding_top": 0,
+        "padding_bottom": 16
+      }
+    },
+    "custom_image_with_text_DeVnWa": {
+      "type": "custom-image-with-text",
+      "blocks": {
+        "text_wXWbcL": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Feel welcomed at Vino Vero, a quintessential millennial spot, a cozy wine bar where passion for natural wines shines. </p><p><br/>Sip on organic and biodynamic wines from small producers, pairing them with must-try dishes like the cheese board selection (from Portugal, Spain, and Italy), or the delicious octopus with brioche bread and ipo oil (it truly is an experience, trust us), the tuna roll, or the Sicilian pesto with pancetta sourdough. </p><p><br/>We can't wait to be back here.</p>",
+            "text_style": "subtitle"
+          }
+        }
+      },
+      "block_order": [
+        "text_wXWbcL"
+      ],
+      "settings": {
+        "custom_class": "about-us-content responsibility-section-four",
+        "desktop-image": "shopify://shop_images/Vino_Vero.jpg",
+        "mob-image": "shopify://shop_images/Vino_Vero.jpg",
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "image_first",
+        "desktop_content_position": "top",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "color_scheme": "background-1",
+        "mobile_content_alignment": "left",
+        "padding_top": 12,
+        "padding_bottom": 0
+      }
+    },
+    "custom_image_with_text_wPLEeL": {
+      "type": "custom-image-with-text",
+      "blocks": {
+        "text_9bJCPG": {
+          "type": "text",
+          "settings": {
+            "text": "<p>And finally, for more of a deconstruction of traditional flavours, the Estrela da Bica. </p><p><br/>A cozy restaurant is known for its Portuguese cuisine, warm ambiance, and the staff's hospitality and playfulness. It's mostly a tapas restaurant (you'll want to try several dishes at the same time). <br/><br/>Explore their diverse menu with items like the tiborna de Sardinha assada (grilled sardine- don't knock it, 'till you tried it), the pork cheek ravioli, the baked cabbage, and the “potato taglia\" paired with a glass of local wine.</p>",
+            "text_style": "body"
+          }
+        }
+      },
+      "block_order": [
+        "text_9bJCPG"
+      ],
+      "settings": {
+        "custom_class": "about-us-content responsibility-section-four",
+        "desktop-image": "shopify://shop_images/imagens_redimensionadas_blog_lisboa_12.jpg",
+        "mob-image": "shopify://shop_images/imagens_redimensionadas_blog_lisboa_12.jpg",
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "text_first",
+        "desktop_content_position": "top",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "color_scheme": "background-1",
+        "mobile_content_alignment": "left",
+        "padding_top": 0,
+        "padding_bottom": 16
+      }
+    },
+    "rich_text_4_CqymdG": {
+      "type": "rich-text-4",
+      "settings": {
+        "custom_class": "about-collection-banner-title page-banner-title",
+        "prefix": "",
+        "section_title": "Finally, the time to shake it off and dance, dance, dance!!",
+        "section_sub": "",
+        "description": "",
+        "section_url": ""
+      }
+    },
+    "rich_text_4_f3kQQk": {
+      "type": "rich-text-4",
+      "disabled": true,
+      "settings": {
+        "custom_class": "about-collection-banner-title page-banner-title",
+        "prefix": "",
+        "section_title": "",
+        "section_sub": "",
+        "description": "<p>After dinner vibes are at 'Incógnito', one of the city's many dance spots. <br/><br/>But this is a special one. Incógnito is one of those places that makes you feel like you had a great night, any night! The carefully curated gem in Santos. <br/><br/>We recommend it as a pre-night dance place, to get your groove on. But either way, it's a great place all along (a bit too crowded sometimes, but because of it's peculiar space).</p>",
+        "section_url": ""
+      }
+    },
+    "custom_image_with_text_jjYPqN": {
+      "type": "custom-image-with-text",
+      "blocks": {
+        "text_nFyTtG": {
+          "type": "text",
+          "settings": {
+            "text": "<p>After dinner vibes are at 'Incógnito', one of the city's many dance spots. <br/><br/>But this is a special one. Incógnito is one of those places that makes you feel like you had a great night, any night! The carefully curated gem in Santos. <br/><br/>We recommend it as a pre-night dance place, to get your groove on. But either way, it's a great place all along (a bit too crowded sometimes, but because of it's peculiar space).</p>",
+            "text_style": "body"
+          }
+        }
+      },
+      "block_order": [
+        "text_nFyTtG"
+      ],
+      "settings": {
+        "custom_class": "about-us-content responsibility-section-four",
+        "desktop-image": "shopify://shop_images/Incognito.jpg",
+        "mob-image": "shopify://shop_images/Incognito.jpg",
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "text_first",
+        "desktop_content_position": "top",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "color_scheme": "background-1",
+        "mobile_content_alignment": "left",
+        "padding_top": 0,
+        "padding_bottom": 16
+      }
+    },
+    "custom_image_with_text_i6h8qL": {
+      "type": "custom-image-with-text",
+      "blocks": {
+        "text_X98eJb": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Damas at Graça wears many hats—it's not just a restaurant, not merely a cozy bar, and certainly more than your average concert venue. <br/><br/>This gem seamlessly combines all these roles under one roof, creating a dynamic and diverse experience that caters to every mood. You can on Damas' monthly eclectic music schedule ( from punk to afro-beat) to dance the night away. <br/><br/>The friendly vibes are definitely a must here, and the doors are open late, so count on a good time!</p>",
+            "text_style": "subtitle"
+          }
+        }
+      },
+      "block_order": [
+        "text_X98eJb"
+      ],
+      "settings": {
+        "custom_class": "about-us-content responsibility-section-four",
+        "desktop-image": "shopify://shop_images/Damas.jpg",
+        "mob-image": "shopify://shop_images/Damas.jpg",
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "image_first",
+        "desktop_content_position": "top",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "color_scheme": "background-1",
+        "mobile_content_alignment": "left",
+        "padding_top": 12,
+        "padding_bottom": 0
+      }
+    },
+    "custom_image_with_text_NYyTXw": {
+      "type": "custom-image-with-text",
+      "blocks": {
+        "text_fpjmMc": {
+          "type": "text",
+          "settings": {
+            "text": "<p>And finally, you can discover Arroz Estúdios, another cultural hub, open also throughout the day, where creativity takes center stage in a transformative experience. <br/><br/>Roam through this industrial complex turned creative haven, where emerging and established artists find inspiration in buzzing studios.  <br/><br/>As the night passes by, Arroz becomes a nocturnal playground for music lovers. Electronic beats pulse through the night, seamlessly blending techno, house, and experimental sounds. <br/><br/>Arroz Estúdios is not just a physical space; it's the legacy of creative visionaries who saw potential in industrial ruins and brought life, culture, music, and art to an ever-growing Lisbon.<br/><br/>But they're currently facing eviction, and are lacking a permanent place to stay. You can sign the petition aimed to find them a government-supported place (as they're a non-profit association) <a href=\"https://peticaopublica.com/pview.aspx?pi=arroz-estudios        \" target=\"_blank\" title=\"https://peticaopublica.com/pview.aspx?pi=arroz-estudios        \">here</a>.</p>",
+            "text_style": "body"
+          }
+        }
+      },
+      "block_order": [
+        "text_fpjmMc"
+      ],
+      "settings": {
+        "custom_class": "about-us-content responsibility-section-four",
+        "desktop-image": "shopify://shop_images/Incognito.jpg",
+        "mob-image": "shopify://shop_images/Incognito.jpg",
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "text_first",
+        "desktop_content_position": "top",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "color_scheme": "background-1",
+        "mobile_content_alignment": "left",
+        "padding_top": 0,
+        "padding_bottom": 16
+      }
+    },
+    "4c0a3059-b4d6-4cde-b451-54d3ba8f6bc3": {
+      "type": "rich-text-4",
+      "custom_css": [
+        ".store-wrapper-beige {background-color: transparent; padding: 0px;}",
+        "@media (max-width: 600px) {.container-v1 {margin-top: 0px; }}",
+        "@media (max-width: 600px) {.store-wrapper-beige p {font-size: 12px; line-height: 20px !important; padding: 0px 10px; }}"
+      ],
+      "settings": {
+        "custom_class": "store-wrapper-beige",
+        "prefix": "",
+        "section_title": "",
+        "section_sub": "",
+        "description": "<h2>And that's it for the perfect weekend at Lisbon. <br/><br/>Check out these styles for the perfect comfy travelling companies!<br/><br/></h2>",
+        "section_url": "shopify://collections/fw23-for-her"
+      }
+    }
+  },
+  "order": [
+    "article_template",
+    "32188728-51b3-4f19-a420-84f078cb8228",
+    "custom_home_video_yMJjr8",
+    "rich_text_4_RzNH8U",
+    "rich_text_4_gnXbFz",
+    "rich_text_4_Ebt38f",
+    "cdaee2a8-d358-4577-8fe9-9de9843a1e92",
+    "ac86e1fa-1121-43b3-90c7-bf1ca4009b0a",
+    "custom_image_with_text_Bz8eTk",
+    "4fd3a6a8-8ece-4aea-9857-8c69338c72cc",
+    "custom_image_with_text_YUmJTN",
+    "rich_text_4_kCD4Jr",
+    "custom_image_with_text_zdqPkW",
+    "custom_image_with_text_UVb3hC",
+    "custom_image_with_text_JCReKw",
+    "rich_text_4_JEKyJN",
+    "custom_image_with_text_q6aCJe",
+    "custom_image_with_text_DeVnWa",
+    "custom_image_with_text_wPLEeL",
+    "rich_text_4_CqymdG",
+    "rich_text_4_f3kQQk",
+    "custom_image_with_text_jjYPqN",
+    "custom_image_with_text_i6h8qL",
+    "custom_image_with_text_NYyTXw",
+    "4c0a3059-b4d6-4cde-b451-54d3ba8f6bc3"
+  ]
+}

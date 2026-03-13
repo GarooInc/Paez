@@ -1,0 +1,279 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "article_template": {
+      "type": "article-template",
+      "disabled": true,
+      "settings": {
+        "blog_layout": "blog_layo_left",
+        "show_author": true,
+        "show_comment": true,
+        "show_cate": true,
+        "show_tag": true,
+        "show_related_post": true,
+        "related_post_title": "Related post",
+        "related_post_select_blog": "news",
+        "related_post_blogs_limit": 5,
+        "enable_widget_search": true,
+        "widget_search_title": "Search",
+        "shop_by_search_placeholder": "Search...",
+        "enable_widget_cate": true,
+        "widget_cate_title": "Categories",
+        "widget_cate_menu": "main-menu",
+        "enable_widget_related": true,
+        "widget_related_title": "RECENT POSTS",
+        "select_blog": "news",
+        "blogs_limit": 4,
+        "enable_widget_tag": true,
+        "shop_by_tag_title": "Tags",
+        "banner_article_url": "https://www.shopify.com/free-trial?ref=shopifycenter",
+        "enable_social_share": true
+      }
+    },
+    "215fbd2d-d7c5-430d-81b2-b72a3b053fe4": {
+      "type": "rich-text-4",
+      "settings": {
+        "custom_class": "blog-post-wrapper",
+        "prefix": "",
+        "section_title": "A behind-the-scenes",
+        "section_sub": "look at the Paez production process - Part 1",
+        "description": "",
+        "section_url": ""
+      }
+    },
+    "002dc1e6-aab2-429f-bcb7-cff2545fc7b4": {
+      "type": "custom-home-section",
+      "settings": {
+        "bg-img": "shopify://shop_images/Banner_Principal_b-2.png",
+        "mobile-bg-img": "shopify://shop_images/blog-post-1-main.png",
+        "link-1": "",
+        "label-1": "",
+        "link-2": "",
+        "label-2": "",
+        "link-3": "",
+        "label-3": "",
+        "link-4": "",
+        "label-4": ""
+      }
+    },
+    "0bc84366-5786-499f-aa68-e76ccdeab634": {
+      "type": "custom-image-with-text",
+      "blocks": {
+        "template--16695234232565__0bc84366-5786-499f-aa68-e76ccdeab634-1676539204e31e7f26-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>With a rich heritage of almost two decades, Paez has carved a niche for itself in the world of casual footwear. But have you ever wondered how Paez Shoes go from a mere design to a finished product that finds its way to your feet? Now is your chance to take a deep dive into the intricate world of Paez's production process.</p>",
+            "text_style": "body"
+          }
+        }
+      },
+      "block_order": [
+        "template--16695234232565__0bc84366-5786-499f-aa68-e76ccdeab634-1676539204e31e7f26-1"
+      ],
+      "settings": {
+        "custom_class": "blog-post-info",
+        "desktop-image": "shopify://shop_images/bp-1.png",
+        "mob-image": "shopify://shop_images/blog-post-1-1.png",
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "image_first",
+        "desktop_content_position": "middle",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "color_scheme": "background-1",
+        "mobile_content_alignment": "left",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "f78e2552-9dc7-459c-9b1c-05d9d009dabb": {
+      "type": "custom-image-with-text",
+      "blocks": {
+        "template--16695234232565__f78e2552-9dc7-459c-9b1c-05d9d009dabb-1676539204e31e7f26-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>From Mary Janes to Espadrilles, to Sandals, to Mocs, to our Mules, at Paez, we believe in creating stylish, comfortable, and responsibly-made footwear that not only feels good on your feet but also has minimal impact on the environment. Every step of our process is carefully considered to ensure that we’re providing you with the best products.</p>",
+            "text_style": "body"
+          }
+        }
+      },
+      "block_order": [
+        "template--16695234232565__f78e2552-9dc7-459c-9b1c-05d9d009dabb-1676539204e31e7f26-1"
+      ],
+      "settings": {
+        "custom_class": "blog-post-info",
+        "desktop-image": "shopify://shop_images/bp-2.png",
+        "mob-image": "shopify://shop_images/blog-post-1-2.png",
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "text_first",
+        "desktop_content_position": "middle",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "color_scheme": "background-1",
+        "mobile_content_alignment": "left",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "ad910a1c-3462-4198-a45e-4b989f7be8ab": {
+      "type": "custom-image-with-text",
+      "blocks": {
+        "template--16695234232565__ad910a1c-3462-4198-a45e-4b989f7be8ab-1676539204e31e7f26-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "Step 1",
+            "heading_size": "h1"
+          }
+        },
+        "a5a39b4d-4306-4e20-af39-7a12c88ca7ec": {
+          "type": "caption",
+          "settings": {
+            "caption": "Design and Development",
+            "text_style": "caption-with-letter-spacing",
+            "text_size": "medium"
+          }
+        },
+        "template--16695234232565__ad910a1c-3462-4198-a45e-4b989f7be8ab-1676539204e31e7f26-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Everything starts in Lisbon, Portugal. The production process begins in-house, with our creative director, Carolina Jarnac, who carefully crafts each and every design to meet the highest standards of quality and innovation, and brings to life new and trendy shoes.<br/><br/>\"The collection is all about good vibes and has the perfect mixture of maturity and fantasy, because Paez will always be fun and laid-back. We wanted to deliver shoes that are both versatile and stylish. By making sure that each design serves different purposes, we're living the motto \"Walk the Talk\" and ensuring that Paez can be a unique fashion statement. The collection is relaxed yet always cool, whether you're running errands, hitting the town, or simply lounging around.\"</p>",
+            "text_style": "body"
+          }
+        }
+      },
+      "block_order": [
+        "template--16695234232565__ad910a1c-3462-4198-a45e-4b989f7be8ab-1676539204e31e7f26-0",
+        "a5a39b4d-4306-4e20-af39-7a12c88ca7ec",
+        "template--16695234232565__ad910a1c-3462-4198-a45e-4b989f7be8ab-1676539204e31e7f26-1"
+      ],
+      "settings": {
+        "custom_class": "blog-post-info",
+        "desktop-image": "shopify://shop_images/bp-3.png",
+        "mob-image": "shopify://shop_images/blog-post-1-3.png",
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "image_first",
+        "desktop_content_position": "middle",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "color_scheme": "background-1",
+        "mobile_content_alignment": "left",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "f8cf8227-0dd3-4524-9b33-d176b97cd32a": {
+      "type": "custom-image-with-text",
+      "blocks": {
+        "template--16695234232565__f8cf8227-0dd3-4524-9b33-d176b97cd32a-1676539204e31e7f26-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "Step 2",
+            "heading_size": "h1"
+          }
+        },
+        "cce8bc12-ebcb-4b50-8508-6ffa14273a08": {
+          "type": "caption",
+          "settings": {
+            "caption": "Materials and Suppliers",
+            "text_style": "caption-with-letter-spacing",
+            "text_size": "medium"
+          }
+        },
+        "template--16695234232565__f8cf8227-0dd3-4524-9b33-d176b97cd32a-1676539204e31e7f26-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>From there, our designs are sent to our trusted production partners at Lexelart (LXL) in Spain and Vietnam. LXL is specialized in the sustainable development of footwear, mainly focused on using responsible materials, and they carefully select suppliers based on their certification in using recycled materials.</p>",
+            "text_style": "body"
+          }
+        }
+      },
+      "block_order": [
+        "template--16695234232565__f8cf8227-0dd3-4524-9b33-d176b97cd32a-1676539204e31e7f26-0",
+        "cce8bc12-ebcb-4b50-8508-6ffa14273a08",
+        "template--16695234232565__f8cf8227-0dd3-4524-9b33-d176b97cd32a-1676539204e31e7f26-1"
+      ],
+      "settings": {
+        "custom_class": "blog-post-info",
+        "desktop-image": "shopify://shop_images/bp-4.png",
+        "mob-image": "shopify://shop_images/blog-post-1-4.png",
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "text_first",
+        "desktop_content_position": "middle",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "color_scheme": "background-1",
+        "mobile_content_alignment": "left",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "7e5c955c-4924-4f8b-8e23-232bd3d355c6": {
+      "type": "custom-image-with-text",
+      "blocks": {
+        "template--16695234232565__7e5c955c-4924-4f8b-8e23-232bd3d355c6-1676539204e31e7f26-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "Step 3",
+            "heading_size": "h1"
+          }
+        },
+        "414ce89d-7b70-4785-86e0-a8c9f68f3bb0": {
+          "type": "caption",
+          "settings": {
+            "caption": "Manufacturing the Samples",
+            "text_style": "caption-with-letter-spacing",
+            "text_size": "medium"
+          }
+        },
+        "template--16695234232565__7e5c955c-4924-4f8b-8e23-232bd3d355c6-1676539204e31e7f26-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Once the materials have been sourced, LXL brings the designs to life by developing the lasts, and patterns and creating vendor samples for review and approval by Paez.<br/><br/>Interested in more? <a href=\"https://paez.com/blogs/news/a-behind-the-scenes-look-at-the-paez-production-process-part-2\" title=\"https://paez.com/blogs/news/a-behind-the-scenes-look-at-the-paez-production-process-part-2\">Click this link</a> to find out more about Part 2 in our behind the scenes of the Paez production process!</p>",
+            "text_style": "body"
+          }
+        }
+      },
+      "block_order": [
+        "template--16695234232565__7e5c955c-4924-4f8b-8e23-232bd3d355c6-1676539204e31e7f26-0",
+        "414ce89d-7b70-4785-86e0-a8c9f68f3bb0",
+        "template--16695234232565__7e5c955c-4924-4f8b-8e23-232bd3d355c6-1676539204e31e7f26-1"
+      ],
+      "settings": {
+        "custom_class": "blog-post-info",
+        "desktop-image": "shopify://shop_images/bp-5.png",
+        "mob-image": "shopify://shop_images/blog-post-1-5.png",
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "image_first",
+        "desktop_content_position": "middle",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "color_scheme": "background-1",
+        "mobile_content_alignment": "left",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    }
+  },
+  "order": [
+    "article_template",
+    "215fbd2d-d7c5-430d-81b2-b72a3b053fe4",
+    "002dc1e6-aab2-429f-bcb7-cff2545fc7b4",
+    "0bc84366-5786-499f-aa68-e76ccdeab634",
+    "f78e2552-9dc7-459c-9b1c-05d9d009dabb",
+    "ad910a1c-3462-4198-a45e-4b989f7be8ab",
+    "f8cf8227-0dd3-4524-9b33-d176b97cd32a",
+    "7e5c955c-4924-4f8b-8e23-232bd3d355c6"
+  ]
+}

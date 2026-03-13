@@ -1,0 +1,186 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {}
+    },
+    "68458900-fab1-4f8d-b3e8-77289dabfd48": {
+      "type": "rich-text-4",
+      "settings": {
+        "custom_class": "store-banner-title page-banner-title",
+        "prefix": "Our",
+        "section_title": "Stores",
+        "section_sub": "",
+        "description": "",
+        "section_url": ""
+      }
+    },
+    "48a7047a-a0ae-476d-bb6a-075c6d6560a9": {
+      "type": "section-banner-v12",
+      "settings": {
+        "custom_class": "store-banner",
+        "img_banner": "shopify://shop_images/Banner_Principal_4.png",
+        "mob_img_banner": "shopify://shop_images/Banner_Principaldasdasdsa.png",
+        "title": "",
+        "url_banner": "shopify://collections/all",
+        "color_title": "#000000",
+        "color_hover_title": "#ffffff"
+      }
+    },
+    "7fee9355-027e-4966-93b3-41cd8b091232": {
+      "type": "rich-text-4",
+      "disabled": true,
+      "settings": {
+        "custom_class": "store-wrapper",
+        "prefix": "",
+        "section_title": "LISBON",
+        "section_sub": "",
+        "description": "<p>Campo de Ourique</p><p>Rua da Infantaria 16, 77-A 1350-163 Lisbon</p><p><strong>Tue to Sat and holidays from 10am to 7pm</strong></p><p>The stores closes everyday from 2pm to 3pm<em><br/></em><strong>Closes on Sundays</strong></p><p>(+351) 21 593 3537</p><p><a href=\"mailto:campodo@paez.com\" title=\"mailto:campodo@paez.com\">campodo@paez.com</a></p><p></p><p><br/><a href=\"https://www.google.com/maps/dir//Paez+Lisboa,+R.+Infantaria+16+77,+1350-312+Lisboa/@38.7182594,-9.1708507,17z/data=!4m9!4m8!1m0!1m5!1m1!1s0xd1933cebc330d81:0x1c559688b33f7a83!2m2!1d-9.1666235!2d38.7182553!3e0\" target=\"_blank\" title=\"https://www.google.com/maps/dir//Paez+Lisboa,+R.+Infantaria+16+77,+1350-312+Lisboa/@38.7182594,-9.1708507,17z/data=!4m9!4m8!1m0!1m5!1m1!1s0xd1933cebc330d81:0x1c559688b33f7a83!2m2!1d-9.1666235!2d38.7182553!3e0\"><span style=\"text-decoration:underline\"><strong>How to get there</strong></span></a></p>",
+        "section_url": ""
+      }
+    },
+    "a2915c68-3dd4-40b9-bdc5-7b6d3f7ddffb": {
+      "type": "rich-text-4",
+      "disabled": true,
+      "custom_css": [],
+      "settings": {
+        "custom_class": "store-wrapper",
+        "prefix": "",
+        "section_title": "PORTO",
+        "section_sub": "",
+        "description": "<p>Passeio dos Clérigos</p><p>Rua das Carmelitas 151, Loja J, 4050-161 Porto</p><p><strong>Mon to Sat from 10am to 8pm<br/>Sun and Holidays from 11am to 8pm</strong></p><p>+351 22 201 0819</p><p><a href=\"mailto:porto@paez.com\" title=\"mailto:porto@paez.com\">porto@paez.com</a></p><p><br/><a href=\"https://www.google.com/maps/place/PAEZ+Porto/@41.146196,-8.6169664,17z/data=!3m1!4b1!4m6!3m5!1s0xd2464e261afadb3:0x896c5eea2fb6dd3e!8m2!3d41.146196!4d-8.6147777!16s%2Fg%2F11dx90f75z\" target=\"_blank\" title=\"https://www.google.com/maps/place/PAEZ+Porto/@41.146196,-8.6169664,17z/data=!3m1!4b1!4m6!3m5!1s0xd2464e261afadb3:0x896c5eea2fb6dd3e!8m2!3d41.146196!4d-8.6147777!16s%2Fg%2F11dx90f75z\"><span style=\"text-decoration:underline\"><strong>How to get there</strong></span></a></p>",
+        "section_url": ""
+      }
+    },
+    "5eb2bdfd-0929-4e41-bb37-4617d9033766": {
+      "type": "rich-text-4",
+      "disabled": true,
+      "settings": {
+        "custom_class": "store-wrapper",
+        "prefix": "",
+        "section_title": "EL CORTE INGLÉS LISBOA",
+        "section_sub": "",
+        "description": "<p>Av. António Augusto de Aguiar 31, 1069-413 Lisboa, Portugal, Floor 2 (Temporary)</p><p>Closes September 24th</p><p>We’ll only process refunds directly with El Corte Inglés. No exchanges are possible.</p><p></p><p></p><p><a href=\"https://maps.app.goo.gl/sZb2fp2cbh8U3iM6A\" target=\"_blank\" title=\"https://maps.app.goo.gl/sZb2fp2cbh8U3iM6A\"><br/><span style=\"text-decoration:underline\"><strong>How to get there</strong></span></a></p>",
+        "section_url": ""
+      }
+    },
+    "667820ac-3f55-4f5c-93c3-a6cc10d04757": {
+      "type": "rich-text-4",
+      "disabled": true,
+      "settings": {
+        "custom_class": "store-wrapper store-wrapper-section-two",
+        "prefix": "",
+        "section_title": "EL CORTE INGLÉS GAIA",
+        "section_sub": "",
+        "description": "<p>Av. da República 1435, 4430-999 Vila Nova de Gaia, Portugal, Floor 0</p><p>Closes September 29th</p><p>We’ll only process refunds directly with El Corte Inglés. No exchanges are possible.</p><p></p><p></p><p><a href=\"https://maps.app.goo.gl/svK39JfEGu6t3fdY8\" target=\"_blank\" title=\"https://maps.app.goo.gl/svK39JfEGu6t3fdY8\"><br/><span style=\"text-decoration:underline\"><strong>How to get there</strong></span></a></p>",
+        "section_url": ""
+      }
+    },
+    "maps_EB8VeN": {
+      "type": "maps",
+      "blocks": {
+        "location_QHj8pd": {
+          "type": "location",
+          "settings": {
+            "name": "EL CORTE INGLÉS GAIA",
+            "description": "<p>Av. da República 1435, Floor 0, 4430-204 Vila Nova de Gaia</p><p>Open Mon to Thu from 10am to 10pm<br/><br/>Fridays and Saturdays from 10pm-11pm<br/><br/>Sundays from 10am-8pm </p><p></p><p></p><p></p><p><a href=\"https://maps.app.goo.gl/svK39JfEGu6t3fdY8\" target=\"_blank\" title=\"https://maps.app.goo.gl/svK39JfEGu6t3fdY8\"><span style=\"text-decoration:underline\"><strong>How to get there</strong></span></a></p>",
+            "latitude": 41.1,
+            "longitude": -8.6
+          }
+        },
+        "location_fWKgBh": {
+          "type": "location",
+          "settings": {
+            "name": "Alvalade",
+            "description": "<p>Rua Marquesa de Alorna, 29 1700-300 Lisbon</p><p>Open Monday to Saturday from 10am to 7pm<br/></p><p>On Sundays from 10am to 3pm<br/></p><p>(+351) 21 160 2140</p><p></p><p></p><p><br/><a href=\"https://maps.app.goo.gl/BWnsMd3smodJcFC19\" target=\"_blank\" title=\"https://maps.app.goo.gl/BWnsMd3smodJcFC19\"><span style=\"text-decoration:underline\"><strong>How to get there</strong></span></a></p>",
+            "latitude": 38.8,
+            "longitude": -9.1
+          }
+        },
+        "location_mfW3gy": {
+          "type": "location",
+          "disabled": true,
+          "settings": {
+            "name": "STRADA (OUTLET)",
+            "description": "<p>Casal do Troca, Estr. da Paiã Loja 1047, Piso 1, 2675-626 Lisboa</p><p>Open everyday from 10am to 11pm</p><p>(+351) ‎911 514 753</p><p><a href=\"mailto:strada@paez.com\" target=\"_blank\">strada@paez.com</a></p><p><br/><a href=\"https://maps.app.goo.gl/tPasvi2oxJADjJMR9\" target=\"_blank\" title=\"https://maps.app.goo.gl/tPasvi2oxJADjJMR9\"><span style=\"text-decoration:underline\"><strong>How to get there</strong></span></a></p>",
+            "latitude": 38.8,
+            "longitude": -9.2
+          }
+        },
+        "location_K7fiJf": {
+          "type": "location",
+          "settings": {
+            "name": "CAMPO DE OURIQUE",
+            "description": "<p>Rua da Infantaria 16, 77-A 1350-163 Lisbon</p><p><strong>Tue to Sat and holidays from 10am to 7pm</strong></p><p>The stores closes everyday from 2pm to 3pm<em><br/></em><strong>Closes on Sundays</strong></p><p>(+351) 21 593 3537</p><p><a href=\"mailto:campodo@paez.com\" title=\"mailto:campodo@paez.com\">campodo@paez.com</a></p><p><strong>Please take in consideration that his store is franchised. So all exchanges can be only done at Porto and Campo de Ourique.</strong></p><p><br/><a href=\"https://www.google.com/maps/dir//Paez+Lisboa,+R.+Infantaria+16+77,+1350-312+Lisboa/@38.7182594,-9.1708507,17z/data=!4m9!4m8!1m0!1m5!1m1!1s0xd1933cebc330d81:0x1c559688b33f7a83!2m2!1d-9.1666235!2d38.7182553!3e0\" target=\"_blank\" title=\"https://www.google.com/maps/dir//Paez+Lisboa,+R.+Infantaria+16+77,+1350-312+Lisboa/@38.7182594,-9.1708507,17z/data=!4m9!4m8!1m0!1m5!1m1!1s0xd1933cebc330d81:0x1c559688b33f7a83!2m2!1d-9.1666235!2d38.7182553!3e0\"><span style=\"text-decoration:underline\"><strong>How to get there</strong></span></a></p>",
+            "latitude": 38.7,
+            "longitude": -9.2
+          }
+        },
+        "location_qEzBDX": {
+          "type": "location",
+          "disabled": true,
+          "settings": {
+            "name": "EL CORTE INGLÉS LISBOA",
+            "description": "<p>Closed on September 28th! Comes back in March 2026. </p><p></p><p><br/><strong>All purchases made in El Corte Inglés need to be processed directly in-store.</strong></p>",
+            "latitude": 38.7,
+            "longitude": -9.2
+          }
+        },
+        "location_gqGgmf": {
+          "type": "location",
+          "disabled": true,
+          "settings": {
+            "name": "COMPORTA (POP-UP STORE)",
+            "description": "<p>Casa da Cultura | R. Do Secador 16, 7580-648 Comporta</p><p>Closed on September 14th! Come back in Summer 2026.</p><p></p><p><br/>All purchases made at Casa da Cultura need to be processed via our email: <a href=\"mailto:onlineshop@paez.com\" target=\"_blank\">onlineshop@paez.com</a></p>",
+            "latitude": 38.4,
+            "longitude": -8.8
+          }
+        }
+      },
+      "block_order": [
+        "location_QHj8pd",
+        "location_fWKgBh",
+        "location_mfW3gy",
+        "location_K7fiJf",
+        "location_qEzBDX",
+        "location_gqGgmf"
+      ],
+      "settings": {}
+    },
+    "b224c226-fd4d-4a39-8583-f753edd4e354": {
+      "type": "rich-text-4",
+      "custom_css": [
+        ".store-wrapper {padding-bottom: 20px; text-align: center;}"
+      ],
+      "settings": {
+        "custom_class": "store-wrapper",
+        "prefix": "",
+        "section_title": "",
+        "section_sub": "",
+        "description": "<p>You can’t exchange items purchased at paez.com, in our points of sale. Exchange conditions may vary between stores. Before visiting them, give the location a call.</p>",
+        "section_url": ""
+      }
+    }
+  },
+  "order": [
+    "main",
+    "68458900-fab1-4f8d-b3e8-77289dabfd48",
+    "48a7047a-a0ae-476d-bb6a-075c6d6560a9",
+    "7fee9355-027e-4966-93b3-41cd8b091232",
+    "a2915c68-3dd4-40b9-bdc5-7b6d3f7ddffb",
+    "5eb2bdfd-0929-4e41-bb37-4617d9033766",
+    "667820ac-3f55-4f5c-93c3-a6cc10d04757",
+    "maps_EB8VeN",
+    "b224c226-fd4d-4a39-8583-f753edd4e354"
+  ]
+}

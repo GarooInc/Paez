@@ -1,0 +1,58 @@
+<button id="download-pdf" class="btn-download">{{ section.settings.button_text }}</button>
+
+
+{% javascript %}
+      document.getElementById('download-pdf').addEventListener('click', function() {
+    console.log("downnnn");
+    
+    // Shopify tracking example
+    window.shopifyAnalytics.track('event', {
+      category: 'Download',
+      action: 'pdf_download',
+      label: 'PDF Products'
+    });
+
+    // Redirigir al archivo PDF
+    window.location.href = "https://cdn.shopify.com/s/files/1/2437/2785/files/Laboratorio_6.pdf?v=1728661203";
+  });
+{% endjavascript %}
+
+<style>
+  #pdf-download-section {
+    text-align: center;
+    margin: 20px auto;
+    padding: 40px;
+    background-color: #f9f9f9;
+  }
+
+  .btn-download {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+
+  .btn-download:hover {
+    background-color: #0056b3;
+  }
+</style>
+
+{% schema %}
+{
+  "name": "Pdf button",
+  "settings": [
+    {
+      "type": "text",
+      "id": "button_text",
+      "label": "Button text"
+    }
+  ],
+  "presets": [
+    {
+      "name": "PDF BUTTON"
+    }
+  ]
+}
+{% endschema %}

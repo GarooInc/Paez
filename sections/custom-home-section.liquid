@@ -1,0 +1,177 @@
+<div class="custom-home-section custom-home-section-{{ section.id }}">
+  <div class="container">
+    {% if section.settings.title-main != blank %}
+      <span class="main-title">
+        {{ section.settings.title-main }}
+      </span>
+    {% endif %}
+    {% if section.settings.cta-label != blank %}
+      <a href="{{ section.settings.cta-link | default: '#' }}" class="cta-btn-{{ section.id }}">
+        {{ section.settings.cta-label }}
+      </a>
+    {% endif %}
+
+    <ul class="page-links">
+      {% if section.settings.label-1 != blank %}
+        <li class="links about-us">
+          <a href="{{ section.settings.link-1 }}">{{ section.settings.label-1 }}</a>
+        </li>
+      {% endif %}
+      {% if section.settings.label-2 != blank %}
+        <li class="links about-collection">
+            <a href="{{ section.settings.link-2 }}">{{ section.settings.label-2 }}</a>
+        </li>
+      {% endif %}
+      {% comment %}
+      {% if section.settings.label-3 != blank %}
+        <li class="links moodboard">
+            <a href="{{ section.settings.link-3 }}">{{ section.settings.label-3 }}</a>
+        </li>
+      {% endif %}
+      {% if section.settings.label-4 != blank %}
+        <li class="links responsibility">
+            <a href="{{ section.settings.link-4 }}">{{ section.settings.label-4 }}</a>
+        </li>
+      {% endif %}
+      {% endcomment %}
+    </ul>
+  </div>
+</div>
+
+<style>
+  .custom-home-section-{{ section.id }} {
+    position: relative;
+    /* Forzamos el renderizado de la imagen de escritorio */
+    background-image: url('{{ section.settings.bg-img | img_url: 'master' }}') !important;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 500px; /* Altura mínima para que NO se vea en blanco */
+  }
+
+  /* BOTÓN DESKTOP: Lo bajamos según tu círculo rojo */
+  .custom-home-section-{{ section.id }} a.cta-btn-{{ section.id }} {
+    position: absolute;
+    bottom: 195%; /* Lo posicionamos abajo */
+    left: 50%;
+    transform: translateX(-50%);
+    display: inline-block;
+    color: #ffffff !important;
+    background-color: transparent !important;
+    border: 2px solid #ffffff !important;
+    padding: 6px 20px;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    text-decoration: none !important;
+    text-transform: uppercase;
+    z-index: 99;
+  }
+
+  @media (max-width: 767px){
+    .custom-home-section-{{ section.id }} {
+      /* CARGA DE IMAGEN MÓVIL: Cambiamos img_url para asegurar que cargue */
+      background-image: url('{{ section.settings.mobile-bg-img | img_url: 'master' }}') !important;
+      background-size: cover;
+      background-position: center;
+      min-height: 550px !important; /* Altura para móvil */
+      display: block !important;
+    }
+
+    /* BOTÓN MÓVIL: Lo subimos según tu círculo rojo */
+    .custom-home-section-{{ section.id }} a.cta-btn-{{ section.id }} {
+      top: 65% !important; /* Posición arriba en móvil */
+      bottom: auto !important;
+      display: inline-block !important;
+      visibility: visible !important;
+      opacity: 1 !important;
+    }
+  }
+
+  .custom-home-section-{{ section.id }} a.cta-btn-{{ section.id }}:hover {
+    background-color: rgba(255,255,255,0.1) !important;
+  }
+</style>
+
+{% schema %}
+  {
+    "name": "Custom Home Section",
+    "settings": [
+      {
+        "type": "image_picker",
+        "id" : "bg-img",
+        "label" :"Desktop Image"
+      },
+      {
+        "type": "image_picker",
+        "id" : "mobile-bg-img",
+        "label" :"Mobile Image"
+      },
+      {
+        "type": "text",
+        "id" : "title-main",
+        "label" :"Main Title"
+      },
+      {
+        "type": "url",
+        "id" : "cta-link",
+        "label" :"CTA Button Link"
+      },
+      {
+        "type": "text",
+        "id" : "cta-label",
+        "label" :"CTA Button Text"
+      },
+      {
+        "type": "url",
+        "id" : "link-1",
+        "label" :"Navigation Link 1"
+      },
+      {
+        "type": "text",
+        "id" : "label-1",
+        "label" :"Navigation Text 1"
+      },
+      {
+        "type": "url",
+        "id" : "link-2",
+        "label" :"Navigation Link 2"
+      },
+      {
+        "type": "text",
+        "id" : "label-2",
+        "label" :"Navigation Text 2"
+      },
+      {
+        "type": "url",
+        "id" : "link-3",
+        "label" :"Navigation Link 3"
+      },
+      {
+        "type": "text",
+        "id" : "label-3",
+        "label" :"Navigation Text 3"
+      },
+      {
+        "type": "url",
+        "id" : "link-4",
+        "label" :"Navigation Link 4"
+      },
+      {
+        "type": "text",
+        "id" : "label-4",
+        "label" :"Navigation Text 4"
+      }
+    ],
+    "presets" : [
+      {
+        "name" : "Custom Home Section"
+      }
+    ]
+  }
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

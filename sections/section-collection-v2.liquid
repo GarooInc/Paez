@@ -1,0 +1,225 @@
+<div data-section-id="{{ section.id }}" data-section-type="section-collection-v2" style="{% if section.settings.margin_top != blank %}margin-top: {{section.settings.margin_top}}px;{%endif%} {% if section.settings.margin_bottom != blank %}margin-bottom: {{section.settings.margin_bottom}}px;{% endif %} {% if section.settings.sections_layout == "dark" %}background: {{section.settings.sections_bg_color}};{% endif %}">
+  <div class="{% if section.settings.ena_margin_top %} mt-all {% endif %}">
+    <div class="section-collection-v2">
+      <div class="container container-v2">
+        <div class="text-center">
+          {% if section.settings.title_heading != blank %}
+          <h3 class="title_heading text-center" style="color : {{section.settings.color_title}}">{{section.settings.title_heading}}</h3>
+          {% endif %}
+        </div>
+        <div class="row-grid">
+          {% if section.blocks.size > 0 %}
+          {% for block in section.blocks %}
+          {% if block.type == 'colection' %}
+          <div class="col-item">
+            <div class="item">
+              <div class="box-img">
+                <a href="{{block.settings.brand_url}}" title>
+                  {% if block.settings.brand_img != blank %}
+                  <img data-src="{{block.settings.brand_img | img_url:'master'}}" class="lazyload img-fluid w-100" alt="_img_collection">
+                  {% else %}
+                  <img data-src="//via.placeholder.com/660x660" class="lazyload img-fluid w-100" alt="_img_collection">
+                  {% endif %}
+                </a>
+              </div>
+              <div class="category-info">
+                <div class="box-info">
+                  {% if block.settings.title_collection != blank %}
+                  <a href="{{block.settings.brand_url}}" class="title-collection title-info-{{ block.id }}">{{block.settings.title_collection}}</a>
+                  {% endif %}
+                </div>
+                <div class="btn-collection">
+                  {% if block.settings.btn_collection != blank %}
+                  <a href="{{block.settings.brand_url}}" class="btn_block-{{ block.id }}">{{block.settings.btn_collection}}</a>
+                  {% endif %}
+                </div>
+              </div>
+            </div>
+          </div>
+          {% endif %}
+          {% endfor %}
+          {% endif %} 
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<style>
+  {% for block in section.blocks %}
+  {% if block.type == 'colection' %}
+  .section-collection-v2 .row-grid .col-item .item .category-info .box-info .title-info-{{ block.id }} {
+    color: {{block.settings.color_title}};
+  }
+  .section-collection-v2 .row-grid .col-item .item .category-info .box-info .title-info-{{ block.id }}:hover {
+    color: {{block.settings.color_title_hover}};
+    text-decoration: underline!important;
+  }
+  .section-collection-v2 .row-grid .col-item .item .category-info .btn-collection .btn_block-{{ block.id }} {
+    color: {{block.settings.color_btn}};
+    background: {{block.settings.bg_btn}};
+  }
+  .section-collection-v2 .row-grid .col-item .item .category-info .btn-collection .btn_block-{{ block.id }}:hover {
+    color: {{block.settings.color_btn_hover}};
+    background: {{block.settings.bg_btn_hover}};
+  }
+  {% endif %}
+  {% endfor %}
+</style>
+
+{% schema %}
+{
+  "name": "COLLECTION V2",
+  "class": "index-section",
+  "settings": [
+	{
+      "type": "checkbox",
+      "id": "ena_margin_top",
+      "label": "Add margin top",
+      "default": false
+	},
+    {
+      "type": "header",
+      "content": "Section Space"
+    },
+    {
+      "type": "text",
+      "id": "margin_top",
+      "label": "Margin Top",
+      "info": "Defined in pixels. Do not add the 'px' unit."
+    },
+    {
+      "type": "text",
+      "id": "margin_bottom",
+      "label": "Margin Bottom",
+      "info": "Defined in pixels. Do not add the 'px' unit."
+    },
+    {
+      "type": "header",
+      "content": "Settings Collection v2"
+    },
+    {
+      "type": "text",
+      "id": "title_heading",
+      "label": "Title heading",
+      "default": "Get 20% Off"
+    },
+    {
+      "type": "color",
+      "id": "color_title",
+      "label": "Color Title",
+      "default": "#000"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "colection",
+      "name": "Item Collection v2",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "brand_img",
+          "info": "660 x 660px recommended",
+          "label": "Image Collection"
+        },
+        {
+          "type": "text",
+          "id": "title_collection",
+          "label": "Label Collection",
+          "default": "Item Collection"
+        },
+        {
+          "type": "color",
+          "id": "color_title",
+          "label": "Color Title",
+          "default": "#000"
+        },
+        {
+          "type": "color",
+          "id": "color_title_hover",
+          "label": "Color Title Hover",
+          "default": "#7cb538"
+        },
+        {
+          "type": "text",
+          "id": "btn_collection",
+          "label": "Button",
+          "default": "View All Product ›"
+        },
+        {
+          "type": "color",
+          "id": "color_btn",
+          "label": "Color Button",
+          "default": "#fff"
+        },
+        {
+          "type": "color",
+          "id": "bg_btn",
+          "label": "Background button",
+          "default": "#000"
+        },
+        {
+          "type": "color",
+          "id": "color_btn_hover",
+          "label": "ColorButton Hover",
+          "default": "#fff"
+        },
+        {
+          "type": "color",
+          "id": "bg_btn_hover",
+          "label": "Background Button Hover",
+          "default": "#666"
+        },
+        {
+          "type": "url",
+          "id": "brand_url",
+          "label": "URL collection",
+          "default": "/collections/all"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "COLLECTION V2",
+      "category": "HOME",
+      "blocks": [
+        {
+          "type": "colection",
+          "settings": {
+            "title_collection": "Uma Range",
+			"btn_collection": "View All Product ›"
+          }
+        },
+        {
+          "type": "colection",
+          "settings": {
+            "title_collection": "Collection Item",
+			"btn_collection": "View All Product ›"
+          }
+        },
+        {
+          "type": "colection",
+          "settings": {
+            "title_collection": "Collection Item",
+			"btn_collection": "View All Product ›"
+          }
+        },
+        {
+          "type": "colection",
+          "settings": {
+            "title_collection": "Collection Item",
+			"btn_collection": "View All Product ›"
+          }
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}
+
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

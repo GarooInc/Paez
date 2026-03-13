@@ -1,0 +1,209 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "article_template": {
+      "type": "article-template",
+      "disabled": true,
+      "settings": {
+        "blog_layout": "blog_layo_left",
+        "show_author": true,
+        "show_comment": true,
+        "show_cate": true,
+        "show_tag": true,
+        "show_related_post": true,
+        "related_post_title": "Related post",
+        "related_post_select_blog": "news",
+        "related_post_blogs_limit": 5,
+        "enable_widget_search": true,
+        "widget_search_title": "Search",
+        "shop_by_search_placeholder": "Search...",
+        "enable_widget_cate": true,
+        "widget_cate_title": "Categories",
+        "widget_cate_menu": "main-menu",
+        "enable_widget_related": true,
+        "widget_related_title": "RECENT POSTS",
+        "select_blog": "news",
+        "blogs_limit": 4,
+        "enable_widget_tag": true,
+        "shop_by_tag_title": "Tags",
+        "banner_article_url": "https://www.shopify.com/free-trial?ref=shopifycenter",
+        "enable_social_share": true
+      }
+    },
+    "rich_text_4_NYmhpA": {
+      "type": "rich-text-4",
+      "settings": {
+        "custom_class": "about-collection-banner-title page-banner-title",
+        "prefix": "",
+        "section_title": "Otherwise x Paez",
+        "section_sub": "",
+        "description": "",
+        "section_url": ""
+      }
+    },
+    "section_banner_v12_eBxzjb": {
+      "type": "section-banner-v12",
+      "settings": {
+        "custom_class": "about-banner",
+        "img_banner": "shopify://shop_images/1-Pagina-OW-Desktop-Banner_principal-_1920x918px.jpg",
+        "mob_img_banner": "shopify://shop_images/1-Pagina-OW-Mobile-Banner_principal-_749x937px.jpg",
+        "title": "",
+        "url_banner": "",
+        "color_title": "#000000",
+        "color_hover_title": "#ffffff"
+      }
+    },
+    "rich_text_4_rXbcyU": {
+      "type": "rich-text-4",
+      "custom_css": [
+        ".store-wrapper-beige {background-color: transparent;}",
+        "@media (max-width: 600px) {.container-v1 {margin-top: 0px; }}",
+        "@media (max-width: 600px) {.store-wrapper-beige p {font-size: 12px; line-height: 20px !important; padding: 10px 20px; }}"
+      ],
+      "settings": {
+        "custom_class": "store-wrapper-beige",
+        "prefix": "",
+        "section_title": "",
+        "section_sub": "",
+        "description": "<p>Two Portuguese brands that have been walking together for a long time have now joined forces and celebrate what makes them unique. We at Paez and Otherwise share a passion for life, colours, and patterns. As a result, we've created something special for those who resonate with our values, appreciate authenticity in what they wear, and find joy in the simplicity of true friendship.</p>",
+        "section_url": ""
+      }
+    },
+    "section_product_v2_p6nKLR": {
+      "type": "section-product-v2",
+      "blocks": {
+        "tab_zWFK4E": {
+          "type": "tab",
+          "disabled": true,
+          "settings": {
+            "tab_title": "SHIRTS",
+            "tab_collection": "otherwise-x-paez-shirts",
+            "tab_limit": 8
+          }
+        },
+        "tab_w4ie4b": {
+          "type": "tab",
+          "settings": {
+            "tab_title": "SHOES",
+            "tab_collection": "otherwise",
+            "tab_limit": 8
+          }
+        }
+      },
+      "block_order": [
+        "tab_zWFK4E",
+        "tab_w4ie4b"
+      ],
+      "custom_css": [
+        ".slick-slider {display: flex; justify-content: center; margin: 0px;}",
+        ".slick-list {padding-right: 0px;}",
+        "@media (min-width: 960px) {.slick-track {width: 1000px !important; display: flex; justify-content: center; }}",
+        ".nav-tabs {padding-top: 0px !important;}"
+      ],
+      "settings": {
+        "custom_class": "",
+        "margin_top": "",
+        "margin_bottom": "",
+        "title_heading": "",
+        "color_title": "#222222",
+        "enable_slider": false
+      }
+    },
+    "custom_image_with_text_PEXVeW": {
+      "type": "custom-image-with-text",
+      "blocks": {
+        "text_Hx3fEe": {
+          "type": "text",
+          "settings": {
+            "text": "<p>We're not making any big claims, and we don't have flashy marketing. We didn't collaborate for numbers, clicks, trends or popularity, but for the joy of working with people we admire and love. Now we're celebrating the results of something as real as the connection between friends, resulting in unique shirts and original shoes that reflect our essence.</p>",
+            "text_style": "body"
+          }
+        }
+      },
+      "block_order": [
+        "text_Hx3fEe"
+      ],
+      "custom_css": [
+        "@media (max-width: 425px) {.grid {display: flex; flex-direction: column; }}",
+        ".image-with-text .grid__item {position: relative; align-self: center;}"
+      ],
+      "settings": {
+        "custom_class": "about-us-content responsibility-section-four",
+        "desktop-image": "shopify://shop_images/5-Pagina-OW-Mobile-Banner_2-_960x960px.jpg",
+        "mob-image": "shopify://shop_images/5-Pagina-OW-Mobile-Banner_2-_960x960px.jpg",
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "image_first",
+        "desktop_content_position": "top",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "color_scheme": "background-1",
+        "mobile_content_alignment": "center",
+        "padding_top": 36,
+        "padding_bottom": 0
+      }
+    },
+    "custom_image_with_text_4NembP": {
+      "type": "custom-image-with-text",
+      "blocks": {
+        "text_ixTCDM": {
+          "type": "text",
+          "settings": {
+            "text": "<p>We're super excited and proud to have teamed up and introduce you to the Milles, Niek and the Theos.</p>",
+            "text_style": "body"
+          }
+        }
+      },
+      "block_order": [
+        "text_ixTCDM"
+      ],
+      "custom_css": [],
+      "settings": {
+        "custom_class": "about-us-content responsibility-section-four",
+        "desktop-image": "shopify://shop_images/Mobile_blog_-_960x960_191171e1-c452-474e-a712-d5c06e043799.png",
+        "mob-image": "shopify://shop_images/Mobile_blog_-_960x960_191171e1-c452-474e-a712-d5c06e043799.png",
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "text_first",
+        "desktop_content_position": "middle",
+        "desktop_content_alignment": "right",
+        "content_layout": "no-overlap",
+        "color_scheme": "background-1",
+        "mobile_content_alignment": "center",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "tittle_desc_img_dUnRPX": {
+      "type": "tittle-desc-img",
+      "custom_css": [
+        ".titledescimg {padding: 60px;}",
+        "img {width: 100px; height: 120px;}",
+        "@media screen and (max-width: 749px) {img {width: 80px; height: 100px; } .titledescimg {padding: 40px; }}"
+      ],
+      "settings": {
+        "titulo": "",
+        "desc": "",
+        "imagen": "shopify://shop_images/7-Logo_PAEZxOW-_160x200px.png"
+      }
+    }
+  },
+  "order": [
+    "article_template",
+    "rich_text_4_NYmhpA",
+    "section_banner_v12_eBxzjb",
+    "rich_text_4_rXbcyU",
+    "section_product_v2_p6nKLR",
+    "custom_image_with_text_PEXVeW",
+    "custom_image_with_text_4NembP",
+    "tittle_desc_img_dUnRPX"
+  ]
+}

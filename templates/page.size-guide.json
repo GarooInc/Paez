@@ -1,0 +1,140 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {}
+    },
+    "42aa1b88-aec6-4909-af47-f078f16ea3ef": {
+      "type": "rich-text-4",
+      "settings": {
+        "custom_class": "size-guide-banner-title page-banner-title",
+        "prefix": "",
+        "section_title": "size guide",
+        "section_sub": "",
+        "description": "",
+        "section_url": ""
+      }
+    },
+    "197b1ac0-9793-4ba3-8f37-b9b3693db626": {
+      "type": "rich-text-4",
+      "custom_css": [
+        ".rich-text__description {padding-right: 20px; padding-left: 20px;}"
+      ],
+      "settings": {
+        "custom_class": "size-guide--rich-text4 second",
+        "prefix": "",
+        "section_title": "",
+        "section_sub": "",
+        "description": "<p>Choosing the correct size is crucial for optimal comfort while wearing our classic espadrilles, summer sandals, mary janes, mocs, or mules. Take measurements to find the perfect fit.</p>",
+        "section_url": ""
+      }
+    },
+    "dc74aaa5-0dcb-45f3-bec7-dc5bdffc8e8d": {
+      "type": "custom-content",
+      "disabled": true,
+      "settings": {
+        "css_class": "custom-content--size-guide",
+        "custom_content": "<div class=\"tab-sizeguide\">\n    <div class=\"container\">\n        <ul class=\"nav nav-tabs\" role=\"tablist\">\n            <li class=\"nav-item\"><a class=\"nav-link active\" href=\"#tab1\" data-toggle=\"tab\" role=\"tab\">For her</a></li>\n            <li class=\"nav-item\"><a class=\"nav-link\" href=\"#tab2\" data-toggle=\"tab\" role=\"tab\">For him</a></li>\n            <li class=\"nav-item\"><a class=\"nav-link\" href=\"#tab3\" data-toggle=\"tab\" role=\"tab\">Kids</a></li>\n            <li class=\"nav-item\"><a class=\"nav-link\" href=\"#tab4\" data-toggle=\"tab\" role=\"tab\">Baby</a></li>\n        </ul>\n        <div class=\"tab-content \">\n            <div class=\"tab-pane active\" id=\"tab1\">\n                <div class=\"\">\n                    <div class=\"content\">\n                        <div class=\"table-responsive\">\n                            <table class=\"sizeguide_table\" width=\"100%\">\n                                <tbody>\n                                    <tr>\n                                        <td style=\"text-align: center; font-weight: bold;\">CM</td>\n                                        <td style=\"text-align: center;\">22</td>\n                                        <td style=\"text-align: center;\">22.7</td>\n                                        <td style=\"text-align: center;\">23.3</td>\n                                        <td style=\"text-align: center;\">24</td>\n                                        <td style=\"text-align: center;\">24.7</td>\n                                        <td style=\"text-align: center;\">25.3</td>\n                                        <td style=\"text-align: center;\">26</td>\n                                        <td style=\"text-align: center;\">26.7</td>\n                                        <td style=\"text-align: center;\">27.3</td>\n                                    </tr>\n                                    <tr>\n                                        <td style=\"text-align: center; font-weight: bold;\">EUR</td>\n                                        <td style=\"text-align: center;\">34</td>\n                                        <td style=\"text-align: center;\">35</td>\n                                        <td style=\"text-align: center;\">36</td>\n                                        <td style=\"text-align: center;\">37</td>\n                                        <td style=\"text-align: center;\">38</td>\n                                        <td style=\"text-align: center;\">39</td>\n                                        <td style=\"text-align: center;\">40</td>\n                                        <td style=\"text-align: center;\">41</td>\n                                        <td style=\"text-align: center;\">42</td>\n                                    </tr>\n                                    <tr>\n                                        <td style=\"text-align: center; font-weight: bold;\">UK</td>\n                                        <td style=\"text-align: center;\">1.5</td>\n                                        <td style=\"text-align: center;\">2.5</td>\n                                        <td style=\"text-align: center;\">3.5</td>\n                                        <td style=\"text-align: center;\">4.5</td>\n                                        <td style=\"text-align: center;\">5.5</td>\n                                        <td style=\"text-align: center;\">6.5</td>\n                                        <td style=\"text-align: center;\">7.5</td>\n                                        <td style=\"text-align: center;\">8.5</td>\n                                        <td style=\"text-align: center;\">9.5</td>\n                                    </tr>\n                                    <tr>\n                                        <td style=\"text-align: center; font-weight: bold;\">USA</td>\n                                        <td style=\"text-align: center;\">3.5</td>\n                                        <td style=\"text-align: center;\">4.5</td>\n                                        <td style=\"text-align: center;\">5.5</td>\n                                        <td style=\"text-align: center;\">6.5</td>\n                                        <td style=\"text-align: center;\">7.5</td>\n                                        <td style=\"text-align: center;\">8.5</td>\n                                        <td style=\"text-align: center;\">9.5</td>\n                                        <td style=\"text-align: center;\">10.5</td>\n                                        <td style=\"text-align: center;\">11.5</td>\n                                    </tr>\n                                </tbody>\n                            </table>\n                        </div>\n                    </div>\n                </div>\n            </div>\n            <div class=\"tab-pane\" id=\"tab2\">\n                <div class=\"\">\n                    <div class=\"content\">\n                        <div class=\"table-responsive\">\n                            <table class=\"sizeguide_table\" width=\"100%\">\n                                <tbody>\n                                    <tr>\n                                        <td style=\"text-align: center; font-weight: bold;\">CM</td>\n                                        <td style=\"text-align: center;\">25.2</td>\n                                        <td style=\"text-align: center;\">25.9</td>\n                                        <td style=\"text-align: center;\">26.5</td>\n                                        <td style=\"text-align: center;\">27.2</td>\n                                        <td style=\"text-align: center;\">27.9</td>\n                                        <td style=\"text-align: center;\">28.5</td>\n                                        <td style=\"text-align: center;\">29.2</td>\n                                        <td style=\"text-align: center;\">29.9</td>\n                                        <td style=\"text-align: center;\">30.5</td>\n                                    </tr>\n                                    <tr>\n                                        <td style=\"text-align: center; font-weight: bold;\">EUR</td>\n                                        <td style=\"text-align: center;\">39</td>\n                                        <td style=\"text-align: center;\">40</td>\n                                        <td style=\"text-align: center;\">41</td>\n                                        <td style=\"text-align: center;\">42</td>\n                                        <td style=\"text-align: center;\">43</td>\n                                        <td style=\"text-align: center;\">44</td>\n                                        <td style=\"text-align: center;\">45</td>\n                                        <td style=\"text-align: center;\">46</td>\n                                        <td style=\"text-align: center;\">47</td>\n                                    </tr>\n                                    <tr>\n                                        <td style=\"text-align: center; font-weight: bold;\">UK</td>\n                                        <td style=\"text-align: center;\">5.5</td>\n                                        <td style=\"text-align: center;\">6.5</td>\n                                        <td style=\"text-align: center;\">7.5</td>\n                                        <td style=\"text-align: center;\">8.5</td>\n                                        <td style=\"text-align: center;\">9.5</td>\n                                        <td style=\"text-align: center;\">10.5</td>\n                                        <td style=\"text-align: center;\">11.5</td>\n                                        <td style=\"text-align: center;\">12.5</td>\n                                        <td style=\"text-align: center;\">13.5</td>\n                                    </tr>\n                                    <tr>\n                                        <td style=\"text-align: center; font-weight: bold;\">USA</td>\n                                        <td style=\"text-align: center;\">6</td>\n                                        <td style=\"text-align: center;\">7</td>\n                                        <td style=\"text-align: center;\">8</td>\n                                        <td style=\"text-align: center;\">9</td>\n                                        <td style=\"text-align: center;\">10</td>\n                                        <td style=\"text-align: center;\">11</td>\n                                        <td style=\"text-align: center;\">12</td>\n                                        <td style=\"text-align: center;\">13</td>\n                                        <td style=\"text-align: center;\">14</td>\n                                    </tr>\n                                </tbody>\n                            </table>\n                        </div>\n                    </div>\n                </div>\n            </div>\n            <div class=\"tab-pane\" id=\"tab3\">\n                <div class=\"\">\n                    <div class=\"content\">\n                        <div class=\"table-responsive\">\n                            <table class=\"sizeguide_table\" width=\"100%\">\n                                <tbody>\n                                    <tr>\n                                        <td style=\"text-align: center; font-weight: bold;\">CM</td>\n                                        <td style=\"text-align: center;\">16.6</td>\n                                        <td style=\"text-align: center;\">17.3</td>\n                                        <td style=\"text-align: center;\">18</td>\n                                        <td style=\"text-align: center;\">18.6</td>\n                                        <td style=\"text-align: center;\">19.3</td>\n                                        <td style=\"text-align: center;\">20</td>\n                                        <td style=\"text-align: center;\">20.6</td>\n                                        <td style=\"text-align: center;\">21.3</td>\n                                        <td style=\"text-align: center;\">22</td>\n                                    </tr>\n                                    <tr>\n                                        <td style=\"text-align: center; font-weight: bold;\">EUR</td>\n                                        <td style=\"text-align: center;\">26</td>\n                                        <td style=\"text-align: center;\">27</td>\n                                        <td style=\"text-align: center;\">28</td>\n                                        <td style=\"text-align: center;\">29</td>\n                                        <td style=\"text-align: center;\">30</td>\n                                        <td style=\"text-align: center;\">31</td>\n                                        <td style=\"text-align: center;\">32</td>\n                                        <td style=\"text-align: center;\">33</td>\n                                        <td style=\"text-align: center;\">34</td>\n                                    </tr>\n                                    <tr>\n                                        <td style=\"text-align: center; font-weight: bold;\">UK</td>\n                                        <td style=\"text-align: center;\">7</td>\n                                        <td style=\"text-align: center;\">8</td>\n                                        <td style=\"text-align: center;\">9</td>\n                                        <td style=\"text-align: center;\">10</td>\n                                        <td style=\"text-align: center;\">11</td>\n                                        <td style=\"text-align: center;\">12</td>\n                                        <td style=\"text-align: center;\">13</td>\n                                        <td style=\"text-align: center;\">1</td>\n                                        <td style=\"text-align: center;\">2</td>\n                                    </tr>\n                                    <tr>\n                                        <td style=\"text-align: center; font-weight: bold;\">USA</td>\n                                        <td style=\"text-align: center;\">8</td>\n                                        <td style=\"text-align: center;\">9</td>\n                                        <td style=\"text-align: center;\">10</td>\n                                        <td style=\"text-align: center;\">11</td>\n                                        <td style=\"text-align: center;\">12</td>\n                                        <td style=\"text-align: center;\">13</td>\n                                        <td style=\"text-align: center;\">1</td>\n                                        <td style=\"text-align: center;\">2</td>\n                                        <td style=\"text-align: center;\">3</td>\n                                    </tr>\n                                </tbody>\n                            </table>\n                        </div>\n                    </div>\n                </div>\n            </div>\n            <div class=\"tab-pane\" id=\"tab4\">\n                <div class=\"\">\n                    <div class=\"content\">\n                        <div class=\"table-responsive\">\n                            <table class=\"sizeguide_table\" width=\"100%\">\n                                <tbody>\n                                    <tr>\n                                        <td style=\"text-align: center; font-weight: bold;\">CM</td>\n                                        <td style=\"text-align: center;\">12.7</td>\n                                        <td style=\"text-align: center;\">13.3</td>\n                                        <td style=\"text-align: center;\">14</td>\n                                        <td style=\"text-align: center;\">14.7</td>\n                                        <td style=\"text-align: center;\">15.3</td>\n                                        <td style=\"text-align: center;\">16</td>\n                                    </tr>\n                                    <tr>\n                                        <td style=\"text-align: center; font-weight: bold;\">EUR</td>\n                                        <td style=\"text-align: center;\">20</td>\n                                        <td style=\"text-align: center;\">21</td>\n                                        <td style=\"text-align: center;\">22</td>\n                                        <td style=\"text-align: center;\">23</td>\n                                        <td style=\"text-align: center;\">24</td>\n                                        <td style=\"text-align: center;\">25</td>\n                                    </tr>\n                                    <tr>\n                                        <td style=\"text-align: center; font-weight: bold;\">UK</td>\n                                        <td style=\"text-align: center;\">20</td>\n                                        <td style=\"text-align: center;\">21</td>\n                                        <td style=\"text-align: center;\">22</td>\n                                        <td style=\"text-align: center;\">23</td>\n                                        <td style=\"text-align: center;\">24</td>\n                                        <td style=\"text-align: center;\">25</td>\n                                    </tr>\n                                    <tr>\n                                        <td style=\"text-align: center; font-weight: bold;\">USA</td>\n                                        <td style=\"text-align: center;\">4.5</td>\n                                        <td style=\"text-align: center;\">5</td>\n                                        <td style=\"text-align: center;\">6</td>\n                                        <td style=\"text-align: center;\">6.5</td>\n                                        <td style=\"text-align: center;\">7.5</td>\n                                        <td style=\"text-align: center;\">8</td>\n                                    </tr>\n                                </tbody>\n                            </table>\n                        </div>\n                    </div>\n                </div>\n            </div>\n        </div>\n    </div>\n</div>"
+      }
+    },
+    "sizes_square_XVmiAX": {
+      "type": "sizes_square",
+      "settings": {}
+    },
+    "78a5723c-d7cc-489a-952e-34bfa58c1d02": {
+      "type": "rich-text-4",
+      "custom_css": [
+        ".rich-text__description {padding-right: 20px; padding-left: 20px;}"
+      ],
+      "settings": {
+        "custom_class": "size-guide--rich-text4",
+        "prefix": "",
+        "section_title": "",
+        "section_sub": "",
+        "description": "<p>To prevent sizing problems, choose a size up for in-between fits.  <br/><br/>Everything you need is available on our website ;)</p>",
+        "section_url": ""
+      }
+    },
+    "f98bb07a-4b1e-4afa-b00b-81b5ea9c00cc": {
+      "type": "section-banner-v12",
+      "settings": {
+        "custom_class": "size-guide-banner",
+        "img_banner": "shopify://shop_images/size-guide-banner.png",
+        "mob_img_banner": "shopify://shop_images/size-guide-banner-mobile.png",
+        "title": "",
+        "url_banner": "",
+        "color_title": "#000000",
+        "color_hover_title": "#ffffff"
+      }
+    },
+    "cf2215ec-d6b6-49d1-87e0-abf8ad7fa1c5": {
+      "type": "custom-icon-text",
+      "blocks": {
+        "template--16715083350261__cf2215ec-d6b6-49d1-87e0-abf8ad7fa1c5-167887211874f188ec-0": {
+          "type": "column",
+          "settings": {
+            "icon": "shopify://shop_images/Imagen_1_63a256e0-c0c2-48ae-a3d1-902c26501569.png",
+            "text": "We recommend measuring your feet in the morning before taking on a full day’s of walking, as they won’t likely be swollen."
+          }
+        },
+        "41e4adbc-59c2-41c4-b857-171b5dfbf759": {
+          "type": "column",
+          "settings": {
+            "icon": "shopify://shop_images/Imagen_2_12bb4dd0-6b62-4999-aeef-cd73c118ae31.png",
+            "text": "First, let's get you the perfect fit for your Paez shoes. Grab some sheets of paper and lay them flat on the floor. Stand up straight with your heels against the wall, socks off."
+          }
+        },
+        "65395d7b-ca9b-4d13-a60e-332307a24010": {
+          "type": "column",
+          "settings": {
+            "icon": "shopify://shop_images/Imagen_3_07c26bb4-746b-45d2-8e3d-58fbeb52cc26.png",
+            "text": "Next, grab a pencil and measure the width. Mark the outermost points on each side of your feet. Then, measure the length by marking the longest toe on each foot."
+          }
+        }
+      },
+      "block_order": [
+        "template--16715083350261__cf2215ec-d6b6-49d1-87e0-abf8ad7fa1c5-167887211874f188ec-0",
+        "41e4adbc-59c2-41c4-b857-171b5dfbf759",
+        "65395d7b-ca9b-4d13-a60e-332307a24010"
+      ],
+      "disabled": true,
+      "custom_css": [
+        ".custom-icon-text {font-size: 24px;}"
+      ],
+      "settings": {
+        "custom_class": "size-guide--custom-icon-text"
+      }
+    },
+    "section_blog_v4_b6L7MJ": {
+      "type": "section-blog-v4",
+      "settings": {
+        "css_class": "",
+        "section_title": "Our Blog",
+        "color_title": "#ffffff",
+        "select_blog": "",
+        "button_name": "Read More"
+      }
+    }
+  },
+  "order": [
+    "main",
+    "42aa1b88-aec6-4909-af47-f078f16ea3ef",
+    "197b1ac0-9793-4ba3-8f37-b9b3693db626",
+    "dc74aaa5-0dcb-45f3-bec7-dc5bdffc8e8d",
+    "sizes_square_XVmiAX",
+    "78a5723c-d7cc-489a-952e-34bfa58c1d02",
+    "f98bb07a-4b1e-4afa-b00b-81b5ea9c00cc",
+    "cf2215ec-d6b6-49d1-87e0-abf8ad7fa1c5",
+    "section_blog_v4_b6L7MJ"
+  ]
+}

@@ -1,0 +1,349 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "article_template": {
+      "type": "article-template",
+      "disabled": true,
+      "settings": {
+        "blog_layout": "blog_layo_left",
+        "show_author": true,
+        "show_comment": true,
+        "show_cate": true,
+        "show_tag": true,
+        "show_related_post": true,
+        "related_post_title": "Related post",
+        "related_post_select_blog": "news",
+        "related_post_blogs_limit": 5,
+        "enable_widget_search": true,
+        "widget_search_title": "Search",
+        "shop_by_search_placeholder": "Search...",
+        "enable_widget_cate": true,
+        "widget_cate_title": "Categories",
+        "widget_cate_menu": "main-menu",
+        "enable_widget_related": true,
+        "widget_related_title": "RECENT POSTS",
+        "select_blog": "news",
+        "blogs_limit": 4,
+        "enable_widget_tag": true,
+        "shop_by_tag_title": "Tags",
+        "banner_article_url": "https://www.shopify.com/free-trial?ref=shopifycenter",
+        "enable_social_share": true
+      }
+    },
+    "32188728-51b3-4f19-a420-84f078cb8228": {
+      "type": "rich-text-4",
+      "settings": {
+        "custom_class": "store-banner-title page-banner-title",
+        "prefix": "",
+        "section_title": "SOFÍA ALVES",
+        "section_sub": "",
+        "description": "",
+        "section_url": ""
+      }
+    },
+    "188a94a3-5f74-4b1c-9305-3521ca3db0d2": {
+      "type": "section-banner-v12",
+      "settings": {
+        "custom_class": "about-banner",
+        "img_banner": "shopify://shop_images/Banner-Desktop-Sofia_Alves.jpg",
+        "mob_img_banner": "shopify://shop_images/Banner-Mobile-Sofia_Alves.jpg",
+        "title": "",
+        "url_banner": "",
+        "color_title": "#000000",
+        "color_hover_title": "#ffffff"
+      }
+    },
+    "f5d382fa-b6ed-467f-a533-702eeefe33f9": {
+      "type": "rich-text-4",
+      "custom_css": [
+        ".store-wrapper-beige {background-color: transparent; padding: 10px;}",
+        "@media (max-width: 600px) {.container-v1 {margin-top: 0px; }}",
+        "@media (max-width: 600px) {.store-wrapper-beige p {font-size: 14px; line-height: 20px !important; padding: 10px 20px 0px; }}"
+      ],
+      "settings": {
+        "custom_class": "store-wrapper-beige",
+        "prefix": "",
+        "section_title": "",
+        "section_sub": "",
+        "description": "<p>Sofia Alves has cool girl syndrome! She effortlessly excels in anything she sets her mind to. From painting, to art installations, to custom bags, to unique prints and patterns she creates for freelancing fashion opportunities. She does it all. She literally opened the doors from her iconic house at sunny Lisbon to our team, and became one of our favourite people who ever had the pleasure to work with. Aligned with her creative, independent and fearless spirit she was yet another match to the story that we want to share with you, our community.</p><p><br/></p><p>We catched up with Sofia and want everyone to know more about her. Click our quick interview below.</p>",
+        "section_url": ""
+      }
+    },
+    "cdaee2a8-d358-4577-8fe9-9de9843a1e92": {
+      "type": "custom-image-with-text",
+      "blocks": {
+        "template--18600182677848__cdaee2a8-d358-4577-8fe9-9de9843a1e92-1682015242266f3219-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p><strong>Q: What made you eagerly accept the invitation to be a Paez face in 2023?</strong></p><p><br/><strong>A: </strong>Honestly, I jumped on the opportunity, driven by my love for the brand and the exciting possibilities that collaborations like this bring. The chance to synergize and create something amazing with Paez was too good to pass up!</p><p><em><strong><br/>Q: </strong></em><strong>How has Paez become an integral part of your life? Any favorite models?</strong></p><p><br/><strong>A:</strong> Paez has become a staple among my friends, both guys and girls. While I never bought them without reason, once I tried them on, I understood why everyone has a pair—they are incredibly comfortable. My favorite has to be the Moc's because they are versatile and always add a touch of beauty to any situation.</p>",
+            "text_style": "body"
+          }
+        }
+      },
+      "block_order": [
+        "template--18600182677848__cdaee2a8-d358-4577-8fe9-9de9843a1e92-1682015242266f3219-1"
+      ],
+      "custom_css": [
+        ".responsibility-section-four .image-with-text__content {padding: 20px 10px 10px 20px; justify-content: center;}",
+        "@media (max-width: 1550px) and (min-width: 769px) {.about-us-content .image-with-text__text p {font-size: 22px; line-height: 29px; }}"
+      ],
+      "settings": {
+        "custom_class": "about-us-content responsibility-section-four",
+        "desktop-image": "shopify://shop_images/1-Sofia_Alves.jpg",
+        "mob-image": "shopify://shop_images/1-Sofia_Alves.jpg",
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "image_first",
+        "desktop_content_position": "top",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "color_scheme": "background-1",
+        "mobile_content_alignment": "left",
+        "padding_top": 36,
+        "padding_bottom": 0
+      }
+    },
+    "ac86e1fa-1121-43b3-90c7-bf1ca4009b0a": {
+      "type": "custom-image-with-text",
+      "blocks": {
+        "139e407d-9b47-4873-bcde-613e5f702443": {
+          "type": "text",
+          "settings": {
+            "text": "<p><em><strong>Q: </strong></em><strong>Paez is all about \"walking the talk.\" How do you embody this motto in your life? Do you have a personal motto that guides you?</strong></p><p><br/><strong>A: </strong>As someone who works independently, this motto resonates deeply with me. Every day, we rely on our determination and willpower to make things happen. While I don't have a specific motto, I believe in pursuing what we love, embracing both good and challenging days. It's the challenges that make every achievement worthwhile. </p><p><em><strong><br/>Q: </strong></em><strong>You have experience collaborating with fashion brands. Can you share a project that held special meaning for you</strong><em><strong>?</strong></em></p><p><br/><strong>A:</strong> One aspect of my brand involves creating patterns and personalizing products for other brands. One of my most cherished projects was a collaboration with Burberry. I had the freedom to create two captivating canvases for their store and collection launch. Additionally, I got to add my artistic touch to their bags. The experience allowed me to showcase my artistic identity and express myself fully.</p>",
+            "text_style": "body"
+          }
+        }
+      },
+      "block_order": [
+        "139e407d-9b47-4873-bcde-613e5f702443"
+      ],
+      "custom_css": [
+        ".responsibility-section-four .image-with-text__content {padding: 20px 10px 10px 20px; justify-content: center;}",
+        "@media (max-width: 1550px) and (min-width: 769px) {.about-us-content .image-with-text__text p {font-size: 22px; line-height: 29px; }}"
+      ],
+      "settings": {
+        "custom_class": "about-us-content responsibility-section-four",
+        "desktop-image": "shopify://shop_images/2-Sofia_Alves.jpg",
+        "mob-image": "shopify://shop_images/2-Sofia_Alves.jpg",
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "text_first",
+        "desktop_content_position": "top",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "color_scheme": "background-1",
+        "mobile_content_alignment": "left",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "c6fa4aab-6f2c-42e7-b1fa-d6690656899d": {
+      "type": "custom-image-with-text",
+      "blocks": {
+        "fcd747ed-5c26-4c5c-ba37-91c9a6b18ed4": {
+          "type": "text",
+          "settings": {
+            "text": "<p><em><strong>Q: </strong></em><strong>Can you recall a moment where you took a risk or ventured into something new in your career, and how did it pay off?</strong></p><p><br/><strong>A: </strong>Taking risks is inherent in my line of work, especially when developing new products and styles. Starting my own company right after finishing my degree was a significant risk itself. Learning everything from scratch and making decisions independently has been an ongoing challenge. Currently, I'm in the process of launching a new collection of hand-painted wooden sculptures and exploring ceramics—a completely new avenue for me. Despite uncertainties, the experience has already been rewarding. The lessons learned and the personal satisfaction gained have been immense. Risks are necessary to grow and evolve!</p><p></p>",
+            "text_style": "body"
+          }
+        }
+      },
+      "block_order": [
+        "fcd747ed-5c26-4c5c-ba37-91c9a6b18ed4"
+      ],
+      "custom_css": [
+        ".responsibility-section-four .image-with-text__content {padding: 20px 10px 10px 20px; justify-content: center;}",
+        "@media (max-width: 1550px) and (min-width: 769px) {.about-us-content .image-with-text__text p {font-size: 22px; line-height: 29px; }}"
+      ],
+      "settings": {
+        "custom_class": "about-us-content responsibility-section-four",
+        "desktop-image": "shopify://shop_images/3-Sofia_Alves.jpg",
+        "mob-image": "shopify://shop_images/3-Sofia_Alves.jpg",
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "image_first",
+        "desktop_content_position": "top",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "color_scheme": "background-1",
+        "mobile_content_alignment": "left",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "8a70fb08-d36d-44b3-b5b6-1d37543eb0bb": {
+      "type": "custom-image-with-text",
+      "blocks": {
+        "e9425c6e-d97b-4574-bf7e-8e98e684f57a": {
+          "type": "text",
+          "settings": {
+            "text": "<p><em><strong>Q: </strong></em><strong>Can you share insights into your creative process when starting a new project?</strong></p><p><br/><strong>A:</strong>While my personal works are often intuitive and spontaneous, client projects begin with extensive research and proposal development, all while infusing my sensibility and artistic taste.</p><p><em><strong><br/>Q: </strong></em><strong>How do you incorporate responsibility in your work as an artist and designer, particularly regarding production?</strong></p><p><br/><strong>A:</strong> Responsibility is ingrained in everything I do. From minimizing waste in materials, paint, and packaging to repurposing leftovers, I ensure that every aspect of production is handled responsibly.</p>",
+            "text_style": "body"
+          }
+        }
+      },
+      "block_order": [
+        "e9425c6e-d97b-4574-bf7e-8e98e684f57a"
+      ],
+      "custom_css": [
+        ".responsibility-section-four .image-with-text__content {padding: 20px 10px 10px 20px; justify-content: center;}",
+        "@media (max-width: 1550px) and (min-width: 769px) {.about-us-content .image-with-text__text p {font-size: 22px; line-height: 29px; }}"
+      ],
+      "settings": {
+        "custom_class": "about-us-content responsibility-section-four",
+        "desktop-image": "shopify://shop_images/4-Sofia_Alves.jpg",
+        "mob-image": "shopify://shop_images/4-Sofia_Alves.jpg",
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "text_first",
+        "desktop_content_position": "top",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "color_scheme": "background-1",
+        "mobile_content_alignment": "left",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "1d00efee-2f32-4ede-825d-e9560467cdce": {
+      "type": "custom-image-with-text",
+      "blocks": {
+        "6d10740f-f585-407b-ac7d-cec6189d36bb": {
+          "type": "text",
+          "settings": {
+            "text": "<p><em><strong>Q: </strong></em><strong>As an artist, how do you stay motivated and inspired?</strong></p><p><br/><strong>A: </strong>Inspiration stems from thorough research, exploring what others are creating, and delving into self-reflection and personal emotions. Inspiration is all around us, often unnoticed. On the motivation front, it's about taking action and getting things done, no matter how challenging the day might be. However, I also believe in taking breaks for contemplation, rest, and rejuvenation, which ultimately fuels renewed motivation.</p><p><em><strong><br/>Q: </strong></em><strong>Paez celebrates individuality and unique styles. How do you see your art and designs aligning with this spirit?</strong></p><p><br/><strong>A:</strong> I consider myself fortunate to be acknowledged as an individual. When creating my own pieces, I try not to focus too much on trends or what others are doing. The fact that the public and brands show interest in my work confirms that staying true to my own intuition and identity is valuable. My canvases, illustrations, and other creations are a genuine reflection of who I am and what I stand for—a testament to my various attempts and experiences.</p>",
+            "text_style": "body"
+          }
+        }
+      },
+      "block_order": [
+        "6d10740f-f585-407b-ac7d-cec6189d36bb"
+      ],
+      "custom_css": [
+        ".responsibility-section-four .image-with-text__content {padding: 20px 50px 10px 20px;}",
+        "@media (max-width: 1550px) and (min-width: 769px) {.about-us-content .image-with-text__text p {font-size: 22px; line-height: 29px; }}"
+      ],
+      "settings": {
+        "custom_class": "about-us-content responsibility-section-four",
+        "desktop-image": "shopify://shop_images/5-Sofia_Alves.jpg",
+        "mob-image": "shopify://shop_images/5-Sofia_Alves.jpg",
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "image_first",
+        "desktop_content_position": "top",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "color_scheme": "background-1",
+        "mobile_content_alignment": "left",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "776958e6-2b6f-43ce-939f-459bce151a1c": {
+      "type": "custom-image-with-text",
+      "blocks": {
+        "1736fe90-b838-4ad5-9057-3f07ddd651f3": {
+          "type": "text",
+          "settings": {
+            "text": "<p><em><strong>Q: </strong></em><strong>Do you have a dream project or a vision for your professional future? How do you balance the business side of freelancing with your creative work?</strong></p><p><br/><strong>A:</strong> After nine years of running my brand, I've had the opportunity to work on diverse projects, which I'm incredibly grateful for. The dream for me is to continue being challenged, painting new spaces, and working on increasingly unique and different projects. Having the freedom to create what I truly want is essential. Sometimes, less challenging work allows me the freedom to invest time in personal creations and maintain that balance.</p><p><em><strong><br/>Q: </strong></em><strong>How have you stayed true to your passions and goals throughout your career journey?</strong></p><p><br/><strong>A:</strong> It's not always easy to prioritize and allocate time for my own creations while managing responsibilities. However, I remind myself constantly that I chose this path for a reason—to do what I love and have complete freedom in decision-making. Working independently requires self-motivation and a constant reaffirmation of the reasons behind pursuing a less conventional career. It's about embracing the freedom of choice and personal fulfillment.</p>",
+            "text_style": "body"
+          }
+        }
+      },
+      "block_order": [
+        "1736fe90-b838-4ad5-9057-3f07ddd651f3"
+      ],
+      "custom_css": [
+        ".responsibility-section-four .image-with-text__content {padding: 10px 20px 10px 20px;}",
+        "@media (max-width: 1550px) and (min-width: 769px) {.about-us-content .image-with-text__text p {font-size: 22px; line-height: 29px; }}"
+      ],
+      "settings": {
+        "custom_class": "about-us-content responsibility-section-four",
+        "desktop-image": "shopify://shop_images/6-Sofia_Alves.jpg",
+        "mob-image": "shopify://shop_images/6-Sofia_Alves.jpg",
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "text_first",
+        "desktop_content_position": "top",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "color_scheme": "background-1",
+        "mobile_content_alignment": "left",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "fbf78ea0-a543-4350-82f9-a2489aac33d2": {
+      "type": "custom-image-with-text",
+      "blocks": {
+        "e14a5a9b-40c4-4c11-978c-8b006396bfa1": {
+          "type": "text",
+          "settings": {
+            "text": "<p><em><strong>Q: </strong></em><strong>How have you stayed true to your passions and goals throughout your career journey?</strong></p><p><br/><strong>A: </strong>It's not always easy to prioritize and allocate time for my own creations while managing responsibilities. However, I remind myself constantly that I chose this path for a reason—to do what I love and have complete freedom in decision-making. Working independently requires self-motivation and a constant reaffirmation of the reasons behind pursuing a less conventional career. It's about embracing the freedom of choice and personal fulfillment.</p>",
+            "text_style": "body"
+          }
+        }
+      },
+      "block_order": [
+        "e14a5a9b-40c4-4c11-978c-8b006396bfa1"
+      ],
+      "custom_css": [
+        ".responsibility-section-four .image-with-text__content {padding: 10px 20px 10px 20px; justify-content: center;}",
+        "@media (max-width: 1550px) and (min-width: 769px) {.about-us-content .image-with-text__text p {font-size: 22px; line-height: 29px; }}"
+      ],
+      "settings": {
+        "custom_class": "about-us-content responsibility-section-four",
+        "desktop-image": "shopify://shop_images/7-Sofia_Alves.jpg",
+        "mob-image": "shopify://shop_images/7-Sofia_Alves.jpg",
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "image_first",
+        "desktop_content_position": "top",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "color_scheme": "background-1",
+        "mobile_content_alignment": "left",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "4c0a3059-b4d6-4cde-b451-54d3ba8f6bc3": {
+      "type": "rich-text-4",
+      "custom_css": [
+        ".store-wrapper p {justify-content: center; text-align: center; line-height: 24px !important;}",
+        ".store-wrapper {margin-bottom: 40px;}",
+        ".store-wrapper a {font-weight: bold !important;}"
+      ],
+      "settings": {
+        "custom_class": "store-wrapper",
+        "prefix": "",
+        "section_title": "",
+        "section_sub": "",
+        "description": "<p>If you're interested in finding more about Sofia, click <strong>here</strong> for her socials</p><p><br/></p><p>Thank you Sofia for being part of this campaign!</p>",
+        "section_url": ""
+      }
+    }
+  },
+  "order": [
+    "article_template",
+    "32188728-51b3-4f19-a420-84f078cb8228",
+    "188a94a3-5f74-4b1c-9305-3521ca3db0d2",
+    "f5d382fa-b6ed-467f-a533-702eeefe33f9",
+    "cdaee2a8-d358-4577-8fe9-9de9843a1e92",
+    "ac86e1fa-1121-43b3-90c7-bf1ca4009b0a",
+    "c6fa4aab-6f2c-42e7-b1fa-d6690656899d",
+    "8a70fb08-d36d-44b3-b5b6-1d37543eb0bb",
+    "1d00efee-2f32-4ede-825d-e9560467cdce",
+    "776958e6-2b6f-43ce-939f-459bce151a1c",
+    "fbf78ea0-a543-4350-82f9-a2489aac33d2",
+    "4c0a3059-b4d6-4cde-b451-54d3ba8f6bc3"
+  ]
+}

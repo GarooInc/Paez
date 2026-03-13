@@ -1,0 +1,55 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "435a868c-a244-4a00-9042-c4d2915fb6af": {
+      "type": "rich-text-4",
+      "disabled": true,
+      "custom_css": [
+        ".heading-title {font-family: \"HelveticaNeue\" !important;}",
+        "p {font-family: \"Helvetica\" !important; padding-top: 20px; text-transform: none;}"
+      ],
+      "settings": {
+        "custom_class": "store-banner-title page-banner-title",
+        "prefix": "",
+        "section_title": "RULES",
+        "section_sub": "",
+        "description": "",
+        "section_url": ""
+      }
+    },
+    "main": {
+      "type": "main-page",
+      "custom_css": [
+        ".h1 {display: none;}",
+        ".bread-crumb {display: none;}"
+      ],
+      "settings": {}
+    },
+    "01cab3b0-f886-405b-a58e-d55a0ef2e804": {
+      "type": "section-banner-v12",
+      "disabled": true,
+      "settings": {
+        "custom_class": "store-banner",
+        "img_banner": "shopify://shop_images/Banner-Newsletter-Hompage-_1920x918px.jpg",
+        "mob_img_banner": "shopify://shop_images/Banner-Newsletter-Mobile-_1920x918px.jpg",
+        "title": "",
+        "url_banner": "shopify://collections/all",
+        "color_title": "#000000",
+        "color_hover_title": "#ffffff"
+      }
+    }
+  },
+  "order": [
+    "435a868c-a244-4a00-9042-c4d2915fb6af",
+    "main",
+    "01cab3b0-f886-405b-a58e-d55a0ef2e804"
+  ]
+}

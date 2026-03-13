@@ -1,0 +1,68 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "product-template",
+      "disabled": true,
+      "custom_css": [
+        "form.cart.clearfix,.product-additional-details .accordion-content:nth-of-type(2),.product-additional-details .accordion-content:nth-of-type(3) {display: none;}"
+      ],
+      "settings": {
+        "spd_style": "pd_default",
+        "style_page": "left",
+        "bg_prod_color": "#ffffff",
+        "display_bg": "dis_bg_color",
+        "style_sidebar": "no_sidebar",
+        "show_rating": true,
+        "show_sdes": false,
+        "show_social_share": false,
+        "show_quantity": false,
+        "show_sku": false,
+        "show_cate": false,
+        "ena_sticky_addcart": false,
+        "style_stickyaddcart": "bottom",
+        "ena_zoom": true,
+        "ena_featured_icon": false,
+        "display_feaicon": "dis_svg"
+      }
+    },
+    "product_free_template_rCQ3HB": {
+      "type": "product-free-template",
+      "custom_css": [
+        "form.cart.clearfix,.product-additional-details .accordion-content:nth-of-type(2),.product-additional-details .accordion-content:nth-of-type(3) {display: none;}",
+        ".tab-pd-details{border: none;}"
+      ],
+      "name": "Product Free Page",
+      "settings": {
+        "spd_style": "pd_default",
+        "style_page": "bottom",
+        "bg_prod_color": "",
+        "display_bg": "dis_bg_img",
+        "style_sidebar": "left",
+        "show_rating": true,
+        "show_sdes": false,
+        "show_social_share": false,
+        "show_quantity": false,
+        "show_sku": false,
+        "show_cate": false,
+        "ena_sticky_addcart": false,
+        "style_stickyaddcart": "bottom",
+        "ena_zoom": true,
+        "ena_featured_icon": true,
+        "display_feaicon": "dis_svg"
+      }
+    }
+  },
+  "order": [
+    "main",
+    "product_free_template_rCQ3HB"
+  ]
+}

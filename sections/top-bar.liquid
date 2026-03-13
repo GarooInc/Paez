@@ -1,0 +1,144 @@
+{% if section.settings.top_bar_enable %}
+<script
+  type="application/json"
+  data-section-type="marquee"
+  data-section-id="{{ section.id }}"
+>
+</script>
+{% assign object_selector = '#shopify-section-' | append: section.id %}
+
+{% style %}
+  {%
+    render 'css-loop',
+    css: section.settings.custom_css,
+    id: section.id
+  %}
+{% endstyle %}
+
+<div class="moving-marquee {{section.settings.css_class}}" style="background-color: {{section.settings.background_color}};">
+  <div class="mm-container">
+    <div class="mm-segment">
+      {% for block in section.blocks %}
+      <div class="mm-item">
+        {% if block.settings.image != blank %}
+          <img src="{{ block.settings.image | img_url: '1000x' }} }}">
+        {% else %}
+          <div 
+               class="mm-item-content" 
+               style="background-color: {{block.settings.item_background_color}}; color: {{block.settings.item_text_color}}; {% if section.settings.has_border %} border: 1px solid {{block.settings.item_border_color}}; border-radius: 25px;{% endif %}">
+            {{block.settings.item_content}}
+          </div>
+        {%  endif %}
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</div>
+
+<script>
+  (function () {
+    const mmContainer = document.querySelector('{{object_selector}} .mm-container');
+    mmContainer.innerHTML += mmContainer.innerHTML + mmContainer.innerHTML + mmContainer.innerHTML;
+	const time = {{section.settings.slide_time}} * 1000;
+    const offset = 0;
+    function rotate() {
+      mmContainer.style.left = `-${mmContainer.children[0].clientWidth}px`;
+      mmContainer.style.transitionDuration = `${time}ms`;
+      setTimeout(check, time - 100);
+    }
+
+    function check() {
+      const bounds = mmContainer.getBoundingClientRect();
+      if (bounds.x <= -(mmContainer.children[0].clientWidth - offset)) {
+        reset();
+      } else {
+        setTimeout(check, 60);
+      }
+    }
+
+    function reset() {
+      mmContainer.appendChild(mmContainer.children[0]);
+      mmContainer.style.left = `${offset}px`;
+      mmContainer.style.transitionDuration = '0s';
+      setTimeout(rotate);
+    }
+    setTimeout(rotate, 2000);
+  })();
+</script>
+{% endif %}
+{% schema %}
+{
+  "name": "Top Bar",
+  "settings": [
+    {
+      "type": "checkbox",
+      "id": "top_bar_enable",
+      "label": "Enable"
+    },
+	{
+      "type": "text",
+      "id": "slide_time",
+      "label": "Slide time (in seconds)",
+	  "default": "20"
+    },
+	{
+      "type": "checkbox",
+      "id": "has_border",
+      "label": "Has Border?"
+    },
+	{
+      "type": "text",
+      "id": "background_color",
+      "label": "Background Color?"
+    },
+    {
+      "type": "text",
+      "id": "css_class",
+      "label": "CSS Class"
+    },
+    {
+      "type": "textarea",
+      "id": "custom_css",
+      "label": "Custom CSS"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "text",
+      "name": "Item",
+      "settings": [
+        {
+          "type": "text",
+          "id": "item_content",
+          "label": "Content"
+        },
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "Image",
+          "info": "1024 x 1024px recommended"
+        },
+		{
+          "type": "text",
+          "id": "item_border_color",
+          "label": "Border Color",
+		  "default": "black"
+        },
+		{
+          "type": "text",
+          "id": "item_background_color",
+          "label": "Background Color",
+		  "default": "black"
+        },
+		{
+          "type": "text",
+          "id": "item_text_color",
+          "label": "Text Color",
+		  "default": "white"
+        }
+      ]
+    }
+  ]
+}
+
+{% endschema %}

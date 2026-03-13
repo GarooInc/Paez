@@ -1,0 +1,402 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {}
+    },
+    "041e498d-5b27-4443-a6d6-22120933229e": {
+      "type": "rich-text-4",
+      "settings": {
+        "custom_class": "moodboard-banner-title page-banner-title",
+        "prefix": "OUR",
+        "section_title": "MOODBOARD",
+        "section_sub": "",
+        "description": "",
+        "section_url": ""
+      }
+    },
+    "25cd9570-ca71-4809-8666-3f740d0b9b39": {
+      "type": "moodboard",
+      "blocks": {
+        "5874022b-63a9-4abd-9b8b-24eb242ff7f2": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/000049.jpg",
+            "tag": ""
+          }
+        },
+        "cbf0a04d-7907-45bb-b65b-9b23afa6bb91": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/IMG_0486.jpg",
+            "tag": ""
+          }
+        },
+        "ef23a969-ad67-47bd-ae1a-bc5bb3dcd377": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/IMG_0490.jpg",
+            "tag": ""
+          }
+        },
+        "column_88gLbj": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/IMG_0495.jpg",
+            "tag": ""
+          }
+        },
+        "column_W6zNTq": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/IMG_0499.jpg",
+            "tag": ""
+          }
+        },
+        "column_HPTzjR": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/IMG_5608.jpg",
+            "tag": ""
+          }
+        },
+        "column_gBz4z9": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/IMG_6902.jpg",
+            "tag": ""
+          }
+        },
+        "column_PwDMYr": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/IMG_6917.jpg",
+            "tag": ""
+          }
+        },
+        "column_RLpAx8": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/IMG_7632.jpg",
+            "tag": ""
+          }
+        },
+        "column_PifYn8": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/IMG_7879.jpg",
+            "tag": ""
+          }
+        },
+        "column_NQwxDt": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/IMG_9365_1.jpg",
+            "tag": ""
+          }
+        },
+        "column_zn8GwY": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/Luis_Gaivao-3.jpg",
+            "tag": ""
+          }
+        },
+        "column_zLgga3": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/Luis_Gaivao-9.jpg",
+            "tag": ""
+          }
+        },
+        "column_d4wRLb": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/Luis_Gaivao-10.jpg",
+            "tag": ""
+          }
+        },
+        "column_RC3fJN": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/Luis_Gaivao-15.jpg",
+            "tag": ""
+          }
+        },
+        "column_Mxb8zD": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/Luis_Gaivao-21.jpg",
+            "tag": ""
+          }
+        },
+        "column_PnffcJ": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/Luis_Gaivao-26.jpg",
+            "tag": ""
+          }
+        },
+        "column_kHmmrV": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/Sara_Prata-11.jpg",
+            "tag": ""
+          }
+        },
+        "column_cmtPnU": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/Sara_Prata-49.jpg",
+            "tag": ""
+          }
+        },
+        "column_WDdL3n": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/Sara_Prata-51.jpg",
+            "tag": ""
+          }
+        },
+        "column_CAPPcN": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/Sara_Prata-58.jpg",
+            "tag": ""
+          }
+        },
+        "column_zAW8JY": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/Sara_Prata-66.jpg",
+            "tag": ""
+          }
+        },
+        "column_3hRmJc": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/Vida_12.jpg",
+            "tag": ""
+          }
+        },
+        "column_zpU6Ni": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/WhatsApp_Image_2024-02-29_at_11.40.17_1.jpg",
+            "tag": ""
+          }
+        },
+        "column_KiyDUK": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/WhatsApp_Image_2024-02-29_at_11.40.17_2.jpg",
+            "tag": ""
+          }
+        },
+        "column_wXA7B8": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/WhatsApp_Image_2024-02-29_at_11.40.17.jpg",
+            "tag": ""
+          }
+        }
+      },
+      "block_order": [
+        "5874022b-63a9-4abd-9b8b-24eb242ff7f2",
+        "cbf0a04d-7907-45bb-b65b-9b23afa6bb91",
+        "ef23a969-ad67-47bd-ae1a-bc5bb3dcd377",
+        "column_88gLbj",
+        "column_W6zNTq",
+        "column_HPTzjR",
+        "column_gBz4z9",
+        "column_PwDMYr",
+        "column_RLpAx8",
+        "column_PifYn8",
+        "column_NQwxDt",
+        "column_zn8GwY",
+        "column_zLgga3",
+        "column_d4wRLb",
+        "column_RC3fJN",
+        "column_Mxb8zD",
+        "column_PnffcJ",
+        "column_kHmmrV",
+        "column_cmtPnU",
+        "column_WDdL3n",
+        "column_CAPPcN",
+        "column_zAW8JY",
+        "column_3hRmJc",
+        "column_zpU6Ni",
+        "column_KiyDUK",
+        "column_wXA7B8"
+      ],
+      "disabled": true,
+      "settings": {
+        "custom_class": "",
+        "prefix": "",
+        "section_title": "",
+        "section_sub": "",
+        "description": "<p>A little bit of our world! We're more than just shoes, we're a lifestyle that has its roots in the city, nature, adventure, and most importantly, good times. We believe in living life to the fullest and finding joy in the little things. Here are some things that inspire us daily. We hope it will inspire you to create your own adventure and walk the talk with our shoes by your side. </p><p></p><p></p><p></p>",
+        "section_url": ""
+      }
+    },
+    "moodboard_GN7aMJ": {
+      "type": "moodboard",
+      "blocks": {
+        "column_B4jHnM": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/000004_1.jpg",
+            "tag": ""
+          }
+        },
+        "column_cGjALn": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/47a5f847ceed005637787e4834b62ce3.jpg",
+            "tag": ""
+          }
+        },
+        "column_RXkttN": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/000051_1.jpg",
+            "tag": ""
+          }
+        },
+        "column_ixTNL6": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/000055_e0eea757-c8c7-4b8b-b44f-1e16146669e5.jpg",
+            "tag": ""
+          }
+        },
+        "column_TRYby6": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/000061.jpg",
+            "tag": ""
+          }
+        },
+        "column_iJgELr": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/000063_1.jpg",
+            "tag": ""
+          }
+        },
+        "column_R9DHce": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/20691c213ea1dbeb50372ffd9924a8c2.jpg",
+            "tag": ""
+          }
+        },
+        "column_QmrKQf": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/96206e86b9305ff6d8fdd9d9b034a4bf.jpg",
+            "tag": ""
+          }
+        },
+        "column_mmDWX8": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/cc27cd9b84d75355074b8c81c558bd42.jpg",
+            "tag": ""
+          }
+        },
+        "column_bebqLr": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/daf1b1c6fccf2273e7c6ac490c9e5af8.jpg",
+            "tag": ""
+          }
+        },
+        "column_zFkiVe": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/e7e6f4c251934698c13f9e4643e68236.jpg",
+            "tag": ""
+          }
+        },
+        "column_ddjjg6": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/IMG_0499_1.jpg",
+            "tag": ""
+          }
+        },
+        "column_QHi4Hk": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/IMG_1853_b8ef66f1-ece1-4fc1-afde-2ed1814d823a.jpg",
+            "tag": ""
+          }
+        },
+        "column_GQp38T": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/R1-01800-022A_1.jpg",
+            "tag": ""
+          }
+        },
+        "column_nzKzm4": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/Sim_3.jpg",
+            "tag": ""
+          }
+        },
+        "column_UzDCHG": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/WhatsApp_Image_2025-10-09_at_10.08.31_5.jpg",
+            "tag": ""
+          }
+        }
+      },
+      "block_order": [
+        "column_B4jHnM",
+        "column_cGjALn",
+        "column_RXkttN",
+        "column_ixTNL6",
+        "column_TRYby6",
+        "column_iJgELr",
+        "column_R9DHce",
+        "column_QmrKQf",
+        "column_mmDWX8",
+        "column_bebqLr",
+        "column_zFkiVe",
+        "column_ddjjg6",
+        "column_QHi4Hk",
+        "column_GQp38T",
+        "column_nzKzm4",
+        "column_UzDCHG"
+      ],
+      "settings": {
+        "custom_class": "",
+        "prefix": "",
+        "section_title": "",
+        "section_sub": "",
+        "description": "",
+        "section_url": ""
+      }
+    }
+  },
+  "order": [
+    "main",
+    "041e498d-5b27-4443-a6d6-22120933229e",
+    "25cd9570-ca71-4809-8666-3f740d0b9b39",
+    "moodboard_GN7aMJ"
+  ]
+}

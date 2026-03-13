@@ -1,0 +1,281 @@
+<div data-section-id="{{ section.id }}" data-section-type="section-slideshow-v2" style="{% if section.settings.margin_top != blank %}margin-top: {{section.settings.margin_top}}px;{%endif%} {% if section.settings.margin_bottom != blank %}margin-bottom: {{section.settings.margin_bottom}}px;{% endif %} {% if section.settings.sections_layout == "dark" %}background: {{section.settings.sections_bg_color}};{% endif %}">
+  <div class="section-slideshow-v2">
+    <div class="slick-side-h2">       
+      {% if section.blocks.size > 0 %}
+      {% for block in section.blocks %}
+      {% if block.type == "slideshow" %}
+      <div class="itemv-slide-h2">
+        <div class="container container-full">
+          <div class="row">
+            <div class="col-lg-6 col-sm-6 col-md-6 px-0 item-change">
+              <div class="info-sideh2_1 info_slide">
+                <div class="picture-slideshow">
+          {% if block.settings.block_buton != blank %}
+                    <a class="mt-lg-4 mt-0  button-shop button-shop-{{block.id}} " href="{{block.settings.block_url}}">
+                      {{ block.settings.block_buton }}
+                    </a>
+                    {% endif %}
+        
+                  {% if block.settings.block_banerimage_1 != blank %}
+                  <a href="{{block.settings.block_url}}">
+                    <img class="w-100" src="{{block.settings.block_banerimage_1 | img_url: 'master'}}" class="img-responsive img_slideh2" alt="">
+                  </a>
+                  {% else %}
+                  <img class="w-100" src="//via.placeholder.com/960x900" class="img-responsive img_slideh2" alt="slideshow">
+                  {% endif %}
+                </div>
+                <div class="box-info">
+                  <div class="box-content">
+                    {% if block.settings.block_title_top_1 != blank %}
+                    <h3 href="{{block.settings.block_url}}" class="title1 title-{{block.id}}">{{ block.settings.block_title_top_1 }}</h3>
+                    {% endif %}
+
+                  
+                  </div>
+
+                </div>              
+              </div>
+            </div>
+
+            <div class="col-lg-6 col-sm-6 col-md-6 px-0">
+              <div class="info-sideh2_2 info_slide">
+                <div class="picture-slideshow">
+                  {% if block.settings.block_banerimage_2 != blank %}
+                  <a href="{{block.settings.block_url_2}}">
+                    <img class="w-100" src="{{block.settings.block_banerimage_2 | img_url: 'master'}}" class="img-responsive img_slideh2" alt="">
+                  </a>
+                  {% else %}
+                  <img class="w-100" src="//via.placeholder.com/960x900" class="img-responsive img_slideh2" alt="slideshow">
+                  {% endif %}
+         {% if block.settings.block_buton2 != blank %}
+                    <a class="mt-lg-4 mt-0  button-shop button-shop-{{block.id}} " href="{{block.settings.block_url}}">
+                      {{ block.settings.block_buton2 }}
+                    </a>
+                    {% endif %}
+                </div>
+                <div class="box-info">
+                  <div class="box-content">
+                    {% if block.settings.block_title_top_2 != blank %}
+                    <h3 href="{{block.settings.block_url}}" class="title1 title-{{block.id}}">{{ block.settings.block_title_top_2 }}</h3>
+                    {% endif %}
+                </div>              
+                  </div>
+                 
+              </div>
+              
+            </div>
+           
+          </div>
+        </div>
+      </div>
+      {% endif %}
+      {% endfor %}
+      {% endif %}
+
+    </div>
+  </div>
+</div>
+<style>
+  {% for block in section.blocks %}
+  {% if block.type == 'slideshow' %}
+  
+  .section-slideshow-v2 .itemv-slide-h2 .info_slide .box-info .box-content .button-shop-{{block.id}}{
+    color:{{block.settings.color_block_button}}; 
+        border: 1px solid {{block.settings.color_block_button}};
+  }
+  
+  .section-slideshow-v2 .itemv-slide-h2 .info_slide .box-info .box-content .button-shop-{{block.id}}:hover{
+    background-color: {{block.settings.bgcolor_block_button_hover}} !important;
+    color:{{block.settings.color_hover_button}} !important;
+    border : 1px solid {{block.settings.bgcolor_block_button_hover}} !important;
+  }
+  
+  .section-slideshow-v2 .itemv-slide-h2 .info_slide .box-info .box-content .title-{{block.id}}{
+    color:{{block.settings.color_block_title_top_1}};
+  }
+  
+  .section-slideshow-v2 .itemv-slide-h2 .info_slide .box-info .box-content .content-{{block.id}}{
+    color:{{block.settings.color_block_content_1}};
+  }
+  
+  {% endif %}
+  {% endfor %}
+</style>
+{% schema %}
+{
+  "name": "SLIDESHOW V2",
+  "class": "index-section",
+  "settings": [
+    {
+      "type": "header",
+      "content": "Section Space"
+    },
+    {
+      "type": "text",
+      "id": "margin_top",
+      "label": "Margin Top",
+      "info": "Defined in pixels. Do not add the 'px' unit."
+    },
+    {
+      "type": "text",
+      "id": "margin_bottom",
+      "label": "Margin Bottom",
+      "info": "Defined in pixels. Do not add the 'px' unit."
+    }
+  ],
+  "blocks": [
+    {
+      "type": "slideshow",
+      "name": "SlideShow",
+      "settings": [
+		{
+          "type": "image_picker",
+          "id": "block_banerimage_1",
+          "label": "Image Slideshow 1",
+          "info": "960 x 900px recommended"
+        },
+		{
+          "type": "header",
+          "content": "Heading sideshow"
+		},
+        {
+          "type": "text",
+          "id": "block_title_top_1",
+          "label": "Heading",
+          "default": "Super"
+        },
+		{
+           "type": "color",
+           "id": "color_block_title_top_1",
+           "label": "Color",
+           "default": "#333333"
+        },
+		{
+          "type": "header",
+          "content": "Button slideshow"
+		},
+		{
+          "type": "text",
+          "id": "block_buton",
+          "label": "Button Label",
+          "default": "Shop now"
+        },
+		{
+           "type": "color",
+           "id": "color_block_button",
+           "label": "Color",
+           "default": "#fff"
+        },
+		{
+           "type": "color",
+           "id": "color_hover_button",
+           "label": "Color hover Button",
+           "default": "#000"
+        },	
+		{
+           "type": "color",
+           "id": "bgcolor_block_button_hover",
+           "label": "Backgourd Color Hover Button",
+           "default": "#f2f2f2"
+        },
+        {
+          "type": "url",
+          "id": "block_url",
+          "label": "URL Slideshow",
+          "default": "/collections/all"
+        },
+		{
+          "type": "image_picker",
+          "id": "block_banerimage_2",
+          "label": "Image Slideshow 2",
+          "info": "960 x 900px recommended"
+        },
+		{
+          "type": "header",
+          "content": "Heading sideshow"
+		},
+        {
+          "type": "text",
+          "id": "block_title_top_2",
+          "label": "Heading",
+          "default": "Super"
+        },
+		{
+           "type": "color",
+           "id": "color_block_title_top_2",
+           "label": "Color",
+           "default": "#333333"
+        },
+		{
+          "type": "text",
+          "id": "block_buton2",
+          "label": "Button Label",
+          "default": "Shop now"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "SLIDESHOW V2",
+      "category": "HOME",
+	  "blocks": [
+        {
+          "type": "slideshow",
+          "settings": {
+           
+          }
+        },
+		 {
+          "type": "slideshow",
+          "settings": {
+            
+          }
+        }		
+      ]
+    }
+  ]
+}
+{% endschema %}
+
+
+{% stylesheet %}
+
+  @media only screen and (max-width: 600px) {
+
+      .picture-slideshow > .button-shop {
+    position: absolute;
+    bottom: 10%;
+    color: white;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    text-align: center;
+    border: 1px solid white;
+    width: 45%;
+    padding: 10px 0px;
+}
+  }
+  .picture-slideshow > .button-shop {
+    position: absolute;
+    bottom: 45%;
+    color: white;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    text-align: center;
+    border: 1px solid white;
+    width: 45%;
+    padding: 10px 0px;
+}
+
+.picture-slideshow {
+    position: relative;
+}
+  .section-slideshow-v2 .itemv-slide-h2 .info_slide .box-info .box-content .title-1647226637e0c57345-0 {
+    margin-bottom: 90px;
+}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

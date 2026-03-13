@@ -1,0 +1,290 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "article_template": {
+      "type": "article-template",
+      "disabled": true,
+      "settings": {
+        "blog_layout": "blog_layo_left",
+        "show_author": true,
+        "show_comment": true,
+        "show_cate": true,
+        "show_tag": true,
+        "show_related_post": true,
+        "related_post_title": "Related post",
+        "related_post_select_blog": "news",
+        "related_post_blogs_limit": 5,
+        "enable_widget_search": true,
+        "widget_search_title": "Search",
+        "shop_by_search_placeholder": "Search...",
+        "enable_widget_cate": true,
+        "widget_cate_title": "Categories",
+        "widget_cate_menu": "main-menu",
+        "enable_widget_related": true,
+        "widget_related_title": "RECENT POSTS",
+        "select_blog": "news",
+        "blogs_limit": 4,
+        "enable_widget_tag": true,
+        "shop_by_tag_title": "Tags",
+        "banner_article_url": "https://www.shopify.com/free-trial?ref=shopifycenter",
+        "enable_social_share": true
+      }
+    },
+    "32188728-51b3-4f19-a420-84f078cb8228": {
+      "type": "rich-text-4",
+      "settings": {
+        "custom_class": "about-collection-banner-title page-banner-title",
+        "prefix": "",
+        "section_title": "FESTIVAL SEASON",
+        "section_sub": "",
+        "description": "",
+        "section_url": ""
+      }
+    },
+    "cdaee2a8-d358-4577-8fe9-9de9843a1e92": {
+      "type": "custom-image-with-text",
+      "blocks": {
+        "template--18600182677848__cdaee2a8-d358-4577-8fe9-9de9843a1e92-1682015242266f3219-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>This year, we Blossom towards becoming our best and most inspiring versions. We challenged portuguese stylist, Carolina Canas, to create looks inspired by our shoes, that could be a perfect match to our espadrilles, or our Mary Janes, Sandals, Mocs and Mules! The season's hottest time is here: music festival era!</p>",
+            "text_style": "body"
+          }
+        }
+      },
+      "block_order": [
+        "template--18600182677848__cdaee2a8-d358-4577-8fe9-9de9843a1e92-1682015242266f3219-1"
+      ],
+      "custom_css": [
+        "@media (max-width: 425px) {.grid {display: flex; flex-direction: column; }}",
+        ".image-with-text .grid__item {position: relative; align-self: center;}"
+      ],
+      "settings": {
+        "custom_class": "about-us-content responsibility-section-four",
+        "desktop-image": "shopify://shop_images/BlogStyling-Festival_Season-Desktop-Imagen_1.jpg",
+        "mob-image": "shopify://shop_images/BlogStyling-Festival_Season-Desktop-Imagen_1.jpg",
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "image_first",
+        "desktop_content_position": "top",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "color_scheme": "background-1",
+        "mobile_content_alignment": "left",
+        "padding_top": 12,
+        "padding_bottom": 0
+      }
+    },
+    "ac86e1fa-1121-43b3-90c7-bf1ca4009b0a": {
+      "type": "custom-image-with-text",
+      "blocks": {
+        "139e407d-9b47-4873-bcde-613e5f702443": {
+          "type": "text",
+          "settings": {
+            "text": "<p>When it comes to music festivals, fashion takes center stage alongside the sunny outdoors, everyone's good vibes, and the warm feeling of music flowing through your body. It's the perfect opportunity to unleash your creativity and showcase your unique style. One effective technique to elevate your festival look is by incorporating colors from patterns into your entire outfit, creating a harmonious and visually captivating ensemble.</p>",
+            "text_style": "body"
+          }
+        }
+      },
+      "block_order": [
+        "139e407d-9b47-4873-bcde-613e5f702443"
+      ],
+      "custom_css": [
+        "@media (max-width: 425px) {.grid {display: flex; flex-direction: column; }}",
+        ".image-with-text .grid__item {position: relative; align-self: center;}"
+      ],
+      "settings": {
+        "custom_class": "about-us-content responsibility-section-four",
+        "desktop-image": "shopify://shop_images/BlogStyling-Festival_Season-Desktop-Imagen_2.jpg",
+        "mob-image": "shopify://shop_images/BlogStyling-Festival_Season-Desktop-Imagen_2.jpg",
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "text_first",
+        "desktop_content_position": "top",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "color_scheme": "background-1",
+        "mobile_content_alignment": "left",
+        "padding_top": 0,
+        "padding_bottom": 16
+      }
+    },
+    "4fd3a6a8-8ece-4aea-9857-8c69338c72cc": {
+      "type": "rich-text-4",
+      "custom_css": [
+        ".about-collection-banner-title h2 {text-transform: none;}",
+        ".subtitle {padding: 40px 0 0 0px; background-color: transparent;}",
+        ".rich-text-4 {margin-bottom: 0px;}"
+      ],
+      "settings": {
+        "custom_class": "about-collection-banner-title subtitle",
+        "prefix": "",
+        "section_title": "Simão's looks include",
+        "section_sub": "",
+        "description": "",
+        "section_url": ""
+      }
+    },
+    "158dd584-5242-4a95-b84f-126f32fa0d01": {
+      "type": "section-product-v8",
+      "blocks": {
+        "template--19055609512280__158dd584-5242-4a95-b84f-126f32fa0d01-1685728179a9f379bc-0": {
+          "type": "tab",
+          "settings": {
+            "tab_title": "For him",
+            "tab_collection": "simaos-looks-him-x-festival-season",
+            "tab_limit": 4
+          }
+        },
+        "template--19055609512280__158dd584-5242-4a95-b84f-126f32fa0d01-1685728179a9f379bc-1": {
+          "type": "tab",
+          "settings": {
+            "tab_title": "For her",
+            "tab_collection": "simaos-looks-her-x-festival-season",
+            "tab_limit": 4
+          }
+        }
+      },
+      "block_order": [
+        "template--19055609512280__158dd584-5242-4a95-b84f-126f32fa0d01-1685728179a9f379bc-0",
+        "template--19055609512280__158dd584-5242-4a95-b84f-126f32fa0d01-1685728179a9f379bc-1"
+      ],
+      "custom_css": [
+        "li a {font-size: 20px !important; text-transform: uppercase !important; color: #000000 !important; font-family: \"Helvetica\" !important;}",
+        "a.active {border-bottom: 1px solid #000000 !important;}",
+        ".mt-all {margin-top: 10px;}",
+        ".slick-slider {display: flex; justify-content: center; margin: 0px;}",
+        ".slick-list {padding-right: 0px;}",
+        "@media (min-width: 960px) {.slick-track {width: 1000px !important; display: flex; justify-content: center; }}",
+        ".nav-tabs {padding-top: 0px !important;}"
+      ],
+      "settings": {
+        "custom_class": "",
+        "margin_top": "",
+        "margin_bottom": "",
+        "title_heading": "",
+        "color_title": "#222222",
+        "enable_slider": true
+      }
+    },
+    "4c0a3059-b4d6-4cde-b451-54d3ba8f6bc3": {
+      "type": "rich-text-4",
+      "custom_css": [
+        ".store-wrapper-beige {background-color: transparent; padding: 0px;}",
+        "@media (max-width: 600px) {.container-v1 {margin-top: 0px; }}",
+        "@media (max-width: 600px) {.store-wrapper-beige p {font-size: 12px; line-height: 20px !important; padding: 0px 10px; }}"
+      ],
+      "settings": {
+        "custom_class": "store-wrapper-beige",
+        "prefix": "",
+        "section_title": "",
+        "section_sub": "",
+        "description": "<p>Imagine rocking a vibrant patterned top with hints of yellow. To truly make that color pop and infuse a cohesive energy, we have the perfect suggestion: Paz's colourful sandals. Here, the Sandal Crossed Yellow. These stylish and comfortable sandals not only add a touch of charm to your feet but also bring out the vibrant colours from the Camille Studios top, creating a striking connection throughout your entire look.</p>",
+        "section_url": ""
+      }
+    },
+    "5b4cc49a-0c69-4cc1-9a97-0875001ca156": {
+      "type": "rich-text-4",
+      "custom_css": [
+        ".about-collection-banner-title h2 {text-transform: none;}",
+        ".subtitle {padding: 40px 0 0 0px; background-color: transparent;}",
+        ".rich-text-4 {margin-bottom: 0px;}"
+      ],
+      "settings": {
+        "custom_class": "about-collection-banner-title subtitle",
+        "prefix": "",
+        "section_title": "Lohenete's looks include",
+        "section_sub": "",
+        "description": "",
+        "section_url": ""
+      }
+    },
+    "cfd53b02-632b-4210-b300-f415231a7320": {
+      "type": "section-product-v2",
+      "blocks": {
+        "template--19055609512280__cfd53b02-632b-4210-b300-f415231a7320-1685728378b5cc4d1a-1": {
+          "type": "tab",
+          "settings": {
+            "tab_title": "for her",
+            "tab_collection": "lohenetes-looks-her-x-festival-season",
+            "tab_limit": 4
+          }
+        }
+      },
+      "block_order": [
+        "template--19055609512280__cfd53b02-632b-4210-b300-f415231a7320-1685728378b5cc4d1a-1"
+      ],
+      "custom_css": [
+        "li a {font-size: 20px !important; text-transform: uppercase !important; color: #000000 !important; font-family: \"Helvetica\" !important;}",
+        "a.active {border-bottom: 1px solid #000000 !important;}",
+        ".mt-all {margin-top: 10px;}",
+        ".slick-slider {display: flex; justify-content: center; margin: 0px;}",
+        ".slick-list {padding-right: 0px;}",
+        "@media (min-width: 960px) {.slick-track {width: 1000px !important; display: flex; justify-content: center; }}",
+        ".nav-tabs {padding-top: 0px !important;}"
+      ],
+      "settings": {
+        "custom_class": "",
+        "margin_top": "",
+        "margin_bottom": "",
+        "title_heading": "",
+        "color_title": "#222222",
+        "enable_slider": true
+      }
+    },
+    "9da5b0ff-0208-4d48-865c-1a2da8ae3887": {
+      "type": "custom-image-with-text",
+      "blocks": {
+        "5e3ca7a5-8ee0-44ab-a648-464eddc3bc4b": {
+          "type": "text",
+          "settings": {
+            "text": "<p>By consciously choosing accessories or footwear that echo the colours found in your patterned piece, you create a sense of unity and depth in your outfit. Even if the colour appears in small doses within the pattern, pairing it with Paez in impactful colours allows that shade to shine and take center stage, amplifying its impact on your overall look. This thoughtful approach adds layers of dimension and enhances the overall stylishness of your festival ensemble.</p>",
+            "text_style": "body"
+          }
+        }
+      },
+      "block_order": [
+        "5e3ca7a5-8ee0-44ab-a648-464eddc3bc4b"
+      ],
+      "custom_css": [
+        "@media (max-width: 425px) {.grid {display: flex; flex-direction: column; }}",
+        ".image-with-text .grid__item {position: relative; align-self: center;}"
+      ],
+      "settings": {
+        "custom_class": "about-us-content responsibility-section-four",
+        "desktop-image": "shopify://shop_images/BlogStyling-Festival_Season-Desktop-Imagen_3.jpg",
+        "mob-image": "shopify://shop_images/BlogStyling-Festival_Season-Desktop-Imagen_3.jpg",
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "image_first",
+        "desktop_content_position": "top",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "color_scheme": "background-1",
+        "mobile_content_alignment": "left",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    }
+  },
+  "order": [
+    "article_template",
+    "32188728-51b3-4f19-a420-84f078cb8228",
+    "cdaee2a8-d358-4577-8fe9-9de9843a1e92",
+    "ac86e1fa-1121-43b3-90c7-bf1ca4009b0a",
+    "4fd3a6a8-8ece-4aea-9857-8c69338c72cc",
+    "158dd584-5242-4a95-b84f-126f32fa0d01",
+    "4c0a3059-b4d6-4cde-b451-54d3ba8f6bc3",
+    "5b4cc49a-0c69-4cc1-9a97-0875001ca156",
+    "cfd53b02-632b-4210-b300-f415231a7320",
+    "9da5b0ff-0208-4d48-865c-1a2da8ae3887"
+  ]
+}

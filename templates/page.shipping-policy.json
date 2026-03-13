@@ -1,0 +1,128 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {}
+    },
+    "rich_text_4_zLcXaG": {
+      "type": "rich-text-4",
+      "custom_css": [
+        ".about-collection-banner-title {padding-top: 40px; padding-bottom: 20px;}"
+      ],
+      "settings": {
+        "custom_class": "about-collection-banner-title page-banner-title",
+        "prefix": "",
+        "section_title": "Shipping Policy",
+        "section_sub": "",
+        "description": "",
+        "section_url": ""
+      }
+    },
+    "68458900-fab1-4f8d-b3e8-77289dabfd48": {
+      "type": "rich-text-4",
+      "custom_css": [
+        ".store-wrapper-beige {background-color: transparent;}",
+        "@media (max-width: 600px) {.container-v1 {margin-top: 0px; } .store-wrapper-beige p {font-size: 12px; line-height: 1.4; }}",
+        ".store-wrapper-beige p {padding: 10px 20px;}"
+      ],
+      "settings": {
+        "custom_class": "store-wrapper-beige",
+        "prefix": "",
+        "section_title": "",
+        "section_sub": "",
+        "description": "<p>During the pre-order period, sales, discounts, and/or promotions, shipping times may be extended due to high demand. If you have any questions, please contact our customer service at: <a href=\"mailto:onlineshop@paez.com\" target=\"_blank\"><strong>onlineshop@paez.com</strong></a></p>",
+        "section_url": ""
+      }
+    },
+    "bd3a68a6-9648-4cb1-9409-940571fbd58d": {
+      "type": "custom-content",
+      "disabled": true,
+      "custom_css": [
+        "th {background-color: #f2f2f2;}",
+        "th,td {padding: 8px; text-align: center; border-bottom: 1px solid #ddd;}",
+        ".Shipping_policy {padding-left: 20px; padding-right: 20px; font-family: \"Helvetica\";}",
+        ".Shipping_policy p {font-weight: bold;}"
+      ],
+      "settings": {
+        "css_class": "Shipping_policy",
+        "custom_content": "<h4>Portugal, Spain</h4>\n<table>\n  <tbody>\n    <tr>\n      <th>Weight</th>\n      <th>Price</th>\n      <th>\n        Days</th>\n    </tr>\n    <tr>\n      <td>Up to 10 Kg</td>\n      <td>3,00 €</td>\n      <td>1-4 business days</td>\n    </tr>\n  </tbody>\n</table>\n<p></p>\n<h4>Germany</h4>\n<table>\n  <tbody>\n    <tr>\n      <th>Weight</th>\n      <th>Price</th>\n      <th>\n        Days</th>\n    </tr>\n    <tr>\n      <td>1 Kg</td>\n      <td>5,00 €</td>\n      <td>2-5 business days</td>\n    </tr>\n    <tr>\n      <td>Up to 3 Kg</td>\n      <td>6,50 €</td>\n      <td>2-5 business days</td>\n    </tr>\n    <tr>\n      <td>Up to 5 Kg</td>\n      <td>8,50 €</td>\n      <td>2-5 business days</td>\n    </tr>\n    <tr>\n      <td>Up to 10 Kg</td>\n      <td>12,00 €</td>\n      <td>2-5 business days</td>\n    </tr>\n  </tbody>\n</table>\n<p></p>\n<h4>Austria, Belgium, Czech Republic, Denmark, Estonia, France, Hungary, Ireland, Italy, Letonia, Lituania, Luxembourg, Monaco, Netherlands, Poland, Slovenia, Sweden, Switzerland</h4>\n<table>\n  <tbody>\n    <tr>\n      <th>Weight</th>\n      <th>Price</th>\n      <th>\n        Days</th>\n    </tr>\n    <tr>\n      <td>1 Kg</td>\n      <td>7,50 €</td>\n      <td>2-5 business days</td>\n    </tr>\n    <tr>\n      <td>Up to 3 Kg</td>\n      <td>9,50 €</td>\n      <td>2-5 business days</td>\n    </tr>\n    <tr>\n      <td>Up to 5 Kg</td>\n      <td>12,50 €</td>\n      <td>2-5 business days</td>\n    </tr>\n    <tr>\n      <td>Up to 10 Kg</td>\n      <td>15,00 €</td>\n      <td>2-5 business days</td>\n    </tr>\n  </tbody>\n</table>\n<p>Switzerland has a freight cost of 15.50€ (does not include customs clearance fees)</p>\n<p></p>\n<h4>Bulgary, Bosnia and Herzegovina, Croatia, Finland, Greece, Norway, Romania, Serbia</h4>\n<table>\n  <tbody>\n    <tr>\n      <th>Weight</th>\n      <th>Price</th>\n      <th>\n        Days</th>\n    </tr>\n    <tr>\n      <td>1 Kg</td>\n      <td>9,00 €</td>\n      <td>2-5 business days</td>\n    </tr>\n    <tr>\n      <td>Up to 3 Kg</td>\n      <td>12,00 €</td>\n      <td>2-5 business days</td>\n    </tr>\n    <tr>\n      <td>Up to 5 Kg</td>\n      <td>16,00 €</td>\n      <td>2-5 business days</td>\n    </tr>\n    <tr>\n      <td>Up to 10 Kg</td>\n      <td>19,00 €</td>\n      <td>2-5 business days</td>\n    </tr>\n  </tbody>\n</table>\n<p>Norway has a freight cost of 12.00€ (does not include customs clearance fees)</p>\n<p>Bosnia and Hezergova has a freight cost of 13€ (does not include customs clearance fees)</p>\n<p>Serbia has a freight cost of 13€ (does not include customs clearance fees)</p>\n<p></p>\n<h4>Spanish islands - Balearic Islands, Canary Islands, Ceuta and Melilla</h4>\n<table>\n  <tbody>\n    <tr>\n      <th>Weight</th>\n      <th>Balearic Islands</th>\n      <th>Canary Islands</th>\n      <th>Ceuta and Melilla</th>\n      <th>\n        Days</th>\n    </tr>\n    <tr>\n      <td>Up to 1 Kg</td>\n      <td>7,00 €</td>\n      <td>10,00 €</td>\n      <td>10,00 €</td>\n      <td>3 to 4 business days</td>\n    </tr>\n    <tr>\n      <td>Up to 3 Kg</td>\n      <td>8,50 €</td>\n      <td>15,00 €</td>\n      <td>13,00 €</td>\n      <td>3 to 4 business days</td>\n    </tr>\n    <tr>\n      <td>Up to 5 Kg</td>\n      <td>10,00 €</td>\n      <td>20,00 €</td>\n      <td>15,00 €</td>\n      <td>3 to 4 business days</td>\n    </tr>\n    <tr>\n      <td>Up to 10 Kg</td>\n      <td>13,00 €</td>\n      <td>43,00 €</td>\n      <td>23,00 €</td>\n      <td>3 to 4 business days</td>\n    </tr>\n  </tbody>\n</table>\n<p>Commercial shipments <=15kg and with amount <=150,25€. Dispatch at destination: 13,99€.</p>\n<p>Commercial shipments >15kg and value > 150,25€. Dispatch at origin: 17,37€. Dispatch at destination: 26,31€.</p>\n<p>Ceuta/Melilla: Dispatch origin: 17,37€. Dispatch at destination: 26,31€.</p>"
+      }
+    },
+    "faq_template_Exf4ee": {
+      "type": "FAQ-template",
+      "blocks": {
+        "faq_left_7HMTfA": {
+          "type": "faq_left",
+          "settings": {
+            "block_title_question": "Portugal & Spain",
+            "block_description_question": "<table border=\"1\" width=\"100%\">\n  <tr>\n    <th colspan=\"2\">Peninsular Portugal</th>\n  </tr>\n  <tr>\n    <td>All weights</td>\n    <td>4,00 €</td>\n  </tr>\n\n  <tr>\n    <th colspan=\"2\">Portugal Islands (Açores & Madeira)</th>\n  </tr>\n  <tr>\n    <td>All weights</td>\n    <td>6,00 €</td>\n  </tr>\n\n  <tr>\n    <th colspan=\"2\">Peninsular Spain</th>\n  </tr>\n  <tr>\n    <td>All weights</td>\n    <td>4,00 €</td>\n  </tr>\n\n  <tr>\n    <th colspan=\"2\">Spain - Balearic Islands</th>\n  </tr>\n  <tr>\n    <td>0–1 kg</td>\n    <td>7,00 €</td>\n  </tr>\n  <tr>\n    <td>1–3 kg</td>\n    <td>8,50 €</td>\n  </tr>\n  <tr>\n    <td>3–5 kg</td>\n    <td>10,00 €</td>\n  </tr>\n  <tr>\n    <td>5–10 kg</td>\n    <td>13,00 €</td>\n  </tr>\n  <tr>\n    <td>+10 kg</td>\n    <td>13,00 €</td>\n  </tr>\n\n  <tr>\n    <th colspan=\"2\">Spain - Ceuta</th>\n  </tr>\n  <tr>\n    <td>0–1 kg</td>\n    <td>10,00 €</td>\n  </tr>\n  <tr>\n    <td>1–3 kg</td>\n    <td>13,00 €</td>\n  </tr>\n  <tr>\n    <td>3–5 kg</td>\n    <td>15,00 €</td>\n  </tr>\n  <tr>\n    <td>5–10 kg</td>\n    <td>23,00 €</td>\n  </tr>\n  <tr>\n    <td>+10 kg</td>\n    <td>23,00 €</td>\n  </tr>\n\n  <tr>\n    <th colspan=\"2\">Spain - Melilla</th>\n  </tr>\n  <tr>\n    <td>0–1 kg</td>\n    <td>10,00 €</td>\n  </tr>\n  <tr>\n    <td>1–3 kg</td>\n    <td>13,00 €</td>\n  </tr>\n  <tr>\n    <td>3–5 kg</td>\n    <td>15,00 €</td>\n  </tr>\n  <tr>\n    <td>5–10 kg</td>\n    <td>23,00 €</td>\n  </tr>\n  <tr>\n    <td>+10 kg</td>\n    <td>23,00 €</td>\n  </tr>\n</table>"
+          }
+        },
+        "faq_left_n9FeVW": {
+          "type": "faq_left",
+          "settings": {
+            "block_title_question": "France",
+            "block_description_question": "<table border=\"1\">\n  <thead>\n    <tr>\n      <th>Country</th>\n      <th>0–3 kg</th>\n      <th>+3 kg</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>\n        France\n      </td>\n         <td>7,50€</td>\n      <td>9,50€</td>\n    </tr>\n\n  </tbody>\n</table>"
+          }
+        },
+        "faq_left_YeXyRw": {
+          "type": "faq_left",
+          "settings": {
+            "block_title_question": "Z1 Europe",
+            "block_description_question": "<table border=\"1\">\n  <thead>\n    <tr>\n      <th>Country</th>\n      <th>0–3 kg</th>\n      <th>+3 kg</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>\n        Austria, Denmark, Ireland, Italy, Monaco, Poland, Sweden, Belgium,\n        Czech Republic, Estonia, Hungary, Lithuania, Luxembourg, Netherlands,\n        Slovenia, Switzerland\n      </td>\n         <td>13,00€</td>\n      <td>15,00€</td>\n    </tr>\n\n  </tbody>\n</table>"
+          }
+        },
+        "faq_left_Tygjyc": {
+          "type": "faq_left",
+          "settings": {
+            "block_title_question": "z2 europe",
+            "block_description_question": "<table border=\"1\">\n  <thead>\n    <tr>\n      <th>Country</th>\n      <th>0–3 kg</th>\n      <th>+3 kg</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>\n        Bosnia and Herzegovina, Bulgaria, Croatia, Finland, Greece, Norway, Serbia,\n        Romania, Cyprus, Malta, Slovakia, Ukraine\n      </td>\n       <td>18,50 €</td>\n      <td>21,50 €</td>\n    </tr>\n  </tbody>\n</table>"
+          }
+        },
+        "faq_left_AB69d4": {
+          "type": "faq_left",
+          "settings": {
+            "block_title_question": "z3 europe",
+            "block_description_question": "<table border=\"1\">\n  <thead>\n    <tr>\n      <th>Country</th>\n      <th>Price</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>\n        Germany, Italy\n      </td>\n       <td>8,50 €</td>\n    </tr>\n  </tbody>\n</table>"
+          }
+        }
+      },
+      "block_order": [
+        "faq_left_7HMTfA",
+        "faq_left_n9FeVW",
+        "faq_left_YeXyRw",
+        "faq_left_Tygjyc",
+        "faq_left_AB69d4"
+      ],
+      "settings": {
+        "enable_slide": false,
+        "enable_asked": true,
+        "title_asked": "#Frequently asked questions",
+        "description_asked": "I am text block. Click edit button to change this text. Lorem ipsum dolor sit amet,consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.",
+        "enable_newsletter": false,
+        "section_title": "Never miss our updates about new arrivals and special offers",
+        "section_description": "Get the latest news & updates",
+        "newsletter_placeholder_input": "EMAIL ADDRESS",
+        "iconmail": "ti-email",
+        "button_name": "SUBCRIBE NOW"
+      }
+    }
+  },
+  "order": [
+    "main",
+    "rich_text_4_zLcXaG",
+    "68458900-fab1-4f8d-b3e8-77289dabfd48",
+    "bd3a68a6-9648-4cb1-9409-940571fbd58d",
+    "faq_template_Exf4ee"
+  ]
+}

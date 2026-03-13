@@ -1,186 +1,299 @@
-<div class="w-full bg-black" style="width: 100vw; margin-left: calc(50% - 50vw);">
-  <div class="h-10 flex items-center justify-center">
-    <p class="text-white">{{ section.settings.newsletter }}</p>
-  </div>
-</div>
-
-<header class="full-bleed-header absolute left-0 top-10 h-20 md:text-black text-white px-10 bg-transparent 
-  grid grid-cols-3 items-center z-50 hover:bg-white transition-colors duration-300">
-
-  <!-- MOBILE HAMBURGER -->
-  <div class="flex items-center md:hidden gap-3">
-    <button 
-        type="button" 
-        class="mobile-menu-toggle w-7 flex flex-col justify-center items-center"
-        aria-label="Toggle menu"
-        onclick="toggleMobileMenu()">
-        {%- render 'icon-hamburger' %}
-      </button>
-
-    <div class="w-5">
-      <a href="/">
-        {% render 'search' %}
-      </a>
-    </div>
-  </div>
-  
-
-  <!-- DESKTOP MENU -->
-  <div class="hidden md:flex header__menu justify-start gap-6">
-    {% for link in section.settings.menu.links %}
-      <div class="text-lg font-normal hover:opacity-30 transition-opacity">
-        {{ link.title | link_to: link.url }}
-      </div>
-    {% endfor %}
-  </div>
-
-  <!-- LOGO / TEXTO DEL CENTRO -->
-  <div class="text-center text-2xl md:text-3xl font-semibold uppercase tracking-widest">
-    <a href="/">
-      {% if section.settings.logo_header and section.settings.logo_header_mobile %}
-        <div class="md:flex hidden justify-center items-center">
-          <img src="{{ section.settings.logo_header | img_url: 'master' }}"
-             width="{{ section.settings.logo_header.width }}"
-             height="{{ section.settings.logo_header.height }}"
-             alt="{{ shop.name }}"
-            class="w-25 h-auto object-contain">
-        </div>
-        <div class="flex md:hidden flex-col justify-center items-center">
-          <img src="{{ section.settings.logo_header_mobile | img_url: 'master' }}"
-             width="{{ section.settings.logo_header_mobile.width }}"
-             height="{{ section.settings.logo_header_mobile.height }}"
-             alt="{{ shop.name }}"
-            class="w-16 h-auto object-contain">
-          <span class="text-xs tracking-widest uppercase mt-1">Designed in Lisbon</span>
-        </div>
-          
-      {% elsif section.settings.header_title != blank %}
-        {{ section.settings.header_title }}
-      {% else %}
-        {{ shop.name | link_to: routes.root_url }}
-      {% endif %}
-    </a>
-  </div>
-  
-
-  <!-- ICONS -->
-  <div class="flex justify-end gap-4">
-    <div class="w-5 pt-0.5 md:flex hidden hover:opacity-30 transition-opacity">
-      <a href="/">
-        {% render 'search' %}
-      </a>
-    </div>
-    {% if shop.customer_accounts_enabled %}
-      <div class="w-6 hover:opacity-30 transition-opacity">
-        {{ 'icon-account.svg' | inline_asset_content | link_to: routes.account_url }}
-      </div>
-    {% endif %}
-
-    <div class="w-6 hover:opacity-30 transition-opacity">
-      <a href="{{ routes.cart_url }}">
-        {{ 'icon-cart.svg' | inline_asset_content }}
-      </a>
-    </div>
-  </div>
-
-  {% comment %} menu que se muestra en mobile {% endcomment %}
-  <div id="mobile-menu" class="md:hidden hidden fixed top-0 left-0 w-full h-screen bg-black z-50 px-8 overflow-y-hidden">
-
-    <button
-      type="button"
-      aria-label="Close menu"
-      onclick="toggleMobileMenu()"
-      class="absolute top-10 right-10 w-10 h-10 flex items-center justify-center text-white text-3xl cursor-pointer hover:opacity-70 transition"
-    >
-      ✕
-    </button>
-
-    <nav class="flex flex-col space-y-4 justify-center items-center h-full pt-24">
-      {% for link in section.settings.menu.links %}
-        
-        <a href="{{ link.url }}"
-          class="text-2xl tracking-wider text-white hover:text-gray-300 transition-colors duration-200 uppercase text-center py-2"
-          onclick="toggleMobileMenu()"
-        >
-          {{ link.title }}
-        </a>
-      {% endfor %}
-    </nav>
-  </div>
-  
-</header>
-
-<script>
-  function toggleMobileMenu() {
-    const menu = document.getElementById('mobile-menu');
-    menu.classList.toggle('hidden');
-  }
-</script>
-
-<style>
-  html, body {
-    overflow-x: hidden;
-    max-width: 100%;
-  }
-
-  .full-bleed-header {
-    position: absolute;
-    left: 0;
-    right: 0;
-    width: 100%;
-    max-width: none;
-  }
-
-  .shopify-section > .full-bleed-header {
-    grid-column: 1 / -1;
-    position: absolute;
-    left: 0;
-    right: 0;
-    width: 100vw;
-    margin-left: calc(50% - 50vw);
-    margin-right: calc(50% - 50vw);
-  }
-
-  
-</style>
+<!-- /sections/header.liquid -->
+{% if template contains 'index' %}
+  {% if section.settings.select_hds == "header_v1" %}
+  {% include 'header-v1' %}
+  {% elsif section.settings.select_hds == "header_v2" %}
+  {% include 'header-v2' %}
+  {% elsif section.settings.select_hds == "header_v3" %}
+  {% include 'header-v3' %}
+  {% elsif section.settings.select_hds == "header_v4" %}
+  {% include 'header-v4' %}
+  {% elsif section.settings.select_hds == "header_v5" %}
+  {% include 'header-v5' %}
+  {% elsif section.settings.select_hds == "header_v6" %}
+  {% include 'header-v6' %}
+  {% endif %}
+{% else %}
+  {% if section.settings.select_hds_all == "header_ver1" %}
+  {% include 'header-v1' %}
+  {% elsif section.settings.select_hds_all == "header_ver2" %}
+  {% include 'header-v2' %}
+  {% elsif section.settings.select_hds_all == "header_ver3" %}
+  {% include 'header-v3' %}
+  {% elsif section.settings.select_hds_all == "header_ver4" %}
+  {% include 'header-v4' %}
+  {% elsif section.settings.select_hds_all == "header_ver5" %}
+  {% include 'header-v5' %}
+  {% elsif section.settings.select_hds_all == "header_ver6" %}
+  {% include 'header-v6' %}
+  {% endif %}
+{% endif %}
 
 {% schema %}
 {
-  "name": "t:general.header",
+  "name": "Header",
+  "class": "index-section",
   "settings": [
     {
+      "type": "header",
+      "content": "Header Homepage"
+    },
+    {
+      "type": "select",
+      "id": "select_hds",
+      "label": "Select Style",
+      "options": [
+        {
+          "value": "header_v1",
+          "label": "Header v1"
+        },
+        {
+          "value": "header_v2",
+          "label": "Header v2"
+        },
+        {
+          "value": "header_v3",
+          "label": "Header v3"
+        },
+        {
+          "value": "header_v4",
+          "label": "Header v4"
+        },
+        {
+          "value": "header_v5",
+          "label": "Header v5"
+        },
+        {
+          "value": "header_v6",
+          "label": "Header v6"
+        }
+      ],
+      "default": "header_v1"
+    },
+    {
+      "type": "color",
+      "id": "hd_home_color_text",
+      "label": "Texts, Icons Color",
+      "default": "#fff"
+    },
+    {
+      "type": "checkbox",
+      "id": "hd_home_enable_transparents",
+      "label": "Enable Transparent",
+      "default": true
+    },
+    {
+      "type": "color",
+      "id": "hd_home_bg_header_normal",
+      "label": "Background Color"
+    },
+    {
+      "type": "range",
+      "id": "hd_bg_header_opacity",
+      "min": 0.1,
+      "max": 1,
+      "step": 0.1,
+      "label": "Opacity Background",
+      "default": 1
+    },
+    {
+      "type": "checkbox",
+      "id": "enable_sticky_hd_home",
+      "label": "Enable Sticky",
+      "default": true
+    },
+    {
+      "type": "image_picker",
+      "id": "hd_home_logo",
+      "label": "Logo Image",
+      "info": "140 x 46px .png recommended"
+    },
+    {
+      "type": "range",
+      "id": "hd_home_logo_maxwidth",
+      "min": 35,
+      "max": 300,
+      "step": 5,
+      "unit": "px",
+      "label": "Logo Display Width",
+      "default": 140
+    },
+    {
+      "type": "textarea",
+      "id": "hd_home_logo_svg",
+      "label": "Logo Svg"
+    },
+    {
+      "type": "header",
+      "content": "Header Other Pages"
+    },
+    {
+      "type": "select",
+      "id": "select_hds_all",
+      "label": "Select Style",
+      "options": [
+        {
+          "value": "header_ver1",
+          "label": "Header v1"
+        },
+        {
+          "value": "header_ver2",
+          "label": "Header v2"
+        },
+        {
+          "value": "header_ver3",
+          "label": "Header v3"
+        },
+        {
+          "value": "header_ver4",
+          "label": "Header v4"
+        },
+        {
+          "value": "header_ver5",
+          "label": "Header v5"
+        },
+        {
+          "value": "header_ver6",
+          "label": "Header v6"
+        }
+      ],
+      "default": "header_ver1"
+    },
+    {
+      "type": "color",
+      "id": "hd_other_color_text",
+      "label": "Texts, Icons Color",
+      "default": "#fff"
+    },
+    {
+      "type": "checkbox",
+      "id": "hd_other_enable_transparents",
+      "label": "Enable Transparents",
+      "default": true
+    },
+    {
+      "type": "color",
+      "id": "hd_other_bg_header_normal",
+      "label": "Background Color"
+    },
+    {
+      "type": "range",
+      "id": "hd_other_bg_header_opacity",
+      "min": 0.1,
+      "max": 1,
+      "step": 0.1,
+      "label": "Opacity Background",
+      "default": 1
+    },
+    {
+      "type": "checkbox",
+      "id": "enable_sticky_hd_other",
+      "label": "Enable Sticky",
+      "default": true
+    },
+    {
+      "type": "image_picker",
+      "id": "hd_other_logo",
+      "label": "Logo Image",
+      "info": "140 x 46px .png recommended"
+    },
+    {
+      "type": "range",
+      "id": "hd_other_logo_maxwidth",
+      "min": 35,
+      "max": 300,
+      "step": 5,
+      "unit": "px",
+      "label": "Logo Display Width",
+      "default": 140
+    },
+    {
+      "type": "textarea",
+      "id": "hd_other_logo_svg",
+      "label": "Logo Svg"
+    },
+    {
+      "type": "header",
+      "content": "Select Menu"
+    },
+    {
       "type": "link_list",
-      "id": "menu",
-      "label": "t:labels.menu"
+      "id": "main_menu_store",
+      "label": "Main Menu"
     },
-    {
-      "type": "text",
-      "id": "newsletter",
-      "label": "newsletter title", 
-      "default": "Welcome to our store"
+	{
+      "type": "header",
+      "content": "Icon Header"
     },
-    {
-      "type": "text",
-      "id": "header_title",
-      "label": "Header title",
-      "default": "Paez"
-    },
-    {
-      "type": "image_picker",
-      "id": "logo_header",
-      "label": "Header logo"
-    },
-    {
-      "type": "image_picker",
-      "id": "logo_header_mobile",
-      "label": "Header logo Mobile"
-    }
-  ],
-  "presets": [
-    {
-      "name": "t:general.header",
-      "category": "header"
-    }
+	{
+        "type": "header",
+        "content": "Icon search"
+      },
+      {
+        "type": "text",
+        "id": "hd_icon_search",
+        "label": "Icon search",
+        "info": "[Get icon from here](https:\/\/fontawesome.com\/v4.7.0\/icons\/)",
+        "default": "fa fa-search"
+      },
+      {
+        "type": "textarea",
+        "id": "hd_icon_search_svg",
+        "label": "Icon search SVG"
+      },
+      {
+        "type": "header",
+        "content": "Icon Wishlist"
+      },
+      {
+        "type": "text",
+        "id": "hd_icon_wishlist",
+        "label": "Icon Wishlist",
+        "info": "[Get icon from here](https:\/\/fontawesome.com\/v4.7.0\/icons\/)",
+        "default": "icon-heart"
+      },
+      {
+        "type": "textarea",
+        "id": "hd_icon_wishlist_svg",
+        "label": "Icon wishlist SVG"
+      },
+      {
+        "type": "url",
+        "id": "url_wishlist",
+        "label": "Url Wishlist"
+      },
+      {
+        "type": "header",
+        "content": "Icon login"
+      },
+      {
+        "type": "text",
+        "id": "hd_icon_login",
+        "label": "Icon login",
+        "info": "[Get icon from here](https:\/\/fontawesome.com\/v4.7.0\/icons\/)",
+        "default": "icon-icon-user"
+      },
+      {
+        "type": "textarea",
+        "id": "hd_icon_login_svg",
+        "label": "Icon login SVG"
+      },
+      {
+        "type": "header",
+        "content": "Icon cart"
+      },
+      {
+        "type": "text",
+        "id": "hd_icon_cart",
+        "label": "Icon cart",
+        "info": "[Get icon from here](https:\/\/fontawesome.com\/v4.7.0\/icons\/)",
+        "default": "icon-icon-cart"
+      },
+      {
+        "type": "textarea",
+        "id": "hd_icon_cart_svg",
+        "label": "Icon cart SVG"
+      }
   ]
 }
 {% endschema %}

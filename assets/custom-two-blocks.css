@@ -1,0 +1,20 @@
+.section-blocks .container{
+  max-width:100%;
+  padding: 0;
+}
+.section-blocks .desktop-banner{
+  display:block;
+}
+.section-blocks .mobile-banner{
+  display:none;
+}
+
+
+@media(max-width: 1085px){
+  .section-blocks .desktop-banner{
+    display:none;
+  }
+  .section-blocks .mobile-banner{
+    display:block;
+  }
+}

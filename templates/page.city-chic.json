@@ -1,0 +1,357 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {}
+    },
+    "4cd285cd-a46e-45f6-a646-b98f002e9a1b": {
+      "type": "rich-text-4",
+      "settings": {
+        "custom_class": "about-collection-banner-title page-banner-title",
+        "prefix": "",
+        "section_title": "City chic",
+        "section_sub": "",
+        "description": "",
+        "section_url": ""
+      }
+    },
+    "248fabed-6a2d-4830-843e-7fcf037386b1": {
+      "type": "rich-text-4",
+      "custom_css": [
+        ".store-wrapper-beige {background-color: transparent; padding: 10px;}",
+        "@media (max-width: 600px) {.container-v1 {margin-top: 0px; }}",
+        "@media (max-width: 600px) {.store-wrapper-beige p {font-size: 14px; line-height: 20px !important; padding: 10px 20px 0px; }}"
+      ],
+      "settings": {
+        "custom_class": "store-wrapper-beige",
+        "prefix": "",
+        "section_title": "",
+        "section_sub": "",
+        "description": "<p>Here at Paez, we love the fresh start that a spring/summer season provides because we're all about new beginnings. This year, we Blossom towards becoming our best and most inspiring versions. We challenged portuguese stylist, Carolina Canas, to create looks inspired by our shoes, that could be a perfect match to our espadrilles, or our Mary Janes, Sandals, Mocs and Mules!</p>",
+        "section_url": ""
+      }
+    },
+    "ca8accc2-73bb-45d9-855c-72fc33e95758": {
+      "type": "rich-text-4",
+      "custom_css": [
+        ".store-wrapper-beige {background-color: transparent; padding: 10px 10px 40px;}",
+        "@media (max-width: 600px) {.container-v1 {margin-top: 0px; }}",
+        "@media (max-width: 600px) {.store-wrapper-beige p {font-size: 14px; line-height: 20px !important; padding: 0px 20px 10px; }}"
+      ],
+      "settings": {
+        "custom_class": "store-wrapper-beige",
+        "prefix": "",
+        "section_title": "",
+        "section_sub": "",
+        "description": "<p>Today we wanted to take a jab at city chic looks. Looks that are easy to wear, that you can have fun exploring, and that you can wear all day long, wherever you want.</p>",
+        "section_url": ""
+      }
+    },
+    "7abbacd2-0a23-4678-b6c5-7e466e2c9483": {
+      "type": "custom-image-with-text",
+      "blocks": {
+        "template--18940872589656__7abbacd2-0a23-4678-b6c5-7e466e2c9483-1683817316951370c5-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Creating a captivating and stylish mix and match ensemble requires a touch of creativity and an eye for coordination. It's an art to seamlessly blend patterns and colors while maintaining a cohesive look. Let's explore some effective tips to elevate your fashion game.</p>",
+            "text_style": "body"
+          }
+        }
+      },
+      "block_order": [
+        "template--18940872589656__7abbacd2-0a23-4678-b6c5-7e466e2c9483-1683817316951370c5-1"
+      ],
+      "custom_css": [
+        "@media (max-width: 425px) {.grid {display: flex; flex-direction: column; }}",
+        ".image-with-text .grid__item {position: relative; align-self: center;}"
+      ],
+      "settings": {
+        "custom_class": "about-us-content responsibility-section-four",
+        "desktop-image": "shopify://shop_images/BlogStyling-City_Chic-Desktop-Imagen_1.jpg",
+        "mob-image": "shopify://shop_images/BlogStyling-City_Chic-Desktop-Imagen_1.jpg",
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "image_first",
+        "desktop_content_position": "top",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "color_scheme": "background-1",
+        "mobile_content_alignment": "left",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "6eadc789-4d15-4f6f-b5ae-23dfe933857c": {
+      "type": "custom-image-with-text",
+      "blocks": {
+        "template--18940872589656__6eadc789-4d15-4f6f-b5ae-23dfe933857c-1683817316951370c5-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>To achieve a harmonious mix of patterns, consider overlapping prints with varying scales. Pair a small-scale pattern with a bold, larger-scale design for an eye-catching combination. This technique adds depth and visual interest to your outfit (like lohente's looks).</p>",
+            "text_style": "body"
+          }
+        }
+      },
+      "block_order": [
+        "template--18940872589656__6eadc789-4d15-4f6f-b5ae-23dfe933857c-1683817316951370c5-1"
+      ],
+      "custom_css": [
+        "@media (max-width: 425px) {.grid {display: flex; flex-direction: column; }}",
+        ".image-with-text .grid__item {position: relative; align-self: center;}"
+      ],
+      "settings": {
+        "custom_class": "about-us-content responsibility-section-four",
+        "desktop-image": "shopify://shop_images/BlogStyling-City_Chic-Desktop-Imagen_2.jpg",
+        "mob-image": "shopify://shop_images/BlogStyling-City_Chic-Desktop-Imagen_2.jpg",
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "text_first",
+        "desktop_content_position": "top",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "color_scheme": "background-1",
+        "mobile_content_alignment": "left",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "2fe17552-6233-4b23-8c19-a5ccb70c4000": {
+      "type": "rich-text-4",
+      "custom_css": [
+        ".about-collection-banner-title h2 {text-transform: none;}",
+        ".subtitle {padding: 40px 0 0 0px; background-color: transparent;}",
+        ".rich-text-4 {margin-bottom: 0px;}"
+      ],
+      "settings": {
+        "custom_class": "about-collection-banner-title subtitle",
+        "prefix": "",
+        "section_title": "Complete the look",
+        "section_sub": "",
+        "description": "",
+        "section_url": ""
+      }
+    },
+    "a9beb791-163d-458b-8abd-b9e68c22b4cf": {
+      "type": "section-product-v8",
+      "blocks": {
+        "template--19049517351256__a9beb791-163d-458b-8abd-b9e68c22b4cf-1685639389092c80f0-0": {
+          "type": "tab",
+          "settings": {
+            "tab_title": "for him",
+            "tab_collection": "complete-the-look-x-for-him",
+            "tab_limit": 4
+          }
+        },
+        "template--19049517351256__a9beb791-163d-458b-8abd-b9e68c22b4cf-1685639389092c80f0-1": {
+          "type": "tab",
+          "settings": {
+            "tab_title": "for her",
+            "tab_collection": "complete-the-look-x-for-her",
+            "tab_limit": 4
+          }
+        }
+      },
+      "block_order": [
+        "template--19049517351256__a9beb791-163d-458b-8abd-b9e68c22b4cf-1685639389092c80f0-0",
+        "template--19049517351256__a9beb791-163d-458b-8abd-b9e68c22b4cf-1685639389092c80f0-1"
+      ],
+      "custom_css": [
+        "li a {font-size: 20px !important; text-transform: uppercase !important; color: #000000 !important; font-family: \"Helvetica\" !important;}",
+        "a.active {border-bottom: 1px solid #000000 !important;}",
+        ".mt-all {margin-top: 10px;}",
+        ".slick-slider {display: flex; justify-content: center; margin: 0px;}",
+        ".slick-list {padding-right: 0px;}",
+        "@media (min-width: 960px) {.slick-track {width: 1000px !important; display: flex; justify-content: center; }}",
+        ".nav-tabs {padding-top: 0px !important;}"
+      ],
+      "settings": {
+        "custom_class": "",
+        "margin_top": "",
+        "margin_bottom": "",
+        "title_heading": "",
+        "color_title": "#222222",
+        "enable_slider": true
+      }
+    },
+    "26d97033-0419-491d-b124-8850b9f782b4": {
+      "type": "rich-text-4",
+      "custom_css": [
+        ".store-wrapper-beige {background-color: transparent; padding: 0px;}",
+        "@media (max-width: 600px) {.container-v1 {margin-top: 0px; }}",
+        "@media (max-width: 600px) {.store-wrapper-beige p {font-size: 14px; line-height: 20px !important; padding: 0px 10px; }}"
+      ],
+      "settings": {
+        "custom_class": "store-wrapper-beige",
+        "prefix": "",
+        "section_title": "",
+        "section_sub": "",
+        "description": "<p>Colours play a vital role in print mixing. Opt for bold patterns in neutral hues to make the process easier. Alternatively, experiment with prints within the same tonal range or featuring a common color.<br/>This creates a seamless and unified look that exudes effortless style (like Simão's looks).</p>",
+        "section_url": ""
+      }
+    },
+    "5d1343c8-2b6c-4d62-8962-224f9e8791dd": {
+      "type": "rich-text-4",
+      "custom_css": [
+        ".about-collection-banner-title h2 {text-transform: none;}",
+        ".subtitle {padding: 40px 0 0 0px; background-color: transparent;}",
+        ".rich-text-4 {margin-bottom: 0px;}"
+      ],
+      "settings": {
+        "custom_class": "about-collection-banner-title subtitle",
+        "prefix": "",
+        "section_title": "Simão's looks include",
+        "section_sub": "",
+        "description": "",
+        "section_url": ""
+      }
+    },
+    "11db73a2-46ba-42fd-aba9-fce479592d97": {
+      "type": "section-product-v2",
+      "blocks": {
+        "template--19049517351256__11db73a2-46ba-42fd-aba9-fce479592d97-1685652856987b6beb-1": {
+          "type": "tab",
+          "settings": {
+            "tab_title": "For him",
+            "tab_collection": "simaos-looks-x-for-him",
+            "tab_limit": 4
+          }
+        },
+        "template--19049517351256__11db73a2-46ba-42fd-aba9-fce479592d97-1685652856987b6beb-0": {
+          "type": "tab",
+          "settings": {
+            "tab_title": "For her",
+            "tab_collection": "simaos-looks-x-for-her",
+            "tab_limit": 4
+          }
+        }
+      },
+      "block_order": [
+        "template--19049517351256__11db73a2-46ba-42fd-aba9-fce479592d97-1685652856987b6beb-1",
+        "template--19049517351256__11db73a2-46ba-42fd-aba9-fce479592d97-1685652856987b6beb-0"
+      ],
+      "custom_css": [
+        ".slick-slider {display: flex; justify-content: center; margin: 0px;}",
+        ".slick-list {padding-right: 0px;}",
+        "@media (min-width: 960px) {.slick-track {width: 1000px !important; display: flex; justify-content: center; }}",
+        ".nav-tabs {padding-top: 0px !important;}"
+      ],
+      "settings": {
+        "custom_class": "",
+        "margin_top": "",
+        "margin_bottom": "",
+        "title_heading": "",
+        "color_title": "#222222",
+        "enable_slider": true
+      }
+    },
+    "97469c62-bc8e-442d-8b06-cbae595e44b7": {
+      "type": "custom-image-with-text",
+      "blocks": {
+        "f00f4d94-3a71-4acc-a168-34bd9bb02df8": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Remember, balance is key. Aim to strike the perfect equilibrium between different elements like patterns, colors, textures, and fabrics. This harmonious blend allows each piece to shine while maintaining an overall cohesive aesthetic.</p>",
+            "text_style": "body"
+          }
+        }
+      },
+      "block_order": [
+        "f00f4d94-3a71-4acc-a168-34bd9bb02df8"
+      ],
+      "custom_css": [
+        "@media (max-width: 425px) {.grid {display: flex; flex-direction: column; }}",
+        ".image-with-text .grid__item {position: relative; align-self: center;}"
+      ],
+      "settings": {
+        "custom_class": "about-us-content responsibility-section-four",
+        "desktop-image": "shopify://shop_images/BlogStyling-City_Chic-Desktop-Imagen_3.jpg",
+        "mob-image": "shopify://shop_images/BlogStyling-City_Chic-Desktop-Imagen_3.jpg",
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "image_first",
+        "desktop_content_position": "top",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "color_scheme": "background-1",
+        "mobile_content_alignment": "left",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "6c90e00b-f8c8-4ce3-ac13-5d78f3dc0bfc": {
+      "type": "custom-image-with-text",
+      "blocks": {
+        "4e91cb9d-17bb-4471-a654-6577f49bc9ab": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Now, let your fashion intultion take charge and embrace the bold and daring. Remember that fashion is an expression of your unique personality, so let it shine through.</p>",
+            "text_style": "body"
+          }
+        }
+      },
+      "block_order": [
+        "4e91cb9d-17bb-4471-a654-6577f49bc9ab"
+      ],
+      "custom_css": [
+        "@media (max-width: 425px) {.grid {display: flex; flex-direction: column; }}",
+        ".image-with-text .grid__item {position: relative; align-self: center;}"
+      ],
+      "settings": {
+        "custom_class": "about-us-content responsibility-section-four",
+        "desktop-image": "shopify://shop_images/BlogStyling-City_Chic-Desktop-Imagen_4.jpg",
+        "mob-image": "shopify://shop_images/BlogStyling-City_Chic-Desktop-Imagen_4.jpg",
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "text_first",
+        "desktop_content_position": "top",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "color_scheme": "background-1",
+        "mobile_content_alignment": "left",
+        "padding_top": 0,
+        "padding_bottom": 32
+      }
+    },
+    "4d6c8016-688f-4f4b-a14f-f638ae90497a": {
+      "type": "rich-text-4",
+      "custom_css": [
+        ".store-wrapper-beige {background-color: transparent; padding: 10px;}",
+        "@media (max-width: 600px) {.container-v1 {margin-top: 0px; } .store-wrapper-beige p {font-size: 14px; line-height: 20px !important; padding: 10px 20px; }}"
+      ],
+      "settings": {
+        "custom_class": "store-wrapper-beige",
+        "prefix": "",
+        "section_title": "",
+        "section_sub": "",
+        "description": "<p>Thank you to every brand for the outfits and participation. And thank you to Simão Santos, lohente Maria, Constança Barroso, Manel Geada and Carolina Canas for the fun day shooting.</p>",
+        "section_url": ""
+      }
+    }
+  },
+  "order": [
+    "main",
+    "4cd285cd-a46e-45f6-a646-b98f002e9a1b",
+    "248fabed-6a2d-4830-843e-7fcf037386b1",
+    "ca8accc2-73bb-45d9-855c-72fc33e95758",
+    "7abbacd2-0a23-4678-b6c5-7e466e2c9483",
+    "6eadc789-4d15-4f6f-b5ae-23dfe933857c",
+    "2fe17552-6233-4b23-8c19-a5ccb70c4000",
+    "a9beb791-163d-458b-8abd-b9e68c22b4cf",
+    "26d97033-0419-491d-b124-8850b9f782b4",
+    "5d1343c8-2b6c-4d62-8962-224f9e8791dd",
+    "11db73a2-46ba-42fd-aba9-fce479592d97",
+    "97469c62-bc8e-442d-8b06-cbae595e44b7",
+    "6c90e00b-f8c8-4ce3-ac13-5d78f3dc0bfc",
+    "4d6c8016-688f-4f4b-a14f-f638ae90497a"
+  ]
+}

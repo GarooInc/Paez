@@ -1,0 +1,11 @@
+{% layout none %}
+{% assign on_sale = false %}
+{% if product.compare_at_price > product.price %}
+{% assign on_sale = true %}
+{% endif %}
+<div class="price ">                      
+  {% capture price %}{{ product.price | money }}{% endcapture %} 
+  {{ price }}
+  {% if on_sale %}<del class="enj-product-price-compare">{{ product.compare_at_price | money }}</del> {% endif %}
+
+</div>

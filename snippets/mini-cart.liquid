@@ -1,0 +1,46 @@
+<div class="mini-cart-content text-left enj-minicart-ajax">
+  {% if cart.item_count > 0 %}
+  <div class="list-mini-cart-item">
+    {% for item in cart.items %}
+    <div class="product-mini-cart table-custom">
+      <div class="product-thumb">
+        <a href="{{item.url}}" class="product-thumb-link"><img alt="{{item.title}}" src="{{ item.image | product_img_url: 'small' }}"></a>
+      </div>
+      <div class="product-info">
+        <h3 class="title14 product-title dosis-font text-uppercase"><a href="{{item.url}}">{{item.title}}</a></h3>
+        <div class="mini-cart-qty">
+          <span>{{ item.quantity }} x {{ item.price | money }}</span>
+        </div>
+      </div>
+      <div class="product-delete text-right">
+        <a href="/cart/change?line={{ forloop.index }}&amp;quantity=0" class="remove-product"><i class="fa fa-trash"></i></a>
+      </div>
+    </div>
+    {% endfor %}
+  </div>
+  <div class="mini-cart-total text-uppercase title18 font-bold clearfix">
+    hola
+    <span class="pull-left">{{ 'minicart.general.total_price' | t }}</span>
+    <strong class="pull-right color dosis-font mini-cart-total-price enj-cartcost">{{cart.total_price | money}}</strong>
+  </div>
+  <div class="mini-cart-button">
+    <div class="rale-widget rale-customized" style="--rale-font: inherit; --rale-size:12px; --rale-align: inherit; --rale-padding:0px 0px 60px 0px; --rale-color:#212b36; --rale-accent:#000000; --rale-error:#de3618;">
+      <div class="rale-container">
+        <span class="rale-checkbox rale-checkbox--0" style="--rale-size:16px;">
+          <input type="checkbox" id="rale-1679493687986.8542">
+        </span>
+        <label for="rale-1679493687986.8542" class="rale-message">
+          I AGREE WITH THE <a href="#" target="_blank" class="rale-link">TERMS &amp; CONDITIONS</a>.
+        </label></div><input class="rale-time" type="hidden" name="attributes[Agreed to the Terms and Conditions on]" value="Wed Mar 22 2023 08:01:27 GMT-0600 (hora estándar central)">
+    </div>
+    <a class="mini-cart-checkout shop-button" href="/checkout">{{ 'minicart.general.checkout' | t }}</a>
+  </div>
+  {% else %}
+  <div class="text-center">
+    <p>{{ 'minicart.general.empty' | t }}</p>
+  </div>
+  <div class="text-center">
+    <a href="/collections/all" class="shop-button white bg-dark">{{ 'minicart.general.shop_now' | t }}</a>
+  </div>
+  {% endif %}
+</div>

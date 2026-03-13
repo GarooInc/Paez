@@ -1,0 +1,172 @@
+<div data-section-id="{{ section.id }}" data-section-type="section-banner-v10" style="{% if section.settings.margin_top != blank %}margin-top: {{section.settings.margin_top}}px;{%endif%} {% if section.settings.margin_bottom != blank %}margin-bottom: {{section.settings.margin_bottom}}px;{% endif %}">
+  <div class="section-banner-v10 ">
+    <div class="container container-full">
+      <div class="row">
+        <div class="col-12 col-md-6 col-lg-3 order1">
+          <div class="banner">
+            <div class="img-banner">
+              <a href="{{section.settings.url_banner}}">
+                {% if section.settings.img_banner != blank %}
+                <img data-src="{{section.settings.img_banner | img_url : 'master'}}" class="lazyload img-fluid w-100" alt >
+                {% else %}
+                <img data-src="//via.placeholder.com/440x390" class="lazyload img-fluid w-100" alt>
+                {% endif %}
+              </a>
+            </div>
+            <div class="button text-center">
+              {% if section.settings.button_banner != blank %}
+              <a href="{{section.settings.url_banner}}" class="button-shop button-shop-{{ section.id }}" title="">{{section.settings.button_banner}}</a>
+              {% endif %}
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-md-12 col-lg-6 order3">
+          <div class="banner">
+            <div class="img-banner">
+              <a href="{{section.settings.url_banner}}">
+                {% if section.settings.img_banner2 != blank %}
+                <img data-src="{{section.settings.img_banner2 | img_url : 'master'}}" class="lazyload img-fluid w-100" alt >
+                {% else %}
+                <img data-src="//via.placeholder.com/900x385" class="lazyload img-fluid w-100" alt>
+                {% endif %}
+              </a>
+            </div>
+            <div class="button ">
+              {% if section.settings.button_banner2 != blank %}
+              <a href="{{section.settings.url_banner}}" class="button-shop button-shop-{{ section.id }}" title="">{{section.settings.button_banner2}}</a>
+              {% endif %}
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-md-6 col-lg-3 order2 ">
+          <div class="banner">
+            <div class="img-banner">
+              <a href="{{section.settings.url_banner}}">
+                {% if section.settings.img_banner3 != blank %}
+                <img data-src="{{section.settings.img_banner3 | img_url : 'master'}}" class="lazyload img-fluid w-100" alt >
+                {% else %}
+                <img data-src="//via.placeholder.com/440x390" class="lazyload img-fluid w-100" alt>
+                {% endif %}
+              </a>
+            </div>
+            <div class="button ">
+              {% if section.settings.button_banner3 != blank %}
+              <a href="{{section.settings.url_banner}}" class="button-shop button-shop-{{ section.id }}" title="">{{section.settings.button_banner3}}</a>
+              {% endif %}
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<style>
+  .section-banner-v10 .button .button-shop-{{ section.id }} {
+    color: {{section.settings.color_btn}};
+    background: {{section.settings.bg_btn}};
+  }
+  .section-banner-v10 .button .button-shop-{{ section.id }}:hover {
+    color: {{section.settings.color_btn_hover}};
+    background: {{section.settings.bg_btn_hover}};
+  }
+</style>
+
+{% schema %}
+{
+  "name": "BANNER V10",
+  "settings": [
+    {
+      "type": "header",
+      "content": " Banner 1"
+    },
+    {
+      "type": "url",
+      "id": "url_banner",
+      "label": "URL Button ",
+      "default": "/collections/all"
+    },
+    {
+      "type": "image_picker",
+      "id": "img_banner",
+      "label": "Image Banner",
+      "info": "600 x 649px recommended"
+    },
+    {
+      "type": "text",
+      "id": "button_banner",
+      "label": "Button Banner 1",
+      "default": "Rugs & Textiles"
+    },
+    {
+      "type": "image_picker",
+      "id": "img_banner2",
+      "label": "Image Banner",
+      "info": "600 x 649px recommended"
+    },
+    {
+      "type": "text",
+      "id": "button_banner2",
+      "label": "Button Banner 2",
+      "default": "Rugs & Textiles"
+    },
+    {
+      "type": "header",
+      "content": " Banner 2"
+    },
+    {
+      "type": "image_picker",
+      "id": "img_banner3",
+      "label": "Image Banner 3",
+      "info": "600 x 649px recommended"
+    },
+    {
+      "type": "text",
+      "id": "button_banner3",
+      "label": "Button Banner 3",
+      "default": "Rugs & Textiles"
+    },
+    {
+      "type": "header",
+      "content": "color button"
+    },
+    {
+      "type": "color",
+      "id": "color_btn",
+      "label": "Color button",
+      "default": "#000"
+    },
+    {
+      "type": "color",
+      "id": "color_btn_hover",
+      "label": "Color button Hover",
+      "default": "#fff"
+    },
+    {
+      "type": "color",
+      "id": "bg_btn",
+      "label": "background button",
+      "default": "#fff"
+    },
+    {
+      "type": "color",
+      "id": "bg_btn_hover",
+      "label": "background button Hover",
+      "default": "#000"
+    }
+  ],
+  "presets": [
+    {
+      "name": "BANNER V10",
+      "category": "HOME"
+    }
+  ]
+}
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

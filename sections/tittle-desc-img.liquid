@@ -1,0 +1,63 @@
+<div class="titledescimg" id="seccion-{{ section.id }}">
+  <h2 class="titledescimgh2">{{ section.settings.titulo }}</h2>
+  <p class="titledescimgp">{{ section.settings.desc }}</p>
+  {% if section.settings.imagen %}
+    <img src="{{ section.settings.imagen | img_url: '500x500' }}" alt="{{ section.settings.titulo }}">
+  {% endif %}
+</div>
+
+{% schema %}
+{
+  "name": "titledescimg",
+  "settings": [
+    {
+      "type": "text",
+      "id": "titulo",
+      "label": "titulo",
+      "default": "Tu Título Aquí"
+    },
+    {
+      "type": "richtext",
+      "id": "desc",
+      "label": "desc"    
+    },
+    {
+      "type": "image_picker",
+      "id": "imagen",
+      "label": "Imagen"
+    }
+  ],
+  "presets": [
+    {
+      "name": "title desc img",
+      "category": "Custom"
+    }
+  ]
+}
+{% endschema %}
+
+
+{% stylesheet %}
+/* Estilos para la sección personalizable */
+.titledescimg {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding:20px;
+}
+
+.titledescimgh2{
+    text-transform: uppercase;
+    color: #000000;
+    font-family: "HelveticaNeue" !important;
+}
+.titledescimg p, .titledescimgh2{
+  text-align: center;
+  margin: 0;
+}
+
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

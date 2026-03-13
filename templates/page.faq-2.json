@@ -1,0 +1,150 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "babbc96c-959b-4a67-8598-fd7a38c4b6f9": {
+      "type": "rich-text-4",
+      "settings": {
+        "custom_class": "wholesale-banner-title page-banner-title",
+        "prefix": "",
+        "section_title": "FAQ's",
+        "section_sub": "",
+        "description": "",
+        "section_url": ""
+      }
+    },
+    "61eacd5c-480e-45d9-82e7-9ebb1bff14a6": {
+      "type": "section-banner-v12",
+      "disabled": true,
+      "settings": {
+        "custom_class": "wholesale-banner",
+        "img_banner": "shopify://shop_images/FAQ_Desktop.jpg",
+        "mob_img_banner": "shopify://shop_images/FAQ_Mobile.jpg",
+        "title": "",
+        "url_banner": "",
+        "color_title": "#000000",
+        "color_hover_title": "#ffffff"
+      }
+    },
+    "e75a43d5-2b07-4cf0-8bf0-ed29892eefe1": {
+      "type": "FAQ-template",
+      "blocks": {
+        "template--16694144172277__e75a43d5-2b07-4cf0-8bf0-ed29892eefe1-1676399562c07124e0-0": {
+          "type": "faq_left",
+          "settings": {
+            "block_title_question": "Why can't I purchase anything on this website?",
+            "block_description_question": "Our shoes took time to grow, and they just recently blossomed. They will be available on March 21st!"
+          }
+        },
+        "template--16694144172277__e75a43d5-2b07-4cf0-8bf0-ed29892eefe1-1676399562c07124e0-2": {
+          "type": "faq_left",
+          "settings": {
+            "block_title_question": "Is this just a prank website?",
+            "block_description_question": "No, we promise this is the real deal. But if you're looking for a good laugh, check out our social media pages. That's where the real fun happens! Scroll down and follow us!"
+          }
+        },
+        "template--16694144172277__e75a43d5-2b07-4cf0-8bf0-ed29892eefe1-1676399562c07124e0-3": {
+          "type": "faq_left",
+          "settings": {
+            "block_title_question": "Why do I only see pictures of shoes and not actual products for sale?",
+            "block_description_question": "Because, let's face it, shoes are way more fun to look at than boring shopping carts and checkout pages."
+          }
+        },
+        "template--16694144172277__e75a43d5-2b07-4cf0-8bf0-ed29892eefe1-1676399562c07124e0-4": {
+          "type": "faq_left",
+          "settings": {
+            "block_title_question": "Why are you being so secretive about the Blossom Collection?",
+            "block_description_question": "We want it to be a surprise, like a spontaneous picnic in the park on a sunny day. And you know what they say - good things come to those who wait!"
+          }
+        },
+        "template--16694144172277__e75a43d5-2b07-4cf0-8bf0-ed29892eefe1-1676399562c07124e0-5": {
+          "type": "faq_left",
+          "settings": {
+            "block_title_question": "How can I contact you?",
+            "block_description_question": "Feel free to blossom your way to onlineshop@paez.com"
+          }
+        },
+        "template--16694144172277__e75a43d5-2b07-4cf0-8bf0-ed29892eefe1-1676399562c07124e0-6": {
+          "type": "faq_left",
+          "settings": {
+            "block_title_question": "But seriously, can you give us a sneak peek of this upcoming Collection?",
+            "block_description_question": "Oh, God! You're kind of ruining it... But... If you made it so far, you deserve a treat! Introducing you to a sneak peak of a new sandal... You could say you're springing into style with these ones... Get it?"
+          }
+        }
+      },
+      "block_order": [
+        "template--16694144172277__e75a43d5-2b07-4cf0-8bf0-ed29892eefe1-1676399562c07124e0-0",
+        "template--16694144172277__e75a43d5-2b07-4cf0-8bf0-ed29892eefe1-1676399562c07124e0-2",
+        "template--16694144172277__e75a43d5-2b07-4cf0-8bf0-ed29892eefe1-1676399562c07124e0-3",
+        "template--16694144172277__e75a43d5-2b07-4cf0-8bf0-ed29892eefe1-1676399562c07124e0-4",
+        "template--16694144172277__e75a43d5-2b07-4cf0-8bf0-ed29892eefe1-1676399562c07124e0-5",
+        "template--16694144172277__e75a43d5-2b07-4cf0-8bf0-ed29892eefe1-1676399562c07124e0-6"
+      ],
+      "settings": {
+        "enable_slide": false,
+        "enable_asked": true,
+        "title_asked": "",
+        "description_asked": "",
+        "enable_newsletter": false,
+        "section_title": "Never miss our updates about new arrivals and special offers",
+        "section_description": "Get the latest news & updates",
+        "newsletter_placeholder_input": "EMAIL ADDRESS",
+        "iconmail": "ti-email",
+        "button_name": "SUBCRIBE NOW"
+      }
+    },
+    "67f1466f-510d-4057-a66d-15330e48812a": {
+      "type": "section-banner-v12",
+      "settings": {
+        "custom_class": "",
+        "img_banner": "shopify://shop_images/4-FAQ_s-Desktop-Sandals-_1920x918px.jpg",
+        "mob_img_banner": "shopify://shop_images/4-FAQ_s-Mobile-Sandals-_749x936px.jpg",
+        "title": "",
+        "url_banner": "shopify://collections/all",
+        "color_title": "#000",
+        "color_hover_title": "#fff"
+      }
+    },
+    "967bb6e5-05dc-402d-a55c-548f7f6f5ee4": {
+      "type": "FAQ-template",
+      "blocks": {
+        "template--16694144172277__967bb6e5-05dc-402d-a55c-548f7f6f5ee4-167760235587cda456-0": {
+          "type": "faq_left",
+          "settings": {
+            "block_title_question": "Hmm, in the meantime is there any place where I can buy Paez?",
+            "block_description_question": "Well, as we're still figuring out the whole e-commerce thing, you can't risk losing your opportunity to buy your PAEZ. wE promise not to let you down. Try shopping at one of our trusted partners at Zalando and Amazon."
+          }
+        }
+      },
+      "block_order": [
+        "template--16694144172277__967bb6e5-05dc-402d-a55c-548f7f6f5ee4-167760235587cda456-0"
+      ],
+      "settings": {
+        "enable_slide": false,
+        "enable_asked": true,
+        "title_asked": "#Frequently asked questions",
+        "description_asked": "I am text block. Click edit button to change this text. Lorem ipsum dolor sit amet,consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.",
+        "enable_newsletter": false,
+        "section_title": "Never miss our updates about new arrivals and special offers",
+        "section_description": "Get the latest news & updates",
+        "newsletter_placeholder_input": "EMAIL ADDRESS",
+        "iconmail": "ti-email",
+        "button_name": "SUBCRIBE NOW"
+      }
+    }
+  },
+  "order": [
+    "babbc96c-959b-4a67-8598-fd7a38c4b6f9",
+    "61eacd5c-480e-45d9-82e7-9ebb1bff14a6",
+    "e75a43d5-2b07-4cf0-8bf0-ed29892eefe1",
+    "67f1466f-510d-4057-a66d-15330e48812a",
+    "967bb6e5-05dc-402d-a55c-548f7f6f5ee4"
+  ]
+}

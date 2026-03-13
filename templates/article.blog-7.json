@@ -1,0 +1,310 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "article_template": {
+      "type": "article-template",
+      "disabled": true,
+      "settings": {
+        "blog_layout": "blog_layo_left",
+        "show_author": true,
+        "show_comment": true,
+        "show_cate": true,
+        "show_tag": true,
+        "show_related_post": true,
+        "related_post_title": "Related post",
+        "related_post_select_blog": "news",
+        "related_post_blogs_limit": 5,
+        "enable_widget_search": true,
+        "widget_search_title": "Search",
+        "shop_by_search_placeholder": "Search...",
+        "enable_widget_cate": true,
+        "widget_cate_title": "Categories",
+        "widget_cate_menu": "main-menu",
+        "enable_widget_related": true,
+        "widget_related_title": "RECENT POSTS",
+        "select_blog": "news",
+        "blogs_limit": 4,
+        "enable_widget_tag": true,
+        "shop_by_tag_title": "Tags",
+        "banner_article_url": "https://www.shopify.com/free-trial?ref=shopifycenter",
+        "enable_social_share": true
+      }
+    },
+    "32188728-51b3-4f19-a420-84f078cb8228": {
+      "type": "rich-text-4",
+      "settings": {
+        "custom_class": "store-banner-title page-banner-title",
+        "prefix": "",
+        "section_title": "SOFIA BICHÃO",
+        "section_sub": "",
+        "description": "",
+        "section_url": ""
+      }
+    },
+    "188a94a3-5f74-4b1c-9305-3521ca3db0d2": {
+      "type": "section-banner-v12",
+      "settings": {
+        "custom_class": "about-banner",
+        "img_banner": "shopify://shop_images/Banner-Desktop-Sofia_Bichao.jpg",
+        "mob_img_banner": "shopify://shop_images/Banner-Mobile-Sofia_Bichao.jpg",
+        "title": "",
+        "url_banner": "shopify://collections/all",
+        "color_title": "#000000",
+        "color_hover_title": "#ffffff"
+      }
+    },
+    "f5d382fa-b6ed-467f-a533-702eeefe33f9": {
+      "type": "rich-text-4",
+      "custom_css": [
+        "p {font-family: \"Helvetica\" !important; text-align: justify;}",
+        ".store-wrapper p {line-height: 24px !important;}"
+      ],
+      "settings": {
+        "custom_class": "store-wrapper",
+        "prefix": "",
+        "section_title": "",
+        "section_sub": "",
+        "description": "<p>Introducing you to an incredible soul, Sofia Bichão! One of this year's faces from our Blossom campaign. Since 2020, she has embarked on an entrepreneurial journey, introducing the world to BBody Barre Academy. As a digital studio offering live and on-demand Ballet Body classes, it's a hub of fitness inspired by ballet, modern dance, and yoga. With over 300 classes in various styles like ballet barre, ballet HIIT and cardio, ballet flow, ballet yoga, and ballet stretch, it's the epitome of a complete mind-body workout. But that's not all—this year, she's branching out further by launching a Teacher Training program, spreading her method and bringing the classes to new locations. The possibilities are endless for this visionary entrepreneur.</p>",
+        "section_url": ""
+      }
+    },
+    "cdaee2a8-d358-4577-8fe9-9de9843a1e92": {
+      "type": "custom-image-with-text",
+      "blocks": {
+        "template--18600182677848__cdaee2a8-d358-4577-8fe9-9de9843a1e92-1682015242266f3219-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p><strong>Q: What made you accept the invitation to be a Paez face in 2023?</strong></p><p><br/></p><p>A: For being a \"cool\" brand but at the same time simple, aligned with a light lifestyle, that I also like to promote in my brand and that I like to carry in my life.</p><p><br/></p><p><br/></p><p><br/></p><p><strong>Q: How has Paez been part of your life? Any favourite models? (You liked the Moc, right? We can play with that)</strong></p><p><br/></p><p>A: I grew up near the beach, in Costa da Caparica, and with family in the north and south of the country, also near the coast. Therefore, trips to the beach have always been mandatory for me, whether it was summer or winter and I don't live without the smell of the sea. Nothing better than the arrival of spring when we can start packing our socks and wearing cooler and lighter footwear. That's when the paez appears in my memory: the beginning of warmth, of sunsets with friends, of bossa nova or chill house music, of runs and walks in a bikini.</p><p>My favourite models are definetly the Mules and the Sandal Crossed. It's all about practically, people.</p>",
+            "text_style": "body"
+          }
+        }
+      },
+      "block_order": [
+        "template--18600182677848__cdaee2a8-d358-4577-8fe9-9de9843a1e92-1682015242266f3219-1"
+      ],
+      "custom_css": [
+        ".responsibility-section-four .image-with-text__content {padding: 30px 50px 40px 50px;}"
+      ],
+      "settings": {
+        "custom_class": "about-us-content responsibility-section-four",
+        "desktop-image": "shopify://shop_images/1-Sofia_Bichao.jpg",
+        "mob-image": "shopify://shop_images/1-Sofia_Bichao_4b548dcd-87c4-4aac-acfa-717ff7a96c41.jpg",
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "image_first",
+        "desktop_content_position": "top",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "color_scheme": "background-1",
+        "mobile_content_alignment": "left",
+        "padding_top": 36,
+        "padding_bottom": 0
+      }
+    },
+    "ac86e1fa-1121-43b3-90c7-bf1ca4009b0a": {
+      "type": "custom-image-with-text",
+      "blocks": {
+        "139e407d-9b47-4873-bcde-613e5f702443": {
+          "type": "text",
+          "settings": {
+            "text": "<p><strong>Q: Paez is all about \"walking the talk\". How do you apply this motto in your life? Do you have any particular motto to guide you?</strong></p><p><br/>A: My life is made up of connections almost every minute, really. Whether it's with students, with future teachers of my method, with brands I partner with or just networking with other entrepreneurs. In my brand the motto is Every Body is a Ballet Body, because from the beginning I wanted to break with the stereotype that only dancers or people with some background in dance and/or with a specific body type can do the classes. No! Everybody can do it, all bodies are legitimate, beautiful and fit for the classes. On a more personal level, there is nothing I love more than travelling and meeting people, or being with friends, on a terrace, watching the sea and talking for hours. So connections with others happen in the various spheres of my life and are part of me. On a personal level what moves me is to be able to combine what I like to do in my daily life and try to have an impact with that, in my life and in other people's lives. That is why the BBody Barre method was born and that is why I fight every day for it to grow.</p>",
+            "text_style": "body"
+          }
+        }
+      },
+      "block_order": [
+        "139e407d-9b47-4873-bcde-613e5f702443"
+      ],
+      "custom_css": [
+        ".responsibility-section-four .image-with-text__content {padding: 30px 50px 40px 50px;}"
+      ],
+      "settings": {
+        "custom_class": "about-us-content responsibility-section-four",
+        "desktop-image": "shopify://shop_images/2-Sofia_Bichao.jpg",
+        "mob-image": "shopify://shop_images/2-Sofia_Bichao_b92c5484-6cb7-4022-8af2-725d6bfad6cb.jpg",
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "text_first",
+        "desktop_content_position": "top",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "color_scheme": "background-1",
+        "mobile_content_alignment": "left",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "c6fa4aab-6f2c-42e7-b1fa-d6690656899d": {
+      "type": "custom-image-with-text",
+      "blocks": {
+        "fcd747ed-5c26-4c5c-ba37-91c9a6b18ed4": {
+          "type": "text",
+          "settings": {
+            "text": "<p><strong>Q: Can you tell us a bit about your life as a dancer and how you came to Yoga? How do you balance dance and Yoga?</strong></p><p><br/>A: I started ballet at the age of three, when I did the Royal Academy of Dance, then continued to the national conservatory of dance and finished at the Escola Superior de Dança, which also took me out of Portugal for a few months. Along the way I experimented with various styles of dance like street dance, tap dance, among others, and I always needed to do physical exercise in parallel, as part of my routine. This is where the beginnings of ballet body classes started: combining my knowledge of dance and many years of teaching, specifically classical and contemporary dance, with my knowledge of fitness. The yoga certification comes later, when I start to feel a strong need to \"calm my mind\", to relieve the stress and pressure of everyday life and to cultivate this calm and focus, in my life. This is how ballet yoga emerged, to join the other types of ballet body that already existed and exist in the digital studio bbodybarre.com: ballet barre, ballet HIIT & Cardio, ballet flow and ballet stretch. Ballet Yoga is an amalgamation of yoga practice, more vinyasa style, with the inclusion of some ballet postures and positions and that aims to help in gaining strength, mobility, flexibility, but also in focus, breathing and being present.</p>",
+            "text_style": "body"
+          }
+        }
+      },
+      "block_order": [
+        "fcd747ed-5c26-4c5c-ba37-91c9a6b18ed4"
+      ],
+      "custom_css": [
+        ".responsibility-section-four .image-with-text__content {padding: 30px 50px 30px 50px;}"
+      ],
+      "settings": {
+        "custom_class": "about-us-content responsibility-section-four",
+        "desktop-image": "shopify://shop_images/3-Sofia_Bichao.jpg",
+        "mob-image": "shopify://shop_images/3-Sofia_Bichao_efcc79e8-67bb-42a4-9a1f-a972ccd6a3d7.jpg",
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "image_first",
+        "desktop_content_position": "top",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "color_scheme": "background-1",
+        "mobile_content_alignment": "left",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "8a70fb08-d36d-44b3-b5b6-1d37543eb0bb": {
+      "type": "custom-image-with-text",
+      "blocks": {
+        "e9425c6e-d97b-4574-bf7e-8e98e684f57a": {
+          "type": "text",
+          "settings": {
+            "text": "<p><strong>Q: How does your experience inspire your creativity in other areas of your life?</strong></p><p><br/></p><p>A: In the same way that I have been forced to train my flexibility and strength for as long as I can remember, I am now forced to do so on a daily basis as an entrepreneur facing the various challenges that come with having my own business. Being strong, disciplined and resilient, with the ability to reinvent, are essential aspects so that motivation is maintained and the boat keeps moving.</p>",
+            "text_style": "body"
+          }
+        }
+      },
+      "block_order": [
+        "e9425c6e-d97b-4574-bf7e-8e98e684f57a"
+      ],
+      "custom_css": [
+        ".responsibility-section-four .image-with-text__content {padding: 30px 50px 40px 50px;}",
+        ".image-with-text .grid__item {position: relative; align-self: center;}"
+      ],
+      "settings": {
+        "custom_class": "about-us-content responsibility-section-four",
+        "desktop-image": "shopify://shop_images/4-Sofia_Bichao.jpg",
+        "mob-image": "shopify://shop_images/4-Sofia_Bichao_d151250e-56b5-4b3a-9ac3-e12db6a59e9c.jpg",
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "text_first",
+        "desktop_content_position": "top",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "color_scheme": "background-1",
+        "mobile_content_alignment": "left",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "1d00efee-2f32-4ede-825d-e9560467cdce": {
+      "type": "custom-image-with-text",
+      "blocks": {
+        "6d10740f-f585-407b-ac7d-cec6189d36bb": {
+          "type": "text",
+          "settings": {
+            "text": "<p><strong>Q: How do you incorporate fashion and style into your daily life?</strong></p><p><br/></p><p>A: In the case of BBody barre, in the sportswear that I wear to class and, mainly, at the events where I am present with the brand, in athleisure style mode. On a personal level, I love to alternate between a very relaxed style to go to work in front of the sea, just as I love to get ready for a fancy dinner with friends.</p>",
+            "text_style": "body"
+          }
+        }
+      },
+      "block_order": [
+        "6d10740f-f585-407b-ac7d-cec6189d36bb"
+      ],
+      "custom_css": [
+        ".responsibility-section-four .image-with-text__content {padding: 30px 50px 40px 50px;}",
+        ".image-with-text .grid__item {position: relative; align-self: center;}"
+      ],
+      "settings": {
+        "custom_class": "about-us-content responsibility-section-four",
+        "desktop-image": "shopify://shop_images/5-Sofia_Bichao.jpg",
+        "mob-image": "shopify://shop_images/5-Sofia_Bichao_60565038-ad5a-48b7-87dd-8c533c923f5b.jpg",
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "image_first",
+        "desktop_content_position": "top",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "color_scheme": "background-1",
+        "mobile_content_alignment": "left",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "776958e6-2b6f-43ce-939f-459bce151a1c": {
+      "type": "custom-image-with-text",
+      "blocks": {
+        "1736fe90-b838-4ad5-9057-3f07ddd651f3": {
+          "type": "text",
+          "settings": {
+            "text": "<p><strong>Q: How do you prioritise comfort and functionality when it comes to choosing what to wear and wear?</strong></p><p><br/></p><p>A: I'm often in office work mode alternating with classes, ending up, again, following a more athleisure style, where comfort is most important to give freedom of movement. Apart from those moments, I love getting ready and feeling in the same mood as where I'm going, but the priority is always to feel good and without discomfort.</p>",
+            "text_style": "body"
+          }
+        }
+      },
+      "block_order": [
+        "1736fe90-b838-4ad5-9057-3f07ddd651f3"
+      ],
+      "custom_css": [
+        ".responsibility-section-four .image-with-text__content {padding: 30px 50px 40px 50px;}",
+        ".image-with-text .grid__item {position: relative; align-self: center;}"
+      ],
+      "settings": {
+        "custom_class": "about-us-content responsibility-section-four",
+        "desktop-image": "shopify://shop_images/6-Sofia_Bichao.jpg",
+        "mob-image": "shopify://shop_images/6-Sofia_Bichao_50a9de49-210e-4fcd-9bab-a75878219311.jpg",
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "text_first",
+        "desktop_content_position": "top",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "color_scheme": "background-1",
+        "mobile_content_alignment": "left",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "4c0a3059-b4d6-4cde-b451-54d3ba8f6bc3": {
+      "type": "rich-text-4",
+      "custom_css": [
+        ".store-wrapper p {justify-content: center; text-align: center; line-height: 24px !important;}",
+        ".store-wrapper {margin-bottom: 40px;}",
+        ".store-wrapper a {font-weight: bold !important;}"
+      ],
+      "settings": {
+        "custom_class": "store-wrapper",
+        "prefix": "",
+        "section_title": "",
+        "section_sub": "",
+        "description": "<p>You can find Sofia's project at <a href=\"https://www.bbodybarre.com\" title=\"https://www.bbodybarre.com\">www.bbodybarre.com</a> or on Instagram as <a href=\"https://www.instagram.com/balletbody_barre/?hl=es\" title=\"https://www.instagram.com/balletbody_barre/?hl=es\"><strong>@balletbody_barre</strong></a></p><p><br/></p><p><strong>Thank you Sofia for being part of this campaign!</strong></p>",
+        "section_url": ""
+      }
+    }
+  },
+  "order": [
+    "article_template",
+    "32188728-51b3-4f19-a420-84f078cb8228",
+    "188a94a3-5f74-4b1c-9305-3521ca3db0d2",
+    "f5d382fa-b6ed-467f-a533-702eeefe33f9",
+    "cdaee2a8-d358-4577-8fe9-9de9843a1e92",
+    "ac86e1fa-1121-43b3-90c7-bf1ca4009b0a",
+    "c6fa4aab-6f2c-42e7-b1fa-d6690656899d",
+    "8a70fb08-d36d-44b3-b5b6-1d37543eb0bb",
+    "1d00efee-2f32-4ede-825d-e9560467cdce",
+    "776958e6-2b6f-43ce-939f-459bce151a1c",
+    "4c0a3059-b4d6-4cde-b451-54d3ba8f6bc3"
+  ]
+}

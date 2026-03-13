@@ -1,0 +1,104 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {}
+    },
+    "4cd285cd-a46e-45f6-a646-b98f002e9a1b": {
+      "type": "rich-text-4",
+      "custom_css": [
+        ".about-collection-banner-title {padding-top: 40px; padding-bottom: 20px;}"
+      ],
+      "settings": {
+        "custom_class": "about-collection-banner-title page-banner-title",
+        "prefix": "",
+        "section_title": "Returns Policy",
+        "section_sub": "",
+        "description": "",
+        "section_url": ""
+      }
+    },
+    "248fabed-6a2d-4830-843e-7fcf037386b1": {
+      "type": "rich-text-4",
+      "custom_css": [
+        ".store-wrapper-beige {background-color: transparent;}",
+        "@media (max-width: 600px) {.container-v1 {margin-top: 0px; } .store-wrapper-beige p {font-size: 12px; line-height: 1.4; }}",
+        ".store-wrapper-beige p {padding: 10px 20px;}"
+      ],
+      "settings": {
+        "custom_class": "store-wrapper-beige",
+        "prefix": "",
+        "section_title": "",
+        "section_sub": "",
+        "description": "<p>Hey there! Looking for a return? We got your feet (and your back) here!</p><p>The fastest and easiest way to return your items is through our partner, Rever. You can complete the entire return process in under three minutes and receive a return label for shipping your items back through our partnered post offices. In less than a week, you can expect a full refund, including the shipping cost of your order (note that this does not apply to discounted items purchased during sales periods).</p><p>To start your return process, please click on the following <a href=\"https://returns.itsrever.com/paez\" title=\"https://returns.itsrever.com/paez\"><em><strong>link</strong></em></a>  and follow the steps provided.</p><p>You can return your order within 30 days of receiving it (take in consideration that the holiday period that is going to be extended until January 31st).</p><p>Please keep in mind that both the shoes and packaging must be in mint condition. This means the box, shoes with their side label, and wrapping paper should all be intact. If you use the shoebox as your shipping package, we will not be able to issue a refund.</p><p>If you're in Lisbon, you can exchange your order at our Alvalade and Strada stores, and soon at our pop-up store at Embaixada. </p><p>If your product was purchased with a promotion, you can return it, and after confirmation, we will provide you with a code for a new purchase.</p><p>If at any moment you need support with your return, please contact us at <a href=\"mailto:onlineshop@paez.com\" title=\"mailto:onlineshop@paez.com\"><em><strong>onlineshop@paez.com</strong></em></a> with your order number.</p>",
+        "section_url": ""
+      }
+    },
+    "190c75c2-66ad-4b78-87ba-199d62c6c9c3": {
+      "type": "FAQ-template",
+      "blocks": {
+        "template--19015368278360__190c75c2-66ad-4b78-87ba-199d62c6c9c3-1685130302800e0c2c-0": {
+          "type": "faq_left",
+          "settings": {
+            "block_title_question": "How to return from Portugal",
+            "block_description_question": "To start your return process, please click on the following link and follow the steps provided:\n<br>\n <a href=\"https://returns.itsrever.com/paez\" target=\"_blank\" style=\"text-decoration: underline;\"><strong>https://returns.itsrever.com/paez</strong>\n</a>\n<br>\nIf you need support with your return, please contact us at <a style=\"text-decoration: underline;\" href=\"mailto:onlineshop@paez.com\"><strong>onlineshop@paez.com</strong></a>\n with your order number.\n<br>\nThank you :)"
+          }
+        },
+        "faq_left_BRVTHN": {
+          "type": "faq_left",
+          "disabled": true,
+          "settings": {
+            "block_title_question": "How long does it take for home delivery?",
+            "block_description_question": "We use Royal mail and DHL to send most of our UK orders.Euro Car Parts reserves the right to use discretion in any circumstance where it makes more sense to use an alternative delivery method."
+          }
+        },
+        "template--19015368278360__190c75c2-66ad-4b78-87ba-199d62c6c9c3-1685130302800e0c2c-1": {
+          "type": "faq_left",
+          "settings": {
+            "block_title_question": "How to return from Spain & Europe",
+            "block_description_question": "To start your return process, please click on the following link and follow the steps provided:\n<br>\n <a href=\"https://returns.itsrever.com/paez\" target=\"_blank\" style=\"text-decoration: underline;\"><strong>https://returns.itsrever.com/paez</strong>\n</a>\n<br>\nIf you need support with your return, please contact us at <a style=\"text-decoration: underline;\" href=\"mailto:onlineshop@paez.com\"><strong>onlineshop@paez.com</strong></a>\n with your order number.\n<br>\nThank you :)"
+          }
+        }
+      },
+      "block_order": [
+        "template--19015368278360__190c75c2-66ad-4b78-87ba-199d62c6c9c3-1685130302800e0c2c-0",
+        "faq_left_BRVTHN",
+        "template--19015368278360__190c75c2-66ad-4b78-87ba-199d62c6c9c3-1685130302800e0c2c-1"
+      ],
+      "disabled": true,
+      "custom_css": [
+        ".content_askeds {padding-top: 0px; border-top: none; justify-content: center;}",
+        "@media (min-width: 768px) {.content_askeds .box_content_question .title_question {font-size: 22px; }}",
+        ".container-v2 {padding-top: 20px; padding-bottom: 20px;}"
+      ],
+      "settings": {
+        "enable_slide": false,
+        "enable_asked": true,
+        "title_asked": "",
+        "description_asked": "",
+        "enable_newsletter": false,
+        "section_title": "Never miss our updates about new arrivals and special offers",
+        "section_description": "Get the latest news & updates",
+        "newsletter_placeholder_input": "EMAIL ADDRESS",
+        "iconmail": "ti-email",
+        "button_name": "SUBCRIBE NOW"
+      }
+    }
+  },
+  "order": [
+    "main",
+    "4cd285cd-a46e-45f6-a646-b98f002e9a1b",
+    "248fabed-6a2d-4830-843e-7fcf037386b1",
+    "190c75c2-66ad-4b78-87ba-199d62c6c9c3"
+  ]
+}

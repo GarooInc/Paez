@@ -1,0 +1,11 @@
+<script type="application/json" id="camouflage-qv">
+{% assign custom_js_lq = shop.metafields.hide_oos['codecrux_settings'].custom_js %}
+{% if custom_js_lq == '' %}
+{% assign custom_js_lq = null %}
+{% endif %}
+{
+"product": {{ product | json }},
+"metafields": {{ product.metafields.camouflage | json }},
+"hoos_config_obj": {% if custom_js_lq %}{{custom_js_lq}}{% else %}''{% endif %}
+}
+</script>

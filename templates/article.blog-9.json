@@ -1,0 +1,550 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "article_template": {
+      "type": "article-template",
+      "disabled": true,
+      "settings": {
+        "blog_layout": "blog_layo_left",
+        "show_author": true,
+        "show_comment": true,
+        "show_cate": true,
+        "show_tag": true,
+        "show_related_post": true,
+        "related_post_title": "Related post",
+        "related_post_select_blog": "news",
+        "related_post_blogs_limit": 5,
+        "enable_widget_search": true,
+        "widget_search_title": "Search",
+        "shop_by_search_placeholder": "Search...",
+        "enable_widget_cate": true,
+        "widget_cate_title": "Categories",
+        "widget_cate_menu": "main-menu",
+        "enable_widget_related": true,
+        "widget_related_title": "RECENT POSTS",
+        "select_blog": "news",
+        "blogs_limit": 4,
+        "enable_widget_tag": true,
+        "shop_by_tag_title": "Tags",
+        "banner_article_url": "https://www.shopify.com/free-trial?ref=shopifycenter",
+        "enable_social_share": true
+      }
+    },
+    "32188728-51b3-4f19-a420-84f078cb8228": {
+      "type": "rich-text-4",
+      "custom_css": [
+        ".about-collection-banner-title h2 {text-transform: none;}",
+        ".subtitle {padding: 40px 0 0 0px; background-color: transparent;}",
+        ".rich-text-4 {margin-bottom: 0px;}"
+      ],
+      "settings": {
+        "custom_class": "about-collection-banner-title page-banner-title",
+        "prefix": "",
+        "section_title": "LOOKING FOR A PERFECT LISBON WEEKEND?",
+        "section_sub": "",
+        "description": "",
+        "section_url": ""
+      }
+    },
+    "custom_home_video_yMJjr8": {
+      "type": "custom-home-video",
+      "settings": {
+        "bg-video": "https://cdn.shopify.com/videos/c/o/v/c2b5b6edb3234f01bae4ddb157815d23.mp4",
+        "mobile-bg-video": "https://cdn.shopify.com/videos/c/o/v/40f935a077ec449cb1eaae7623ae1f57.mp4",
+        "link-1": "",
+        "label-1": "",
+        "link-2": "",
+        "label-2": "",
+        "link-3": "",
+        "label-3": "",
+        "link-4": "",
+        "label-4": ""
+      }
+    },
+    "rich_text_4_Ebt38f": {
+      "type": "rich-text-4",
+      "settings": {
+        "custom_class": "about-collection-banner-title page-banner-title",
+        "prefix": "",
+        "section_title": "",
+        "section_sub": "",
+        "description": "",
+        "section_url": ""
+      }
+    },
+    "rich_text_4_3xGGKL": {
+      "type": "rich-text-4",
+      "settings": {
+        "custom_class": "about-collection-banner-title page-banner-title",
+        "prefix": "",
+        "section_title": "WHERE TO? BREAKFAST OBVIOUSLY!",
+        "section_sub": "",
+        "description": "",
+        "section_url": ""
+      }
+    },
+    "cdaee2a8-d358-4577-8fe9-9de9843a1e92": {
+      "type": "custom-image-with-text",
+      "blocks": {
+        "text_Nwca7C": {
+          "type": "text",
+          "settings": {
+            "text": "<p>You know what they say: breakfast is the most important meal of the day.  </p><h6></h6><p>And Lisbon is filled (filled!) with dreamy places you'll fall head over heels for during the AM. We'll start with the one we keep coming back for A Padaria do Beco, a divine artisanal bakery near Arroios (seriously, seriously, what are you doing if you haven't been here). </p><h6></h6><p>Besides its premium neighbourhood (we love Arroios), our top suggestion is their Tornado eggs, with a pinch of spicy kimchi in the softest brioche bun, or their kiwi toast (you read it, kiwi toast), a perfect blend of lupin hummus, carrot spaghetti, kiwi, crispy onions and aged cheese. </p><h6></h6><p>Our mouths are watering as we're writing this... it's that worth it.</p>",
+            "text_style": "subtitle"
+          }
+        }
+      },
+      "block_order": [
+        "text_Nwca7C"
+      ],
+      "custom_css": [
+        "@media (max-width: 425px) {.grid {display: flex; flex-direction: column; }}",
+        ".image-with-text .grid__item {position: relative; align-self: center;}"
+      ],
+      "settings": {
+        "custom_class": "about-us-content responsibility-section-four",
+        "desktop-image": "shopify://shop_images/1-A-Padaria-do-Beco-_960x960px_9eb280f1-e856-4709-9ee2-b09728ca25a4.jpg",
+        "mob-image": "shopify://shop_images/1-A-Padaria-do-Beco-_960x960px.jpg",
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "image_first",
+        "desktop_content_position": "top",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "color_scheme": "background-1",
+        "mobile_content_alignment": "left",
+        "padding_top": 12,
+        "padding_bottom": 0
+      }
+    },
+    "ac86e1fa-1121-43b3-90c7-bf1ca4009b0a": {
+      "type": "custom-image-with-text",
+      "blocks": {
+        "139e407d-9b47-4873-bcde-613e5f702443": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Another one of our absolute favourites is definitely JAC Brunch. </p><h6></h6><h6></h6><h6></h6><p>A very welcoming place near Principe Real, where you can start your late mornings (we get it, we love to sleep too), and we definitely recommend (after hugging one of the giant brown bears they have lying around the place) you have the banana-based/cream-cheesy Velvet Pancakes, or split their Salmon Tartare with a special person (side-eyeing).</p><h6></h6><p> If you're really really hungry though how about a pulled pork sandwich? Who cares? You'll walk it off throughout the day. </p><p>Go for it.</p>",
+            "text_style": "body"
+          }
+        }
+      },
+      "block_order": [
+        "139e407d-9b47-4873-bcde-613e5f702443"
+      ],
+      "custom_css": [
+        "@media (max-width: 425px) {.grid {display: flex; flex-direction: column; }}",
+        ".image-with-text .grid__item {position: relative; align-self: center;}"
+      ],
+      "settings": {
+        "custom_class": "about-us-content responsibility-section-four",
+        "desktop-image": "shopify://shop_images/2-Jac-Brunch-_960x960px_ea3babf7-1c0a-46c0-8a41-e24600750e29.jpg",
+        "mob-image": "shopify://shop_images/2-Jac-Brunch-_960x960px.jpg",
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "text_first",
+        "desktop_content_position": "top",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "color_scheme": "background-1",
+        "mobile_content_alignment": "left",
+        "padding_top": 0,
+        "padding_bottom": 16
+      }
+    },
+    "custom_image_with_text_Bz8eTk": {
+      "type": "custom-image-with-text",
+      "blocks": {
+        "text_A3JPnH": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Other icons include our dear friends at Joyeux, whom we hold very dearly in our hearts, with the happiest and jollyest of staff possible, and literally the best quiches in town! </p><h6></h6><p>Or you can head down to downtown Chiado and start your day by having Cotidiano's banana bread with every other topping you can dream of, or the ever-so classic very Portuguese O Careca at Restelo, and eat a very sugary Croissant or one of their iconic palmiers (you simply cannot bring a box of Careca Palmiers to Paez's office... they won't last an hour).</p>",
+            "text_style": "subtitle"
+          }
+        }
+      },
+      "block_order": [
+        "text_A3JPnH"
+      ],
+      "settings": {
+        "custom_class": "about-us-content responsibility-section-four",
+        "desktop-image": "shopify://shop_images/3-A-Padaria-do-Beco-_960x960px_7e90e695-bdc3-4bf1-a49b-b14324d0020a.jpg",
+        "mob-image": "shopify://shop_images/3-A-Padaria-do-Beco-_960x960px.jpg",
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "image_first",
+        "desktop_content_position": "top",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "color_scheme": "background-1",
+        "mobile_content_alignment": "left",
+        "padding_top": 12,
+        "padding_bottom": 0
+      }
+    },
+    "4fd3a6a8-8ece-4aea-9857-8c69338c72cc": {
+      "type": "rich-text-4",
+      "custom_css": [
+        ".about-collection-banner-title h2 {text-transform: none;}",
+        ".subtitle {padding: 40px 0 0 0px; background-color: transparent;}",
+        ".rich-text-4 {margin-bottom: 0px;}"
+      ],
+      "settings": {
+        "custom_class": "about-collection-banner-title subtitle",
+        "prefix": "",
+        "section_title": "TIME TO PUT YOUR SHOES ON AND WALK IT OFF!",
+        "section_sub": "",
+        "description": "<p>Now, you had your breakfast and it's time to really have a chilled morning scrolling around Lisbon, taking that perfect shot with its beauty (Instagram as you please)!                             <br/><br/><br/><br/></p>",
+        "section_url": ""
+      }
+    },
+    "custom_image_with_text_YUmJTN": {
+      "type": "custom-image-with-text",
+      "blocks": {
+        "text_iJ7QHp": {
+          "type": "text",
+          "settings": {
+            "text": "<p>One of the places we suggest? </p><h6></h6><p>Obviously, LX Factory in Alcântara – the spot where creativity ignites, and an old industrial complex is reborn as a vibrant hub.</p><h6></h6><p> No wonder we have our offices here, right? Full disclosure: it's a tourist hub, but it's one that is always worth visiting and exploring.</p><h6></h6><p> Think graffiti-covered walls, quirky boutiques, and street performances – a haven where creativity thrives. </p><h6></h6><p>Discover hidden gems like indie bookshops (hello to our friends at Ler Devagar), design studios, \\pop-up galleries, and world food (if you're full from breakfast we get it).</p>",
+            "text_style": "subtitle"
+          }
+        }
+      },
+      "block_order": [
+        "text_iJ7QHp"
+      ],
+      "settings": {
+        "custom_class": "about-us-content responsibility-section-four",
+        "desktop-image": "shopify://shop_images/4-LX-Factory-_960x960px.jpg",
+        "mob-image": "shopify://shop_images/4-LX-Factory-_960x960px_c2eaf2f9-1e8d-4b18-ae05-b4043fcddefb.jpg",
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "image_first",
+        "desktop_content_position": "top",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "color_scheme": "background-1",
+        "mobile_content_alignment": "left",
+        "padding_top": 12,
+        "padding_bottom": 0
+      }
+    },
+    "custom_image_with_text_zdqPkW": {
+      "type": "custom-image-with-text",
+      "blocks": {
+        "text_KNaEP9": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Museums in Lisbon are a must (go visit your local museums!), and of course, we'll suggest Museu Nacional de Arte Antiga (near Santos), a place for a 5000-year art time travel journey. </p><h6></h6><p>You can find everything from Ancient Egypt to modern 20th-century masterpieces. Rembrandt, Turner, and Monet breathe and conquer the eyes of guests within the museum's walls.</p><h6></h6><p>Explore Egyptian wonders guided by Howard Carter's insights, admire Greek coins curated by E.S.G. Robinson, and revel in the Far East allure with porcelains, lacquers, and prints from China and Japan. </p><h6></h6><p>A cultural wonder perfect for a cultural morning.</p><p></p><p></p>",
+            "text_style": "body"
+          }
+        }
+      },
+      "block_order": [
+        "text_KNaEP9"
+      ],
+      "settings": {
+        "custom_class": "about-us-content responsibility-section-four",
+        "desktop-image": "shopify://shop_images/5-Relleno-generativo-_960x960px_a7a241ec-d2c1-492c-87b1-f237a68ab662.jpg",
+        "mob-image": "shopify://shop_images/5-Relleno-generativo-_960x960px.jpg",
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "text_first",
+        "desktop_content_position": "top",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "color_scheme": "background-1",
+        "mobile_content_alignment": "left",
+        "padding_top": 0,
+        "padding_bottom": 16
+      }
+    },
+    "custom_image_with_text_UVb3hC": {
+      "type": "custom-image-with-text",
+      "blocks": {
+        "text_RhKCE4": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Or you can plan your cultural morning stroll and enter the world of Calouste Sarkis Gulbenkian's private collection, where European artistry meets Eastern opulence near Praça de Espanha. </p><h6></h6><p>Discover the works of master artists like Renoir, Manet, and Romney, alongside exquisite Persian textiles, Turkish ceramics, and Islamic art. Take a journey through time with pieces inspired by Tutankhamun that reflect the influence of Howard Carter. </p><h6></h6><p>You'll also find elegant 16th-century tapestries and French jewelry that exude a pure opulence. </p><h6></h6><p>Come and experience the legacy of a great collector, where beauty and wonder await.</p>",
+            "text_style": "subtitle"
+          }
+        }
+      },
+      "block_order": [
+        "text_RhKCE4"
+      ],
+      "settings": {
+        "custom_class": "about-us-content responsibility-section-four",
+        "desktop-image": "shopify://shop_images/6-Gulbenkian-_960x960px_27f0c2bc-364e-47a4-a137-a9ed84e72e39.jpg",
+        "mob-image": "shopify://shop_images/6-Gulbenkian-_960x960px.jpg",
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "image_first",
+        "desktop_content_position": "top",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "color_scheme": "background-1",
+        "mobile_content_alignment": "left",
+        "padding_top": 12,
+        "padding_bottom": 0
+      }
+    },
+    "rich_text_4_JEKyJN": {
+      "type": "rich-text-4",
+      "settings": {
+        "custom_class": "about-collection-banner-title page-banner-title",
+        "prefix": "",
+        "section_title": "A BREAK FOR LUNCH?",
+        "section_sub": "",
+        "description": "",
+        "section_url": ""
+      }
+    },
+    "custom_image_with_text_q6aCJe": {
+      "type": "custom-image-with-text",
+      "blocks": {
+        "text_3GaH8F": {
+          "type": "text",
+          "settings": {
+            "text": "<p>If you're a craver like us, then Pizza is always on the go! Welcome to Lisbon's pizza haven, Lupita, owned by some dear friends of ours (but we're not biased, it's that good!). </p><h6></h6><p>The main attraction of this simple restaurant is their pizzas. </p><h6></h6><p>Despite the long line of visitors, there are plenty of bars nearby where you can grab a drink while waiting. </p><h6></h6><p>And boy is it worth the wait -- they craft pizzas with love, using naturally leavened dough. </p><h6></h6><p>For vibe purposes, we suggest the Branca (made with mozzarella, caramelized onions, ricotta with lemon, garlic, and basil olive oil). </p><h6></h6><p>If you're a spice-in-your-pizza kind of human, then definitely try their Spicy Amatriciana (tomato, guanciale, garlic, red onion, pickled jalapeños, pecorino and chimichurri). </p><h6></h6><p>And because we like to stir some commotion, try their Pineapple pizza (it really gives everything that needs to be given).</p><p></p>",
+            "text_style": "body"
+          }
+        }
+      },
+      "block_order": [
+        "text_3GaH8F"
+      ],
+      "settings": {
+        "custom_class": "about-us-content responsibility-section-four",
+        "desktop-image": "shopify://shop_images/7-Lupita-_960x960px_3fa329a1-f090-4f5c-82a8-b63309eab27d.jpg",
+        "mob-image": "shopify://shop_images/7-Lupita-_960x960px.jpg",
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "text_first",
+        "desktop_content_position": "top",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "color_scheme": "background-1",
+        "mobile_content_alignment": "left",
+        "padding_top": 0,
+        "padding_bottom": 16
+      }
+    },
+    "custom_image_with_text_DeVnWa": {
+      "type": "custom-image-with-text",
+      "blocks": {
+        "text_wXWbcL": {
+          "type": "text",
+          "settings": {
+            "text": "<p>If you're looking for traditional, made-in-heaven, true Portuguese food with twist, in a very Portuguese traditional setting, then stop by another friend of ours' restaurants. Taberna do Calhau by our dear friend Leopoldo Garcia is typical homestyle happiness. Every bite here is 100% homemade, delivering the iconic Portuguese flavours in every dish. </p><h6></h6><p>The menu is always changing according to the chef's mood, but you have the chance please do try the duck with roasted rice (it's an experience we'll never forget), or the crab stew. Leopoldo's ability to deliver a heartwarming journey and passionate meal is what sets him apart from others. The cherry on top is truly the friendly service and warm smile from Carlos, the owner, and the entire staff. Must go!</p><h6></h6><p>Let's talk about the seafood symphony at Último Porto, which is located in Alcântara and offers a privileged view of the Tagus River. It's one of the best places to enjoy the best of Portuguese fish cuisine, including its mouth-watering Monkfish rice, grilled sea bass, or excellent horse mackerel dish.</p><h6></h6><p>If you're craving a noodle nirvana, Honda's Ramen is a must-try. The authentic ramen is slurp-worthy and pairs perfectly with flavor-packed sides like gyozas and kimchi. The ambiance is cozy with industrial-chic vibes, making it the perfect spot for a memorable meal.</p>",
+            "text_style": "subtitle"
+          }
+        }
+      },
+      "block_order": [
+        "text_wXWbcL"
+      ],
+      "settings": {
+        "custom_class": "about-us-content responsibility-section-four",
+        "desktop-image": "shopify://shop_images/8-A-Taberna-do-Calhau-_960x960px_0695f98b-453f-49da-bab4-c6033d6c819a.jpg",
+        "mob-image": "shopify://shop_images/8-A-Taberna-do-Calhau-_960x960px.jpg",
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "image_first",
+        "desktop_content_position": "top",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "color_scheme": "background-1",
+        "mobile_content_alignment": "left",
+        "padding_top": 12,
+        "padding_bottom": 0
+      }
+    },
+    "rich_text_4_f3kQQk": {
+      "type": "rich-text-4",
+      "settings": {
+        "custom_class": "about-collection-banner-title page-banner-title",
+        "prefix": "",
+        "section_title": "",
+        "section_sub": "",
+        "description": "<p>Have you taken a look at these suggestions? Nice! </p><p>That leaves these suggestions for today, so you have time to do more research! </p><p>Stay tuned for the second part of this guide. </p><p>Coming soon!</p>",
+        "section_url": ""
+      }
+    },
+    "158dd584-5242-4a95-b84f-126f32fa0d01": {
+      "type": "section-product-v8",
+      "blocks": {
+        "template--19055609512280__158dd584-5242-4a95-b84f-126f32fa0d01-1685728179a9f379bc-0": {
+          "type": "tab",
+          "settings": {
+            "tab_title": "For him",
+            "tab_collection": "mocs-for-he",
+            "tab_limit": 4
+          }
+        },
+        "template--19055609512280__158dd584-5242-4a95-b84f-126f32fa0d01-1685728179a9f379bc-1": {
+          "type": "tab",
+          "settings": {
+            "tab_title": "For her",
+            "tab_collection": "mocs-for-she",
+            "tab_limit": 4
+          }
+        }
+      },
+      "block_order": [
+        "template--19055609512280__158dd584-5242-4a95-b84f-126f32fa0d01-1685728179a9f379bc-0",
+        "template--19055609512280__158dd584-5242-4a95-b84f-126f32fa0d01-1685728179a9f379bc-1"
+      ],
+      "disabled": true,
+      "custom_css": [
+        "li a {font-size: 20px !important; text-transform: uppercase !important; color: #000000 !important; font-family: \"Helvetica\" !important;}",
+        "a.active {border-bottom: 1px solid #000000 !important;}",
+        ".mt-all {margin-top: 10px;}",
+        ".slick-slider {display: flex; justify-content: center; margin: 0px;}",
+        ".slick-list {padding-right: 0px;}",
+        "@media (min-width: 960px) {.slick-track {width: 1000px !important; display: flex; justify-content: center; }}",
+        ".nav-tabs {padding-top: 0px !important;}"
+      ],
+      "settings": {
+        "custom_class": "",
+        "margin_top": "",
+        "margin_bottom": "",
+        "title_heading": "",
+        "color_title": "#222222",
+        "enable_slider": true
+      }
+    },
+    "4c0a3059-b4d6-4cde-b451-54d3ba8f6bc3": {
+      "type": "rich-text-4",
+      "disabled": true,
+      "custom_css": [
+        ".store-wrapper-beige {background-color: transparent; padding: 0px;}",
+        "@media (max-width: 600px) {.container-v1 {margin-top: 0px; }}",
+        "@media (max-width: 600px) {.store-wrapper-beige p {font-size: 12px; line-height: 20px !important; padding: 0px 10px; }}"
+      ],
+      "settings": {
+        "custom_class": "store-wrapper-beige",
+        "prefix": "",
+        "section_title": "",
+        "section_sub": "",
+        "description": "<p>Imagine rocking a vibrant patterned top with hints of yellow. To truly make that color pop and infuse a cohesive energy, we have the perfect suggestion: Paz's colourful sandals. Here, the Sandal Crossed Yellow. These stylish and comfortable sandals not only add a touch of charm to your feet but also bring out the vibrant colours from the Camille Studios top, creating a striking connection throughout your entire look.</p>",
+        "section_url": ""
+      }
+    },
+    "5b4cc49a-0c69-4cc1-9a97-0875001ca156": {
+      "type": "rich-text-4",
+      "disabled": true,
+      "custom_css": [
+        ".about-collection-banner-title h2 {text-transform: none;}",
+        ".subtitle {padding: 40px 0 0 0px; background-color: transparent;}",
+        ".rich-text-4 {margin-bottom: 0px;}"
+      ],
+      "settings": {
+        "custom_class": "about-collection-banner-title subtitle",
+        "prefix": "",
+        "section_title": "Lohenete's looks include",
+        "section_sub": "",
+        "description": "",
+        "section_url": ""
+      }
+    },
+    "cfd53b02-632b-4210-b300-f415231a7320": {
+      "type": "section-product-v2",
+      "blocks": {
+        "template--19055609512280__cfd53b02-632b-4210-b300-f415231a7320-1685728378b5cc4d1a-1": {
+          "type": "tab",
+          "settings": {
+            "tab_title": "for her",
+            "tab_collection": "lohenetes-looks-her-x-festival-season",
+            "tab_limit": 4
+          }
+        }
+      },
+      "block_order": [
+        "template--19055609512280__cfd53b02-632b-4210-b300-f415231a7320-1685728378b5cc4d1a-1"
+      ],
+      "disabled": true,
+      "custom_css": [
+        "li a {font-size: 20px !important; text-transform: uppercase !important; color: #000000 !important; font-family: \"Helvetica\" !important;}",
+        "a.active {border-bottom: 1px solid #000000 !important;}",
+        ".mt-all {margin-top: 10px;}",
+        ".slick-slider {display: flex; justify-content: center; margin: 0px;}",
+        ".slick-list {padding-right: 0px;}",
+        "@media (min-width: 960px) {.slick-track {width: 1000px !important; display: flex; justify-content: center; }}",
+        ".nav-tabs {padding-top: 0px !important;}"
+      ],
+      "settings": {
+        "custom_class": "",
+        "margin_top": "",
+        "margin_bottom": "",
+        "title_heading": "",
+        "color_title": "#222222",
+        "enable_slider": true
+      }
+    },
+    "9da5b0ff-0208-4d48-865c-1a2da8ae3887": {
+      "type": "custom-image-with-text",
+      "blocks": {
+        "5e3ca7a5-8ee0-44ab-a648-464eddc3bc4b": {
+          "type": "text",
+          "settings": {
+            "text": "<p>By consciously choosing accessories or footwear that echo the colours found in your patterned piece, you create a sense of unity and depth in your outfit. Even if the colour appears in small doses within the pattern, pairing it with Paez in impactful colours allows that shade to shine and take center stage, amplifying its impact on your overall look. This thoughtful approach adds layers of dimension and enhances the overall stylishness of your festival ensemble.</p>",
+            "text_style": "body"
+          }
+        }
+      },
+      "block_order": [
+        "5e3ca7a5-8ee0-44ab-a648-464eddc3bc4b"
+      ],
+      "disabled": true,
+      "custom_css": [
+        "@media (max-width: 425px) {.grid {display: flex; flex-direction: column; }}",
+        ".image-with-text .grid__item {position: relative; align-self: center;}"
+      ],
+      "settings": {
+        "custom_class": "about-us-content responsibility-section-four",
+        "desktop-image": "shopify://shop_images/BlogStyling-Festival_Season-Desktop-Imagen_3.jpg",
+        "mob-image": "shopify://shop_images/BlogStyling-Festival_Season-Desktop-Imagen_3.jpg",
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "image_first",
+        "desktop_content_position": "top",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "color_scheme": "background-1",
+        "mobile_content_alignment": "left",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    }
+  },
+  "order": [
+    "article_template",
+    "32188728-51b3-4f19-a420-84f078cb8228",
+    "custom_home_video_yMJjr8",
+    "rich_text_4_Ebt38f",
+    "rich_text_4_3xGGKL",
+    "cdaee2a8-d358-4577-8fe9-9de9843a1e92",
+    "ac86e1fa-1121-43b3-90c7-bf1ca4009b0a",
+    "custom_image_with_text_Bz8eTk",
+    "4fd3a6a8-8ece-4aea-9857-8c69338c72cc",
+    "custom_image_with_text_YUmJTN",
+    "custom_image_with_text_zdqPkW",
+    "custom_image_with_text_UVb3hC",
+    "rich_text_4_JEKyJN",
+    "custom_image_with_text_q6aCJe",
+    "custom_image_with_text_DeVnWa",
+    "rich_text_4_f3kQQk",
+    "158dd584-5242-4a95-b84f-126f32fa0d01",
+    "4c0a3059-b4d6-4cde-b451-54d3ba8f6bc3",
+    "5b4cc49a-0c69-4cc1-9a97-0875001ca156",
+    "cfd53b02-632b-4210-b300-f415231a7320",
+    "9da5b0ff-0208-4d48-865c-1a2da8ae3887"
+  ]
+}

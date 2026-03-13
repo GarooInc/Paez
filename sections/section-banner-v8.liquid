@@ -1,0 +1,164 @@
+<div data-section-id="{{ section.id }}" data-section-type="section-banner-v8" style="{% if section.settings.margin_top != blank %}margin-top: {{section.settings.margin_top}}px;{%endif%} {% if section.settings.margin_bottom != blank %}margin-bottom: {{section.settings.margin_bottom}}px;{% endif %}">
+  <div class="section-banner-v8 " >
+    <div class="container container-full">
+      <div class="row">
+        <div class="col-md-6" style="padding: 0 5px;">
+          <div class="banner">
+            <div class="box-img">
+              <a href="{{section.settings.url_banner}}">
+                <img data-src=" {% if section.settings.img_banner1 != blank %}{{section.settings.img_banner1 | img_url:'master'}} {% else %}//via.placeholder.com/856x503{% endif %}" class="lazyload w-100 img-fluid" alt="_img">
+              </a>
+            </div>
+            <div class="content-banner">
+              {% if section.settings.title_heading != blank %}
+              <h3 class=" title-heading " style="color : {{section.settings.color_heading}}">{{section.settings.title_heading}}</h3>        
+              {% endif %}
+              {% if section.settings.btn_banner != blank %}
+              <a href="{{section.settings.url_banner}}" class=" button-banner button-banner-{{ section.id }}">{{section.settings.btn_banner}}</a>
+              {% endif %}
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6" style="padding: 0 5px;">
+          <div class="banner">
+            <div class="box-img">
+              <a href="{{section.settings.url_banner}}">
+                <img data-src=" {% if section.settings.img_banner2 != blank %}{{section.settings.img_banner2 | img_url:'master'}} {% else %}//via.placeholder.com/856x503{% endif %}" class="lazyload w-100 img-fluid" alt="_img">
+              </a>
+            </div>
+            <div class="content-banner">
+              {% if section.settings.title_heading2 != blank %}
+              <h3 class=" title-heading " style="color : {{section.settings.color_heading}}">{{section.settings.title_heading2}}</h3>        
+              {% endif %}
+              {% if section.settings.btn_banner2 != blank %}
+              <a href="{{section.settings.url_banner}}" class=" button-banner button-banner-{{ section.id }}">{{section.settings.btn_banner2}}</a>
+              {% endif %}
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<style>
+  .section-banner-v8 .button-banner-{{ section.id }} {
+    color: {{section.settings.color_btn}};
+    border:2px solid {{section.settings.color_btn}};
+  }
+  .section-banner-v8 .button-banner-{{ section.id }}:hover {
+    color: {{section.settings.color_btn_hover}};
+    background: {{section.settings.bg_btn_hover}};
+     border:2px solid {{section.settings.bg_btn_hover}};
+  }
+
+</style>
+
+{% schema %}
+{
+  "name": "BANNER V8",
+  "settings": [
+    
+    {
+      "type": "image_picker",
+      "id": "img_banner1",
+      "label": "Backgroud Image",
+      "info": "856x503px recommended"
+    },
+    {
+      "type": "text",
+      "id": "title_heading",
+      "label": "Title section",
+      "default": "THE ADAPT FAMILY "
+    },
+    {
+      "type": "color",
+      "id": "color_heading",
+      "label": "Color",
+      "default": "#222"
+    },
+
+    {
+      "type": "text",
+      "id": "btn_banner",
+      "label": "Button banner ",
+      "default": "SHOP COLECTION"
+    },
+
+ 	{
+      "type": "image_picker",
+      "id": "img_banner2",
+      "label": "Backgroud Image",
+      "info": "856x503px recommended"
+    },
+    {
+      "type": "text",
+      "id": "title_heading2",
+      "label": "Title section 2",
+      "default": "THE ADAPT FAMILY "
+    },
+    {
+      "type": "color",
+      "id": "color_heading2",
+      "label": "Color 2",
+      "default": "#222"
+    },
+
+    {
+      "type": "text",
+      "id": "btn_banner2",
+      "label": "Button banner 2",
+      "default": "SHOP COLECTION"
+    },
+    {
+      "type": "url",
+      "id": "url_banner",
+      "label": "URL banner ",
+      "default": "/collections/all"
+    },
+    {
+      "type": "color",
+      "id": "color_btn",
+      "label": "Color Button",
+      "default": "#fff"
+    },
+    {
+      "type": "color",
+      "id": "color_btn_hover",
+      "label": "Color Button Hover",
+      "default": "#000"
+    },
+    {
+      "type": "color",
+      "id": "bg_btn_hover",
+      "label": "Background Color Button Hover",
+      "default": "#fff"
+    },
+    {
+      "type": "range",
+      "id": "products_limit",
+      "label": "Limit products",
+      "min": 2,
+      "max": 50,
+      "step": 1,
+      "default": 4
+    },
+    {
+      "type": "collection",
+      "id": "select_collection",
+      "label": "Select Collection"
+    }
+  ],
+  "presets": [
+    {
+      "name": "BANNER V8",
+      "category": "HOME"
+    }
+  ]
+}
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

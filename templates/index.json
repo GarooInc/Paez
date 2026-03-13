@@ -9,454 +9,511 @@
  */
 {
   "sections": {
-    "header_section_FWPbxH": {
-      "type": "header-section",
-      "name": "Header Main section",
+    "c8f3b70b-6e5f-499c-8f0f-8980d558de0f": {
+      "type": "custom-home-section",
+      "disabled": true,
       "settings": {
-        "background_image": "shopify://shop_images/desktop_banner.jpg",
-        "background_image_mobile": "shopify://shop_images/paez_1_ffcb51a7-dcfd-471f-a50c-9cc0f7fcea55.jpg",
-        "text_color": "White",
-        "star_text": "<p>Excellent <strong>4.7</strong></p>",
-        "page_title": "Slide heading",
-        "page_descripction": "Tell a story, explain a product detail",
-        "button_text": "Shop now",
-        "ticker_image": "shopify://shop_images/LOGO-PAEZ-OK.png",
-        "logo_text": "Paez",
-        "ticker_speed": 45
+        "title-main": "",
+        "cta-link": "",
+        "cta-label": "",
+        "link-1": "",
+        "label-1": "",
+        "link-2": "",
+        "label-2": "",
+        "link-3": "",
+        "label-3": "",
+        "link-4": "",
+        "label-4": ""
       }
     },
-    "main_featured_d33iNh": {
-      "type": "main-featured",
+    "custom_home_section_89UmMg": {
+      "type": "custom-home-section",
+      "settings": {
+        "bg-img": "shopify://shop_images/banner-dad-week-desktop.gif",
+        "mobile-bg-img": "shopify://shop_images/banner-dad-week-movil.gif",
+        "title-main": "",
+        "cta-link": "shopify://collections/loafers-for-him",
+        "cta-label": "SHOP NOW",
+        "link-1": "shopify://collections/spring-essentials-for-her",
+        "label-1": "FOR HER",
+        "link-2": "shopify://collections/spring-collection-for-him",
+        "label-2": "FOR HIM",
+        "link-3": "",
+        "label-3": "",
+        "link-4": "",
+        "label-4": ""
+      }
+    },
+    "17dd5695-fc6d-4132-adba-8cf6da84710e": {
+      "type": "custom-abouts-pair-banners",
+      "disabled": true,
+      "custom_css": [
+        "@media (min-width: 1024px) {.custom-abouts-banner {padding-top: 0px; }}",
+        "@media (max-width: 1024px) {.img-fluid {max-width: 100%; height: 80vh; object-fit: cover; }}",
+        "@media (max-width: 749px) {.custom-abouts-banner .box-banner .box-img {padding-top: 0px !important; }}"
+      ],
+      "settings": {
+        "custom_class": "custom-bannerv1",
+        "img_banner1": "shopify://shop_images/1-PAEZ-Banner_Web-SLIPPER.jpg",
+        "url_banner1": "shopify://collections/slippers-for-her",
+        "button_1": "for she",
+        "url_button1": "shopify://collections/slippers-for-her",
+        "title_1": "<p>Petite and made with creamy velvet<br/><strong>Slippers</strong></p>",
+        "img_banner2": "shopify://shop_images/1-PAEZ-Banner_Web-CLOGS.jpg",
+        "url_banner2": "shopify://collections/slippers-for-her",
+        "title_2": "<p>Made with borreguillo<br/><strong>The Clogs</strong></p>",
+        "button_2": "for she",
+        "url_button2": "shopify://collections/clogs",
+        "button_22": "for he",
+        "url_button22": "shopify://collections/clogs-for-him",
+        "margin_top": "",
+        "margin_bottom": ""
+      }
+    },
+    "custom_home_section_gUnkPB": {
+      "type": "custom-home-section",
+      "disabled": true,
+      "settings": {
+        "title-main": "",
+        "cta-link": "",
+        "cta-label": "",
+        "link-1": "",
+        "label-1": "",
+        "link-2": "",
+        "label-2": "",
+        "link-3": "",
+        "label-3": "",
+        "link-4": "",
+        "label-4": ""
+      }
+    },
+    "5794271e-d8f0-4b45-b561-1c495214e351": {
+      "type": "custom-home-video",
+      "disabled": true,
+      "custom_css": [
+        ".custom-home-video .links a {width: 100%;}",
+        "@media (max-width: 600px) {li {padding-bottom: 0px; width: 100%; }}"
+      ],
+      "settings": {
+        "bg-video": "https://cdn.shopify.com/s/files/1/2437/2785/files/PAEZ-BANNER-HOMEPAGE-DESKTOP.gif?v=1759343818",
+        "mobile-bg-video": "https://cdn.shopify.com/s/files/1/2437/2785/files/PAEZ-BANNER-HOMEPAGE-MOBILE.gif?v=1759343818",
+        "link-1": "shopify://collections/deals-she-2025",
+        "label-1": "FOR HER",
+        "link-2": "shopify://collections/deals-he-2025",
+        "label-2": "FOR HIM",
+        "link-3": "",
+        "label-3": "",
+        "link-4": "",
+        "label-4": ""
+      }
+    },
+    "1647227796098fdd2e": {
+      "type": "section-banner-v1",
+      "custom_css": [
+        "strong {font-family: \"Helvetica\" !important;}"
+      ],
+      "settings": {
+        "custom_class": "custom-bannerv1",
+        "img_banner1": "shopify://shop_images/1_63b7f645-7687-44f5-adf4-c3cfe5f47739.png",
+        "url_banner1": "shopify://collections/mary-jane-fw-2025",
+        "title_1": "<p>Truly Icons<br/><strong>Our Mary Janes</strong></p>",
+        "button_1": "Shop for her",
+        "url_button1": "shopify://collections/mary-jane-fw-2025",
+        "button_11": "",
+        "url_button11": "",
+        "img_banner2": "shopify://shop_images/2_f080fa06-872a-445e-89c4-dc9518dd0bb0.png",
+        "url_banner2": "shopify://collections/tulipa-fw-2025",
+        "title_2": "<p>Square-toe Trendy<br/><strong>The Tulipas</strong></p>",
+        "button_2": "Shop for her",
+        "url_button2": "shopify://collections/tulipa-fw-2025",
+        "button_22": "",
+        "url_button22": "",
+        "img_banner3": "shopify://shop_images/3_d997a330-a9d6-4052-bd57-a4612165efdb.png",
+        "url_banner3": "shopify://collections/ballet-flats-fw-2025",
+        "title_3": "<p>Versatile and casual<br/><strong>Our Ballet Flats</strong></p>",
+        "button_3": "Shop for her",
+        "url_button3": "shopify://collections/ballet-flats-fw-2025",
+        "button_33": "",
+        "url_button33": "",
+        "color_title": "#ffffff",
+        "color_btn": "#ffffff",
+        "color_btn_hover": "#ffffff",
+        "margin_top": "0",
+        "margin_bottom": ""
+      }
+    },
+    "custom_home_section_amAdU6": {
+      "type": "custom-home-section",
+      "disabled": true,
+      "settings": {
+        "title-main": "",
+        "cta-link": "",
+        "cta-label": "",
+        "link-1": "",
+        "label-1": "",
+        "link-2": "",
+        "label-2": "",
+        "link-3": "",
+        "label-3": "",
+        "link-4": "",
+        "label-4": ""
+      }
+    },
+    "section_product_v8_kPmrjA": {
+      "type": "section-product-v8",
       "blocks": {
-        "collection_tab_e4HBGL": {
-          "type": "collection_tab",
+        "tab_4zJ9Xe": {
+          "type": "tab",
           "settings": {
-            "collection_title": "Women",
-            "collection": "feature_women_collection",
-            "image": "shopify://shop_images/image3_1_d6e130d1-7dba-472b-bef6-d53e229296ed.jpg",
-            "history": "Tell a story...",
-            "btn_text": "View all"
+            "tab_title": "FOR HER",
+            "tab_collection": "carousel-2",
+            "tab_limit": 9
           }
         },
-        "collection_tab_GEJ3Cd": {
-          "type": "collection_tab",
+        "tab_Ub6qjB": {
+          "type": "tab",
           "settings": {
-            "collection_title": "Men",
-            "collection": "featured-men",
-            "image": "shopify://shop_images/3_5116e13f-b09a-4f7d-9988-186bf56eff32.png",
-            "history": "Tell a story",
-            "btn_text": "View all"
+            "tab_title": "FOR HIM",
+            "tab_collection": "carousel-2-he",
+            "tab_limit": 8
+          }
+        }
+      },
+      "block_order": [
+        "tab_4zJ9Xe",
+        "tab_Ub6qjB"
+      ],
+      "disabled": true,
+      "custom_css": [
+        "li a {font-size: 20px !important; text-transform: uppercase !important; color: #000000 !important; font-family: \"Helvetica\" !important;}",
+        "a.active {border-bottom: 1px solid #000000 !important;}",
+        ".mt-all {margin-top: 40px;}",
+        ".slick-slider {display: flex; justify-content: center; margin: 0px;}",
+        ".slick-list {padding-right: 0px;}",
+        "@media (min-width: 960px) {.slick-track {width: 1000px !important; display: flex; justify-content: center; }}",
+        ".nav-tabs {padding-top: 20px !important;}"
+      ],
+      "settings": {
+        "custom_class": "",
+        "margin_top": "",
+        "margin_bottom": "",
+        "title_heading": "outlet",
+        "color_title": "#222222",
+        "enable_slider": false
+      }
+    },
+    "custom_home_section_HNkBjj": {
+      "type": "custom-home-section",
+      "disabled": true,
+      "custom_css": [
+        "@media (max-width: 767px) {.custom-home-section {padding: 84% 0 40% 0 !important; position: relative; }}"
+      ],
+      "settings": {
+        "title-main": "",
+        "cta-link": "",
+        "cta-label": "",
+        "link-1": "",
+        "label-1": "",
+        "link-2": "",
+        "label-2": "",
+        "link-3": "",
+        "label-3": "",
+        "link-4": "",
+        "label-4": ""
+      }
+    },
+    "custom_pair_banners_ztDL3q": {
+      "type": "custom-pair-banners",
+      "disabled": true,
+      "settings": {
+        "custom_class": "custom-bannerv1",
+        "img_banner1": "shopify://shop_images/5-Banner_Cuadrado-_960x960px.jpg",
+        "url_banner1": "",
+        "title_1": "NEW SLIPPPERS",
+        "button_1": "SHOP NOW",
+        "url_button1": "shopify://collections/ss24-she-sandals",
+        "button_11": "",
+        "url_button11": "",
+        "img_banner2": "shopify://shop_images/6-Banner_Cuadrado-_960x960px.jpg",
+        "url_banner2": "",
+        "title_2": "OUR CLASSICS ESPADRILLES",
+        "button_2": "he",
+        "url_button2": "shopify://collections/ss24-moc-he",
+        "button_22": "she",
+        "url_button22": "shopify://collections/ss24-moc-she",
+        "margin_top": "",
+        "margin_bottom": ""
+      }
+    },
+    "546f7944-b755-4910-811c-983f9c078a01": {
+      "type": "section-product-v2",
+      "blocks": {
+        "template--16709588025589__546f7944-b755-4910-811c-983f9c078a01-16783353295bb7c819-0": {
+          "type": "tab",
+          "settings": {
+            "tab_title": "For her",
+            "tab_collection": "she-bestsellers",
+            "tab_limit": 8
           }
         },
-        "collection_tab_TbydwJ": {
-          "type": "collection_tab",
+        "template--16709588025589__546f7944-b755-4910-811c-983f9c078a01-16783353295bb7c819-1": {
+          "type": "tab",
+          "settings": {
+            "tab_title": "For him",
+            "tab_collection": "he-bestsellers",
+            "tab_limit": 8
+          }
+        }
+      },
+      "block_order": [
+        "template--16709588025589__546f7944-b755-4910-811c-983f9c078a01-16783353295bb7c819-0",
+        "template--16709588025589__546f7944-b755-4910-811c-983f9c078a01-16783353295bb7c819-1"
+      ],
+      "settings": {
+        "custom_class": "custom_productv2",
+        "margin_top": "",
+        "margin_bottom": "",
+        "title_heading": "bestsellers",
+        "color_title": "#222222",
+        "enable_slider": true
+      }
+    },
+    "20063f78-d870-43a6-b80f-9ebdaed0e8b0": {
+      "type": "custom-home-section",
+      "disabled": true,
+      "settings": {
+        "title-main": "",
+        "cta-link": "",
+        "cta-label": "",
+        "link-1": "",
+        "label-1": "",
+        "link-2": "",
+        "label-2": "",
+        "link-3": "",
+        "label-3": "",
+        "link-4": "",
+        "label-4": ""
+      }
+    },
+    "section_product_v2_edFgFr": {
+      "type": "section-product-v2",
+      "blocks": {
+        "tab_9ny8wi": {
+          "type": "tab",
+          "settings": {
+            "tab_title": "For her",
+            "tab_collection": "best-sellers-her",
+            "tab_limit": 4
+          }
+        },
+        "tab_Ye7RQa": {
+          "type": "tab",
+          "settings": {
+            "tab_title": "For him",
+            "tab_collection": "best-sellers-him",
+            "tab_limit": 4
+          }
+        }
+      },
+      "block_order": [
+        "tab_9ny8wi",
+        "tab_Ye7RQa"
+      ],
+      "disabled": true,
+      "settings": {
+        "custom_class": "custom_productv2",
+        "margin_top": "",
+        "margin_bottom": "",
+        "title_heading": "BESTSELLERS",
+        "color_title": "#222222",
+        "enable_slider": true
+      }
+    },
+    "custom_abouts_pair_banners_MkNYww": {
+      "type": "custom-abouts-pair-banners",
+      "custom_css": [
+        ".custom-abouts-banner {padding-top: 0px;}"
+      ],
+      "settings": {
+        "custom_class": "custom-bannerv1",
+        "img_banner1": "shopify://shop_images/1_3dd28076-7cc0-4735-a067-6ac2158cecad.png",
+        "url_banner1": "shopify://pages/about-us-collection",
+        "button_1": "About FW25",
+        "url_button1": "shopify://pages/about-us-collection",
+        "title_1": "",
+        "img_banner2": "shopify://shop_images/2_79973966-4317-46ff-8e40-8fd5798b1465.png",
+        "url_banner2": "shopify://collections/all",
+        "title_2": "",
+        "button_2": "Moodboard",
+        "url_button2": "shopify://pages/moodboard",
+        "button_22": "",
+        "url_button22": "",
+        "img_banner3": "shopify://shop_images/1_944ed4c9-f547-4f4f-a810-b60872f40647.png",
+        "img_banner4": "shopify://shop_images/2_0074de04-d97c-4980-bcc8-7d94322f2ed5.png",
+        "img_banner5": "shopify://shop_images/3_b3ea1c82-c1e2-487b-8924-781773d06ca7.png",
+        "margin_top": "",
+        "margin_bottom": ""
+      }
+    },
+    "af7d80d2-056b-48df-a995-11c01670153e": {
+      "type": "section-blog-v4",
+      "disabled": true,
+      "settings": {
+        "css_class": "home-blog-wrapper",
+        "section_title": "PAEZ STORIES",
+        "color_title": "#000000",
+        "select_blog": "news",
+        "button_name": "Read more"
+      }
+    },
+    "2931af67-3291-4c55-8e19-3e7218b69b46": {
+      "type": "custom-icon-text",
+      "blocks": {
+        "template--16709588025589__2931af67-3291-4c55-8e19-3e7218b69b46-167852077082aa0741-0": {
+          "type": "column",
+          "settings": {
+            "icon": "shopify://shop_images/Prancheta_1_1_2b294803-47b7-46d9-8b37-42f9f0629568.png",
+            "text": "Safe payment"
+          }
+        },
+        "0624db29-10f1-4332-ad70-ae3811a2b7ed": {
+          "type": "column",
+          "settings": {
+            "icon": "shopify://shop_images/Prancheta_1_2.png",
+            "text": "Delivery in 3-5 business days"
+          }
+        },
+        "45fa7031-79a4-4194-a935-cc22736f633a": {
+          "type": "column",
+          "settings": {
+            "icon": "shopify://shop_images/Prancheta_1_3.png",
+            "text": "30 day return period"
+          }
+        },
+        "89352b32-6cfe-43d6-9cc4-4e68fb22e9f4": {
+          "type": "column",
+          "settings": {
+            "icon": "shopify://shop_images/Prancheta_1_4.png",
+            "text": "Size guide"
+          }
+        }
+      },
+      "block_order": [
+        "template--16709588025589__2931af67-3291-4c55-8e19-3e7218b69b46-167852077082aa0741-0",
+        "0624db29-10f1-4332-ad70-ae3811a2b7ed",
+        "45fa7031-79a4-4194-a935-cc22736f633a",
+        "89352b32-6cfe-43d6-9cc4-4e68fb22e9f4"
+      ],
+      "custom_css": [
+        ".text-info {text-align: center; font-size: 14px;}",
+        ".text-info p {margin-top: 12px; color: black;}",
+        ".icon img {max-width: 65px;}",
+        ".icon {height: 65px; text-align: center;}",
+        ".box-container {display: flex; flex-direction: column; height: 170px; margin-left: 10px; margin-right: 10px;}",
+        ".info-block {flex-grow: 1; flex-basis: 80px;}",
+        "@media (max-width: 749px) {.icon img {max-width: 45px; } .text-info p {height: 50px; } .custom-icon-text .container {padding: 20px; }}"
+      ],
+      "settings": {
+        "custom_class": ""
+      }
+    },
+    "locations_madTBf": {
+      "type": "locations",
+      "blocks": {
+        "location_qYPRh7": {
+          "type": "location",
           "disabled": true,
           "settings": {
-            "collection_title": "Best Sellers",
-            "collection": "featured-bestsellers",
-            "image": "shopify://shop_images/paez_18.jpg",
-            "history": "Tell a story...",
-            "btn_text": "View all"
+            "location_image": "shopify://shop_images/WhatsApp_Image_2025-11-30_at_19.06.20_5.jpg",
+            "location_name": "NEW POP-UP STORE | Embaixada",
+            "location_description": "PRAÇA DO PRÍNCIPE REAL 26, PRÍNCIPE REAL",
+            "location_link": "https://maps.app.goo.gl/XA3fQF9WsyJeZHGq5",
+            "link_text": "How to get there",
+            "open_new_tab": true
+          }
+        },
+        "location_nb7iRB": {
+          "type": "location",
+          "settings": {
+            "location_image": "shopify://shop_images/BANNER_V13.jpg",
+            "location_name": "EL CORTE INGLÉS GAIA",
+            "location_description": "Av. da República 1435, Floor 0, 4430-204 Vila Nova de Gaia",
+            "location_link": "https://maps.app.goo.gl/pQuAinVzqpVrFqWK6",
+            "link_text": "How to get there",
+            "open_new_tab": true
+          }
+        },
+        "location_KCXJhM": {
+          "type": "location",
+          "settings": {
+            "location_image": "shopify://shop_images/WhatsApp_Image_2025-12-03_at_16.39.44_1.jpg",
+            "location_name": "Alvalade",
+            "location_description": "RUA MARQUESA DE ALORNA 29, ALVALADE",
+            "location_link": "https://maps.app.goo.gl/pQuAinVzqpVrFqWK6",
+            "link_text": "How to get there",
+            "open_new_tab": true
+          }
+        },
+        "location_E84kEQ": {
+          "type": "location",
+          "settings": {
+            "location_image": "shopify://shop_images/WhatsApp_Image_2025-12-01_at_19.40.41_1.jpg",
+            "location_name": "Campo de Ourique",
+            "location_description": "RUA DA INFANTARIA 77A, CAMPO DE OURIQUE",
+            "location_link": "https://maps.app.goo.gl/GfmcAmndxDNUEERW6",
+            "link_text": "How to get there",
+            "open_new_tab": true
+          }
+        },
+        "location_4hj6bW": {
+          "type": "location",
+          "settings": {
+            "location_image": "shopify://shop_images/WhatsApp_Image_2025-12-01_at_23.39.00_1_1.jpg",
+            "location_name": "Strada (Outlet)",
+            "location_description": "CASAL DO TROCA, ESTR. DA PALÃ, ODIVELAS",
+            "location_link": "https://maps.app.goo.gl/pSGVhV4d7vHerNALA",
+            "link_text": "How to get there",
+            "open_new_tab": true
           }
         }
       },
       "block_order": [
-        "collection_tab_e4HBGL",
-        "collection_tab_GEJ3Cd",
-        "collection_tab_TbydwJ"
+        "location_qYPRh7",
+        "location_nb7iRB",
+        "location_KCXJhM",
+        "location_E84kEQ",
+        "location_4hj6bW"
       ],
-      "name": "Featured Collection",
+      "name": "Locations",
       "settings": {
-        "title_page": "Featured collection"
-      }
-    },
-    "main_banner_tbXbaU": {
-      "type": "main-banner",
-      "name": "Main Banner",
-      "settings": {
-        "primary_video_desktop": "https://cdn.shopify.com/videos/c/o/v/73da246fd4f3428eb8879e0f3e36e203.mp4",
-        "primary_video_mobile": "https://cdn.shopify.com/videos/c/o/v/73da246fd4f3428eb8879e0f3e36e203.mp4",
-        "title_page": "",
-        "title_subtitle": "",
-        "bn_1": "",
-        "bn_2": ""
-      }
-    },
-    "main_mini_banner_UAiE3n": {
-      "type": "main-mini-banner",
-      "blocks": {
-        "producto_3LKDKc": {
-          "type": "producto",
-          "settings": {
-            "image_banner": "shopify://shop_images/fast.png",
-            "text": "Free Shipping on all orders over 100€"
-          }
-        },
-        "producto_TwwXEd": {
-          "type": "producto",
-          "settings": {
-            "image_banner": "shopify://shop_images/tag.png",
-            "text": "Get 10% off on all purchases over 150€"
-          }
-        },
-        "producto_K7jn3G": {
-          "type": "producto",
-          "settings": {
-            "image_banner": "shopify://shop_images/return-box.png",
-            "text": "30-day return period."
-          }
-        }
-      },
-      "block_order": [
-        "producto_3LKDKc",
-        "producto_TwwXEd",
-        "producto_K7jn3G"
-      ],
-      "name": "Mini Banner",
-      "settings": {}
-    },
-    "main_slide_photos_4n3Kde": {
-      "type": "main-slide-photos",
-      "blocks": {
-        "producto_rXUUmx": {
-          "type": "producto",
-          "settings": {
-            "image_banner": "shopify://shop_images/IMG_9046.jpg",
-            "title": "Your perfect fit",
-            "btn_text": "Shop now",
-            "url_slide": "",
-            "product_slide": ""
-          }
-        },
-        "producto_bhFmHk": {
-          "type": "producto",
-          "settings": {
-            "image_banner": "shopify://shop_images/image3_c586d119-625d-47be-9731-fc89923cb9e6.jpg",
-            "title": "Your perfect fit",
-            "btn_text": "Shop now",
-            "url_slide": "",
-            "product_slide": ""
-          }
-        },
-        "producto_p47Fmx": {
-          "type": "producto",
-          "settings": {
-            "image_banner": "shopify://shop_images/WhatsApp_Image_2026-01-05_at_10.29.12.jpg",
-            "title": "Your perfect fit",
-            "btn_text": "Shop now",
-            "url_slide": "",
-            "product_slide": ""
-          }
-        },
-        "producto_YgHcKE": {
-          "type": "producto",
-          "settings": {
-            "image_banner": "shopify://shop_images/WhatsApp_Image_2025-12-02_at_23.33.21.jpg",
-            "title": "Your perfect fit",
-            "btn_text": "Shop now",
-            "url_slide": "",
-            "product_slide": ""
-          }
-        },
-        "producto_p8fpPa": {
-          "type": "producto",
-          "settings": {
-            "image_banner": "shopify://shop_images/WhatsApp_Image_2026-01-06_at_18.20.14.jpg",
-            "title": "Your perfect fit",
-            "btn_text": "Shop now",
-            "url_slide": "",
-            "product_slide": ""
-          }
-        }
-      },
-      "block_order": [
-        "producto_rXUUmx",
-        "producto_bhFmHk",
-        "producto_p47Fmx",
-        "producto_YgHcKE",
-        "producto_p8fpPa"
-      ],
-      "name": "Slide Photos 1",
-      "settings": {}
-    },
-    "main_reviews_ybx7tL": {
-      "type": "main-reviews",
-      "blocks": {
-        "producto_6HCeDh": {
-          "type": "producto",
-          "settings": {
-            "product_choose": "tulipa-microfiber-napa-black",
-            "comment": "<p>Beautiful Tulipas. They are perfect</p>",
-            "user": "@Nyembetti Fernandes via Judge.Me",
-            "stars": 5
-          }
-        },
-        "producto_CRnPpn": {
-          "type": "producto",
-          "settings": {
-            "product_choose": "clog-vegan-suede-forest",
-            "comment": "<p>Fantastic. It's so comfortable.....</p>",
-            "user": "@Carla Sabino via Judge.Me",
-            "stars": 5
-          }
-        },
-        "producto_z4yjrw": {
-          "type": "producto",
-          "settings": {
-            "product_choose": "mary-jane-charcoal",
-            "comment": "<p>Great purchase!</p><p>Super comfortable, I work all day in them. Great purchase.</p>",
-            "user": "@Sofia via Judge.Me",
-            "stars": 5
-          }
-        },
-        "producto_3zWAqN": {
-          "type": "producto",
-          "settings": {
-            "product_choose": "mary-jane-velvet-cloudy",
-            "comment": "<p>Beautiful!!!! Super comfortable.</p><p>They are super comfortable and look great with any outfit!!!</p>",
-            "user": "@Maria Serra via Judge.Me",
-            "stars": 5
-          }
-        },
-        "producto_iXxjg9": {
-          "type": "producto",
-          "settings": {
-            "product_choose": "tulipa-microfiber-napa-camel",
-            "comment": "<p>The PERFECT pair</p><p>Love my Tulipa, they are super cool and comfortable.</p>",
-            "user": "@Marta Kadosh via Judge.Me",
-            "stars": 5
-          }
-        },
-        "producto_eUN34X": {
-          "type": "producto",
-          "settings": {
-            "product_choose": "tulipa-microfiber-napa-black",
-            "comment": "<p>Beautiful Tulipas. They are perfect</p>",
-            "user": "@Nyembetti Fernandes via Judge.Me",
-            "stars": 5
-          }
-        }
-      },
-      "block_order": [
-        "producto_6HCeDh",
-        "producto_CRnPpn",
-        "producto_z4yjrw",
-        "producto_3zWAqN",
-        "producto_iXxjg9",
-        "producto_eUN34X"
-      ],
-      "name": "Reviews",
-      "settings": {
-        "title": "Loved by everyone, everywhere. Don't miss out"
-      }
-    },
-    "main_featured_xPELPW": {
-      "type": "main-featured",
-      "disabled": true,
-      "name": "Featured Collection",
-      "settings": {
-        "title_page": "Featured collection"
-      }
-    },
-    "main_features_slide_gjNCkD": {
-      "type": "main-features-slide",
-      "blocks": {
-        "feature_njQL4X": {
-          "type": "feature",
-          "settings": {
-            "feature_name": "INSANE COMFORTABLE",
-            "feature_image": "shopify://shop_images/light.png",
-            "title": "INSANE COMFORTABLE",
-            "subtitle": "",
-            "description": "<p>Our products easily adjust to your feet, and feel extra comfortable due to our padded memory-foam insole. You’ll feel like walking on clouds.</p>",
-            "image_banner": "shopify://shop_images/paez_1_ffcb51a7-dcfd-471f-a50c-9cc0f7fcea55.jpg"
-          }
-        },
-        "feature_zwJMQD": {
-          "type": "feature",
-          "settings": {
-            "feature_name": "WE’RE CRUELTY-FREE",
-            "feature_image": "shopify://shop_images/cruelty-free.png",
-            "title": "WE’RE CRUELTY-FREE",
-            "subtitle": "",
-            "description": "<p>Our products are made from recycled textiles and micro-fibers components, from suppliers that work with the development of responsible production of footwear</p>",
-            "image_banner": "shopify://shop_images/paez_3.jpg"
-          }
-        },
-        "feature_M6tVQ8": {
-          "type": "feature",
-          "settings": {
-            "feature_name": "IT’S VERSATILE",
-            "feature_image": "shopify://shop_images/resourceful.png",
-            "title": "IT’S VERSATILE",
-            "subtitle": "",
-            "description": "<p>Over these past years, we’re on a path of developing new product ranges that can take you anywhere. From work days, to lunch dates, to end of the day unexpected moments. Your PAEZ take you anywhere! </p>",
-            "image_banner": "shopify://shop_images/PAEZ_COSMOPOLITAN_ALTA-151.jpg"
-          }
-        },
-        "feature_YBd96E": {
-          "type": "feature",
-          "settings": {
-            "feature_name": "WE’RE ABOUT FUN!",
-            "feature_image": "shopify://shop_images/laugh.png",
-            "title": "WE’RE ABOUT FUN!",
-            "subtitle": "Subtitle",
-            "description": "<p>Summer is out motto for everything we do. And because of that, we’re adventurous, colourful, fun, and believe in the power of community. At PAEZ we’re the essential for any occasion.</p>",
-            "image_banner": "shopify://shop_images/PAEZ_COSMOPOLITAN_ALTA-95.jpg"
-          }
-        }
-      },
-      "block_order": [
-        "feature_njQL4X",
-        "feature_zwJMQD",
-        "feature_M6tVQ8",
-        "feature_YBd96E"
-      ],
-      "name": "Feautures",
-      "settings": {
-        "title": "What makes paez special?"
-      }
-    },
-    "main_slide_photos2_AHqCaU": {
-      "type": "main-slide-photos2",
-      "blocks": {
-        "photo_FY63ee": {
-          "type": "Photo",
-          "settings": {
-            "title": "",
-            "image_banner": "shopify://shop_images/3_tulipas.jpg",
-            "url_slide": ""
-          }
-        },
-        "photo_LJBb9H": {
-          "type": "Photo",
-          "settings": {
-            "title": "",
-            "image_banner": "shopify://shop_images/WhatsApp_Image_2025-11-25_at_13.18.36_2.jpg",
-            "url_slide": ""
-          }
-        },
-        "photo_aFyFcJ": {
-          "type": "Photo",
-          "settings": {
-            "title": "",
-            "image_banner": "shopify://shop_images/image3_1_d6e130d1-7dba-472b-bef6-d53e229296ed.jpg",
-            "url_slide": ""
-          }
-        },
-        "photo_Pz8iXC": {
-          "type": "Photo",
-          "settings": {
-            "title": "",
-            "image_banner": "shopify://shop_images/WhatsApp_Image_2025-12-03_at_07.47.43.jpg",
-            "url_slide": ""
-          }
-        },
-        "photo_dFrfpG": {
-          "type": "Photo",
-          "settings": {
-            "title": "",
-            "image_banner": "shopify://shop_images/3_tulipas.jpg",
-            "url_slide": ""
-          }
-        },
-        "photo_8XUw9d": {
-          "type": "Photo",
-          "settings": {
-            "title": "",
-            "image_banner": "shopify://shop_images/652x1110px_Prancheta_1-01.png",
-            "url_slide": ""
-          }
-        }
-      },
-      "block_order": [
-        "photo_FY63ee",
-        "photo_LJBb9H",
-        "photo_aFyFcJ",
-        "photo_Pz8iXC",
-        "photo_dFrfpG",
-        "photo_8XUw9d"
-      ],
-      "name": "Slide photos 2",
-      "settings": {
-        "title": ""
-      }
-    },
-    "faq_k8T6GM": {
-      "type": "faq",
-      "blocks": {
-        "faq_category_DBzpXB": {
-          "type": "faq_category",
-          "settings": {
-            "category_name": "Returns & Refunds",
-            "question_1": "Pregunta 1",
-            "answer_1": "<p>respuesta</p>",
-            "question_2": "Pregunta 2",
-            "answer_2": "<p>Respuesta</p>",
-            "question_3": "Pregunta 3",
-            "answer_3": "<p>Respuesta</p>",
-            "question_4": "Pregunta 4",
-            "answer_4": "",
-            "question_5": "",
-            "answer_5": ""
-          }
-        },
-        "faq_category_fwKkNy": {
-          "type": "faq_category",
-          "settings": {
-            "category_name": "Delivery",
-            "question_1": "",
-            "answer_1": "",
-            "question_2": "",
-            "answer_2": "",
-            "question_3": "",
-            "answer_3": "",
-            "question_4": "",
-            "answer_4": "",
-            "question_5": "",
-            "answer_5": ""
-          }
-        },
-        "faq_category_m3yXNr": {
-          "type": "faq_category",
-          "settings": {
-            "category_name": "Order",
-            "question_1": "",
-            "answer_1": "",
-            "question_2": "",
-            "answer_2": "",
-            "question_3": "",
-            "answer_3": "",
-            "question_4": "",
-            "answer_4": "",
-            "question_5": "",
-            "answer_5": ""
-          }
-        }
-      },
-      "block_order": [
-        "faq_category_DBzpXB",
-        "faq_category_fwKkNy",
-        "faq_category_m3yXNr"
-      ],
-      "disabled": true,
-      "name": "FAQ Section",
-      "settings": {
-        "title": "FAQ",
-        "background_image": "shopify://shop_images/womens_Flats.jpg"
+        "custom_class": "",
+        "margin_top": "",
+        "margin_bottom": "",
+        "title_heading": "Our Locations",
+        "color_title": "#222222",
+        "enable_slider": true,
+        "autoplay": true,
+        "autoplay_speed": 5000
       }
     }
   },
   "order": [
-    "header_section_FWPbxH",
-    "main_featured_d33iNh",
-    "main_banner_tbXbaU",
-    "main_mini_banner_UAiE3n",
-    "main_slide_photos_4n3Kde",
-    "main_reviews_ybx7tL",
-    "main_featured_xPELPW",
-    "main_features_slide_gjNCkD",
-    "main_slide_photos2_AHqCaU",
-    "faq_k8T6GM"
+    "c8f3b70b-6e5f-499c-8f0f-8980d558de0f",
+    "custom_home_section_89UmMg",
+    "17dd5695-fc6d-4132-adba-8cf6da84710e",
+    "custom_home_section_gUnkPB",
+    "5794271e-d8f0-4b45-b561-1c495214e351",
+    "1647227796098fdd2e",
+    "custom_home_section_amAdU6",
+    "section_product_v8_kPmrjA",
+    "custom_home_section_HNkBjj",
+    "custom_pair_banners_ztDL3q",
+    "546f7944-b755-4910-811c-983f9c078a01",
+    "20063f78-d870-43a6-b80f-9ebdaed0e8b0",
+    "section_product_v2_edFgFr",
+    "custom_abouts_pair_banners_MkNYww",
+    "af7d80d2-056b-48df-a995-11c01670153e",
+    "2931af67-3291-4c55-8e19-3e7218b69b46",
+    "locations_madTBf"
   ]
 }

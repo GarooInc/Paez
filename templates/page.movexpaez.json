@@ -1,0 +1,274 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {}
+    },
+    "4cd285cd-a46e-45f6-a646-b98f002e9a1b": {
+      "type": "rich-text-4",
+      "settings": {
+        "custom_class": "about-collection-banner-title page-banner-title",
+        "prefix": "",
+        "section_title": "Move x paez",
+        "section_sub": "",
+        "description": "",
+        "section_url": ""
+      }
+    },
+    "a0555b9d-28a1-437f-8f7d-545f2c79bd12": {
+      "type": "section-banner-v12",
+      "custom_css": [
+        ".about-banner {padding-bottom: 12px;}"
+      ],
+      "settings": {
+        "custom_class": "about-banner",
+        "img_banner": "shopify://shop_images/Banner-Principal-_1920x918px.jpg",
+        "mob_img_banner": "shopify://shop_images/Banner-Principal-_749x937px.jpg",
+        "title": "",
+        "url_banner": "shopify://collections/all",
+        "color_title": "#000000",
+        "color_hover_title": "#ffffff"
+      }
+    },
+    "248fabed-6a2d-4830-843e-7fcf037386b1": {
+      "type": "rich-text-4",
+      "custom_css": [
+        ".store-wrapper-beige {background-color: transparent; padding: 10px;}",
+        "@media (max-width: 600px) {.container-v1 {margin-top: 0px; }}",
+        "@media (max-width: 600px) {.store-wrapper-beige p {font-size: 15px; line-height: 16px; padding: 0px 25px; }}"
+      ],
+      "settings": {
+        "custom_class": "store-wrapper-beige",
+        "prefix": "",
+        "section_title": "",
+        "section_sub": "",
+        "description": "<p>We're thrilled to announce our collaboration with MOVE this summer, a portuguese NGO dedicated to empowering micro-entrepreneurs in underdeveloped regions including Azores, São Tomé e Príncipe, Timor Leste. At Paez, we believe in the power of fostering younger generations to create positive change, and this collaboration allows us to start tapping our feet to do so.</p>",
+        "section_url": ""
+      }
+    },
+    "6c90e00b-f8c8-4ce3-ac13-5d78f3dc0bfc": {
+      "type": "custom-image-with-text",
+      "blocks": {
+        "4e91cb9d-17bb-4471-a654-6577f49bc9ab": {
+          "type": "text",
+          "settings": {
+            "text": "<p>For every pair of our iconic Combi Dove shoes sold until September 30th, Paez will donate 3€ to support MOVE's incredible work. The funds raised will contribute to their day-to-day activities, helping to develop tools and provide essential resources to micro-entrepreneurs in developing countries.</p>",
+            "text_style": "body"
+          }
+        }
+      },
+      "block_order": [
+        "4e91cb9d-17bb-4471-a654-6577f49bc9ab"
+      ],
+      "custom_css": [
+        "@media (max-width: 769px) {.grid {display: flex; flex-direction: column; }}",
+        ".image-with-text .grid__item {position: relative; align-self: center;}",
+        ".rte {text-align: justify;}"
+      ],
+      "settings": {
+        "custom_class": "about-us-content responsibility-section-four",
+        "desktop-image": "shopify://shop_images/Imagen-1-_960x960px.jpg",
+        "mob-image": "shopify://shop_images/Imagen-1-_960x960px.jpg",
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "image_first",
+        "desktop_content_position": "top",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "color_scheme": "background-1",
+        "mobile_content_alignment": "left",
+        "padding_top": 12,
+        "padding_bottom": 0
+      }
+    },
+    "a9beb791-163d-458b-8abd-b9e68c22b4cf": {
+      "type": "section-product-v8",
+      "blocks": {
+        "template--19049517351256__a9beb791-163d-458b-8abd-b9e68c22b4cf-1685639389092c80f0-0": {
+          "type": "tab",
+          "settings": {
+            "tab_title": "for him",
+            "tab_collection": "move-x-paez-he-1",
+            "tab_limit": 2
+          }
+        },
+        "template--19049517351256__a9beb791-163d-458b-8abd-b9e68c22b4cf-1685639389092c80f0-1": {
+          "type": "tab",
+          "settings": {
+            "tab_title": "for her",
+            "tab_collection": "move-x-paez-he",
+            "tab_limit": 2
+          }
+        }
+      },
+      "block_order": [
+        "template--19049517351256__a9beb791-163d-458b-8abd-b9e68c22b4cf-1685639389092c80f0-0",
+        "template--19049517351256__a9beb791-163d-458b-8abd-b9e68c22b4cf-1685639389092c80f0-1"
+      ],
+      "custom_css": [
+        "li a {font-size: 20px !important; text-transform: uppercase !important; color: #000000 !important; font-family: \"Helvetica\" !important;}",
+        "a.active {border-bottom: 1px solid #000000 !important;}",
+        "@media (max-width: 760px) {.slick-track {width: 100% !important; display: flex; justify-content: center; margin-left: 20px; }}",
+        "@media (min-width: 960px) {.slick-track {width: 1000px !important; display: flex; justify-content: center; } .slick-slider {display: flex; justify-content: center; margin: 0px; } .slick-list {padding-right: 0px; }}"
+      ],
+      "settings": {
+        "custom_class": "custom_productv2",
+        "margin_top": "",
+        "margin_bottom": "",
+        "title_heading": "",
+        "color_title": "#222222",
+        "enable_slider": true
+      }
+    },
+    "d631ec72-559b-456a-bf09-6e3d34338cc1": {
+      "type": "section-banner-v12",
+      "settings": {
+        "custom_class": "about-banner",
+        "img_banner": "shopify://shop_images/Banner-2-_1920x918px.jpg",
+        "mob_img_banner": "shopify://shop_images/Banner-2-_749x749px.jpg",
+        "title": "",
+        "url_banner": "shopify://collections/all",
+        "color_title": "#000000",
+        "color_hover_title": "#ffffff"
+      }
+    },
+    "97469c62-bc8e-442d-8b06-cbae595e44b7": {
+      "type": "custom-image-with-text",
+      "blocks": {
+        "f00f4d94-3a71-4acc-a168-34bd9bb02df8": {
+          "type": "text",
+          "settings": {
+            "text": "<p>MOVE's mission revolves around fostering entrepreneurship as a means to fight poverty and drive community development. They offer valuable consulting and training projects in business management, nurturing local entrepreneurship and empowering individuals to create sustainable businesses.</p>",
+            "text_style": "body"
+          }
+        }
+      },
+      "block_order": [
+        "f00f4d94-3a71-4acc-a168-34bd9bb02df8"
+      ],
+      "custom_css": [
+        "@media (max-width: 769px) {.grid {display: flex; flex-direction: column; }}",
+        ".image-with-text .grid__item {position: relative; align-self: center;}",
+        ".rte {text-align: justify;}"
+      ],
+      "settings": {
+        "custom_class": "about-us-content responsibility-section-four",
+        "desktop-image": "shopify://shop_images/Imagen-2-_960x960px_54cdb7fd-982e-4387-a170-ca37621908de.jpg",
+        "mob-image": "shopify://shop_images/Imagen-2-_960x960px_b1568548-a78c-40ce-b677-151de0bf55b1.jpg",
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "text_first",
+        "desktop_content_position": "top",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "color_scheme": "background-1",
+        "mobile_content_alignment": "left",
+        "padding_top": 12,
+        "padding_bottom": 0
+      }
+    },
+    "c03f1a46-367a-472b-9848-e59e21e6625e": {
+      "type": "custom-image-with-text",
+      "blocks": {
+        "232644f1-b957-4470-853f-05d1ea3bef97": {
+          "type": "text",
+          "settings": {
+            "text": "<p>What sets MOVE apart is their commitment to quality and their amazing team of young, passionate volunteers. These volunteers, both on the ground and within the organization, are driven by innovation, change, and the desire to make a lasting impact. They dedicate their time and expertise to support entrepreneurs, breaking down barriers to growth such as lack of funding, limited education, and a scarcity of human capital.</p>",
+            "text_style": "body"
+          }
+        }
+      },
+      "block_order": [
+        "232644f1-b957-4470-853f-05d1ea3bef97"
+      ],
+      "custom_css": [
+        ".image-with-text .grid__item {position: relative; align-self: center;}",
+        ".rte {text-align: justify;}"
+      ],
+      "settings": {
+        "custom_class": "about-us-content responsibility-section-four",
+        "desktop-image": "shopify://shop_images/Imagen-3-_960x960px.jpg",
+        "mob-image": "shopify://shop_images/Imagen-3-_960x960px_a5644369-5520-4dd0-a7d9-f603653277ad.jpg",
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "image_first",
+        "desktop_content_position": "top",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "color_scheme": "background-1",
+        "mobile_content_alignment": "left",
+        "padding_top": 0,
+        "padding_bottom": 12
+      }
+    },
+    "24ea9ad0-b651-4d4f-8e85-b21bbff581ca": {
+      "type": "section-banner-v12",
+      "settings": {
+        "custom_class": "about-banner",
+        "img_banner": "shopify://shop_images/Pagina-MoveXPaez-Desktop.jpg",
+        "mob_img_banner": "shopify://shop_images/Pagina-MoveXPaez-Mobile.jpg",
+        "title": "",
+        "url_banner": "shopify://collections/all",
+        "color_title": "#000000",
+        "color_hover_title": "#ffffff"
+      }
+    },
+    "f263a731-91f7-4f64-9238-2942200fc3fe": {
+      "type": "rich-text-4",
+      "custom_css": [
+        ".store-wrapper-beige {background-color: transparent; padding: 10px;}",
+        ".store-wrapper-beige p {text-align: center;}",
+        "@media (max-width: 600px) {.container-v1 {margin-top: 0px; }}",
+        "@media (max-width: 600px) {.store-wrapper-beige p {font-size: 15px; line-height: 15px; padding: 0px 25px; }}"
+      ],
+      "settings": {
+        "custom_class": "store-wrapper-beige",
+        "prefix": "",
+        "section_title": "",
+        "section_sub": "",
+        "description": "<p><br/></p><p>This team aims to unlock the potential of aspiring entrepreneurs, fueling their dreams and helping them build successful businesses. </p><p><br/></p><p><strong>Find out more about Move here and check how you can help them out in other ways.</strong></p>",
+        "section_url": ""
+      }
+    },
+    "b193513f-e2b2-4c6c-be87-af7bc35aee5b": {
+      "type": "section-banner-v12",
+      "custom_css": [
+        "@media (min-width: 769px) {.about-banner {padding-left: 40%; padding-right: 40%; }}",
+        "@media (max-width: 769px) {.mobile-banner {max-width: 50%; } .banner a {display: flex; justify-content: center; align-items: center; padding: 20px; }}"
+      ],
+      "settings": {
+        "custom_class": "about-banner",
+        "img_banner": "shopify://shop_images/Logos.png",
+        "mob_img_banner": "shopify://shop_images/Logos.png",
+        "title": "",
+        "url_banner": "shopify://collections/all",
+        "color_title": "#000000",
+        "color_hover_title": "#ffffff"
+      }
+    }
+  },
+  "order": [
+    "main",
+    "4cd285cd-a46e-45f6-a646-b98f002e9a1b",
+    "a0555b9d-28a1-437f-8f7d-545f2c79bd12",
+    "248fabed-6a2d-4830-843e-7fcf037386b1",
+    "6c90e00b-f8c8-4ce3-ac13-5d78f3dc0bfc",
+    "a9beb791-163d-458b-8abd-b9e68c22b4cf",
+    "d631ec72-559b-456a-bf09-6e3d34338cc1",
+    "97469c62-bc8e-442d-8b06-cbae595e44b7",
+    "c03f1a46-367a-472b-9848-e59e21e6625e",
+    "24ea9ad0-b651-4d4f-8e85-b21bbff581ca",
+    "f263a731-91f7-4f64-9238-2942200fc3fe",
+    "b193513f-e2b2-4c6c-be87-af7bc35aee5b"
+  ]
+}

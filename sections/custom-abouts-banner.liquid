@@ -1,0 +1,247 @@
+<div
+  data-section-id="{{ section.id }}"
+  data-section-type="about-banner"
+  style="{% if section.settings.margin_top != blank %}margin-top: {{section.settings.margin_top}}px;{%endif%} {% if section.settings.margin_bottom != blank %}margin-bottom: {{section.settings.margin_bottom}}px;{% endif %}"
+>
+  <div class="custom-abouts-banner {{ section.settings.custom_class }} section-banner-v1 ">
+    <div class="container container-full">
+      <div class="row">
+        <div class="col-lg-6 col-md-6 col-sm-12 about-img">
+          <div class="box-banner ">
+            <div class="box-img">
+              {% if section.settings.url_banner1 != blank %}
+                <a href="{{section.settings.url_banner1}}">
+                  <img
+                    data-src=" {% if section.settings.img_banner1 != blank %}{{section.settings.img_banner1 | img_url:'master'}} {% else %}//via.placeholder.com/553x465{% endif %}"
+                    class="lazyload w-100 img-fluid"
+                    alt="_img"
+                  >
+                </a>
+              {% endif %}
+            </div>
+            <div class="info-banner">
+              {% if section.settings.button_1 != blank %}
+                <div class="info-bottom">
+                  <h2 class="font-helvetica text-white p-2 uppercase">{{ section.settings.title_1 }}</h2>
+                  <a href="{{section.settings.url_button1}}" class="button-shop button-shop-{{ section.id }}">
+                    {{- section.settings.button_1 -}}
+                  </a>
+                </div>
+              {% endif %}
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6 col-md-6 col-sm-12 about-img">
+          <div class="box-banner ">
+            <div class="box-img">
+              {% if section.settings.url_banner2 != blank %}
+              <a href="{{section.settings.url_banner2}}">
+                <img
+                  data-src=" {% if section.settings.img_banner2 != blank %}{{section.settings.img_banner2 | img_url:'master'}} {% else %}//via.placeholder.com/553x465{% endif %}"
+                  class="lazyload w-100 img-fluid"
+                  alt="_img"
+                >
+              </a>
+              {% endif %}
+            </div>
+            <div class="info-banner">
+              {% if section.settings.button_2 != blank %}
+                <div class="info-bottom">
+                  <h2 class="font-helvetica text-white p-2 uppercase ">{{ section.settings.title_2 }}</h2>
+                  <a href="{{section.settings.url_button2}}" class="button-shop button-shop-{{ section.id }}">
+                    {{- section.settings.button_2 -}}
+                  </a>
+                </div>
+              {% endif %}
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-4 col-sm-4 col-4 about-sub-img">
+          <div class="box-banner ">
+            <div class="box-img">
+              {% if section.settings.url_banner3 != blank %}
+              <a href="{{section.settings.url_banner3}}">
+                <img
+                  data-src=" {% if section.settings.img_banner3 != blank %}{{section.settings.img_banner3 | img_url:'master'}} {% else %}//via.placeholder.com/553x465{% endif %}"
+                  class="lazyload w-100 img-fluid"
+                  alt="_img"
+                >
+              </a>
+              {% endif %}
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-4 col-sm-4 col-4 about-sub-img">
+          <div class="box-banner ">
+            <div class="box-img">
+              {% if section.settings.url_banner4 != blank %}
+              <a href="{{section.settings.url_banner4}}">
+                <img
+                  data-src="{% if section.settings.img_banner4 != blank %} {{section.settings.img_banner4 | img_url:'master'}} {% else %} //via.placeholder.com/553x465{% endif %}"
+                  class="lazyload img-fluid w-100"
+                  alt="_img"
+                >
+              </a>
+              {% endif %}
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-4 col-sm-4 col-4 about-sub-img">
+          <div class="box-banner ">
+            <div class="box-img">
+              {% if section.settings.url_banner5 != blank %}
+              <a href="{{section.settings.url_banner5}}">
+                <img
+                  data-src="{% if section.settings.img_banner5 != blank %} {{section.settings.img_banner5 | img_url:'master'}} {% else %} //via.placeholder.com/553x465{% endif %}"
+                  class="lazyload img-fluid w-100"
+                  alt="_img"
+                >
+              </a>
+              {% endif %}
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<style>
+  .about-banner .box-banner .info-banner .info-banner-top .title-{{ section.id }} {
+    color: {{section.settings.color_title}};
+  }
+  .about-banner .box-banner .info-banner .info-bottom  .button-shop-{{ section.id }} {
+    color: {{section.settings.color_btn}};
+  }
+  .about-banner .box-banner .info-banner .info-bottom  .button-shop-{{ section.id }}:hover {
+    color: {{section.settings.color_btn_hover}};
+  }
+</style>
+
+{% schema %}
+{
+  "name": "Custom Abouts Banner",
+  "settings": [
+    {
+      "type": "header",
+      "content": "Setting banner 1"
+    },
+    {
+      "type": "text",
+      "id": "custom_class",
+      "label": "Custom Class"
+    },
+    {
+      "type": "image_picker",
+      "id": "img_banner1",
+      "label": "Image",
+      "info": "690 x 475px recommended"
+    },
+    {
+      "type": "url",
+      "id": "url_banner1",
+      "label": "URL images banner 1",
+      "default": "/collections/all"
+    },
+    {
+      "type": "text",
+      "id": "button_1",
+      "label": "Button 1",
+      "default": "EXPLORE"
+    },
+    {
+      "type": "url",
+      "id": "url_button1",
+      "label": "URL button 1",
+      "default": "/collections/all"
+    },
+    {
+      "type": "text",
+      "id": "title_1",
+      "label": "Title banner 1",
+      "default": "Backpacks"
+    },
+    {
+      "type": "header",
+      "content": "Setting banner 2"
+    },
+    {
+      "type": "image_picker",
+      "id": "img_banner2",
+      "label": "Image",
+      "info": "690 x 475px recommended"
+    },
+    {
+      "type": "url",
+      "id": "url_banner2",
+      "label": "URL images banner 2",
+      "default": "/collections/all"
+    },
+    {
+      "type": "text",
+      "id": "button_2",
+      "label": "Button 2",
+      "default": "EXPLORE"
+    },
+    {
+      "type": "url",
+      "id": "url_button2",
+      "label": "URL button 2",
+      "default": "/collections/all"
+    },
+    {
+      "type": "text",
+      "id": "title_2",
+      "label": "Title banner 2",
+      "default": "Sneakers"
+    },
+      {
+      "type": "image_picker",
+      "id": "img_banner3",
+      "label": "Image",
+      "info": "690 x 475px recommended"
+    },
+      {
+      "type": "image_picker",
+      "id": "img_banner4",
+      "label": "Image",
+      "info": "690 x 475px recommended"
+    },
+      {
+      "type": "image_picker",
+      "id": "img_banner5",
+      "label": "Image",
+      "info": "690 x 475px recommended"
+    },
+    {
+      "type": "header",
+      "content": "Setting banner 3"
+    },
+    {
+      "type": "text",
+      "id": "margin_top",
+      "label": "Margin Top",
+      "info": "Defined in pixels. Do not add the 'px' unit."
+    },
+    {
+      "type": "text",
+      "id": "margin_bottom",
+      "label": "Margin Bottom",
+      "info": "Defined in pixels. Do not add the 'px' unit."
+    }
+  ],
+  "presets": [
+    {
+      "name": "Custom Abouts Banner",
+      "category": "HOME"
+    }
+  ]
+}
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

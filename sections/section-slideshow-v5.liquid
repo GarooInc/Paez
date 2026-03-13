@@ -1,0 +1,193 @@
+<div data-section-id="{{ section.id }}" data-section-type="section-slideshow-v5" style="{% if section.settings.margin_top != blank %}margin-top: {{section.settings.margin_top}}px;{%endif%} {% if section.settings.margin_bottom != blank %}margin-bottom: {{section.settings.margin_bottom}}px;{% endif %} {% if section.settings.sections_layout == "dark" %}background: {{section.settings.sections_bg_color}};{% endif %}">
+  <div class="section-slideshow-v5">
+    <div class="">
+      <div class="slick-side-h5">       
+        {% if section.blocks.size > 0 %}
+        {% for block in section.blocks %}
+        {% if block.type == "slideshow" %}
+        <div class="item-slide">
+          <div class="slide-content" style="background: {{block.settings.bg_content}}">      
+            {%  if block.settings.title_slide != blank %}
+            <h3 class="title-slide animated" style="color: {{block.settings.color_title}}">{{block.settings.title_slide}}</h3>
+            {% endif %}
+
+            {%  if block.settings.content != blank %}
+            <p class="content animated" style="color: {{block.settings.color_content}}">{{block.settings.content}}</p>
+            {% endif %}
+
+            {% if block.settings.btn_slide != blank %}
+            <div class="box-btn">
+
+              <div class="btn-slide1 animated">
+                <div style="padding: 1px;">
+                  <a href="{{block.settings.url_btn}}" class="btn-slide  btn-slide1-{{ block.id }}">{{block.settings.btn_slide}}</a>
+                </div>
+              </div>
+
+            </div>
+            {% endif %}
+          </div>
+          <div class="img-slide mb-all">
+            <div class="">
+
+              <img data-src="{% if block.settings.img_slide != blank %} {{block.settings.img_slide | img_url : 'master'}} {% else %}  //via.placeholder.com/1225x740 {% endif %}" class="lazyload img_desktop img-fluid" alt="_img_slide_">
+
+            </div>
+
+          </div>
+        </div>
+        {% endif %}
+        {% endfor %}
+        {% endif %}
+      </div>
+    </div>
+  </div>
+</div>
+<style>
+  {% for block in section.blocks %}
+  {% if block.type == 'slideshow' %}
+  .section-slideshow-v5 .slick-side-h5 .item-slide .slide-content .box-btn .btn-slide1-{{ block.id }} {
+    color: {{block.settings.color_btn}};
+    background: transparent;
+    transition: all .3s;
+    border: 1px solid {{block.settings.color_btn}};
+  }
+  .section-slideshow-v5 .slick-side-h5 .item-slide .slide-content .box-btn .btn-slide1-{{ block.id }}:hover {
+    color: {{block.settings.color_btn_hover}};
+    background: {{block.settings.bg_btn_hover}};
+    border: 1px solid {{block.settings.bg_btn_hover}};
+  }
+
+  {% endif %}
+  {% endfor %}
+</style>
+
+{% schema %}
+{
+  "name": "SLIDESHOW V5",
+  "class": "index-section",
+  "settings": [
+    {
+      "type": "header",
+      "content": "Section Space"
+    },
+    {
+      "type": "text",
+      "id": "margin_top",
+      "label": "Margin Top",
+      "info": "Defined in pixels. Do not add the 'px' unit."
+    },
+    {
+      "type": "text",
+      "id": "margin_bottom",
+      "label": "Margin Bottom",
+      "info": "Defined in pixels. Do not add the 'px' unit."
+    }
+  ],
+  "blocks": [
+    {
+      "type": "slideshow",
+      "name": "slideshow",
+      "settings": [
+		{
+          "type": "image_picker",
+          "id": "img_slide",
+          "label": "Image slideshow",
+          "info": "1920 x 900px recommended"
+        },
+		{		
+           "type": "color",
+           "id": "bg_content",
+           "label": "Background Color",
+           "default": "#f3ebdf"
+        },
+        {
+          "type": "text",
+          "id": "title_slide",
+          "label": "Title ",
+          "default": "We Deliver Best<br> Organic Food"
+        },
+		{		
+           "type": "color",
+           "id": "color_title",
+           "label": "Color",
+           "default": "#000"
+        },
+        {
+          "type": "text",
+          "id": "content",
+          "label": "Sub Title ",
+          "default": "100% PURE & NATURE"
+        },
+		{		
+           "type": "color",
+           "id": "color_content",
+           "label": "Color",
+           "default": "#666"
+        },
+        {
+          "type": "text",
+          "id": "btn_slide",
+          "label": "Button 1",
+          "default": "SHOP NOW"
+        },
+		{		
+           "type": "color",
+           "id": "color_btn",
+           "label": "Color Button",
+           "default": "#fff"
+        },
+		{		
+           "type": "color",
+           "id": "color_btn_hover",
+           "label": "Color Button hover",
+           "default": "#fff"
+        },
+		{		
+           "type": "color",
+           "id": "bg_btn_hover",
+           "label": "Background Color Hover",
+           "default": "#000"
+        },
+        {
+          "type": "url",
+          "id": "url_btn",
+          "label": "URL Button",
+          "default": "/collections/all"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "SLIDESHOW V5",
+      "category": "HOME",
+	  "blocks": [
+        {
+          "type": "slideshow",
+          "settings": {
+            "title_slide": "High-Quality <br>Organic Products",
+			"content": "100% PURE & NATURE",
+			"btn_slide": "SHOP NOW"
+          }
+        },
+		 {
+          "type": "slideshow",
+          "settings": {
+            "title_slide": "We Deliver Best<br> Organic Food",
+			"content": "100% PURE & NATURE",
+			"btn_slide": "SHOP NOW"
+          }
+        }		
+      ]
+    }
+  ]
+}
+{% endschema %}
+
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

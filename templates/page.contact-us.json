@@ -1,0 +1,54 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "b1f47db2-f1ec-4bae-bd37-77c2e88ec3dd": {
+      "type": "rich-text-4",
+      "custom_css": [],
+      "settings": {
+        "custom_class": "contact-us-banner-title page-banner-title",
+        "prefix": "",
+        "section_title": "Contact",
+        "section_sub": "",
+        "description": "<p>Fill out this form with your order details and request and we will get back to you as soon as possible.</p><p>Or feel free to contact us at <strong>onlineshop@paez.com</strong> :)</p><p><strong>Customer Support Attendance</strong></p><p><strong>MON - FRI </strong><br/>From 9am - 1pm<br/>From 2pm - 6pm (WET)</p><p><strong>SAT - SUN & HOLIDAYS<br/></strong>CLOSE</p>",
+        "section_url": ""
+      }
+    },
+    "rich_text_4_6HNzEL": {
+      "type": "rich-text-4",
+      "disabled": true,
+      "settings": {
+        "custom_class": "contact-us-banner-title page-banner-title",
+        "prefix": "",
+        "section_title": "",
+        "section_sub": "",
+        "description": "<p><strong>Customer Support Atendance</strong><br/>From 9am - 1pm<br/>From 2pm - 6pm(WET)</p><p>SAT - SUN & HOLIDAYS CLOSED</p>",
+        "section_url": ""
+      }
+    },
+    "main": {
+      "type": "contact-us",
+      "custom_css": [],
+      "settings": {
+        "enable_s_contactform": true,
+        "contactform_name": "Your name",
+        "contactform_email": "Your email",
+        "order_number": "Order number",
+        "contactform_content": "Your message",
+        "contactform_btn": "CONTACT US"
+      }
+    }
+  },
+  "order": [
+    "b1f47db2-f1ec-4bae-bd37-77c2e88ec3dd",
+    "rich_text_4_6HNzEL",
+    "main"
+  ]
+}

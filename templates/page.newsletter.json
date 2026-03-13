@@ -1,0 +1,83 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "435a868c-a244-4a00-9042-c4d2915fb6af": {
+      "type": "rich-text-4",
+      "custom_css": [
+        ".heading-title {font-family: \"HelveticaNeue\" !important;}",
+        "p {font-family: \"Helvetica\" !important; padding-top: 20px; text-transform: none;}"
+      ],
+      "settings": {
+        "custom_class": "store-banner-title page-banner-title",
+        "prefix": "",
+        "section_title": "SUBSCRIBE TO OUR NEWS!",
+        "section_sub": "",
+        "description": "<p>We’re almost at that time of the year. This season we’re inspired by things that impact us the most in the city: the busy streets, the endless possibilities, the relationships, the ambition, the hustle, the drama, the fashion and the pursuit for the very essence of ourselves (our core, where we start and where we want to go).</p><p></p><p>Sign-up below to have early access to the collection.</p>",
+        "section_url": ""
+      }
+    },
+    "main": {
+      "type": "main-page",
+      "custom_css": [
+        ".h1 {display: none;}",
+        ".bread-crumb {display: none;}"
+      ],
+      "settings": {}
+    },
+    "1785b412-2a82-44a9-be87-28ddac096e26": {
+      "type": "klaviyo_news",
+      "disabled": true,
+      "settings": {}
+    },
+    "01cab3b0-f886-405b-a58e-d55a0ef2e804": {
+      "type": "section-banner-v12",
+      "disabled": true,
+      "settings": {
+        "custom_class": "store-banner",
+        "img_banner": "shopify://shop_images/IMG_5522.jpg",
+        "mob_img_banner": "shopify://shop_images/IMG_5523.jpg",
+        "title": "",
+        "url_banner": "",
+        "color_title": "#000000",
+        "color_hover_title": "#ffffff"
+      }
+    },
+    "custom_pair_banners_LJCFCB": {
+      "type": "custom-pair-banners",
+      "settings": {
+        "custom_class": "",
+        "img_banner1": "shopify://shop_images/WhatsApp_Image_2025-10-09_at_10.08.32_1.jpg",
+        "url_banner1": "",
+        "title_1": "",
+        "button_1": "",
+        "url_button1": "",
+        "button_11": "",
+        "url_button11": "",
+        "img_banner2": "shopify://shop_images/WhatsApp_Image_2025-10-09_at_10.08.31_3.jpg",
+        "url_banner2": "",
+        "title_2": "",
+        "button_2": "",
+        "url_button2": "",
+        "button_22": "",
+        "url_button22": "",
+        "margin_top": "",
+        "margin_bottom": ""
+      }
+    }
+  },
+  "order": [
+    "435a868c-a244-4a00-9042-c4d2915fb6af",
+    "main",
+    "1785b412-2a82-44a9-be87-28ddac096e26",
+    "01cab3b0-f886-405b-a58e-d55a0ef2e804",
+    "custom_pair_banners_LJCFCB"
+  ]
+}

@@ -1,0 +1,261 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {}
+    },
+    "4cd285cd-a46e-45f6-a646-b98f002e9a1b": {
+      "type": "rich-text-4",
+      "settings": {
+        "custom_class": "about-collection-banner-title page-banner-title",
+        "prefix": "",
+        "section_title": "Fine Arts",
+        "section_sub": "",
+        "description": "",
+        "section_url": ""
+      }
+    },
+    "5614254c-5d27-43bf-85b2-556014273ef7": {
+      "type": "section-banner-v12",
+      "settings": {
+        "custom_class": "about-banner",
+        "img_banner": "shopify://shop_images/1-Banner-Principal-Fine-Art-_1920x918px.jpg",
+        "mob_img_banner": "shopify://shop_images/1-Banner-Principal-Fine-Art-_749x937px.jpg",
+        "title": "",
+        "url_banner": "shopify://collections/all",
+        "color_title": "#000000",
+        "color_hover_title": "#ffffff"
+      }
+    },
+    "248fabed-6a2d-4830-843e-7fcf037386b1": {
+      "type": "rich-text-4",
+      "custom_css": [
+        ".store-wrapper-beige {background-color: transparent;}",
+        "@media (max-width: 600px) {.container-v1 {margin-top: 0px; }}",
+        "@media (max-width: 600px) {.store-wrapper-beige p {font-size: 12px; line-height: 20px !important; padding: 10px 20px; }}"
+      ],
+      "settings": {
+        "custom_class": "store-wrapper-beige",
+        "prefix": "",
+        "section_title": "",
+        "section_sub": "",
+        "description": "<p>To our community: We are excited to present you the results of our 2021 open competition with the Facult of Fine Arts at the University of Lisbon. We invited all students to submit their original designs for a chance to work with us and showcase their talents to the world.<br/><br/>We were blown away by the creativity and passion of the students who participated in this competition. After careful consideration, YOU chose Joana Brigida (with Feel) and Maria João Estevão (with Rethink) as the winners of this contest. And their designs are now available.</p>",
+        "section_url": ""
+      }
+    },
+    "cd9b7267-1b77-4b46-8560-d52618cf545b": {
+      "type": "section-product-v2",
+      "blocks": {
+        "template--18940872589656__cd9b7267-1b77-4b46-8560-d52618cf545b-168381682342b4f69a-0": {
+          "type": "tab",
+          "settings": {
+            "tab_title": "FEEL",
+            "tab_collection": "feel",
+            "tab_limit": 3
+          }
+        },
+        "template--18940872589656__cd9b7267-1b77-4b46-8560-d52618cf545b-168381682342b4f69a-1": {
+          "type": "tab",
+          "settings": {
+            "tab_title": "RETHINK",
+            "tab_collection": "rethink",
+            "tab_limit": 3
+          }
+        }
+      },
+      "block_order": [
+        "template--18940872589656__cd9b7267-1b77-4b46-8560-d52618cf545b-168381682342b4f69a-0",
+        "template--18940872589656__cd9b7267-1b77-4b46-8560-d52618cf545b-168381682342b4f69a-1"
+      ],
+      "custom_css": [
+        ".slick-slider {display: flex; justify-content: center; margin: 0px;}",
+        ".slick-list {padding-right: 0px;}",
+        "@media (min-width: 960px) {.slick-track {width: 1000px !important; display: flex; justify-content: center; }}",
+        ".nav-tabs {padding-top: 0px !important;}"
+      ],
+      "settings": {
+        "custom_class": "",
+        "margin_top": "2",
+        "margin_bottom": "",
+        "title_heading": "",
+        "color_title": "#222222",
+        "enable_slider": false
+      }
+    },
+    "6eadc789-4d15-4f6f-b5ae-23dfe933857c": {
+      "type": "custom-image-with-text",
+      "blocks": {
+        "template--18940872589656__6eadc789-4d15-4f6f-b5ae-23dfe933857c-1683817316951370c5-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Joana Brígida's \"Feel\" collection was inspired by the artworks of Keith Haring and Wassily Kandinsky. Her illustrations represent different feelings that younger generations are dealing with in recent years. The compact and geometric patterns are not only visually stunning but also serve as a powerful representation of emotions that can be worn and expressed by our customers.</p>",
+            "text_style": "body"
+          }
+        },
+        "template--18940872589656__6eadc789-4d15-4f6f-b5ae-23dfe933857c-1683817316951370c5-3": {
+          "type": "image",
+          "settings": {}
+        }
+      },
+      "block_order": [
+        "template--18940872589656__6eadc789-4d15-4f6f-b5ae-23dfe933857c-1683817316951370c5-1",
+        "template--18940872589656__6eadc789-4d15-4f6f-b5ae-23dfe933857c-1683817316951370c5-3"
+      ],
+      "custom_css": [
+        "@media (max-width: 425px) {.grid {display: flex; flex-direction: column-reverse; }}",
+        ".image-with-text .grid__item {position: relative; align-self: center;}"
+      ],
+      "settings": {
+        "custom_class": "about-us-content responsibility-section-four",
+        "desktop-image": "shopify://shop_images/2-Imagen-1-_960x960px_62f59565-5928-491d-be5d-1eaa089578a6.jpg",
+        "mob-image": "shopify://shop_images/2-Imagen-1-_960x960px.jpg",
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "image_first",
+        "desktop_content_position": "top",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "color_scheme": "background-1",
+        "mobile_content_alignment": "left",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "7abbacd2-0a23-4678-b6c5-7e466e2c9483": {
+      "type": "custom-image-with-text",
+      "blocks": {
+        "template--18940872589656__7abbacd2-0a23-4678-b6c5-7e466e2c9483-1683817316951370c5-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Maria João Estevão's \"Rethink\" collection is a reflection of the concern for high and unbridled consumption that occurs in the fashion industry. Her designs aim to make us think and take time to value the footwear we purchase. With written phrases that challenge us to be more conscious consumers, her collection stands out as a statement of change.</p>",
+            "text_style": "body"
+          }
+        },
+        "template--18940872589656__7abbacd2-0a23-4678-b6c5-7e466e2c9483-1683817316951370c5-3": {
+          "type": "image",
+          "settings": {}
+        }
+      },
+      "block_order": [
+        "template--18940872589656__7abbacd2-0a23-4678-b6c5-7e466e2c9483-1683817316951370c5-1",
+        "template--18940872589656__7abbacd2-0a23-4678-b6c5-7e466e2c9483-1683817316951370c5-3"
+      ],
+      "custom_css": [
+        "@media (max-width: 425px) {.grid {display: flex; flex-direction: column-reverse; }}",
+        ".image-with-text .grid__item {position: relative; align-self: center;}"
+      ],
+      "settings": {
+        "custom_class": "about-us-content responsibility-section-four",
+        "desktop-image": "shopify://shop_images/3-Imagen-2-_960x960px.jpg",
+        "mob-image": "shopify://shop_images/3-Imagen-2-_960x960px_511051d4-7e4f-4b17-83af-a2dbe9e63b8a.jpg",
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "text_first",
+        "desktop_content_position": "top",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "color_scheme": "background-1",
+        "mobile_content_alignment": "left",
+        "padding_top": 0,
+        "padding_bottom": 36
+      }
+    },
+    "992c8ad3-7ff4-4763-aa31-b33a99505307": {
+      "type": "rich-text",
+      "disabled": true,
+      "settings": {
+        "rich_icon_svg": "",
+        "section_title": "Talk about your brand"
+      }
+    },
+    "5e1a869b-bde9-496e-8719-6bf42405352a": {
+      "type": "rich-text-4",
+      "custom_css": [
+        "@media (max-width: 600px) {.container-v1 {margin-top: 0px; }}",
+        "@media (max-width: 600px) {.store-wrapper-beige p {font-size: 12px; line-height: 20px !important; padding: 20px; }}"
+      ],
+      "settings": {
+        "custom_class": "store-wrapper-beige",
+        "prefix": "",
+        "section_title": "",
+        "section_sub": "",
+        "description": "<p>This collaboration has allowed us to stay close to national talents and up-to-date with current trends while providing students with valuable business tools. The jury composed of members of the Fine Arts faculty and Paez team judged the 10 best submissions, but the final decision was left to the public. We are grateful for your participation in this process.<br/><br/>We are honoured to showcase these unique and meaningful designs to our Paez community and hope that you will enjoy wearing them as much as we saw the thrill in Joana and Maria João throughout this whole process.</p>",
+        "section_url": ""
+      }
+    },
+    "1c27626e-9815-4fa9-b8ff-8ad4d42ee498": {
+      "type": "rich-text-4",
+      "disabled": true,
+      "custom_css": [
+        ".rich-text-4 {background-color: #f4f3f1; text-align: justify; padding: 0px;}",
+        ".container-v1 {text-align: justify;}",
+        "@media (max-width: 425px) {.store-wrapper p {font-size: 10px; margin-top: 6px; line-height: 18px !important; }}"
+      ],
+      "settings": {
+        "custom_class": "store-wrapper",
+        "prefix": "",
+        "section_title": "",
+        "section_sub": "",
+        "description": "<p>This collaboration has allowed us to stay close to national talents and up-to-date with current trends while providing students with valuable business tools. The jury composed of members of the Fine Arts faculty and Paez team judged the 10 best submissions, but the final decision was left to the public.We are grateful for your participation in this process.</p><p>We are honoured to showcase these unique and meaningful designs to our Paez community and hope that you will enjoy wearing them as much as we saw the thrill in Joana and Maria João throughout this whole process.</p>",
+        "section_url": ""
+      }
+    },
+    "26d71b1a-2ab7-4bff-b692-0beba84b07c5": {
+      "type": "custom-image-with-text",
+      "blocks": {
+        "template--18940872589656__26d71b1a-2ab7-4bff-b692-0beba84b07c5-1683817316951370c5-3": {
+          "type": "image",
+          "settings": {
+            "block-img": "shopify://shop_images/Logos-Fine-Arts-_-PAEZ-_700x120px_a8b2f9b3-db43-4024-b4ec-983964b52542.png"
+          }
+        }
+      },
+      "block_order": [
+        "template--18940872589656__26d71b1a-2ab7-4bff-b692-0beba84b07c5-1683817316951370c5-3"
+      ],
+      "custom_css": [
+        ".grid {display: flex; flex-direction: column-reverse; padding: 0px 20px 0px 0px; gap: 40px;}",
+        ".image-with-text__text-item.grid__item {display: flex; justify-content: center; align-content: center; align-self: center;}",
+        ".image-with-text__grid--reverse .image-with-text__content {margin-left: 0px;}"
+      ],
+      "settings": {
+        "custom_class": "",
+        "desktop-image": "shopify://shop_images/4-Banner-Final-Fine-Art-_1920x918px.jpg",
+        "mob-image": "shopify://shop_images/4-Banner-Final-Fine-Art-_749x937px.jpg",
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "text_first",
+        "desktop_content_position": "top",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "color_scheme": "background-1",
+        "mobile_content_alignment": "left",
+        "padding_top": 0,
+        "padding_bottom": 20
+      }
+    }
+  },
+  "order": [
+    "main",
+    "4cd285cd-a46e-45f6-a646-b98f002e9a1b",
+    "5614254c-5d27-43bf-85b2-556014273ef7",
+    "248fabed-6a2d-4830-843e-7fcf037386b1",
+    "cd9b7267-1b77-4b46-8560-d52618cf545b",
+    "6eadc789-4d15-4f6f-b5ae-23dfe933857c",
+    "7abbacd2-0a23-4678-b6c5-7e466e2c9483",
+    "992c8ad3-7ff4-4763-aa31-b33a99505307",
+    "5e1a869b-bde9-496e-8719-6bf42405352a",
+    "1c27626e-9815-4fa9-b8ff-8ad4d42ee498",
+    "26d71b1a-2ab7-4bff-b692-0beba84b07c5"
+  ]
+}

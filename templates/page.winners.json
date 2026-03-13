@@ -1,0 +1,123 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "custom_css": [
+        ".h1 {display: none;}",
+        ".bread-crumb {display: none;}"
+      ],
+      "settings": {}
+    },
+    "01cab3b0-f886-405b-a58e-d55a0ef2e804": {
+      "type": "section-banner-v12",
+      "settings": {
+        "custom_class": "store-banner",
+        "img_banner": "shopify://shop_images/1-Banner_Principal-_1920x918px.jpg",
+        "mob_img_banner": "shopify://shop_images/1-Banner_Principal-_749x937px.jpg",
+        "title": "",
+        "url_banner": "",
+        "color_title": "#000000",
+        "color_hover_title": "#ffffff"
+      }
+    },
+    "65d15c94-e31a-44f2-acf8-49567b4b953d": {
+      "type": "rich-text-4",
+      "custom_css": [
+        ".rich-text__description {padding: 20px;}",
+        "p {font-size: 20px; text-align: center;}"
+      ],
+      "settings": {
+        "custom_class": "product-care--rich-text4",
+        "prefix": "",
+        "section_title": "",
+        "section_sub": "",
+        "description": "<p>We've finaly drawn our 15 lucky winners for our 12 Days of Christmas draw (thank you Sorteo, for being the easiest platform ever- this is not an ad). </p><p><br/>We've contacted each winner, but here's a breakdown of the winners.</p>",
+        "section_url": ""
+      }
+    },
+    "882ff18c-8c33-40a7-9ec5-337b9c131e51": {
+      "type": "tittle-desc-img",
+      "custom_css": [
+        "p {text-align: center;}"
+      ],
+      "settings": {
+        "titulo": "1ST PRIZE",
+        "desc": "<p>TWO-DAY STAY AT UNLOCK BOUTQIUE HOTELS PROPERTY</p>",
+        "imagen": "shopify://shop_images/1st_Prize-_875x350px_1a592e9f-b4b6-4198-8a9e-3fe344b221f7.png"
+      }
+    },
+    "0f4d647c-ead0-49a7-a935-cb4ebf9ade74": {
+      "type": "tittle-desc-img",
+      "custom_css": [
+        "p {text-align: center;}"
+      ],
+      "settings": {
+        "titulo": "2ND PRIZE",
+        "desc": "<p>75€ GIFT CARDS AT PAEZ</p>",
+        "imagen": "shopify://shop_images/2nd_Prize-_875x350px.png"
+      }
+    },
+    "cc397be2-8044-4721-8f83-ab52b353c68f": {
+      "type": "tittle-desc-img",
+      "custom_css": [
+        "p {text-align: center;}"
+      ],
+      "settings": {
+        "titulo": "3RD PRIZE",
+        "desc": "<p>ONE HOODIE FROM PAEZ'S NEW COLLECTION</p>",
+        "imagen": "shopify://shop_images/3nd_Prize-_875x350px.png"
+      }
+    },
+    "556545b8-4862-467f-819a-32449c186ec8": {
+      "type": "rich-text-4",
+      "custom_css": [
+        ".rich-text__description {padding: 20px;}",
+        "p {font-size: 20px; text-align: center;}"
+      ],
+      "settings": {
+        "custom_class": "product-care--rich-text4",
+        "prefix": "",
+        "section_title": "",
+        "section_sub": "",
+        "description": "<p>Congrats to all winners and thank you to Unlock Boutique Hotels for agreeing to gifting our Paez community with some much-deserved resting days at one of their incredible properties*. </p><p>Check them out by clicking the logo below.</p>",
+        "section_url": ""
+      }
+    },
+    "1539c72c-6d79-4b4d-b5ff-5ed8a981eb30": {
+      "type": "section-banner-v12",
+      "custom_css": [
+        ".banner {display: flex; justify-content: center; align-items: center; margin-bottom: 40px;}",
+        "a {width: 50%;}",
+        "@media (min-width: 768px) {a {width: 25%; }}"
+      ],
+      "settings": {
+        "custom_class": "store-banner",
+        "img_banner": "shopify://shop_images/4_Logo_Unlock_Boutique_Hotels.png",
+        "mob_img_banner": "shopify://shop_images/4_Logo_Unlock_Boutique_Hotels.png",
+        "title": "",
+        "url_banner": "https://unlockhotels.com/",
+        "color_title": "#000000",
+        "color_hover_title": "#ffffff"
+      }
+    }
+  },
+  "order": [
+    "main",
+    "01cab3b0-f886-405b-a58e-d55a0ef2e804",
+    "65d15c94-e31a-44f2-acf8-49567b4b953d",
+    "882ff18c-8c33-40a7-9ec5-337b9c131e51",
+    "0f4d647c-ead0-49a7-a935-cb4ebf9ade74",
+    "cc397be2-8044-4721-8f83-ab52b353c68f",
+    "556545b8-4862-467f-819a-32449c186ec8",
+    "1539c72c-6d79-4b4d-b5ff-5ed8a981eb30"
+  ]
+}

@@ -1,0 +1,167 @@
+<div data-section-id="{{ section.id }}" data-section-type="section-banner-v11" style="{% if section.settings.margin_top != blank %}margin-top: {{section.settings.margin_top}}px;{%endif%} {% if section.settings.margin_bottom != blank %}margin-bottom: {{section.settings.margin_bottom}}px;{% endif %}">
+  <div class="section-banner-v11 mt-all" >
+    <div class="container container-v3 ">
+      <div class="row" style="background-color: {{section.settings.bg_section_color}}; margin: 0 auto;">   
+        <div class="col-lg-6 col-md-6 col-12 p-0">
+          <div class="img-banner">
+            <a href="{{section.settings.url_banner}}">
+              {% if section.settings.img_banner != blank %}
+              <img data-src="{{section.settings.img_banner | img_url : 'master'}}" class="lazyload img-fluid w-100" alt >
+              {% else %}
+              <img data-src="//via.placeholder.com/875x1000" class="lazyload img-fluid w-100" alt>
+              {% endif %}
+            </a>
+          </div>
+        </div>
+        <div class="col-lg-6 col-md-6 col-12 " >
+          <div class="content-banner text-center">
+            {% if section.settings.title_banner != blank %}
+            <h1 class="title-banner" style="color: {{section.settings.color_title}}">{{section.settings.title_banner}}</h1>
+            {% endif %}
+            {% if section.settings.sub_title_banner != blank %}
+            <p class="sub-title" style="color: {{section.settings.color_sub_title}}">{{section.settings.sub_title_banner}}</p>
+            {% endif %}
+          </div>
+          <div class="col-inner">
+            <div class="img-inner">
+              <a href="{{section.settings.url_banner}}">
+                {% if section.settings.img_inner1 != blank %}
+                <img data-src="{{section.settings.img_inner1 | img_url : 'master'}}" class="wwh_img1 lazyload img-fluid " alt >
+                {% else %}
+                <img data-src="//via.placeholder.com/290x392" class="wwh_img1 lazyload img-fluid " alt>
+                {% endif %}
+              </a>
+              <a href="{{section.settings.url_banner}}">
+                {% if section.settings.img_inner2 != blank %}
+                <img data-src="{{section.settings.img_inner2 | img_url : 'master'}}" class=" wwh_img2 lazyload img-fluid " alt >
+                {% else %}
+                <img data-src="//via.placeholder.com/290x392" class="wwh_img2 lazyload img-fluid " alt>
+                {% endif %}
+              </a>
+            </div>
+          </div>
+          <div class="button text-center">
+            {% if section.settings.button_banner != blank %}
+            <a href="{{section.settings.url_banner}}" class="button-shop button-shop-{{ section.id }}" title="">{{section.settings.button_banner}}</a>
+            {% endif %}
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<style>
+  .section-banner-v11 .button .button-shop-{{ section.id }} {
+    color:{{section.settings.color_btn}};
+    border: 2px solid {{section.settings.color_btn}};
+  }
+  .section-banner-v11 .button .button-shop-{{ section.id }}:hover {
+    color:{{section.settings.color_btn_hover}};
+    background: {{section.settings.bg_hover_btn}};
+    border: 2px solid  {{section.settings.bg_hover_btn}};
+  }
+
+</style>
+
+{% schema %}
+{
+"name": "BANNER V11",
+"settings": [
+    
+    {
+      "type": "color",
+      "id": "bg_section_color",
+      "label": "Backgorund Color",
+      "default": "#fdf3e6"
+    },
+    {
+      "type": "url",
+      "id": "url_banner",
+      "label": "URL Button ",
+      "default": "/collections/all"
+    },
+    {
+      "type": "image_picker",
+      "id": "img_banner",
+      "label": "Image Banner",
+      "info": "720 x 720px recommended"
+    },
+    {
+      "type": "header",
+      "content": "Section Banner Right"
+    },
+    {
+      "type": "text",
+      "id": "title_banner",
+      "label": "Title Banner",
+      "default": "SOPHISTICATED COATS"
+    },
+    {
+      "type": "color",
+      "id": "color_title",
+      "label": "Color Title banner",
+      "default": "#000"
+    },
+    {
+      "type": "image_picker",
+      "id": "img_inner1",
+      "label": "Image Banner 1",
+      "info": "290x392px recommended"
+    },
+    {
+      "type": "image_picker",
+      "id": "img_inner2",
+      "label": "Image Banner 2",
+      "info": "290x392px recommended"
+    },
+    {
+      "type": "text",
+      "id": "sub_title_banner",
+      "label": "Sub Title Banner",
+      "default": "The exquisite softness of our wool & cashmere meets the elegant colors"
+    },
+    {
+      "type": "color",
+      "id": "color_sub_title",
+      "label": "Color Sub Title banner",
+      "default": "#000"
+    },
+    {
+      "type": "text",
+      "id": "button_banner",
+      "label": "Button Banner 1",
+      "default": "Shop now"
+    },
+    {
+      "type": "color",
+      "id": "color_btn",
+      "label": "Color button banner",
+      "default": "#222"
+    },
+    {
+      "type": "color",
+      "id": "color_btn_hover",
+      "label": "Color button banner Hover",
+      "default": "#fff"
+    },
+    {
+      "type": "color",
+      "id": "bg_hover_btn",
+      "label": "Background button banner",
+      "default": "#222"
+    }
+  ],
+  "presets": [
+    {
+      "name": "BANNER V11",
+      "category": "HOME"
+    }
+  ]
+}
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

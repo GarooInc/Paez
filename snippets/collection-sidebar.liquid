@@ -1,0 +1,17 @@
+<div style="overflow: hidden" class=" engoj-collection-sidebar engoc_sw_filter_tag">
+  {% if section.settings.shop_by_size_list_tags != blank %}
+    {% include 'collection-size' %}
+  {% endif %}
+
+  {% for i in (1..7) %}
+  {% capture collection_widget %}collection_widget_{{i}}{% endcapture %}
+  {% if settings[collection_widget] != blank %}
+  {% include settings[collection_widget] %}
+  {% endif %}
+  {% endfor %}
+
+   {% if section.settings.shop_by_list_tags != blank %}
+    {% include 'collection-tags-filter' %}
+  {% endif %}
+</div>
+<!-- #secondary -->

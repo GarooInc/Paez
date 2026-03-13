@@ -1,0 +1,329 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {}
+    },
+    "340e5986-ed03-489c-a587-a1f24d69bb6b": {
+      "type": "rich-text-4",
+      "settings": {
+        "custom_class": "product-care-title page-banner-title",
+        "prefix": "",
+        "section_title": "product care",
+        "section_sub": "",
+        "description": "",
+        "section_url": ""
+      }
+    },
+    "18599a7b-4dfd-43aa-bb18-f00062dd1065": {
+      "type": "rich-text-4",
+      "settings": {
+        "custom_class": "product-care--rich-text4",
+        "prefix": "",
+        "section_title": "",
+        "section_sub": "",
+        "description": "<p>Washing and taking care of your Paez is a total breeze and only takes about 5-10 minutes. How so? Check out these steps for a fast and safe to do it.</p>",
+        "section_url": ""
+      }
+    },
+    "5946e415-73e0-4c50-9857-5231d4fd4734": {
+      "type": "section-banner-v12",
+      "settings": {
+        "custom_class": "product-care-banner",
+        "img_banner": "shopify://shop_images/product-care-banner.png",
+        "mob_img_banner": "shopify://shop_images/product-care-banner-mobile.png",
+        "title": "",
+        "url_banner": "",
+        "color_title": "#000000",
+        "color_hover_title": "#ffffff"
+      }
+    },
+    "e4b72051-2ba0-485d-a962-921fb0e7ffef": {
+      "type": "content-tab",
+      "blocks": {
+        "dee15880-9763-4e22-ae54-275fef2d1994": {
+          "type": "heading",
+          "settings": {
+            "icon": "shopify://shop_images/icones_-01.png",
+            "text": "Start by giving them a gentle cleaning with a brush or cloth to get rid of any excess dirt or grime.",
+            "tab_selection": "1"
+          }
+        },
+        "bb5f0e68-e09a-486d-bdd4-4916642228c0": {
+          "type": "heading",
+          "settings": {
+            "icon": "shopify://shop_images/icones_-02.png",
+            "text": "Begin by removing any loose dirt or debris from the surface of the shoes using a soft-bristled brush or a dry cloth. Brush gently in a back-and-forth motion to lift the dirt out of the fibers of the material.",
+            "tab_selection": "2"
+          }
+        },
+        "a35f0fd9-8d5a-43ba-93d7-7d5b46209a66": {
+          "type": "heading",
+          "settings": {
+            "icon": "shopify://shop_images/icones_-02.png",
+            "text": "Start by using a soft-bristled brush to gently brush away any dirt or debris on the surface of the velvet. Avoid using a stiff brush or rubbing the material too hard, as this can damage the delicate fibers of the velvet.",
+            "tab_selection": "3"
+          }
+        },
+        "heading_CbUHU3": {
+          "type": "heading",
+          "settings": {
+            "icon": "shopify://shop_images/icones_-01.png",
+            "text": "Start by wiping the shoes with a soft, damp cloth to remove any surface dirt or debris. This simple step can often refresh the appearance of the shoes.",
+            "tab_selection": "4"
+          }
+        },
+        "heading_cAtgiP": {
+          "type": "heading",
+          "settings": {
+            "icon": "shopify://shop_images/icones_-01.png",
+            "text": "Start by giving them a gentle clean using a soft brush or dry cloth to remove any surface dirt or dust.",
+            "tab_selection": "5"
+          }
+        },
+        "10c677b4-1538-4ec7-abd2-7955d64c31b4": {
+          "type": "heading",
+          "settings": {
+            "icon": "shopify://shop_images/icones_-04.png",
+            "text": "Then, soak the fabric in naturally soapy water (no need to dunk the whole shoe in there, folks).",
+            "tab_selection": "1"
+          }
+        },
+        "f4cb5203-1c7d-4c26-85b9-723aa7b491ee": {
+          "type": "heading",
+          "settings": {
+            "icon": "shopify://shop_images/icones_-04.png",
+            "text": "If there are any stubborn stains on the shoes or item, mix a small amount of mild detergent with warm water to create a gentle cleaning solution. Dip a clean cloth into the solution, then wring it out so it's damp but not soaking wet. Gently rub the affected area with the cloth, being careful not to saturate the material with too much liquid.",
+            "tab_selection": "2"
+          }
+        },
+        "def71dfa-9784-4315-804a-82f37526ce13": {
+          "type": "heading",
+          "settings": {
+            "icon": "shopify://shop_images/icones_-04.png",
+            "text": "If there are any stubborn stains on the shoes, mix some detergent for delicate textilers with some water and dab the affected area softly with a clean cloth, taking care not to saturate the velvet with too much liquid. Allow the shoes to air dry after cleaning.",
+            "tab_selection": "3"
+          }
+        },
+        "heading_Yn8iUg": {
+          "type": "heading",
+          "settings": {
+            "icon": "shopify://shop_images/icones_-04.png",
+            "text": "If you see bigger stains, you can use a gentle cleanser specifically formulated for vegan leather. Apply a small amount of the cleanser to a soft cloth and gently rub it onto the shoes in circular motions. Wipe off any excess cleanser with a clean, damp cloth and avoid soaking vegan leather shoes in water, as it can damage the material. ",
+            "tab_selection": "4"
+          }
+        },
+        "heading_jTkgNr": {
+          "type": "heading",
+          "settings": {
+            "icon": "shopify://shop_images/icones_-04.png",
+            "text": "Once brushed off, soak a clean cloth or brush in a bowl of naturally soapy water (nothing too harsh). Simply focus on dunking the towel fabric, giving it a good scrub where needed. The fabric is very absorbent, so avoid soaking the whole shoe — it holds water for a long time and may shrink or warp when drying.Pay special attention to any areas with visible stains or heavier wear.",
+            "tab_selection": "5"
+          }
+        },
+        "1c376da2-8321-46ba-b11e-622dd946cf08": {
+          "type": "heading",
+          "settings": {
+            "icon": "shopify://shop_images/icones_-02.png",
+            "text": "Use a brush to scrub away any stubborn stains or dirt, being extra thorough in those problem areas.",
+            "tab_selection": "1"
+          }
+        },
+        "f8c652c2-cf53-4372-9603-12002ef992ba": {
+          "type": "heading",
+          "settings": {
+            "icon": "shopify://shop_images/icones_-02.png",
+            "text": "For tougher stains, you can also use a synthetic suede eraser or a white pencil eraser to gently rub the affected area. This can help to lift the stain without damaging the material.",
+            "tab_selection": "2"
+          }
+        },
+        "ff091b8f-728e-412e-8528-4f98a90847aa": {
+          "type": "heading",
+          "settings": {
+            "icon": "shopify://shop_images/icones_-02.png",
+            "text": "For general maintenance and upkeep, store your velvet shoes in a dry, cool place, away from direct sunlight. You can also use a soft-bristled brush to gently fluff the velvet nap from time to time.",
+            "tab_selection": "3"
+          }
+        },
+        "0d849b65-54dc-4438-a229-f6a20f8cf633": {
+          "type": "heading",
+          "settings": {
+            "icon": "shopify://shop_images/icones_-03.png",
+            "text": "Rinse with clean water (remember, no soaking necessary) and make sure to get rid of all soap residue.",
+            "tab_selection": "1"
+          }
+        },
+        "heading_GNX4jR": {
+          "type": "heading",
+          "settings": {
+            "icon": "shopify://shop_images/icones_-03.png",
+            "text": "Then rinse gently with clean water, just enough to remove the soap. Be sure all soapy residue is gone.",
+            "tab_selection": "5"
+          }
+        },
+        "0dc22562-1b83-42ed-86cf-4173e9a1290c": {
+          "type": "heading",
+          "settings": {
+            "icon": "shopify://shop_images/icones_-05.png",
+            "text": "Once you've finished cleaning the shoes, allow them to air dry away from direct heat or sunlight. Avoid using a hair dryer or other heat source to dry the shoes, as this can cause the material to warp or shrink.",
+            "tab_selection": "2"
+          }
+        },
+        "01b65076-321e-47b7-a2a9-c755ec00012d": {
+          "type": "heading",
+          "disabled": true,
+          "settings": {
+            "icon": "shopify://shop_images/icones_-03.png",
+            "text": "Rinse with clean water (remember, no soaking necessary) and make sure to get rid of all soap residue.",
+            "tab_selection": "3"
+          }
+        },
+        "f75b1609-1930-4a3a-bfe0-603aa41d52fc": {
+          "type": "heading",
+          "settings": {
+            "icon": "shopify://shop_images/icones_-05.png",
+            "text": "Finally, pop them in a cool, dry place out of direct sunlight or heat sources to avoid any wrinkling or color loss.",
+            "tab_selection": "1"
+          }
+        },
+        "heading_nYmKJg": {
+          "type": "heading",
+          "settings": {
+            "icon": "shopify://shop_images/icones_-05.png",
+            "text": "After cleaning, allow the shoes to air dry naturally in a well-ventilated area away from direct heat sources or sunlight. Stuff the shoes with paper towels or a dry cloth to help them maintain their shape as they dry.",
+            "tab_selection": "4"
+          }
+        },
+        "heading_GmPH47": {
+          "type": "heading",
+          "settings": {
+            "icon": "shopify://shop_images/icones_-05.png",
+            "text": "Place your shoes in a cool, dry spot, away from any direct sunlight or heat waves.",
+            "tab_selection": "5"
+          }
+        },
+        "65af5542-fcd4-46eb-af3c-38002732e1f8": {
+          "type": "heading",
+          "disabled": true,
+          "settings": {
+            "icon": "shopify://shop_images/Ilustracion_5.png",
+            "text": "Finally, pop them in a cool, dry place out of direct sunlight or heat sources to avoid any wrinkling or color loss.",
+            "tab_selection": "2"
+          }
+        },
+        "ad53dfb3-19df-474f-b3a0-1e9638a819ca": {
+          "type": "heading",
+          "disabled": true,
+          "settings": {
+            "icon": "shopify://shop_images/Ilustracion_5.png",
+            "text": "Finally, pop them in a cool, dry place out of direct sunlight or heat sources to avoid any wrinkling or color loss.",
+            "tab_selection": "3"
+          }
+        },
+        "d4adea54-73cb-43de-9734-a08e9dd6e6b9": {
+          "type": "heading",
+          "disabled": true,
+          "settings": {
+            "text": "",
+            "tab_selection": "1"
+          }
+        },
+        "f34ddfd9-2bb8-4b29-b0bf-667152ac8e4f": {
+          "type": "heading",
+          "disabled": true,
+          "settings": {
+            "text": "",
+            "tab_selection": "2"
+          }
+        },
+        "07483bed-3d63-4cbc-89e2-6d40ee82a5df": {
+          "type": "heading",
+          "settings": {
+            "text": "",
+            "tab_selection": "3"
+          }
+        }
+      },
+      "block_order": [
+        "dee15880-9763-4e22-ae54-275fef2d1994",
+        "bb5f0e68-e09a-486d-bdd4-4916642228c0",
+        "a35f0fd9-8d5a-43ba-93d7-7d5b46209a66",
+        "heading_CbUHU3",
+        "heading_cAtgiP",
+        "10c677b4-1538-4ec7-abd2-7955d64c31b4",
+        "f4cb5203-1c7d-4c26-85b9-723aa7b491ee",
+        "def71dfa-9784-4315-804a-82f37526ce13",
+        "heading_Yn8iUg",
+        "heading_jTkgNr",
+        "1c376da2-8321-46ba-b11e-622dd946cf08",
+        "f8c652c2-cf53-4372-9603-12002ef992ba",
+        "ff091b8f-728e-412e-8528-4f98a90847aa",
+        "0d849b65-54dc-4438-a229-f6a20f8cf633",
+        "heading_GNX4jR",
+        "0dc22562-1b83-42ed-86cf-4173e9a1290c",
+        "01b65076-321e-47b7-a2a9-c755ec00012d",
+        "f75b1609-1930-4a3a-bfe0-603aa41d52fc",
+        "heading_nYmKJg",
+        "heading_GmPH47",
+        "65af5542-fcd4-46eb-af3c-38002732e1f8",
+        "ad53dfb3-19df-474f-b3a0-1e9638a819ca",
+        "d4adea54-73cb-43de-9734-a08e9dd6e6b9",
+        "f34ddfd9-2bb8-4b29-b0bf-667152ac8e4f",
+        "07483bed-3d63-4cbc-89e2-6d40ee82a5df"
+      ],
+      "custom_css": [
+        ".container {text-align: justify; padding-left: 40px; padding-right: 40px;}",
+        ".block-content span {font-size: 22px; text-align: justify;}",
+        ".block-content h6 {font-size: 22px;}"
+      ],
+      "settings": {
+        "css_class": "product-care--content-tab",
+        "tab_1": "Cotton / polyester",
+        "tab_2": "Synthetic Suede",
+        "tab_3": "Velvet upper",
+        "tab_4": "Microfiber Napa",
+        "tab_5": "Towel",
+        "tab1_desc": "Cotton/polyester upper products (including the products in Borregatas, Espadrilles, Mules Essential, Moc Essential, Sandal Straps, Sandal Crossed, Mary Janes Raw).",
+        "tab2_desc": "Synthetic Suede upper products (Clogs Vegan Suede, Sandal Straps, Moc Vegan Suede)\n\nCleaning synthetic suede requires a delicate touch, but it can be done effectively with the right approach. Here are the steps you can follow to clean synthetic suede:",
+        "tab3_desc": "Velvet upper products (selected products Mary Janes Gum)\n\nVelvet shoes require a bit of a gentler care when it comes to cleaning, but with the right approach, it's possible to keep them looking great for a long time.",
+        "tab4_desc": "Microfiber Napa upper products (Loafer Microfiber Napa, Mary Janes Microfiber Napa, Tulipa Microfiber Napa, Moc Microfiber Napa, Mule Microfiber Napa) requires specific easy-to-do steps, to ensure their durability. Follow these steps and they’ll last for a long time.",
+        "tab5_desc": "Towel upper products (including the products in Mocs).",
+        "tab1_footer": "<br>For outstanding cleaning, please pay particular attention to the following:<br>\n                    You can stuff your Paez with some kitchen paper or a dry cloth to help them keep their shape as they dry.\n                    <br><br>Heads up! If your Paez have yute (or rope) soles, take extra care and avoid squeezing them with excess water. Instead, gently wipe them down with a damp cloth.\n                    <br><br>Just a friendly reminder: Whatever you do, don't put your Paez in the washing machine or dryer. That's a big no-no.\n                    <br><br>As for the soles, you can simply wipe them clean with a damp cloth. And if you're wondering about the insoles, they're non-removable and vegan. Keep them fresh by giving your shoes a chance to breathe or using an insole spray.",
+        "tab2_footer": "<br>For outstanding cleaning, please pay particular attention to the following:<br>\n                    You can stuff your Paez with some kitchen paper or a dry cloth to help them keep their shape as they dry.\n                    <br><br>Heads up! If your Paez have yute (or rope) soles, take extra care and avoid squeezing them with excess water. \n                    <br><br>Instead, gently wipe them down with a damp cloth.\n                    <br><br>Just a friendly reminder: Whatever you do, don't put your Paez in the washing machine or dryer. That's a big no-no.\n                    <br><br>As for the soles, you can simply wipe them clean with a damp cloth. And if you're wondering about the insoles, they're non-removable and vegan.",
+        "tab3_footer": "<br>Tip if you're a pro: To restore the nap of the velvet and keep it looking soft and fluffy, use a steamer or hold the shoes over a pot of boiling water for a few seconds. Be careful though not to get the shoes too close to the steam or water, as this can damage the velvet.\n                    <br><br>Tip if you're not a pro: take it to a professional cleaner who can assure your shoes last as much time as you wish for :)\n                    <br><br>Just a friendly reminder: Whatever you do, don't put your Paez in the washing machine or dryer. That's a big no-no.\n                    <br><br>As for the soles, you can simply wipe them clean with a damp cloth. And if you're wondering about the insoles, they're non-removable and vegan. Keep them fresh by giving your shoes a chance to breathe or using an insole spray.",
+        "tab4_footer": "For outstanding cleaning, please pay attention to the following:<br>\nTo keep vegan leather supple and prevent it from drying out and cracking, consider applying a specialized vegan leather conditioner. Follow the manufacturer's instructions for application carefully.<br><br>\n\nStore properly and protect the shoes from moisture: When not in use, store your vegan leather shoes in a cool, dry place away from direct sunlight. Avoid storing them in plastic bags or airtight containers, as this can trap moisture and lead to mold or mildew growth.",
+        "tab5_footer": "For outstanding cleaning, please pay particular attention to the following:\nTo dry, place your shoes in a cool, dry spot, away from any direct sunlight or heat waves. Heat can cause the fabric to stiff.<br><br>\n\nStuffing is especially important for this material to retain shape. You can do it with kitchen paper or a clean cloth while they dry.<br><br>\n\nProduct with yute soles, need an extra step: avoid soaking them in water—just wipe the sole with a slightly damp cloth to avoid damaging the fibers.<br><br>\n\nJust a friendly reminder: Whatever you do, don't put your Paez in the washing machine or dryer. That's a big no-no.<br><br>\n\nAs for the soles, you can simply wipe them clean with a damp cloth. And if you're wondering about the insoles, they're non-removable and vegan. Keep them fresh by giving your shoes a chance to breathe or using an insole spray."
+      }
+    },
+    "e6fa25ec-2dd8-4166-aea3-528f33827c7e": {
+      "type": "rich-text-4",
+      "disabled": true,
+      "settings": {
+        "custom_class": "product-care--rich-text4 second",
+        "prefix": "",
+        "section_title": "",
+        "section_sub": "",
+        "description": "<p>Tip if you're a pro: To restore the nap of the velvet and keep it looking soft and fluffy, use a steamer or hold the shoes over a pot of boiling water for a few seconds. Be careful though not to get the shoes too close to the steam or water, as this can damage the velvet.</p><p></p><p>Tip if you're not a pro: take it to a professional cleaner who can assure your shoes last as much time as you wish for :)</p><p></p><p>Just a friendly reminder: Whatever you do, don't put your Paez in the washing machine or dryer. That's a big no-no.</p><p></p><p>As for the soles, you can simply wipe them clean with a damp cloth. And if you're wondering about the insoles, they're non-removable and vegan. Keep them fresh by giving your shoes a chance to breathe or using an insole spray.</p>",
+        "section_url": ""
+      }
+    }
+  },
+  "order": [
+    "main",
+    "340e5986-ed03-489c-a587-a1f24d69bb6b",
+    "18599a7b-4dfd-43aa-bb18-f00062dd1065",
+    "5946e415-73e0-4c50-9857-5231d4fd4734",
+    "e4b72051-2ba0-485d-a962-921fb0e7ffef",
+    "e6fa25ec-2dd8-4166-aea3-528f33827c7e"
+  ]
+}

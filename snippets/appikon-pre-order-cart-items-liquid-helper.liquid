@@ -1,0 +1,22 @@
+<div class='appikon-pre-order-liquid-helper' style="display: none!important;">
+  {% for item in cart.items %}
+    {% if item.selling_plan_allocation.selling_plan.id %}
+      <div id="{{item.id}}-{{item.selling_plan_allocation.selling_plan.id}}-price-at-checkout">
+        {% if item.selling_plan_allocation.checkout_charge_amount %}
+          {{ item.selling_plan_allocation.checkout_charge_amount }}
+        {% endif %}
+      </div>
+      
+    {% comment %}
+      <div id="{{item.id}}-{{item.selling_plan_allocation.selling_plan.id}}-full-price">
+        {% if settings.currency_code_enable %}
+            {{ item.final_price | money_with_currency }}
+        {% else %}
+            {{ item.final_price | money }}
+        {% endif %}
+      </div>
+    {% endcomment %}
+
+    {% endif %}
+  {% endfor %}
+</div>

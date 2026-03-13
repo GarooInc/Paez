@@ -1,0 +1,179 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {}
+    },
+    "e8b67092-91f6-4415-b680-1740c389256f": {
+      "type": "rich-text-4",
+      "settings": {
+        "custom_class": "responsibility-banner-title page-banner-title",
+        "prefix": "",
+        "section_title": "RESPONSIBILITY",
+        "section_sub": "",
+        "description": "",
+        "section_url": ""
+      }
+    },
+    "45685f29-21a6-40d2-8623-dccc46c7be4a": {
+      "type": "section-banner-v12",
+      "settings": {
+        "custom_class": "about-banner",
+        "img_banner": "shopify://shop_images/responsibility-banner_desktop.jpg",
+        "mob_img_banner": "shopify://shop_images/responsibility-banner_mobile.jpg",
+        "title": "",
+        "url_banner": "",
+        "color_title": "#000000",
+        "color_hover_title": "#ffffff"
+      }
+    },
+    "91ad8f39-1aec-4638-b1cc-69269a97ee2f": {
+      "type": "custom-image-with-text",
+      "blocks": {
+        "template--16679590920437__91ad8f39-1aec-4638-b1cc-69269a97ee2f-16746410352b1943ba-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>We at Paez care about becoming a more responsible brand. These past couple of years have been pivotal for us to start making much-deserved changes in our products that cause little less harm. We’re committed to being better every day and thus being transparent with every decision we make. <br/><br/>Each collection at Paez is proudly designed in Lisbon, Portugal. The production process begins in-house, with our design team carefully crafting each and every design to meet the highest standards of quality and innovation, bringing to life new and trendy shoes.</p>",
+            "text_style": "body"
+          }
+        }
+      },
+      "block_order": [
+        "template--16679590920437__91ad8f39-1aec-4638-b1cc-69269a97ee2f-16746410352b1943ba-1"
+      ],
+      "settings": {
+        "custom_class": "about-us-content responsibility-section-one",
+        "desktop-image": "shopify://shop_images/Imagen-12.png",
+        "mob-image": "shopify://shop_images/responsibility-section-1.png",
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "text_first",
+        "desktop_content_position": "middle",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "color_scheme": "background-1",
+        "mobile_content_alignment": "left",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "de1d68a7-5ece-4294-8555-c3b5c2a98d0a": {
+      "type": "custom-image-with-text",
+      "blocks": {
+        "template--16679590920437__de1d68a7-5ece-4294-8555-c3b5c2a98d0a-167470665228bf0597-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>We then produce our designs in Vietnam, with our partners who specialise in the sustainable development of footwear, mainly focusing on using responsible materials. They carefully select suppliers based on their certification in using recycled materials.<br/><br/>Since 2020, we’ve became 100% Vegan, meaning that we avoid animal ingredients in our textiles, shoes, and accessories. In 2021, we started incorporating high-quality textiles recycled by our suppliers certified by The Global Recycling Standard. </p>",
+            "text_style": "body"
+          }
+        }
+      },
+      "block_order": [
+        "template--16679590920437__de1d68a7-5ece-4294-8555-c3b5c2a98d0a-167470665228bf0597-1"
+      ],
+      "custom_css": [],
+      "settings": {
+        "custom_class": "about-us-content responsibility-section-one",
+        "desktop-image": "shopify://shop_images/Imagen-22.png",
+        "mob-image": "shopify://shop_images/responsibility-section-2.png",
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "image_first",
+        "desktop_content_position": "middle",
+        "desktop_content_alignment": "right",
+        "content_layout": "no-overlap",
+        "color_scheme": "background-1",
+        "mobile_content_alignment": "left",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "6f4b8d44-2b60-48df-bb74-47d398fd8b9e": {
+      "type": "custom-image-with-text",
+      "blocks": {
+        "template--16679590920437__6f4b8d44-2b60-48df-bb74-47d398fd8b9e-167470665228bf0597-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>The GRS is an international standard that sets requirements for third-party certification of Recycled Content and a pedal from recycled pet bottle yarn. Like in 2023, every reference from our SS24 has recycled textiles incorporated in the shoe.<br/><br/>In 2023, we started a circularity program on our flagship stores. We invited our community to recycle their old Paez and give them a new life. This year, with our partner at Teco, we plan on developing an exclusive collection made from the rubber out of our in-sole.</p>",
+            "text_style": "body"
+          }
+        }
+      },
+      "block_order": [
+        "template--16679590920437__6f4b8d44-2b60-48df-bb74-47d398fd8b9e-167470665228bf0597-1"
+      ],
+      "settings": {
+        "custom_class": "about-us-content responsibility-section-three",
+        "desktop-image": "shopify://shop_images/Imagen-32.png",
+        "mob-image": "shopify://shop_images/responsibility-section-3.png",
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "text_first",
+        "desktop_content_position": "middle",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "color_scheme": "background-1",
+        "mobile_content_alignment": "left",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "ae646234-e830-4c72-9576-a85c552c608d": {
+      "type": "custom-image-with-text",
+      "blocks": {
+        "template--16679590920437__ae646234-e830-4c72-9576-a85c552c608d-167470665228bf0597-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>We are well aware of the long road ahead, and we hope that 2025 continues to push us for more initiatives that can make Paez have an impact on our environment. Stay tuned to what’s coming.<br/></p>",
+            "text_style": "body"
+          }
+        }
+      },
+      "block_order": [
+        "template--16679590920437__ae646234-e830-4c72-9576-a85c552c608d-167470665228bf0597-1"
+      ],
+      "custom_css": [
+        ".image-with-text__media img {display: none;}",
+        ".image-with-text__media-item.image-with-text__media-item--medium.image-with-text__media-item--middle.grid__item {display: none;}",
+        ".image-with-text .grid {display: flex; justify-content: center; width: 100%;}",
+        "@media (max-width: 1440px) {.responsibility-section-four .img-wrapper {display: flex; justify-content: center; width: 100%; }}",
+        ".image-with-text__text {margin: 0; width: 100%; text-align: center; padding-top: 20px;}",
+        ".image-with-text .grid__item {position: relative; width: 100%;}"
+      ],
+      "settings": {
+        "custom_class": "about-us-content responsibility-section-four",
+        "desktop-image": "shopify://shop_images/Banner_Responsible_Ilustration.jpg",
+        "mob-image": "shopify://shop_images/Banner_Responsible_Ilustration.jpg",
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "image_first",
+        "desktop_content_position": "middle",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "color_scheme": "background-1",
+        "mobile_content_alignment": "center",
+        "padding_top": 0,
+        "padding_bottom": 28
+      }
+    }
+  },
+  "order": [
+    "main",
+    "e8b67092-91f6-4415-b680-1740c389256f",
+    "45685f29-21a6-40d2-8623-dccc46c7be4a",
+    "91ad8f39-1aec-4638-b1cc-69269a97ee2f",
+    "de1d68a7-5ece-4294-8555-c3b5c2a98d0a",
+    "6f4b8d44-2b60-48df-bb74-47d398fd8b9e",
+    "ae646234-e830-4c72-9576-a85c552c608d"
+  ]
+}

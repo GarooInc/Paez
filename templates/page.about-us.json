@@ -1,0 +1,266 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {}
+    },
+    "42aa1b88-aec6-4909-af47-f078f16ea3ef": {
+      "type": "rich-text-4",
+      "settings": {
+        "custom_class": "about-us-banner-title page-banner-title",
+        "prefix": "",
+        "section_title": "About",
+        "section_sub": "US",
+        "description": "",
+        "section_url": ""
+      }
+    },
+    "f98bb07a-4b1e-4afa-b00b-81b5ea9c00cc": {
+      "type": "section-banner-v12",
+      "settings": {
+        "custom_class": "about-banner",
+        "img_banner": "shopify://shop_images/banner_aboutus.png",
+        "mob_img_banner": "shopify://shop_images/banner_aboutus_1.png",
+        "title": "",
+        "url_banner": "shopify://collections/all",
+        "color_title": "#000000",
+        "color_hover_title": "#ffffff"
+      }
+    },
+    "1ed94a36-50df-45f9-afd4-f5dcb02f5c93": {
+      "type": "custom-image-with-text",
+      "blocks": {
+        "template--16679014564085__1ed94a36-50df-45f9-afd4-f5dcb02f5c93-16746394964eafefde-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "Your everyday essentials.",
+            "heading_size": "h1"
+          }
+        },
+        "template--16679014564085__1ed94a36-50df-45f9-afd4-f5dcb02f5c93-16746394964eafefde-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Yep, we’re still known for our summer vibes, but we’re stepping up to offer you styles that you’ll want to wear no matter the season.</p>",
+            "text_style": "body"
+          }
+        },
+        "text_6QqwRq": {
+          "type": "text",
+          "settings": {
+            "text": "<p>For many, summer is a season of possibilities. For us, the opportunity to be a part of your happiest moments, and that’s the motto that drives our daily inspiration. Paez is for everyone passionate about life, who's looking for authentic experiences, who want to feel the world surrounding them, and who leave a positive footprint wherever they go.</p>",
+            "text_style": "body"
+          }
+        }
+      },
+      "block_order": [
+        "template--16679014564085__1ed94a36-50df-45f9-afd4-f5dcb02f5c93-16746394964eafefde-0",
+        "template--16679014564085__1ed94a36-50df-45f9-afd4-f5dcb02f5c93-16746394964eafefde-1",
+        "text_6QqwRq"
+      ],
+      "custom_css": [
+        ".about-us-content .image-with-text__text-item .image-with-text__text{margin-top: 10px;}"
+      ],
+      "settings": {
+        "custom_class": "about-us-content  about-us-section-one",
+        "desktop-image": "shopify://shop_images/1_3feb0786-9f15-4d19-91ea-da1e96d38c4f.png",
+        "mob-image": "shopify://shop_images/1_3feb0786-9f15-4d19-91ea-da1e96d38c4f.png",
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "image_first",
+        "desktop_content_position": "middle",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "color_scheme": "background-1",
+        "mobile_content_alignment": "left",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "3e1c8fe0-0975-4df3-80a2-0b764d99d17b": {
+      "type": "custom-image-with-text",
+      "blocks": {
+        "87cf0ddd-5f34-4a7b-94f4-cd34b614a103": {
+          "type": "caption",
+          "settings": {
+            "caption": "We’re not going to fix every problem in the world, but we can certainly acknowledge the importance of taking care of yourself, of feeling carefree, of being a keyplayer in society. We care about the after work, the weekends, the moments of relaxation, your vacations. We want to be your absolute choice in those moments and the reminder of good memories.",
+            "text_style": "caption-with-letter-spacing",
+            "text_size": "medium"
+          }
+        }
+      },
+      "block_order": [
+        "87cf0ddd-5f34-4a7b-94f4-cd34b614a103"
+      ],
+      "settings": {
+        "custom_class": "about-us-content about-us-section-two",
+        "desktop-image": "shopify://shop_images/2_92e3efc0-f95a-493b-b7d6-3aa3c04c7b8e.png",
+        "mob-image": "shopify://shop_images/2_92e3efc0-f95a-493b-b7d6-3aa3c04c7b8e.png",
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "text_first",
+        "desktop_content_position": "middle",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "color_scheme": "background-1",
+        "mobile_content_alignment": "left",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "687d5820-bc5f-4aee-a372-45ad429690f6": {
+      "type": "custom-image-with-text",
+      "blocks": {
+        "caption_Mg7AJJ": {
+          "type": "caption",
+          "settings": {
+            "caption": "We walk the talk to make you feel relaxed, to inspire you to take the moment and go for it, and to remind you of better days. Our values are:",
+            "text_style": "subtitle",
+            "text_size": "medium"
+          }
+        },
+        "template--16679014564085__687d5820-bc5f-4aee-a372-45ad429690f6-16746394964eafefde-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "CREATIVITY",
+            "heading_size": "h1"
+          }
+        },
+        "template--16679014564085__687d5820-bc5f-4aee-a372-45ad429690f6-16746394964eafefde-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>We transform simple, comfortable and accessible products into fun, iconic and inspiring experiences</p>",
+            "text_style": "body"
+          }
+        },
+        "f1375db4-a3de-4186-bad3-1da57a05fa6b": {
+          "type": "heading",
+          "settings": {
+            "heading": "RESPONSIBILITY",
+            "heading_size": "h1"
+          }
+        },
+        "64b32af2-55ea-448d-96b3-3afe3e3ecf39": {
+          "type": "text",
+          "settings": {
+            "text": "<p>We’re not alone in this planet, dude. We’re committed to do better for our community and planet by making choices that minimize the impact of our production</p>",
+            "text_style": "body"
+          }
+        },
+        "f217f862-fd18-45a9-992c-e6a4fdfec3d1": {
+          "type": "heading",
+          "settings": {
+            "heading": "LAID BACK",
+            "heading_size": "h1"
+          }
+        },
+        "63c747a3-ca7d-4878-aedf-90f5b58c19ce": {
+          "type": "text",
+          "settings": {
+            "text": "<p>We care about the after works, the weekends, the moments of leisure, your vacations. We want to be your absolute choice in those moments and the reminder of good times</p>",
+            "text_style": "body"
+          }
+        },
+        "fed68fe4-3dad-45d6-9377-b1c85552a395": {
+          "type": "heading",
+          "settings": {
+            "heading": "JOY",
+            "heading_size": "h1"
+          }
+        },
+        "3a286fcf-7d71-4a5b-8988-177b3d431d2c": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Good vibes all the way. We are optimistics! We believe we can work together on building a better world.</p>",
+            "text_style": "body"
+          }
+        }
+      },
+      "block_order": [
+        "caption_Mg7AJJ",
+        "template--16679014564085__687d5820-bc5f-4aee-a372-45ad429690f6-16746394964eafefde-0",
+        "template--16679014564085__687d5820-bc5f-4aee-a372-45ad429690f6-16746394964eafefde-1",
+        "f1375db4-a3de-4186-bad3-1da57a05fa6b",
+        "64b32af2-55ea-448d-96b3-3afe3e3ecf39",
+        "f217f862-fd18-45a9-992c-e6a4fdfec3d1",
+        "63c747a3-ca7d-4878-aedf-90f5b58c19ce",
+        "fed68fe4-3dad-45d6-9377-b1c85552a395",
+        "3a286fcf-7d71-4a5b-8988-177b3d431d2c"
+      ],
+      "custom_css": [
+        ".about-us-content .image-with-text__text--caption {color: #000;}"
+      ],
+      "settings": {
+        "custom_class": "about-us-section-three   about-us-content",
+        "desktop-image": "shopify://shop_images/3_065c715a-9dec-4ba4-bb0c-c5997985e95e.png",
+        "mob-image": "shopify://shop_images/3_065c715a-9dec-4ba4-bb0c-c5997985e95e.png",
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "image_first",
+        "desktop_content_position": "middle",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "color_scheme": "background-1",
+        "mobile_content_alignment": "left",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "150135c6-339f-40f1-8b00-18c028fe6561": {
+      "type": "custom-image-with-text",
+      "blocks": {
+        "template--16679014564085__150135c6-339f-40f1-8b00-18c028fe6561-16746410352b1943ba-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "TRIP DOWN OUR HISTORY",
+            "heading_size": "h1"
+          }
+        },
+        "template--16679014564085__150135c6-339f-40f1-8b00-18c028fe6561-16746410352b1943ba-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>We started our journey in Buenos Aires in 2006 when three friends united to spread good vibes, create innovative ideas, and share inspiring stories worldwide.<br/><br/>Since then, we’ve traveled to over 50 countries and made an impact while placing our Paez shoes on millions of feet. We’ve explored coastlines from east to west and north to south, always innovating.<br/><br/>Now based in Portugal, we proudly uphold our legacy with a colourful range of comfortable products. We believe in our vision: dreams come true and anything is possible.</p>",
+            "text_style": "body"
+          }
+        }
+      },
+      "block_order": [
+        "template--16679014564085__150135c6-339f-40f1-8b00-18c028fe6561-16746410352b1943ba-0",
+        "template--16679014564085__150135c6-339f-40f1-8b00-18c028fe6561-16746410352b1943ba-1"
+      ],
+      "settings": {
+        "custom_class": "about-us-section-four about-us-content",
+        "desktop-image": "shopify://shop_images/4_562225f8-48c0-4eb0-8200-d4bc22ba4534.png",
+        "mob-image": "shopify://shop_images/4_562225f8-48c0-4eb0-8200-d4bc22ba4534.png",
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "text_first",
+        "desktop_content_position": "middle",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "color_scheme": "background-1",
+        "mobile_content_alignment": "left",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    }
+  },
+  "order": [
+    "main",
+    "42aa1b88-aec6-4909-af47-f078f16ea3ef",
+    "f98bb07a-4b1e-4afa-b00b-81b5ea9c00cc",
+    "1ed94a36-50df-45f9-afd4-f5dcb02f5c93",
+    "3e1c8fe0-0975-4df3-80a2-0b764d99d17b",
+    "687d5820-bc5f-4aee-a372-45ad429690f6",
+    "150135c6-339f-40f1-8b00-18c028fe6561"
+  ]
+}

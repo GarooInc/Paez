@@ -1,0 +1,183 @@
+<style>
+  body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+  }
+
+  #container {
+    display: flex;
+    flex-direction: row;
+    height: auto;
+  }
+
+  #locations {
+    width: 40%;
+    background-color: #fff;
+    border-right: 1px solid #ddd;
+    padding: 20px;
+    overflow-y: auto;
+  }
+
+  .location-item {
+    margin-bottom: 15px;
+    padding: 10px;
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: box-shadow 0.3s ease;
+  }
+
+  .location-item:hover {
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+  }
+
+  .location-item h4 {
+    margin: 0 0 5px;
+    font-size: 16px;
+    text-transform:uppercase;
+  }
+
+  .location-item p {
+    margin: 0;
+    font-size: 14px;
+    color: #666;
+  }
+
+  .location-description {
+    margin-top: 20px;
+    padding: 10px;
+    font-size: 14px;
+    color: #444;
+    background-color: #f3f3f3;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+  }
+
+  #map {
+    width: 60%;
+    height: 100%;
+  }
+
+  @media (min-width: 768px) {
+    #container {
+      height: 100vh;
+    }
+  }
+
+
+  @media (max-width: 768px) {
+    #container {
+      flex-direction: column;
+    }
+
+    .location-item p {
+    font-size: 12px;
+    }
+
+    .location-item h4 {
+    font-size: 14px;
+  }
+
+    #locations {
+      width: 100%;
+      border-right: none;
+      border-bottom: 1px solid #ddd;
+      height: 100%;
+    }
+
+    #map {
+      width: 100%;
+      height: 500px;
+    }
+  
+
+  }
+</style>
+
+<div id="container">
+  <div id="locations">
+    {% for block in section.blocks %}
+    <div class="location-item" data-lat="{{ block.settings.latitude }}" data-lng="{{ block.settings.longitude }}">
+      <h4>{{ block.settings.name }}</h4>
+      <p>{{ block.settings.description }}</p>
+
+    </div>
+    {% endfor %}
+  </div>
+  <div id="map"></div>
+</div>
+
+<script>
+  mapboxgl.accessToken = 'pk.eyJ1IjoiZ2Fyb29pbmMiLCJhIjoiY201emwzaHN2MDQyazJrcHVrYnR6dmFsaSJ9.5_Nk4vXLEqFO2xbAkf5hBg';
+  const map = new mapboxgl.Map({
+    container: 'map',
+    style: 'mapbox://styles/mapbox/streets-v11',
+    center: [-8.614788986508952, 41.146268331233465],
+    zoom: 6,
+    scrollZoom: false,
+  });
+
+  map.addControl(new mapboxgl.NavigationControl());
+
+  const locationItems = document.querySelectorAll('.location-item');
+
+  locationItems.forEach(item => {
+    const lat = parseFloat(item.getAttribute('data-lat'));
+    const lng = parseFloat(item.getAttribute('data-lng'));
+    const name = item.querySelector('h4').textContent;
+
+    const marker = new mapboxgl.Marker()
+      .setLngLat([lng, lat])
+      .setPopup(new mapboxgl.Popup().setText(name))
+      .addTo(map);
+
+    item.addEventListener('click', () => {
+      map.flyTo({ center: [lng, lat], zoom: 12 });
+      marker.togglePopup();
+    });
+  });
+
+</script>
+
+{% schema %}
+{
+  "name": "Maps",
+  "settings": [
+  ],
+  "blocks": [
+    {
+      "type": "location",
+      "name": "Location",
+      "settings": [
+        {
+          "type": "text",
+          "id": "name",
+          "label": "Location Name"
+        },
+        {
+          "type": "richtext",
+          "id": "description",
+          "label": "Description"
+        },
+        {
+          "type": "number",
+          "id": "latitude",
+          "label": "Latitude"
+        },
+        {
+          "type": "number",
+          "id": "longitude",
+          "label": "Longitude"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Maps",
+    }
+  ]
+}
+{% endschema %}

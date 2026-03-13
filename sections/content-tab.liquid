@@ -1,0 +1,334 @@
+<div class="{{ section.settings.css_class }}">
+  <div class="content_tab-block content-container">
+    <div class="container">
+      <div class="content-tabs-wrap">
+        <ul class="nav nav-tabs" role="tablist">
+          <li class="nav-item">
+            <a class="nav-link active" href="#tab1" data-toggle="tab" role="tab">{{ section.settings.tab_1 }}</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#tab2" data-toggle="tab" role="tab">{{ section.settings.tab_2 }}</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#tab3" data-toggle="tab" role="tab">{{ section.settings.tab_3 }}</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#tab4" data-toggle="tab" role="tab">{{ section.settings.tab_4 }}</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#tab5" data-toggle="tab" role="tab">{{ section.settings.tab_5 }}</a>
+          </li>
+        </ul>
+
+        <div class="tab-content ">
+          
+          <div id="tab1" class="tab-pane fade show active">
+            <div class="block-content">
+              <div class="tab-desc">
+                <span>{{ section.settings.tab1_desc }}</span>
+              </div>
+              <ul class="box-info">
+                {%- for block in section.blocks -%}
+                  {% if block.settings.tab_selection == '1' %}
+                    <li class="info-block">
+                      <div class="box-container">
+                        <div class="icon">
+                          {% if block.settings.icon != blank %}
+                            <img src="{{ block.settings.icon | img_url:'' }}">
+                          {% endif %}
+                        </div>
+                        <div class="text-info">
+                          {% if block.settings.text != blank %}
+                            <h6>{{ block.settings.text }}</h6>
+                          {% endif %}
+                        </div>
+                      </div>
+                    </li>
+                  {% endif %}
+                {%- endfor -%}
+              </ul>
+              <div class="tab-desc">
+                <span>{{ section.settings.tab1_footer }}</span>
+              </div>
+            </div>
+          </div>
+
+          <div id="tab2" class="tab-pane fade">
+            <div class="block-content">
+              <div class="tab-desc">
+                <span>{{ section.settings.tab2_desc }}</span>
+              </div>
+              <ul class="box-info">
+                {%- for block in section.blocks -%}
+                  {% if block.settings.tab_selection == '2' %}
+                    <li class="info-block">
+                      <div class="box-container">
+                        <div class="icon">
+                          {% if block.settings.icon != blank %}
+                            <img src="{{ block.settings.icon | img_url:'' }}">
+                          {% endif %}
+                        </div>
+                        <div class="text-info">
+                          {% if block.settings.text != blank %}
+                            <h6>{{ block.settings.text }}</h6>
+                          {% endif %}
+                        </div>
+                      </div>
+                    </li>
+                  {% endif %}
+                {%- endfor -%}
+              </ul>
+              <div class="tab-desc">
+                <span>{{ section.settings.tab2_footer }}</span>
+              </div>
+            </div>
+          </div>
+
+          <div id="tab3" class="tab-pane fade">
+            <div class="block-content">
+              <div class="tab-desc">
+                <span>{{ section.settings.tab3_desc }}</span>
+              </div>
+              <ul class="box-info">
+                {%- for block in section.blocks -%}
+                  {% if block.settings.tab_selection == '3' %}
+                    <li class="info-block">
+                      <div class="box-container">
+                        <div class="icon">
+                          {% if block.settings.icon != blank %}
+                            <img src="{{ block.settings.icon | img_url:'' }}">
+                          {% endif %}
+                        </div>
+                        <div class="text-info">
+                          {% if block.settings.text != blank %}
+                            <h6>{{ block.settings.text }}</h6>
+                          {% endif %}
+                        </div>
+                      </div>
+                    </li>
+                  {% endif %}
+                {%- endfor -%}
+              </ul>
+              <div class="tab-desc">
+                <span>{{ section.settings.tab3_footer}}</span>
+              </div>
+            </div>
+          </div>
+        
+          <div id="tab4" class="tab-pane fade">
+            <div class="block-content">
+              <div class="tab-desc">
+                <span>{{ section.settings.tab4_desc }}</span>
+              </div>
+              <ul class="box-info">
+                {%- for block in section.blocks -%}
+                  {% if block.settings.tab_selection == '4' %}
+                    <li class="info-block">
+                      <div class="box-container">
+                        <div class="icon">
+                          {% if block.settings.icon != blank %}
+                            <img src="{{ block.settings.icon | img_url:'' }}">
+                          {% endif %}
+                        </div>
+                        <div class="text-info">
+                          {% if block.settings.text != blank %}
+                            <h6>{{ block.settings.text }}</h6>
+                          {% endif %}
+                        </div>
+                      </div>
+                    </li>
+                  {% endif %}
+                {%- endfor -%}
+              </ul>
+              <div class="tab-desc">
+                <span>{{ section.settings.tab4_footer}}</span>
+              </div>
+            </div>
+        </div>
+
+          <div id="tab5" class="tab-pane fade">
+            <div class="block-content">
+              <div class="tab-desc">
+                <span>{{ section.settings.tab5_desc }}</span>
+              </div>
+              <ul class="box-info">
+                {%- for block in section.blocks -%}
+                  {% if block.settings.tab_selection == '5' %}
+                    <li class="info-block">
+                      <div class="box-container">
+                        <div class="icon">
+                          {% if block.settings.icon != blank %}
+                            <img src="{{ block.settings.icon | img_url:'' }}">
+                          {% endif %}
+                        </div>
+                        <div class="text-info">
+                          {% if block.settings.text != blank %}
+                            <h6>{{ block.settings.text }}</h6>
+                          {% endif %}
+                        </div>
+                      </div>
+                    </li>
+                  {% endif %}
+                {%- endfor -%}
+              </ul>
+              <div class="tab-desc">
+                <span>{{ section.settings.tab5_footer}}</span>
+              </div>
+            </div>
+        </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "Content tabs",
+  "class": "section--content-tab",
+  "settings": [
+    {
+      "type": "text",
+      "id": "css_class",
+      "label": "CSS Class"
+    },
+    {
+      "type": "header",
+      "content": "Tabs"
+    },
+    {
+      "type": "text",
+      "id": "tab_1",
+      "label": "Tab 1"
+    },
+    {
+      "type": "text",
+      "id": "tab_2",
+      "label": "Tab 2"
+    },
+    {
+      "type": "text",
+      "id": "tab_3",
+      "label": "Tab 3"
+    },
+    {
+      "type": "text",
+      "id": "tab_4",
+      "label": "Tab 4"
+    },
+    {
+      "type": "text",
+      "id": "tab_5",
+      "label": "Tab 5"
+    },
+    {
+      "type" : "textarea",
+      "id" : "tab1_desc",
+      "label" : "Tab1 description"
+    },
+    {
+      "type" : "textarea",
+      "id" : "tab2_desc",
+      "label" : "Tab2 description"
+    },
+    {
+      "type" : "textarea",
+      "id" : "tab3_desc",
+      "label" : "Tab3 description"
+    },
+    {
+      "type" : "textarea",
+      "id" : "tab4_desc",
+      "label" : "Tab4 description"
+    },
+    {
+      "type" : "textarea",
+      "id" : "tab5_desc",
+      "label" : "Tab5 description"
+    },
+    {
+      "type" : "textarea",
+      "id" : "tab1_footer",
+      "label" : "Tab1 footer"
+    },
+    {
+      "type" : "textarea",
+      "id" : "tab2_footer",
+      "label" : "Tab2 footer"
+    },
+    {
+      "type" : "textarea",
+      "id" : "tab3_footer",
+      "label" : "Tab3 footer"
+    },
+    {
+      "type" : "textarea",
+      "id" : "tab4_footer",
+      "label" : "Tab4 footer"
+    },
+    {
+      "type" : "textarea",
+      "id" : "tab5_footer",
+      "label" : "Tab5 footer"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "heading",
+      "name": "block",
+      "settings": [
+        {
+          "type" : "image_picker",
+          "id" : "icon",
+          "label" : "icon"
+        },
+        {
+          "type" : "text",
+          "id" : "text",
+          "label" : "Text"
+        },
+        {
+          "type": "select",
+          "id": "tab_selection",
+          "label": "Select Tab",
+          "options": [
+            {
+              "value": "1",
+              "label": "Tab 1"
+            },
+            {
+              "value": "2",
+              "label": "Tab 2"
+            },
+            {
+              "value": "3",
+              "label": "Tab 3"
+            },
+            {
+              "value": "4",
+              "label": "Tab 4"
+            },
+            {
+              "value": "5",
+              "label": "Tab 5"
+            }
+          ],
+          "default": "1"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Content tabs"
+    }
+  ]
+}
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

@@ -1,0 +1,49 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "collection_template": {
+      "type": "collection-template",
+      "settings": {
+        "select_style_bread": "style_1",
+        "ena_bg_img": true,
+        "bg_breadcrumb": "{{ collection.image }}",
+        "bg_color_breadcrumb": "#000000",
+        "color_breadcrumb": "#ffffff",
+        "collection_layout": "full_width",
+        "prod_per_page": 50,
+        "prod_layout": "prod_grid",
+        "prod_per_row": "prod_col_3",
+        "filter_layout": "filter_draw",
+        "sidebar_layout": "sidebar_right",
+        "ena_sticky_sidebar": true,
+        "ena_banner_mordern": true,
+        "big_title": "",
+        "mini_title": "",
+        "btn_title": "",
+        "bannerfull_url": "https://www.shopify.com/free-trial?ref=shopifycenter",
+        "color_title": "#ffffff",
+        "ena_best_seller": false,
+        "title_heading": "BEST SELLERS",
+        "select_collection": "t-shirt",
+        "products_limit": 10,
+        "ena_filter": true,
+        "ena_filter2": true,
+        "shop_by_size_title": "Size",
+        "shop_by_size_list_tags": "26, 27, 28, 29, 30, 31, 32, 33, 34",
+        "shop_by_tag": "Tag",
+        "shop_by_list_tags": ""
+      }
+    }
+  },
+  "order": [
+    "collection_template"
+  ]
+}

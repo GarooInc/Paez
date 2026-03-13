@@ -9,12 +9,35 @@
  */
 {
   "sections": {
-    "main": {
-      "type": "blog",
-      "settings": {}
+    "blog_template": {
+      "type": "blog-template",
+      "settings": {
+        "blog_layout": "blog_layo_none",
+        "blog_template": "blog_classic",
+        "posts_limit": 50,
+        "show_author": false,
+        "show_comment": false,
+        "show_datetime": true,
+        "show_cate": false,
+        "show_summary": true,
+        "show_btn": true,
+        "enable_widget_search": true,
+        "widget_search_title": "Search",
+        "shop_by_search_placeholder": "Search...",
+        "enable_widget_cate": false,
+        "widget_cate_title": "Categories",
+        "widget_cate_menu": "main-menu",
+        "enable_widget_related": true,
+        "widget_related_title": "RECENT POSTS",
+        "select_blog": "collabs",
+        "blogs_limit": 8,
+        "enable_widget_tag": false,
+        "shop_by_tag_title": "Tags",
+        "banner_blog_url": "https://www.shopify.com/free-trial?ref=shopifycenter"
+      }
     }
   },
   "order": [
-    "main"
+    "blog_template"
   ]
 }

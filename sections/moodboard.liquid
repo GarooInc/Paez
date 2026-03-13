@@ -1,0 +1,110 @@
+{{ 'moodboard.css' | asset_url | stylesheet_tag }}
+
+<div class="moodboard-wrapper {{ section.settings.custom_class }}">
+  <div class="container">
+    {% if section.settings.prefix != blank %}
+      <div class="rich-text__prefix">
+       	<p> {{section.settings.prefix}}</p>
+      </div>
+    {% endif %}
+    {% if section.settings.section_title != blank %}
+      <div class="rich-text__heading--{{ section.settings.text_size }} ">
+        <h2 class="heading-title">{{ section.settings.section_title  }}</h2>
+      </div>
+    {% endif %}
+    {% if section.settings.section_sub != blank %}
+      <div class="rich-text__subheading">
+       	<p> {{section.settings.section_sub}}</p>
+      </div>
+    {% endif %}
+    {% if section.settings.description != blank %}
+      <div class="rich-text__description">
+        <p> {{section.settings.description}}</p>
+      </div>
+    {% endif %}
+    {% if section.settings.section_url != blank %}
+      <div class="button-wrapper">
+        <a href="{{section.settings.section_url}}">EXPLORE OUR PRODUCT</a>
+      </div>
+    {% endif %}  
+      <div class="moodboard-gallery">
+        {%- for block in section.blocks -%}
+          <div class="moodboard-gallery-img">
+              <img src="{{ block.settings.image | img_url: '' }}">
+              {% if block.settings.tag != blank %}<span>{{ block.settings.tag }}</span>{% endif %}
+          </div>
+        {% endfor %}
+      </div>
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "Moodboard",
+  "class": "index-section",
+  "settings": [
+    {
+      "type": "text",
+      "id": "custom_class",
+      "label": "Custom Class"
+    },
+    {
+      "type": "text",
+      "id": "prefix",
+      "label": "Sub Heading"
+    },
+    {
+      "type": "text",
+      "id": "section_title",
+      "label": "Title",
+      "default": "Revolutionary Inclusivity"
+    },
+	{
+      "type": "text",
+      "id": "section_sub",
+      "label": "Sub Title"
+    },
+    {
+      "type": "richtext",
+      "id": "description",
+      "label": "Description"
+    },
+    {
+      "type": "url",
+      "id": "section_url",
+      "label": "Url Button"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "column",
+      "name": "Images",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "Image"
+        },
+        {
+          "type": "text",
+          "id": "tag",
+          "label": "Text"
+        }
+      ]
+    }
+  ],
+  "presets": [
+  { 
+    "name": "Moodboard",
+    "blocks": [
+        {
+          "type": "column"
+        }
+      ]
+    }
+  ] 
+}
+{% endschema %}
+
+{% javascript %}
+{% endjavascript %}

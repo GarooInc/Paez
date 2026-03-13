@@ -1,0 +1,66 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "6fc99993-5dc1-4c94-b386-dc3d6f19fe29": {
+      "type": "productpreorder",
+      "settings": {
+        "spd_style": "pd_default",
+        "style_page": "bottom",
+        "bg_prod_color": "",
+        "display_bg": "dis_bg_img",
+        "style_sidebar": "left",
+        "show_rating": true,
+        "show_sdes": false,
+        "show_social_share": false,
+        "show_quantity": false,
+        "show_sku": false,
+        "show_cate": false,
+        "ena_sticky_addcart": true,
+        "style_stickyaddcart": "bottom",
+        "ena_zoom": true,
+        "ena_featured_icon": true,
+        "display_feaicon": "dis_svg"
+      }
+    },
+    "168187982782755d4b": {
+      "type": "apps",
+      "blocks": {
+        "638c9ad1-99ba-4513-9fa8-ac8cc89d8fc4": {
+          "type": "shopify://apps/judge-me-reviews/blocks/review_widget/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
+          "disabled": true,
+          "settings": {}
+        },
+        "2ce867e7-0692-47ec-aa5b-b6ef95d849f4": {
+          "type": "shopify://apps/judge-me-reviews/blocks/preview_badge/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
+          "disabled": true,
+          "settings": {}
+        },
+        "c49afc22-2eb8-4bdc-af8e-5d9bee97bbec": {
+          "type": "shopify://apps/judge-me-reviews/blocks/featured_carousel/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
+          "disabled": true,
+          "settings": {
+            "maxwidth": 1080
+          }
+        }
+      },
+      "block_order": [
+        "638c9ad1-99ba-4513-9fa8-ac8cc89d8fc4",
+        "2ce867e7-0692-47ec-aa5b-b6ef95d849f4",
+        "c49afc22-2eb8-4bdc-af8e-5d9bee97bbec"
+      ],
+      "settings": {}
+    }
+  },
+  "order": [
+    "6fc99993-5dc1-4c94-b386-dc3d6f19fe29",
+    "168187982782755d4b"
+  ]
+}

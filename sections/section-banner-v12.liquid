@@ -1,0 +1,94 @@
+<div data-section-id="{{ section.id }}" data-section-type="section-banner-v12" style="{% if section.settings.margin_top != blank %}margin-top: {{section.settings.margin_top}}px;{%endif%} {% if section.settings.margin_bottom != blank %}margin-bottom: {{section.settings.margin_bottom}}px;{% endif %}">
+  <div class="section-banner-v12 mt-all {{ section.settings.custom_class }}">
+    <div class="container container-v2">
+      <div class="row" style="margin: 0 auto;">
+        <div class="col-12 p-0">
+          <div class="banner">
+            <a href="{{section.settings.url_banner}}">
+              <img data-src=" {% if section.settings.img_banner != blank %}{{section.settings.img_banner | img_url:'master'}} {% else %}//via.placeholder.com/1920x350{% endif %}" class="lazyload img-fluid desktop-banner" alt="_img">
+              <img data-src=" {% if section.settings.mob_img_banner != blank %}{{section.settings.mob_img_banner | img_url:'master'}} {% else %}//via.placeholder.com/1920x350{% endif %}" class="lazyload img-fluid mobile-banner" alt="_img">
+            </a>
+            <div class="content-banner">
+              <a href="{{section.settings.url_banner}}">
+                {% if section.settings.title != blank %}
+                <h3 class="title">{{section.settings.title}}</h3>
+                {% endif %}
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>   
+</div>
+<style>
+  .section-banner-v12 .banner .content-banner .title {
+  color: {{section.settings.color_title}};
+  }
+   .section-banner-v12 .banner .content-banner:hover .title {
+  color: {{section.settings.color_hover_title}};
+  }
+</style>
+{% schema %}
+{
+  "name": "BANNER V12",
+  "settings": [
+    {
+      "type": "header",
+      "content": "Section Space"
+    },
+    {
+      "type": "text",
+      "id": "custom_class",
+      "label": "Custom Class "
+    },
+    {
+      "type": "image_picker",
+      "id": "img_banner",
+      "label": "Image "
+    },
+    {
+      "type": "image_picker",
+      "id": "mob_img_banner",
+      "label": "Mobile Image "
+    },
+    {
+      "type": "text",
+      "id": "title",
+      "label": " Title",
+      "default": "Nike Announce The<br>Free FlyKnit"
+    },
+    {
+      "type": "url",
+      "id": "url_banner",
+      "label": "URL banner",
+      "default": "/collections/all"
+    },
+    {
+      "type": "color",
+      "id": "color_title",
+      "label": "Color Title",
+      "default": "#000"
+    },
+    {
+      "type": "color",
+      "id": "color_hover_title",
+      "label": "Color Hover Title",
+      "default": "#fff"
+    }
+   
+  ],
+  "presets": [
+    {
+      "name": "BANNER V12",
+      "category": "HOME"
+    }
+  ]
+}
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

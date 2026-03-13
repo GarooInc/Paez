@@ -1,0 +1,378 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "babbc96c-959b-4a67-8598-fd7a38c4b6f9": {
+      "type": "rich-text-4",
+      "settings": {
+        "custom_class": "wholesale-banner-title page-banner-title",
+        "prefix": "",
+        "section_title": "FAQ's",
+        "section_sub": "",
+        "description": "",
+        "section_url": ""
+      }
+    },
+    "e75a43d5-2b07-4cf0-8bf0-ed29892eefe1": {
+      "type": "FAQ-template",
+      "blocks": {
+        "template--16694144172277__e75a43d5-2b07-4cf0-8bf0-ed29892eefe1-1676399562c07124e0-0": {
+          "type": "faq_left",
+          "settings": {
+            "block_title_question": "CAN I CHANGE MY PAEZ.COM ORDER?",
+            "block_description_question": "At Paez we don't do direct exchanges. You can return your order within 30 days of receiving it. If you'd like to return your Paez order, check the <a href=\"#\" style=\"text-decoration: underline; color: black; font-weight: bold;\">Return Policy</a>.<br><br>\n\nIf both shoes and packaging are in perfect condition we will refund you right away. You can then purchase your new article.<br><br>\n\nPlease do not use the shoebox as your shipping package.<br><br>\n\nYou can contact <a href=\"mailto:onlineshop@paez.com\" style=\"text-decoration: underline; color: black; font-weight: bold;\">onlineshop@paez.com</a> anytime for any assistance.<br><br>\n\nIf your product was purchased with a promotion, you can return it and after confirmation, we will give you a code for the new purchase."
+          }
+        },
+        "template--16694144172277__e75a43d5-2b07-4cf0-8bf0-ed29892eefe1-1676399562c07124e0-2": {
+          "type": "faq_left",
+          "settings": {
+            "block_title_question": "HOW DO I RETURN MY ORDER PURCHASED AT PAEZ.COM?",
+            "block_description_question": "Check our <a href=\"https://returns.itsrever.com/paez\" style=\"text-decoration: underline; color: black; font-weight: bold;\">Returns Policy</a> and find out how you can return your item in less than three minutes!"
+          }
+        },
+        "template--16694144172277__e75a43d5-2b07-4cf0-8bf0-ed29892eefe1-1676399562c07124e0-3": {
+          "type": "faq_left",
+          "settings": {
+            "block_title_question": "WHY CAN’T I EXCHANGE ITEMS THROUGH THE ONLINE SERVICE?",
+            "block_description_question": "The PAEZ team is currently hard at work on finding sustainable solutions for exchanging purchased items (trust us, we want you happy all throughout the shopping process). However, operating with exchanges is quite costly at the moment and unfortunately not financially viable."
+          }
+        },
+        "e908aad5-73f8-478a-bb05-d8dcdd220b12": {
+          "type": "faq_left",
+          "settings": {
+            "block_title_question": "I BOUGHT A PAEZ PRODUCT IN ANOTHER STORE AND IT HAS A DEFECT, CAN I RETURN IT?",
+            "block_description_question": "Gosh, we’re truly sorry to hear about your Paez (we try as much as we can to reduce the risk of having defects). Unfortunately, we’re unable to help you directly in this matter. Please return to the store where you made your purchase with the product along with your receipt so that they can assist you properly.\n<br><br>\n\nIf you have any further questions please do not hesitate to contact us at onlineshop@paez.com."
+          }
+        }
+      },
+      "block_order": [
+        "template--16694144172277__e75a43d5-2b07-4cf0-8bf0-ed29892eefe1-1676399562c07124e0-0",
+        "template--16694144172277__e75a43d5-2b07-4cf0-8bf0-ed29892eefe1-1676399562c07124e0-2",
+        "template--16694144172277__e75a43d5-2b07-4cf0-8bf0-ed29892eefe1-1676399562c07124e0-3",
+        "e908aad5-73f8-478a-bb05-d8dcdd220b12"
+      ],
+      "custom_css": [
+        ".row {display: flex; justify-content: center; align-items: center;}",
+        "h3 {margin-top: 10px; text-align: center;}",
+        ".content_askeds {border-top: none; padding: 5px;}"
+      ],
+      "settings": {
+        "enable_slide": false,
+        "enable_asked": true,
+        "title_asked": "RETURNS",
+        "description_asked": "",
+        "enable_newsletter": false,
+        "section_title": "Never miss our updates about new arrivals and special offers",
+        "section_description": "Get the latest news & updates",
+        "newsletter_placeholder_input": "EMAIL ADDRESS",
+        "iconmail": "ti-email",
+        "button_name": "SUBCRIBE NOW"
+      }
+    },
+    "967bb6e5-05dc-402d-a55c-548f7f6f5ee4": {
+      "type": "FAQ-template",
+      "blocks": {
+        "template--16694144172277__967bb6e5-05dc-402d-a55c-548f7f6f5ee4-167760235587cda456-0": {
+          "type": "faq_left",
+          "settings": {
+            "block_title_question": "HOW CAN I CANCEL MY ORDER?",
+            "block_description_question": "Made a mistake and need to cancel your order? It happens to the best of us (hope you don’t regret it though!).<br>\nIf your order hasn’t been processed yet, we’ll try to cancel during the 24-hour period after you completed your order, and we’ll always try to it before it leaves our warehouse!<br>\nSend us an email to <a href=\"mailto:onlineshop@paez.com\">onlineshop@paez.com</a> with your order number indicating that you want to cancel your order and we will let you know if we are able to do so.<br><br>\nWe know that such errors can happen, but please understand that due to logistical reasons we may not be able to cancel your order as quickly as we would like. Rest assured that we want you to be satisfied at all times."
+          }
+        },
+        "faq_left_VE3Eih": {
+          "type": "faq_left",
+          "settings": {
+            "block_title_question": "I DIDN’T RECEIVE A CONFIRMATION E-MAIL FROM YOU GUYS!",
+            "block_description_question": "That shouldn’t happen at all! Most customers receive a confirmation e-mail within the first thirty minutes of completing their purchase.<br><br>\n\nThere are some cases where the confirmation e-mail ends up in the spam folder, depending on your e-mail provider and/or configurations. Before contacting the team at <a href=\"mailto:onlineshop@paez.com\">onlineshop@paez.com</a> please check it first.<br><br>\n\nIf not, please bear in mind that we’ll always do our best to assist you! We want you with our shoes, looking your very best (that’s why we do what we do!)"
+          }
+        },
+        "faq_left_amKAMr": {
+          "type": "faq_left",
+          "settings": {
+            "block_title_question": "I DON’T HAVE ANY NEWS FOR YOU GUYS OVER MY ORDER, AND ENOUGH TIME HAS PASSED",
+            "block_description_question": "Another situation that shouldn’t happen… at all! And we apologize so much for it. But it can happen, because we’re all human, and we can make mistakes as much as we work hard to avoid it. With that being said, there’s always a solution. Reach out to us if you haven’t received any communications from us in three business days."
+          }
+        }
+      },
+      "block_order": [
+        "template--16694144172277__967bb6e5-05dc-402d-a55c-548f7f6f5ee4-167760235587cda456-0",
+        "faq_left_VE3Eih",
+        "faq_left_amKAMr"
+      ],
+      "custom_css": [
+        ".row {display: flex; justify-content: center; align-items: center;}",
+        "h3 {margin-top: 10px; text-align: center;}",
+        ".content_askeds {border-top: none; padding: 5px;}"
+      ],
+      "settings": {
+        "enable_slide": false,
+        "enable_asked": true,
+        "title_asked": "ORDER STATUS",
+        "description_asked": "",
+        "enable_newsletter": false,
+        "section_title": "Never miss our updates about new arrivals and special offers",
+        "section_description": "Get the latest news & updates",
+        "newsletter_placeholder_input": "EMAIL ADDRESS",
+        "iconmail": "ti-email",
+        "button_name": "SUBCRIBE NOW"
+      }
+    },
+    "44c817dd-2927-4d98-ad36-79500eac068e": {
+      "type": "FAQ-template",
+      "blocks": {
+        "0ae00ece-feac-4e45-871f-33d938c47d19": {
+          "type": "faq_left",
+          "settings": {
+            "block_title_question": "IN WHAT CURRENCIES CAN I PAY FOR MY ORDER?",
+            "block_description_question": "At the moment we only accept Euros (€), but we are working to enable payments with more currencies."
+          }
+        },
+        "7653fe88-b25e-4d7c-94b3-3e66cc690395": {
+          "type": "faq_left",
+          "settings": {
+            "block_title_question": "WHAT PAYMENT METHODS DO YOU ACCEPT?",
+            "block_description_question": "We accept VISA, Mastercard, PayPal, Amazon Pay, Apple Pay and Google Pay.<br><br>\n\nWe are working on enabling more payment references. Stay tuned!"
+          }
+        },
+        "8a9dbf2c-352a-4d01-966d-449fa6e4b9b4": {
+          "type": "faq_left",
+          "settings": {
+            "block_title_question": "IS IT SAFE TO MAKE PAYMENTS ON YOUR WEBSITE?",
+            "block_description_question": "Fully, our website uses SSL and you can pay with credit/debit card or PayPal.<br><br>\n\nDo not worry! :)"
+          }
+        }
+      },
+      "block_order": [
+        "0ae00ece-feac-4e45-871f-33d938c47d19",
+        "7653fe88-b25e-4d7c-94b3-3e66cc690395",
+        "8a9dbf2c-352a-4d01-966d-449fa6e4b9b4"
+      ],
+      "custom_css": [
+        ".row {display: flex; justify-content: center; align-items: center;}",
+        "h3 {margin-top: 10px; text-align: center;}",
+        ".content_askeds {border-top: none; padding: 5px;}"
+      ],
+      "settings": {
+        "enable_slide": false,
+        "enable_asked": true,
+        "title_asked": "PAYMENTS",
+        "description_asked": "",
+        "enable_newsletter": false,
+        "section_title": "",
+        "section_description": "",
+        "newsletter_placeholder_input": "",
+        "iconmail": "",
+        "button_name": ""
+      }
+    },
+    "8981c527-1995-4112-9aa3-d49b27387282": {
+      "type": "FAQ-template",
+      "blocks": {
+        "template--16712389361909__8981c527-1995-4112-9aa3-d49b27387282-1678507921c696fa7c-0": {
+          "type": "faq_left",
+          "settings": {
+            "block_title_question": "MY COUPON OR DISCOUNT DOESN’T WORK",
+            "block_description_question": "If you’re having trouble applying a coupon or a discount code to your order, no need to worry! Just send us an email, with all relevant information to <a href=\"mailto:onlineshop@paez.com\" style=\"text-decoration: underline; color: black; font-weight: bold;\">onlineshop@paez.com</a> and we’ll take care of the rest.<br><br>\n\nIf you have a promocode, it can only be used in products that aren't on discount. Discounts are not cumulative."
+          }
+        },
+        "template--16712389361909__8981c527-1995-4112-9aa3-d49b27387282-1678507921c696fa7c-1": {
+          "type": "faq_left",
+          "settings": {
+            "block_title_question": "HOW DO I APPLY A DISCOUNT COUPON OR PROMO CODE?",
+            "block_description_question": "You can add a discount coupon or a promo code in two different stages of finishing your purchase. When reviewing your shopping cart, or during checkout. After applying your code, the discount will be deducted automatically from the amount."
+          }
+        },
+        "template--16712389361909__8981c527-1995-4112-9aa3-d49b27387282-1678507921c696fa7c-2": {
+          "type": "faq_left",
+          "settings": {
+            "block_title_question": "THE PAEZ I WANT ARE OUT OF STOCK",
+            "block_description_question": "Oh geez, we're sad to hear about that (but at the same, good on us, right?)<br><br>\n\nWhile we’re unable to provide specific dates for restocks, you can always stay on top of any news, by subscribing to our newsletter."
+          }
+        },
+        "template--16712389361909__8981c527-1995-4112-9aa3-d49b27387282-1678507921c696fa7c-3": {
+          "type": "faq_left",
+          "settings": {
+            "block_title_question": "DO I NEED TO CREATE AN ACCOUNT TO ORDER?",
+            "block_description_question": "You don’t have to create an account to order. But if you do, you can enjoy the following features:<br>\n• Order history<br>\n• Save your address, for quicker purchases<br>\n• Access to your wishlist"
+          }
+        }
+      },
+      "block_order": [
+        "template--16712389361909__8981c527-1995-4112-9aa3-d49b27387282-1678507921c696fa7c-0",
+        "template--16712389361909__8981c527-1995-4112-9aa3-d49b27387282-1678507921c696fa7c-1",
+        "template--16712389361909__8981c527-1995-4112-9aa3-d49b27387282-1678507921c696fa7c-2",
+        "template--16712389361909__8981c527-1995-4112-9aa3-d49b27387282-1678507921c696fa7c-3"
+      ],
+      "custom_css": [
+        ".row {display: flex; justify-content: center; align-items: center;}",
+        "h3 {margin-top: 10px; text-align: center;}",
+        ".content_askeds {border-top: none; padding: 5px;}"
+      ],
+      "settings": {
+        "enable_slide": false,
+        "enable_asked": true,
+        "title_asked": "PURCHASING",
+        "description_asked": "",
+        "enable_newsletter": false,
+        "section_title": "Never miss our updates about new arrivals and special offers",
+        "section_description": "Get the latest news & updates",
+        "newsletter_placeholder_input": "EMAIL ADDRESS",
+        "iconmail": "ti-email",
+        "button_name": "SUBCRIBE NOW"
+      }
+    },
+    "2d8ad0b2-a903-461f-aeff-bb96b95630ac": {
+      "type": "FAQ-template",
+      "blocks": {
+        "template--16712389361909__2d8ad0b2-a903-461f-aeff-bb96b95630ac-1678507921c696fa7c-0": {
+          "type": "faq_left",
+          "settings": {
+            "block_title_question": "WHAT’S THE SHIPPING PRICE?",
+            "block_description_question": "Please click <a href=\"https://paez.com/pages/shipping-policy\" style=\"text-decoration: underline; color: black; font-weight: bold;\">here</a> to find more about the shipping for different countries."
+          }
+        },
+        "template--16712389361909__2d8ad0b2-a903-461f-aeff-bb96b95630ac-1678507921c696fa7c-1": {
+          "type": "faq_left",
+          "settings": {
+            "block_title_question": "WHERE DO YOU SHIP?",
+            "block_description_question": "We ship to all countries inside the EU, and selected non-EU countries (Switzerland, and Turkey).<br><br>\n\nPlease note that shipping towards non-EU countries and select regions in EU that are subject to a customs clearance process (including Andorra, Canary Islands, Norway, and Serbia) may be subject to additional duties, taxes, or fees imposed that are not covered by Paez. We recommend checking with your local customs office for more information."
+          }
+        },
+        "template--16712389361909__2d8ad0b2-a903-461f-aeff-bb96b95630ac-1678507921c696fa7c-2": {
+          "type": "faq_left",
+          "settings": {
+            "block_title_question": "WHAT DO I HAVE TO DO IF I HAVE NOT RECEIVED AN ORDER CONFIRMATION EMAIL ONCE I HAVE PURCHASED A PAEZ?",
+            "block_description_question": "Oops! We usually send a confirmation email very quickly, so if you haven't received an email check your spam just in case!<br><br>\n\nIf it is not there, send us an email to <a href=\"mailto:onlineshop@paez.com\" style=\"text-decoration: underline; color: black; font-weight: bold;\">onlineshop@paez.com</a> and we will check if there has been any error."
+          }
+        },
+        "a5214eef-1493-49f5-855c-27e76f58ce72": {
+          "type": "faq_left",
+          "settings": {
+            "block_title_question": "WHAT IS THE ESTIMATED DAY OF DELIVERY?",
+            "block_description_question": "The expected day of delivery can be seen in the checkout process, for the location you want your Paez delivered or <a href=\"https://paez.com/pages/shipping-policy\" style=\"text-decoration: underline; color: black; font-weight: bold;\">here</a>."
+          }
+        }
+      },
+      "block_order": [
+        "template--16712389361909__2d8ad0b2-a903-461f-aeff-bb96b95630ac-1678507921c696fa7c-0",
+        "template--16712389361909__2d8ad0b2-a903-461f-aeff-bb96b95630ac-1678507921c696fa7c-1",
+        "template--16712389361909__2d8ad0b2-a903-461f-aeff-bb96b95630ac-1678507921c696fa7c-2",
+        "a5214eef-1493-49f5-855c-27e76f58ce72"
+      ],
+      "custom_css": [
+        ".row {display: flex; justify-content: center; align-items: center;}",
+        "h3 {margin-top: 10px; text-align: center;}",
+        ".content_askeds {border-top: none; padding: 5px;}"
+      ],
+      "settings": {
+        "enable_slide": false,
+        "enable_asked": true,
+        "title_asked": "DELIVERY",
+        "description_asked": "",
+        "enable_newsletter": false,
+        "section_title": "",
+        "section_description": "",
+        "newsletter_placeholder_input": "",
+        "iconmail": "",
+        "button_name": ""
+      }
+    },
+    "bbaaa71d-ff03-4ca5-a8f5-116ea2a64759": {
+      "type": "FAQ-template",
+      "blocks": {
+        "1ea6b4d6-0a12-4242-9572-9ef5b74ed1f8": {
+          "type": "faq_left",
+          "settings": {
+            "block_title_question": "HOW DO I CLEAN MY PAEZ?",
+            "block_description_question": "Easy peasy lemon squeezy. Please check <a href=\"https://paez.com/pages/product-care\" style=\"text-decoration: underline; color: black;\">here</a> how to properly wash your Paez."
+          }
+        },
+        "33723f5b-3550-470b-9553-788eb1b4ce92": {
+          "type": "faq_left",
+          "settings": {
+            "block_title_question": "HOW DO I FIND MY SIZE?",
+            "block_description_question": "Don’t know your size? No need to worry. Check our size guide <a href=\"https://paez.com/pages/size-guide\" style=\"text-decoration: underline; color: black; font-weight: bold;\">here</a>."
+          }
+        },
+        "adf6243c-2092-482c-a94f-e5bbf07d0188": {
+          "type": "faq_left",
+          "settings": {
+            "block_title_question": "HOW DO I KNOW IF MY PAEZ FIT?",
+            "block_description_question": "In doubt, we recommend trying your Paez at home first (please don't take off the tag and keep the soles of the shoes as clean as you received them!). They loosen up and mould to your feet in just 20 minutes. Just like any other fabric, they'll adjust if needed (but if there's no pressure, they won't widen).<br><br>\n\nIf you're worried about a tight fit, go ahead and size up for a roomier feel. The chances of them widening too much are super slim. And hey, if they're not slipping off your feet while you walk, that's a popular choice among some of our customers.<br><br>\n\nIf you feel any immediate discomfort or tightness around the area of your toes, try sizing up for a comfier fit. No sweat! But please don't force the fabric (we don't want those holes in the fabric, do we?)"
+          }
+        }
+      },
+      "block_order": [
+        "1ea6b4d6-0a12-4242-9572-9ef5b74ed1f8",
+        "33723f5b-3550-470b-9553-788eb1b4ce92",
+        "adf6243c-2092-482c-a94f-e5bbf07d0188"
+      ],
+      "custom_css": [
+        ".row {display: flex; justify-content: center; align-items: center;}",
+        "h3 {margin-top: 10px; text-align: center;}",
+        ".content_askeds {border-top: none; padding: 5px;}"
+      ],
+      "settings": {
+        "enable_slide": false,
+        "enable_asked": true,
+        "title_asked": "PRODUCT",
+        "description_asked": "",
+        "enable_newsletter": false,
+        "section_title": "",
+        "section_description": "",
+        "newsletter_placeholder_input": "",
+        "iconmail": "",
+        "button_name": ""
+      }
+    },
+    "86d49ecf-da68-4f43-b0c5-756aa1f27e58": {
+      "type": "FAQ-template",
+      "blocks": {
+        "653cb1ca-c19a-4bc0-8899-4af8a89ca043": {
+          "type": "faq_left",
+          "settings": {
+            "block_title_question": "CONTACTS",
+            "block_description_question": "If you wish to contact us for any reason, please reach out to us at <a href=\"mailto:onlineshop@paez.com\" style=\"text-decoration: underline; color: black; font-weight: bold;\">onlineshop@paez.com</a>"
+          }
+        }
+      },
+      "block_order": [
+        "653cb1ca-c19a-4bc0-8899-4af8a89ca043"
+      ],
+      "custom_css": [
+        ".row {display: flex; justify-content: center; align-items: center;}",
+        "h3 {margin-top: 10px; text-align: center;}",
+        ".content_askeds {border-top: none; padding: 5px;}"
+      ],
+      "settings": {
+        "enable_slide": false,
+        "enable_asked": true,
+        "title_asked": "CONTACTS",
+        "description_asked": "",
+        "enable_newsletter": false,
+        "section_title": "",
+        "section_description": "",
+        "newsletter_placeholder_input": "",
+        "iconmail": "",
+        "button_name": ""
+      }
+    }
+  },
+  "order": [
+    "babbc96c-959b-4a67-8598-fd7a38c4b6f9",
+    "e75a43d5-2b07-4cf0-8bf0-ed29892eefe1",
+    "967bb6e5-05dc-402d-a55c-548f7f6f5ee4",
+    "44c817dd-2927-4d98-ad36-79500eac068e",
+    "8981c527-1995-4112-9aa3-d49b27387282",
+    "2d8ad0b2-a903-461f-aeff-bb96b95630ac",
+    "bbaaa71d-ff03-4ca5-a8f5-116ea2a64759",
+    "86d49ecf-da68-4f43-b0c5-756aa1f27e58"
+  ]
+}

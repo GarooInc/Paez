@@ -1,0 +1,145 @@
+{% if section.settings.bottom_bar_enable %}
+<script
+  type="application/json"
+  data-section-type="static-bar"
+  data-section-id="{{ section.id }}"
+>
+</script>
+
+{% style %}
+  {%
+    render 'css-loop',
+    css: section.settings.custom_css,
+    id: section.id
+  %}
+  
+  .static-bottom-bar {
+    width: 100%;
+    padding: 15px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .sbb-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    flex-wrap: wrap;
+  }
+  
+  .sbb-item {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .sbb-item img {
+    max-height: 40px;
+    width: auto;
+  }
+
+  .sbb-item-content {
+    padding: 8px 20px;
+    text-align: center;
+    display: inline-block;
+    font-size: 12px;
+  }
+  
+  @media (min-width: 768px) {
+    .sbb-item-content {
+      font-size: 16px;
+    }
+  
+{% endstyle %}
+
+<div class="static-bottom-bar {{section.settings.css_class}}" style="background-color: {{section.settings.background_color}};">
+  <div class="sbb-container">
+    {% for block in section.blocks %}
+    <div class="sbb-item">
+      {% if block.settings.image != blank %}
+        <img src="{{ block.settings.image | img_url: '1000x' }}">
+      {% else %}
+        <div 
+             class="sbb-item-content" 
+             style="background-color: {{block.settings.item_background_color}}; color: {{block.settings.item_text_color}}; {% if section.settings.has_border %} border: 1px solid {{block.settings.item_border_color}}; border-radius: 25px;{% endif %}">
+          {{block.settings.item_content}}
+        </div>
+      {%  endif %}
+    </div>
+    {% endfor %}
+  </div>
+</div>
+
+{% endif %}
+{% schema %}
+{
+  "name": "Bottom Bar",
+  "settings": [
+    {
+      "type": "checkbox",
+      "id": "bottom_bar_enable",
+      "label": "Enable"
+    },
+	{
+      "type": "checkbox",
+      "id": "has_border",
+      "label": "Has Border?"
+    },
+	{
+      "type": "text",
+      "id": "background_color",
+      "label": "Background Color?"
+    },
+    {
+      "type": "text",
+      "id": "css_class",
+      "label": "CSS Class"
+    },
+    {
+      "type": "textarea",
+      "id": "custom_css",
+      "label": "Custom CSS"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "text",
+      "name": "Item",
+      "settings": [
+        {
+          "type": "text",
+          "id": "item_content",
+          "label": "Content"
+        },
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "Image",
+          "info": "1024 x 1024px recommended"
+        },
+		{
+          "type": "text",
+          "id": "item_border_color",
+          "label": "Border Color",
+		  "default": "black"
+        },
+		{
+          "type": "text",
+          "id": "item_background_color",
+          "label": "Background Color",
+		  "default": "black"
+        },
+		{
+          "type": "text",
+          "id": "item_text_color",
+          "label": "Text Color",
+		  "default": "white"
+        }
+      ]
+    }
+  ]
+}
+
+{% endschema %}

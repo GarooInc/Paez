@@ -1,0 +1,310 @@
+<!-- /templates/search.liquid -->
+{% comment %}
+
+To return only products or pages in results:
+- http://docs.shopify.com/manual/configuration/store-customization/return-only-product-in-storefront-search-results
+- Or manually add type=product or type=page to the search URL as a parameter
+
+{% endcomment %}
+
+{% comment %}
+Set grid_results to true and set search results as a grid instead of a list.
+This works well when your search is only for products.
+{% endcomment %}
+{% assign grid_results = true %}
+
+{% comment %}
+Check to enforce respond.js
+{% endcomment %}
+{% assign respond_js_secret_key = shop.domain | md5 %}
+{% unless search.terms == respond_js_secret_key %}
+
+{% comment %}
+Avoid accessing search.results before the opening paginate tag.
+If you do, the pagination of results will be broken.
+{% endcomment %}
+{% paginate search.results by 12 %}
+
+
+<h1 class="sr-only mt-5">{{page.title}}</h1>
+<section>
+  <div class="container py-5">
+    <div class="text-center">
+      <h3 class="text-uppercase h5">{{ 'general.search.title' | t }}</h3>
+    </div>
+  </div>
+</section>
+
+{% if search.performed and grid_results == true %}
+<div class="container container-v1 my-3 my-lg-5">
+    <style>
+  #usf_container{
+      visibility:hidden;
+  }
+  </style>
+<script>
+  function hoverActive() {
+    $('.hover-img').hover(function() {
+      var originalImage1 = $(this).attr('data-src');
+      var hoverImage1 = $(this).attr('data-hover-src');
+        $(this).attr('src', hoverImage1);
+        $(this).mouseout(function() {
+          $(this).attr('src', originalImage1);
+      });
+    });
+  };
+</script> 
+<script>
+  document.title = "Search";
+  window._usfGlobalSettings = {
+    show_sale_label: {{ settings.show_sale_label | json }},
+    sale_label_color: {{ settings.sale_label_color | json }},
+    sale_label_text_color : {{ settings.sale_label_text_color | json }},
+    sale_label_name: {{ settings.sale_label_name | json }},
+    show_new_label: {{ settings.show_new_label | json }},
+    new_label_color: {{ settings.new_label_color | json }},
+    new_label_text_color : {{ settings.new_label_text_color | json }},
+    new_label_name: {{ settings.new_label_name | json }},
+    product_new_time: {{ settings.product_new_time | json }},
+    enable_catalog_mode: {{ settings.enable_catalog_mode | json }},
+    pia_wishlist: {{ settings.pia_wishlist | json}},
+    pia_wishlist_name: {{ settings.pia_wishlist_name | json}},
+    pia_wishlist_svg: {{ settings.pia_wishlist_svg | json}},
+    pia_sold: {{ settings.pia_sold | json}},
+    pia_sold_name: {{ settings.pia_sold_name | json}},
+    pia_sold_svg: {{ settings.pia_sold_svg | json}},
+    pia_selectoption: {{ settings.pia_selectoption | json}},
+    pia_selectoption_name: {{ settings.pia_selectoption_name | json}},
+    pia_selectoption_svg: {{ settings.pia_selectoption_svg | json}},
+    pia_addcart: {{ settings.pia_addcart | json}},
+    pia_addcart_name: {{ settings.pia_addcart_name | json}},
+    pia_addcart_svg: {{ settings.pia_addcart_svg | json}},
+    pia_quickview: {{ settings.pia_quickview | json }},
+    pia_quickview_name: {{ settings.pia_quickview_name | json }},
+    pia_quickview_svg: {{ settings.pia_quickview_svg | json }}
+  };
+  window._usfSectionSettings = {
+    prod_per_row: {{ section.settings.prod_per_row | json }},
+  }
+  window._usfLoadingGif = '{{ 'loading.gif' | asset_url }}';
+  window._usfWishlistAddedTxt = {{ 'wishlist.general.added' | t | json }};
+  window._usfCustomerEmail = {{ customer.email | json }};
+</script>
+            
+<div id="usf_container"></div>
+<div class="usf-skeleton-container">
+	<style>              
+	  @media (max-width: 749px){
+		.usf-mobile-hidden{
+		  display: none !important;
+		}
+		.usf-skeleton-container .usf-sr-config__mobile-filters-wrapper{
+		  display: flex;
+		  width: 100%;
+		  flex-wrap: wrap;
+		}
+		.usf-skeleton-container .usf-filters, 
+		.usf-skeleton-container .usf-sr-config__mobile-filters-wrapper .usf-c-select{
+		  height: 49px;
+		  border: 1px solid #ededed;
+		  width: 50%;
+		  border-left: none;
+		  display: flex !important;
+		  align-items: center;
+		}
+		.usf-skeleton-container .usf-filters{
+		  border-left: 1px solid #ededed;
+		}
+
+		.usf-skeleton-container .usf-results{
+		  height: 400px;
+		  margin-left: -20px;
+		  display: flex;
+		  flex-wrap: wrap;
+		}
+		.usf-skeleton-container .usf-sr-config{
+		  display: flex;
+		  align-items: center;
+		  justify-content: space-between;
+		  margin-top: 13px;
+		  flex-wrap: wrap;
+		}
+		
+		.usf-skeleton-container .usf-sr-summary:before{
+		  margin: 0 !important;
+		  width: 100px !important;
+		}
+		.usf-skeleton-container .usf-views:before{
+		  margin: 0 !important;
+		  width: 50px !important;
+		  margin-left: auto !important;
+		}
+		.usf-skeleton-container .usf-grid__item{
+		  width: 50%;
+		  padding-left: 20px;
+		}
+		.usf-skeleton-container .usf-sr-summary, 
+		.usf-skeleton-container .usf-views{
+		  margin: 30px 0 20px 0;
+		  display: block;
+		  width: 50%;
+		}
+		
+		.usf-skeleton-container .usf-filters:before,
+		.usf-skeleton-container .usf-c-select:before{
+		  margin: 30px;
+		}
+		
+		.usf-skeleton-container .usf-sr-container{
+		  width: 100%;
+		  padding: 0;
+		  float: none;
+		}
+	  }
+	  
+	  .usf-skeleton-container .usf-filters:before,
+	  .usf-skeleton-container .usf-c-select:before,
+	  .usf-skeleton-container .usf-sr-summary:before,
+	  .usf-skeleton-container .usf-views:before,
+	  .usf-skeleton-container .usf-facet .usf-title:before,
+	  .usf-skeleton-container .usf-facet .usf-body:before,
+	  .usf-skeleton-container .usf-facet .usf-body:after              
+	  {
+		content:'';
+		display: block;
+		background-color: #0000000b;
+		-webkit-animation: usf-skeleton-animation 2.3s infinite;
+		animation: usf-skeleton-animation 2.3s infinite;
+		height: 10px;
+		border-radius: 10px;
+		width: 100%;                
+	  }
+	  
+	  @keyframes usf-skeleton-animation {
+		0% {
+			opacity: 1
+		}
+
+		50% {
+			opacity: .5
+		}
+
+		100% {
+			opacity: 1
+		}
+	  }
+	  
+	  @media (min-width: 750px){
+		.usf-skeleton-container .usf-desktop-hidden{
+		  display: none !important;
+		}
+		.usf-skeleton-container .usf-facet .usf-title,
+		.usf-skeleton-container .usf-facet .usf-body,
+		.usf-skeleton-container .usf-c-select
+		{
+		  display: block !important;
+		}              
+	  
+		.usf-skeleton-container .usf-sr-config__mobile-filters-wrapper{
+		  display: none;
+		}
+		
+		.usf-skeleton-container .usf-facets{
+		  display: block;
+		  width: 23%;
+		  float: left;
+		  margin-top: 17px;
+		}
+		
+		.usf-skeleton-container .usf-sr-container {
+		  width: 77%;
+		  float: left;
+		  padding-left: 30px;
+		  margin-top: 17px;
+		}
+		
+		.usf-skeleton-container .usf-sr-config{
+		  display: flex;
+		}
+		
+		.usf-skeleton-container .usf-sr-config > .usf-c-select{
+		  width: 200px;
+		}
+		
+		.usf-skeleton-container .usf-sr-summary{
+		  width: 100%;
+		}
+		.usf-skeleton-container .usf-sr-summary:before{
+		  margin: auto;
+		  width: 200px;
+		}
+		.usf-skeleton-container .usf-views:before{
+		}
+		.usf-skeleton-container .usf-grid__item{
+		  width: 50%;
+		  padding-left: 20px;
+		}
+		.usf-skeleton-container .usf-views{
+		  display: block;
+		  width: 50px;
+		}
+		
+		.usf-skeleton-container .usf-sr-container{
+		  min-height: 700px;
+		}
+	  }  
+	  
+	  .usf-skeleton-container .usf-facet{
+		margin-bottom: 40px;
+	  }
+	  
+	  .usf-skeleton-container .usf-facet .usf-title:before{                
+		margin-bottom: 25px;
+		width: 70%;
+	  }
+	  
+	  .usf-skeleton-container .usf-facet .usf-body:before,
+	  .usf-skeleton-container .usf-facet .usf-body:after
+	  {
+		margin-bottom: 16px;
+	  }
+	</style>
+  
+	<div class="usf-facets usf-mobile-hidden">
+	  <div class="usf-facet">
+		<div class="usf-title"></div>
+		<div class="usf-body"></div>                
+	  </div>
+	  <div class="usf-facet">
+		<div class="usf-title"></div>
+		<div class="usf-body"></div>
+	  </div>
+	</div>
+	<div class="usf-sr-container">
+	  <div class="usf-sr-config">
+		<div class="usf-sr-config__mobile-filters-wrapper">
+		  <div class="usf-filters"></div>
+		  <div class="usf-c-select"></div>
+		</div>
+		<div class="usf-views usf-mobile-hidden"></div>
+		<span class="usf-sr-summary"></span>
+		<div class="usf-views usf-desktop-hidden"></div>
+		<div class="usf-c-select usf-mobile-hidden"></div>
+	  </div>
+	  <div class="usf-results usf-grid">
+		<div class="usf-grid__item"></div>
+		<div class="usf-grid__item"></div>
+		<div class="usf-grid__item"></div>
+		<div class="usf-grid__item"></div>
+	  </div>
+	</div>       
+</div>
+</div>
+{% endif %}
+
+{% endpaginate %}
+
+{% else %}
+{% include 'respond' %}
+{% layout none %}
+{% endunless %}

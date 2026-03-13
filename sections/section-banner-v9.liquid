@@ -1,0 +1,152 @@
+<div data-section-id="{{ section.id }}" data-section-type="section-banner-v9" style="{% if section.settings.margin_top != blank %}margin-top: {{section.settings.margin_top}}px;{%endif%} {% if section.settings.margin_bottom != blank %}margin-bottom: {{section.settings.margin_bottom}}px;{% endif %}">
+  <div class="section-banner-v9">
+    <div class="container container-v3">
+      <div class="row">
+        <div class="col-4">
+          <div class="img-banner">
+            <a href="{{section.settings.url_banner}}">
+              {% if section.settings.img_banner != blank %}
+              <img data-src="{{section.settings.img_banner | img_url : 'master'}}" class="lazyload img-fluid w-100" alt >
+              {% else %}
+              <img data-src="//via.placeholder.com/670x792" class="lazyload img-fluid w-100" alt>
+              {% endif %}
+            </a>
+          </div>
+        </div>
+        <div class="col-4" style="display: flex; align-items: center;">
+          <div class="banner-content text-center">
+            {% if section.settings.title_banner != blank %}
+            <h3 class="title-banner" style="color: {{section.settings.color_title}}">{{section.settings.title_banner}}</h3>
+            {% endif %}
+            {% if section.settings.sub_title_banner != blank %}
+            <p class="sub-title" style="color: {{section.settings.color_sub_title}}">{{section.settings.sub_title_banner}}</p>
+            {% endif %}
+
+            {% if section.settings.button_banner != blank %}
+            <a href="{{section.settings.url_banner}}" class="button-shop button-shop-{{ section.id }}" title="">{{section.settings.button_banner}}</a>
+            {% endif %}
+          </div>
+        </div>
+        <div class="col-4">
+          <div class="img-banner">
+            <a href="{{section.settings.url_banner}}">
+              {% if section.settings.img_banner2 != blank %}
+              <img data-src="{{section.settings.img_banner2 | img_url : 'master'}}" class="lazyload img-fluid w-100" alt >
+              {% else %}
+              <img data-src="//via.placeholder.com/670x792" class="lazyload img-fluid w-100" alt>
+              {% endif %}
+            </a>
+            <div class="box-video text-center">
+              <a data-fancybox href="{{section.settings.url_video1}}">
+                <span class="box-btn">
+                  <span class="btn-banner">
+                    <i class="fa fa-play"></i>
+                    <span class="line-video line-1"></span>
+                    <span class="line-video line-2"></span>
+                    <span class="line-video line-3"></span>
+                  </span>
+                </span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<style>
+
+   .section-banner-v9 .btn-{{ section.id }} {
+    color: {{section.settings.color_btn}};
+    background: {{section.settings.bg_btn}};
+    border: 1px solid {{section.settings.color_btn}};
+  }
+  .section-banner-v9 .btn-{{ section.id }}:hover {
+    color: {{section.settings.color_btn_hover}};
+    border: 1px solid {{section.settings.bg_btn_hover1}};
+  }
+</style>
+
+{% schema %}
+{
+  "name": "BANNER V9",
+  "settings": [
+    {
+      "type": "header",
+      "content": "Setting Banner"
+    },
+    {
+      "type": "url",
+      "id": "url_banner",
+      "label": "URL Button ",
+      "default": "/collections/all"
+    },
+    {
+      "type": "image_picker",
+      "id": "img_banner",
+      "label": "Image Banner",
+      "info": "720 x 720px recommended"
+    },
+    {
+      "type": "header",
+      "content": "Settings Banner Content"
+    },
+    {
+      "type": "text",
+      "id": "title_banner",
+      "label": "Title Banner",
+      "default": "Decor & Furniture"
+    },
+    {
+      "type": "color",
+      "id": "color_title",
+      "label": "Color Title banner",
+      "default": "#000"
+    },
+    {
+      "type": "text",
+      "id": "sub_title_banner",
+      "label": "Sub Title Banner",
+      "default": " artisanal rugs, wallpaper, classic vases, and lighting accessories—well-made and carefully considered—whether made by Heath or by like-minded makers we admire. Welcome in."
+    },
+    {
+      "type": "color",
+      "id": "color_sub_title",
+      "label": "Color Sub Title banner",
+      "default": "#000"
+    },
+    {
+      "type": "text",
+      "id": "button_banner",
+      "label": "Button Banner 1",
+      "default": "Shop now"
+    },
+    {
+      "type": "image_picker",
+      "id": "img_banner2",
+      "label": "Image Banner 2",
+      "info": "720 x 720px recommended"
+    },
+    {
+      "type": "url",
+      "id": "url_video1",
+      "label": "URL Video 1",
+      "info": "[Upload video .mp4 in here](/admin/settings/files)"
+    }
+   
+  ],
+  "presets": [
+    {
+      "name": "BANNER V9",
+      "category": "HOME"
+    }
+  ]
+}
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

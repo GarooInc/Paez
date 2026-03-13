@@ -1,0 +1,281 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "article_template": {
+      "type": "article-template",
+      "disabled": true,
+      "settings": {
+        "blog_layout": "blog_layo_left",
+        "show_author": true,
+        "show_comment": true,
+        "show_cate": true,
+        "show_tag": true,
+        "show_related_post": true,
+        "related_post_title": "Related post",
+        "related_post_select_blog": "news",
+        "related_post_blogs_limit": 5,
+        "enable_widget_search": true,
+        "widget_search_title": "Search",
+        "shop_by_search_placeholder": "Search...",
+        "enable_widget_cate": true,
+        "widget_cate_title": "Categories",
+        "widget_cate_menu": "main-menu",
+        "enable_widget_related": true,
+        "widget_related_title": "RECENT POSTS",
+        "select_blog": "news",
+        "blogs_limit": 4,
+        "enable_widget_tag": true,
+        "shop_by_tag_title": "Tags",
+        "banner_article_url": "https://www.shopify.com/free-trial?ref=shopifycenter",
+        "enable_social_share": true
+      }
+    },
+    "32188728-51b3-4f19-a420-84f078cb8228": {
+      "type": "rich-text-4",
+      "custom_css": [
+        ".about-collection-banner-title h2 {text-transform: none;}",
+        ".subtitle {padding: 40px 0 0 0px; background-color: transparent;}",
+        ".rich-text-4 {margin-bottom: 0px;}"
+      ],
+      "settings": {
+        "custom_class": "about-collection-banner-title page-banner-title",
+        "prefix": "",
+        "section_title": "NEW IN 2024",
+        "section_sub": "",
+        "description": "",
+        "section_url": ""
+      }
+    },
+    "section_banner_v12_YKGpAy": {
+      "type": "section-banner-v12",
+      "settings": {
+        "custom_class": "about-banner",
+        "img_banner": "shopify://shop_images/Deskopt_BLOG_-_1920_x_918.jpg",
+        "mob_img_banner": "shopify://shop_images/Mobile_blog_-_960x960_1.jpg",
+        "title": "",
+        "url_banner": "",
+        "color_title": "#000000",
+        "color_hover_title": "#ffffff"
+      }
+    },
+    "rich_text_4_gnXbFz": {
+      "type": "rich-text-4",
+      "settings": {
+        "custom_class": "about-collection-banner-title page-banner-title",
+        "prefix": "",
+        "section_title": "",
+        "section_sub": "",
+        "description": "<p> In the season of the Afterglow collection, we wanted to take things up a notch, delivering our best collection yet. In terms of the final product, we've been inspired by the beautiful colours of twilight for some time now. The collection features warm and cosy hues of terracotta, yellow-saffron, and purple-amethyst, which served as the foundation for our new styles and improved icons.</p>",
+        "section_url": ""
+      }
+    },
+    "cdaee2a8-d358-4577-8fe9-9de9843a1e92": {
+      "type": "custom-image-with-text",
+      "blocks": {
+        "text_Nwca7C": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Introducing a brand new product category that'll leave you falling head over heels in love with! Our slippers boast a petite silhouette that's perfect for all occasions, from your daily routines to those special celebrations. With unparalleled comfort and unparalleled sophistication, you won't want to take them off. Coming soon.<br/><br/>Exclusively available EU sizing 35-42<br/></p>",
+            "text_style": "subtitle"
+          }
+        }
+      },
+      "block_order": [
+        "text_Nwca7C"
+      ],
+      "custom_css": [
+        "@media (max-width: 425px) {.grid {display: flex; flex-direction: column; }}",
+        ".image-with-text .grid__item {position: relative; align-self: center;}"
+      ],
+      "settings": {
+        "custom_class": "about-us-content responsibility-section-four",
+        "desktop-image": "shopify://shop_images/1_ea2ed140-a51e-4a2f-a1ee-17c2dda8d819.jpg",
+        "mob-image": "shopify://shop_images/1_ea2ed140-a51e-4a2f-a1ee-17c2dda8d819.jpg",
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "image_first",
+        "desktop_content_position": "top",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "color_scheme": "background-1",
+        "mobile_content_alignment": "left",
+        "padding_top": 12,
+        "padding_bottom": 0
+      }
+    },
+    "ac86e1fa-1121-43b3-90c7-bf1ca4009b0a": {
+      "type": "custom-image-with-text",
+      "blocks": {
+        "139e407d-9b47-4873-bcde-613e5f702443": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Last season's best selling style. No matter the day, no matter the occasion, and more importantly no matter the outfit, we designed our Mary Janes to make you look and feel good! <br/><br/>They’re bigger and better than ever, and this year, we’ll be giving lots of new twists, to make this design feel fresh and most importantly comfortable and versatile!<br/><br/>Available EU sizing 35-42<br/></p>",
+            "text_style": "body"
+          }
+        }
+      },
+      "block_order": [
+        "139e407d-9b47-4873-bcde-613e5f702443"
+      ],
+      "custom_css": [
+        "@media (max-width: 425px) {.grid {display: flex; flex-direction: column; }}",
+        ".image-with-text .grid__item {position: relative; align-self: center;}"
+      ],
+      "settings": {
+        "custom_class": "about-us-content responsibility-section-four",
+        "desktop-image": "shopify://shop_images/4_a9046fc8-58e9-4b14-8e2e-e22a81ecd6fb.jpg",
+        "mob-image": "shopify://shop_images/4_a9046fc8-58e9-4b14-8e2e-e22a81ecd6fb.jpg",
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "text_first",
+        "desktop_content_position": "middle",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "color_scheme": "background-1",
+        "mobile_content_alignment": "left",
+        "padding_top": 0,
+        "padding_bottom": 16
+      }
+    },
+    "custom_image_with_text_Bz8eTk": {
+      "type": "custom-image-with-text",
+      "blocks": {
+        "text_A3JPnH": {
+          "type": "text",
+          "settings": {
+            "text": "<p>This season, we’re delivering the best version of our Mocs. Ready day and night, to offer you a versatile and fresh look, wherever you go. <br/><br/>With renewed colours, these are your summer essentials. New vibrant colours, soft and luxurious textiles (including Vegan Leather), and some cool designs!<br/><br/>Available in EU sizing 35-47<br/></p>",
+            "text_style": "subtitle"
+          }
+        }
+      },
+      "block_order": [
+        "text_A3JPnH"
+      ],
+      "settings": {
+        "custom_class": "about-us-content responsibility-section-four",
+        "desktop-image": "shopify://shop_images/3_9fed0230-7709-45ee-8ed2-128abb9b47ff.jpg",
+        "mob-image": "shopify://shop_images/3_9fed0230-7709-45ee-8ed2-128abb9b47ff.jpg",
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "image_first",
+        "desktop_content_position": "middle",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "color_scheme": "background-1",
+        "mobile_content_alignment": "left",
+        "padding_top": 12,
+        "padding_bottom": 0
+      }
+    },
+    "custom_image_with_text_YUmJTN": {
+      "type": "custom-image-with-text",
+      "blocks": {
+        "text_iJ7QHp": {
+          "type": "text",
+          "settings": {
+            "text": "<p>The Mules are the perfect combination of style and comfort. They are trendy, casual shoes that are easy to wear and will make you look fashionable always.<br/><br/>Every year, our customers can't get enough of this style, and this year we're thrilled to announce some amazing upgrades. You can now enjoy an unforgettable experience with new fabrics such as the Vegan Suede and Vegan Leather, and we have some exciting new prints and colours on the horizon!<br/><br/>Select styles exclusively available from EU sizing 35-42<br/>Select styles available from EU sizing 35-47<br/></p>",
+            "text_style": "subtitle"
+          }
+        }
+      },
+      "block_order": [
+        "text_iJ7QHp"
+      ],
+      "settings": {
+        "custom_class": "about-us-content responsibility-section-four",
+        "desktop-image": "shopify://shop_images/5_fcbc1ed6-d2ed-48e4-97f4-9215400344ab.jpg",
+        "mob-image": "shopify://shop_images/5_fcbc1ed6-d2ed-48e4-97f4-9215400344ab.jpg",
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "text_first",
+        "desktop_content_position": "top",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "color_scheme": "background-1",
+        "mobile_content_alignment": "left",
+        "padding_top": 12,
+        "padding_bottom": 0
+      }
+    },
+    "custom_image_with_text_zdqPkW": {
+      "type": "custom-image-with-text",
+      "blocks": {
+        "text_KNaEP9": {
+          "type": "text",
+          "settings": {
+            "text": "<p>There is a lot going on with our sandals this season! New colours, new fabrics (including Linen and Vegan Leather), new prints and new heights, to create an unique experience. <br/><br/>The biggest news this season is definitely our Heel Sandals designed for all the ladies who love to wear platform shoes. If you're always on the go and want to look effortlessly flawless yet comfortable, then our heel sandals are the perfect choice for you. You won't regret choosing them!<br/><br/>Available in EU sizing 35-42<br/></p>",
+            "text_style": "body"
+          }
+        }
+      },
+      "block_order": [
+        "text_KNaEP9"
+      ],
+      "settings": {
+        "custom_class": "about-us-content responsibility-section-four",
+        "desktop-image": "shopify://shop_images/6_95162077-5bc9-47ba-b52a-9a93326168c9.jpg",
+        "mob-image": "shopify://shop_images/6_95162077-5bc9-47ba-b52a-9a93326168c9.jpg",
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "image_first",
+        "desktop_content_position": "middle",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "color_scheme": "background-1",
+        "mobile_content_alignment": "left",
+        "padding_top": 0,
+        "padding_bottom": 16
+      }
+    },
+    "custom_image_with_text_UVb3hC": {
+      "type": "custom-image-with-text",
+      "blocks": {
+        "text_RhKCE4": {
+          "type": "text",
+          "settings": {
+            "text": "<p>The original icon that will we'll forever honour by working continuously in improving quality and comfort.<br/><br/>Our espadrilles are vulcanized for durability and we prioritize creativity and responsibility while experimenting with colors, themes, trends, and twists to create unforgettable designs!<br/><br/>Available in EU sizing 20-47<br/>Sizing availability may vary depending on the product.<br/></p>",
+            "text_style": "subtitle"
+          }
+        }
+      },
+      "block_order": [
+        "text_RhKCE4"
+      ],
+      "settings": {
+        "custom_class": "about-us-content responsibility-section-four",
+        "desktop-image": "shopify://shop_images/2_1344c7a4-7ac2-4fd4-bb3b-23a8ad37f941.jpg",
+        "mob-image": "shopify://shop_images/2_1344c7a4-7ac2-4fd4-bb3b-23a8ad37f941.jpg",
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "text_first",
+        "desktop_content_position": "middle",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "color_scheme": "background-1",
+        "mobile_content_alignment": "left",
+        "padding_top": 12,
+        "padding_bottom": 0
+      }
+    }
+  },
+  "order": [
+    "article_template",
+    "32188728-51b3-4f19-a420-84f078cb8228",
+    "section_banner_v12_YKGpAy",
+    "rich_text_4_gnXbFz",
+    "cdaee2a8-d358-4577-8fe9-9de9843a1e92",
+    "ac86e1fa-1121-43b3-90c7-bf1ca4009b0a",
+    "custom_image_with_text_Bz8eTk",
+    "custom_image_with_text_YUmJTN",
+    "custom_image_with_text_zdqPkW",
+    "custom_image_with_text_UVb3hC"
+  ]
+}

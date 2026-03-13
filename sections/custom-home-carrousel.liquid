@@ -1,0 +1,142 @@
+<div class="custom-home-section custom-home-section-{{ section.id }}">
+  <div class="container">
+    <ul class="page-links">
+      {% if section.settings.label-1 != blank %}
+        <li class="links about-us">
+          <a href="{{ section.settings.link-1 }}">{{ section.settings.label-1 }}</a>
+        </li>
+      {% endif %}
+      {% if section.settings.label-2 != blank %}
+        <li class="links about-collection">
+            <a href="{{ section.settings.link-2 }}">{{ section.settings.label-2 }}</a>
+        </li>
+      {% endif %}
+      {% if section.settings.label-3 != blank %}
+        <li class="links moodboard">
+            <a href="{{ section.settings.link-3 }}">{{ section.settings.label-3 }}</a>
+        </li>
+      {% endif %}
+      {% if section.settings.label-4 != blank %}
+        <li class="links responsibility">
+            <a href="{{ section.settings.link-4 }}">{{ section.settings.label-4 }}</a>
+        </li>
+      {% endif %}
+    </ul>
+    </div>
+</div>
+
+{% schema %}
+  {
+    "name": "Custom Carrousel Section",
+    "settings": [
+      {
+      "type": "image_picker",
+      "id": "bg-img-1",
+      "label": "Desktop Background Image 1"
+      },
+      {
+        "type": "image_picker",
+        "id": "bg-img-2",
+        "label": "Desktop Background Image 2"
+      },
+      {
+        "type": "image_picker",
+        "id": "mobile-bg-img-1",
+        "label": "Mobile Background Image 1"
+      },
+      {
+        "type": "image_picker",
+        "id": "mobile-bg-img-2",
+        "label": "Mobile Background Image 2"
+      },
+      {
+        "type": "url",
+        "id" : "link-1",
+        "label" :"Navigation Link 1"
+      },
+      {
+        "type": "text",
+        "id" : "label-1",
+        "label" :"Navigation Text 1"
+      },
+      {
+        "type": "url",
+        "id" : "link-2",
+        "label" :"Navigation Link 2"
+      },
+      {
+        "type": "text",
+        "id" : "label-2",
+        "label" :"Navigation Text 2"
+      },
+      {
+        "type": "url",
+        "id" : "link-3",
+        "label" :"Navigation Link 3"
+      },
+      {
+        "type": "text",
+        "id" : "label-3",
+        "label" :"Navigation Text 3"
+      },
+      {
+        "type": "url",
+        "id" : "link-4",
+        "label" :"Navigation Link 4"
+      },
+      {
+        "type": "text",
+        "id" : "label-4",
+        "label" :"Navigation Text 4"
+      }
+    ],
+    "presets" : [
+      {
+        "name" : "Custom Carrousel Section"
+      }
+    ]
+  }
+{% endschema %}
+
+<style>
+    .custom-home-section-{{ section.id }} {
+      background-image: url('{{ section.settings.bg-img-1 | img_url: '1024x' }}'); /* Establecer una imagen inicial */
+      transition: background-image 0.5s ease-in-out;
+    }
+      @media (max-width: 767px){
+        .custom-home-section-{{ section.id }}{
+          background-image: url('{{ section.settings.mobile-bg-img-1 | img_url: '1024x' }}');
+        }
+      }
+
+</style>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  const backgrounds = [
+    '{{ section.settings.bg-img-1 | img_url: '1024x' }}',
+    '{{ section.settings.bg-img-2 | img_url: '1024x' }}'
+  ];
+  const mobileBackgrounds = [
+    '{{ section.settings.mobile-bg-img-1 | img_url: '1024x' }}',
+    '{{ section.settings.mobile-bg-img-2 | img_url: '1024x' }}'
+  ];
+
+  console.log("Backgrounds:", backgrounds);
+  console.log("Mobile Backgrounds:", mobileBackgrounds);
+
+  let currentIndex = 0;
+  const section = document.querySelector('.custom-home-section-{{ section.id }}');
+
+  setInterval(() => {
+    console.log("Current Index:", currentIndex);
+    console.log("Setting background to:", backgrounds[currentIndex]);
+    section.style.backgroundImage = `url(${backgrounds[currentIndex]})`;
+    if (window.innerWidth <= 767) {
+      console.log("Setting mobile background to:", mobileBackgrounds[currentIndex]);
+      section.style.backgroundImage = `url(${mobileBackgrounds[currentIndex]})`;
+    }
+    currentIndex = (currentIndex + 1) % backgrounds.length;
+  }, 5000);
+});
+</script>

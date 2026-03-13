@@ -1,0 +1,127 @@
+<div data-section-id="{{ section.id }}" data-section-type="section-video-v1" style="{% if section.settings.margin_top != blank %}margin-top: {{section.settings.margin_top}}px;{%endif%} {% if section.settings.margin_bottom != blank %}margin-bottom: {{section.settings.margin_bottom}}px;{% endif %} {% if section.settings.sections_layout == "dark" %}background: {{section.settings.sections_bg_color}};{% endif %}">
+  <div class="section-video-v1"> 
+    <div class="container container-v2">   
+      <div class=" row">
+        <div class="col-lg-5 col-md-12 box-content " style=" display: flex;  align-items: center;">
+          <div class="content-box">
+            <div class="content">
+              {% if section.settings.video_titlesub != blank %}
+              <p class="titlesub mb-0" style="color: {{section.settings.color_video_titlesub}}">{{section.settings.video_titlesub}}</p>
+              {% endif %}
+              {% if section.settings.video_title != blank %}
+              <h3 class="title mb-0" style="color: {{section.settings.color_video_title}}">{{section.settings.video_title}}</h3>
+              {% endif %}
+              {% if section.settings.sub_title != blank %}
+              <p class="sub-title" style="color: {{section.settings.color_sub_title}}">
+                {{section.settings.sub_title}}
+              </p>
+              {% endif %}
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-7 col-md-12">
+          <div class="box-video">
+            <img data-src="{% if section.settings.img_banner != blank %} {{section.settings.img_banner | img_url : 'master'}} {% else %} //via.placeholder.com/700x470 {% endif %}" class="lazyload img-fluid w-100" alt="_img_banner">
+
+            <a data-fancybox href="{{ section.settings.section_video_url }}">
+              <i class="fas fa-play"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+{% schema %}
+{
+"name": "Video v1",
+"class": "index-section",
+"settings": [
+{
+"type": "header",
+      "content": "Background Video"
+    },
+    {
+      "type": "image_picker",
+      "id": "img_banner",
+      "label": "Image",
+      "info": "685 x 455px recommended"
+    },
+    {
+      "type": "header",
+      "content": "Video"
+    },
+    {
+      "type": "url",
+      "id": "section_video_url",
+      "label": "URL Video",
+      "info": "[Upload video .mp4 in here](/admin/settings/files)"
+    },
+	{
+      "type": "text",
+      "id": "video_titlesub",
+      "label": "Title Video",
+      "default": "ABOUT US"
+    },
+    {
+      "type": "color",
+      "id": "color_video_titlesub",
+      "label": "Color Sub 1",
+      "default": "#503f37"
+    },
+    {
+      "type": "text",
+      "id": "video_title",
+      "label": "Title Video",
+      "default": "Our company We love pets"
+    },
+    {
+      "type": "color",
+      "id": "color_video_title",
+      "label": "Color Title",
+      "default": "#e9750f"
+    },
+    {
+      "type": "text",
+      "id": "sub_title",
+      "label": "Sub Title",
+      "default": "My Opinion Always Represent My Personality"
+    },
+    {
+      "type": "color",
+      "id": "color_sub_title",
+      "label": "Color Sub 2",
+      "default": "#272727"
+    },
+    {
+      "type": "header",
+      "content": "Section Space"
+    },
+    {
+      "type": "text",
+      "id": "margin_top",
+      "label": "Margin Top",
+      "info": "Defined in pixels. Do not add the 'px' unit."
+    },
+    {
+      "type": "text",
+      "id": "margin_bottom",
+      "label": "Margin Bottom",
+      "info": "Defined in pixels. Do not add the 'px' unit."
+    }
+  ],
+  "presets": [
+    {
+      "name": "Video v1",
+      "category": "Video"
+    }
+  ]
+}
+{% endschema %}
+
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}
