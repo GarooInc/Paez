@@ -1,5 +1,5 @@
 <script>window._usfTheme={
-    id:155539276120,
+    id:191766364504,
     name:"Sebird",
     version:"1.0.0",
     vendor:"EngoTheme",
@@ -14,5 +14,7 @@ window._usfRootUrl = {{ routes.root_url | json }};
 window.usf = {
   settings: {{ shop.metafields.usf.settings }}
 }
+window._usfB2BEnabled = {{customer.b2b?|json}};
+window._usfCurrentLocationId = {{customer.current_location.id|json}};
 </script>
 <script src="{{ 'usf-boot.js' | asset_url }}" async></script>
