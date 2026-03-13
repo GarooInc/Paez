@@ -531,7 +531,24 @@ Add the page template as a class for easy page or template specific styling.
 
 <script async type="text/javascript" src="https://static.klaviyo.com/onsite/js/klaviyo.js?company_id=YfUSdY"></script>
 {% render 'countdown-bar' %}
-                </body>
+                  <script>
+    document.addEventListener('usf.rendered', function() {
+      const products = document.querySelectorAll('.usf-sr-product');
+      products.forEach(product => {
+        if (!product.querySelector('.label-sale')) {
+          const badge = document.createElement('figure');
+          badge.className = 'absolute uppercase label-sale text-center';
+          badge.style = 'position: absolute; top: 0; left: 0; background: #E63946; color: #fff; padding: 5px 10px; z-index: 10; font-weight: bold;';
+          badge.innerText = '-30% OFF';
+          const imgWrapper = product.querySelector('.img-product') || product.querySelector('.usf-img-wrapper');
+          if (imgWrapper) {
+            imgWrapper.appendChild(badge);
+          }
+        }
+      });
+    });
+  </script>
+</body>
 </html>
 <style>
     .jdgm-star {
