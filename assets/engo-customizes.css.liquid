@@ -41293,16 +41293,24 @@ p#pq-branding {
 .color-siver{background: #bfbfbf !important}
 .color-gold{background: #d2b42f !important}
 
-/* ── Loafers collection: badge rojo forzado ── */
-.collection-loafers .product-item::before {
-  content: '-30% OFF';
-  position: absolute;
-  top: 10px;
-  left: 10px;
-  background: #E63946;
-  color: white;
-  padding: 5px 15px;
-  font-weight: bold;
-  z-index: 10;
+/* SELECTOR UNIVERSAL PARA BADGES DE CAMPAÑA */
+[class*="usf-img-wrapper"]::before,
+[class*="product-image"]::before,
+.product-item .product-img::before {
+  content: '-30% OFF' !important;
+  position: absolute !important;
+  top: 10px !important;
+  left: 10px !important;
+  background-color: #E63946 !important;
+  color: #ffffff !important;
+  padding: 6px 14px !important;
+  font-weight: bold !important;
+  font-size: 13px !important;
+  z-index: 9999 !important;
+  display: block !important;
+  text-align: center !important;
+  text-transform: uppercase !important;
+  border-radius: 2px !important;
+  pointer-events: none !important;
 }
 .color-navy-blue{background: #000080 !important}\n/* FORCE DYNAMIC SALE BADGE STYLE */\n.label-sale {\n    background-color: #E63946 !important;\n    color: #ffffff !important;\n    position: absolute !important;\n    top: 0 !important;\n    left: 0 !important;\n    padding: 5px 10px !important;\n    z-index: 10 !important;\n    font-weight: bold !important;\n    display: block !important;\n}
