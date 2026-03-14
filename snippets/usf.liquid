@@ -12,7 +12,7 @@ window._usfCollectionDefaultSort = {{ collection.default_sort_by | json }};
 window._usfLocale = {{ request.locale.iso_code | json | downcase }};
 window._usfRootUrl = {{ routes.root_url | json }};
 window.usf = {
-  settings: {{ shop.metafields.usf.settings | default: '{}' }}
+  settings: {{ shop.metafields.usf.settings | default: "{}" }}
 }
 window._usfB2BEnabled = {{customer.b2b?|json}};
 window._usfCurrentLocationId = {{customer.current_location.id|json}};
