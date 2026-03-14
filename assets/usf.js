@@ -1,4 +1,4 @@
-/* USF file - DO NOT MODIFY THIS FILE. THIS FILE IS REGULARLY CHANGED BY USF APP AND **ANY DIRECT CHANGES WILL BE LOST**. Use our in-app customization if you need to update CSS and JS code. Auto modified at: 3/13/2026 5:01:40 PM*/
+/* USF file - DO NOT MODIFY THIS FILE. THIS FILE IS REGULARLY CHANGED BY USF APP AND **ANY DIRECT CHANGES WILL BE LOST**. Use our in-app customization if you need to update CSS and JS code. Auto modified at: 3/13/2026 5:31:31 PM*/
 /* Begin custom theme code */
 // define templates for the General theme
 
@@ -201,11 +201,11 @@ usf.templates = {
                 </div>
                 <!-- label product -->
                 <figure
-                    v-if="hasDiscount"
+                    v-if="hasDiscount || product.tags.includes('DADWEEK')"
                     style="position: absolute; top: 0; left: 0; background: #E63946; color: #ffffff; padding: 5px 10px; z-index: 10;"
                     class="absolute uppercase label-sale text-center"
                 >
-                    -{{Math.round((product.compareAtPrice - product.price) * 100 / product.compareAtPrice)}}%
+                    <template v-if="product.tags.includes('DADWEEK')">-30% OFF</template><template v-else>-{{Math.round((product.compareAtPrice - product.price) * 100 / product.compareAtPrice)}}%</template>
                 </figure>                <figure 
                     v-if="_usfIsNew(product.date) && _usfGlobalSettings.show_new_label" 
                     :style="'background: ' + _usfGlobalSettings.new_label_color + ';color: ' + _usfGlobalSettings.new_label_text_color" 
