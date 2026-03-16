@@ -1,7 +1,7 @@
 // define templates for the General theme
 
 var _usfImageWidths;
-window._usfActive=1;
+window._usfActive = 1;
 function _usfIsNew(day) {
     var dayNow = new Date(Date.now());
     var productDate = new Date(day);
