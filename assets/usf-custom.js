@@ -2,7 +2,9 @@
 
 
 /* Begin theme init code */
+/*inc_begin_theme-init*/
 window._usfActive = 1;
+/*inc_end_theme-init*/
 /* End theme init code */
 
 
