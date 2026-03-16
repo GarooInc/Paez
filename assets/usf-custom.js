@@ -1,5 +1,5 @@
 // define templates for the General theme
-
+window._usfActive = 1;
 
 /* Begin theme init code */
 /*inc_begin_theme-init*/
