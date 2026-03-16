@@ -1,9 +1,12 @@
-/* USF file - DO NOT MODIFY THIS FILE. THIS FILE IS REGULARLY CHANGED BY USF APP AND **ANY DIRECT CHANGES WILL BE LOST**. Use our in-app customization if you need to update CSS and JS code. Auto modified at: 3/16/2026 1:08:16 AM*/
+/* USF file - DO NOT MODIFY THIS FILE. THIS FILE IS REGULARLY CHANGED BY USF APP AND **ANY DIRECT CHANGES WILL BE LOST**. Use our in-app customization if you need to update CSS and JS code. Auto modified at: 3/16/2026 1:13:48 AM*/
 /* Begin custom theme code */
 // define templates for the General theme
 
+
+
+
+
 var _usfImageWidths;
-window._usfActive = 1;
 function _usfIsNew(day) {
     var dayNow = new Date(Date.now());
     var productDate = new Date(day);
