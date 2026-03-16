@@ -7,11 +7,10 @@ window._usfActive = 1;
 /*inc_end_theme-init*/
 /* End theme init code */
 
-
 var _usfImageWidths;
 function _usfIsNew(day) {
     var dayNow = new Date(Date.now());
-    var productDate = new Date(day);
+    var productDate = new Date(day); 
     var distance = dayNow - productDate;
     var isNew = _usfGlobalSettings.product_new_time ? _usfGlobalSettings.product_new_time * 86400 : 86400
 

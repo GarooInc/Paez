@@ -1,4 +1,4 @@
-/* USF file - DO NOT MODIFY THIS FILE. THIS FILE IS REGULARLY CHANGED BY USF APP AND **ANY DIRECT CHANGES WILL BE LOST**. Use our in-app customization if you need to update CSS and JS code. Auto modified at: 3/16/2026 1:16:01 AM*/
+/* USF file - DO NOT MODIFY THIS FILE. THIS FILE IS REGULARLY CHANGED BY USF APP AND **ANY DIRECT CHANGES WILL BE LOST**. Use our in-app customization if you need to update CSS and JS code. Auto modified at: 3/16/2026 1:17:11 AM*/
 /* Begin custom theme code */
 // define templates for the General theme
 window._usfActive = 1;
@@ -9,7 +9,7 @@ window._usfActive = 1;
 var _usfImageWidths;
 function _usfIsNew(day) {
     var dayNow = new Date(Date.now());
-    var productDate = new Date(day);
+    var productDate = new Date(day); 
     var distance = dayNow - productDate;
     var isNew = _usfGlobalSettings.product_new_time ? _usfGlobalSettings.product_new_time * 86400 : 86400
 
