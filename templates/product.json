@@ -11,7 +11,63 @@
   "sections": {
     "main": {
       "type": "product",
-      "settings": {}
+      "blocks": {
+        "faq_item_d4FVaa": {
+          "type": "faq_item",
+          "settings": {
+            "question": "¿Cómo elijo la talla correcta?",
+            "answer": "Te recomendamos consultar nuestra guía de tallas antes de comprar. Si dudas entre dos tallas, elige la más grande para un ajuste más relajado."
+          }
+        },
+        "featured_review_dARrQJ": {
+          "type": "featured_review",
+          "settings": {
+            "stars": 5,
+            "title": "Increíble calidad",
+            "body": "El tejido es suave pero firme. Se nota la diferencia nada más ponértela.",
+            "author": "María, hace 2 días"
+          }
+        },
+        "upsell_CPKM3n": {
+          "type": "upsell",
+          "settings": {
+            "product": ""
+          }
+        },
+        "highlight_item_fNi3TY": {
+          "type": "highlight_item",
+          "settings": {
+            "title": "¿Qué hace especial este producto?",
+            "body": "Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto."
+          }
+        },
+        "media_item_aVNmVC": {
+          "type": "media_item",
+          "settings": {
+            "video_url": "",
+            "alt": ""
+          }
+        }
+      },
+      "block_order": [
+        "faq_item_d4FVaa",
+        "featured_review_dARrQJ",
+        "upsell_CPKM3n",
+        "highlight_item_fNi3TY",
+        "media_item_aVNmVC"
+      ],
+      "settings": {
+        "installments_count": 3,
+        "installments_tae": "0%",
+        "installments_info_url": "",
+        "size_chart_url": "",
+        "product_features": "",
+        "reviews_summary": "Valorado con 4,5 de 5 basado en 190 reseñas. Nuestros clientes nos valoran con 4 y 5 estrellas.",
+        "show_highlights": true,
+        "show_upsells": true,
+        "show_media_gallery": true,
+        "show_faq": true
+      }
     }
   },
   "order": [
