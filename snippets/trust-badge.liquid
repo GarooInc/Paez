@@ -1,0 +1,11 @@
+{%- comment -%}
+  Params: asset (string filename), label (string), label2 (optional second line)
+{%- endcomment -%}
+<div class="flex flex-col items-center gap-3 text-center flex-1">
+  <span class="w-12 h-12 flex items-center justify-center" aria-hidden="true">
+    {{- asset | inline_asset_content -}}
+  </span>
+  <span class="text-xs font-bold text-black leading-tight">
+    {{- label -}}{% if label2 %}<br>{{- label2 -}}{% endif %}
+  </span>
+</div>

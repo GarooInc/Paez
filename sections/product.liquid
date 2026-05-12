@@ -208,46 +208,12 @@
       {% endif %}
     </p>
 
-    <!-- Trust badges (icons matching Figma style) -->
-    <div class="flex justify-around items-start gap-2 p-6 mt-4 border-4 border-black rounded-[28px]">
-
-      <!-- Envío gratuito -->
-      <div class="flex flex-col items-center gap-2 text-center flex-1">
-        <svg class="w-11 h-11" viewBox="0 0 44 44" fill="none" aria-hidden="true">
-          <rect x="2" y="12" width="28" height="20" rx="3" fill="#000"/>
-          <path d="M30 22h10l3 6v6H30V22z" fill="#000"/>
-          <circle cx="10" cy="34" r="3.5" fill="white" stroke="#000" stroke-width="1.5"/>
-          <circle cx="37" cy="34" r="3.5" fill="white" stroke="#000" stroke-width="1.5"/>
-          <path d="M6 18h18M6 22h12" stroke="white" stroke-width="1.5" stroke-linecap="round"/>
-          <path d="M30 22v12" stroke="#000" stroke-width="1"/>
-        </svg>
-        <span class="text-xs font-bold text-black leading-tight">Envío gratuito</span>
-      </div>
-
+    <div class="flex justify-around items-center gap-2 p-6 mt-4 border-2 border-black rounded-[28px]">
+      {%- render 'trust-badge', asset: 'badge-envio.svg', label: 'Envío gratuito' -%}
       <div class="w-px self-stretch bg-black opacity-20"></div>
-
-      <!-- Devoluciones 30 días -->
-      <div class="flex flex-col items-center gap-2 text-center flex-1">
-        <svg class="w-11 h-11" viewBox="0 0 44 44" fill="none" aria-hidden="true">
-          <path d="M22 3L6 11v13c0 10.5 7 17.5 16 19.5 9-2 16-9 16-19.5V11L22 3z" fill="#000"/>
-          <path d="M15 22l5 5 10-10" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-        </svg>
-        <span class="text-xs font-bold text-black leading-tight">Devoluciones<br>en 30 días</span>
-      </div>
-
+      {%- render 'trust-badge', asset: 'badge-devolucion.svg', label: 'Devoluciones', label2: 'en 30 días' -%}
       <div class="w-px self-stretch bg-black opacity-20"></div>
-
-      <!-- Pago seguro -->
-      <div class="flex flex-col items-center gap-2 text-center flex-1">
-        <svg class="w-11 h-11" viewBox="0 0 44 44" fill="none" aria-hidden="true">
-          <rect x="4" y="14" width="36" height="26" rx="4" fill="#000"/>
-          <rect x="4" y="20" width="36" height="7" fill="white" opacity="0.15"/>
-          <rect x="8" y="31" width="8" height="4" rx="1" fill="white"/>
-          <rect x="20" y="31" width="6" height="4" rx="1" fill="white" opacity="0.4"/>
-        </svg>
-        <span class="text-xs font-bold text-black leading-tight">Pago seguro</span>
-      </div>
-
+      {%- render 'trust-badge', asset: 'badge-pago.svg', label: 'Pago seguro' -%}
     </div>
   </div>
 </div>
