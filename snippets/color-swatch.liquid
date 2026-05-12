@@ -1,0 +1,42 @@
+{%- comment -%}
+  Renders a color swatch button.
+  Params:
+    value      — color name (string)
+    position   — option position number
+    is_selected — boolean
+    mode       — 'panel' (default, large interactive) | 'sticky' (small, non-interactive)
+{%- endcomment -%}
+{%- assign _hex = '#cccccc' -%}
+{%- assign _c = value | downcase -%}
+{%- case _c -%}
+  {%- when 'beige', 'camel', 'tan', 'arena', 'caramelo' -%}                      {%- assign _hex = '#ad9b65' -%}
+  {%- when 'rojo', 'red', 'coral', 'frambuesa', 'granate' -%}                     {%- assign _hex = '#d32a4b' -%}
+  {%- when 'marrón', 'marron', 'brown', 'castaño', 'castano', 'terracota' -%}     {%- assign _hex = '#a7532c' -%}
+  {%- when 'azul', 'blue', 'navy', 'marino', 'azul marino' -%}                    {%- assign _hex = '#2c448c' -%}
+  {%- when 'negro', 'black' -%}                                                    {%- assign _hex = '#000000' -%}
+  {%- when 'blanco', 'white' -%}                                                   {%- assign _hex = '#f5f5f5' -%}
+  {%- when 'verde', 'green', 'kaki', 'khaki' -%}                                  {%- assign _hex = '#3a6b35' -%}
+  {%- when 'gris', 'grey', 'gray' -%}                                              {%- assign _hex = '#888888' -%}
+{%- endcase -%}
+{%- if mode == 'sticky' -%}
+  <button
+    type="button"
+    class="w-9 h-9 rounded-xl border border-white/40 hover:border-white transition-colors shrink-0"
+    style="background-color: {{ _hex }};"
+    aria-label="{{ value }}"
+  ></button>
+{%- else -%}
+  <button
+    type="button"
+    class="color-swatch relative w-[72px] h-[60px] xl:w-[88px] xl:h-[72px] rounded-2xl flex items-end justify-center pb-2 transition-all {% if is_selected %}ring-2 ring-black ring-offset-1{% endif %}"
+    style="background-color: {{ _hex }};"
+    data-option-position="{{ position }}"
+    data-option-value="{{ value | escape }}"
+    aria-label="{{ value }}"
+    title="{{ value }}"
+  >
+    {%- if is_selected -%}
+      <span class="w-8 h-[3px] bg-white rounded-full"></span>
+    {%- endif -%}
+  </button>
+{%- endif -%}
