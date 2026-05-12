@@ -1607,16 +1607,6 @@
       color: var(--color-black);
     }
   }
-  .lg\:sticky {
-    @media (width >= 64rem) {
-      position: sticky;
-    }
-  }
-  .lg\:top-\[120px\] {
-    @media (width >= 64rem) {
-      top: 120px;
-    }
-  }
   .lg\:flex {
     @media (width >= 64rem) {
       display: flex;
@@ -1645,11 +1635,6 @@
   .lg\:h-\[700px\] {
     @media (width >= 64rem) {
       height: 700px;
-    }
-  }
-  .lg\:max-h-\[calc\(100vh-120px\)\] {
-    @media (width >= 64rem) {
-      max-height: calc(100vh - 120px);
     }
   }
   .lg\:min-h-\[460px\] {
@@ -1727,6 +1712,11 @@
       flex-direction: row;
     }
   }
+  .lg\:items-start {
+    @media (width >= 64rem) {
+      align-items: flex-start;
+    }
+  }
   .lg\:justify-center {
     @media (width >= 64rem) {
       justify-content: center;
@@ -1760,11 +1750,6 @@
   .lg\:overflow-visible {
     @media (width >= 64rem) {
       overflow: visible;
-    }
-  }
-  .lg\:overflow-y-auto {
-    @media (width >= 64rem) {
-      overflow-y: auto;
     }
   }
   .lg\:p-5 {
