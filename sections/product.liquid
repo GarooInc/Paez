@@ -216,7 +216,7 @@
           type="submit"
           name="add"
           id="add-to-cart-btn"
-          class="w-full bg-black text-white font-bold text-lg py-6 rounded-[23px] hover:opacity-90 transition-opacity disabled:opacity-40 disabled:cursor-not-allowed"
+          class="w-full bg-black text-white font-bold text-lg py-4 rounded-2xl hover:opacity-90 transition-opacity disabled:opacity-40 disabled:cursor-not-allowed"
           {% unless current_variant.available %}disabled{% endunless %}
         >
           {% if current_variant.available %}Agregar al carrito{% else %}Agotado{% endif %}

@@ -129,3 +129,21 @@ body {
   display: none !important;
 }
 
+/* Override Shopify Pay branded button to match Figma (white bg, black border) */
+.shopify-payment-button__button--branded,
+.shopify-payment-button__button--branded:hover,
+.shopify-payment-button__button--branded:focus {
+  background: #ffffff !important;
+  color: #000000 !important;
+  border: 1.5px solid #000000 !important;
+  box-shadow: none !important;
+  filter: none !important;
+}
+
+.shopify-payment-button__button--branded svg,
+.shopify-payment-button__button--branded path,
+.shopify-payment-button__button--branded span {
+  fill: #000000 !important;
+  color: #000000 !important;
+}
+
