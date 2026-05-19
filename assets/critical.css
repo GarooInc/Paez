@@ -118,3 +118,14 @@ body {
   grid-column: 1 / -1;
 }
 
+/* Hide Judge.me badge auto-injected in the header area */
+.shopify-section-group-header-group .jdgm-widget,
+.shopify-section-group-header-group .jdgm-preview-badge {
+  display: none !important;
+}
+
+/* Hide Shopify's "More payment options" link — not in design */
+.shopify-payment-button__more-options {
+  display: none !important;
+}
+
