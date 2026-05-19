@@ -277,47 +277,51 @@
       </div>
     </div>
 
-    <!-- Upsells dentro del panel derecho -->
+    <!-- Upsells automáticos — productos de la misma colección -->
     {% if section.settings.show_upsells %}
-      {% assign has_upsells = false %}
-      {% for block in section.blocks %}
-        {% if block.type == 'upsell' %}{% assign has_upsells = true %}{% endif %}
-      {% endfor %}
-      {% if has_upsells %}
-        <div class="pt-6 border-t border-black">
-          <h2 class="text-2xl font-bold text-black text-center mb-5">Upsells</h2>
-          <div class="flex gap-4 overflow-x-auto no-scrollbar pb-2 snap-x snap-mandatory">
-            {% for block in section.blocks %}
-              {% if block.type == 'upsell' %}
-                {% assign upsell_product = all_products[block.settings.product] %}
-                {% if upsell_product != blank %}
-                  <div class="flex flex-col items-center gap-3 min-w-[150px] max-w-[170px] shrink-0 snap-start" {{ block.shopify_attributes }}>
-                    <div class="rounded-[16px] overflow-hidden w-full aspect-square bg-gray-100">
-                      {% if upsell_product.featured_image %}
-                        <img
-                          src="{{ upsell_product.featured_image | image_url: width: 340 }}"
-                          alt="{{ upsell_product.title | escape }}"
-                          class="w-full h-full object-cover"
-                          loading="lazy" width="340" height="340"
-                        >
-                      {% endif %}
-                    </div>
+      {% assign upsell_collection = product.collections.first %}
+      {% if upsell_collection %}
+        {% assign upsell_count = 0 %}
+        {% for rp in upsell_collection.products limit: 10 %}
+          {% unless rp.id == product.id %}{% assign upsell_count = upsell_count | plus: 1 %}{% endunless %}
+        {% endfor %}
+        {% if upsell_count > 0 %}
+          <div class="pt-6 border-t border-black">
+            <h2 class="text-2xl font-bold text-black text-center mb-5">También te puede gustar</h2>
+            <div class="flex gap-4 overflow-x-auto no-scrollbar pb-2 snap-x snap-mandatory">
+              {% assign shown = 0 %}
+              {% for rp in upsell_collection.products limit: 10 %}
+                {% unless rp.id == product.id or shown >= 4 %}
+                  {% assign shown = shown | plus: 1 %}
+                  <div class="flex flex-col items-center gap-3 min-w-[150px] max-w-[170px] shrink-0 snap-start">
+                    <a href="{{ rp.url }}" class="w-full block">
+                      <div class="rounded-[16px] overflow-hidden w-full aspect-square bg-gray-100">
+                        {% if rp.featured_image %}
+                          <img
+                            src="{{ rp.featured_image | image_url: width: 340 }}"
+                            alt="{{ rp.title | escape }}"
+                            class="w-full h-full object-cover"
+                            loading="lazy" width="340" height="340"
+                          >
+                        {% endif %}
+                      </div>
+                    </a>
                     <div class="text-center">
-                      <p class="font-bold text-sm">{{ upsell_product.title }}</p>
-                      <p class="text-xs text-gray-600">{{ upsell_product.price | money }}</p>
+                      <p class="font-bold text-sm">{{ rp.title }}</p>
+                      <p class="text-xs text-gray-600">{{ rp.price | money }}</p>
                     </div>
                     <form action="/cart/add" method="post">
-                      <input type="hidden" name="id" value="{{ upsell_product.selected_or_first_available_variant.id }}">
+                      <input type="hidden" name="id" value="{{ rp.selected_or_first_available_variant.id }}">
                       <button type="submit" class="bg-black text-white font-bold text-xs px-6 py-2.5 rounded-xl hover:opacity-80 transition-opacity">
                         Agregar
                       </button>
                     </form>
                   </div>
-                {% endif %}
-              {% endif %}
-            {% endfor %}
+                {% endunless %}
+              {% endfor %}
+            </div>
           </div>
-        </div>
+        {% endif %}
       {% endif %}
     {% endif %}
 
@@ -734,6 +738,13 @@
       var mainBtn = document.getElementById('add-to-cart-btn');
       if (mainBtn) mainBtn.click();
     });
+  }
+
+  // Mueve el sticky bar al <body> para que fixed funcione sin importar
+  // si algún contenedor padre tiene overflow:hidden o transform
+  var stickyBar = document.getElementById('sticky-bar');
+  if (stickyBar && stickyBar.parentNode !== document.body) {
+    document.body.appendChild(stickyBar);
   }
 })();
 </script>
