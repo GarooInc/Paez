@@ -308,13 +308,13 @@
         {% endfor %}
         {% if upsell_count > 0 %}
           <div class="pt-6 border-t border-black">
-            <h2 class="text-2xl font-bold text-black text-center mb-5">También te puede gustar</h2>
+            <h2 class="text-2xl font-bold text-black text-center mb-5">Upsells</h2>
             <div class="flex gap-4 overflow-x-auto no-scrollbar pb-2 snap-x snap-mandatory">
               {% assign shown = 0 %}
               {% for rp in upsell_collection.products limit: 10 %}
                 {% unless rp.id == product.id or shown >= 4 %}
                   {% assign shown = shown | plus: 1 %}
-                  <div class="flex flex-col items-center gap-2 w-[200px] h-[409px] shrink-0 snap-start">
+                  <div class="flex flex-col items-center gap-3 w-[200px] shrink-0 snap-start">
                     <a href="{{ rp.url }}" class="w-full block">
                       <div class="rounded-[16px] overflow-hidden w-full aspect-square bg-gray-100">
                         {% if rp.featured_image %}
@@ -327,9 +327,9 @@
                         {% endif %}
                       </div>
                     </a>
-                    <div class="text-center flex-1 flex flex-col justify-center">
+                    <div class="text-center">
                       <p class="font-bold text-sm leading-tight">{{ rp.title }}</p>
-                      <p class="text-xs text-gray-600 mt-0.5">{{ rp.price | money }}</p>
+                      <p class="text-xs text-gray-600 mt-1">{{ rp.price | money }}</p>
                     </div>
                     <form action="/cart/add" method="post">
                       <input type="hidden" name="id" value="{{ rp.selected_or_first_available_variant.id }}">
@@ -767,6 +767,26 @@
   if (stickyBar && stickyBar.parentNode !== document.body) {
     document.body.appendChild(stickyBar);
   }
+
+  // Override Shop Pay button a blanco/negro via inline styles + MutationObserver
+  // (el CSS externo no penetra el cleanslate interno de Shop Pay)
+  function stylePaymentBtn() {
+    var btns = document.querySelectorAll('#product-form .shopify-payment-button__button');
+    btns.forEach(function(btn) {
+      btn.style.setProperty('background', '#ffffff', 'important');
+      btn.style.setProperty('color', '#000000', 'important');
+      btn.style.setProperty('border', '1.5px solid #000000', 'important');
+      btn.style.setProperty('border-radius', '0.75rem', 'important');
+      btn.style.setProperty('box-shadow', 'none', 'important');
+      btn.style.setProperty('min-height', '48px', 'important');
+    });
+  }
+  stylePaymentBtn();
+  setTimeout(stylePaymentBtn, 300);
+  setTimeout(stylePaymentBtn, 1000);
+  var paymentObserver = new MutationObserver(stylePaymentBtn);
+  var formEl = document.getElementById('product-form');
+  if (formEl) paymentObserver.observe(formEl, { childList: true, subtree: true });
 })();
 </script>
 
