@@ -68,9 +68,23 @@
         "show_media_gallery": true,
         "show_faq": true
       }
+    },
+    "177917019907f42d42": {
+      "type": "apps",
+      "blocks": {
+        "judge_me_reviews_preview_badge_BwrYHE": {
+          "type": "shopify://apps/judge-me-reviews/blocks/preview_badge/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
+          "settings": {}
+        }
+      },
+      "block_order": [
+        "judge_me_reviews_preview_badge_BwrYHE"
+      ],
+      "settings": {}
     }
   },
   "order": [
-    "main"
+    "main",
+    "177917019907f42d42"
   ]
 }
