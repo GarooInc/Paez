@@ -313,29 +313,29 @@
               {% for rp in upsell_collection.products limit: 10 %}
                 {% unless rp.id == product.id or shown >= 4 %}
                   {% assign shown = shown | plus: 1 %}
-                  <div class="flex flex-col items-center gap-3 w-[200px] shrink-0 snap-start">
-                    <a href="{{ rp.url }}" class="w-full block">
-                      <div class="rounded-[16px] overflow-hidden w-full aspect-square bg-gray-100">
-                        {% if rp.featured_image %}
-                          <img
-                            src="{{ rp.featured_image | image_url: width: 400 }}"
-                            alt="{{ rp.title | escape }}"
-                            class="w-full h-full object-cover"
-                            loading="lazy" width="400" height="400"
-                          >
-                        {% endif %}
-                      </div>
+                  <div class="flex flex-col w-[409px] h-[409px] shrink-0 snap-start rounded-[22px] overflow-hidden bg-[#f5f5f5]">
+                    <!-- Imagen ocupa todo el espacio flexible -->
+                    <a href="{{ rp.url }}" class="flex-1 overflow-hidden block min-h-0">
+                      {% if rp.featured_image %}
+                        <img
+                          src="{{ rp.featured_image | image_url: width: 820 }}"
+                          alt="{{ rp.title | escape }}"
+                          class="w-full h-full object-contain"
+                          loading="lazy" width="820" height="820"
+                        >
+                      {% endif %}
                     </a>
-                    <div class="text-center">
-                      <p class="font-bold text-sm leading-tight">{{ rp.title }}</p>
-                      <p class="text-xs text-gray-600 mt-1">{{ rp.price | money }}</p>
+                    <!-- Texto y botón fijos en la parte inferior -->
+                    <div class="flex flex-col items-center gap-2 px-4 py-4 bg-white">
+                      <p class="font-bold text-sm leading-tight text-center">{{ rp.title }}</p>
+                      <p class="text-xs text-gray-600">{{ rp.price | money }}</p>
+                      <form action="/cart/add" method="post">
+                        <input type="hidden" name="id" value="{{ rp.selected_or_first_available_variant.id }}">
+                        <button type="submit" class="bg-black text-white font-bold text-xs px-8 py-2 rounded-full hover:opacity-80 transition-opacity">
+                          Agregar
+                        </button>
+                      </form>
                     </div>
-                    <form action="/cart/add" method="post">
-                      <input type="hidden" name="id" value="{{ rp.selected_or_first_available_variant.id }}">
-                      <button type="submit" class="bg-black text-white font-bold text-xs px-8 py-2.5 rounded-full hover:opacity-80 transition-opacity">
-                        Agregar
-                      </button>
-                    </form>
                   </div>
                 {% endunless %}
               {% endfor %}
