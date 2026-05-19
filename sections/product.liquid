@@ -297,71 +297,63 @@
       </div>
     </div>
 
+    <!-- Upsells compactos dentro del panel derecho -->
+    {% if section.settings.show_upsells %}
+      {% assign upsell_collection = product.collections.first %}
+      {% if upsell_collection %}
+        {% assign upsell_count = 0 %}
+        {% for rp in upsell_collection.products limit: 10 %}
+          {% unless rp.id == product.id %}{% assign upsell_count = upsell_count | plus: 1 %}{% endunless %}
+        {% endfor %}
+        {% if upsell_count > 0 %}
+          <div class="pt-6 border-t border-black">
+            <h2 class="text-2xl font-bold text-black text-center mb-5">Upsells</h2>
+            <div class="flex gap-4 overflow-x-auto no-scrollbar pb-2 snap-x snap-mandatory">
+              {% assign shown = 0 %}
+              {% for rp in upsell_collection.products limit: 10 %}
+                {% unless rp.id == product.id or shown >= 4 %}
+                  {% assign shown = shown | plus: 1 %}
+                  <div class="flex flex-col items-center gap-3 w-[200px] shrink-0 snap-start">
+                    <a href="{{ rp.url }}" class="w-full block">
+                      <div class="rounded-[16px] overflow-hidden w-full aspect-square bg-[#f5f5f5]">
+                        {% if rp.featured_image %}
+                          <img
+                            src="{{ rp.featured_image | image_url: width: 400 }}"
+                            alt="{{ rp.title | escape }}"
+                            class="w-full h-full object-cover object-bottom"
+                            loading="lazy" width="400" height="400"
+                          >
+                        {% else %}
+                          <div class="w-full h-full flex items-center justify-center">
+                            <svg class="w-10 h-10 text-gray-300" fill="none" stroke="currentColor" viewBox="0 0 40 40" aria-hidden="true">
+                              <rect x="5" y="10" width="30" height="22" rx="3" stroke-width="1.5"/>
+                              <circle cx="20" cy="21" r="5" stroke-width="1.5"/>
+                            </svg>
+                          </div>
+                        {% endif %}
+                      </div>
+                    </a>
+                    <div class="text-center">
+                      <p class="font-bold text-sm leading-tight line-clamp-2">{{ rp.title }}</p>
+                      <p class="text-xs text-gray-600 mt-1">{{ rp.price | money }}</p>
+                    </div>
+                    <form action="/cart/add" method="post">
+                      <input type="hidden" name="id" value="{{ rp.selected_or_first_available_variant.id }}">
+                      <button type="submit" class="bg-black text-white font-bold text-xs px-8 py-2 rounded-full hover:opacity-80 transition-opacity">
+                        Agregar
+                      </button>
+                    </form>
+                  </div>
+                {% endunless %}
+              {% endfor %}
+            </div>
+          </div>
+        {% endif %}
+      {% endif %}
+    {% endif %}
+
   </div>
 </div>
-
-<!-- ═══════════════════════════════════════════
-     UPSELLS — Sección full-width, cards 409x409
-     ═══════════════════════════════════════════ -->
-{% if section.settings.show_upsells %}
-  {% assign upsell_collection = product.collections.first %}
-  {% if upsell_collection %}
-    {% assign upsell_count = 0 %}
-    {% for rp in upsell_collection.products limit: 10 %}
-      {% unless rp.id == product.id %}{% assign upsell_count = upsell_count | plus: 1 %}{% endunless %}
-    {% endfor %}
-    {% if upsell_count > 0 %}
-      <div class="py-10 px-4 lg:px-10 border-t border-gray-100">
-        <h2 class="text-3xl lg:text-4xl font-bold text-black text-center mb-8">Upsells</h2>
-        <!-- E: sin lg:justify-center para evitar estiramiento -->
-        <div class="flex gap-5 overflow-x-auto no-scrollbar pb-4 snap-x snap-mandatory">
-          {% assign shown = 0 %}
-          {% for rp in upsell_collection.products limit: 10 %}
-            {% unless rp.id == product.id or shown >= 4 %}
-              {% assign shown = shown | plus: 1 %}
-              <!-- A: inline styles para forzar 409x409 sin depender de Tailwind arbitrary -->
-              <div class="flex flex-col shrink-0 snap-start rounded-[22px] overflow-hidden bg-[#f5f5f5]" style="width:409px;height:409px;">
-                <!-- A: imagen con altura fija 280px -->
-                <a href="{{ rp.url }}" class="block overflow-hidden bg-[#f5f5f5]" style="width:409px;height:280px;flex-shrink:0;">
-                  {% if rp.featured_image %}
-                    <!-- B: object-cover object-bottom para mostrar zapatos en fotos de modelo -->
-                    <img
-                      src="{{ rp.featured_image | image_url: width: 820 }}"
-                      alt="{{ rp.title | escape }}"
-                      class="w-full h-full object-cover object-bottom"
-                      loading="lazy" width="820" height="820"
-                    >
-                  {% else %}
-                    <!-- C: placeholder cuando no hay imagen -->
-                    <div class="w-full h-full flex items-center justify-center">
-                      <svg class="w-16 h-16 text-gray-300" fill="none" stroke="currentColor" viewBox="0 0 64 64" aria-hidden="true">
-                        <rect x="8" y="16" width="48" height="36" rx="4" stroke-width="2"/>
-                        <circle cx="32" cy="34" r="9" stroke-width="2"/>
-                        <path d="M22 16l3-6h14l3 6" stroke-width="2" stroke-linecap="round"/>
-                      </svg>
-                    </div>
-                  {% endif %}
-                </a>
-                <!-- A: franja blanca con altura fija 129px (409-280=129) -->
-                <div class="flex flex-col items-center justify-center gap-1 px-4 bg-white" style="height:129px;">
-                  <!-- D: line-clamp-2 para truncar títulos largos -->
-                  <p class="font-bold text-sm leading-tight text-center line-clamp-2 w-full">{{ rp.title }}</p>
-                  <p class="text-xs text-gray-600">{{ rp.price | money }}</p>
-                  <form action="/cart/add" method="post" class="mt-1">
-                    <input type="hidden" name="id" value="{{ rp.selected_or_first_available_variant.id }}">
-                    <button type="submit" class="bg-black text-white font-bold text-xs px-8 py-2 rounded-full hover:opacity-80 transition-opacity">
-                      Agregar
-                    </button>
-                  </form>
-                </div>
-              </div>
-            {% endunless %}
-          {% endfor %}
-        </div>
-      </div>
-    {% endif %}
-  {% endif %}
-{% endif %}
 
 <!-- ═══════════════════════════════════════════
      FEATURED REVIEWS — 3 tarjetas horizontales + arrows
