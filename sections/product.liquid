@@ -247,6 +247,41 @@
 </div>
 
 <!-- ═══════════════════════════════════════════
+     STICKY BAR — Aparece fija arriba de Upsells al salir del hero
+     ═══════════════════════════════════════════ -->
+<div id="sticky-bar" class="full-width sticky top-0 z-40 bg-black text-white">
+  <div class="flex items-center gap-4 px-4 py-4 max-w-screen-2xl mx-auto">
+    {% if product.featured_image %}
+      <img
+        src="{{ product.featured_image | image_url: width: 90 }}"
+        alt="{{ product.title | escape }}"
+        class="w-14 h-14 rounded-xl object-cover shrink-0"
+        loading="lazy" width="56" height="56"
+      >
+    {% endif %}
+    <div class="flex flex-col min-w-0 flex-1">
+      <span class="font-bold text-sm truncate">{{ product.title }}</span>
+      <span class="text-sm text-gray-300" id="sticky-price">{{ current_variant.price | money }}</span>
+    </div>
+    {% if color_option_index != nil %}
+      {% assign color_option_sticky = product.options_with_values[color_option_index] %}
+      <div class="hidden md:flex gap-2 shrink-0">
+        {% for value in color_option_sticky.values %}
+          {%- render 'color-swatch', value: value, mode: 'sticky' -%}
+        {% endfor %}
+      </div>
+    {% endif %}
+    <button
+      type="button"
+      id="sticky-add-btn"
+      class="bg-white text-black font-bold text-sm px-6 py-3 rounded-[14px] shrink-0 hover:opacity-90 transition-opacity"
+    >
+      Agregar al Carrito
+    </button>
+  </div>
+</div>
+
+<!-- ═══════════════════════════════════════════
      UPSELLS
      ═══════════════════════════════════════════ -->
 {% if section.settings.show_upsells %}
@@ -563,40 +598,6 @@
   {% endif %}
 {% endif %}
 
-<!-- ═══════════════════════════════════════════
-     STICKY BAR — Fixed bottom, visible al salir del form
-     ═══════════════════════════════════════════ -->
-<div id="sticky-bar" class="fixed bottom-0 left-0 right-0 bg-black text-white z-50 translate-y-full transition-transform duration-300 ease-in-out">
-  <div class="flex items-center gap-4 px-4 py-3 max-w-screen-2xl mx-auto">
-    {% if product.featured_image %}
-      <img
-        src="{{ product.featured_image | image_url: width: 90 }}"
-        alt="{{ product.title | escape }}"
-        class="w-14 h-14 rounded-xl object-cover shrink-0"
-        loading="lazy" width="56" height="56"
-      >
-    {% endif %}
-    <div class="flex flex-col min-w-0 flex-1">
-      <span class="font-bold text-sm truncate">{{ product.title }}</span>
-      <span class="text-sm text-gray-300" id="sticky-price">{{ current_variant.price | money }}</span>
-    </div>
-    {% if color_option_index != nil %}
-      {% assign color_option_sticky = product.options_with_values[color_option_index] %}
-      <div class="hidden md:flex gap-2 shrink-0">
-        {% for value in color_option_sticky.values %}
-          {%- render 'color-swatch', value: value, mode: 'sticky' -%}
-        {% endfor %}
-      </div>
-    {% endif %}
-    <button
-      type="button"
-      id="sticky-add-btn"
-      class="bg-white text-black font-bold text-sm px-6 py-3 rounded-[14px] shrink-0 hover:opacity-90 transition-opacity"
-    >
-      Agregar al Carrito
-    </button>
-  </div>
-</div>
 
 <script>
 (function () {
@@ -691,19 +692,6 @@
       updateUI(findVariant());
     });
   });
-
-  // Sticky bar visibility
-  var stickyBar = document.getElementById('sticky-bar');
-  var productForm = document.getElementById('product-form');
-  if (stickyBar && productForm) {
-    var io = new IntersectionObserver(function (entries) {
-      entries.forEach(function (entry) {
-        stickyBar.classList.toggle('translate-y-full', entry.isIntersecting);
-        stickyBar.classList.toggle('translate-y-0', !entry.isIntersecting);
-      });
-    }, { rootMargin: '0px 0px -80px 0px' });
-    io.observe(productForm);
-  }
 
   // Sticky add to cart — delegates to main form button with correct variant
   var stickyBtn = document.getElementById('sticky-add-btn');
