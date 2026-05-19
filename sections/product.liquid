@@ -18,6 +18,27 @@
   .no-scrollbar { scrollbar-width: none; -ms-overflow-style: none; }
   .no-scrollbar::-webkit-scrollbar { display: none; }
 
+  /* Shop Pay / eshop pay button — override a blanco con borde negro */
+  #product-form .shopify-payment-button { margin-top: 0; }
+  #product-form .shopify-payment-button__button,
+  #product-form .shopify-payment-button__button--branded,
+  #product-form .shopify-payment-button__button--unbranded {
+    background-color: #fff !important;
+    color: #000 !important;
+    border: 1.5px solid #000 !important;
+    border-radius: 0.75rem !important;
+    box-shadow: none !important;
+    font-weight: 700 !important;
+    min-height: 48px !important;
+  }
+  #product-form .shopify-payment-button__button:hover {
+    opacity: 0.85 !important;
+    background-color: #fff !important;
+  }
+  /* Oculta el logo de Shop Pay para que no choque con el color blanco */
+  #product-form .shopify-payment-button__button--branded [class*="shopify-cleanslate"] svg,
+  #product-form .shopify-payment-button__button--branded svg { fill: #000 !important; }
+
   /* Reserve space at bottom for fixed sticky bar */
   .sticky-bar-spacer { height: 72px; }
 </style>
@@ -214,7 +235,7 @@
       {% endif %}
 
       <!-- Add to cart + Payment -->
-      <div class="flex flex-col gap-3 mt-5">
+      <div class="flex flex-col gap-3 mt-3">
         <button
           type="submit"
           name="add"
@@ -293,26 +314,26 @@
               {% for rp in upsell_collection.products limit: 10 %}
                 {% unless rp.id == product.id or shown >= 4 %}
                   {% assign shown = shown | plus: 1 %}
-                  <div class="flex flex-col items-center gap-3 min-w-[150px] max-w-[170px] shrink-0 snap-start">
+                  <div class="flex flex-col items-center gap-2 w-[200px] h-[409px] shrink-0 snap-start">
                     <a href="{{ rp.url }}" class="w-full block">
                       <div class="rounded-[16px] overflow-hidden w-full aspect-square bg-gray-100">
                         {% if rp.featured_image %}
                           <img
-                            src="{{ rp.featured_image | image_url: width: 340 }}"
+                            src="{{ rp.featured_image | image_url: width: 400 }}"
                             alt="{{ rp.title | escape }}"
                             class="w-full h-full object-cover"
-                            loading="lazy" width="340" height="340"
+                            loading="lazy" width="400" height="400"
                           >
                         {% endif %}
                       </div>
                     </a>
-                    <div class="text-center">
-                      <p class="font-bold text-sm">{{ rp.title }}</p>
-                      <p class="text-xs text-gray-600">{{ rp.price | money }}</p>
+                    <div class="text-center flex-1 flex flex-col justify-center">
+                      <p class="font-bold text-sm leading-tight">{{ rp.title }}</p>
+                      <p class="text-xs text-gray-600 mt-0.5">{{ rp.price | money }}</p>
                     </div>
                     <form action="/cart/add" method="post">
                       <input type="hidden" name="id" value="{{ rp.selected_or_first_available_variant.id }}">
-                      <button type="submit" class="bg-black text-white font-bold text-xs px-6 py-2.5 rounded-xl hover:opacity-80 transition-opacity">
+                      <button type="submit" class="bg-black text-white font-bold text-xs px-8 py-2.5 rounded-full hover:opacity-80 transition-opacity">
                         Agregar
                       </button>
                     </form>
