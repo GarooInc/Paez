@@ -84,10 +84,11 @@
         </span>
       </div>
 
-      <!-- Judge.me preview badge -->
-      <div class="jdgm-widget jdgm-preview-badge" data-id="{{ product.id }}">
-        {% render 'judgeme_widgets', widget_type: 'judgeme_preview_badge', concierge_install: true, product: product %}
+      <!-- Start of Judge.me code -->
+      <div style='{{ jm_style }}' class='jdgm-widget jdgm-preview-badge' data-id='{{ product.id }}' data-auto-install='false'>
+        {{ product.metafields.judgeme.badge }}
       </div>
+      <!-- End of Judge.me code -->
 
       <p class="text-base lg:text-lg text-black leading-relaxed">
         {{ product.description | strip_html | truncate: 220 }}
