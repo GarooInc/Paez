@@ -17,6 +17,27 @@
   /* Hide scrollbars on carousels while keeping scroll functionality */
   .no-scrollbar { scrollbar-width: none; -ms-overflow-style: none; }
   .no-scrollbar::-webkit-scrollbar { display: none; }
+
+  /* Override Shop Pay button to match Figma white/black style */
+  .shopify-payment-button__button,
+  .shopify-payment-button__button--unbranded {
+    background: #ffffff !important;
+    color: #000000 !important;
+    border: 1.5px solid #000000 !important;
+    border-radius: 0.75rem !important;
+    font-weight: 700 !important;
+    min-height: 48px !important;
+    box-shadow: none !important;
+  }
+  .shopify-payment-button__button:hover,
+  .shopify-payment-button__button--unbranded:hover {
+    opacity: 0.85 !important;
+    background: #ffffff !important;
+  }
+  .shopify-payment-button__button [class*="shopify-cleanslate"] { display: none !important; }
+
+  /* Reserve space at bottom for fixed sticky bar */
+  .sticky-bar-spacer { height: 72px; }
 </style>
 
 {% assign current_variant = product.selected_or_first_available_variant %}
@@ -216,7 +237,7 @@
           type="submit"
           name="add"
           id="add-to-cart-btn"
-          class="w-full bg-black text-white font-bold text-lg py-4 rounded-2xl hover:opacity-90 transition-opacity disabled:opacity-40 disabled:cursor-not-allowed"
+          class="w-full bg-black text-white font-bold text-base py-3 rounded-xl hover:opacity-90 transition-opacity disabled:opacity-40 disabled:cursor-not-allowed"
           {% unless current_variant.available %}disabled{% endunless %}
         >
           {% if current_variant.available %}Agregar al carrito{% else %}Agotado{% endif %}
@@ -226,7 +247,7 @@
     {% endform %}
 
     <!-- Installments -->
-    <p class="text-sm lg:text-base text-black text-center leading-relaxed">
+    <p class="text-xs text-black text-center leading-relaxed">
       Pagar {{ section.settings.installments_count }} cuotas sin intereses ({{ section.settings.installments_tae }} TAE) de
       <strong id="installments-price">{{ current_variant.price | divided_by: section.settings.installments_count | money }}</strong>.
       {% if section.settings.installments_info_url != blank %}
@@ -237,12 +258,87 @@
     </p>
 
     <div class="flex justify-around items-center gap-2 p-6 mt-4 border-2 border-black rounded-[28px]">
-      {%- render 'trust-badge', asset: 'badge-envio.svg', label: 'Envío gratuito' -%}
+      <!-- Badge 1 -->
+      <div class="flex flex-col items-center gap-3 text-center flex-1">
+        <span class="w-12 h-12 flex items-center justify-center" aria-hidden="true">
+          {% if section.settings.badge_1_image %}
+            <img src="{{ section.settings.badge_1_image | image_url: width: 96 }}" alt="{{ section.settings.badge_1_label | default: 'Envío gratuito' | escape }}" class="w-full h-full object-contain" width="48" height="48" loading="lazy">
+          {% else %}
+            {{- 'badge-envio.svg' | inline_asset_content -}}
+          {% endif %}
+        </span>
+        <span class="text-xs font-bold text-black leading-tight">{{ section.settings.badge_1_label | default: 'Envío gratuito' }}</span>
+      </div>
       <div class="w-px self-stretch bg-black opacity-20"></div>
-      {%- render 'trust-badge', asset: 'badge-devolucion.svg', label: 'Devoluciones', label2: 'en 30 días' -%}
+      <!-- Badge 2 -->
+      <div class="flex flex-col items-center gap-3 text-center flex-1">
+        <span class="w-12 h-12 flex items-center justify-center" aria-hidden="true">
+          {% if section.settings.badge_2_image %}
+            <img src="{{ section.settings.badge_2_image | image_url: width: 96 }}" alt="{{ section.settings.badge_2_label | default: 'Devoluciones' | escape }}" class="w-full h-full object-contain" width="48" height="48" loading="lazy">
+          {% else %}
+            {{- 'badge-devolucion.svg' | inline_asset_content -}}
+          {% endif %}
+        </span>
+        <span class="text-xs font-bold text-black leading-tight">{{ section.settings.badge_2_label | default: 'Devoluciones' }}{% if section.settings.badge_2_label2 != blank %}<br>{{ section.settings.badge_2_label2 }}{% else %}<br>en 30 días{% endif %}</span>
+      </div>
       <div class="w-px self-stretch bg-black opacity-20"></div>
-      {%- render 'trust-badge', asset: 'badge-pago.svg', label: 'Pago seguro' -%}
+      <!-- Badge 3 -->
+      <div class="flex flex-col items-center gap-3 text-center flex-1">
+        <span class="w-12 h-12 flex items-center justify-center" aria-hidden="true">
+          {% if section.settings.badge_3_image %}
+            <img src="{{ section.settings.badge_3_image | image_url: width: 96 }}" alt="{{ section.settings.badge_3_label | default: 'Pago seguro' | escape }}" class="w-full h-full object-contain" width="48" height="48" loading="lazy">
+          {% else %}
+            {{- 'badge-pago.svg' | inline_asset_content -}}
+          {% endif %}
+        </span>
+        <span class="text-xs font-bold text-black leading-tight">{{ section.settings.badge_3_label | default: 'Pago seguro' }}</span>
+      </div>
     </div>
+
+    <!-- Upsells dentro del panel derecho -->
+    {% if section.settings.show_upsells %}
+      {% assign has_upsells = false %}
+      {% for block in section.blocks %}
+        {% if block.type == 'upsell' %}{% assign has_upsells = true %}{% endif %}
+      {% endfor %}
+      {% if has_upsells %}
+        <div class="pt-6 border-t border-black">
+          <h2 class="text-2xl font-bold text-black text-center mb-5">Upsells</h2>
+          <div class="flex gap-4 overflow-x-auto no-scrollbar pb-2 snap-x snap-mandatory">
+            {% for block in section.blocks %}
+              {% if block.type == 'upsell' %}
+                {% assign upsell_product = all_products[block.settings.product] %}
+                {% if upsell_product != blank %}
+                  <div class="flex flex-col items-center gap-3 min-w-[150px] max-w-[170px] shrink-0 snap-start" {{ block.shopify_attributes }}>
+                    <div class="rounded-[16px] overflow-hidden w-full aspect-square bg-gray-100">
+                      {% if upsell_product.featured_image %}
+                        <img
+                          src="{{ upsell_product.featured_image | image_url: width: 340 }}"
+                          alt="{{ upsell_product.title | escape }}"
+                          class="w-full h-full object-cover"
+                          loading="lazy" width="340" height="340"
+                        >
+                      {% endif %}
+                    </div>
+                    <div class="text-center">
+                      <p class="font-bold text-sm">{{ upsell_product.title }}</p>
+                      <p class="text-xs text-gray-600">{{ upsell_product.price | money }}</p>
+                    </div>
+                    <form action="/cart/add" method="post">
+                      <input type="hidden" name="id" value="{{ upsell_product.selected_or_first_available_variant.id }}">
+                      <button type="submit" class="bg-black text-white font-bold text-xs px-6 py-2.5 rounded-xl hover:opacity-80 transition-opacity">
+                        Agregar
+                      </button>
+                    </form>
+                  </div>
+                {% endif %}
+              {% endif %}
+            {% endfor %}
+          </div>
+        </div>
+      {% endif %}
+    {% endif %}
+
   </div>
 </div>
 
@@ -304,55 +400,9 @@
 {% endif %}
 
 <!-- ═══════════════════════════════════════════
-     UPSELLS
-     ═══════════════════════════════════════════ -->
-{% if section.settings.show_upsells %}
-  {% assign has_upsells = false %}
-  {% for block in section.blocks %}
-    {% if block.type == 'upsell' %}{% assign has_upsells = true %}{% endif %}
-  {% endfor %}
-  {% if has_upsells %}
-    <div class="py-14 px-4 lg:px-10 border-t border-gray-100">
-      <h2 class="text-3xl lg:text-4xl font-bold text-black text-center mb-10">Upsells</h2>
-      <div class="flex gap-6 overflow-x-auto no-scrollbar pb-4 snap-x snap-mandatory lg:justify-center">
-        {% for block in section.blocks %}
-          {% if block.type == 'upsell' %}
-            {% assign upsell_product = all_products[block.settings.product] %}
-            {% if upsell_product != blank %}
-              <div class="flex flex-col items-center gap-4 min-w-[200px] max-w-[240px] shrink-0 snap-start" {{ block.shopify_attributes }}>
-                <div class="rounded-[22px] overflow-hidden w-full aspect-square bg-gray-100">
-                  {% if upsell_product.featured_image %}
-                    <img
-                      src="{{ upsell_product.featured_image | image_url: width: 480 }}"
-                      alt="{{ upsell_product.title | escape }}"
-                      class="w-full h-full object-cover"
-                      loading="lazy" width="480" height="480"
-                    >
-                  {% endif %}
-                </div>
-                <div class="text-center">
-                  <p class="font-bold text-base">{{ upsell_product.title }}</p>
-                  <p class="text-sm text-gray-600">{{ upsell_product.price | money }}</p>
-                </div>
-                <form action="/cart/add" method="post">
-                  <input type="hidden" name="id" value="{{ upsell_product.selected_or_first_available_variant.id }}">
-                  <button type="submit" class="bg-black text-white font-bold text-sm px-8 py-3 rounded-[14px] hover:opacity-80 transition-opacity">
-                    Agregar
-                  </button>
-                </form>
-              </div>
-            {% endif %}
-          {% endif %}
-        {% endfor %}
-      </div>
-    </div>
-  {% endif %}
-{% endif %}
-
-<!-- ═══════════════════════════════════════════
      STICKY BAR — Fija debajo de Upsells
      ═══════════════════════════════════════════ -->
-<div id="sticky-bar" class="full-width sticky top-0 z-40 bg-black text-white">
+<div id="sticky-bar" class="full-width fixed bottom-0 left-0 right-0 z-40 bg-black text-white">
   <div class="flex items-center gap-4 px-4 py-4 max-w-screen-2xl mx-auto">
     {% if product.featured_image %}
       <img
@@ -474,7 +524,7 @@
 
       <form action="/cart/add" method="post">
         <input type="hidden" name="id" class="variant-id-sync" value="{{ current_variant.id }}">
-        <button type="submit" class="bg-black text-white font-bold text-lg xl:text-xl py-5 px-10 rounded-[23px] hover:opacity-80 transition-opacity w-full lg:w-auto">
+        <button type="submit" class="bg-black text-white font-bold text-base xl:text-lg py-3 px-10 rounded-xl hover:opacity-80 transition-opacity w-full lg:w-auto">
           Agregar al Carrito
         </button>
       </form>
@@ -598,6 +648,8 @@
   {% endif %}
 {% endif %}
 
+<!-- Espacio para que el sticky bar fijo no tape el contenido -->
+<div class="sticky-bar-spacer"></div>
 
 <script>
 (function () {
@@ -753,6 +805,49 @@
       "id": "product_features",
       "label": "Características del producto",
       "info": "Separa cada característica con | (barra vertical). Ej: 100% algodón orgánico | Lavable a máquina"
+    },
+    {
+      "type": "header",
+      "content": "Badges de confianza"
+    },
+    {
+      "type": "image_picker",
+      "id": "badge_1_image",
+      "label": "Badge 1 — Imagen"
+    },
+    {
+      "type": "text",
+      "id": "badge_1_label",
+      "label": "Badge 1 — Texto",
+      "default": "Envío gratuito"
+    },
+    {
+      "type": "image_picker",
+      "id": "badge_2_image",
+      "label": "Badge 2 — Imagen"
+    },
+    {
+      "type": "text",
+      "id": "badge_2_label",
+      "label": "Badge 2 — Texto",
+      "default": "Devoluciones"
+    },
+    {
+      "type": "text",
+      "id": "badge_2_label2",
+      "label": "Badge 2 — 2ª línea de texto",
+      "default": "en 30 días"
+    },
+    {
+      "type": "image_picker",
+      "id": "badge_3_image",
+      "label": "Badge 3 — Imagen"
+    },
+    {
+      "type": "text",
+      "id": "badge_3_label",
+      "label": "Badge 3 — Texto",
+      "default": "Pago seguro"
     },
     {
       "type": "header",
