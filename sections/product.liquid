@@ -313,28 +313,43 @@
     {% if upsell_count > 0 %}
       <div class="py-10 px-4 lg:px-10 border-t border-gray-100">
         <h2 class="text-3xl lg:text-4xl font-bold text-black text-center mb-8">Upsells</h2>
-        <div class="flex gap-5 overflow-x-auto no-scrollbar pb-4 snap-x snap-mandatory lg:justify-center">
+        <!-- E: sin lg:justify-center para evitar estiramiento -->
+        <div class="flex gap-5 overflow-x-auto no-scrollbar pb-4 snap-x snap-mandatory">
           {% assign shown = 0 %}
           {% for rp in upsell_collection.products limit: 10 %}
             {% unless rp.id == product.id or shown >= 4 %}
               {% assign shown = shown | plus: 1 %}
-              <div class="flex flex-col w-[409px] shrink-0 snap-start rounded-[22px] overflow-hidden bg-[#f5f5f5]" style="height:409px;">
-                <a href="{{ rp.url }}" class="block overflow-hidden" style="height:280px;">
+              <!-- A: inline styles para forzar 409x409 sin depender de Tailwind arbitrary -->
+              <div class="flex flex-col shrink-0 snap-start rounded-[22px] overflow-hidden bg-[#f5f5f5]" style="width:409px;height:409px;">
+                <!-- A: imagen con altura fija 280px -->
+                <a href="{{ rp.url }}" class="block overflow-hidden bg-[#f5f5f5]" style="width:409px;height:280px;flex-shrink:0;">
                   {% if rp.featured_image %}
+                    <!-- B: object-cover object-bottom para mostrar zapatos en fotos de modelo -->
                     <img
                       src="{{ rp.featured_image | image_url: width: 820 }}"
                       alt="{{ rp.title | escape }}"
-                      class="w-full h-full object-contain"
+                      class="w-full h-full object-cover object-bottom"
                       loading="lazy" width="820" height="820"
                     >
+                  {% else %}
+                    <!-- C: placeholder cuando no hay imagen -->
+                    <div class="w-full h-full flex items-center justify-center">
+                      <svg class="w-16 h-16 text-gray-300" fill="none" stroke="currentColor" viewBox="0 0 64 64" aria-hidden="true">
+                        <rect x="8" y="16" width="48" height="36" rx="4" stroke-width="2"/>
+                        <circle cx="32" cy="34" r="9" stroke-width="2"/>
+                        <path d="M22 16l3-6h14l3 6" stroke-width="2" stroke-linecap="round"/>
+                      </svg>
+                    </div>
                   {% endif %}
                 </a>
-                <div class="flex flex-col items-center gap-2 px-4 py-3 bg-white flex-1 justify-center">
-                  <p class="font-bold text-sm leading-tight text-center">{{ rp.title }}</p>
+                <!-- A: franja blanca con altura fija 129px (409-280=129) -->
+                <div class="flex flex-col items-center justify-center gap-1 px-4 bg-white" style="height:129px;">
+                  <!-- D: line-clamp-2 para truncar títulos largos -->
+                  <p class="font-bold text-sm leading-tight text-center line-clamp-2 w-full">{{ rp.title }}</p>
                   <p class="text-xs text-gray-600">{{ rp.price | money }}</p>
-                  <form action="/cart/add" method="post">
+                  <form action="/cart/add" method="post" class="mt-1">
                     <input type="hidden" name="id" value="{{ rp.selected_or_first_available_variant.id }}">
-                    <button type="submit" class="bg-black text-white font-bold text-xs px-8 py-2 rounded-full hover:opacity-80 transition-opacity mt-1">
+                    <button type="submit" class="bg-black text-white font-bold text-xs px-8 py-2 rounded-full hover:opacity-80 transition-opacity">
                       Agregar
                     </button>
                   </form>
