@@ -41,6 +41,14 @@
 
   /* Reserve space at bottom for fixed sticky bar */
   .sticky-bar-spacer { height: 72px; }
+
+  /* Upsell card — micro-interacción: la imagen sube al hover para revelar el zapato */
+  .upsell-card .upsell-img {
+    transform: translateY(0) scale(1);
+  }
+  .upsell-card:hover .upsell-img {
+    transform: translateY(-6%) scale(1.04);
+  }
 </style>
 
 {% assign current_variant = product.selected_or_first_available_variant %}
@@ -313,14 +321,20 @@
               {% for rp in upsell_collection.products limit: 10 %}
                 {% unless rp.id == product.id or shown >= 4 %}
                   {% assign shown = shown | plus: 1 %}
-                  <div class="flex flex-col items-center gap-3 w-[200px] shrink-0 snap-start">
+                  {%- comment -%} Smart image picking: prefer la 2da imagen (product-only) sobre featured (lifestyle) {%- endcomment -%}
+                  {%- assign card_img = rp.featured_image -%}
+                  {%- if rp.images.size > 1 -%}
+                    {%- assign card_img = rp.images[1] -%}
+                  {%- endif -%}
+                  <div class="upsell-card group flex flex-col items-center gap-3 w-[200px] shrink-0 snap-start">
                     <a href="{{ rp.url }}" class="w-full block">
-                      <div class="rounded-[16px] overflow-hidden w-full aspect-square bg-[#f5f5f5]">
-                        {% if rp.featured_image %}
+                      <div class="rounded-[16px] overflow-hidden w-full aspect-square bg-[#f5f5f5] relative">
+                        {% if card_img %}
                           <img
-                            src="{{ rp.featured_image | image_url: width: 400 }}"
+                            src="{{ card_img | image_url: width: 400 }}"
                             alt="{{ rp.title | escape }}"
-                            class="w-full h-full object-cover object-bottom"
+                            class="upsell-img absolute inset-0 w-full h-full object-cover"
+                            style="object-position: center 75%; transition: transform 500ms cubic-bezier(0.22, 1, 0.36, 1);"
                             loading="lazy" width="400" height="400"
                           >
                         {% else %}
