@@ -321,11 +321,7 @@
               {% for rp in upsell_collection.products limit: 10 %}
                 {% unless rp.id == product.id or shown >= 4 %}
                   {% assign shown = shown | plus: 1 %}
-                  {%- comment -%} Smart image picking: prefer la 2da imagen (product-only) sobre featured (lifestyle) {%- endcomment -%}
                   {%- assign card_img = rp.featured_image -%}
-                  {%- if rp.images.size > 1 -%}
-                    {%- assign card_img = rp.images[1] -%}
-                  {%- endif -%}
                   <div class="upsell-card group flex flex-col items-center gap-3 w-[200px] shrink-0 snap-start">
                     <a href="{{ rp.url }}" class="w-full block">
                       <div class="rounded-[16px] overflow-hidden w-full aspect-square bg-[#f5f5f5] relative">
