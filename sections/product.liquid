@@ -18,24 +18,6 @@
   .no-scrollbar { scrollbar-width: none; -ms-overflow-style: none; }
   .no-scrollbar::-webkit-scrollbar { display: none; }
 
-  /* Override Shop Pay button to match Figma white/black style */
-  .shopify-payment-button__button,
-  .shopify-payment-button__button--unbranded {
-    background: #ffffff !important;
-    color: #000000 !important;
-    border: 1.5px solid #000000 !important;
-    border-radius: 0.75rem !important;
-    font-weight: 700 !important;
-    min-height: 48px !important;
-    box-shadow: none !important;
-  }
-  .shopify-payment-button__button:hover,
-  .shopify-payment-button__button--unbranded:hover {
-    opacity: 0.85 !important;
-    background: #ffffff !important;
-  }
-  .shopify-payment-button__button [class*="shopify-cleanslate"] { display: none !important; }
-
   /* Reserve space at bottom for fixed sticky bar */
   .sticky-bar-spacer { height: 72px; }
 </style>
@@ -232,7 +214,7 @@
       {% endif %}
 
       <!-- Add to cart + Payment -->
-      <div class="flex flex-col gap-3 mt-2">
+      <div class="flex flex-col gap-3 mt-5">
         <button
           type="submit"
           name="add"
