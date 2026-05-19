@@ -247,87 +247,6 @@
 </div>
 
 <!-- ═══════════════════════════════════════════
-     STICKY BAR — Aparece fija arriba de Upsells al salir del hero
-     ═══════════════════════════════════════════ -->
-<div id="sticky-bar" class="full-width sticky top-0 z-40 bg-black text-white">
-  <div class="flex items-center gap-4 px-4 py-4 max-w-screen-2xl mx-auto">
-    {% if product.featured_image %}
-      <img
-        src="{{ product.featured_image | image_url: width: 90 }}"
-        alt="{{ product.title | escape }}"
-        class="w-14 h-14 rounded-xl object-cover shrink-0"
-        loading="lazy" width="56" height="56"
-      >
-    {% endif %}
-    <div class="flex flex-col min-w-0 flex-1">
-      <span class="font-bold text-sm truncate">{{ product.title }}</span>
-      <span class="text-sm text-gray-300" id="sticky-price">{{ current_variant.price | money }}</span>
-    </div>
-    {% if color_option_index != nil %}
-      {% assign color_option_sticky = product.options_with_values[color_option_index] %}
-      <div class="hidden md:flex gap-2 shrink-0">
-        {% for value in color_option_sticky.values %}
-          {%- render 'color-swatch', value: value, mode: 'sticky' -%}
-        {% endfor %}
-      </div>
-    {% endif %}
-    <button
-      type="button"
-      id="sticky-add-btn"
-      class="bg-white text-black font-bold text-sm px-6 py-3 rounded-[14px] shrink-0 hover:opacity-90 transition-opacity"
-    >
-      Agregar al Carrito
-    </button>
-  </div>
-</div>
-
-<!-- ═══════════════════════════════════════════
-     UPSELLS
-     ═══════════════════════════════════════════ -->
-{% if section.settings.show_upsells %}
-  {% assign has_upsells = false %}
-  {% for block in section.blocks %}
-    {% if block.type == 'upsell' %}{% assign has_upsells = true %}{% endif %}
-  {% endfor %}
-  {% if has_upsells %}
-    <div class="py-14 px-4 lg:px-10 border-t border-gray-100">
-      <h2 class="text-3xl lg:text-4xl font-bold text-black text-center mb-10">Upsells</h2>
-      <div class="flex gap-6 overflow-x-auto no-scrollbar pb-4 snap-x snap-mandatory lg:justify-center">
-        {% for block in section.blocks %}
-          {% if block.type == 'upsell' %}
-            {% assign upsell_product = all_products[block.settings.product] %}
-            {% if upsell_product != blank %}
-              <div class="flex flex-col items-center gap-4 min-w-[200px] max-w-[240px] shrink-0 snap-start" {{ block.shopify_attributes }}>
-                <div class="rounded-[22px] overflow-hidden w-full aspect-square bg-gray-100">
-                  {% if upsell_product.featured_image %}
-                    <img
-                      src="{{ upsell_product.featured_image | image_url: width: 480 }}"
-                      alt="{{ upsell_product.title | escape }}"
-                      class="w-full h-full object-cover"
-                      loading="lazy" width="480" height="480"
-                    >
-                  {% endif %}
-                </div>
-                <div class="text-center">
-                  <p class="font-bold text-base">{{ upsell_product.title }}</p>
-                  <p class="text-sm text-gray-600">{{ upsell_product.price | money }}</p>
-                </div>
-                <form action="/cart/add" method="post">
-                  <input type="hidden" name="id" value="{{ upsell_product.selected_or_first_available_variant.id }}">
-                  <button type="submit" class="bg-black text-white font-bold text-sm px-8 py-3 rounded-[14px] hover:opacity-80 transition-opacity">
-                    Agregar
-                  </button>
-                </form>
-              </div>
-            {% endif %}
-          {% endif %}
-        {% endfor %}
-      </div>
-    </div>
-  {% endif %}
-{% endif %}
-
-<!-- ═══════════════════════════════════════════
      FEATURED REVIEWS — 3 tarjetas horizontales + arrows
      ═══════════════════════════════════════════ -->
 {% assign has_reviews = false %}
@@ -383,6 +302,87 @@
     {% endif %}
   </div>
 {% endif %}
+
+<!-- ═══════════════════════════════════════════
+     UPSELLS
+     ═══════════════════════════════════════════ -->
+{% if section.settings.show_upsells %}
+  {% assign has_upsells = false %}
+  {% for block in section.blocks %}
+    {% if block.type == 'upsell' %}{% assign has_upsells = true %}{% endif %}
+  {% endfor %}
+  {% if has_upsells %}
+    <div class="py-14 px-4 lg:px-10 border-t border-gray-100">
+      <h2 class="text-3xl lg:text-4xl font-bold text-black text-center mb-10">Upsells</h2>
+      <div class="flex gap-6 overflow-x-auto no-scrollbar pb-4 snap-x snap-mandatory lg:justify-center">
+        {% for block in section.blocks %}
+          {% if block.type == 'upsell' %}
+            {% assign upsell_product = all_products[block.settings.product] %}
+            {% if upsell_product != blank %}
+              <div class="flex flex-col items-center gap-4 min-w-[200px] max-w-[240px] shrink-0 snap-start" {{ block.shopify_attributes }}>
+                <div class="rounded-[22px] overflow-hidden w-full aspect-square bg-gray-100">
+                  {% if upsell_product.featured_image %}
+                    <img
+                      src="{{ upsell_product.featured_image | image_url: width: 480 }}"
+                      alt="{{ upsell_product.title | escape }}"
+                      class="w-full h-full object-cover"
+                      loading="lazy" width="480" height="480"
+                    >
+                  {% endif %}
+                </div>
+                <div class="text-center">
+                  <p class="font-bold text-base">{{ upsell_product.title }}</p>
+                  <p class="text-sm text-gray-600">{{ upsell_product.price | money }}</p>
+                </div>
+                <form action="/cart/add" method="post">
+                  <input type="hidden" name="id" value="{{ upsell_product.selected_or_first_available_variant.id }}">
+                  <button type="submit" class="bg-black text-white font-bold text-sm px-8 py-3 rounded-[14px] hover:opacity-80 transition-opacity">
+                    Agregar
+                  </button>
+                </form>
+              </div>
+            {% endif %}
+          {% endif %}
+        {% endfor %}
+      </div>
+    </div>
+  {% endif %}
+{% endif %}
+
+<!-- ═══════════════════════════════════════════
+     STICKY BAR — Fija debajo de Upsells
+     ═══════════════════════════════════════════ -->
+<div id="sticky-bar" class="full-width sticky top-0 z-40 bg-black text-white">
+  <div class="flex items-center gap-4 px-4 py-4 max-w-screen-2xl mx-auto">
+    {% if product.featured_image %}
+      <img
+        src="{{ product.featured_image | image_url: width: 90 }}"
+        alt="{{ product.title | escape }}"
+        class="w-14 h-14 rounded-xl object-cover shrink-0"
+        loading="lazy" width="56" height="56"
+      >
+    {% endif %}
+    <div class="flex flex-col min-w-0 flex-1">
+      <span class="font-bold text-sm truncate">{{ product.title }}</span>
+      <span class="text-sm text-gray-300" id="sticky-price">{{ current_variant.price | money }}</span>
+    </div>
+    {% if color_option_index != nil %}
+      {% assign color_option_sticky = product.options_with_values[color_option_index] %}
+      <div class="hidden md:flex gap-2 shrink-0">
+        {% for value in color_option_sticky.values %}
+          {%- render 'color-swatch', value: value, mode: 'sticky' -%}
+        {% endfor %}
+      </div>
+    {% endif %}
+    <button
+      type="button"
+      id="sticky-add-btn"
+      class="bg-white text-black font-bold text-sm px-6 py-3 rounded-[14px] shrink-0 hover:opacity-90 transition-opacity"
+    >
+      Agregar al Carrito
+    </button>
+  </div>
+</div>
 
 <!-- ═══════════════════════════════════════════
      HIGHLIGHTS — Tarjeta negra: imagen + puntos numerados

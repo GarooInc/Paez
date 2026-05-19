@@ -1,0 +1,22 @@
+<div class="presale-topbar bg-black text-white text-center text-sm py-2 px-4">
+  {{ section.settings.message }}
+</div>
+
+{% schema %}
+{
+  "name": "Barra presale",
+  "settings": [
+    {
+      "type": "text",
+      "id": "message",
+      "label": "Mensaje",
+      "default": "Oferta especial por tiempo limitado"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Barra presale"
+    }
+  ]
+}
+{% endschema %}

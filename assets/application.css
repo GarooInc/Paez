@@ -313,6 +313,9 @@
   .z-20 {
     z-index: 20;
   }
+  .z-40 {
+    z-index: 40;
+  }
   .z-50 {
     z-index: 50;
   }
@@ -441,6 +444,9 @@
   .h-\[3px\] {
     height: 3px;
   }
+  .h-\[52px\] {
+    height: 52px;
+  }
   .h-\[55px\] {
     height: 55px;
   }
@@ -548,6 +554,9 @@
   }
   .w-120 {
     width: calc(var(--spacing) * 120);
+  }
+  .w-\[52px\] {
+    width: 52px;
   }
   .w-\[60px\] {
     width: 60px;
@@ -1129,6 +1138,9 @@
     --tw-tracking: var(--tracking-widest);
     letter-spacing: var(--tracking-widest);
   }
+  .text-wrap {
+    text-wrap: wrap;
+  }
   .whitespace-nowrap {
     white-space: nowrap;
   }
@@ -1637,6 +1649,11 @@
       color: var(--color-black);
     }
   }
+  .lg\:-mt-8 {
+    @media (width >= 64rem) {
+      margin-top: calc(var(--spacing) * -8);
+    }
+  }
   .lg\:flex {
     @media (width >= 64rem) {
       display: flex;
@@ -1915,6 +1932,11 @@
       height: calc(var(--spacing) * 12);
     }
   }
+  .xl\:h-\[58px\] {
+    @media (width >= 80rem) {
+      height: 58px;
+    }
+  }
   .xl\:h-\[63px\] {
     @media (width >= 80rem) {
       height: 63px;
@@ -1973,6 +1995,11 @@
   .xl\:w-12 {
     @media (width >= 80rem) {
       width: calc(var(--spacing) * 12);
+    }
+  }
+  .xl\:w-\[58px\] {
+    @media (width >= 80rem) {
+      width: 58px;
     }
   }
   .xl\:w-\[68px\] {
@@ -2366,10 +2393,4 @@
       --tw-ease: initial;
     }
   }
-}
-
-/* Hide Judge.me auto-injected badge in header/announcement area */
-.shopify-section-group-header-group .jdgm-widget,
-.shopify-section-group-header-group .jdgm-preview-badge {
-  display: none !important;
 }
