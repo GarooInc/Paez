@@ -31,6 +31,29 @@
   {% endif %}
 {% endfor %}
 
+{% comment %} Detect single color from product tags when no color variant option exists {% endcomment %}
+{% assign tag_color = nil %}
+{% if color_option_index == nil %}
+  {% for tag in product.tags %}
+    {% assign _t = tag | downcase | strip %}
+    {% if _t contains 'color:' %}
+      {% assign tag_color = _t | remove: 'color:' | strip %}
+      {% break %}
+    {% endif %}
+  {% endfor %}
+  {% if tag_color == nil %}
+    {% assign _known_colors = 'beige,camel,tan,arena,caramelo,rojo,red,coral,frambuesa,granate,marron,brown,castano,terracota,azul,blue,navy,marino,negro,black,blanco,white,verde,green,kaki,khaki,gris,grey,gray' | split: ',' %}
+    {% for tag in product.tags %}
+      {% assign _t = tag | downcase | strip %}
+      {% for _c in _known_colors %}
+        {% if _t == _c and tag_color == nil %}
+          {% assign tag_color = _t %}
+        {% endif %}
+      {% endfor %}
+    {% endfor %}
+  {% endif %}
+{% endif %}
+
 <!-- ═══════════════════════════════════════════
      HERO — Images (left 60%) + Info panel (right 40%)
      ═══════════════════════════════════════════ -->
@@ -101,19 +124,23 @@
       <input type="hidden" name="id" id="variant-id-input" value="{{ current_variant.id }}">
 
       <!-- Color selector -->
-      {% if color_option_index != nil %}
-        {% assign color_option = product.options_with_values[color_option_index] %}
-        {% assign color_position = color_option_index | plus: 1 %}
+      {% if color_option_index != nil or tag_color != nil %}
         <div class="flex flex-col gap-4">
           <p class="text-lg xl:text-xl font-bold text-black">Selecciona un color</p>
           <div class="flex gap-3 flex-wrap">
-            {% for value in color_option.values %}
-              {%- assign is_selected = false -%}
-              {%- if color_option_index == 0 and current_variant.option1 == value -%}{%- assign is_selected = true -%}{%- endif -%}
-              {%- if color_option_index == 1 and current_variant.option2 == value -%}{%- assign is_selected = true -%}{%- endif -%}
-              {%- if color_option_index == 2 and current_variant.option3 == value -%}{%- assign is_selected = true -%}{%- endif -%}
-              {%- render 'color-swatch', value: value, position: color_position, is_selected: is_selected -%}
-            {% endfor %}
+            {% if color_option_index != nil %}
+              {% assign color_option = product.options_with_values[color_option_index] %}
+              {% assign color_position = color_option_index | plus: 1 %}
+              {% for value in color_option.values %}
+                {%- assign is_selected = false -%}
+                {%- if color_option_index == 0 and current_variant.option1 == value -%}{%- assign is_selected = true -%}{%- endif -%}
+                {%- if color_option_index == 1 and current_variant.option2 == value -%}{%- assign is_selected = true -%}{%- endif -%}
+                {%- if color_option_index == 2 and current_variant.option3 == value -%}{%- assign is_selected = true -%}{%- endif -%}
+                {%- render 'color-swatch', value: value, position: color_position, is_selected: is_selected -%}
+              {% endfor %}
+            {% else %}
+              {%- render 'color-swatch', value: tag_color, is_selected: true -%}
+            {% endif %}
           </div>
         </div>
         <hr class="border-black">
