@@ -49,6 +49,16 @@
     }
   }
 
+  /* Desktop: ambas columnas misma altura, imágenes llenan el espacio */
+  @media (min-width: 1024px) {
+    #hero-section { align-items: stretch !important; }
+    #product-images-col { display: flex; flex-direction: column; height: 100%; }
+    .product-desktop-grid { flex: 1; height: 100%; grid-template-rows: 1fr 1fr; }
+    .product-desktop-grid > div { aspect-ratio: auto !important; height: 100%; }
+    .product-desktop-grid > div img { height: 100%; width: 100%; object-fit: cover; }
+    #product-info-panel { position: sticky; top: 120px; align-self: flex-start; }
+  }
+
   /* Reserve space at bottom for fixed sticky bar */
   .sticky-bar-spacer { height: 72px; }
 
@@ -99,10 +109,10 @@
 <!-- ═══════════════════════════════════════════
      HERO — Images (left 60%) + Info panel (right 40%)
      ═══════════════════════════════════════════ -->
-<div class="flex flex-col lg:flex-row lg:items-start pt-[120px]">
+<div class="flex flex-col lg:flex-row lg:items-start pt-[120px]" id="hero-section">
 
   <!-- Images -->
-  <div class="lg:w-3/5">
+  <div class="lg:w-3/5" id="product-images-col">
     <!-- Mobile: horizontal snap carousel -->
     <div class="flex overflow-x-auto snap-x snap-mandatory lg:hidden no-scrollbar">
       {% for image in product.images limit: 4 %}
@@ -119,14 +129,14 @@
       {% endfor %}
     </div>
     <!-- Desktop: 2×2 grid -->
-    <div class="hidden lg:grid grid-cols-2 gap-[6px]">
+    <div class="hidden lg:grid grid-cols-2 gap-[6px] product-desktop-grid">
       {% for image in product.images limit: 4 %}
         <div class="overflow-hidden aspect-[4/5] bg-[#f5f5f5]">
           <img
             src="{{ image | image_url: width: 900 }}"
             srcset="{{ image | image_url: width: 450 }} 450w, {{ image | image_url: width: 900 }} 900w, {{ image | image_url: width: 1400 }} 1400w"
             alt="{{ image.alt | default: product.title | escape }}"
-            class="w-full h-full object-contain !m-0"
+            class="w-full h-full object-cover !m-0"
             loading="{% if forloop.first %}eager{% else %}lazy{% endif %}"
             width="900" height="1125"
           >
@@ -136,7 +146,7 @@
   </div>
 
   <!-- Info Panel -->
-  <div class="lg:w-2/5 flex flex-col gap-5 p-6 lg:pt-0 lg:-mt-8 lg:px-8 lg:pb-8 xl:px-10 xl:pb-10">
+  <div class="lg:w-2/5 flex flex-col gap-5 p-6 lg:pt-0 lg:-mt-8 lg:px-8 lg:pb-8 xl:px-10 xl:pb-10" id="product-info-panel">
 
     <!-- Title + Price + Rating + Description -->
     <div class="flex flex-col gap-3">
@@ -334,7 +344,7 @@
         {% endfor %}
         {% if upsell_count > 0 %}
           <div class="pt-6 border-t border-black">
-            <h2 class="text-2xl font-bold text-black text-center mb-5" style="margin-top: -5px;">Upsells</h2>
+            <h2 class="text-2xl font-bold text-black text-center" style="margin-bottom: 28px;">Upsells</h2>
             <div class="flex gap-4 overflow-x-auto no-scrollbar pb-2 snap-x snap-mandatory">
               {% assign shown = 0 %}
               {% for rp in upsell_collection.products limit: 10 %}
