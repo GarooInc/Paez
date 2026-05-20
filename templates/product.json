@@ -71,6 +71,7 @@
         "badge_3_label": "Pago seguro",
         "reviews_summary": "Valorado con 4,5 de 5 basado en 190 reseñas. Nuestros clientes nos valoran con 4 y 5 estrellas.",
         "show_highlights": true,
+        "highlights_image": "shopify://shop_images/2b1f39e40c6bf2e00f270cec34110220cfbcd715.png",
         "show_upsells": true,
         "show_media_gallery": true,
         "show_faq": true
