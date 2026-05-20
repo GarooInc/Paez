@@ -235,12 +235,12 @@
       {% endif %}
 
       <!-- CTA: ATC + Buy with eshop pay -->
-      <div class="flex flex-col gap-4 mt-2">
+      <div class="flex flex-col gap-4 mt-5">
         <button
           type="submit"
           name="add"
           id="add-to-cart-btn"
-          class="w-full bg-black text-white font-bold text-xl py-6 rounded-[23px] hover:opacity-90 transition-opacity disabled:opacity-40 disabled:cursor-not-allowed"
+          class="w-full bg-black text-white font-bold text-xl py-3.5 rounded-[14px] hover:opacity-90 transition-opacity disabled:opacity-40 disabled:cursor-not-allowed"
           {% unless current_variant.available %}disabled{% endunless %}
         >
           {% if current_variant.available %}Agregar al carrito{% else %}Agotado{% endif %}
@@ -249,7 +249,7 @@
           <button
             type="button"
             id="buy-now-btn"
-            class="bg-white text-black font-bold text-base py-4 rounded-[23px] hover:opacity-80 transition-opacity"
+            class="bg-white text-black font-bold text-base py-3 rounded-[14px] hover:opacity-80 transition-opacity"
             style="width: 46%;"
           >
             Buy with eshop pay
