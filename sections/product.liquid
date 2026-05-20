@@ -25,11 +25,11 @@
   #product-form .shopify-payment-button__button--unbranded {
     background-color: #fff !important;
     color: #000 !important;
-    border: 1.5px solid #000 !important;
-    border-radius: 0.75rem !important;
+    border: 3px solid #000 !important;
+    border-radius: 23px !important;
     box-shadow: none !important;
     font-weight: 700 !important;
-    min-height: 48px !important;
+    min-height: 56px !important;
   }
   #product-form .shopify-payment-button__button:hover {
     opacity: 0.85 !important;
@@ -248,7 +248,7 @@
           type="submit"
           name="add"
           id="add-to-cart-btn"
-          class="w-full bg-black text-white font-bold text-base lg:text-lg py-4 rounded-[23px] hover:opacity-90 transition-opacity disabled:opacity-40 disabled:cursor-not-allowed"
+          class="w-full bg-black text-white font-bold text-base lg:text-lg py-5 rounded-[23px] hover:opacity-90 transition-opacity disabled:opacity-40 disabled:cursor-not-allowed"
           {% unless current_variant.available %}disabled{% endunless %}
         >
           {% if current_variant.available %}Agregar al carrito{% else %}Agotado{% endif %}
