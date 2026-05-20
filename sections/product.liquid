@@ -49,13 +49,8 @@
     }
   }
 
-  /* Desktop: ambas columnas misma altura, imágenes llenan el espacio */
+  /* Desktop: panel derecho sticky */
   @media (min-width: 1024px) {
-    #hero-section { align-items: stretch !important; }
-    #product-images-col { display: flex; flex-direction: column; height: 100%; }
-    .product-desktop-grid { flex: 1; height: 100%; grid-template-rows: 1fr 1fr; }
-    .product-desktop-grid > div { aspect-ratio: auto !important; height: 100%; }
-    .product-desktop-grid > div img { height: 100%; width: 100%; object-fit: cover; }
     #product-info-panel { position: sticky; top: 120px; align-self: flex-start; }
   }
 
@@ -136,7 +131,7 @@
             src="{{ image | image_url: width: 900 }}"
             srcset="{{ image | image_url: width: 450 }} 450w, {{ image | image_url: width: 900 }} 900w, {{ image | image_url: width: 1400 }} 1400w"
             alt="{{ image.alt | default: product.title | escape }}"
-            class="w-full h-full object-cover !m-0"
+            class="w-full h-full object-contain !m-0"
             loading="{% if forloop.first %}eager{% else %}lazy{% endif %}"
             width="900" height="1125"
           >
