@@ -26,17 +26,26 @@
     font-weight: 700;
     letter-spacing: -0.01em;
   }
-  /* Buy with eshop pay — full width en mobile, centrado al 46% en desktop */
-  #buy-now-btn {
-    border: 3px solid #000;
-    width: 60%;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
+  #buy-now-btn { border: 3px solid #000; }
+  /* Mobile: botones menos redondeados (igual Figma), Buy más angosto */
+  @media (max-width: 1023px) {
+    #add-to-cart-btn {
+      border-radius: 10px !important;
+    }
+    #buy-now-btn {
+      border-radius: 10px !important;
+      width: 75% !important;
+      display: block !important;
+      margin-left: auto !important;
+      margin-right: auto !important;
+    }
   }
+  /* Desktop: Buy centrado 46% */
   @media (min-width: 1024px) {
     #buy-now-btn {
       width: 46% !important;
+      margin-left: auto !important;
+      margin-right: auto !important;
     }
   }
 
@@ -277,7 +286,7 @@
       {% endif %}
     </p>
 
-    <div class="flex justify-around items-center gap-2 p-6 mt-4 border-2 border-black rounded-[28px]">
+    <div class="flex justify-around items-center gap-2 p-6 mt-4 border-2 border-black rounded-[14px] lg:rounded-[28px]">
       <!-- Badge 1 -->
       <div class="flex flex-col items-center gap-3 text-center flex-1">
         <span class="w-12 h-12 flex items-center justify-center" aria-hidden="true">
@@ -289,7 +298,7 @@
         </span>
         <span class="text-xs font-bold text-black leading-tight">{{ section.settings.badge_1_label | default: 'Envío gratuito' }}</span>
       </div>
-      <div class="w-px self-stretch bg-black opacity-20"></div>
+      <div class="hidden lg:block w-px self-stretch bg-black opacity-20"></div>
       <!-- Badge 2 -->
       <div class="flex flex-col items-center gap-3 text-center flex-1">
         <span class="w-12 h-12 flex items-center justify-center" aria-hidden="true">
@@ -301,7 +310,7 @@
         </span>
         <span class="text-xs font-bold text-black leading-tight">{{ section.settings.badge_2_label | default: 'Devoluciones' }}{% if section.settings.badge_2_label2 != blank %}<br>{{ section.settings.badge_2_label2 }}{% else %}<br>en 30 días{% endif %}</span>
       </div>
-      <div class="w-px self-stretch bg-black opacity-20"></div>
+      <div class="hidden lg:block w-px self-stretch bg-black opacity-20"></div>
       <!-- Badge 3 -->
       <div class="flex flex-col items-center gap-3 text-center flex-1">
         <span class="w-12 h-12 flex items-center justify-center" aria-hidden="true">
