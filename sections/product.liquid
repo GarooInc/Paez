@@ -18,26 +18,12 @@
   .no-scrollbar { scrollbar-width: none; -ms-overflow-style: none; }
   .no-scrollbar::-webkit-scrollbar { display: none; }
 
-  /* Shop Pay / eshop pay button — override a blanco con borde negro, ancho acotado y centrado */
-  #product-form .shopify-payment-button { margin-top: 0; max-width: 360px; margin-left: auto; margin-right: auto; }
-  #product-form .shopify-payment-button__button,
-  #product-form .shopify-payment-button__button--branded,
-  #product-form .shopify-payment-button__button--unbranded {
-    background-color: #fff !important;
-    color: #000 !important;
-    border: 3px solid #000 !important;
-    border-radius: 23px !important;
-    box-shadow: none !important;
-    font-weight: 700 !important;
-    min-height: 56px !important;
+  /* Fuente Helvetica en botones CTA del panel de producto */
+  #add-to-cart-btn,
+  #sticky-add-btn {
+    font-family: Helvetica, 'Helvetica Neue', Arial, sans-serif;
+    font-weight: 700;
   }
-  #product-form .shopify-payment-button__button:hover {
-    opacity: 0.85 !important;
-    background-color: #fff !important;
-  }
-  /* Oculta el logo de Shop Pay para que no choque con el color blanco */
-  #product-form .shopify-payment-button__button--branded [class*="shopify-cleanslate"] svg,
-  #product-form .shopify-payment-button__button--branded svg { fill: #000 !important; }
 
   /* Reserve space at bottom for fixed sticky bar */
   .sticky-bar-spacer { height: 72px; }
@@ -242,8 +228,8 @@
         </select>
       {% endif %}
 
-      <!-- CTA: botón ATC principal + Shop Pay secundario (centrado, ancho acotado) -->
-      <div class="flex flex-col gap-3 mt-2">
+      <!-- CTA: botón ATC -->
+      <div class="mt-2">
         <button
           type="submit"
           name="add"
@@ -253,9 +239,6 @@
         >
           {% if current_variant.available %}Agregar al carrito{% else %}Agotado{% endif %}
         </button>
-        <div class="flex justify-center">
-          {{ form | payment_button }}
-        </div>
       </div>
     {% endform %}
 
@@ -787,25 +770,7 @@
     document.body.appendChild(stickyBar);
   }
 
-  // Override Shop Pay button a blanco/negro via inline styles + MutationObserver
-  // (el CSS externo no penetra el cleanslate interno de Shop Pay)
-  function stylePaymentBtn() {
-    var btns = document.querySelectorAll('#product-form .shopify-payment-button__button');
-    btns.forEach(function(btn) {
-      btn.style.setProperty('background', '#ffffff', 'important');
-      btn.style.setProperty('color', '#000000', 'important');
-      btn.style.setProperty('border', '1.5px solid #000000', 'important');
-      btn.style.setProperty('border-radius', '0.75rem', 'important');
-      btn.style.setProperty('box-shadow', 'none', 'important');
-      btn.style.setProperty('min-height', '48px', 'important');
-    });
-  }
-  stylePaymentBtn();
-  setTimeout(stylePaymentBtn, 300);
-  setTimeout(stylePaymentBtn, 1000);
-  var paymentObserver = new MutationObserver(stylePaymentBtn);
-  var formEl = document.getElementById('product-form');
-  if (formEl) paymentObserver.observe(formEl, { childList: true, subtree: true });
+
 })();
 </script>
 
