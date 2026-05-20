@@ -18,8 +18,8 @@
   .no-scrollbar { scrollbar-width: none; -ms-overflow-style: none; }
   .no-scrollbar::-webkit-scrollbar { display: none; }
 
-  /* Shop Pay / eshop pay button — override a blanco con borde negro */
-  #product-form .shopify-payment-button { margin-top: 0; }
+  /* Shop Pay / eshop pay button — override a blanco con borde negro, ancho acotado y centrado */
+  #product-form .shopify-payment-button { margin-top: 0; max-width: 360px; margin-left: auto; margin-right: auto; }
   #product-form .shopify-payment-button__button,
   #product-form .shopify-payment-button__button--branded,
   #product-form .shopify-payment-button__button--unbranded {
@@ -242,17 +242,20 @@
         </select>
       {% endif %}
 
-      <!-- Botones ocultos — el sticky bar los activa via JS -->
-      <div class="hidden" aria-hidden="true">
+      <!-- CTA: botón ATC principal + Shop Pay secundario (centrado, ancho acotado) -->
+      <div class="flex flex-col gap-3 mt-2">
         <button
           type="submit"
           name="add"
           id="add-to-cart-btn"
+          class="w-full bg-black text-white font-bold text-base lg:text-lg py-4 rounded-[23px] hover:opacity-90 transition-opacity disabled:opacity-40 disabled:cursor-not-allowed"
           {% unless current_variant.available %}disabled{% endunless %}
         >
           {% if current_variant.available %}Agregar al carrito{% else %}Agotado{% endif %}
         </button>
-        {{ form | payment_button }}
+        <div class="flex justify-center">
+          {{ form | payment_button }}
+        </div>
       </div>
     {% endform %}
 
