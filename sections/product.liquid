@@ -57,6 +57,10 @@
 
   /* Reserve space at bottom for fixed sticky bar */
   .sticky-bar-spacer { height: 72px; }
+  #sticky-bar-offset { width: 0; }
+  @media (min-width: 1024px) {
+    #sticky-bar-offset { width: 80px; flex-shrink: 0; }
+  }
 
   /* Upsell card — tamaño fijo */
   .upsell-card { width: 130px !important; }
@@ -399,17 +403,19 @@
 <!-- ═══════════════════════════════════════════
      STICKY BAR — Fija debajo de Upsells
      ═══════════════════════════════════════════ -->
-<div id="sticky-bar" class="full-width fixed bottom-0 left-0 right-0 z-40 bg-black text-white">
+<div id="sticky-bar" class="full-width bg-black text-white">
   <div class="flex items-center gap-4 px-4 py-4 max-w-screen-2xl mx-auto">
+    <div id="sticky-bar-offset"></div>
     {% if product.featured_image %}
       <img
-        src="{{ product.featured_image | image_url: width: 90 }}"
+        src="{{ product.featured_image | image_url: width: 120 }}"
         alt="{{ product.title | escape }}"
-        class="w-14 h-14 rounded-xl object-cover shrink-0"
-        loading="lazy" width="56" height="56"
+        class="rounded-xl object-cover shrink-0"
+        style="width: 80px; height: 80px;"
+        loading="lazy" width="80" height="80"
       >
     {% endif %}
-    <div class="flex flex-col min-w-0 flex-1">
+    <div class="flex flex-col min-w-0" style="flex: 2;">
       <span class="font-bold text-sm truncate">{{ product.title }}</span>
       <span class="text-sm text-gray-300" id="sticky-price">{{ current_variant.price | money }}</span>
     </div>
@@ -638,8 +644,6 @@
   {% endif %}
 {% endif %}
 
-<!-- Espacio para que el sticky bar fijo no tape el contenido -->
-<div class="sticky-bar-spacer"></div>
 
 <script>
 (function () {
@@ -744,12 +748,6 @@
     });
   }
 
-  // Mueve el sticky bar al <body> para que fixed funcione sin importar
-  // si algún contenedor padre tiene overflow:hidden o transform
-  var stickyBar = document.getElementById('sticky-bar');
-  if (stickyBar && stickyBar.parentNode !== document.body) {
-    document.body.appendChild(stickyBar);
-  }
 
   // Buy with eshop pay — añade al carrito y redirige al checkout
   var buyNowBtn = document.getElementById('buy-now-btn');
