@@ -26,9 +26,18 @@
     font-weight: 700;
     letter-spacing: -0.01em;
   }
-  /* Buy with eshop pay — borde 3px, ancho acotado */
+  /* Buy with eshop pay — full width en mobile, centrado al 46% en desktop */
   #buy-now-btn {
     border: 3px solid #000;
+    width: 100%;
+    display: block;
+  }
+  @media (min-width: 1024px) {
+    #buy-now-btn {
+      width: 46%;
+      margin-left: auto;
+      margin-right: auto;
+    }
   }
 
   /* Reserve space at bottom for fixed sticky bar */
@@ -241,21 +250,19 @@
           name="add"
           id="add-to-cart-btn"
           class="w-full bg-black text-white font-bold hover:opacity-90 transition-opacity disabled:opacity-40 disabled:cursor-not-allowed"
-          style="padding: 18px 34px; border-radius: 23px; font-size: 1.125rem;"
+          style="padding: 18px 34px; border-radius: 18px; font-size: 1.125rem;"
           {% unless current_variant.available %}disabled{% endunless %}
         >
           {% if current_variant.available %}Agregar al carrito{% else %}Agotado{% endif %}
         </button>
-        <div class="flex justify-center">
-          <button
-            type="button"
-            id="buy-now-btn"
-            class="bg-white text-black font-bold hover:opacity-80 transition-opacity"
-            style="width: 46%; padding: 14px 34px; border-radius: 23px; border: 3px solid #000; font-size: 1rem;"
-          >
-            Buy with eshop pay
-          </button>
-        </div>
+        <button
+          type="button"
+          id="buy-now-btn"
+          class="bg-white text-black font-bold hover:opacity-80 transition-opacity"
+          style="padding: 14px 34px; border-radius: 18px; font-size: 1rem;"
+        >
+          Buy with eshop pay
+        </button>
       </div>
     {% endform %}
 
