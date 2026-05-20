@@ -330,6 +330,7 @@
       </div>
     </div>
 
+
     <!-- Upsells compactos dentro del panel derecho -->
     {% if section.settings.show_upsells %}
       {% assign upsell_collection = product.collections.first %}
@@ -347,7 +348,7 @@
                 {% unless rp.id == product.id or shown >= 4 %}
                   {% assign shown = shown | plus: 1 %}
                   {%- assign card_img = rp.featured_image -%}
-                  <div class="upsell-card group flex flex-col items-center gap-3 w-[200px] shrink-0 snap-start">
+                  <div class="upsell-card group flex flex-col items-center gap-3 w-[130px] shrink-0 snap-start">
                     <a href="{{ rp.url }}" class="w-full block">
                       <div class="rounded-[16px] overflow-hidden w-full aspect-square bg-[#f5f5f5] relative">
                         {% if card_img %}
