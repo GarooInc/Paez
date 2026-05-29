@@ -76,10 +76,19 @@
       </div>
     {% endif %}
 
-    <div class="w-6 hover:opacity-30 transition-opacity">
-      <a href="{{ routes.cart_url }}">
+    <div class="relative w-6 hover:opacity-30 transition-opacity">
+      <button
+        type="button"
+        onclick="CartDrawer.open()"
+        aria-label="Abrir carrito"
+        class="w-full block"
+      >
         {{ 'icon-cart.svg' | inline_asset_content }}
-      </a>
+      </button>
+      <span
+        data-cart-count
+        class="hidden absolute -top-1.5 -right-2 bg-black text-white text-[10px] font-bold rounded-full min-w-[16px] h-4 flex items-center justify-center px-1 leading-none pointer-events-none"
+      ></span>
     </div>
   </div>
 
