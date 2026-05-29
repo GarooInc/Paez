@@ -9,7 +9,7 @@
   // ── Helpers ──────────────────────────────────────────────
 
   function money(cents) {
-    var fmt = window.CART_MONEY_FMT || '€{{amount}}';
+    var fmt = (window.CART_MONEY_FMT || '€{{amount}}').replace(/<[^>]*>/g, '');
     var amount = (cents / 100).toFixed(2);
     return fmt
       .replace('{{amount}}', amount)
