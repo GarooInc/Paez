@@ -26,12 +26,7 @@
       .replace(/"/g, '&quot;');
   }
 
-  // ── DOM helpers ───────────────────────────────────────────
-
   function el(id) { return document.getElementById(id); }
-
-  function show(id) { el(id) && el(id).classList.remove('hidden'); }
-  function hide(id) { el(id) && el(id).classList.add('hidden'); }
 
   // ── Open / Close ─────────────────────────────────────────
 
@@ -51,7 +46,9 @@
   // ── Fetch & render ────────────────────────────────────────
 
   async function refresh() {
-    show('cd-loading');
+    var loadEl = el('cd-loading');
+    if (loadEl) loadEl.style.display = 'flex';
+
     try {
       var res  = await fetch('/cart.js');
       var cart = await res.json();
@@ -60,81 +57,73 @@
     } catch (e) {
       console.error('[CartDrawer] fetch error', e);
     } finally {
-      hide('cd-loading');
+      if (loadEl) loadEl.style.display = 'none';
     }
   }
 
   function render(cart) {
-    var count     = cart.item_count;
-    var titleEl   = el('cd-title');
+    var titleEl    = el('cd-title');
     var subtotalEl = el('cd-subtotal');
-    var listEl    = el('cd-items-list');
+    var listEl     = el('cd-items-list');
+    var emptyEl    = el('cd-empty');
 
-    if (titleEl)   titleEl.textContent   = count === 1 ? '1 producto' : count + ' productos';
+    var count = cart.item_count;
+    if (titleEl)    titleEl.textContent    = count === 1 ? '1 producto' : count + ' productos';
     if (subtotalEl) subtotalEl.textContent = money(cart.total_price);
 
     updateProgress(cart.total_price);
 
     if (cart.items.length === 0) {
       if (listEl) listEl.innerHTML = '';
-      show('cd-empty');
+      if (emptyEl) emptyEl.style.display = 'flex';
       hideUpsell();
       return;
     }
 
-    hide('cd-empty');
-    if (listEl) listEl.innerHTML = cart.items.map(renderItem).join('');
+    if (emptyEl) emptyEl.style.display = 'none';
+    if (listEl)  listEl.innerHTML = cart.items.map(renderItem).join('');
 
-    // Upsell: basado en el último producto
-    var last = cart.items[cart.items.length - 1];
+    var last           = cart.items[cart.items.length - 1];
     var cartProductIds = cart.items.map(function (i) { return i.product_id; });
     loadUpsell(last.product_id, cartProductIds);
   }
 
   function renderItem(item) {
     var img = item.image
-      ? '<img src="' + esc(item.image) + '" alt="' + esc(item.title) + '" class="w-full h-full object-cover" loading="lazy">'
+      ? '<img src="' + esc(item.image) + '" alt="' + esc(item.title) + '" loading="lazy">'
       : '';
 
     var variantLine = (item.variant_title && item.variant_title !== 'Default Title')
-      ? '<p class="text-xs text-gray-500 mt-0.5 truncate">' + esc(item.variant_title) + '</p>'
+      ? '<p class="cd-item-variant">' + esc(item.variant_title) + '</p>'
       : '';
 
     return [
-      '<div class="cd-item flex items-start gap-3 px-5 py-4">',
-        '<a href="' + item.url + '" class="flex-shrink-0 w-[72px] h-[72px] rounded-2xl overflow-hidden bg-gray-100 block">' + img + '</a>',
-        '<div class="flex-1 min-w-0">',
-          '<a href="' + item.url + '" class="font-bold text-sm text-black leading-tight line-clamp-2 hover:opacity-70 transition-opacity">',
-            esc(item.product_title),
-          '</a>',
+      '<div class="cd-item">',
+        '<a href="' + item.url + '" class="cd-item-img">' + img + '</a>',
+        '<div class="cd-item-info">',
+          '<a href="' + item.url + '" class="cd-item-title">' + esc(item.product_title) + '</a>',
           variantLine,
-          '<p class="text-sm text-black mt-1">' + money(item.final_line_price) + '</p>',
-          '<!-- Selector de cantidad -->',
-          '<div class="mt-2.5">',
-            '<div class="inline-flex items-center border-2 border-black rounded-full gap-1 px-0.5 py-0.5">',
-              '<button type="button"',
-                ' class="w-7 h-7 rounded-full bg-black text-white flex items-center justify-center hover:opacity-70 transition-opacity flex-shrink-0"',
-                ' onclick="CartDrawer.updateQty(\'' + item.key + '\',' + (item.quantity - 1) + ')"',
-                ' aria-label="Reducir cantidad">',
-                '<svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round">',
-                  '<line x1="5" y1="12" x2="19" y2="12"/>',
-                '</svg>',
-              '</button>',
-              '<span class="w-7 text-center text-sm font-semibold text-black select-none">' + item.quantity + '</span>',
-              '<button type="button"',
-                ' class="w-7 h-7 rounded-full bg-black text-white flex items-center justify-center hover:opacity-70 transition-opacity flex-shrink-0"',
-                ' onclick="CartDrawer.updateQty(\'' + item.key + '\',' + (item.quantity + 1) + ')"',
-                ' aria-label="Aumentar cantidad">',
-                '<svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round">',
-                  '<line x1="12" y1="5" x2="12" y2="19"/>',
-                  '<line x1="5" y1="12" x2="19" y2="12"/>',
-                '</svg>',
-              '</button>',
-            '</div>',
+          '<p class="cd-item-price">' + money(item.final_line_price) + '</p>',
+          '<div class="cd-qty-wrap">',
+            '<button type="button" class="cd-qty-btn"',
+              ' onclick="CartDrawer.updateQty(\'' + item.key + '\',' + (item.quantity - 1) + ')"',
+              ' aria-label="Reducir cantidad">',
+              '<svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round">',
+                '<line x1="5" y1="12" x2="19" y2="12"/>',
+              '</svg>',
+            '</button>',
+            '<span class="cd-qty-num">' + item.quantity + '</span>',
+            '<button type="button" class="cd-qty-btn"',
+              ' onclick="CartDrawer.updateQty(\'' + item.key + '\',' + (item.quantity + 1) + ')"',
+              ' aria-label="Aumentar cantidad">',
+              '<svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round">',
+                '<line x1="12" y1="5" x2="12" y2="19"/>',
+                '<line x1="5" y1="12" x2="19" y2="12"/>',
+              '</svg>',
+            '</button>',
           '</div>',
         '</div>',
-        '<button type="button"',
-          ' class="flex-shrink-0 mt-1 text-gray-400 hover:text-black transition-colors"',
+        '<button type="button" class="cd-remove-btn"',
           ' onclick="CartDrawer.removeItem(\'' + item.key + '\')"',
           ' aria-label="Eliminar del carrito">',
           '<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"',
@@ -146,31 +135,30 @@
           '</svg>',
         '</button>',
       '</div>',
-      '<div class="h-px bg-gray-100 mx-5"></div>'
+      '<div class="cd-divider"></div>'
     ].join('');
   }
 
   // ── Progress Bar ──────────────────────────────────────────
 
   function updateProgress(totalCents) {
-    var minC  = window.CART_MIN_CENTS  || 1500;
-    var freeC = window.CART_FREE_CENTS || 3500;
-    var fill  = el('cd-progress-fill');
+    var minC       = window.CART_MIN_CENTS  || 1500;
+    var freeC      = window.CART_FREE_CENTS || 3500;
+    var fill       = el('cd-progress-fill');
     var markerMin  = el('cd-marker-min');
     var markerFree = el('cd-marker-free');
 
     if (!fill) return;
 
-    var pct = Math.min((totalCents / freeC) * 100, 100);
-    fill.style.width = pct + '%';
+    fill.style.width = Math.min((totalCents / freeC) * 100, 100) + '%';
 
-    function setMarker(markerEl, reached) {
+    function toggle(markerEl, reached) {
       if (!markerEl) return;
-      markerEl.style.backgroundColor = reached ? '#000' : '#d1d5db';
+      markerEl.classList.toggle('active', reached);
     }
 
-    setMarker(markerMin,  totalCents >= minC);
-    setMarker(markerFree, totalCents >= freeC);
+    toggle(markerMin,  totalCents >= minC);
+    toggle(markerFree, totalCents >= freeC);
   }
 
   // ── Cart mutations ────────────────────────────────────────
@@ -191,9 +179,7 @@
     }
   }
 
-  function removeItem(key) {
-    updateQty(key, 0);
-  }
+  function removeItem(key) { updateQty(key, 0); }
 
   // ── Upsell ────────────────────────────────────────────────
 
@@ -220,21 +206,24 @@
 
       var priceEl = el('cd-upsell-price');
       if (priceEl) {
-        // La API de recomendaciones devuelve price como string en euros
-        var priceNum = parseFloat(variant.price);
-        priceEl.textContent = isNaN(priceNum)
-          ? money(variant.price)
-          : money(Math.round(priceNum * 100));
+        var raw = variant.price;
+        // La API puede devolver price como string "38.99" o como entero en centavos
+        var cents = typeof raw === 'string'
+          ? Math.round(parseFloat(raw) * 100)
+          : raw;
+        priceEl.textContent = money(cents);
       }
 
-      show('cd-upsell');
+      var upsellEl = el('cd-upsell');
+      if (upsellEl) upsellEl.classList.add('visible');
     } catch (e) {
       hideUpsell();
     }
   }
 
   function hideUpsell() {
-    hide('cd-upsell');
+    var upsellEl = el('cd-upsell');
+    if (upsellEl) upsellEl.classList.remove('visible');
     upsellVariantId = null;
   }
 
@@ -252,51 +241,45 @@
     }
   }
 
-  // ── Badge de count en header ──────────────────────────────
+  // ── Badge ─────────────────────────────────────────────────
 
   function updateBadge(count) {
-    document.querySelectorAll('[data-cart-count]').forEach(function (el) {
-      el.textContent = count > 0 ? count : '';
-      el.classList.toggle('hidden', count === 0);
+    document.querySelectorAll('[data-cart-count]').forEach(function (badge) {
+      badge.textContent = count > 0 ? count : '';
+      badge.classList.toggle('badge-visible', count > 0);
     });
   }
 
-  // ── Inicialización ────────────────────────────────────────
+  // ── Init ─────────────────────────────────────────────────
 
   document.addEventListener('DOMContentLoaded', function () {
 
-    // Cerrar con overlay
     var overlay = el('cart-drawer-overlay');
     if (overlay) overlay.addEventListener('click', close);
 
-    // Cerrar con ESC
     document.addEventListener('keydown', function (e) {
       if (e.key === 'Escape') close();
     });
 
-    // Interceptar formularios add-to-cart
+    // Interceptar add-to-cart
     document.addEventListener('submit', async function (e) {
       var form   = e.target;
-      var action = (form.getAttribute('action') || '');
+      var action = form.getAttribute('action') || '';
       if (!action.includes('/cart/add')) return;
 
       e.preventDefault();
-
       var formData = new FormData(form);
+
       try {
         var res = await fetch('/cart/add.js', { method: 'POST', body: formData });
-        if (res.ok) {
-          open();
-        } else {
-          // Si falla el AJAX, submit normal como fallback
-          form.submit();
-        }
+        if (res.ok) open();
+        else form.submit();
       } catch (err) {
         form.submit();
       }
     });
 
-    // Cargar badge inicial
+    // Badge inicial
     fetch('/cart.js')
       .then(function (r) { return r.json(); })
       .then(function (c) { updateBadge(c.item_count); })
@@ -313,7 +296,6 @@
     addUpsell:  addUpsell
   };
 
-  // Alias global para onclick inline
   window.openCartDrawer  = open;
   window.closeCartDrawer = close;
 

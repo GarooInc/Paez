@@ -76,19 +76,16 @@
       </div>
     {% endif %}
 
-    <div class="relative w-6 hover:opacity-30 transition-opacity">
+    <div style="position:relative; width:24px;" class="hover:opacity-30 transition-opacity">
       <button
         type="button"
         onclick="CartDrawer.open()"
         aria-label="Abrir carrito"
-        class="w-full block"
+        style="width:100%; display:block; background:none; border:none; cursor:pointer; padding:0;"
       >
         {{ 'icon-cart.svg' | inline_asset_content }}
       </button>
-      <span
-        data-cart-count
-        class="hidden absolute -top-1.5 -right-2 bg-black text-white text-[10px] font-bold rounded-full min-w-[16px] h-4 flex items-center justify-center px-1 leading-none pointer-events-none"
-      ></span>
+      <span data-cart-count></span>
     </div>
   </div>
 

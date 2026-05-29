@@ -5,8 +5,12 @@
 -%}
 
 <style>
-  /* ---------- Cart Drawer ---------- */
+  /* ── Cart Drawer ── */
   #cart-drawer-overlay {
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.6);
+    z-index: 998;
     opacity: 0;
     pointer-events: none;
     transition: opacity 0.3s ease;
@@ -17,56 +21,340 @@
   }
 
   #cart-drawer {
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    max-width: 400px;
+    background: #fff;
+    z-index: 999;
+    display: flex;
+    flex-direction: column;
     transform: translateX(100%);
     transition: transform 0.35s cubic-bezier(0.4, 0, 0.2, 1);
     will-change: transform;
+    box-shadow: -4px 0 24px rgba(0,0,0,0.12);
   }
   #cart-drawer.cd-open {
     transform: translateX(0);
   }
 
-  /* Ocultar scrollbar en los items */
-  #cart-items-scroll::-webkit-scrollbar { width: 0; }
-  #cart-items-scroll { scrollbar-width: none; }
+  /* Scrollable items area */
+  #cart-items-scroll {
+    flex: 1;
+    overflow-y: auto;
+    min-height: 0;
+    scrollbar-width: none;
+  }
+  #cart-items-scroll::-webkit-scrollbar { display: none; }
 
-  /* Animación entrada de items */
+  /* Separadores entre items */
+  .cd-divider {
+    height: 1px;
+    background: #f3f4f6;
+    margin: 0 20px;
+  }
+
+  /* Quantity selector */
+  .cd-qty-wrap {
+    display: inline-flex;
+    align-items: center;
+    border: 2px solid #000;
+    border-radius: 9999px;
+    gap: 2px;
+    padding: 2px;
+    margin-top: 10px;
+  }
+  .cd-qty-btn {
+    width: 28px;
+    height: 28px;
+    border-radius: 9999px;
+    background: #000;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    border: none;
+    cursor: pointer;
+    transition: opacity 0.15s;
+  }
+  .cd-qty-btn:hover { opacity: 0.7; }
+  .cd-qty-num {
+    width: 28px;
+    text-align: center;
+    font-size: 0.875rem;
+    font-weight: 600;
+    color: #000;
+    user-select: none;
+  }
+
+  /* Item row */
+  .cd-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+    padding: 16px 20px;
+    animation: cdItemIn 0.18s ease;
+  }
   @keyframes cdItemIn {
-    from { opacity: 0; transform: translateY(-6px); }
+    from { opacity: 0; transform: translateY(-5px); }
     to   { opacity: 1; transform: translateY(0); }
   }
-  .cd-item { animation: cdItemIn 0.18s ease; }
+  .cd-item-img {
+    width: 72px;
+    height: 72px;
+    border-radius: 14px;
+    overflow: hidden;
+    background: #f3f4f6;
+    flex-shrink: 0;
+    display: block;
+  }
+  .cd-item-img img { width: 100%; height: 100%; object-fit: cover; }
+  .cd-item-info { flex: 1; min-width: 0; }
+  .cd-item-title {
+    font-weight: 700;
+    font-size: 0.875rem;
+    color: #000;
+    line-height: 1.3;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-decoration: none;
+  }
+  .cd-item-title:hover { opacity: 0.7; }
+  .cd-item-variant { font-size: 0.75rem; color: #6b7280; margin-top: 2px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+  .cd-item-price { font-size: 0.875rem; color: #000; margin-top: 4px; }
+  .cd-remove-btn {
+    flex-shrink: 0;
+    margin-top: 4px;
+    color: #9ca3af;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    transition: color 0.15s;
+  }
+  .cd-remove-btn:hover { color: #000; }
 
-  /* Spinner de carga */
+  /* Progress bar */
+  #cd-progress-track {
+    position: relative;
+    height: 6px;
+    background: #e5e7eb;
+    border-radius: 9999px;
+    margin: 10px 10px 0;
+  }
+  #cd-progress-fill {
+    position: absolute;
+    left: 0; top: 0; height: 100%;
+    background: #000;
+    border-radius: 9999px;
+    transition: width 0.5s ease;
+    width: 0%;
+  }
+  .cd-marker {
+    position: absolute;
+    top: 50%;
+    width: 20px; height: 20px;
+    border-radius: 9999px;
+    background: #d1d5db;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: translateY(-50%);
+    transition: background-color 0.3s;
+  }
+  .cd-marker span {
+    display: block;
+    width: 8px; height: 8px;
+    border-radius: 9999px;
+    background: #fff;
+  }
+  #cd-marker-min { left: calc({{ min_pct }}% - 10px); }
+  #cd-marker-free { right: -10px; }
+  .cd-marker.active { background: #000; }
+
+  /* Upsell */
+  #cd-upsell {
+    margin: 12px 16px;
+    background: #000;
+    border-radius: 16px;
+    padding: 14px;
+    display: none;
+  }
+  #cd-upsell.visible { display: block; }
+  .cd-upsell-inner { display: flex; align-items: center; gap: 12px; }
+  .cd-upsell-img-wrap {
+    width: 64px; height: 64px;
+    border-radius: 10px;
+    overflow: hidden;
+    background: #374151;
+    flex-shrink: 0;
+  }
+  .cd-upsell-img-wrap img { width: 100%; height: 100%; object-fit: cover; }
+  .cd-upsell-info { flex: 1; min-width: 0; }
+  #cd-upsell-title { color: #fff; font-weight: 700; font-size: 0.875rem; line-height: 1.3; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; }
+  #cd-upsell-price { color: rgba(255,255,255,0.75); font-size: 0.875rem; margin-top: 2px; }
+  .cd-upsell-btn {
+    flex-shrink: 0;
+    background: #fff;
+    color: #000;
+    font-weight: 700;
+    font-size: 0.875rem;
+    padding: 8px 14px;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    transition: opacity 0.15s;
+  }
+  .cd-upsell-btn:hover { opacity: 0.8; }
+
+  /* Footer */
+  #cd-footer {
+    flex-shrink: 0;
+    border-top: 1px solid #f3f4f6;
+    padding: 16px 20px 24px;
+    background: #fff;
+  }
+  .cd-subtotal-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 6px;
+  }
+  .cd-subtotal-label { font-size: 1.125rem; font-weight: 700; color: #000; }
+  #cd-subtotal { font-size: 1.125rem; font-weight: 700; color: #000; }
+  .cd-disclaimer { font-size: 11px; color: #9ca3af; line-height: 1.4; margin-bottom: 16px; }
+  .cd-checkout-btn {
+    display: block;
+    width: 100%;
+    background: #000;
+    color: #fff;
+    text-align: center;
+    font-weight: 700;
+    padding: 16px;
+    border-radius: 16px;
+    font-size: 1rem;
+    text-decoration: none;
+    margin-bottom: 16px;
+    transition: opacity 0.15s;
+  }
+  .cd-checkout-btn:hover { opacity: 0.8; }
+  .cd-payment-icons {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+  .cd-payment-icons span {
+    border: 1px solid #e5e7eb;
+    border-radius: 9999px;
+    padding: 6px 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 36px;
+  }
+  .cd-payment-icons svg { height: 20px; width: auto; max-width: 60px; }
+
+  /* Spinner */
   @keyframes cdSpin { to { transform: rotate(360deg); } }
   .cd-spinner {
+    width: 32px; height: 32px;
     border: 2px solid #e5e7eb;
     border-top-color: #000;
-    border-radius: 50%;
+    border-radius: 9999px;
     animation: cdSpin 0.6s linear infinite;
   }
+
+  /* Header del drawer */
+  #cd-header {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 24px 24px 14px;
+    flex-shrink: 0;
+  }
+  #cd-title { font-size: 1.5rem; font-weight: 700; color: #000; }
+  #cd-close-btn {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    padding: 4px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: #000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: opacity 0.15s;
+  }
+  #cd-close-btn:hover { opacity: 0.5; }
+
+  /* Progress container */
+  #cd-progress-wrap { padding: 0 24px 16px; flex-shrink: 0; }
+  .cd-progress-labels {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 8px;
+  }
+  .cd-progress-labels p:first-child, .cd-progress-labels div:first-child { text-align: left; }
+  .cd-progress-labels p:last-child, .cd-progress-labels div:last-child { text-align: right; }
+  .cd-threshold-amount { font-size: 0.875rem; font-weight: 700; color: #000; }
+  .cd-threshold-label { font-size: 0.75rem; color: #6b7280; }
+
+  /* Empty state */
+  #cd-empty {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 64px 24px;
+    color: #9ca3af;
+    text-align: center;
+  }
+  #cd-empty p { margin-top: 12px; font-size: 0.875rem; font-weight: 500; }
+
+  /* Badge */
+  [data-cart-count] {
+    position: absolute;
+    top: -6px;
+    right: -8px;
+    background: #000;
+    color: #fff;
+    font-size: 10px;
+    font-weight: 700;
+    border-radius: 9999px;
+    min-width: 16px;
+    height: 16px;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    padding: 0 4px;
+    line-height: 1;
+    pointer-events: none;
+  }
+  [data-cart-count].badge-visible { display: flex; }
 </style>
 
-<!-- Overlay oscuro -->
-<div id="cart-drawer-overlay" class="fixed inset-0 bg-black/60 z-[998]"></div>
+<!-- Overlay -->
+<div id="cart-drawer-overlay"></div>
 
-<!-- Panel del carrito -->
-<div
-  id="cart-drawer"
-  class="fixed top-0 right-0 h-full w-full md:max-w-[400px] bg-white z-[999] flex flex-col"
-  role="dialog"
-  aria-modal="true"
-  aria-label="Carrito de compras"
->
+<!-- Panel -->
+<div id="cart-drawer" role="dialog" aria-modal="true" aria-label="Carrito de compras">
 
-  <!-- ── Cabecera ── -->
-  <div class="relative flex items-center justify-center px-6 pt-6 pb-4 flex-shrink-0">
-    <h2 id="cd-title" class="text-2xl font-bold text-black">0 productos</h2>
-    <button
-      type="button"
-      onclick="CartDrawer.close()"
-      aria-label="Cerrar carrito"
-      class="absolute right-5 top-5 p-1 text-black hover:opacity-50 transition-opacity"
-    >
+  <!-- Cabecera -->
+  <div id="cd-header">
+    <h2 id="cd-title">0 productos</h2>
+    <button id="cd-close-btn" type="button" onclick="CartDrawer.close()" aria-label="Cerrar carrito">
       <svg width="20" height="20" viewBox="0 0 24 24" fill="none"
            stroke="currentColor" stroke-width="2.5"
            stroke-linecap="round" stroke-linejoin="round">
@@ -76,113 +364,80 @@
     </button>
   </div>
 
-  <!-- ── Barra de progreso ── -->
-  <div class="px-6 pb-4 flex-shrink-0">
-    <div class="relative mx-2.5" style="padding: 10px 0">
-      <div class="h-1.5 bg-gray-200 rounded-full relative">
-        <!-- Fill -->
-        <div
-          id="cd-progress-fill"
-          class="absolute left-0 top-0 h-full bg-black rounded-full"
-          style="width: 0%; transition: width 0.5s ease"
-        ></div>
-        <!-- Círculo: Pedido Mínimo -->
-        <div
-          id="cd-marker-min"
-          class="absolute top-1/2 w-5 h-5 rounded-full bg-gray-300 flex items-center justify-center -translate-y-1/2"
-          style="left: calc({{ min_pct }}% - 10px); transition: background-color 0.3s"
-        >
-          <span class="block w-2 h-2 rounded-full bg-white"></span>
-        </div>
-        <!-- Círculo: Envío gratis -->
-        <div
-          id="cd-marker-free"
-          class="absolute top-1/2 w-5 h-5 rounded-full bg-gray-300 flex items-center justify-center -translate-y-1/2"
-          style="right: -10px; transition: background-color 0.3s"
-        >
-          <span class="block w-2 h-2 rounded-full bg-white"></span>
-        </div>
-      </div>
+  <!-- Barra de progreso -->
+  <div id="cd-progress-wrap">
+    <div id="cd-progress-track">
+      <div id="cd-progress-fill"></div>
+      <div id="cd-marker-min" class="cd-marker"><span></span></div>
+      <div id="cd-marker-free" class="cd-marker"><span></span></div>
     </div>
-    <div class="flex justify-between mt-2">
+    <div class="cd-progress-labels">
       <div>
-        <p class="text-sm font-bold text-black">{{ min_cents | money_without_trailing_zeros }}</p>
-        <p class="text-xs text-gray-500">Pedido Mínimo</p>
+        <p class="cd-threshold-amount">{{ min_cents | money_without_trailing_zeros }}</p>
+        <p class="cd-threshold-label">Pedido Mínimo</p>
       </div>
-      <div class="text-right">
-        <p class="text-sm font-bold text-black">{{ free_cents | money_without_trailing_zeros }}</p>
-        <p class="text-xs text-gray-500">Envío Gratis</p>
+      <div>
+        <p class="cd-threshold-amount">{{ free_cents | money_without_trailing_zeros }}</p>
+        <p class="cd-threshold-label">Envío Gratis</p>
       </div>
     </div>
   </div>
 
-  <div class="h-px bg-gray-100 mx-5 flex-shrink-0"></div>
+  <div class="cd-divider"></div>
 
-  <!-- ── Zona de scroll: items + upsell ── -->
-  <div id="cart-items-scroll" class="flex-1 overflow-y-auto min-h-0">
+  <!-- Zona de scroll -->
+  <div id="cart-items-scroll">
 
-    <!-- Estado de carga -->
-    <div id="cd-loading" class="hidden flex items-center justify-center py-12">
-      <div class="cd-spinner w-8 h-8"></div>
+    <!-- Spinner carga -->
+    <div id="cd-loading" style="display:none; align-items:center; justify-content:center; padding:48px 0; flex-direction:column;">
+      <div class="cd-spinner"></div>
     </div>
 
     <!-- Items -->
     <div id="cd-items-list"></div>
 
-    <!-- Carrito vacío -->
-    <div id="cd-empty" class="hidden flex flex-col items-center justify-center py-16 px-6 text-gray-400">
+    <!-- Vacío -->
+    <div id="cd-empty">
       <svg width="44" height="44" viewBox="0 0 24 24" fill="none"
            stroke="currentColor" stroke-width="1.4">
         <path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z"/>
         <line x1="3" y1="6" x2="21" y2="6"/>
         <path d="M16 10a4 4 0 01-8 0"/>
       </svg>
-      <p class="mt-3 text-sm font-medium">Tu carrito está vacío</p>
+      <p>Tu carrito está vacío</p>
     </div>
 
-    <!-- Upsell (fondo negro) -->
-    <div id="cd-upsell" class="hidden mx-4 my-3 bg-black rounded-2xl px-4 py-3">
-      <div class="flex items-center gap-3">
-        <div class="flex-shrink-0 w-16 h-16 rounded-xl overflow-hidden bg-gray-800">
-          <img id="cd-upsell-img" src="" alt="" class="w-full h-full object-cover" loading="lazy">
+    <!-- Upsell -->
+    <div id="cd-upsell">
+      <div class="cd-upsell-inner">
+        <div class="cd-upsell-img-wrap">
+          <img id="cd-upsell-img" src="" alt="" loading="lazy">
         </div>
-        <div class="flex-1 min-w-0">
-          <p id="cd-upsell-title" class="text-white font-bold text-sm leading-tight line-clamp-2"></p>
-          <p id="cd-upsell-price" class="text-white/80 text-sm mt-0.5"></p>
+        <div class="cd-upsell-info">
+          <p id="cd-upsell-title"></p>
+          <p id="cd-upsell-price"></p>
         </div>
-        <button
-          type="button"
-          onclick="CartDrawer.addUpsell()"
-          class="flex-shrink-0 bg-white text-black font-bold text-sm px-4 py-2 rounded-xl hover:opacity-80 transition-opacity"
-        >
-          Agregar
-        </button>
+        <button type="button" class="cd-upsell-btn" onclick="CartDrawer.addUpsell()">Agregar</button>
       </div>
     </div>
 
   </div>
 
-  <!-- ── Footer ── -->
-  <div class="flex-shrink-0 border-t border-gray-100 px-5 pt-4 pb-6 bg-white">
-    <div class="flex justify-between items-center mb-1.5">
-      <span class="text-lg font-bold text-black">Subtotal</span>
-      <span id="cd-subtotal" class="text-lg font-bold text-black">—</span>
+  <!-- Footer -->
+  <div id="cd-footer">
+    <div class="cd-subtotal-row">
+      <span class="cd-subtotal-label">Subtotal</span>
+      <span id="cd-subtotal">—</span>
     </div>
-    <p class="text-[11px] text-gray-400 leading-tight mb-4">
+    <p class="cd-disclaimer">
       *en la pantalla de pagos se incluye el impuesto y se calculan los gastos de envío.
     </p>
-    <a
-      href="{{ routes.checkout_url }}"
-      class="block w-full bg-black text-white text-center font-bold py-4 rounded-2xl text-base hover:opacity-80 transition-opacity mb-4"
-    >
+    <a href="{{ routes.checkout_url }}" class="cd-checkout-btn">
       Realizar Pago Seguro
     </a>
-    <!-- Métodos de pago -->
-    <div class="flex justify-center gap-2 flex-wrap items-center">
+    <div class="cd-payment-icons">
       {%- for type in shop.enabled_payment_types -%}
-        <span class="border border-gray-200 rounded-full px-3 py-1.5 flex items-center justify-center h-9">
-          {{- type | payment_type_svg_tag: class: 'h-5 w-auto max-w-[60px]' -}}
-        </span>
+        <span>{{- type | payment_type_svg_tag -}}</span>
       {%- endfor -%}
     </div>
   </div>
