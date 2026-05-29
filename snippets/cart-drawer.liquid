@@ -142,12 +142,11 @@
   .cd-remove-btn:hover { color: #000; }
 
   /* Progress bar */
-  #cd-progress-track {
+  #cd-progress-bar-track {
     position: relative;
     height: 6px;
     background: #e5e7eb;
     border-radius: 9999px;
-    margin: 10px 10px 0;
   }
   #cd-progress-fill {
     position: absolute;
@@ -157,27 +156,41 @@
     transition: width 0.5s ease;
     width: 0%;
   }
+  /* Marcadores circulares sobre la barra */
   .cd-marker {
-    position: absolute;
-    top: 50%;
-    width: 20px; height: 20px;
+    width: 22px; height: 22px;
     border-radius: 9999px;
     background: #d1d5db;
     display: flex;
     align-items: center;
     justify-content: center;
-    transform: translateY(-50%);
-    transition: background-color 0.3s;
+    flex-shrink: 0;
+    transition: background 0.3s;
   }
-  .cd-marker span {
-    display: block;
-    width: 8px; height: 8px;
-    border-radius: 9999px;
-    background: #fff;
-  }
-  #cd-marker-min { left: calc({{ min_pct }}% - 10px); }
-  #cd-marker-free { right: -10px; }
   .cd-marker.active { background: #000; }
+  .cd-marker svg { display: block; }
+  /* Grupo marcador + label (posicionado absolutamente sobre el contenedor) */
+  .cd-threshold-group {
+    position: absolute;
+    top: -8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transform: translateX(-50%);
+  }
+  .cd-threshold-group.right {
+    left: 100%;
+  }
+  .cd-threshold-group.left {
+    left: {{ min_pct }}%;
+  }
+  .cd-threshold-label-wrap {
+    text-align: center;
+    margin-top: 6px;
+    white-space: nowrap;
+  }
+  .cd-threshold-amount { font-size: 0.8125rem; font-weight: 700; color: #000; line-height: 1.2; }
+  .cd-threshold-label  { font-size: 0.6875rem; color: #6b7280; line-height: 1.3; margin-top: 1px; }
 
   /* Upsell */
   #cd-upsell {
@@ -301,15 +314,7 @@
 
   /* Progress container */
   #cd-progress-wrap { padding: 0 24px 16px; flex-shrink: 0; }
-  .cd-progress-labels {
-    display: flex;
-    justify-content: space-between;
-    margin-top: 8px;
-  }
-  .cd-progress-labels p:first-child, .cd-progress-labels div:first-child { text-align: left; }
-  .cd-progress-labels p:last-child, .cd-progress-labels div:last-child { text-align: right; }
-  .cd-threshold-amount { font-size: 0.875rem; font-weight: 700; color: #000; }
-  .cd-threshold-label { font-size: 0.75rem; color: #6b7280; }
+  #cd-progress-bar-container { position: relative; padding-bottom: 52px; margin-top: 10px; }
 
   /* Empty state */
   #cd-empty {
@@ -366,20 +371,44 @@
 
   <!-- Barra de progreso -->
   <div id="cd-progress-wrap">
-    <div id="cd-progress-track">
-      <div id="cd-progress-fill"></div>
-      <div id="cd-marker-min" class="cd-marker"><span></span></div>
-      <div id="cd-marker-free" class="cd-marker"><span></span></div>
-    </div>
-    <div class="cd-progress-labels">
-      <div>
-        <p class="cd-threshold-amount">{{ min_cents | money_without_trailing_zeros }}</p>
-        <p class="cd-threshold-label">Pedido Mínimo</p>
+    <div id="cd-progress-bar-container">
+
+      <!-- Track -->
+      <div id="cd-progress-bar-track">
+        <div id="cd-progress-fill"></div>
       </div>
-      <div>
-        <p class="cd-threshold-amount">{{ free_cents | money_without_trailing_zeros }}</p>
-        <p class="cd-threshold-label">Envío Gratis</p>
+
+      <!-- Marcador izquierdo: Pedido Mínimo (✓ checkmark) -->
+      <div class="cd-threshold-group left">
+        <div id="cd-marker-min" class="cd-marker">
+          <svg width="11" height="11" viewBox="0 0 24 24" fill="none"
+               stroke="#fff" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round">
+            <polyline points="20 6 9 17 4 12"/>
+          </svg>
+        </div>
+        <div class="cd-threshold-label-wrap">
+          <p class="cd-threshold-amount">€15</p>
+          <p class="cd-threshold-label">Pedido Mínimo</p>
+        </div>
       </div>
+
+      <!-- Marcador derecho: Envío Gratis (🚚 camión) -->
+      <div class="cd-threshold-group right">
+        <div id="cd-marker-free" class="cd-marker">
+          <svg width="11" height="11" viewBox="0 0 24 24" fill="none"
+               stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <rect x="1" y="3" width="15" height="13" rx="1"/>
+            <path d="M16 8h4l3 6v3h-7V8z"/>
+            <circle cx="5.5" cy="18.5" r="2.5"/>
+            <circle cx="18.5" cy="18.5" r="2.5"/>
+          </svg>
+        </div>
+        <div class="cd-threshold-label-wrap">
+          <p class="cd-threshold-amount">€35</p>
+          <p class="cd-threshold-label">Envío Gratis</p>
+        </div>
+      </div>
+
     </div>
   </div>
 
