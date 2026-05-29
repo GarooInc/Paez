@@ -1,295 +1,282 @@
-<div class="full-bleed min-h-[800px] flex flex-col py-5 px-5 sm:px-20 lg:px-5 xl:px-20 md:pb-5">
-    
-    <div class="w-full text-center mb-8 pb-10">
-        <h2 class="text-2xl md:text-4xl font-bold text-gray-900">
-            {{ section.settings.title }}
-        </h2>
-    </div>
-
-    <!-- Botones de features -->
-    <div class="w-full flex flex-wrap justify-center mb-12 md:pb-10 pb-5">
-        {% for block in section.blocks %}
-            <button class="feature-btn px-7 sm:px-10 md:px-15 lg:px-6 py-2 transition-all duration-300 xl:text-lg flex items-center gap-2
-                           {% if forloop.first %}bg-gray-200 text-black{% else %}bg-white 
-                            text-gray-700{% endif %}"
-                    data-feature="{{ block.id }}"
-                    data-index="{{ forloop.index0 }}"
-                    {{ block.shopify_attributes }}>
-                
-                <!-- Logo -->
-                {% if block.settings.feature_image %}
-                    <img src="{{ block.settings.feature_image | image_url: width: 100 }}"
-                         class="w-6 h-6 object-contain"
-                         width="{{ block.settings.feature_image.width }}"
-                         height="{{ block.settings.feature_image.height }}"
-                         alt="{{ block.settings.feature_name }}">
-                {% endif %}
-                
-                <!-- Texto - oculto en mobile -->
-                <span class="hidden lg:inline">{{ block.settings.feature_name }}</span>
-            </button>
-        {% endfor %}
-    </div>
-
-    <!-- Desktop Layout -->
-    <div class="hidden lg:flex w-full flex-row gap-10 lg:gap-20 relative px-25">
-        
-        <!-- Lado izquierdo: Contenido de texto -->
-        <div class="w-full lg:w-1/2 flex flex-col justify-center">
-            {% for block in section.blocks %}
-                <div class="feature-content max-w-200 pl-10 {% unless forloop.first %}hidden{% endunless %}" 
-                     data-content="{{ block.id }}">
-                    
-                    <h3 class="text-xl md:text-4xl font-bold mb-3 text-gray-900 py-4">
-                        {{ block.settings.title }}
-                    </h3>
-                    
-                    <p class="text-lg md:text-xl text-gray-600 mb-4">
-                        {{ block.settings.subtitle }}
-                    </p>
-                    
-                    <div class="text-base text-gray-700 leading-relaxed">
-                        {{ block.settings.description }}
-                    </div>
-                </div>
-            {% endfor %}
-        </div>
-
-        <!-- Lado derecho: Imágenes -->
-        <div class="w-full lg:w-1/2 flex items-center justify-center">
-            {% for block in section.blocks %}
-                <div class="feature-image w-full h-[400px] lg:h-[600px] rounded-2xl overflow-hidden {% unless forloop.first %}hidden{% endunless %}"
-                     data-image="{{ block.id }}">
-                    {% if block.settings.image_banner %}
-                        <img src="{{ block.settings.image_banner | image_url: width: 1200 }}"
-                             class="min-w-full min-h-full object-cover"
-                             width="{{ block.settings.image_banner.width }}"
-                             height="{{ block.settings.image_banner.height }}"
-                             alt="{{ block.settings.title }}">
-                    {% else %}
-                        <div class="w-full h-full bg-gray-200 flex items-center justify-center">
-                            <span class="text-gray-400">No image</span>
-                        </div>
-                    {% endif %}
-                </div>
-            {% endfor %}
-        </div>
-
-        <!-- Flechas de navegación - Desktop -->
-        <div class="absolute inset-0 flex justify-between items-center pointer-events-none px-4">
-            <button class="feature-prev-btn pointer-events-auto rounded-full scale-50 
-                transition-all duration-300 text-2xl lg:text-4xl text-gray-800 hover:text-gray-500">
-                 {% render 'arrow-left' %}
-            </button>
-            <button class="feature-next-btn pointer-events-auto rounded-full scale-50 transition-all duration-300 text-2xl lg:text-4xl text-gray-800">
-                {% render 'arrow-right' %}
-            </button>
-        </div>
-
-        
-
-    </div>
-
-    <!-- Mobile Layout -->
-    <div class="lg:hidden w-full flex flex-col relative px-5">
-        
-        {% for block in section.blocks %}
-            <div class="feature-mobile-content {% unless forloop.first %}hidden{% endunless %}" 
-                 data-mobile-content="{{ block.id }}">
-                
-                <!-- Título -->
-                <h3 class="text-lg font-bold mb-6 text-gray-900 text-center px-4 py-3">
-                    {{ block.settings.title }}
-                </h3>
-                
-                <!-- Imagen -->
-                <div class="w-full sm:h-[500px] h-[400px] rounded-2xl overflow-hidden mb-6">
-                    {% if block.settings.image_banner %}
-                        <img src="{{ block.settings.image_banner | image_url: width: 800 }}"
-                             class="w-full min-h-full object-cover"
-                             width="{{ block.settings.image_banner.width }}"
-                             height="{{ block.settings.image_banner.height }}"
-                             alt="{{ block.settings.title }}">
-                    {% else %}
-                        <div class="w-full h-full bg-gray-200 flex items-center justify-center">
-                            <span class="text-gray-400">No image</span>
-                        </div>
-                    {% endif %}
-                </div>
-
-                <!-- Descripción -->
-                <div class="py-5">
-                    <p class="text-lg text-gray-600 mb-4">
-                        {{ block.settings.subtitle }}
-                    </p>
-                    
-                    <div class="text-base text-gray-700 leading-relaxed">
-                        {{ block.settings.description }}
-                    </div>
-                </div>
-            </div>
-        {% endfor %}
-
-        
-
-    </div>
-
-</div>
-
 <style>
-.full-bleed{
-  width: 100vw;
-  margin-left: calc(50% - 50vw);
-  margin-right: calc(50% - 50vw);
-}
+  .mfs-section {
+    width: 100vw;
+    margin-left: calc(50% - 50vw);
+    margin-right: calc(50% - 50vw);
+    padding: 80px 40px;
+    box-sizing: border-box;
+  }
+  .mfs-inner {
+    max-width: 1400px;
+    margin: 0 auto;
+    display: flex;
+    gap: 60px;
+    align-items: flex-start;
+  }
+  /* Left column */
+  .mfs-left {
+    flex: 1;
+    min-width: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .mfs-title {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #000;
+    line-height: 1.15;
+    margin: 0 0 16px;
+  }
+  .mfs-desc {
+    font-size: 1rem;
+    color: #374151;
+    line-height: 1.7;
+    margin: 0 0 8px;
+  }
+  /* Accordion list */
+  .mfs-accordion {
+    margin: 16px 0 32px;
+  }
+  .mfs-accordion-divider {
+    height: 1px;
+    background: #000;
+    border: none;
+    margin: 0;
+  }
+  .mfs-accordion-item {
+    overflow: hidden;
+  }
+  .mfs-accordion-trigger {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 18px 0;
+    background: none;
+    border: none;
+    cursor: pointer;
+    text-align: left;
+    font-size: 1.0625rem;
+    font-weight: 700;
+    color: #000;
+    gap: 12px;
+    transition: opacity 0.15s;
+  }
+  .mfs-accordion-trigger:hover { opacity: 0.7; }
+  .mfs-accordion-arrow {
+    flex-shrink: 0;
+    width: 20px;
+    height: 20px;
+    transition: transform 0.3s ease;
+    color: #000;
+  }
+  .mfs-accordion-item.is-open .mfs-accordion-arrow {
+    transform: rotate(180deg);
+  }
+  .mfs-accordion-body {
+    display: grid;
+    grid-template-rows: 0fr;
+    transition: grid-template-rows 0.3s ease;
+  }
+  .mfs-accordion-item.is-open .mfs-accordion-body {
+    grid-template-rows: 1fr;
+  }
+  .mfs-accordion-body-inner {
+    overflow: hidden;
+    font-size: 0.9375rem;
+    color: #6b7280;
+    line-height: 1.6;
+    padding-bottom: 16px;
+  }
+  /* CTA button */
+  .mfs-btn {
+    display: inline-block;
+    background: #000;
+    color: #fff;
+    font-weight: 700;
+    font-size: 1rem;
+    padding: 16px 32px;
+    border-radius: 12px;
+    text-decoration: none;
+    transition: opacity 0.15s;
+    align-self: flex-start;
+    margin-top: 8px;
+    border: none;
+    cursor: pointer;
+  }
+  .mfs-btn:hover { opacity: 0.8; color: #fff; }
+  /* Right column */
+  .mfs-right {
+    flex: 1;
+    min-width: 0;
+  }
+  .mfs-image-wrap {
+    width: 100%;
+    aspect-ratio: 3/4;
+    border-radius: 20px;
+    overflow: hidden;
+    background: #f3f4f6;
+  }
+  .mfs-image-wrap img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+  }
+  /* Mobile */
+  @media (max-width: 767px) {
+    .mfs-section { padding: 48px 20px; }
+    .mfs-inner { flex-direction: column; gap: 32px; }
+    .mfs-title { font-size: 1.5rem; }
+    .mfs-image-wrap { aspect-ratio: 4/3; }
+    .mfs-btn { width: 100%; text-align: center; box-sizing: border-box; }
+  }
 </style>
 
+<section class="mfs-section">
+  <div class="mfs-inner">
+
+    <!-- Columna izquierda: texto -->
+    <div class="mfs-left">
+      <h2 class="mfs-title">{{ section.settings.title }}</h2>
+
+      {% if section.settings.description != blank %}
+        <p class="mfs-desc">{{ section.settings.description }}</p>
+      {% endif %}
+
+      {% if section.blocks.size > 0 %}
+        <div class="mfs-accordion">
+          <hr class="mfs-accordion-divider">
+          {% for block in section.blocks %}
+            <div class="mfs-accordion-item" {{ block.shopify_attributes }}>
+              <button
+                class="mfs-accordion-trigger"
+                aria-expanded="false"
+                onclick="mfsToggle(this)"
+                type="button"
+              >
+                <span>{{ block.settings.title }}</span>
+                <svg class="mfs-accordion-arrow" viewBox="0 0 24 24" fill="none"
+                     stroke="currentColor" stroke-width="2.5"
+                     stroke-linecap="round" stroke-linejoin="round">
+                  <polyline points="6 9 12 15 18 9"/>
+                </svg>
+              </button>
+              {% if block.settings.body != blank %}
+                <div class="mfs-accordion-body">
+                  <div class="mfs-accordion-body-inner">
+                    {{ block.settings.body }}
+                  </div>
+                </div>
+              {% endif %}
+            </div>
+            <hr class="mfs-accordion-divider">
+          {% endfor %}
+        </div>
+      {% endif %}
+
+      {% if section.settings.button_text != blank %}
+        <a href="{{ section.settings.button_url }}" class="mfs-btn">
+          {{ section.settings.button_text }}
+        </a>
+      {% endif %}
+    </div>
+
+    <!-- Columna derecha: imagen -->
+    <div class="mfs-right">
+      <div class="mfs-image-wrap">
+        {% if section.settings.image %}
+          <img
+            src="{{ section.settings.image | image_url: width: 1000 }}"
+            width="{{ section.settings.image.width }}"
+            height="{{ section.settings.image.height }}"
+            alt="{{ section.settings.image.alt | default: section.settings.title }}"
+            loading="lazy"
+          >
+        {% else %}
+          <div style="width:100%;height:100%;background:#e5e7eb;display:flex;align-items:center;justify-content:center;">
+            <span style="color:#9ca3af;font-size:0.875rem;">Agrega una imagen</span>
+          </div>
+        {% endif %}
+      </div>
+    </div>
+
+  </div>
+</section>
+
 <script>
-document.addEventListener("DOMContentLoaded", function () {
-    const featureBtns = document.querySelectorAll(".feature-btn");
-    const featureContents = document.querySelectorAll(".feature-content");
-    const featureImages = document.querySelectorAll(".feature-image");
-    const featureMobileContents = document.querySelectorAll(".feature-mobile-content");
-    
-    const prevBtn = document.querySelector(".feature-prev-btn");
-    const nextBtn = document.querySelector(".feature-next-btn");
-    const prevBtnMobile = document.querySelector(".feature-prev-btn-mobile");
-    const nextBtnMobile = document.querySelector(".feature-next-btn-mobile");
-    
-    let currentIndex = 0;
-    const totalFeatures = featureBtns.length;
-
-    function showFeature(index) {
-        const targetBtn = featureBtns[index];
-        const featureId = targetBtn.dataset.feature;
-
-        // Cambiar estilos de botones
-        featureBtns.forEach(b => {
-            b.classList.remove("bg-gray-200", "text-black");
-            b.classList.add("bg-white", "text-gray-700");
-        });
-
-        targetBtn.classList.remove("bg-white", "text-gray-700");
-        targetBtn.classList.add("bg-gray-200", "text-black");
-
-        // Mostrar contenido correspondiente - Desktop
-        featureContents.forEach(content => {
-            if (content.dataset.content === featureId) {
-                content.classList.remove("hidden");
-            } else {
-                content.classList.add("hidden");
-            }
-        });
-
-        // Mostrar imagen correspondiente - Desktop
-        featureImages.forEach(image => {
-            if (image.dataset.image === featureId) {
-                image.classList.remove("hidden");
-            } else {
-                image.classList.add("hidden");
-            }
-        });
-
-        // Mostrar contenido correspondiente - Mobile
-        featureMobileContents.forEach(content => {
-            if (content.dataset.mobileContent === featureId) {
-                content.classList.remove("hidden");
-            } else {
-                content.classList.add("hidden");
-            }
-        });
-
-        currentIndex = index;
-    }
-
-    // Click en botones de features
-    featureBtns.forEach((btn, index) => {
-        btn.addEventListener("click", function () {
-            showFeature(index);
-        });
-    });
-
-    // Navegación con flechas - Desktop
-    nextBtn?.addEventListener("click", function () {
-        const newIndex = (currentIndex + 1) % totalFeatures;
-        showFeature(newIndex);
-    });
-
-    prevBtn?.addEventListener("click", function () {
-        const newIndex = (currentIndex - 1 + totalFeatures) % totalFeatures;
-        showFeature(newIndex);
-    });
-
-    // Navegación con flechas - Mobile
-    nextBtnMobile?.addEventListener("click", function () {
-        const newIndex = (currentIndex + 1) % totalFeatures;
-        showFeature(newIndex);
-    });
-
-    prevBtnMobile?.addEventListener("click", function () {
-        const newIndex = (currentIndex - 1 + totalFeatures) % totalFeatures;
-        showFeature(newIndex);
-    });
-});
+  function mfsToggle(btn) {
+    var item = btn.closest('.mfs-accordion-item');
+    var isOpen = item.classList.contains('is-open');
+    item.classList.toggle('is-open', !isOpen);
+    btn.setAttribute('aria-expanded', String(!isOpen));
+  }
 </script>
 
 {% schema %}
 {
-  "name": "Features",
-  "settings": [ 
+  "name": "Feature Highlight",
+  "settings": [
     {
       "type": "text",
       "id": "title",
-      "label": "Title",
-      "default": "Loved by everyone, everywhere. Don't miss out"
+      "label": "Título",
+      "default": "Nombre del Producto"
+    },
+    {
+      "type": "textarea",
+      "id": "description",
+      "label": "Descripción",
+      "default": "Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto."
+    },
+    {
+      "type": "image_picker",
+      "id": "image",
+      "label": "Imagen (derecha)"
+    },
+    {
+      "type": "text",
+      "id": "button_text",
+      "label": "Texto del botón",
+      "default": "Agregar al Carrito"
+    },
+    {
+      "type": "url",
+      "id": "button_url",
+      "label": "URL del botón"
     }
   ],
   "blocks": [
     {
-      "type": "feature",
-      "name": "Feature",
+      "type": "accordion",
+      "name": "Accordion item",
       "settings": [
         {
           "type": "text",
-          "id": "feature_name",
-          "label": "Feature name (Button text)", 
-          "default": "Feature 1"
-        },
-        {
-          "type": "image_picker",
-          "id": "feature_image",
-          "label": "Feature icon/logo"
-        },
-        {
-          "type": "text",
           "id": "title",
-          "label": "Title", 
-          "default": "What makes it special?"
-        },
-        {
-          "type": "text",
-          "id": "subtitle",
-          "label": "Subtitle", 
-          "default": "Subtitle"
+          "label": "Título del item",
+          "default": "Lorem Ipsum es simplemente el texto"
         },
         {
           "type": "richtext",
-          "id": "description",
-          "label": "Description", 
-          "default": "<p>Description</p>"
-        },
-        {
-          "type": "image_picker",
-          "id": "image_banner",
-          "label": "Image"
+          "id": "body",
+          "label": "Contenido (opcional)"
         }
       ]
     }
   ],
   "presets": [
     {
-      "name": "Features",
-      "category": "main"
+      "name": "Feature Highlight",
+      "category": "main",
+      "blocks": [
+        { "type": "accordion", "settings": { "title": "Lorem Ipsum es simplemente el texto" } },
+        { "type": "accordion", "settings": { "title": "Lorem Ipsum es simplemente el texto" } },
+        { "type": "accordion", "settings": { "title": "Lorem Ipsum es simplemente el texto" } },
+        { "type": "accordion", "settings": { "title": "Lorem Ipsum es simplemente el texto" } },
+        { "type": "accordion", "settings": { "title": "Lorem Ipsum es simplemente el texto" } }
+      ]
     }
   ]
 }
